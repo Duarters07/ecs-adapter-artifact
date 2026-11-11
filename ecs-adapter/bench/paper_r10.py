@@ -1408,7 +1408,7 @@ def fig_evasion(s: dict) -> str:
     return "\n".join(out) + "\n"
 
 
-def posthoc_numbers(o: Out, d: Path) -> None:
+def posthoc_numbers(o: Out, d: Path, roots: list[Path] = ()) -> None:
     """The post-hoc analyses of POSTHOC_REVIEW_ANALYSES.md (declared 2026-11-09, not pre-registered), under ph/.
     B1 bench/posthoc_vc.py, B2 bench/posthoc_gate.py, B4 bench/posthoc_nomodel.py, D bench/posthoc_vc.py --tag. A missing file leaves its keys
     out."""
@@ -1440,6 +1440,20 @@ def posthoc_numbers(o: Out, d: Path) -> None:
         o.put("ph/nr/C/prec_pct", round(100 * x["vc_precision"]) if x["vc_precision"] is not None else None)
         o.put("ph/nr/C/cov_pct", round(100 * x["vc_coverage"]) if x["vc_coverage"] is not None else None)
         o.put("ph/nr/C/det_pct", round(x["vc_det_pct"]))
+        o.put("ph/nr/C/reports", x["runs"] - x["vc_deploys"])
+        o.put("ph/nr/C/restored", sum(r.get("vc_kind") == "restored" for r in rows))
+        # the same seeds as the runs with replay: how often the repair ends the same, and the cut deploys the same
+        if (d / "b1_vc.json").is_file():
+            rep = {(r["source"], r["seed"]): sorted(r.get("vc_deliver") or [])
+                   for r in json.loads((d / "b1_vc.json").read_text())["rows"]["C"]}
+            o.put("ph/nr/C/same_fields", sum(rep.get((r["source"], r["seed"])) == sorted(r.get("vc_deliver") or [])
+                                             for r in rows))
+        f_nr, _ = _find([d / "d_noreplay"], "F-C10sNR-p22-r7")
+        f_rep, _ = _find(list(roots), "F-C10s-p22-r7")
+        if f_nr is not None and f_rep is not None:
+            ir = lambda f: {(r["source_id"], r.get("seed", 0)): json.dumps(r.get("ir"), sort_keys=True) for r in _rows(f)}
+            a, b = ir(f_nr), ir(f_rep)
+            o.put("ph/nr/C/same_ir", sum(a[k] == b.get(k) for k in a))
     f = d / "b4_nomodel.json"
     if f.is_file():
         rows = [r for r in json.loads(f.read_text())["rows"] if r.get("candidate") == "layer" and r.get("real")]
@@ -1510,7 +1524,7 @@ def main(argv=None) -> int:
         adv = json.loads(a.adv.expanduser().read_text())
         adv_numbers(o, adv)
         figs["fig-evasion.tex"] = fig_evasion(adv)
-    posthoc_numbers(o, a.posthoc.expanduser())
+    posthoc_numbers(o, a.posthoc.expanduser(), [r.expanduser() for r in a.roots])
     q8_numbers(o, [r.expanduser() for r in a.roots])
     a.out.mkdir(parents=True, exist_ok=True)
     (a.out / "r10-numbers.tex").write_text(o.tex(), encoding="utf-8")
