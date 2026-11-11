@@ -1,4 +1,4 @@
-# Artefact: Detection-Verified Adaptation of SIEM Log Parsers Using Specialised Local Language Models
+# Artefact: Unattended, Detection-Verified Repair of SIEM Log Parsers with Small Local Language Models
 
 Anonymous artefact of the submission: the system, the data it was evaluated on, every run record, and the script
 that turns the records into every number, table and result figure of the paper.
@@ -23,7 +23,7 @@ data/task3-ait-lds/   samples and reference parsers derived from AIT-LDS
 preregistration/      dated pre-registration documents and hash manifests
 ```
 
-Run tags: `C10s` the specialised 7B (7B-S), `T14` the untrained 14B, `B` the untrained 7B, `T14q8` the 14B at
+Run tags: `C10s` the specialised 7B (7B-S), `C10sNR` the 7B-S with no replay scenario (post hoc, in `runs/posthoc/d_noreplay/`), `T14` the untrained 14B, `B` the untrained 7B, `T14q8` the 14B at
 8 bits (post hoc), `C10`, `C10d`, `Cr9` the configurations in the appendix. `F-` full system, `E-` model only.
 
 ## Regenerating the paper's numbers (no GPU, a few minutes)

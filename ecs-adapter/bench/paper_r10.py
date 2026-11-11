@@ -1410,7 +1410,7 @@ def fig_evasion(s: dict) -> str:
 
 def posthoc_numbers(o: Out, d: Path) -> None:
     """The post-hoc analyses of POSTHOC_REVIEW_ANALYSES.md (declared 2026-11-09, not pre-registered), under ph/.
-    B1 bench/posthoc_vc.py, B2 bench/posthoc_gate.py, B4 bench/posthoc_nomodel.py. A missing file leaves its keys
+    B1 bench/posthoc_vc.py, B2 bench/posthoc_gate.py, B4 bench/posthoc_nomodel.py, D bench/posthoc_vc.py --tag. A missing file leaves its keys
     out."""
     f = d / "b1_vc.json"
     if f.is_file():
@@ -1428,6 +1428,18 @@ def posthoc_numbers(o: Out, d: Path) -> None:
             o.put(f"ph/b3/{a}/deployments", x["v4_deploys"])
             o.put(f"ph/b3/{a}/category_changed", x.get("v4_refused_key:event.category", 0))
             o.put(f"ph/b3/{a}/dataset_changed", x.get("v4_refused_key:event.dataset", 0))
+    f = d / "d_noreplay.json"           # D: the 7B-S run end to end with no replay scenario, gated by VC alone
+    if f.is_file():
+        rows = json.loads(f.read_text())["rows"]["C"]
+        x = json.loads(f.read_text())["summary"]["C"]
+        o.put("ph/nr/C/runs", x["runs"])
+        o.put("ph/nr/C/accepted", sum(r["outcome"] == "accepted" for r in rows))
+        o.put("ph/nr/C/deploys", x["vc_deploys"])
+        o.put("ph/nr/C/wrong", x["vc_wrong"])
+        o.put("ph/nr/C/f_right", x["vc_f_right"])
+        o.put("ph/nr/C/prec_pct", round(100 * x["vc_precision"]) if x["vc_precision"] is not None else None)
+        o.put("ph/nr/C/cov_pct", round(100 * x["vc_coverage"]) if x["vc_coverage"] is not None else None)
+        o.put("ph/nr/C/det_pct", round(x["vc_det_pct"]))
     f = d / "b4_nomodel.json"
     if f.is_file():
         rows = [r for r in json.loads(f.read_text())["rows"] if r.get("candidate") == "layer" and r.get("real")]

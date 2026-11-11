@@ -10,6 +10,9 @@ No model and no Logstash: parsers are read with the Python reading of bench/wron
 conversion), the same reading the paper's judge uses. Declared post hoc, see the plan file.
 
     python -m bench.posthoc_vc --roots ~/.cache/ecs-r10/card4/results --out ~/.cache/ecs-r10/posthoc/b1_vc.json
+
+D (declared 2026-11-11): the same cut on the runs made with no replay scenario at all (V4 and V3.5 skipped),
+    python -m bench.posthoc_vc --roots ../runs/posthoc/d_noreplay --tag C=F-C10sNR-p22-r7 --out ../runs/posthoc/d_noreplay.json
 """
 from __future__ import annotations
 
@@ -160,11 +163,16 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--roots", type=Path, nargs="+", required=True)
     ap.add_argument("--out", type=Path, required=True)
+    ap.add_argument("--tag", action="append", default=[], metavar="ARM=TAG",
+                    help="read only these arms, from these run tags (the no-replay runs of D)")
     a = ap.parse_args()
+    override = dict(t.split("=", 1) for t in a.tag)
     ctxs: dict[str, dict[str, Any]] = {}
     out: dict[str, Any] = {"rows": {}, "summary": {}}
     for arm in ARMS:
-        tag, also = tags()[("r7", "r7", arm, "F")]
+        if override and arm not in override:
+            continue
+        tag, also = (override[arm], ()) if override else tags()[("r7", "r7", arm, "F")]
         recs = []
         for t in (tag, *also):
             f, _ = _find(a.roots, t)
