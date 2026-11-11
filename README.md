@@ -21,7 +21,6 @@ ecs-adapter/          the system and its evaluation harness
 runs/                 every run record: task1-2/, task3/ (with the attack lines it judged), posthoc/
 data/task3-ait-lds/   samples and reference parsers derived from AIT-LDS
 preregistration/      dated pre-registration documents and hash manifests
-large/                separate archive: the LoRA adapters of the specialised model (GGUF) and their Modelfiles
 ```
 
 Run tags: `C10s` the specialised 7B (7B-S), `T14` the untrained 14B, `B` the untrained 7B, `T14q8` the 14B at
@@ -57,14 +56,10 @@ was anonymised for review, so `PREREG.digest` matches only once it is restored.
 
 ## Running the system
 
-Needs Elasticsearch and Logstash 8.19.7 and Ollama 0.5.4. The specialised model is
-`qwen2.5-coder:7b-instruct-q8_0` plus the adapters in `large/models/`:
-
-```bash
-cd large/models
-ollama create qwen2.5-coder:ecs-interpret-org10 -f qwen2.5-coder_ecs-interpret-org10.Modelfile
-ollama create qwen2.5-coder:ecs-map-org10 -f qwen2.5-coder_ecs-map-org10.Modelfile
-```
+Needs Elasticsearch and Logstash 8.19.7 and Ollama 0.5.4. The LoRA adapters of the specialised model
+(155 MB) are released with the final version of the paper. Until then the system runs with the untrained
+models (`ECS_ARCHITECTURE=B`, base model `qwen2.5-coder:7b-instruct-q8_0`), and `scripts/r10.sh` records how
+the adapters were trained.
 
 ## Tests
 
