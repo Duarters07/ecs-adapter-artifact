@@ -1,0 +1,12 @@
+CONNECT   Oct 27 16:51:44 [13]: Connect (file descriptor 10): awesome_jackson.r3-net [172.21.66.238]
+NOTICE    Oct 27 16:51:44 [13]: Unauthorized connection from "awesome_jackson.r3-net" [172.21.66.238].
+CONNECT   Oct 27 16:51:45 [15]: Connect (file descriptor 10): reverent_ptolemy.r3-net [172.21.66.193]
+NOTICE    Oct 27 16:51:45 [15]: Unauthorized connection from "reverent_ptolemy.r3-net" [172.21.66.193].
+CONNECT   Oct 27 16:51:46 [11]: Connect (file descriptor 10): intelligent_ptolemy.r3-net [172.21.66.104]
+CONNECT   Oct 27 16:51:46 [11]: Request (file descriptor 10): GET http://r6-web-target/wp-login.php HTTP/1.1
+CONNECT   Oct 27 16:51:47 [15]: Connect (file descriptor 10): competent_borg.r3-net [172.21.66.139]
+NOTICE    Oct 27 16:51:47 [15]: Unauthorized connection from "competent_borg.r3-net" [172.21.66.139].
+CONNECT   Oct 27 16:51:47 [15]: Connect (file descriptor 10): nifty_chatelet.r3-net [172.21.66.247]
+NOTICE    Oct 27 16:51:47 [15]: Unauthorized connection from "nifty_chatelet.r3-net" [172.21.66.247].
+CONNECT   Oct 27 16:51:48 [7]: Connect (file descriptor 10): affectionate_liskov.r3-net [172.21.66.121]
+CONNECT   Oct 27 16:51:48 [7]: Request (file descriptor 10): GET http://r6-web-target/intranet/backup.tar HTTP/1.1

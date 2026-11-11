@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "550 Invalid recipient: <sales@lab.local>"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{"local_time":"2026-10-30T21:18:20.635410968 +0000","operation":"CONNECTION","key":"1793395100-26","conn_id":26,"fd":65,"slot":65,"tls":false,"client_ip":"172.21.91.11","server_ip":"172.21.0.2"}
+{"local_time":"2026-10-30T21:18:20.637506992 +0000","operation":"BIND","key":"1793395100-26","conn_id":26,"op_id":0,"bind_dn":"uid=ana,ou=people,dc=lab,dc=example","version":3,"method":"128"}
+{"local_time":"2026-10-30T21:18:20.738737588 +0000","operation":"RESULT","key":"1793395100-26","conn_id":26,"op_id":0,"msg":"SASL bind in progress","tag":97,"err":0,"nentries":0,"wtime":"0.000105705","optime":"0.101313963","etime":"0.101413115","client_ip":"172.21.91.11","bind_dn":"uid=ana,ou=people,dc=lab,dc=example"}
+{"local_time":"2026-10-30T21:18:20.739017890 +0000","operation":"EXTENDED_OP","key":"1793395100-26","conn_id":26,"op_id":1,"oid":"1.3.6.1.4.1.4203.1.11.3","oid_name":"Unknown","name":"whoami-plugin"}
+{"local_time":"2026-10-30T21:18:20.743707943 +0000","operation":"RESULT","key":"1793395100-26","conn_id":26,"op_id":1,"msg":"","tag":120,"err":0,"nentries":0,"wtime":"0.000128729","optime":"0.004695579","etime":"0.004822050","client_ip":"172.21.91.11"}
+{"local_time":"2026-10-30T21:18:20.744092896 +0000","operation":"UNBIND","key":"1793395100-26","conn_id":26,"op_id":2}
+{"local_time":"2026-10-30T21:18:20.747414547 +0000","operation":"DISCONNECT","key":"1793395100-26","conn_id":26,"op_id":2,"fd":65,"close_reason":"Cleanly Closed Connection - U1"}
+{"local_time":"2026-10-30T21:18:21.747185445 +0000","operation":"CONNECTION","key":"1793395101-27","conn_id":27,"fd":65,"slot":65,"tls":false,"client_ip":"172.21.91.11","server_ip":"172.21.0.2"}
+{"local_time":"2026-10-30T21:18:21.749891906 +0000","operation":"BIND","key":"1793395101-27","conn_id":27,"op_id":0,"bind_dn":"uid=ana,ou=people,dc=lab,dc=example","version":3,"method":"128"}
+{"local_time":"2026-10-30T21:18:21.862949718 +0000","operation":"RESULT","key":"1793395101-27","conn_id":27,"op_id":0,"msg":" - Invalid credentials","tag":97,"err":49,"nentries":0,"wtime":"0.000169425","optime":"0.113125995","etime":"0.113289573","client_ip":"172.21.91.11"}
+{"local_time":"2026-10-30T21:18:21.863431156 +0000","operation":"UNBIND","key":"1793395101-27","conn_id":27,"op_id":1}
+{"local_time":"2026-10-30T21:18:21.867435430 +0000","operation":"DISCONNECT","key":"1793395101-27","conn_id":27,"op_id":1,"fd":65,"close_reason":"Cleanly Closed Connection - U1"}
+{"local_time":"2026-10-30T21:18:22.807449240 +0000","operation":"CONNECTION","key":"1793395102-28","conn_id":28,"fd":65,"slot":65,"tls":false,"client_ip":"172.21.91.12","server_ip":"172.21.0.2"}
+{"local_time":"2026-10-30T21:18:22.809546860 +0000","operation":"BIND","key":"1793395102-28","conn_id":28,"op_id":0,"bind_dn":"uid=rui,ou=people,dc=lab,dc=example","version":3,"method":"128"}
+{"local_time":"2026-10-30T21:18:23.017308996 +0000","operation":"RESULT","key":"1793395102-28","conn_id":28,"op_id":0,"msg":"SASL bind in progress","tag":97,"err":0,"nentries":0,"wtime":"0.000185676","optime":"0.207863172","etime":"0.208044093","client_ip":"172.21.91.12","bind_dn":"uid=rui,ou=people,dc=lab,dc=example"}
+{"local_time":"2026-10-30T21:18:23.017878278 +0000","operation":"EXTENDED_OP","key":"1793395102-28","conn_id":28,"op_id":1,"oid":"1.3.6.1.4.1.4203.1.11.3","oid_name":"Unknown","name":"whoami-plugin"}
+{"local_time":"2026-10-30T21:18:23.025183583 +0000","operation":"RESULT","key":"1793395102-28","conn_id":28,"op_id":1,"msg":"","tag":120,"err":0,"nentries":0,"wtime":"0.000235701","optime":"0.007310243","etime":"0.007543245","client_ip":"172.21.91.12"}
+{"local_time":"2026-10-30T21:18:23.025580968 +0000","operation":"UNBIND","key":"1793395102-28","conn_id":28,"op_id":2}
+{"local_time":"2026-10-30T21:18:23.029077725 +0000","operation":"DISCONNECT","key":"1793395102-28","conn_id":28,"op_id":2,"fd":65,"close_reason":"Cleanly Closed Connection - U1"}
+{"local_time":"2026-10-30T21:18:23.979698618 +0000","operation":"CONNECTION","key":"1793395103-30","conn_id":30,"fd":65,"slot":65,"tls":false,"client_ip":"172.21.91.211","server_ip":"172.21.0.2"}
+{"local_time":"2026-10-30T21:18:23.981899973 +0000","operation":"BIND","key":"1793395103-30","conn_id":30,"op_id":0,"bind_dn":"uid=ghost,ou=people,dc=lab,dc=example","version":3,"method":"128"}
+{"local_time":"2026-10-30T21:18:23.984515412 +0000","operation":"RESULT","key":"1793395103-30","conn_id":30,"op_id":0,"msg":" - No such entry","tag":97,"err":49,"nentries":0,"wtime":"0.000133237","optime":"0.002698450","etime":"0.002830450","client_ip":"172.21.91.211"}
+{"local_time":"2026-10-30T21:18:23.985000797 +0000","operation":"UNBIND","key":"1793395103-30","conn_id":30,"op_id":1}
+{"local_time":"2026-10-30T21:18:23.987882990 +0000","operation":"DISCONNECT","key":"1793395103-30","conn_id":30,"op_id":1,"fd":65,"close_reason":"Cleanly Closed Connection - U1"}
+{"local_time":"2026-10-30T21:18:24.990886603 +0000","operation":"CONNECTION","key":"1793395104-31","conn_id":31,"fd":65,"slot":65,"tls":false,"client_ip":"172.21.91.13","server_ip":"172.21.0.2"}
+{"local_time":"2026-10-30T21:18:24.993429207 +0000","operation":"BIND","key":"1793395104-31","conn_id":31,"op_id":0,"bind_dn":"uid=monitor,ou=people,dc=lab,dc=example","version":3,"method":"128"}
+{"local_time":"2026-10-30T21:18:25.101664990 +0000","operation":"RESULT","key":"1793395104-31","conn_id":31,"op_id":0,"msg":"SASL bind in progress","tag":97,"err":0,"nentries":0,"wtime":"0.000070857","optime":"0.108286575","etime":"0.108352999","client_ip":"172.21.91.13","bind_dn":"uid=monitor,ou=people,dc=lab,dc=example"}
+{"local_time":"2026-10-30T21:18:25.101948190 +0000","operation":"EXTENDED_OP","key":"1793395104-31","conn_id":31,"op_id":1,"oid":"1.3.6.1.4.1.4203.1.11.3","oid_name":"Unknown","name":"whoami-plugin"}
+{"local_time":"2026-10-30T21:18:25.109361673 +0000","operation":"RESULT","key":"1793395104-31","conn_id":31,"op_id":1,"msg":"","tag":120,"err":0,"nentries":0,"wtime":"0.000091397","optime":"0.007417755","etime":"0.007506797","client_ip":"172.21.91.13"}
+{"local_time":"2026-10-30T21:18:25.109891723 +0000","operation":"UNBIND","key":"1793395104-31","conn_id":31,"op_id":2}
+{"local_time":"2026-10-30T21:18:25.113361904 +0000","operation":"DISCONNECT","key":"1793395104-31","conn_id":31,"op_id":2,"fd":65,"close_reason":"Cleanly Closed Connection - U1"}

@@ -1,0 +1,146 @@
+{
+  "source_id": "r5_envoy_json",
+  "family": "envoy",
+  "split": "test_r5",
+  "category_hint": "web",
+  "contamination_risk": "high",
+  "origin": "Produced by running Envoy 1.31.10 (image envoyproxy/envoy:v1.31-latest), administrator's json_format, not copied from documentation or a public dataset. Captured 2026-10-25T13:57:14Z on the author's laptop by testbed/r3/r5_envoy.sh (docker logs, stdout (StdoutAccessLog)); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 6 (pool r5), NEW CONFIGURATION of r5_envoy_default: the same proxy with a JSON access log.",
+  "fields": [
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "request_method",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "path",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "role": "request_uri",
+      "difficulty": "medium",
+      "note": "url.path acceptable: no query string in the capture.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "response_code",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "role": "status_code",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes_received",
+      "ecs_field": "http.request.body.bytes",
+      "type": "long",
+      "role": "request_body_size",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes_sent",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "role": "response_body_size",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user_agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "role": "user_agent",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request_id",
+      "ecs_field": "http.request.id",
+      "type": "keyword",
+      "role": "request_id",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "protocol",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "role": "protocol_version",
+      "difficulty": "medium",
+      "note": "Value convention: HTTP/1.1 on the wire, 1.1 in ECS - no rule filters on it.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "authority",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "requested_host",
+      "difficulty": "hard",
+      "note": "host:port in one token; url.domain would hold the port. Declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "upstream_host",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "upstream_server",
+      "difficulty": "hard",
+      "note": "ip:port in one token; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "response_flags",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "proxy_flags",
+      "difficulty": "hard",
+      "note": "No ECS field for Envoy's response flags.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "duration",
+      "ecs_field": null,
+      "type": "long",
+      "role": "duration",
+      "difficulty": "hard",
+      "note": "event.duration is in nanoseconds; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r5_envoy_json__holdout_01",
+    "r5_envoy_json__holdout_02",
+    "r5_envoy_json__holdout_03",
+    "r5_envoy_json__holdout_04",
+    "r5_envoy_json__holdout_05"
+  ],
+  "round3": {
+    "pair": "r5_envoy",
+    "role": "new"
+  }
+}

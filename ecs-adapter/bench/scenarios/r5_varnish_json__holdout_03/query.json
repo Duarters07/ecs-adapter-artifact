@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "url.full": "/"
+              }
+            },
+            {
+              "term": {
+                "url.original": "/"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "user_agent.original": "Mozilla/5.0 Safari/17.4"
+        }
+      }
+    ]
+  }
+}

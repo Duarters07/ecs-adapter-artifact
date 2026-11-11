@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.level": "info"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.port": 49320
+              }
+            },
+            {
+              "term": {
+                "source.port": 49320
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

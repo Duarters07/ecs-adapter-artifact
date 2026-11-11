@@ -1,0 +1,55 @@
+{
+  "category_hint": "authentication",
+  "contamination_risk": "none",
+  "extraction": {
+    "field_split": "; ",
+    "kind": "kv",
+    "value_split": "="
+  },
+  "family": "sg_linux_auth",
+  "fields": [
+    {
+      "ecs_field": "process.command_line",
+      "source_key": "command",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "event.outcome",
+      "source_key": "outcome",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "source.port",
+      "source_key": "port",
+      "type": "long"
+    },
+    {
+      "ecs_field": "source.ip",
+      "source_key": "src_ip",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "user.id",
+      "source_key": "uid",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "user.name",
+      "source_key": "user",
+      "type": "keyword"
+    }
+  ],
+  "level": 2,
+  "note": "Level-2 evaluation source: a TRAINING family rendered in a format no training source uses (corpus/drift_formats.py). Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_linux_auth_drift_kvsemi",
+  "split": "test_drift",
+  "timestamp": {
+    "formats": [
+      "ISO8601"
+    ],
+    "source_key": "time"
+  },
+  "transform": "drift:kvsemi",
+  "value_maps": []
+}

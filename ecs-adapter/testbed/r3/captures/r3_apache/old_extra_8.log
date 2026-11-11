@@ -1,0 +1,13 @@
+[Sun Oct 25 22:15:38 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/, referer: http://ops.local/tools
+[Sun Oct 25 22:15:38 2026] [error] [client 172.21.0.3] user postgres not found: /reports/, referer: http://finance.local/portal
+[Sun Oct 25 22:15:38 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/config.ini, referer: http://intranet.local/qa
+[Sun Oct 25 22:15:38 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/, referer: http://portal.local/ops
+[Sun Oct 25 22:15:38 2026] [error] [client 172.21.0.3] File does not exist: /usr/local/apache2/htdocs/reports/report.pdf, referer: http://finance.local/tools
+[Sun Oct 25 22:15:39 2026] [error] [client 172.21.0.3] user git not found: /reports/annual.pdf, referer: http://ops.local/hr
+[Sun Oct 25 22:15:39 2026] [error] [client 172.21.0.3] user test not found: /members/, referer: http://qa.local/ops
+[Sun Oct 25 22:15:39 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/report.pdf, referer: http://intranet.local/intranet
+[Sun Oct 25 22:15:39 2026] [error] [client 172.21.0.3] user rui: authentication failure for "/members/": Password Mismatch, referer: http://intranet.local/home
+[Sun Oct 25 22:15:39 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/users.csv
+[Sun Oct 25 22:15:40 2026] [error] [client 172.21.0.3] user vasco not found: /reports/annual.pdf, referer: http://portal.local/home
+[Sun Oct 25 22:15:40 2026] [error] [client 172.21.0.3] user elsa not found: /reports/, referer: http://portal.local/status
+[Sun Oct 25 22:15:40 2026] [error] [client 172.21.0.3] user ines: authentication failure for "/members/": Password Mismatch

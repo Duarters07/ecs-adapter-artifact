@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.ip": "172.21.64.33"
+              }
+            },
+            {
+              "term": {
+                "source.ip": "172.21.64.33"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "file.path": "/home/ana//q3.txt"
+        }
+      }
+    ]
+  }
+}

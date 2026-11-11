@@ -1,0 +1,8 @@
+{"raw": "2026-10-30 19:08:28.194 76a3926f06c0 Request: r7-web-target/"}
+{"raw": "2026-10-30 19:08:28.959 76a3926f06c0 Crunch: Blocked: http://r7-web-target/admin"}
+{"raw": "2026-10-30 19:08:30.547 76a3926f06c0 Crunch: DNS failure: http://no-such-host.lab/"}
+{"raw": "2026-10-30 19:08:29.734 76a3926f06c0 Request: r7-web-target/reports"}
+{"raw": "2026-10-30 19:08:30.546 76a3926f06c0 Request: no-such-host.lab/"}
+{"raw": "2026-10-30 19:08:31.355 76a3926f06c0 Request: r7-web-target/.env"}
+{"raw": "2026-10-30 19:08:28.959 76a3926f06c0 Request: r7-web-target/admin"}
+{"raw": "2026-10-30 19:08:31.355 76a3926f06c0 Crunch: Blocked: http://r7-web-target/.env"}

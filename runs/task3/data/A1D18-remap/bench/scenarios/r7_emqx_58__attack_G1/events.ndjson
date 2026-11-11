@@ -1,0 +1,4 @@
+{"raw": "2026-10-30T19:29:00.925291+00:00 [info] tag: AUTHZ, clientid: ops-mon, msg: authorization_permission_allowed, peername: 203.0.113.10:52656, username: admin0, topic: plant/#, source: file, action: SUBSCRIBE(Q0)"}
+{"raw": "2026-10-30T19:28:59.210919+00:00 [info] clientid: dev-ana, msg: terminate, peername: 203.0.113.10:57510, username: admin1, reason: {shutdown,normal}"}
+{"raw": "2026-10-30T19:29:02.924826+00:00 [info] clientid: ops-mon, msg: terminate, peername: 203.0.113.10:52656, username: admin2, reason: {shutdown,normal}"}
+{"raw": "2026-10-30T19:29:06.719959+00:00 [info] tag: AUTHZ, clientid: dev-hr, msg: authorization_permission_allowed, peername: 203.0.113.10:48346, username: admin3, topic: office/badge, source: file, action: PUBLISH(Q0,R0)"}

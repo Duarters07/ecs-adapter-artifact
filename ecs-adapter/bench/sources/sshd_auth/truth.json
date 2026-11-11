@@ -1,0 +1,45 @@
+{
+  "family": "openssh",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "notes": "FREE TEXT, SO THE CAPTURE NAMES ARE FIXED HERE. There are no keys in the line, so a grok pattern invents a name for every capture and field-level scoring can only align the model's captures with ground truth if both use the same names. The documentation states them, exactly as it states the column list for a CSV source. The names are a scoring convention, not part of the format. CONTAMINATION IS HIGH: the OpenSSH authentication line is one of the most reproduced strings in security writing, so success here is weak evidence of generalisation. It is included because the corpus needs one source whose outcome is a WORD requiring a value map, and because a held-out set made only of unusual formats would overstate the difficulty of the real population.",
+  "fields": [
+    {
+      "source_key": "outcome",
+      "ecs_field": "event.outcome",
+      "type": "keyword",
+      "role": "authentication_result",
+      "difficulty": "medium",
+      "note": "`Accepted` and `Failed` are the source's vocabulary. ECS event.outcome takes success, failure or unknown, so a value map is required and a bare rename puts a non-conformant value into the field."
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "offered_account",
+      "difficulty": "easy",
+      "note": "The account the client offered, which on a `Failed ... invalid user` line does not exist. ECS user.name is the name in the event, whether or not it resolves to an account."
+    },
+    {
+      "source_key": "src_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy"
+    },
+    {
+      "source_key": "src_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy"
+    }
+  ],
+  "source_id": "sshd_auth",
+  "split": "test",
+  "origin": "Produced by running the software, not copied from documentation or a public dataset. Captured on 2 October 2026 on the project's own Docker host.",
+  "scenarios": [
+    "sshd_auth__holdout_01",
+    "sshd_auth__holdout_02"
+  ]
+}

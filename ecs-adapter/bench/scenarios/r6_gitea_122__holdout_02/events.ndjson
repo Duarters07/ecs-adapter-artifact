@@ -1,0 +1,6 @@
+{"raw": "2026/10/27 16:27:50 ...eb/routing/logger.go:102:func1() [I] router: completed GET /api/v1/user/gpg_keys for 172.21.70.31:49838, 401 Unauthorized in 12.5ms @ v1/api.go:756(v1.Routes.apiAuth)"}
+{"raw": "2026/10/27 16:27:51 ...eb/routing/logger.go:102:func1() [I] router: completed GET /api/v1/user/starred for 172.21.70.32:33972, 200 OK in 13.6ms @ user/star.go:82(user.GetMyStarredRepos)"}
+{"raw": "2026/10/27 16:27:52 ...eb/routing/logger.go:102:func1() [I] router: completed GET /api/v1/user/orgs for 172.21.70.33:40116, 200 OK in 14.5ms @ org/org.go:52(org.ListMyOrgs)"}
+{"raw": "2026/10/27 16:27:50 ...rvices/auth/basic.go:139:Verify() [E] UserSignIn: user's password is invalid [uid: 3, name: scanner]"}
+{"raw": "2026/10/27 16:27:53 ...eb/routing/logger.go:102:func1() [I] router: completed GET /api/v1/user/teams for 172.21.70.88:34388, 401 Unauthorized in 0.4ms @ v1/api.go:756(v1.Routes.apiAuth)"}
+{"raw": "2026/10/27 16:27:52 ...eb/routing/logger.go:102:func1() [I] router: completed GET /api/v1/admin/hooks for 172.21.70.90:53296, 401 Unauthorized in 0.4ms @ v1/api.go:756(v1.Routes.apiAuth)"}

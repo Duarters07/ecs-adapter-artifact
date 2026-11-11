@@ -1,0 +1,23 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.port": 54492
+              }
+            },
+            {
+              "term": {
+                "source.port": 54492
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

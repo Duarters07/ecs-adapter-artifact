@@ -1,0 +1,123 @@
+{
+  "source_id": "r5_tomcat_json",
+  "family": "tomcat",
+  "split": "test_r5",
+  "category_hint": "web",
+  "contamination_risk": "high",
+  "origin": "Produced by running Apache Tomcat 10.1.61 (image tomcat:10.1-jre17), JsonAccessLogValve, combined pattern, not copied from documentation or a public dataset. Captured 2026-10-25T14:05:33Z on the author's laptop by testbed/r3/r5_tomcat.sh (logs/access.log in the container); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 6 (pool r5), NEW CONFIGURATION of r5_tomcat_common: JsonAccessLogValve with the combined pattern. The request line stays one JSON string, so a parser that only decodes the JSON cannot fill the method or the path.",
+  "fields": [
+    {
+      "source_key": "host",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "request_method",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "path",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "role": "request_uri",
+      "difficulty": "medium",
+      "note": "url.path acceptable: no query string in the capture.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "protocol",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "role": "protocol_version",
+      "difficulty": "medium",
+      "note": "Value convention: HTTP/1.1 on the wire, 1.1 in ECS - no rule filters on it.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "statusCode",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "role": "status_code",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "size",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "role": "response_body_size",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "requestHeaders.User-Agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "role": "user_agent",
+      "difficulty": "easy",
+      "source_key_aliases": [
+        "user_agent"
+      ],
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "requestHeaders.Referer",
+      "ecs_field": "http.request.referrer",
+      "type": "keyword",
+      "role": "referrer",
+      "difficulty": "medium",
+      "source_key_aliases": [
+        "referer"
+      ],
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "logicalUserName",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "ident_user",
+      "difficulty": "hard",
+      "note": "identd user, always '-'.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "request_line",
+      "difficulty": "hard",
+      "note": "The whole request line; its parts are method, path and protocol. Declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r5_tomcat_json__holdout_01",
+    "r5_tomcat_json__holdout_02",
+    "r5_tomcat_json__holdout_03",
+    "r5_tomcat_json__holdout_04"
+  ],
+  "round3": {
+    "pair": "r5_tomcat",
+    "role": "new"
+  }
+}

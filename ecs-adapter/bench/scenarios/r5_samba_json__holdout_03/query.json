@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.code": "4624"
+        }
+      },
+      {
+        "term": {
+          "event.reason": "NT_STATUS_OK"
+        }
+      }
+    ]
+  }
+}

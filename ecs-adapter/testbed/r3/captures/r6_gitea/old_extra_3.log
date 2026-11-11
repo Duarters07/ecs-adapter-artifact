@@ -1,0 +1,6 @@
+2026/10/27 17:02:33 [6ae0d929] router: completed GET /api/v1/user/notes.txt for 172.21.70.146:49972, 401 Unauthorized in 28.7ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:34 [6ae0d92a] router: completed GET /api/v1/user for 172.21.70.209:47192, 200 OK in 35.1ms @ user/user.go:109(user.GetAuthenticatedUser)
+2026/10/27 17:02:35 [6ae0d92b] router: completed GET /api/v1/notes.txt for 172.21.70.135:37748, 401 Unauthorized in 0.4ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:36 [6ae0d92c] router: completed GET /api/v1/repos/search for 172.21.70.140:60440, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:36 [6ae0d92c-2] router: completed GET /api/v1/repos/ana/secret for 172.21.70.237:44742, 401 Unauthorized in 31.0ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:37 [6ae0d92d] router: completed GET /api/v1/user/keys for 172.21.70.247:46784, 401 Unauthorized in 29.0ms @ auth/middleware.go:31(auth.APIAuth)

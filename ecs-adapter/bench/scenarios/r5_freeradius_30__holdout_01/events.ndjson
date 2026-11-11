@@ -1,0 +1,2 @@
+{"raw": "Sun Oct 25 15:07:50 2026 : Auth: (11) Login incorrect (pap: Cleartext password does not match \"known good\" password): [rui] (from client vpn-gw port 11)"}
+{"raw": "Sun Oct 25 15:07:53 2026 : Auth: (13) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [radius] (from client ap-floor1 port 12)"}

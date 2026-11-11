@@ -1,0 +1,43 @@
+Oct 25 22:28:48 web01 sshd[466]: Accepted password for tiago from 172.21.0.3 port 41486 ssh2
+Oct 25 22:28:48 web01 sshd[466]: pam_unix(sshd:session): session opened for user tiago(uid=1003) by (uid=0)
+Oct 25 22:28:48 web01 sshd[466]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:28:48 web01 sshd[466]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:28:48 web01 sshd[466]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:28:49 web01 sshd[466]: pam_unix(sshd:session): session closed for user tiago
+Oct 25 22:28:49 web01 sshd[474]: Accepted password for marta from 172.21.0.3 port 41490 ssh2
+Oct 25 22:28:49 web01 sshd[474]: pam_unix(sshd:session): session opened for user marta(uid=1005) by (uid=0)
+Oct 25 22:28:49 web01 sshd[474]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:28:49 web01 sshd[474]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:28:49 web01 sshd[474]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:28:49 web01 sshd[474]: pam_unix(sshd:session): session closed for user marta
+Oct 25 22:28:50 web01 sshd[482]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=rui
+Oct 25 22:28:52 web01 sshd[482]: Failed password for rui from 172.21.0.3 port 41506 ssh2
+Oct 25 22:28:55 web01 sshd[484]: Invalid user gabriela from 172.21.0.3 port 41518
+Oct 25 22:28:55 web01 sshd[484]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:28:55 web01 sshd[484]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:28:56 web01 sshd[484]: Failed password for invalid user gabriela from 172.21.0.3 port 41518 ssh2
+Oct 25 22:28:59 web01 sshd[486]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=marta
+Oct 25 22:29:01 web01 sshd[486]: Failed password for marta from 172.21.0.3 port 37598 ssh2
+Oct 25 22:29:02 web01 sshd[488]: Invalid user service from 172.21.0.3 port 37608
+Oct 25 22:29:02 web01 sshd[488]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:29:02 web01 sshd[488]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:29:04 web01 sshd[488]: Failed password for invalid user service from 172.21.0.3 port 37608 ssh2
+Oct 25 22:29:06 web01 sshd[490]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=rui
+Oct 25 22:29:09 web01 sshd[490]: Failed password for rui from 172.21.0.3 port 38244 ssh2
+Oct 25 22:29:11 web01 sshd[490]: Connection closed by authenticating user rui 172.21.0.3 port 38244 [preauth]
+Oct 25 22:29:11 web01 sshd[482]: Connection closed by authenticating user rui 172.21.0.3 port 41506 [preauth]
+Oct 25 22:29:11 web01 sshd[484]: Connection closed by invalid user gabriela 172.21.0.3 port 41518 [preauth]
+Oct 25 22:29:11 web01 sshd[486]: Connection closed by authenticating user marta 172.21.0.3 port 37598 [preauth]
+Oct 25 22:29:11 web01 sshd[488]: Connection closed by invalid user service 172.21.0.3 port 37608 [preauth]
+Oct 25 22:29:12 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1003 euid=0 tty= ruser=tiago rhost=  user=tiago
+Oct 25 22:29:14 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:29:14 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [tiago]
+Oct 25 22:29:14 web01 sudo:    tiago : user NOT in sudoers ; PWD=/home/tiago ; USER=root ; COMMAND=/usr/bin/journalctl -n 5
+Oct 25 22:29:15 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1003 euid=0 tty= ruser=tiago rhost=  user=tiago
+Oct 25 22:29:17 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:29:17 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [tiago]
+Oct 25 22:29:17 web01 sudo:    tiago : user NOT in sudoers ; PWD=/home/tiago ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 25 22:29:17 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=sofia rhost=  user=sofia
+Oct 25 22:29:19 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:29:19 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [sofia]
+Oct 25 22:29:19 web01 sudo:    sofia : user NOT in sudoers ; PWD=/home/sofia ; USER=root ; COMMAND=/usr/bin/apt-get update

@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "email.local_id": "5D7CDE91C14"
+        }
+      },
+      {
+        "term": {
+          "email.to.address": "marta@r4.local"
+        }
+      }
+    ]
+  }
+}

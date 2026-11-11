@@ -1,0 +1,25 @@
+Invalid user teresa from 172.21.0.3 port 57242
+Failed password for invalid user teresa from 172.21.0.3 port 57242 ssh2
+Invalid user pi from 172.21.0.3 port 57246
+Failed password for invalid user pi from 172.21.0.3 port 57246 ssh2
+Accepted password for ana from 172.21.0.3 port 57254 ssh2
+Failed password for ana from 172.21.0.3 port 57266 ssh2
+Invalid user teresa from 172.21.0.3 port 52466
+Failed password for invalid user teresa from 172.21.0.3 port 52466 ssh2
+Failed password for tiago from 172.21.0.3 port 52470 ssh2
+Invalid user ubuntu from 172.21.0.3 port 52474
+Failed password for invalid user ubuntu from 172.21.0.3 port 52474 ssh2
+Accepted password for tiago from 172.21.0.3 port 54400 ssh2
+Failed password for sofia from 172.21.0.3 port 54412 ssh2
+Invalid user guest from 172.21.0.3 port 54418
+Failed password for invalid user guest from 172.21.0.3 port 54418 ssh2
+Failed password for ines from 172.21.0.3 port 42570 ssh2
+Connection closed by authenticating user ines 172.21.0.3 port 42570 [preauth]
+Connection closed by invalid user guest 172.21.0.3 port 54418 [preauth]
+Connection closed by authenticating user tiago 172.21.0.3 port 52470 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 57266 [preauth]
+Connection closed by invalid user teresa 172.21.0.3 port 52466 [preauth]
+Connection closed by invalid user ubuntu 172.21.0.3 port 52474 [preauth]
+Connection closed by invalid user pi 172.21.0.3 port 57246 [preauth]
+Connection closed by authenticating user sofia 172.21.0.3 port 54412 [preauth]
+Connection closed by invalid user teresa 172.21.0.3 port 57242 [preauth]

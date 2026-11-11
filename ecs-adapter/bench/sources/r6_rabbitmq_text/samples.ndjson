@@ -1,0 +1,14 @@
+{"raw": "2026-10-27 15:29:55.983228+00:00 [info] <0.908.0> connection <0.908.0> (172.21.60.11:43524 -> 172.21.0.2:5672): user 'ana' authenticated and granted access to vhost '/'\u001b[0m"}
+{"raw": "\u001b[38;5;160m2026-10-27 15:29:59.285426+00:00 [error] <0.949.0> Error on AMQP connection <0.949.0> (172.21.60.13:60212 -> 172.21.0.2:5672, user: 'scanner', state: opening):\u001b[0m"}
+{"raw": "2026-10-27 15:30:03.916984+00:00 [info] <0.977.0> connection <0.977.0> (172.21.60.15:33212 -> 172.21.0.2:5672): user 'billing' authenticated and granted access to vhost 'billing'\u001b[0m"}
+{"raw": "2026-10-27 15:29:57.305838+00:00 [info] <0.924.0> connection <0.924.0> (172.21.60.12:34082 -> 172.21.0.2:5672): user 'rui' authenticated and granted access to vhost '/'\u001b[0m"}
+{"raw": "\u001b[38;5;160m2026-10-27 15:29:57.960549+00:00 [error] <0.934.0> Error on AMQP connection <0.934.0> (172.21.60.99:38970 -> 172.21.0.2:5672, state: starting):\u001b[0m"}
+{"raw": "2026-10-27 15:29:58.621977+00:00 [info] <0.939.0> connection <0.939.0> (172.21.60.98:58064 -> 172.21.0.2:5672): user 'guest' authenticated and granted access to vhost '/'\u001b[0m"}
+{"raw": "2026-10-27 15:30:04.574812+00:00 [info] <0.987.0> closing AMQP connection <0.987.0> (172.21.60.16:39236 -> 172.21.0.2:5672, vhost: 'none', user: 'ana')\u001b[0m"}
+{"raw": "2026-10-27 15:30:01.956892+00:00 [info] <0.957.0> accepting AMQP connection <0.957.0> (172.21.60.14:55142 -> 172.21.0.2:5672)\u001b[0m"}
+{"raw": "2026-10-27 15:30:03.247477+00:00 [info] <0.972.0> accepting AMQP connection <0.972.0> (172.21.60.97:60228 -> 172.21.0.2:5672)\u001b[0m"}
+{"raw": "2026-10-27 15:29:56.660848+00:00 [info] <0.919.0> accepting AMQP connection <0.919.0> (172.21.60.11:43532 -> 172.21.0.2:5672)\u001b[0m"}
+{"raw": "2026-10-27 15:30:02.595782+00:00 [info] <0.967.0> accepting AMQP connection <0.967.0> (172.21.60.14:55152 -> 172.21.0.2:5672)\u001b[0m"}
+{"raw": "\u001b[38;5;160m2026-10-27 15:29:57.960549+00:00 [error] <0.934.0> PLAIN login refused: user 'admin' - invalid credentials\u001b[0m"}
+{"raw": "\u001b[38;5;160m2026-10-27 15:29:59.285426+00:00 [error] <0.949.0> access to vhost 'billing' refused for user 'scanner'\u001b[0m"}
+{"raw": "\u001b[38;5;160m2026-10-27 15:30:03.248209+00:00 [error] <0.972.0> PLAIN login refused: user 'test' - invalid credentials\u001b[0m"}

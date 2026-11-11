@@ -1,0 +1,3 @@
+{"raw": "2026-10-25 15:01:54,671 files01 proftpd[13] 172.21.0.2 (172.21.52.31[172.21.52.31]): USER scanner (Login failed): Incorrect password"}
+{"raw": "2026-10-25 15:01:57,097 files01 proftpd[15] 172.21.0.2 (172.21.52.90[172.21.52.90]): USER upload: no such user found from 172.21.52.90 [172.21.52.90] to 172.21.0.2:21"}
+{"raw": "2026-10-25 15:02:05,902 files01 proftpd[18] 172.21.0.2 (172.21.52.88[172.21.52.88]): USER operator: no such user found from 172.21.52.88 [172.21.52.88] to 172.21.0.2:21"}

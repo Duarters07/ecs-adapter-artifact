@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T20:50:49Z","old":"Sendmail 8.17.1.9 (Debian bookworm)","new":"Sendmail 8.18.1 (Debian trixie)","collected_by":"rsyslog /var/log/mail.log: transaction lines (from/to/reject)"}

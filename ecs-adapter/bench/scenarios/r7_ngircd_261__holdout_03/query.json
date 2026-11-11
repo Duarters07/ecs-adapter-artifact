@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.pid": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "scan"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "scan"
+              }
+            },
+            {
+              "term": {
+                "user.name": "scan"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

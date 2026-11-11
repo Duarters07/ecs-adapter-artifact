@@ -1,0 +1,75 @@
+{
+  "source_id": "r5_freeradius_30",
+  "family": "freeradius",
+  "split": "train_r5",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running FreeRADIUS 3.0.21 (Debian 11), not copied from documentation or a public dataset. Captured 2026-10-25T15:08:24Z on the author's laptop by testbed/r3/r5_freeradius.sh (docker logs, stdout (freeradius -f -l stdout), Auth lines); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 6 (pool r5), OLD VERSION: FreeRADIUS 3.0.21, authentication log on.",
+  "fields": [
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "result",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "auth_outcome",
+      "difficulty": "hard",
+      "note": "event.outcome needs a value map (Login OK -> success); declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "nas",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "access_server",
+      "difficulty": "hard",
+      "note": "observer.name is the home, but `observer` is not offered for authentication.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "nas_port",
+      "ecs_field": null,
+      "type": "long",
+      "role": "access_server_port",
+      "difficulty": "hard",
+      "note": "A NAS port number, not a network port.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request_id",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "request_number",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r5_freeradius_30__holdout_01"
+  ],
+  "round3": {
+    "pair": "r5_freeradius",
+    "role": "old"
+  }
+}

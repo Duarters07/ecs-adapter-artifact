@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "Recipient address rejected: User unknown in local recipient table"
+        }
+      },
+      {
+        "term": {
+          "host.hostname": "mail"
+        }
+      }
+    ]
+  }
+}

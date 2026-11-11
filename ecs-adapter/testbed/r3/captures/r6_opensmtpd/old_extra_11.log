@@ -1,0 +1,15 @@
+0a6ddc84e8128277 smtp connected address=172.21.63.127 host=naughty_bhabha.r3-net
+0a6ddc84e8128277 smtp failed-command command="rcpt TO:<vasco@other.net>" result="550 Invalid recipient: <vasco@other.net>"
+0a6ddc84e8128277 smtp disconnected reason=disconnect
+0a6ddc85a62b31ef smtp connected address=172.21.63.200 host=unruffled_goldstine.r3-net
+0a6ddc85a62b31ef smtp failed-command command="rcpt TO:<mariana@lab.local>" result="550 Invalid recipient: <mariana@lab.local>"
+0a6ddc85a62b31ef smtp disconnected reason=disconnect
+0a6ddc869c0eb188 smtp connected address=172.21.63.161 host=funny_varahamihira.r3-net
+0a6ddc869c0eb188 smtp message msgid=db5d4e34 size=203 nrcpt=1 proto=ESMTP
+0a6ddc869c0eb188 smtp disconnected reason=quit
+0a6ddc8924a936b4 smtp connected address=172.21.63.185 host=elated_maxwell.r3-net
+0a6ddc8924a936b4 smtp failed-command command="rcpt TO:<bruno@other.org>" result="550 Invalid recipient: <bruno@other.org>"
+0a6ddc8924a936b4 smtp disconnected reason=disconnect
+0a6ddc8a299810b9 smtp connected address=172.21.63.201 host=quizzical_tu.r3-net
+0a6ddc8a299810b9 smtp failed-command command="rcpt TO:<raquel@target.org>" result="550 Invalid recipient: <raquel@target.org>"
+0a6ddc8a299810b9 smtp disconnected reason=disconnect

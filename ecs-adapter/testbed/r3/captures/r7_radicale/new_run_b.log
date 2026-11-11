@@ -1,0 +1,6 @@
+[2026-10-30 19:03:29 +0000] [1/Thread-6 (process_request_thread)] [WARNING] Login verification user not found (htpasswd): 'deploy'
+[2026-10-30 19:03:29 +0000] [1/Thread-6 (process_request_thread)] [WARNING] Failed login attempt from 172.21.80.31: 'deploy' (htpasswd)
+[2026-10-30 19:03:31 +0000] [1/Thread-7 (process_request_thread)] [INFO] Successful login: 'ana' (htpasswd)
+[2026-10-30 19:03:31 +0000] [1/Thread-8 (process_request_thread)] [WARNING] Login verification user not found (htpasswd): 'guest'
+[2026-10-30 19:03:31 +0000] [1/Thread-8 (process_request_thread)] [WARNING] Failed login attempt from 172.21.80.213: 'guest' (htpasswd)
+[2026-10-30 19:03:33 +0000] [1/Thread-9 (process_request_thread)] [INFO] Successful login: 'rui' (htpasswd)

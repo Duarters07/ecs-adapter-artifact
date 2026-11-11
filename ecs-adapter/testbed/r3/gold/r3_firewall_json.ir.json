@@ -1,0 +1,257 @@
+{
+  "source_id": "r3_firewall_json",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "json"
+  },
+  "fields": [
+    {
+      "source_key": "dvc",
+      "ecs_field": "observer.hostname",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "oob.prefix",
+      "ecs_field": "rule.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "oob.in",
+      "ecs_field": "observer.ingress.interface.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "src_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "dest_ip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "src_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "dest_port",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "ip.protocol",
+      "ecs_field": "network.iana_number",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "mac.saddr.str",
+      "ecs_field": "source.mac",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "mac.daddr.str",
+      "ecs_field": "destination.mac",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "icmp.code",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "icmp.csum",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "icmp.echoid",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "icmp.echoseq",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "icmp.type",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "ip.csum",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "ip.fragoff",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "ip.id",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "ip.ihl",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "ip.tos",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "ip.totlen",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "ip.ttl",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "mac.str",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "oob.family",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "oob.hook",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "oob.ifindex_in",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "oob.mark",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "oob.out",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "oob.protocol",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "oob.time.sec",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "oob.time.usec",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "raw.label",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "raw.mac.addrlen",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "raw.mac_len",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "raw.pktcount",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "raw.pktlen",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "raw.type",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.ack",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.ackseq",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.csum",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.fin",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.offset",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.psh",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.res1",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.res2",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.reserved",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.rst",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.seq",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.syn",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.urg",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tcp.window",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "timestamp",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "udp.csum",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "udp.len",
+      "reason": "carries no ECS field this source maps"
+    }
+  ],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "network"
+    ],
+    "event.type": [
+      "connection"
+    ],
+    "event.dataset": "netfilter.ulogd"
+  }
+}

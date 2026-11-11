@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "host.name": "ws-it-001"
+        }
+      }
+    ]
+  }
+}

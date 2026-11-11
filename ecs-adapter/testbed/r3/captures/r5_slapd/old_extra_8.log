@@ -1,0 +1,27 @@
+6ade8a27 conn=1042 fd=11 ACCEPT from IP=172.21.51.213:51350 (IP=0.0.0.0:389)
+6ade8a27 conn=1042 op=0 BIND dn="" method=128
+6ade8a27 conn=1042 op=0 RESULT tag=97 err=0 text=
+6ade8a27 conn=1042 op=1 SRCH base="dc=lab,dc=example" scope=2 deref=0 filter="(objectClass=organizationalUnit)"
+6ade8a27 conn=1042 op=1 SEARCH RESULT tag=101 err=0 nentries=1 text=
+6ade8a29 conn=1043 fd=11 ACCEPT from IP=172.21.51.173:52002 (IP=0.0.0.0:389)
+6ade8a29 conn=1043 op=0 BIND dn="uid=olga,ou=people,dc=lab,dc=example" method=128
+6ade8a29 conn=1043 op=0 RESULT tag=97 err=49 text=
+6ade8a2a conn=1044 fd=11 ACCEPT from IP=172.21.51.147:40684 (IP=0.0.0.0:389)
+6ade8a2a conn=1044 op=0 BIND dn="cn=admin,dc=lab,dc=example" method=128
+6ade8a2a conn=1044 op=0 RESULT tag=97 err=49 text=
+6ade8a2b conn=1045 fd=11 ACCEPT from IP=172.21.51.169:43666 (IP=0.0.0.0:389)
+6ade8a2b conn=1045 op=0 BIND dn="uid=svc-backup,ou=people,dc=lab,dc=example" method=128
+6ade8a2b conn=1045 op=0 BIND dn="uid=svc-backup,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ade8a2b conn=1045 op=0 RESULT tag=97 err=0 text=
+6ade8a2b conn=1045 op=1 RESULT oid= err=0 text=
+6ade8a2c conn=1046 fd=11 ACCEPT from IP=172.21.51.227:53654 (IP=0.0.0.0:389)
+6ade8a2c conn=1046 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" method=128
+6ade8a2c conn=1046 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ade8a2c conn=1046 op=0 RESULT tag=97 err=0 text=
+6ade8a2c conn=1046 op=1 SRCH base="ou=people,dc=lab,dc=example" scope=2 deref=0 filter="(uid=*)"
+6ade8a2c conn=1046 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=
+6ade8a2d conn=1047 fd=11 ACCEPT from IP=172.21.51.100:39228 (IP=0.0.0.0:389)
+6ade8a2d conn=1047 op=0 BIND dn="" method=128
+6ade8a2d conn=1047 op=0 RESULT tag=97 err=0 text=
+6ade8a2d conn=1047 op=1 SRCH base="dc=lab,dc=example" scope=2 deref=0 filter="(objectClass=inetOrgPerson)"
+6ade8a2d conn=1047 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=

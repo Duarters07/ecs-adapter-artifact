@@ -1,0 +1,6 @@
+Sun Oct 25 23:05:06 2026 : Auth: (6) Login incorrect (pap: Cleartext password does not match "known good" password): [rui] (from client vpn-gw port 60)
+Sun Oct 25 23:05:08 2026 : Auth: (7) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [diogo] (from client vpn-gw port 47)
+Sun Oct 25 23:05:10 2026 : Auth: (8) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [admin] (from client vpn-gw port 34)
+Sun Oct 25 23:05:12 2026 : Auth: (9) Login incorrect (pap: Cleartext password does not match "known good" password): [vpn-ops] (from client vpn-gw port 14)
+Sun Oct 25 23:05:14 2026 : Auth: (10) Login OK: [wifi-guest] (from client ap-floor1 port 57)
+Sun Oct 25 23:05:14 2026 : Auth: (11) Login OK: [vpn-ops] (from client vpn-gw port 25)

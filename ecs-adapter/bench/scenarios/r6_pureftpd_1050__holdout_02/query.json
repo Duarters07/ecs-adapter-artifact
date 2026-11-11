@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "file.size": 7
+        }
+      },
+      {
+        "term": {
+          "host.hostname": "files02"
+        }
+      }
+    ]
+  }
+}

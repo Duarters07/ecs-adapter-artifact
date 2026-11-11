@@ -1,0 +1,221 @@
+{
+  "source_id": "r7_rspamd_3121",
+  "family": "rspamd",
+  "split": "test_r7",
+  "category_hint": "email",
+  "contamination_risk": "high",
+  "origin": "Produced by running Rspamd 3.12.1 (Debian 13), not copied from documentation or a public dataset. Captured 2026-10-30T19:24:40Z on the author's laptop by testbed/r3/r7_rspamd.sh (docker logs (console, level info): the per-task result line); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), NEW VERSION of r7_rspamd_34. CONTROL: the task line's layout is unchanged (symbol sets and scores differ).",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "sender",
+      "ecs_field": "email.from.address",
+      "type": "keyword",
+      "role": "sender",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "rcpts",
+      "ecs_field": "email.to.address",
+      "type": "keyword",
+      "role": "recipient",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "verdict_action",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "message_id",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "message_id",
+      "difficulty": "hard",
+      "note": "email.message_id is right in kind, but the value is always `undef` in the lab; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "score",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "spam_score",
+      "difficulty": "hard",
+      "note": "event.risk_score is arguable; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "required_score",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "threshold",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "is_spam",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "is_spam",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "symbols",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "matched_rules",
+      "difficulty": "hard",
+      "note": "A list with scores; rule.name holds one name. Declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "mime_rcpts",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "header_recipient",
+      "difficulty": "hard",
+      "note": "email.to.address already holds the envelope recipient.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "digest",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "digest",
+      "difficulty": "hard",
+      "note": "Not a file hash; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "size",
+      "ecs_field": null,
+      "type": "long",
+      "role": "message_size",
+      "difficulty": "hard",
+      "note": "email has no plain size field in ECS 8.11.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "time",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "scan_ms",
+      "difficulty": "hard",
+      "note": "event.duration is in nanoseconds; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dns_req",
+      "ecs_field": null,
+      "type": "long",
+      "role": "dns_requests",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "worker",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "worker_type",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "tag",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "task_tag",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "module",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "log_module",
+      "difficulty": "hard",
+      "note": "log.logger is arguable; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "function",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "log_function",
+      "difficulty": "hard",
+      "note": "log.origin.function is arguable; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "metric",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "metric",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_rspamd_3121__holdout_01",
+    "r7_rspamd_3121__holdout_02"
+  ],
+  "round3": {
+    "pair": "r7_rspamd",
+    "role": "new"
+  }
+}

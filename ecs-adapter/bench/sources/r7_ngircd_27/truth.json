@@ -1,0 +1,151 @@
+{
+  "source_id": "r7_ngircd_27",
+  "family": "ngircd",
+  "split": "test_r7",
+  "category_hint": "network",
+  "contamination_risk": "high",
+  "origin": "Produced by running ngIRCd 27 (Debian 13), not copied from documentation or a public dataset. Captured 2026-10-30T19:05:27Z on the author's laptop by testbed/r3/r7_ngircd.sh (docker logs (console, -n): connection, password, OPER and closing lines); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), NEW VERSION of r7_ngircd_261. A CONTROL: the kept lines are unchanged.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "note": "client.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "nick",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "oper_name",
+      "ecs_field": "user.effective.name",
+      "type": "keyword",
+      "role": "privileged_account",
+      "difficulty": "hard",
+      "note": "The operator account the user takes on; leaving it unmapped is acceptable.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.syslog.severity.code",
+      "type": "long",
+      "role": "severity",
+      "difficulty": "medium",
+      "note": "log.level is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "ident",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "ident",
+      "difficulty": "hard",
+      "note": "The IRC user name; user.name holds the nick.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "conn",
+      "ecs_field": null,
+      "type": "long",
+      "role": "connection_id",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "socket",
+      "ecs_field": null,
+      "type": "long",
+      "role": "socket",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes_in",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "bytes_in",
+      "difficulty": "hard",
+      "note": "Rounded kilobytes; not an ECS byte count.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes_out",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "bytes_out",
+      "difficulty": "hard",
+      "note": "As bytes_in.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "uptime",
+      "ecs_field": null,
+      "type": "long",
+      "role": "uptime",
+      "difficulty": "hard",
+      "note": "Seconds since start, not a time; @timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_ngircd_27__holdout_01",
+    "r7_ngircd_27__holdout_02",
+    "r7_ngircd_27__holdout_03",
+    "r7_ngircd_27__holdout_04"
+  ],
+  "round3": {
+    "pair": "r7_ngircd",
+    "role": "new"
+  }
+}

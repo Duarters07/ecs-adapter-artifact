@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.level": "info"
+        }
+      },
+      {
+        "term": {
+          "source.port": 34464
+        }
+      }
+    ]
+  }
+}

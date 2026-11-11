@@ -1,0 +1,4 @@
+{"raw": "2026-10-25 15:41:41 phone-sofia/203.0.113.14:47411 MULTI_sva: pool returned IPv4=10.8.0.14, IPv6=(Not enabled)"}
+{"raw": "2026-10-25 15:41:33 laptop-ana/203.0.113.14:33209 MULTI_sva: pool returned IPv4=10.8.0.6, IPv6=(Not enabled)"}
+{"raw": "2026-10-25 15:41:34 laptop-rui/203.0.113.14:54710 MULTI_sva: pool returned IPv4=10.8.0.10, IPv6=(Not enabled)"}
+{"raw": "2026-10-25 15:41:49 203.0.113.14:35129 SENT CONTROL [nas-backup]: 'AUTH_FAILED' (status=1)"}

@@ -1,0 +1,6 @@
+2026/10/27 17:02:15 [6ae0d917] router: completed GET /api/v1/backup.tar for 172.21.70.163:36860, 401 Unauthorized in 0.8ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:16 [6ae0d918] router: completed GET /api/v1/admin/report.pdf for 172.21.70.150:33312, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:16 [6ae0d918-2] router: completed GET /api/v1/data.json for 172.21.70.136:42432, 404 Not Found in 31.8ms @ context/auth.go:112(context.ToggleAPI)
+2026/10/27 17:02:18 [6ae0d91a] router: completed GET /api/v1/user/app.js for 172.21.70.186:46172, 401 Unauthorized in 29.1ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:21 [6ae0d91d] router: completed GET /api/v1/data.json for 172.21.70.146:51550, 401 Unauthorized in 0.4ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:22 [6ae0d91e] router: completed GET /api/v1/admin.php for 172.21.70.207:46998, 401 Unauthorized in 0.4ms @ auth/middleware.go:31(auth.APIAuth)

@@ -1,0 +1,13 @@
+{
+ "expected_hits": 9,
+ "targets": [
+  "source.port",
+  "source.ip"
+ ],
+ "labels": [
+  "attacker_vpn",
+  "foothold"
+ ],
+ "message_type": 0,
+ "origin": "AIT-LDS v2.1 fox, vpn/logs/openvpn.log: 9 lines labelled ['attacker_vpn', 'foothold'] and 60 unlabelled lines (seed 0); expected_hits counted on the reference parser's parse"
+}

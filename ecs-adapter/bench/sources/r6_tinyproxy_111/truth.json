@@ -1,0 +1,116 @@
+{
+  "source_id": "r6_tinyproxy_111",
+  "family": "tinyproxy",
+  "split": "test_r6",
+  "category_hint": "network",
+  "contamination_risk": "high",
+  "origin": "Produced by running Tinyproxy 1.11.1 (Debian 12), not copied from documentation or a public dataset. Captured 2026-10-27T16:11:37Z on the author's laptop by testbed/r3/r6_tinyproxy.sh (/var/log/tinyproxy/tinyproxy.log, LogLevel Info: connect, request, unauthorized, established lines); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 8 (pool r6), NEW VERSION of r6_tinyproxy_110. Captured as an upgrade; see T3 for whether the format changed.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "http_method",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "url",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "role": "url",
+      "difficulty": "easy",
+      "note": "url.full is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http_version",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "role": "http_version",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dest_host",
+      "ecs_field": "destination.domain",
+      "type": "keyword",
+      "role": "upstream_host",
+      "difficulty": "medium",
+      "note": "server.domain is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "fd",
+      "ecs_field": null,
+      "type": "long",
+      "role": "file_descriptor",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_name",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "client_name",
+      "difficulty": "hard",
+      "note": "A random container name here; source.domain would be wrong.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r6_tinyproxy_111__holdout_03"
+  ],
+  "round3": {
+    "pair": "r6_tinyproxy",
+    "role": "new"
+  }
+}

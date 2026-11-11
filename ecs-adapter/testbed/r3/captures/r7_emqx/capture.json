@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T19:29:10Z","old":"EMQX 4.4.19 (official image emqx/emqx:4.4.19)","new":"EMQX 5.8.6 (official image emqx/emqx:5.8.6)","collected_by":"docker logs (console, level info): publish, subscribe, authorization and terminate lines"}

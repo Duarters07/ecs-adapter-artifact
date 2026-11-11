@@ -1,0 +1,16 @@
+{
+ "bool": {
+  "filter": [
+   {
+    "term": {
+     "user_agent.original": "python-requests/2.27.1"
+    }
+   },
+   {
+    "term": {
+     "source.ip": "172.17.130.196"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "url.path": "/admin/settings"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "deploy"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "deploy"
+              }
+            },
+            {
+              "term": {
+                "user.name": "deploy"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

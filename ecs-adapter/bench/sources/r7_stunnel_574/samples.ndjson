@@ -1,0 +1,14 @@
+{"raw": "2026.10.30 21:21:34 LOG5[0]: Service [echo-tls] accepted connection from 172.21.91.11:48210"}
+{"raw": "2026.10.30 21:21:36 LOG4[1]: Rejected by CERT at depth=0: CN=mallory, O=Lab"}
+{"raw": "2026.10.30 21:21:38 LOG3[3]: SSL_accept: tls_process_client_certificate@../ssl/statem/statem_srvr.c:3764: error:0A0000C7:SSL routines::peer did not return a certificate"}
+{"raw": "2026.10.30 21:21:37 LOG5[2]: Connection closed: 20 byte(s) sent to TLS, 20 byte(s) sent to socket"}
+{"raw": "2026.10.30 21:21:40 LOG5[4]: Service [echo-tls] accepted connection from 172.21.91.13:43214"}
+{"raw": "2026.10.30 21:21:36 LOG5[1]: Connection reset/closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket"}
+{"raw": "2026.10.30 21:21:34 LOG5[0]: Certificate accepted at depth=0: CN=ana, O=Lab"}
+{"raw": "2026.10.30 21:21:36 LOG5[1]: Service [echo-tls] accepted connection from 172.21.91.211:36344"}
+{"raw": "2026.10.30 21:21:36 LOG4[1]: CERT: Pre-verification error: unable to get local issuer certificate"}
+{"raw": "2026.10.30 21:21:36 LOG3[1]: SSL_accept: tls_process_client_certificate@../ssl/statem/statem_srvr.c:3777: error:0A000086:SSL routines::certificate verify failed"}
+{"raw": "2026.10.30 21:21:37 LOG5[2]: Service [echo-tls] accepted connection from 172.21.91.12:37436"}
+{"raw": "2026.10.30 21:21:38 LOG5[3]: Service [echo-tls] accepted connection from 172.21.91.212:58898"}
+{"raw": "2026.10.30 21:21:37 LOG5[2]: Certificate accepted at depth=0: CN=rui, O=Lab"}
+{"raw": "2026.10.30 21:21:40 LOG5[4]: Certificate accepted at depth=0: CN=monitor, O=Lab"}

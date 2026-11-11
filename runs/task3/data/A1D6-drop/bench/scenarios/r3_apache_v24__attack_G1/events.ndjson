@@ -1,0 +1,4 @@
+{"raw": "[Mon Oct 19 09:19:03.921842 2026] [auth_basic:error] [pid 21:tid 28] [client 203.0.113.14:40706] AH01618: user admin0 not found: /members/q3.html"}
+{"raw": "[Mon Oct 19 09:19:05.147408 2026] [auth_basic:error] [pid 20:tid 59] [client 203.0.113.14:40760] AH01617: user admin1: authentication failure for \"/members/notes.txt\": Password Mismatch, referer: http://intranet.local/wiki"}
+{"raw": "[Mon Oct 19 09:19:04.125592 2026] [auth_basic:error] [pid 21:tid 35] [client 203.0.113.14:40710] AH01618: user admin2 not found: /members/"}
+{"raw": "[Mon Oct 19 09:19:04.738362 2026] [auth_basic:error] [pid 20:tid 52] [client 203.0.113.14:40736] AH01618: user admin3 not found: /members/"}

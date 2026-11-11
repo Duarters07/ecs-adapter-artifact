@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-25T15:08:24Z","old":"Debian 11 FreeRADIUS Version 3.0.21 (packages from snapshot.debian.org 2026-08-24)","new":"Debian 13 FreeRADIUS Version 3.2.7","collected_by":"docker logs, stdout (freeradius -f -l stdout), Auth lines"}

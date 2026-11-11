@@ -1,0 +1,6 @@
+2026/10/27 17:03:01 [6ae0d945] router: completed GET /api/v1/user/repos for 172.21.70.205:45404, 200 OK in 29.7ms @ user/repo.go:86(user.ListMyRepos)
+2026/10/27 17:03:01 [6ae0d945-2] router: completed GET /api/v1/admin/admin.php for 172.21.70.229:53904, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:02 [6ae0d946] router: completed GET /api/v1/user/index.html for 172.21.70.116:33088, 401 Unauthorized in 29.9ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:03 [6ae0d947] router: completed GET /api/v1/user for 172.21.70.148:39916, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:04 [6ae0d948] router: completed GET /api/v1/user for 172.21.70.113:52508, 401 Unauthorized in 30.9ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:05 [6ae0d949] router: completed GET /api/v1/user for 172.21.70.116:33090, 401 Unauthorized in 0.4ms @ auth/middleware.go:31(auth.APIAuth)

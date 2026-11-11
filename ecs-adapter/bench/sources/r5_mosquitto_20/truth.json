@@ -1,0 +1,103 @@
+{
+  "source_id": "r5_mosquitto_20",
+  "family": "mosquitto",
+  "split": "test_r5",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Eclipse Mosquitto 2.0.22 (image eclipse-mosquitto:2.0), not copied from documentation or a public dataset. Captured 2026-10-25T14:45:29Z on the author's laptop by testbed/r3/r5_mosquitto.sh (docker logs (log_dest stdout)); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 6 (pool r5), NEW VERSION of r5_mosquitto_16. Measured: addresses gain the client port (`ip:port`), and a refused login becomes `Client <id> disconnected, not authorised.`",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "listener_port",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "role": "server_port",
+      "difficulty": "medium",
+      "note": "server.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_id",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "client_identifier",
+      "difficulty": "hard",
+      "note": "An MQTT client id names a session, not a host or an account. Declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "protocol_version",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "protocol_level",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "clean_session",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_flag",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "keepalive",
+      "ecs_field": null,
+      "type": "long",
+      "role": "keepalive",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "disconnect_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r5_mosquitto_20__holdout_01",
+    "r5_mosquitto_20__holdout_02",
+    "r5_mosquitto_20__holdout_03"
+  ],
+  "round3": {
+    "pair": "r5_mosquitto",
+    "role": "new"
+  }
+}

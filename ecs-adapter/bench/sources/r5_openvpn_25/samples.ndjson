@@ -1,0 +1,11 @@
+{"raw": "2026-10-25 15:40:42 172.21.58.99:54686 VERIFY ERROR: depth=0, error=unable to get local issuer certificate: CN=stolen-device, serial=114736102961999147963216122383052156434275343593"}
+{"raw": "2026-10-25 15:40:41 172.21.58.11:52405 SENT CONTROL [laptop-ana]: 'AUTH_FAILED' (status=1)"}
+{"raw": "2026-10-25 15:40:42 172.21.58.12:52952 VERIFY OK: depth=1, CN=Lab VPN CA"}
+{"raw": "2026-10-25 15:40:48 phone-sofia/172.21.58.13:56592 MULTI_sva: pool returned IPv4=10.8.0.14, IPv6=(Not enabled)"}
+{"raw": "2026-10-25 15:40:57 172.21.58.14:43580 VERIFY OK: depth=0, CN=laptop-rui"}
+{"raw": "2026-10-25 15:40:59 172.21.58.98:34020 TLS Error: TLS handshake failed"}
+{"raw": "2026-10-25 15:41:04 172.21.58.15:57499 VERIFY OK: depth=0, CN=laptop-ana"}
+{"raw": "2026-10-25 15:40:39 laptop-ana/172.21.58.11:38009 MULTI_sva: pool returned IPv4=10.8.0.6, IPv6=(Not enabled)"}
+{"raw": "2026-10-25 15:40:42 laptop-rui/172.21.58.12:52952 MULTI_sva: pool returned IPv4=10.8.0.10, IPv6=(Not enabled)"}
+{"raw": "2026-10-25 15:40:57 172.21.58.14:47810 TLS Auth Error: Auth Username/Password verification failed for peer"}
+{"raw": "2026-10-25 15:40:48 172.21.58.13:56592 VERIFY OK: depth=0, CN=phone-sofia"}

@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "user_agent.original": "Linphone/5.2.5 (belle-sip/5.2.94)"
+        }
+      }
+    ]
+  }
+}

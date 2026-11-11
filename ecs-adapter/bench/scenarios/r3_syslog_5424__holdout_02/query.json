@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "user NOT in sudoers"
+        }
+      },
+      {
+        "term": {
+          "host.hostname": "web01"
+        }
+      }
+    ]
+  }
+}

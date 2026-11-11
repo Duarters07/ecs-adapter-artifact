@@ -1,0 +1,8 @@
+{"raw": "<W>2026-10-30 21:20:18.924 1 => <10:frank(-1)> Rejected connection from 172.21.91.21:47788: Invalid server password"}
+{"raw": "<W>2026-10-30 21:20:17.623 1 => <9:eva(-1)> Connection closed: The remote host closed the connection [1]"}
+{"raw": "<W>2026-10-30 21:20:23.551 1 => <12:helena(-1)> Rejected connection from 172.21.91.204:58574: Invalid server password"}
+{"raw": "<W>2026-10-30 21:20:21.232 1 => <11:gil(-1)> Authenticated"}
+{"raw": "<W>2026-10-30 21:20:18.936 1 => <10:frank(-1)> Connection closed:  [-1]"}
+{"raw": "<W>2026-10-30 21:20:16.601 1 => <9:eva(-1)> Authenticated"}
+{"raw": "<W>2026-10-30 21:20:22.245 1 => <11:gil(-1)> Connection closed: The remote host closed the connection [1]"}
+{"raw": "<W>2026-10-30 21:20:23.563 1 => <12:helena(-1)> Connection closed:  [-1]"}

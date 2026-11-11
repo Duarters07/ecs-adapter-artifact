@@ -1,0 +1,72 @@
+{
+  "source_id": "r6_vaultwarden_125",
+  "family": "vaultwarden",
+  "split": "train_r6",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Vaultwarden 1.25.2 (official image), not copied from documentation or a public dataset. Captured 2026-10-27T16:24:10Z on the author's laptop by testbed/r3/r6_vaultwarden.sh (docker logs, LOG_LEVEL=warn, EXTENDED_LOGGING=true; identity and admin errors); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 8 (pool r6), OLD VERSION: Vaultwarden 1.25.2, LOG_LEVEL=warn, EXTENDED_LOGGING.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "note": "user.email is equivalent here (an e-mail address).",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "logger",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "role": "logger",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r6_vaultwarden_125__holdout_01",
+    "r6_vaultwarden_125__holdout_03"
+  ],
+  "round3": {
+    "pair": "r6_vaultwarden",
+    "role": "old"
+  }
+}

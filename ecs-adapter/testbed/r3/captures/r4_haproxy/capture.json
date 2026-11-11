@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-22T08:34:53Z","old":"haproxy:2.8-alpine, option httplog","new":"haproxy:2.8-alpine, JSON log-format","collected_by":"docker logs, stdout (log stdout format raw)"}

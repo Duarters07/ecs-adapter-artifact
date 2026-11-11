@@ -1,0 +1,7 @@
+{"raw": "2026/10/27 16:04:26 [14] auth failed on module backup from UNDETERMINED (172.21.65.11) for ana: password mismatch"}
+{"raw": "2026/10/27 16:04:27 [15] auth failed on module finance from UNDETERMINED (172.21.65.12) for rui: no matching rule"}
+{"raw": "2026/10/27 16:04:28 [17] rsync allowed access on module public from UNDETERMINED (172.21.65.13)"}
+{"raw": "2026/10/27 16:04:29 [18] unknown module 'www' tried from UNDETERMINED (172.21.65.91)"}
+{"raw": "2026/10/27 16:04:28 [16] connect from UNDETERMINED (172.21.65.92)"}
+{"raw": "2026/10/27 16:04:26 [13] connect from UNDETERMINED (172.21.65.11)"}
+{"raw": "2026/10/27 16:04:28 [16] auth failed on module backup from UNDETERMINED (172.21.65.92) for monitor: no matching rule"}

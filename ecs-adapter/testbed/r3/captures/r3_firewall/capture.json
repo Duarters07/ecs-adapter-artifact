@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-19T23:44:40Z","old":"Debian 12 ulogd2, NFLOG -> LOGEMU (iptables LOG text)","new":"Debian 12 ulogd2, NFLOG -> JSON (ulogd2-json)","collected_by":"/var/log/ulog/r3.log inside the firewall container"}

@@ -1,0 +1,140 @@
+{
+  "source_id": "r7_sendmail_8179",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^%{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} (?<program>sendmail)\\[%{INT:pid}\\]: (?<queue_id>[0-9A-Za-z]{14}): from=<%{DATA:sender}>, size=%{INT:size}, class=%{INT:class}, nrcpts=%{INT:nrcpts}, (?:msgid=<%{DATA:msgid}>, )?proto=%{WORD:proto}, daemon=%{DATA:daemon}, relay=%{NOTSPACE:relay_host} \\[%{IP:client_ip}\\]$",
+    "alternatives": [
+      "^%{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} (?<program>sendmail)\\[%{INT:pid}\\]: (?<queue_id>[0-9A-Za-z]{14}): to=<%{DATA:rcpt}>, delay=(?<delay>[\\d:+]+), xdelay=(?<xdelay>[\\d:+]+), mailer=%{DATA:mailer}, pri=%{INT:pri}, dsn=(?<dsn>[\\d.]+), stat=%{GREEDYDATA:stat}$",
+      "^%{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} (?<program>sendmail)\\[%{INT:pid}\\]: (?<queue_id>[0-9A-Za-z]{14}): <%{DATA:rcpt}>\\.\\.\\. (?<reason>User unknown)$",
+      "^%{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} (?<program>sendmail)\\[%{INT:pid}\\]: (?<queue_id>[0-9A-Za-z]{14}): ruleset=%{DATA:ruleset}, arg1=<%{DATA:rcpt}>, relay=%{NOTSPACE:relay_host} \\[%{IP:client_ip}\\], reject=%{GREEDYDATA:reason}$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "relay_host",
+      "ecs_field": "source.domain",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "sender",
+      "ecs_field": "email.from.address",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "rcpt",
+      "ecs_field": "email.to.address",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "queue_id",
+      "ecs_field": "email.local_id",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "msgid",
+      "ecs_field": "email.message_id",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "ruleset",
+      "ecs_field": "rule.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "program",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "dsn",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "size",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "class",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "nrcpts",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "proto",
+      "reason": "declined"
+    },
+    {
+      "source_key": "daemon",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "delay",
+      "reason": "event.duration is nanoseconds; declined"
+    },
+    {
+      "source_key": "xdelay",
+      "reason": "as delay"
+    },
+    {
+      "source_key": "mailer",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "pri",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "stat",
+      "reason": "event.outcome would need a value map; declined"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "email",
+      "network"
+    ],
+    "event.dataset": "sendmail.log"
+  }
+}

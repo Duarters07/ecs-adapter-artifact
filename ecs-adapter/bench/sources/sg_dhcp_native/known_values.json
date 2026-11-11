@@ -1,0 +1,11 @@
+{
+  "note": "NOT ground truth. Values the sample lines carry, taken from SIEMgen's per-line truth; every line in samples.ndjson is real.",
+  "origin": "corpus/siemgen_corpus.py",
+  "probe_line": false,
+  "source_id": "sg_dhcp_native",
+  "values": {
+    "host.name": "ws-general-003",
+    "source.ip": "10.10.5.14",
+    "source.mac": "02:3f:f8:b2:e4:6f"
+  }
+}

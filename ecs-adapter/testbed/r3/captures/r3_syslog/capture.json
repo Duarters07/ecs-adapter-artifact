@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-19T23:41:57Z","old":"Debian 12 sshd + sudo, rsyslog RSYSLOG_TraditionalFileFormat","new":"Debian 12 sshd + sudo, rsyslog RSYSLOG_SyslogProtocol23Format (RFC 5424)","collected_by":"/var/log/auth.log inside the container (auth,authpriv.*)"}

@@ -1,0 +1,16 @@
+2026/10/27 16:49:11 [60] connect from UNDETERMINED (172.21.65.117)
+2026/10/27 16:49:11 [60] rsync allowed access on module backup from UNDETERMINED (172.21.65.117)
+2026/10/27 16:49:11 [60] auth failed on module backup from UNDETERMINED (172.21.65.117) for monitor: no matching rule
+2026/10/27 16:49:11 [61] connect from UNDETERMINED (172.21.65.117)
+2026/10/27 16:49:11 [61] rsync allowed access on module backup from UNDETERMINED (172.21.65.117)
+2026/10/27 16:49:11 [61] auth failed on module backup from UNDETERMINED (172.21.65.117) for scanner: no matching rule
+2026/10/27 16:49:12 [62] connect from UNDETERMINED (172.21.65.114)
+2026/10/27 16:49:12 [62] rsync allowed access on module finance from UNDETERMINED (172.21.65.114)
+2026/10/27 16:49:12 [62] auth failed on module finance from UNDETERMINED (172.21.65.114) for ana: password mismatch
+2026/10/27 16:49:13 [63] connect from UNDETERMINED (172.21.65.212)
+2026/10/27 16:49:13 [63] unknown module 'etc' tried from UNDETERMINED (172.21.65.212)
+2026/10/27 16:49:13 [64] connect from UNDETERMINED (172.21.65.201)
+2026/10/27 16:49:13 [64] rsync allowed access on module backup from UNDETERMINED (172.21.65.201)
+2026/10/27 16:49:14 [65] connect from UNDETERMINED (172.21.65.125)
+2026/10/27 16:49:14 [65] rsync allowed access on module backup from UNDETERMINED (172.21.65.125)
+2026/10/27 16:49:14 [65] auth failed on module backup from UNDETERMINED (172.21.65.125) for ana: password mismatch

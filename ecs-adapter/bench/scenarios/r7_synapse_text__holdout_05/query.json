@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.logger": "synapse.access.http.8008"
+        }
+      },
+      {
+        "term": {
+          "log.origin.file.line": 508
+        }
+      }
+    ]
+  }
+}

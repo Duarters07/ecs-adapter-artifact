@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.thread.name": "Thread-8 (process_request_thread)"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "guest"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "guest"
+              }
+            },
+            {
+              "term": {
+                "user.name": "guest"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "source_id": "r5_clamav_d12",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^(?<timestamp>%{DAY} %{MONTH} +%{MONTHDAY} %{TIME} %{YEAR}) -> (?<scan>instream)\\(%{IP:client_ip}@%{INT:client_port}\\): (?<signature>\\S+?)\\((?<md5>[0-9a-f]{32}):%{INT:size}\\) (?<result>FOUND)$"
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "signature",
+      "ecs_field": "rule.name",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "md5",
+      "reason": "file.* not offered for network"
+    },
+    {
+      "source_key": "size",
+      "reason": "file.* not offered for network"
+    },
+    {
+      "source_key": "result",
+      "reason": "always FOUND"
+    },
+    {
+      "source_key": "scan",
+      "reason": "scan command"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "alert",
+    "event.category": [
+      "network"
+    ],
+    "event.dataset": "clamav.clamd"
+  }
+}

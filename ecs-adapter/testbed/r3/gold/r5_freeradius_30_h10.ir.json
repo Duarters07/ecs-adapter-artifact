@@ -1,0 +1,52 @@
+{
+  "source_id": "r5_freeradius_30_h10",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^(?<timestamp>%{DAY} %{MONTH} +%{MONTHDAY} %{TIME} %{YEAR}) : Auth: \\(%{INT:request_id}\\) (?<result>Login OK|Login incorrect)(?: \\(%{DATA:reason}\\))?: \\[%{DATA:user}\\] \\(from client %{NOTSPACE:nas} port %{INT:nas_port}\\)$"
+  },
+  "fields": [
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "result",
+      "reason": "event.outcome would need a value map"
+    },
+    {
+      "source_key": "nas",
+      "reason": "observer.* not offered"
+    },
+    {
+      "source_key": "nas_port",
+      "reason": "NAS port"
+    },
+    {
+      "source_key": "request_id",
+      "reason": "no ECS field"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.dataset": "freeradius.auth"
+  }
+}

@@ -1,0 +1,13 @@
+CONNECT   Oct 27 16:50:59 [11]: Connect (file descriptor 10): gallant_elbakyan.r3-net [172.21.66.111]
+CONNECT   Oct 27 16:50:59 [11]: Request (file descriptor 10): GET http://r6-web-target/mail/config.bak HTTP/1.1
+CONNECT   Oct 27 16:50:59 [11]: Established connection to host "r6-web-target" using file descriptor 11.
+CONNECT   Oct 27 16:51:00 [7]: Connect (file descriptor 10): crazy_hofstadter.r3-net [172.21.66.201]
+NOTICE    Oct 27 16:51:00 [7]: Unauthorized connection from "crazy_hofstadter.r3-net" [172.21.66.201].
+CONNECT   Oct 27 16:51:00 [14]: Connect (file descriptor 10): beautiful_rubin.r3-net [172.21.66.147]
+NOTICE    Oct 27 16:51:00 [14]: Unauthorized connection from "beautiful_rubin.r3-net" [172.21.66.147].
+CONNECT   Oct 27 16:51:01 [12]: Connect (file descriptor 10): dazzling_yalow.r3-net [172.21.66.120]
+CONNECT   Oct 27 16:51:01 [12]: Request (file descriptor 10): GET http://r6-web-target/index.html HTTP/1.1
+CONNECT   Oct 27 16:51:02 [13]: Connect (file descriptor 10): dazzling_yalow.r3-net [172.21.66.249]
+NOTICE    Oct 27 16:51:02 [13]: Unauthorized connection from "dazzling_yalow.r3-net" [172.21.66.249].
+CONNECT   Oct 27 16:51:03 [8]: Connect (file descriptor 10): pensive_darwin.r3-net [172.21.66.242]
+NOTICE    Oct 27 16:51:03 [8]: Unauthorized connection from "pensive_darwin.r3-net" [172.21.66.242].

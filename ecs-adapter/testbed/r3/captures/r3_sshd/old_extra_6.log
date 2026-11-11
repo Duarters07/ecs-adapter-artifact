@@ -1,0 +1,22 @@
+Accepted password for tiago from 172.21.0.3 port 42580 ssh2
+Accepted password for marta from 172.21.0.3 port 42596 ssh2
+Invalid user katia from 172.21.0.3 port 42602
+Failed password for invalid user katia from 172.21.0.3 port 42602 ssh2
+Failed password for ana from 172.21.0.3 port 60114 ssh2
+Did not receive identification string from 172.21.0.3 port 60120
+Failed password for backup from 172.21.0.3 port 60128 ssh2
+Failed password for ana from 172.21.0.3 port 59276 ssh2
+Invalid user deploy from 172.21.0.3 port 59290
+Failed password for invalid user deploy from 172.21.0.3 port 59290 ssh2
+Invalid user nelson from 172.21.0.3 port 59302
+Failed password for invalid user nelson from 172.21.0.3 port 59302 ssh2
+Failed password for tiago from 172.21.0.3 port 53658 ssh2
+Failed password for marta from 172.21.0.3 port 53668 ssh2
+Connection closed by authenticating user marta 172.21.0.3 port 53668 [preauth]
+Connection closed by invalid user deploy 172.21.0.3 port 59290 [preauth]
+Connection closed by authenticating user backup 172.21.0.3 port 60128 [preauth]
+Connection closed by invalid user nelson 172.21.0.3 port 59302 [preauth]
+Connection closed by invalid user katia 172.21.0.3 port 42602 [preauth]
+Connection closed by authenticating user tiago 172.21.0.3 port 53658 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 59276 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 60114 [preauth]

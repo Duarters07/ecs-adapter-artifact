@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "Invalid server password"
+        }
+      },
+      {
+        "term": {
+          "log.level": "W"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "source_id": "r3_firewall_logemu",
+  "family": "netfilter-ulogd",
+  "split": "train_r3",
+  "category_hint": "firewall",
+  "contamination_risk": "high",
+  "origin": "Produced by running Debian 12 iptables 1.8.9 (nft) NFLOG -> ulogd2 2.0.8 LOGEMU, not copied from documentation or a public dataset. Captured 2026-10-19T23:44:40Z on the author's laptop by testbed/r3/r3_firewall.sh (/var/log/ulog/r3.log inside the firewall container); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 3, OLD COLLECTOR - training material only. The iptables LOG text format, positional KEY=value after a syslog-style header and the rule's prefix. Contamination HIGH: the format is everywhere, and SIEMgen generates pfSense filterlog.",
+  "fields": [
+    {
+      "source_key": "host",
+      "ecs_field": "observer.hostname",
+      "type": "keyword",
+      "role": "firewall_name",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "prefix",
+      "ecs_field": "rule.name",
+      "type": "keyword",
+      "role": "rule_label",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "IN",
+      "ecs_field": "observer.ingress.interface.name",
+      "type": "keyword",
+      "role": "ingress_interface",
+      "difficulty": "hard",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "SRC",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "packet_source",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "DST",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "role": "packet_destination",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "SPT",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "source_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "DPT",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "role": "destination_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "PROTO",
+      "ecs_field": "network.transport",
+      "type": "keyword",
+      "role": "transport_protocol",
+      "difficulty": "easy",
+      "note": "Value convention: TCP on the wire, tcp in ECS - no rule filters on it.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "LEN",
+      "ecs_field": null,
+      "type": "long",
+      "role": "packet_length",
+      "difficulty": "hard",
+      "note": "network.bytes counts a whole flow, not one packet; declining is accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "MAC",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "mac_header",
+      "difficulty": "hard",
+      "note": "Two MACs and an EtherType in one string; no single ECS field holds it.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r3_firewall_logemu__holdout_02",
+    "r3_firewall_logemu__holdout_04"
+  ],
+  "round3": {
+    "pair": "r3_firewall",
+    "role": "old"
+  }
+}

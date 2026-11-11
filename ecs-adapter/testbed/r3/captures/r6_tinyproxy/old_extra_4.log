@@ -1,0 +1,13 @@
+CONNECT   Oct 27 16:50:45 [11]: Connect (file descriptor 10): angry_engelbart.r3-net [172.21.66.165]
+NOTICE    Oct 27 16:50:45 [11]: Unauthorized connection from "angry_engelbart.r3-net" [172.21.66.165].
+CONNECT   Oct 27 16:50:46 [11]: Connect (file descriptor 10): focused_mclaren.r3-net [172.21.66.215]
+NOTICE    Oct 27 16:50:46 [11]: Unauthorized connection from "focused_mclaren.r3-net" [172.21.66.215].
+CONNECT   Oct 27 16:50:47 [10]: Connect (file descriptor 10): naughty_haslett.r3-net [172.21.66.166]
+NOTICE    Oct 27 16:50:47 [10]: Unauthorized connection from "naughty_haslett.r3-net" [172.21.66.166].
+CONNECT   Oct 27 16:50:47 [7]: Connect (file descriptor 10): admiring_raman.r3-net [172.21.66.100]
+CONNECT   Oct 27 16:50:47 [7]: Request (file descriptor 10): GET http://r6-web-target/index.html HTTP/1.1
+CONNECT   Oct 27 16:50:47 [7]: Established connection to host "r6-web-target" using file descriptor 11.
+CONNECT   Oct 27 16:50:48 [16]: Connect (file descriptor 10): naughty_maxwell.r3-net [172.21.66.117]
+CONNECT   Oct 27 16:50:48 [16]: Request (file descriptor 10): GET http://r6-web-target/tickets/.env HTTP/1.1
+CONNECT   Oct 27 16:50:49 [13]: Connect (file descriptor 10): happy_goldstine.r3-net [172.21.66.241]
+NOTICE    Oct 27 16:50:49 [13]: Unauthorized connection from "happy_goldstine.r3-net" [172.21.66.241].

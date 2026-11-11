@@ -1,0 +1,14 @@
+{"raw": "15-Oct-2026 14:56:45.550 client @0x760107215090 172.21.0.3#56239 (db.lab.example): query: db.lab.example IN A +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:45.695 client @0x76010c828090 172.21.0.3#54712 (example.org): query (cache) 'example.org/A/IN' denied (allow-query-cache did not match)"}
+{"raw": "15-Oct-2026 14:56:45.791 client @0x760109e15090 172.21.0.3#33683 (debian.org): query failed (REFUSED) for debian.org/IN/MX at query.c:5705"}
+{"raw": "15-Oct-2026 14:56:45.726 client @0x760109218890 172.21.0.3#42991 (lab.example): query: lab.example IN AXFR -E(0)TK (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:45.744 client @0x760107814c90 172.21.0.3#36765 (mail.lab.example): query: mail.lab.example IN A +E(0)TK (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:45.580 client @0x76010b029090 172.21.0.3#36854 (ns1.lab.example): query: ns1.lab.example IN A +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:45.610 client @0x760109815090 172.21.0.3#40266 (lab.example): query: lab.example IN SOA +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:45.641 client @0x760106c14c90 172.21.0.3#43647 (lab.example): query: lab.example IN NS +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:45.769 client @0x760106c16890 172.21.0.3#33265 (lab.example): query: lab.example IN ANY +E(0)TK (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:45.668 client @0x76010b029090 172.21.0.3#59222 (printer.lab.example): query: printer.lab.example IN A +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:45.726 client @0x760109218890 172.21.0.3#42991 (lab.example): zone transfer 'lab.example/AXFR/IN' denied"}
+{"raw": "15-Oct-2026 14:56:45.695 client @0x76010c828090 172.21.0.3#54712 (example.org): query failed (REFUSED) for example.org/IN/A at query.c:5705"}
+{"raw": "15-Oct-2026 14:56:45.791 client @0x760109e15090 172.21.0.3#33683 (debian.org): query: debian.org IN MX +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:45.791 client @0x760109e15090 172.21.0.3#33683 (debian.org): query (cache) 'debian.org/MX/IN' denied (allow-query-cache did not match)"}

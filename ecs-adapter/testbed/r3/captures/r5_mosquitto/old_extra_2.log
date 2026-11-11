@@ -1,0 +1,13 @@
+1792969104: New connection from 172.21.50.177 on port 1884.
+1792969104: Socket error on client <unknown>, disconnecting.
+1792969106: New connection from 172.21.50.147 on port 1883.
+1792969106: Socket error on client <unknown>, disconnecting.
+1792969107: New connection from 172.21.50.127 on port 1883.
+1792969107: Socket error on client <unknown>, disconnecting.
+1792969108: New connection from 172.21.50.116 on port 1884.
+1792969108: Socket error on client <unknown>, disconnecting.
+1792969109: New connection from 172.21.50.210 on port 1884.
+1792969109: New client connected from 172.21.50.210 as cam-ops (p2, c1, k60, u'hvac04').
+1792969109: Client cam-ops disconnected.
+1792969111: New connection from 172.21.50.157 on port 1883.
+1792969111: Socket error on client <unknown>, disconnecting.

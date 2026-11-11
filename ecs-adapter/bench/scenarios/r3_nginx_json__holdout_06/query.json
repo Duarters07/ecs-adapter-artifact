@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "user_agent.original": "Mozilla/5.0 (Windows NT 10.0) Edge/125.0"
+        }
+      }
+    ]
+  }
+}

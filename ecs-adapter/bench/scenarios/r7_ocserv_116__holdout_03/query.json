@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.pid": 11
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "monitor"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "monitor"
+              }
+            },
+            {
+              "term": {
+                "user.name": "monitor"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

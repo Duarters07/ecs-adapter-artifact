@@ -1,0 +1,4 @@
+{"raw": "[1:3   27] User \"scan!~scan@172.21.81.21\" rejected (connection 7): Bad server password!"}
+{"raw": "[1:3   31] Got invalid OPER from \"evil!~evil@172.21.81.203\": \"root\" -- not configured!"}
+{"raw": "[1:5   30] User \"evil!~evil@172.21.81.203\" registered (connection 7)."}
+{"raw": "[1:5   27] Client \"scan\" unregistered (connection 7): Bad server password."}

@@ -1,0 +1,4 @@
+{"raw": "2026-10-25 15:41:15 172.21.58.22:50600 SENT CONTROL [nas-backup]: 'AUTH_FAILED' (status=1)"}
+{"raw": "2026-10-25 15:41:13 172.21.58.21:59640 VERIFY OK: depth=0, CN=nas-backup"}
+{"raw": "2026-10-25 15:41:15 172.21.58.97:54900 TLS: Initial packet from [AF_INET]172.21.58.97:54900, sid=d8b73fa2 4934ef92"}
+{"raw": "2026-10-25 15:41:13 nas-backup/172.21.58.21:59640 MULTI_sva: pool returned IPv4=10.8.0.18, IPv6=(Not enabled)"}

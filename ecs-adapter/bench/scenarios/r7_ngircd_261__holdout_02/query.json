@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "Bad server password"
+        }
+      },
+      {
+        "term": {
+          "log.syslog.severity.code": 3
+        }
+      }
+    ]
+  }
+}

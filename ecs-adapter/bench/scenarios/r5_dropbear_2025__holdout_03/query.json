@@ -1,0 +1,45 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.port": 53930
+              }
+            },
+            {
+              "term": {
+                "source.port": 53930
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "svcgit"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "svcgit"
+              }
+            },
+            {
+              "term": {
+                "user.name": "svcgit"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

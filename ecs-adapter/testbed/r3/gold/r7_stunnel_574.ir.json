@@ -1,0 +1,101 @@
+{
+  "source_id": "r7_stunnel_574",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^(?<timestamp>%{YEAR}\\.%{MONTHNUM}\\.%{MONTHDAY} %{TIME}) LOG%{INT:level}\\[%{INT:thread}\\]: Service \\[%{DATA:service}\\] (?<action>accepted connection) from %{IP:client_ip}:%{INT:client_port}$",
+    "alternatives": [
+      "^(?<timestamp>%{YEAR}\\.%{MONTHNUM}\\.%{MONTHDAY} %{TIME}) LOG%{INT:level}\\[%{INT:thread}\\]: (?<action>Certificate accepted) at depth=%{INT:depth}: %{GREEDYDATA:subject}$",
+      "^(?<timestamp>%{YEAR}\\.%{MONTHNUM}\\.%{MONTHDAY} %{TIME}) LOG%{INT:level}\\[%{INT:thread}\\]: CERT: (?<action>Pre-verification error): %{GREEDYDATA:verify_error}$",
+      "^(?<timestamp>%{YEAR}\\.%{MONTHNUM}\\.%{MONTHDAY} %{TIME}) LOG%{INT:level}\\[%{INT:thread}\\]: (?<action>Rejected by CERT) at depth=%{INT:depth}: %{GREEDYDATA:subject}$",
+      "^(?<timestamp>%{YEAR}\\.%{MONTHNUM}\\.%{MONTHDAY} %{TIME}) LOG%{INT:level}\\[%{INT:thread}\\]: (?<action>SSL_accept): %{NOTSPACE:ssl_location}: (?<ssl_error>error:.+)$",
+      "^(?<timestamp>%{YEAR}\\.%{MONTHNUM}\\.%{MONTHDAY} %{TIME}) LOG%{INT:level}\\[%{INT:thread}\\]: (?<action>Connection (?:closed|reset/closed)): %{INT:bytes_tls} byte\\(s\\) sent to TLS, %{INT:bytes_socket} byte\\(s\\) sent to socket$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "subject",
+      "ecs_field": "tls.client.subject",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "verify_error",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "ssl_error",
+      "ecs_field": "error.message",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "service",
+      "ecs_field": "service.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "thread",
+      "ecs_field": "process.thread.id",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.syslog.severity.code",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "depth",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "ssl_location",
+      "reason": "OpenSSL source location; no ECS field"
+    },
+    {
+      "source_key": "bytes_tls",
+      "reason": "direction relative to stunnel; declined"
+    },
+    {
+      "source_key": "bytes_socket",
+      "reason": "as bytes_tls"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "network"
+    ],
+    "event.dataset": "stunnel.log"
+  }
+}

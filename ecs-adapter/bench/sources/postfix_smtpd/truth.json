@@ -1,0 +1,97 @@
+{
+  "family": "postfix",
+  "category_hint": "email",
+  "contamination_risk": "medium",
+  "notes": "FREE TEXT, SO THE CAPTURE NAMES ARE FIXED HERE. There are no keys in the line, so a grok pattern invents a name for every capture and field-level scoring can only align the model's captures with ground truth if both use the same names. The documentation states them, exactly as it states the column list for a CSV source. The names are a scoring convention, not part of the format. This is the only source in the corpus with a mail vocabulary, and the only one where a single line names two different kinds of address: a network address the packet came from, and two mail addresses that are identities rather than endpoints.",
+  "fields": [
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "daemon_process_id",
+      "difficulty": "medium"
+    },
+    {
+      "source_key": "client_name",
+      "ecs_field": "source.address",
+      "type": "keyword",
+      "role": "client_reverse_dns_name",
+      "difficulty": "hard",
+      "note": "The reverse-DNS name of the connecting host. ECS source.address is documented as holding a hostname, an FQDN or an IP, which is exactly this. It is not source.domain, which is the domain the source belongs to rather than its own name, and it is not url.domain."
+    },
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "medium"
+    },
+    {
+      "source_key": "smtp_code",
+      "ecs_field": null,
+      "type": "long",
+      "role": "smtp_reply_code",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "A three-digit SMTP reply code. http.response.status_code is HTTP's, and ECS 8.11 has no protocol-neutral status field. event.code is a vendor event identifier, and 450 identifies a reply rather than an event type."
+    },
+    {
+      "source_key": "dsn_code",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "enhanced_status_code",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`4.1.2`. The enhanced status code from RFC 3463, a second, finer code beside the three-digit reply. event.code could hold one vendor code and the line carries two, neither of which is more the event's code than the other."
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "rejection_reason",
+      "difficulty": "hard",
+      "note": "Why the event ended as it did, stated by the producer, which is what ECS event.reason is for."
+    },
+    {
+      "source_key": "from",
+      "ecs_field": "email.from.address",
+      "type": "keyword",
+      "role": "envelope_sender",
+      "difficulty": "hard",
+      "note": "The envelope sender. Not source.user.name: it is a mail identity, not an account on the sending host, and the two are routinely different."
+    },
+    {
+      "source_key": "to",
+      "ecs_field": "email.to.address",
+      "type": "keyword",
+      "role": "envelope_recipient",
+      "difficulty": "hard"
+    },
+    {
+      "source_key": "proto",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "smtp_protocol_variant",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`ESMTP`. network.protocol would be `smtp`; ESMTP names the dialect the client used rather than the protocol the connection carried."
+    },
+    {
+      "source_key": "helo",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "announced_helo_name",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Whatever the client announced, unverified and frequently false. source.domain would assert something about the source that this value does not establish."
+    }
+  ],
+  "source_id": "postfix_smtpd",
+  "split": "test",
+  "origin": "Produced by running the software, not copied from documentation or a public dataset. Captured on 2 October 2026 on the project's own Docker host.",
+  "scenarios": [
+    "postfix_smtpd__holdout_01",
+    "postfix_smtpd__holdout_02",
+    "postfix_smtpd__holdout_03"
+  ]
+}

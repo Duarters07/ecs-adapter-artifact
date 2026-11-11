@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "user's password is invalid"
+        }
+      }
+    ]
+  }
+}

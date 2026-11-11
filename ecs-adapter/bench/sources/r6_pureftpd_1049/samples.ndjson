@@ -1,0 +1,38 @@
+{"raw": "2026-10-27T15:58:53.883250+00:00 files02 pure-ftpd: (ana@172.21.64.11) [NOTICE] /home/ana//q3.txt downloaded  (7 bytes, 325.82KB/sec)"}
+{"raw": "2026-10-27T15:59:00.005134+00:00 files02 pure-ftpd: (rui@172.21.64.12) [ERROR] Can't open q3.txt: No such file or directory"}
+{"raw": "2026-10-27T15:59:04.946386+00:00 files02 pure-ftpd: (?@172.21.64.99) [WARNING] Authentication failed for user [admin]"}
+{"raw": "2026-10-27T15:59:11.360353+00:00 files02 pure-ftpd: (?@172.21.64.13) [INFO] scanner is now logged in"}
+{"raw": "2026-10-27T15:59:10.633712+00:00 files02 pure-ftpd: (?@172.21.64.98) [WARNING] Authentication failed for user [root]"}
+{"raw": "2026-10-27T15:59:14.405795+00:00 files02 pure-ftpd: (?@172.21.64.14) [INFO] rui is now logged in"}
+{"raw": "2026-10-27T15:59:25.370410+00:00 files02 pure-ftpd: (?@172.21.64.97) [WARNING] Authentication failed for user [ftp]"}
+{"raw": "2026-10-27T15:59:26.070492+00:00 files02 pure-ftpd: (?@172.21.64.15) [INFO] ana is now logged in"}
+{"raw": "2026-10-27T15:59:11.361245+00:00 files02 pure-ftpd: (scanner@172.21.64.13) [ERROR] Can't open q3.txt: No such file or directory"}
+{"raw": "2026-10-27T15:59:26.071153+00:00 files02 pure-ftpd: (ana@172.21.64.15) [NOTICE] /home/ana//q3.txt downloaded  (7 bytes, 358.40KB/sec)"}
+{"raw": "2026-10-27T15:59:26.776813+00:00 files02 pure-ftpd: (?@172.21.64.96) [INFO] New connection from 172.21.64.96"}
+{"raw": "2026-10-27T15:58:53.860951+00:00 files02 pure-ftpd: (?@172.21.64.11) [INFO] New connection from 172.21.64.11"}
+{"raw": "2026-10-27T15:58:53.882554+00:00 files02 pure-ftpd: (?@172.21.64.11) [INFO] ana is now logged in"}
+{"raw": "2026-10-27T15:58:53.883267+00:00 files02 pure-ftpd: (ana@172.21.64.11) [INFO] Logout."}
+{"raw": "2026-10-27T15:58:54.576508+00:00 files02 pure-ftpd: (?@172.21.64.11) [INFO] New connection from 172.21.64.11"}
+{"raw": "2026-10-27T15:58:59.277809+00:00 files02 pure-ftpd: (?@172.21.64.11) [WARNING] Authentication failed for user [ana]"}
+{"raw": "2026-10-27T15:58:59.278948+00:00 files02 pure-ftpd: (?@172.21.64.11) [INFO] Logout."}
+{"raw": "2026-10-27T15:58:59.979543+00:00 files02 pure-ftpd: (?@172.21.64.12) [INFO] New connection from 172.21.64.12"}
+{"raw": "2026-10-27T15:59:00.004056+00:00 files02 pure-ftpd: (?@172.21.64.12) [INFO] rui is now logged in"}
+{"raw": "2026-10-27T15:59:00.005155+00:00 files02 pure-ftpd: (rui@172.21.64.12) [INFO] Logout."}
+{"raw": "2026-10-27T15:59:00.682697+00:00 files02 pure-ftpd: (?@172.21.64.99) [INFO] New connection from 172.21.64.99"}
+{"raw": "2026-10-27T15:59:04.947480+00:00 files02 pure-ftpd: (?@172.21.64.99) [INFO] Logout."}
+{"raw": "2026-10-27T15:59:05.668176+00:00 files02 pure-ftpd: (?@172.21.64.98) [INFO] New connection from 172.21.64.98"}
+{"raw": "2026-10-27T15:59:10.634905+00:00 files02 pure-ftpd: (?@172.21.64.98) [INFO] Logout."}
+{"raw": "2026-10-27T15:59:11.339979+00:00 files02 pure-ftpd: (?@172.21.64.13) [INFO] New connection from 172.21.64.13"}
+{"raw": "2026-10-27T15:59:11.361428+00:00 files02 pure-ftpd: (scanner@172.21.64.13) [INFO] Logout."}
+{"raw": "2026-10-27T15:59:14.390165+00:00 files02 pure-ftpd: (?@172.21.64.14) [INFO] New connection from 172.21.64.14"}
+{"raw": "2026-10-27T15:59:14.406583+00:00 files02 pure-ftpd: (rui@172.21.64.14) [ERROR] Can't open q3.txt: No such file or directory"}
+{"raw": "2026-10-27T15:59:14.406609+00:00 files02 pure-ftpd: (rui@172.21.64.14) [INFO] Logout."}
+{"raw": "2026-10-27T15:59:15.101664+00:00 files02 pure-ftpd: (?@172.21.64.14) [INFO] New connection from 172.21.64.14"}
+{"raw": "2026-10-27T15:59:20.879209+00:00 files02 pure-ftpd: (?@172.21.64.14) [WARNING] Authentication failed for user [rui]"}
+{"raw": "2026-10-27T15:59:20.880906+00:00 files02 pure-ftpd: (?@172.21.64.14) [INFO] Logout."}
+{"raw": "2026-10-27T15:59:21.628025+00:00 files02 pure-ftpd: (?@172.21.64.97) [INFO] New connection from 172.21.64.97"}
+{"raw": "2026-10-27T15:59:25.371776+00:00 files02 pure-ftpd: (?@172.21.64.97) [INFO] Logout."}
+{"raw": "2026-10-27T15:59:26.059178+00:00 files02 pure-ftpd: (?@172.21.64.15) [INFO] New connection from 172.21.64.15"}
+{"raw": "2026-10-27T15:59:26.071171+00:00 files02 pure-ftpd: (ana@172.21.64.15) [INFO] Logout."}
+{"raw": "2026-10-27T15:59:29.975608+00:00 files02 pure-ftpd: (?@172.21.64.96) [WARNING] Authentication failed for user [root]"}
+{"raw": "2026-10-27T15:59:29.977024+00:00 files02 pure-ftpd: (?@172.21.64.96) [INFO] Logout."}

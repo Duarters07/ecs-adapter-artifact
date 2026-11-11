@@ -1,0 +1,23 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "url.full": "http://r6-web-target/intranet/login"
+              }
+            },
+            {
+              "term": {
+                "url.original": "http://r6-web-target/intranet/login"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

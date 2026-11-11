@@ -1,0 +1,68 @@
+{
+  "category_hint": "network",
+  "contamination_risk": "none",
+  "extraction": {
+    "kind": "json"
+  },
+  "family": "sg_pfsense",
+  "fields": [
+    {
+      "ecs_field": "event.action",
+      "source_key": "action",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "destination.ip",
+      "source_key": "dst.ip",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "destination.port",
+      "source_key": "dst.port",
+      "type": "long"
+    },
+    {
+      "ecs_field": "observer.ingress.interface.name",
+      "source_key": "iface",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "network.transport",
+      "source_key": "proto",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "rule.id",
+      "source_key": "rule",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "source.ip",
+      "source_key": "src.ip",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "source.port",
+      "source_key": "src.port",
+      "type": "long"
+    },
+    {
+      "ecs_field": "rule.uuid",
+      "source_key": "tracker",
+      "type": "keyword"
+    }
+  ],
+  "level": 2,
+  "note": "Level-2 evaluation source: a TRAINING family rendered in a format no training source uses (corpus/drift_formats.py). Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_pfsense_drift_jsonnested",
+  "split": "test_drift",
+  "timestamp": {
+    "formats": [
+      "UNIX"
+    ],
+    "source_key": "time"
+  },
+  "transform": "drift:jsonnested",
+  "value_maps": []
+}

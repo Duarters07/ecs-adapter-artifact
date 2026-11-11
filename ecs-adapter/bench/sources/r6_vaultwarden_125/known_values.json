@@ -1,0 +1,13 @@
+{
+  "note": "NOT ground truth. Each entry records a value and the ECS field that value IS. The ladder may read this file; it may never read truth.json. See validators/v3_5_known_values.py.",
+  "origin": "samples.ndjson, via the per-family extractor",
+  "provenance": "Derived from samples.ndjson by bench/make_known_values.py with the extractor in testbed/heldout_r2/specs.py. Like the round-1 test sources, the field each value belongs to comes from the DRAFT labelling, so V3.5 here is a consistency check, not a probe.",
+  "source_id": "r6_vaultwarden_125",
+  "values": {
+    "event.reason": "Invalid admin token",
+    "log.level": "ERROR",
+    "log.logger": "vaultwarden::api::admin",
+    "source.ip": "172.21.69.11",
+    "user.name": "ana@lab.local"
+  }
+}

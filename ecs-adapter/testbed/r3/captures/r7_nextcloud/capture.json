@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T20:07:59Z","old":"Nextcloud 30.0.17 admin_audit, log_type_audit=file (JSON lines)","new":"Nextcloud 30.0.17 admin_audit, log_type_audit=syslog (rsyslog line + JSON)","collected_by":"audit.log / /var/log/syslog: Login attempt/successful/failed lines"}

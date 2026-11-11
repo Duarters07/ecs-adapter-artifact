@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "url.path": "/remote.php/dav/files/root/"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "root"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "root"
+              }
+            },
+            {
+              "term": {
+                "user.name": "root"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

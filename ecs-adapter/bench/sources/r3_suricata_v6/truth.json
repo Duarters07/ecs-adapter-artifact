@@ -1,0 +1,250 @@
+{
+  "source_id": "r3_suricata_v6",
+  "family": "suricata",
+  "split": "train_r3",
+  "category_hint": "network",
+  "contamination_risk": "high",
+  "origin": "Produced by running Suricata 6.0.20 (image jasonish/suricata:6.0), not copied from documentation or a public dataset. Captured 2026-10-19T23:42:58Z on the author's laptop by testbed/r3/r3_suricata.sh (eve.json inside the Suricata container, sniffing the web container eth0; image default suricata.yaml, rules conf/suricata-r3.rules); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 3, OLD VERSION - training material only. EVE alert and dns events. Contamination is HIGH: EVE is widely reproduced, round 2 has suricata_eve and SIEMgen a suricata family.",
+  "fields": [
+    {
+      "source_key": "src_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "src_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dest_ip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "role": "server_ip",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dest_port",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "role": "server_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "proto",
+      "ecs_field": "network.transport",
+      "type": "keyword",
+      "role": "transport_protocol",
+      "difficulty": "easy",
+      "note": "Value convention: TCP on the wire, tcp in ECS - no rule filters on it.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "app_proto",
+      "ecs_field": "network.protocol",
+      "type": "keyword",
+      "role": "application_protocol",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "in_iface",
+      "ecs_field": "observer.ingress.interface.name",
+      "type": "keyword",
+      "role": "capture_interface",
+      "difficulty": "hard",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "event_type",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "event_kind",
+      "difficulty": "ambiguous",
+      "note": "ECS event.kind takes `alert` but not `dns`; a value map would be needed. Declining is accepted. (Round 2's suricata_eve truth mapped it to event.kind - DRAFT, author to reconcile.)",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "flow_id",
+      "ecs_field": null,
+      "type": "long",
+      "role": "flow_identifier",
+      "difficulty": "hard",
+      "note": "No ECS field holds Suricata's flow id (network.community_id is a different hash).",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.signature",
+      "ecs_field": "rule.name",
+      "type": "keyword",
+      "role": "rule_message",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.signature_id",
+      "ecs_field": "rule.id",
+      "type": "keyword",
+      "role": "rule_identifier",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.category",
+      "ecs_field": "rule.category",
+      "type": "keyword",
+      "role": "rule_classification",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.severity",
+      "ecs_field": "event.severity",
+      "type": "long",
+      "role": "priority",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "engine_action",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.rev",
+      "ecs_field": "rule.version",
+      "type": "keyword",
+      "role": "rule_revision",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.gid",
+      "ecs_field": null,
+      "type": "long",
+      "role": "rule_group",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dns.rrname",
+      "ecs_field": "dns.question.name",
+      "type": "keyword",
+      "role": "query_name",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dns.rrtype",
+      "ecs_field": "dns.question.type",
+      "type": "keyword",
+      "role": "query_type",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dns.type",
+      "ecs_field": "dns.type",
+      "type": "keyword",
+      "role": "message_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dns.id",
+      "ecs_field": "dns.id",
+      "type": "keyword",
+      "role": "transaction_id",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dns.opcode",
+      "ecs_field": "dns.op_code",
+      "type": "keyword",
+      "role": "opcode",
+      "difficulty": "hard",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http.hostname",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "http_host",
+      "difficulty": "hard",
+      "note": "unreachable from `network`: the category offers no http/url/user_agent root",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http.url",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "http_url",
+      "difficulty": "hard",
+      "note": "unreachable from `network`: the category offers no http/url/user_agent root",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http.http_user_agent",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "user_agent",
+      "difficulty": "hard",
+      "note": "unreachable from `network`: the category offers no http/url/user_agent root",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http.http_method",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "http_method",
+      "difficulty": "hard",
+      "note": "unreachable from `network`: the category offers no http/url/user_agent root",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http.status",
+      "ecs_field": null,
+      "type": "long",
+      "role": "http_status",
+      "difficulty": "hard",
+      "note": "unreachable from `network`: the category offers no http/url/user_agent root",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r3_suricata_v6__holdout_02",
+    "r3_suricata_v6__holdout_03",
+    "r3_suricata_v6__holdout_04",
+    "r3_suricata_v6__holdout_06",
+    "r3_suricata_v6__holdout_07",
+    "r3_suricata_v6__holdout_08",
+    "r3_suricata_v6__holdout_09"
+  ],
+  "round3": {
+    "pair": "r3_suricata",
+    "role": "old"
+  }
+}

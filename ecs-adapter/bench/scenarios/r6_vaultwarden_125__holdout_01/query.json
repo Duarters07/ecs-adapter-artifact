@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.ip": "172.21.69.21"
+              }
+            },
+            {
+              "term": {
+                "source.ip": "172.21.69.21"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "event.reason": "Username or password is incorrect"
+        }
+      }
+    ]
+  }
+}

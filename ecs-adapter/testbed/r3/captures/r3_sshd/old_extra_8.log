@@ -1,0 +1,22 @@
+Invalid user postgres from 172.21.0.3 port 58824
+Failed password for invalid user postgres from 172.21.0.3 port 58824 ssh2
+Accepted password for ana from 172.21.0.3 port 38490 ssh2
+Accepted password for rui from 172.21.0.3 port 38506 ssh2
+Did not receive identification string from 172.21.0.3 port 38518
+Failed password for ana from 172.21.0.3 port 38526 ssh2
+Invalid user guest from 172.21.0.3 port 38542
+Failed password for invalid user guest from 172.21.0.3 port 38542 ssh2
+Accepted password for ines from 172.21.0.3 port 56026 ssh2
+Failed password for backup from 172.21.0.3 port 56042 ssh2
+Invalid user admin from 172.21.0.3 port 56048
+Failed password for invalid user admin from 172.21.0.3 port 56048 ssh2
+Invalid user carlos from 172.21.0.3 port 34300
+Failed password for invalid user carlos from 172.21.0.3 port 34300 ssh2
+Failed password for tiago from 172.21.0.3 port 34308 ssh2
+Connection closed by authenticating user tiago 172.21.0.3 port 34308 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 38526 [preauth]
+Connection closed by invalid user guest 172.21.0.3 port 38542 [preauth]
+Connection closed by invalid user carlos 172.21.0.3 port 34300 [preauth]
+Connection closed by invalid user admin 172.21.0.3 port 56048 [preauth]
+Connection closed by invalid user postgres 172.21.0.3 port 58824 [preauth]
+Connection closed by authenticating user backup 172.21.0.3 port 56042 [preauth]

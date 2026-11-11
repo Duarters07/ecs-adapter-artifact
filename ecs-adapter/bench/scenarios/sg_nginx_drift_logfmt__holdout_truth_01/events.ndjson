@@ -1,0 +1,9 @@
+{"raw": "ts=1791965325.000 bytes=0 method=GET proto=HTTP/2.0 referrer=- server=web.acme.local src_ip=10.20.7.12 status=304 user=- vhost=intranet.acme.local"}
+{"raw": "ts=1791966093.000 bytes=0 method=GET proto=HTTP/2.0 referrer=- server=web.acme.local src_ip=10.20.1.13 status=304 user=- vhost=intranet.acme.local"}
+{"raw": "ts=1791966498.000 bytes=0 method=GET proto=HTTP/2.0 referrer=- server=web.acme.local src_ip=10.10.2.12 status=304 user=- vhost=intranet.acme.local"}
+{"raw": "ts=1791964866.000 bytes=29380 method=GET proto=HTTP/2.0 referrer=- server=web.acme.local src_ip=10.30.2.11 status=200 user=- vhost=intranet.acme.local"}
+{"raw": "ts=1791965116.000 bytes=16727 method=GET proto=HTTP/2.0 referrer=- server=web.acme.local src_ip=10.20.1.11 status=200 user=- vhost=intranet.acme.local"}
+{"raw": "ts=1791965173.000 bytes=27857 method=GET proto=HTTP/2.0 referrer=- server=web.acme.local src_ip=10.30.3.12 status=200 user=- vhost=intranet.acme.local"}
+{"raw": "ts=1791965284.000 bytes=150895 method=GET proto=HTTP/2.0 referrer=- server=web.acme.local src_ip=10.10.7.16 status=200 user=- vhost=intranet.acme.local"}
+{"raw": "ts=1791965333.000 bytes=10975 method=GET proto=HTTP/2.0 referrer=- server=web.acme.local src_ip=10.20.7.12 status=200 user=- vhost=intranet.acme.local"}
+{"raw": "ts=1791965566.000 bytes=13305 method=GET proto=HTTP/2.0 referrer=- server=web.acme.local src_ip=10.10.7.11 status=200 user=- vhost=intranet.acme.local"}

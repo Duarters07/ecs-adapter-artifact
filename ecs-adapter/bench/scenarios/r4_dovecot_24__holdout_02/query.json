@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.outcome": "success"
+        }
+      },
+      {
+        "term": {
+          "process.name": "imap-login"
+        }
+      }
+    ]
+  }
+}

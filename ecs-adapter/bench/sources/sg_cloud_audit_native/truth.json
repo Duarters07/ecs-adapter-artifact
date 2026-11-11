@@ -1,0 +1,10 @@
+{
+  "_note": "Field-level truth is per LINE, in line_truth.ndjson (SIEMgen's render_ecs); VT reads it. No source-key truth exists for a native format until an IR does.",
+  "category_hint": "file",
+  "contamination_risk": "low",
+  "family": "sg_cloud_audit",
+  "fields": [],
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0 (seed 0)",
+  "source_id": "sg_cloud_audit_native",
+  "split": "test_id"
+}

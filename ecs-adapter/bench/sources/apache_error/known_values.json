@@ -1,0 +1,17 @@
+{
+  "note": "NOT ground truth. Each entry records a value and the ECS field that value IS. The ladder may read this file; it may never read truth.json. See validators/v3_5_known_values.py.",
+  "origin": "samples.ndjson, via the per-family extractor",
+  "provenance": "Derived from samples.ndjson by bench/make_known_values.py with the extractor in testbed/heldout_r2/specs.py. Like the round-1 test sources, the field each value belongs to comes from the DRAFT labelling, so V3.5 here is a consistency check, not a probe.",
+  "source_id": "apache_error",
+  "values": {
+    "event.code": "AH01617",
+    "event.reason": "Password Mismatch",
+    "http.request.referrer": "http://intranet.example/wiki",
+    "log.level": "error",
+    "log.logger": "authz_core",
+    "source.ip": "172.21.0.3",
+    "source.port": "47418",
+    "url.path": "/secret/index.html",
+    "user.name": "mallory"
+  }
+}

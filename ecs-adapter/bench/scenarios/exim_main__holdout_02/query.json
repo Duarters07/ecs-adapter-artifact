@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "email.local_id": "1xHN29-00017e-0R"
+        }
+      },
+      {
+        "term": {
+          "email.to.address": "hr@lab.example"
+        }
+      }
+    ]
+  }
+}

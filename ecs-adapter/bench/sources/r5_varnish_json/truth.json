@@ -1,0 +1,109 @@
+{
+  "source_id": "r5_varnish_json",
+  "family": "varnish",
+  "split": "test_r5",
+  "category_hint": "web",
+  "contamination_risk": "high",
+  "origin": "Produced by running Varnish 7.6.5 (image varnish:7.6), varnishncsa -j -F <site JSON format>, not copied from documentation or a public dataset. Captured 2026-10-25T14:29:35Z on the author's laptop by testbed/r3/r5_varnish.sh (docker logs, varnishncsa stdout); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 6 (pool r5), NEW CONFIGURATION of r5_varnish_ncsa: the site's JSON format. The URL becomes the path and query (%U%q), and the size becomes the bytes sent with headers (%O).",
+  "fields": [
+    {
+      "source_key": "client",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "request_method",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "role": "status_code",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user_agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "role": "user_agent",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "referer",
+      "ecs_field": "http.request.referrer",
+      "type": "keyword",
+      "role": "referrer",
+      "difficulty": "medium",
+      "note": "Always empty in the capture.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "protocol",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "role": "protocol_version",
+      "difficulty": "medium",
+      "note": "Value convention: HTTP/1.1 on the wire, 1.1 in ECS - no rule filters on it.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "url",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "role": "request_uri",
+      "difficulty": "medium",
+      "note": "url.path acceptable: no query string in the capture.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes_sent",
+      "ecs_field": "http.response.bytes",
+      "type": "long",
+      "role": "response_size",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "cache",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "cache_status",
+      "difficulty": "hard",
+      "note": "No ECS field for a cache hit.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "duration_us",
+      "ecs_field": null,
+      "type": "long",
+      "role": "duration",
+      "difficulty": "hard",
+      "note": "event.duration is in nanoseconds; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r5_varnish_json__holdout_01",
+    "r5_varnish_json__holdout_02",
+    "r5_varnish_json__holdout_03"
+  ],
+  "round3": {
+    "pair": "r5_varnish",
+    "role": "new"
+  }
+}

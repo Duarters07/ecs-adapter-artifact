@@ -1,0 +1,12 @@
+Oct 25 22:42:52 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<31>: pam(raquel,172.21.0.3,<ozj57bFeAsSsFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:42:54 imap-login: Info: Disconnected (auth failed, 1 attempts in 19 secs): user=<raquel>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<ozj57bFeAsSsFQAD>
+Oct 25 22:43:11 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<32>: pam(diogo,172.21.0.3,<P14m77Fe0s6sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:43:13 imap-login: Info: Disconnected (auth failed, 1 attempts in 19 secs): user=<diogo>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<P14m77Fe0s6sFQAD>
+Oct 25 22:43:30 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<33>: pam(simao,172.21.0.3,<EApL8LFe0J2sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:43:32 imap-login: Info: Disconnected (auth failed, 1 attempts in 19 secs): user=<simao>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<EApL8LFe0J2sFQAD>
+Oct 25 22:43:49 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<34>: pam(admin,172.21.0.3,<8bNp8bFerIasFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:43:51 imap-login: Info: Disconnected (auth failed, 1 attempts in 19 secs): user=<admin>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<8bNp8bFerIasFQAD>
+Oct 25 22:44:09 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<35>: pam(tiago,172.21.0.3,<BpaM8rFebpCsFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:44:11 imap-login: Info: Disconnected (auth failed, 1 attempts in 20 secs): user=<tiago>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<BpaM8rFebpCsFQAD>
+Oct 25 22:44:28 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<36>: pam(carlos,172.21.0.3,<IQu887FeZu2sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:44:30 imap-login: Info: Disconnected (auth failed, 1 attempts in 19 secs): user=<carlos>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<IQu887FeZu2sFQAD>

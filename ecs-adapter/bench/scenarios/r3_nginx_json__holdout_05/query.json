@@ -1,0 +1,45 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "url.full": "/account/"
+              }
+            },
+            {
+              "term": {
+                "url.original": "/account/"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "operator"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "operator"
+              }
+            },
+            {
+              "term": {
+                "user.name": "operator"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+6ade8a08 conn=1018 fd=11 ACCEPT from IP=172.21.51.187:51538 (IP=0.0.0.0:389)
+6ade8a08 conn=1018 op=0 BIND dn="cn=manager,dc=lab,dc=example" method=128
+6ade8a08 conn=1018 op=0 RESULT tag=97 err=49 text=
+6ade8a09 conn=1019 fd=11 ACCEPT from IP=172.21.51.211:54510 (IP=0.0.0.0:389)
+6ade8a09 conn=1019 op=0 BIND dn="uid=support,ou=people,dc=lab,dc=example" method=128
+6ade8a09 conn=1019 op=0 RESULT tag=97 err=49 text=
+6ade8a0a conn=1020 fd=11 ACCEPT from IP=172.21.51.134:58000 (IP=0.0.0.0:389)
+6ade8a0a conn=1020 op=0 BIND dn="cn=admin,dc=lab,dc=example" method=128
+6ade8a0a conn=1020 op=0 RESULT tag=97 err=49 text=
+6ade8a0b conn=1021 fd=11 ACCEPT from IP=172.21.51.247:41750 (IP=0.0.0.0:389)
+6ade8a0b conn=1021 op=0 BIND dn="uid=pi,ou=people,dc=lab,dc=example" method=128
+6ade8a0b conn=1021 op=0 RESULT tag=97 err=49 text=
+6ade8a0c conn=1022 fd=11 ACCEPT from IP=172.21.51.240:56248 (IP=0.0.0.0:389)
+6ade8a0c conn=1022 op=0 BIND dn="uid=vasco,ou=people,dc=lab,dc=example" method=128
+6ade8a0c conn=1022 op=0 RESULT tag=97 err=49 text=
+6ade8a0c conn=1023 fd=11 ACCEPT from IP=172.21.51.151:42224 (IP=0.0.0.0:389)
+6ade8a0c conn=1023 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" method=128
+6ade8a0c conn=1023 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ade8a0c conn=1023 op=0 RESULT tag=97 err=0 text=
+6ade8a0c conn=1023 op=1 RESULT oid= err=0 text=

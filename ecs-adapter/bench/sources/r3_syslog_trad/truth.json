@@ -1,0 +1,124 @@
+{
+  "source_id": "r3_syslog_trad",
+  "family": "linux-auth-syslog",
+  "split": "train_r3",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Debian 12 OpenSSH 9.2p1 + sudo 1.9.13p3, rsyslog 8.2302.0 RSYSLOG_TraditionalFileFormat, not copied from documentation or a public dataset. Captured 2026-10-19T23:41:57Z on the author's laptop by testbed/r3/r3_syslog.sh (/var/log/auth.log inside the container (auth,authpriv.*)); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 3, OLD COLLECTOR - training material only. /var/log/auth.log in the traditional format. Contamination HIGH: SIEMgen's linux_auth family and round 4 phase 2's header-edit pairs are this kind of line. The sshd messages are the same program as r3_sshd_deb12 (declared).",
+  "fields": [
+    {
+      "source_key": "host",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "role": "host_name",
+      "difficulty": "easy",
+      "note": "host.name is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "program",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "role": "program_name",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "outcome",
+      "ecs_field": "event.outcome",
+      "type": "keyword",
+      "role": "auth_outcome",
+      "difficulty": "medium",
+      "note": "Failed -> failure, Accepted -> success (value map).",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "src_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "src_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "kex_failure",
+      "difficulty": "hard",
+      "note": "event.reason is taken by sudo_result; the IR maps one key per field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "sudo_result",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "cwd",
+      "ecs_field": "process.working_directory",
+      "type": "keyword",
+      "role": "working_directory",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "target_user",
+      "ecs_field": "user.target.name",
+      "type": "keyword",
+      "role": "target_account",
+      "difficulty": "hard",
+      "note": "The account sudo runs the command AS; user.name would be WRONG (that is `user`).",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "command",
+      "ecs_field": "process.command_line",
+      "type": "keyword",
+      "role": "command_line",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r3_syslog_trad__holdout_01",
+    "r3_syslog_trad__holdout_02",
+    "r3_syslog_trad__holdout_03",
+    "r3_syslog_trad__holdout_05",
+    "r3_syslog_trad__holdout_06"
+  ],
+  "round3": {
+    "pair": "r3_syslog",
+    "role": "old"
+  }
+}

@@ -1,0 +1,22 @@
+6ae21d11 conn=1011 fd=11 ACCEPT from IP=172.21.51.21:34924 (IP=0.0.0.0:389)
+6ae21d11 conn=1011 op=0 BIND dn="uid=svc-backup,ou=people,dc=lab,dc=example" method=128
+6ae21d11 conn=1011 op=0 BIND dn="uid=svc-backup,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ae21d11 conn=1011 op=0 RESULT tag=97 err=0 text=
+6ae21d11 conn=1011 op=1 RESULT oid= err=0 text=
+6ae21d12 conn=1012 fd=11 ACCEPT from IP=172.21.51.21:43858 (IP=0.0.0.0:389)
+6ae21d12 conn=1012 op=0 BIND dn="uid=svc-backup,ou=people,dc=lab,dc=example" method=128
+6ae21d12 conn=1012 op=0 BIND dn="uid=svc-backup,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ae21d12 conn=1012 op=0 RESULT tag=97 err=0 text=
+6ae21d12 conn=1012 op=1 SRCH base="ou=people,dc=lab,dc=example" scope=2 deref=0 filter="(uid=*)"
+6ae21d12 conn=1012 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=
+6ae21d12 conn=1013 fd=11 ACCEPT from IP=172.21.51.95:59734 (IP=0.0.0.0:389)
+6ae21d12 conn=1013 op=0 BIND dn="uid=svc-backup,ou=people,dc=lab,dc=example" method=128
+6ae21d12 conn=1013 op=0 RESULT tag=97 err=49 text=
+6ae21d13 conn=1014 fd=11 ACCEPT from IP=172.21.51.94:40200 (IP=0.0.0.0:389)
+6ae21d13 conn=1014 op=0 BIND dn="" method=128
+6ae21d13 conn=1014 op=0 RESULT tag=97 err=0 text=
+6ae21d13 conn=1014 op=1 SRCH base="dc=lab,dc=example" scope=2 deref=0 filter="(objectClass=inetOrgPerson)"
+6ae21d13 conn=1014 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=
+6ae21d13 conn=1015 fd=11 ACCEPT from IP=172.21.51.93:41554 (IP=0.0.0.0:389)
+6ae21d13 conn=1015 op=0 BIND dn="cn=root,dc=lab,dc=example" method=128
+6ae21d13 conn=1015 op=0 RESULT tag=97 err=49 text=

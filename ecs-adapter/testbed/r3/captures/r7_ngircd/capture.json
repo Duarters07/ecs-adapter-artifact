@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T19:05:27Z","old":"Debian 12 ngIRCd 26.1-IDENT+IPv6+IRCPLUS+PAM+SSL+SYSLOG+ZLIB-x86_64/pc/linux-gnu","new":"Debian 13 ngIRCd 27-IDENT+IPv6+IRCPLUS+PAM+SSL+SYSLOG+ZLIB-x86_64/pc/linux-gnu","collected_by":"docker logs (console, -n): connection, password, OPER and closing lines"}

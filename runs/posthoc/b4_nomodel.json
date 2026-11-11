@@ -1,0 +1,1404 @@
+{
+ "rows": [
+  {
+   "source": "r7_389ds_31",
+   "real": true,
+   "group": "struct",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.6,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 3,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_389ds_31",
+   "real": true,
+   "group": "struct",
+   "candidate": "layer",
+   "rewrites": [
+    "extraction_from_samples",
+    "old_grok_nested_in_json",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved"
+   ],
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.code",
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 14.0,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.code",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "user.name",
+     "uid=ana,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=backup,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=carla,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=dario,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=ghost,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=monitor,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=rui,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=svcscan,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=trainee,ou=people,dc=lab,dc=example",
+     "BIND"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.code",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "user.name",
+     "uid=ana,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=backup,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=carla,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=dario,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=ghost,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=monitor,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=rui,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=svcscan,ou=people,dc=lab,dc=example",
+     "BIND"
+    ],
+    [
+     "user.name",
+     "uid=trainee,ou=people,dc=lab,dc=example",
+     "BIND"
+    ]
+   ],
+   "rules_total": 3,
+   "rules_fire": 1
+  },
+  {
+   "source": "r7_emqx_58",
+   "real": true,
+   "group": "reword",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 3,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_emqx_58",
+   "real": true,
+   "group": "reword",
+   "candidate": "layer",
+   "rewrites": [
+    "literal_absent_from_data_dropped",
+    "literal_absent_from_data_dropped",
+    "literal_absent_from_data_dropped"
+   ],
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 3,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_icinga2_214",
+   "real": true,
+   "group": "reword",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 4,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_icinga2_214",
+   "real": true,
+   "group": "reword",
+   "candidate": "layer",
+   "rewrites": [
+    "template_alternatives_added"
+   ],
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 4,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_inspircd_47",
+   "real": true,
+   "group": "reword",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 4,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_inspircd_47",
+   "real": true,
+   "group": "reword",
+   "candidate": "layer",
+   "rewrites": [],
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 4,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_kamailio_json",
+   "real": true,
+   "group": "struct",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 4,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_kamailio_json",
+   "real": true,
+   "group": "struct",
+   "candidate": "layer",
+   "rewrites": [
+    "extraction_from_samples",
+    "old_grok_nested_in_json",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved"
+   ],
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 15.9,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 4,
+   "rules_fire": 2
+  },
+  {
+   "source": "r7_knot_346",
+   "real": true,
+   "group": "reword",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 3,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_knot_346",
+   "real": true,
+   "group": "reword",
+   "candidate": "layer",
+   "rewrites": [
+    "template_alternatives_added"
+   ],
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 3,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_mattermost_text",
+   "real": true,
+   "group": "struct",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 5,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_mattermost_text",
+   "real": true,
+   "group": "struct",
+   "candidate": "layer",
+   "rewrites": [],
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 5,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_mumble_15",
+   "real": true,
+   "group": "nonbreak",
+   "candidate": "previous",
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.6,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 3,
+   "rules_fire": 3
+  },
+  {
+   "source": "r7_mumble_15",
+   "real": true,
+   "group": "nonbreak",
+   "candidate": "layer",
+   "rewrites": [],
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 3,
+   "rules_fire": 3
+  },
+  {
+   "source": "r7_nextcloud_syslog",
+   "real": true,
+   "group": "struct",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 5,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_nextcloud_syslog",
+   "real": true,
+   "group": "struct",
+   "candidate": "layer",
+   "rewrites": [],
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 5,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_ngircd_27",
+   "real": false,
+   "group": "control",
+   "candidate": "previous",
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.action",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 17.9,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 4,
+   "rules_fire": 4
+  },
+  {
+   "source": "r7_ngircd_27",
+   "real": false,
+   "group": "control",
+   "candidate": "layer",
+   "rewrites": [],
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.action",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 16.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 4,
+   "rules_fire": 4
+  },
+  {
+   "source": "r7_nsd_4120",
+   "real": true,
+   "group": "partial",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 2,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_nsd_4120",
+   "real": true,
+   "group": "partial",
+   "candidate": "layer",
+   "rewrites": [
+    "template_alternatives_added"
+   ],
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 2,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_ocserv_130",
+   "real": true,
+   "group": "partial",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 2,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_ocserv_130",
+   "real": true,
+   "group": "partial",
+   "candidate": "layer",
+   "rewrites": [
+    "template_alternatives_added"
+   ],
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.7,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 2,
+   "rules_fire": 2
+  },
+  {
+   "source": "r7_pdnsrec_52",
+   "real": true,
+   "group": "partial",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 4,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_pdnsrec_52",
+   "real": true,
+   "group": "partial",
+   "candidate": "layer",
+   "rewrites": [
+    "template_alternatives_added"
+   ],
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.action",
+    "process.thread.id"
+   ],
+   "seconds": 16.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "process.thread.id"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "process.thread.id"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 4,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_privoxy_400",
+   "real": false,
+   "group": "control",
+   "candidate": "previous",
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "url.domain"
+   ],
+   "seconds": 9.2,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "url.domain"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "url.domain"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 1,
+   "rules_fire": 1
+  },
+  {
+   "source": "r7_privoxy_400",
+   "real": false,
+   "group": "control",
+   "candidate": "layer",
+   "rewrites": [],
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "url.domain"
+   ],
+   "seconds": 9.7,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "url.domain"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "url.domain"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 1,
+   "rules_fire": 1
+  },
+  {
+   "source": "r7_radicale_353",
+   "real": true,
+   "group": "reword",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 2,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_radicale_353",
+   "real": true,
+   "group": "reword",
+   "candidate": "layer",
+   "rewrites": [
+    "template_alternatives_added"
+   ],
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 2,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_rspamd_3121",
+   "real": false,
+   "group": "control",
+   "candidate": "previous",
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "email.from.address",
+    "event.action",
+    "source.ip"
+   ],
+   "seconds": 12.0,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "email.from.address",
+    "event.action",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "email.from.address",
+    "event.action",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 2,
+   "rules_fire": 2
+  },
+  {
+   "source": "r7_rspamd_3121",
+   "real": false,
+   "group": "control",
+   "candidate": "layer",
+   "rewrites": [],
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "email.from.address",
+    "event.action",
+    "source.ip"
+   ],
+   "seconds": 11.3,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "email.from.address",
+    "event.action",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "email.from.address",
+    "event.action",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 2,
+   "rules_fire": 2
+  },
+  {
+   "source": "r7_sendmail_8181",
+   "real": false,
+   "group": "control",
+   "candidate": "previous",
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "email.from.address",
+    "email.message_id",
+    "email.to.address",
+    "event.reason",
+    "rule.name",
+    "source.domain",
+    "source.ip"
+   ],
+   "seconds": 14.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "email.from.address",
+    "email.message_id",
+    "email.to.address",
+    "event.reason",
+    "rule.name",
+    "source.domain",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "email.from.address",
+    "email.message_id",
+    "email.to.address",
+    "event.reason",
+    "rule.name",
+    "source.domain",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 5,
+   "rules_fire": 5
+  },
+  {
+   "source": "r7_sendmail_8181",
+   "real": false,
+   "group": "control",
+   "candidate": "layer",
+   "rewrites": [],
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "email.from.address",
+    "email.message_id",
+    "email.to.address",
+    "event.reason",
+    "rule.name",
+    "source.domain",
+    "source.ip"
+   ],
+   "seconds": 18.2,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "email.from.address",
+    "email.message_id",
+    "email.to.address",
+    "event.reason",
+    "rule.name",
+    "source.domain",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "email.from.address",
+    "email.message_id",
+    "email.to.address",
+    "event.reason",
+    "rule.name",
+    "source.domain",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 5,
+   "rules_fire": 5
+  },
+  {
+   "source": "r7_stunnel_574",
+   "real": true,
+   "group": "nonbreak",
+   "candidate": "previous",
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 14.1,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 3,
+   "rules_fire": 3
+  },
+  {
+   "source": "r7_stunnel_574",
+   "real": true,
+   "group": "nonbreak",
+   "candidate": "layer",
+   "rewrites": [],
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 14.2,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 3,
+   "rules_fire": 3
+  },
+  {
+   "source": "r7_synapse_json",
+   "real": true,
+   "group": "struct",
+   "candidate": "previous",
+   "rung": "V2",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 0.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false,
+   "rules_total": 5,
+   "rules_fire": 0
+  },
+  {
+   "source": "r7_synapse_json",
+   "real": true,
+   "group": "struct",
+   "candidate": "layer",
+   "rewrites": [
+    "extraction_from_samples",
+    "old_grok_nested_in_json",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved",
+    "uncovered_key_declared_unresolved"
+   ],
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "http.response.body.bytes",
+    "http.response.status_code",
+    "log.level",
+    "source.ip"
+   ],
+   "seconds": 16.7,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "http.response.body.bytes",
+    "http.response.status_code",
+    "log.level",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "http.response.body.bytes",
+    "http.response.status_code",
+    "log.level",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 5,
+   "rules_fire": 1
+  },
+  {
+   "source": "r7_unbound_126",
+   "real": false,
+   "group": "control",
+   "candidate": "previous",
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "source.ip"
+   ],
+   "seconds": 14.3,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 3,
+   "rules_fire": 3
+  },
+  {
+   "source": "r7_unbound_126",
+   "real": false,
+   "group": "control",
+   "candidate": "layer",
+   "rewrites": [],
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "source.ip"
+   ],
+   "seconds": 12.7,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": [],
+   "rules_total": 3,
+   "rules_fire": 3
+  }
+ ]
+}

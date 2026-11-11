@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "network.forwarded_ip": "203.0.113.88"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.ip": "172.21.0.3"
+              }
+            },
+            {
+              "term": {
+                "source.ip": "172.21.0.3"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

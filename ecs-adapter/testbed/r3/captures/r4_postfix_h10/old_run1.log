@@ -1,0 +1,9 @@
+Oct 28 15:34:13 mail postfix/qmgr[99]: 627A4F26BC9: from=<bob@example.org>, size=237, nrcpt=1 (queue active)
+Oct 28 15:34:13 mail postfix/local[115]: 627A4F26BC9: to=<ana@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 28 15:34:13 mail postfix/qmgr[99]: 627A4F26BC9: removed
+Oct 28 15:34:13 mail postfix/qmgr[99]: DD667F26BCF: from=<promo@spam.test>, size=236, nrcpt=1 (queue active)
+Oct 28 15:34:13 mail postfix/local[115]: DD667F26BCF: to=<nobody@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 28 15:34:13 mail postfix/qmgr[99]: DD667F26BCF: removed
+Oct 28 15:34:14 mail postfix/qmgr[99]: 64FABF26BD2: from=<bob@example.org>, size=237, nrcpt=1 (queue active)
+Oct 28 15:34:14 mail postfix/local[115]: 64FABF26BD2: to=<rui@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 28 15:34:14 mail postfix/qmgr[99]: 64FABF26BD2: removed

@@ -1,0 +1,8 @@
+{
+ "dataset": "AIT-LDS v2.1",
+ "scenario": "russellmitchell",
+ "file": "gather/intranet_server/logs/audit/audit.log",
+ "lines_in_file": 2316,
+ "sampler": "adapter.sampler.deduplicate(per_signature=3,total_cap=20)",
+ "file_sha256": "8dbee7a1f2d998c4bee99748b3be2cc16479f1e81fe30a71b1f9197f53f2601c"
+}

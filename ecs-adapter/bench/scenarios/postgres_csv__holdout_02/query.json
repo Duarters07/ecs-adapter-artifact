@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.pid": 291
+        }
+      },
+      {
+        "term": {
+          "user.name": "auditor"
+        }
+      }
+    ]
+  }
+}

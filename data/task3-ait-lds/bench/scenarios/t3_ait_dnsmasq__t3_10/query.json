@@ -1,0 +1,16 @@
+{
+ "bool": {
+  "filter": [
+   {
+    "term": {
+     "dns.question.type": "PTR"
+    }
+   },
+   {
+    "term": {
+     "source.ip": "172.17.130.196"
+    }
+   }
+  ]
+ }
+}

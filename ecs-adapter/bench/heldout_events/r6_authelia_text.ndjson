@@ -1,0 +1,2 @@
+{"raw": "time=\"2026-10-27T15:43:03Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'backup'\" error=\"user not found\" method=POST path=/api/firstfactor remote_ip=172.21.61.95"}
+{"raw": "time=\"2026-10-27T15:43:08Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'ana' and they are banned until 2026-10-27 15:48:07.518681717 +0000 UTC\" method=POST path=/api/firstfactor remote_ip=172.21.61.21"}

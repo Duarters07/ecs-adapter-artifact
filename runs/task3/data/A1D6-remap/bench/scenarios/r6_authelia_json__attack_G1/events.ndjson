@@ -1,0 +1,4 @@
+{"raw": "{\"level\":\"error\",\"method\":\"POST\",\"msg\":\"Unsuccessful 1FA authentication attempt by user 'admin0'\",\"path\":\"/api/firstfactor\",\"remote_ip\":\"203.0.113.10\",\"time\":\"2026-10-27T15:43:17Z\"}"}
+{"raw": "{\"error\":\"user not found\",\"level\":\"error\",\"method\":\"POST\",\"msg\":\"Unsuccessful 1FA authentication attempt by user 'admin1'\",\"path\":\"/api/firstfactor\",\"remote_ip\":\"203.0.113.10\",\"time\":\"2026-10-27T15:43:22Z\"}"}
+{"raw": "{\"level\":\"error\",\"method\":\"POST\",\"msg\":\"Unsuccessful 1FA authentication attempt by user 'admin2'\",\"path\":\"/api/firstfactor\",\"remote_ip\":\"203.0.113.10\",\"time\":\"2026-10-27T15:43:27Z\"}"}
+{"raw": "{\"error\":\"user not found\",\"level\":\"error\",\"method\":\"POST\",\"msg\":\"Unsuccessful 1FA authentication attempt by user 'admin3'\",\"path\":\"/api/firstfactor\",\"remote_ip\":\"203.0.113.10\",\"time\":\"2026-10-27T15:43:32Z\"}"}

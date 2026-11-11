@@ -1,0 +1,15 @@
+0a6ddc75ac50e5be smtp connected address=172.21.63.193 host=loving_payne.r3-net
+0a6ddc75ac50e5be smtp failed-command command="rcpt TO:<postgres@target.org>" result="550 Invalid recipient: <postgres@target.org>"
+0a6ddc75ac50e5be smtp disconnected reason=disconnect
+0a6ddc768bad5bf7 smtp connected address=172.21.63.161 host=laughing_leavitt.r3-net
+0a6ddc768bad5bf7 smtp failed-command command="rcpt TO:<filipe@lab.local>" result="550 Invalid recipient: <filipe@lab.local>"
+0a6ddc768bad5bf7 smtp disconnected reason=disconnect
+0a6ddc778a79038b smtp connected address=172.21.63.239 host=pensive_liskov.r3-net
+0a6ddc778a79038b smtp failed-command command="rcpt TO:<katia@other.org>" result="550 Invalid recipient: <katia@other.org>"
+0a6ddc778a79038b smtp disconnected reason=disconnect
+0a6ddc78e64c2255 smtp connected address=172.21.63.138 host=boring_kowalevski.r3-net
+0a6ddc78e64c2255 smtp failed-command command="rcpt TO:<ftpuser@corp.example>" result="550 Invalid recipient: <ftpuser@corp.example>"
+0a6ddc78e64c2255 smtp disconnected reason=disconnect
+0a6ddc7916cf023f smtp connected address=172.21.63.163 host=kind_buck.r3-net
+0a6ddc7916cf023f smtp failed-command command="rcpt TO:<diogo@lab.local>" result="550 Invalid recipient: <diogo@lab.local>"
+0a6ddc7916cf023f smtp disconnected reason=disconnect

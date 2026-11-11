@@ -1,0 +1,27 @@
+2026-10-25 23:17:03 172.21.58.246:52240 TLS: Initial packet from [AF_INET]172.21.58.246:52240, sid=6f85858a 49ceb141
+2026-10-25 23:17:03 172.21.58.246:52240 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 23:17:03 172.21.58.246:52240 VERIFY OK: depth=0, CN=phone-sofia
+2026-10-25 23:17:03 172.21.58.246:52240 [phone-sofia] Peer Connection Initiated with [AF_INET]172.21.58.246:52240
+2026-10-25 23:17:03 phone-sofia/172.21.58.246:52240 MULTI_sva: pool returned IPv4=10.8.0.18, IPv6=(Not enabled)
+2026-10-25 23:17:04 172.21.58.143:37703 TLS: Initial packet from [AF_INET]172.21.58.143:37703, sid=b31a6c7a 6444bd3f
+2026-10-25 23:17:04 172.21.58.143:37703 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 23:17:04 172.21.58.143:37703 VERIFY OK: depth=0, CN=nas-backup
+2026-10-25 23:17:04 172.21.58.143:37703 TLS Auth Error: Auth Username/Password verification failed for peer
+2026-10-25 23:17:04 172.21.58.143:37703 [nas-backup] Peer Connection Initiated with [AF_INET]172.21.58.143:37703
+2026-10-25 23:17:05 172.21.58.143:37703 SENT CONTROL [nas-backup]: 'AUTH_FAILED' (status=1)
+2026-10-25 23:17:06 172.21.58.242:41470 TLS: Initial packet from [AF_INET]172.21.58.242:41470, sid=37e9ae6d 01aac102
+2026-10-25 23:17:06 172.21.58.242:41470 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 23:17:06 172.21.58.242:41470 VERIFY OK: depth=0, CN=laptop-rui
+2026-10-25 23:17:06 172.21.58.242:41470 [laptop-rui] Peer Connection Initiated with [AF_INET]172.21.58.242:41470
+2026-10-25 23:17:06 MULTI_sva: pool returned IPv4=10.8.0.14, IPv6=(Not enabled)
+2026-10-25 23:17:06 172.21.58.128:42579 TLS: Initial packet from [AF_INET]172.21.58.128:42579, sid=7b3de0dc 3fec730e
+2026-10-25 23:17:06 172.21.58.128:42579 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 23:17:06 172.21.58.128:42579 VERIFY OK: depth=0, CN=laptop-ana
+2026-10-25 23:17:06 172.21.58.128:42579 [laptop-ana] Peer Connection Initiated with [AF_INET]172.21.58.128:42579
+2026-10-25 23:17:06 MULTI_sva: pool returned IPv4=10.8.0.6, IPv6=(Not enabled)
+2026-10-25 23:17:07 172.21.58.123:50985 TLS: Initial packet from [AF_INET]172.21.58.123:50985, sid=7569174a 5f3be08c
+2026-10-25 23:17:07 172.21.58.123:50985 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 23:17:07 172.21.58.123:50985 VERIFY OK: depth=0, CN=laptop-ana
+2026-10-25 23:17:07 172.21.58.123:50985 TLS Auth Error: Auth Username/Password verification failed for peer
+2026-10-25 23:17:07 172.21.58.123:50985 [laptop-ana] Peer Connection Initiated with [AF_INET]172.21.58.123:50985
+2026-10-25 23:17:08 172.21.58.123:50985 SENT CONTROL [laptop-ana]: 'AUTH_FAILED' (status=1)

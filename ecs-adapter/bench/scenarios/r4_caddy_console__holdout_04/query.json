@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.logger": "http.log.access.log0"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.port": 59248
+              }
+            },
+            {
+              "term": {
+                "source.port": 59248
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

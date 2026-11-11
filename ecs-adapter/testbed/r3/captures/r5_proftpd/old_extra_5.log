@@ -1,0 +1,12 @@
+2026-10-25 23:02:35,313 files01 proftpd[31] 172.21.0.2 (172.21.52.158[172.21.52.158]): FTP session opened.
+2026-10-25 23:02:37,921 files01 proftpd[31] 172.21.0.2 (172.21.52.158[172.21.52.158]): USER scanner (Login failed): Incorrect password
+2026-10-25 23:02:38,979 files01 proftpd[32] 172.21.0.2 (172.21.52.125[172.21.52.125]): FTP session opened.
+2026-10-25 23:02:40,665 files01 proftpd[32] 172.21.0.2 (172.21.52.125[172.21.52.125]): USER scanner (Login failed): Incorrect password
+2026-10-25 23:02:41,731 files01 proftpd[33] 172.21.0.2 (172.21.52.170[172.21.52.170]): FTP session opened.
+2026-10-25 23:02:44,163 files01 proftpd[33] 172.21.0.2 (172.21.52.170[172.21.52.170]): USER scanner (Login failed): Incorrect password
+2026-10-25 23:02:45,219 files01 proftpd[34] 172.21.0.2 (172.21.52.237[172.21.52.237]): FTP session opened.
+2026-10-25 23:02:45,219 files01 proftpd[34] 172.21.0.2 (172.21.52.237[172.21.52.237]): USER admin: no such user found from 172.21.52.237 [172.21.52.237] to 172.21.0.2:21
+2026-10-25 23:02:46,283 files01 proftpd[35] 172.21.0.2 (172.21.52.190[172.21.52.190]): FTP session opened.
+2026-10-25 23:02:46,283 files01 proftpd[35] 172.21.0.2 (172.21.52.190[172.21.52.190]): USER anonymous: no such user found from 172.21.52.190 [172.21.52.190] to 172.21.0.2:21
+2026-10-25 23:02:47,624 files01 proftpd[36] 172.21.0.2 (172.21.52.199[172.21.52.199]): FTP session opened.
+2026-10-25 23:02:50,217 files01 proftpd[36] 172.21.0.2 (172.21.52.199[172.21.52.199]): USER rui (Login failed): Incorrect password

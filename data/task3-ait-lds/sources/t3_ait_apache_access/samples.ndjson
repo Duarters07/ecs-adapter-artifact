@@ -1,0 +1,6 @@
+{"raw": "10.143.2.91 - - [23/Jan/2022:06:36:13 +0000] \"GET / HTTP/1.1\" 200 6203 \"-\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:86.0) Gecko/20100101 Firefox/86.0\""}
+{"raw": "10.143.2.91 - - [23/Jan/2022:06:36:14 +0000] \"GET /wp-includes/css/dist/block-library/style.min.css?ver=5.8.3 HTTP/1.1\" 200 10846 \"http://intranet.smith.russellmitchell.com/\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:86.0) Gecko/20100101 Firefox/86.0\""}
+{"raw": "10.143.2.91 - - [23/Jan/2022:06:36:14 +0000] \"GET /wp-includes/js/wp-embed.min.js?ver=5.8.3 HTTP/1.1\" 200 1099 \"http://intranet.smith.russellmitchell.com/\" \"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:86.0) Gecko/20100101 Firefox/86.0\""}
+{"raw": "::1 - - [23/Jan/2022:06:36:20 +0000] \"OPTIONS * HTTP/1.0\" 200 110 \"-\" \"Apache/2.4.29 (Ubuntu) OpenSSL/1.1.1 (internal dummy connection)\""}
+{"raw": "::1 - - [23/Jan/2022:07:59:37 +0000] \"OPTIONS * HTTP/1.0\" 200 110 \"-\" \"Apache/2.4.29 (Ubuntu) OpenSSL/1.1.1 (internal dummy connection)\""}
+{"raw": "::1 - - [23/Jan/2022:09:51:56 +0000] \"OPTIONS * HTTP/1.0\" 200 110 \"-\" \"Apache/2.4.29 (Ubuntu) OpenSSL/1.1.1 (internal dummy connection)\""}

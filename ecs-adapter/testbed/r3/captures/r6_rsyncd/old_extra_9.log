@@ -1,0 +1,15 @@
+2026/10/27 16:49:50 [203] connect from UNDETERMINED (172.21.65.210)
+2026/10/27 16:49:50 [203] rsync allowed access on module finance from UNDETERMINED (172.21.65.210)
+2026/10/27 16:49:50 [204] connect from UNDETERMINED (172.21.65.209)
+2026/10/27 16:49:50 [204] rsync allowed access on module finance from UNDETERMINED (172.21.65.209)
+2026/10/27 16:49:50 [204] auth failed on module finance from UNDETERMINED (172.21.65.209) for rui: no matching rule
+2026/10/27 16:49:51 [205] connect from UNDETERMINED (172.21.65.185)
+2026/10/27 16:49:51 [205] unknown module 'root' tried from UNDETERMINED (172.21.65.185)
+2026/10/27 16:49:52 [206] connect from UNDETERMINED (172.21.65.221)
+2026/10/27 16:49:52 [206] unknown module 'etc' tried from UNDETERMINED (172.21.65.221)
+2026/10/27 16:49:52 [207] connect from UNDETERMINED (172.21.65.142)
+2026/10/27 16:49:52 [207] rsync allowed access on module finance from UNDETERMINED (172.21.65.142)
+2026/10/27 16:49:52 [207] auth failed on module finance from UNDETERMINED (172.21.65.142) for administrator: no matching rule
+2026/10/27 16:49:53 [208] connect from UNDETERMINED (172.21.65.158)
+2026/10/27 16:49:53 [208] rsync allowed access on module backup from UNDETERMINED (172.21.65.158)
+2026/10/27 16:49:53 [208] auth failed on module backup from UNDETERMINED (172.21.65.158) for olga: no matching rule

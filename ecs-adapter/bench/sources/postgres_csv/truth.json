@@ -1,0 +1,232 @@
+{
+  "family": "postgresql",
+  "category_hint": "database",
+  "contamination_risk": "medium",
+  "notes": "Twenty of the twenty-six columns have no ECS 8.11 field, and that is the point of including this source. ECS 8.11 has no database fieldset, so a model that insists on finding a home for `database_name`, `query_id` or `backend_type` will invent one, and every invention indexes cleanly. A source where abstention is the majority answer is the hardest test of a system that has no analyst to catch a confident mistake. `category_hint` is authentication rather than a database category because adapter/ecs_index.py offers no database fieldset either, and the authentication set is the one that reaches user, process and source.",
+  "fields": [
+    {
+      "source_key": "user_name",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "database_role",
+      "difficulty": "medium"
+    },
+    {
+      "source_key": "database_name",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "database_name",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "ECS 8.11 has no database fieldset. There is no field for the name of a database, and service.name describes the service, not one of its databases."
+    },
+    {
+      "source_key": "process_id",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "backend_process_id",
+      "difficulty": "medium"
+    },
+    {
+      "source_key": "connection_from",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "client_address_and_port",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`127.0.0.1:48542`, or the literal `[local]` for a Unix socket. Two values in one string, and sometimes neither. ECS source.address carries no port and the IR has no operation that splits a value."
+    },
+    {
+      "source_key": "session_id",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_identifier",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "PostgreSQL's identifier for the session, formed from the backend start time and process id. It correlates a session's messages and names no entity ECS models."
+    },
+    {
+      "source_key": "session_line_num",
+      "ecs_field": null,
+      "type": "long",
+      "role": "line_number_within_session",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The message's position within its session. A sequence number for ordering, not a property of the event."
+    },
+    {
+      "source_key": "command_tag",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "current_command",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`authentication`, `startup`, `idle`, `SELECT`. It reports what the session is doing at the moment the message was written, which is not necessarily what the message is about, so it is not event.action."
+    },
+    {
+      "source_key": "session_start_time",
+      "ecs_field": null,
+      "type": "date",
+      "role": "session_start",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "When the SESSION began, not when this event began. event.start would claim the latter."
+    },
+    {
+      "source_key": "virtual_transaction_id",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "virtual_transaction_id",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`3/37`. Backend id and a local transaction counter. A PostgreSQL-internal handle."
+    },
+    {
+      "source_key": "transaction_id",
+      "ecs_field": null,
+      "type": "long",
+      "role": "transaction_id",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The real transaction id, 0 outside an explicit transaction. Database-internal, and ECS 8.11 has no database fieldset."
+    },
+    {
+      "source_key": "error_severity",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "message_severity",
+      "difficulty": "hard",
+      "note": "LOG, ERROR, FATAL. This is the logger's level. It is not event.outcome: a FATAL authentication message records a failure, but a LOG message records neither success nor failure of anything in particular."
+    },
+    {
+      "source_key": "sql_state_code",
+      "ecs_field": "event.code",
+      "type": "keyword",
+      "role": "sqlstate",
+      "difficulty": "hard",
+      "note": "The five-character SQLSTATE. A vendor-defined identifier for what happened, which is what ECS event.code is for. Keyword, not long: `00000` and `42P01` are codes, and the leading zeros are significant."
+    },
+    {
+      "source_key": "message",
+      "ecs_field": "message",
+      "type": "keyword",
+      "role": "log_message",
+      "difficulty": "medium"
+    },
+    {
+      "source_key": "detail",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "error_detail",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Supplementary error detail, empty on most messages. ECS error.message would claim it is the error, and the error is in `message`."
+    },
+    {
+      "source_key": "hint",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "error_hint",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "A suggested remedy, written for a human reading the log. It describes what could be done next, not what happened."
+    },
+    {
+      "source_key": "internal_query",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "internal_query_text",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The SQL a function or trigger ran internally, not the statement the client sent. ECS 8.11 has no field for a query string."
+    },
+    {
+      "source_key": "internal_query_pos",
+      "ecs_field": null,
+      "type": "long",
+      "role": "internal_query_position",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "A character offset into internal_query."
+    },
+    {
+      "source_key": "context",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "error_context",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The call stack inside PostgreSQL that led to the message."
+    },
+    {
+      "source_key": "query",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "statement_text",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The SQL statement. ECS 8.11 has no field for a query string."
+    },
+    {
+      "source_key": "query_pos",
+      "ecs_field": null,
+      "type": "long",
+      "role": "error_position_in_query",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "A character offset into the client's statement, pointing at the syntax error. An offset, not a value."
+    },
+    {
+      "source_key": "location",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "server_source_location",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "A position in PostgreSQL's own C source. It describes the server's code, not the event."
+    },
+    {
+      "source_key": "application_name",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "client_supplied_label",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "A label the CLIENT chose for itself. It is not process.name, which would be the process on the host, and not service.name, which would be the service being logged."
+    },
+    {
+      "source_key": "backend_type",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "postgres_backend_type",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`client backend`, `checkpointer`, `autovacuum launcher`. Which kind of PostgreSQL process wrote the line. Not process.name, which would be the executable, and the executable is postgres for all of them."
+    },
+    {
+      "source_key": "leader_pid",
+      "ecs_field": null,
+      "type": "long",
+      "role": "parallel_leader_pid",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Empty outside parallel query. process.parent.pid is the parent process, which a parallel leader is not."
+    },
+    {
+      "source_key": "query_id",
+      "ecs_field": null,
+      "type": "long",
+      "role": "query_hash",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "A hash of the normalised statement, 0 when compute_query_id is off. Database-internal, and not an event identifier."
+    }
+  ],
+  "source_id": "postgres_csv",
+  "split": "test",
+  "origin": "Produced by running the software, not copied from documentation or a public dataset. Captured on 2 October 2026 on the project's own Docker host.",
+  "scenarios": [
+    "postgres_csv__holdout_01",
+    "postgres_csv__holdout_02"
+  ]
+}

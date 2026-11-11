@@ -1,0 +1,245 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage 1 semantic roles",
+  "description": "The contract between Stage 1 (interpret) and Stage 2 (map). Deliberately free of ECS vocabulary: Stage 1 must describe what a field MEANS without being able to name where it goes. If an ECS field name appears here, the decomposition has collapsed and the two stages are no longer separately trainable.",
+  "type": "object",
+  "required": [
+    "source_id",
+    "format_summary",
+    "extraction",
+    "roles"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{1,63}$"
+    },
+    "format_summary": {
+      "type": "string",
+      "maxLength": 512,
+      "description": "How the line is structured, in plain language, NAMING any delimiter rather than its family - 'key=value pairs separated by \", \"' rather than 'comma-separated'. REQUIRED: Stage 2 chooses extraction.kind from this and nothing else, and has to reproduce the separator exactly without ever seeing a line. Left out, it guesses - it once chose csv for a key=value source and invented a column name to fill the list."
+    },
+    "roles": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "required": [
+          "source_key",
+          "role",
+          "evidence",
+          "confidence"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "source_key": {
+            "type": "string",
+            "maxLength": 128
+          },
+          "role": {
+            "type": "string",
+            "maxLength": 256,
+            "description": "Plain-language semantic role, e.g. 'address the connection came from'. Never an ECS field name."
+          },
+          "value_semantics": {
+            "type": "string",
+            "maxLength": 256,
+            "description": "What the VALUES mean, e.g. 'denied means the attempt was rejected'. Drives value_maps in Stage 2."
+          },
+          "unit": {
+            "type": "string",
+            "maxLength": 64,
+            "description": "Unit of measure when the value is numeric, e.g. 'seconds', 'bytes'. Stage 2 cannot detect a unit mismatch it was never told about."
+          },
+          "evidence": {
+            "type": "string",
+            "maxLength": 256,
+            "description": "documentation:<anchor> | sample:<n> | inference. A role backed by 'inference' is weaker and the repair loop is allowed to say so."
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "value_shape": {
+            "type": "string",
+            "maxLength": 200,
+            "description": "What the values LOOK LIKE, in words, when the shape decides between two ECS fields - e.g. 'a bare command name, not an absolute path', 'a short hostname, not an FQDN', 'a numeric identifier, not a display name'. Describe the shape; never quote a value. Stage 2 never sees a log line and cannot tell a name from a path it was never shown. This is the sibling of `unit`, which does the same job for numbers."
+          }
+        }
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "maxItems": 64,
+      "description": "A measured outcome, not an error path. Declining a genuinely ambiguous field is correct behaviour and is scored as such.",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_key",
+          "reason"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "source_key": {
+            "type": "string",
+            "maxLength": 128
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 256
+          }
+        }
+      }
+    },
+    "column_order": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 128
+      },
+      "maxItems": 64,
+      "description": "Source keys in the order they appear on the line. REQUIRED when the layout is delimited, because Stage 2 never sees a log line and cannot recover the order any other way. Omit it for json and key=value layouts, where position carries no meaning."
+    },
+    "extraction": {
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false,
+      "description": "HOW TO SPLIT THE LINE, decided by the component that can see one. Stage 2 never sees a log line, so it cannot write this and used to reconstruct it from format_summary in prose. That works for a delimiter and fails completely for grok, whose pattern is a literal transcription of the line's shape: the two-stage arms were therefore structurally incapable of parsing free text, and three of the eight evaluation sources are free text. Stage 1 states it here instead. This leaks no ECS vocabulary - delimiters and capture names are not field names - so the blindness that matters is preserved.",
+      "properties": {
+        "kind": {
+          "enum": [
+            "json",
+            "kv",
+            "csv",
+            "grok"
+          ],
+          "description": "json: the whole line is a JSON object. kv: repeated key<value_split>value pairs. csv: positional columns, any single separator. grok: anything else - prose with values embedded in it. A line with no value_split character in it is NOT kv."
+        },
+        "field_split": {
+          "type": "string",
+          "maxLength": 8,
+          "description": "What separates one field from the next: a LITERAL string, not a regular expression. Write | for a pipe, never \\|; nothing here is matched as a pattern, so nothing is escaped. For a tab, write the ordinary JSON escape \\t, which decodes to one tab character - not \\\\t, which decodes to a backslash followed by a t and matches nothing. Required for kv and for csv, including when the separator is a comma. Omit for json and grok."
+        },
+        "value_split": {
+          "type": "string",
+          "maxLength": 8,
+          "description": "kv only: what separates a key from its value, usually =. A LITERAL string, on the same terms as field_split."
+        },
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 64,
+          "description": "csv only, REQUIRED there: every column left to right, including ones you do not intend to map. A name you choose is fine; position is what matters."
+        },
+        "pattern": {
+          "type": "string",
+          "maxLength": 2000,
+          "description": "grok only, REQUIRED there. Name each capture with %{SYNTAX:name}; those names become the source keys the next component maps. Match the WHOLE line. You are the only component that will ever see one."
+        },
+        "alternatives": {
+          "type": "array",
+          "maxItems": 7,
+          "items": {
+            "type": "string",
+            "maxLength": 2000
+          },
+          "description": "grok only. Further patterns, one per DIFFERENT KIND of line - 'job N started by X' beside 'node aborted job N owned by X'. Tried in order after `pattern`; the first that matches a line wins. Use the same capture name for the same value in every pattern. A segment that is merely sometimes absent belongs in `pattern` as (?:...)?, not here."
+        },
+        "inner": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "pattern"
+          ],
+          "description": "json only. A grok over the TEXT of one JSON key, for a JSON line whose values sit inside a message string: {\"msg\": \"Login failed for user ana from 10.0.0.1\"}. The json extraction keeps `msg` whole, so no key holds `ana` or `10.0.0.1`; `inner` reads them. `source` names the key (a dotted path for a nested key: log.message). `pattern` and `alternatives` work as for grok, on that key's text, and their capture names become keys beside the JSON keys. Omit when every value already has its own JSON key.",
+          "properties": {
+            "source": {
+              "type": "string",
+              "maxLength": 128,
+              "description": "The JSON key whose text the grok reads, e.g. msg."
+            },
+            "pattern": {
+              "type": "string",
+              "maxLength": 2000,
+              "description": "A grok over that key's text, matching ALL of it."
+            },
+            "alternatives": {
+              "type": "array",
+              "maxItems": 7,
+              "items": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "description": "Further patterns for texts that are a DIFFERENT KIND of message."
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "csv"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "kind",
+              "columns",
+              "field_split"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "grok"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "kind",
+              "pattern"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "kv"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "kind",
+              "field_split",
+              "value_split"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8823 @@
+{
+ "rows": {
+  "C": [
+   {
+    "source": "r7_389ds_31",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action",
+     "event.reason"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset",
+     "event.type"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset",
+     "event.type"
+    ]
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset",
+     "event.type"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset",
+     "event.type"
+    ]
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset",
+     "event.type"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset",
+     "event.type"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 4,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V3",
+    "v4_deploys": false,
+    "vc_verified": [
+     "destination.port",
+     "event.action",
+     "event.reason",
+     "log.logger",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.port",
+     "event.action",
+     "event.reason",
+     "log.logger",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 2,
+    "vc_det": 2
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "destination.port",
+     "event.action",
+     "event.reason",
+     "log.logger",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.port",
+     "event.action",
+     "event.reason",
+     "log.logger",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 2,
+    "vc_det": 2
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "destination.port",
+     "event.action",
+     "event.reason",
+     "log.logger",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.port",
+     "event.action",
+     "event.reason",
+     "log.logger",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.type"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 2,
+    "vc_det": 2
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "log.level"
+    ],
+    "vc_contradicted": [
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "log.level"
+    ],
+    "vc_contradicted": [
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "log.level"
+    ],
+    "vc_contradicted": [
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "log.level"
+    ],
+    "vc_contradicted": [
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "log.level"
+    ],
+    "vc_contradicted": [
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "dns.question.type"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.type"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "dns.question.type"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.type"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "http.response.status_code",
+     "log.level",
+     "log.origin.file.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "http.response.status_code",
+     "log.level",
+     "log.origin.file.name"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 2,
+    "vc_det": 2
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "http.response.status_code",
+     "log.level",
+     "log.origin.file.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "http.response.status_code",
+     "log.level",
+     "log.origin.file.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 2,
+    "vc_det": 2
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "http.response.status_code",
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "http.response.status_code",
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 1,
+    "vc_det": 1
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 4,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "http.request.id"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 7,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 7,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 3,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "http.request.id"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 7,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 7,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 3,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "http.request.id"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 7,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 7,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 3,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "http.request.id"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 7,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 7,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 3,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "http.request.id"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 7,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 7,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 3,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [
+     "dns.question.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 0,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category"
+    ]
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 4,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 3,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.dataset",
+     "event.type"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset",
+     "event.type"
+    ]
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 3,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 5,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 5,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 4,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 3,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "refused_constants": [],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": []
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "refused_constants": [],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": []
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "service.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "service.name"
+    ],
+    "refused_constants": [],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 0,
+    "vc_det": 3
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "service.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "service.name"
+    ],
+    "refused_constants": [],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 0,
+    "vc_det": 3
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 4,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "service.name",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "service.name",
+     "tls.client.subject"
+    ],
+    "refused_constants": [],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": []
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 2,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "event.action",
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user.id",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user.id",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 7,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 7,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 3,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 2,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "event.action",
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 8,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 8,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 3,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 2,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category"
+    ]
+   }
+  ],
+  "14B": [
+   {
+    "source": "r7_389ds_31",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action",
+     "event.reason"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action",
+     "event.reason"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 4,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action",
+     "event.reason"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [
+     "event.reason"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [
+     "event.reason"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 4,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "destination.port",
+     "log.logger",
+     "source.ip",
+     "user.full_name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.reason"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.port",
+     "log.logger",
+     "source.ip",
+     "user.full_name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 5,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 5,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 3,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "destination.port",
+     "event.reason",
+     "log.logger",
+     "source.ip",
+     "user.full_name",
+     "user.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.port",
+     "event.reason",
+     "log.logger",
+     "source.ip",
+     "user.full_name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 3,
+    "vc_det": 3
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 4,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 7,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 7,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 3,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category"
+    ]
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "http.request.method",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "http.request.id",
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.method",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category"
+    ]
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "http.request.id",
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 2,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "http.request.method",
+     "source.ip"
+    ],
+    "vc_contradicted": [
+     "http.request.id"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.method",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "http.request.id"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "service.version",
+     "source.ip",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 7,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 7,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 3,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category"
+    ]
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [
+     "dns.question.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 0,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category"
+    ]
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": true,
+    "vc_f_right": 3,
+    "vc_f_wrong": 1,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": true,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 1,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "host.hostname",
+     "user.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "host.hostname",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "log.level",
+     "network.transport"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": true,
+    "v4_rules": 4,
+    "vc_verified": [
+     "dns.question.name",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "vc_contradicted": [
+     "dns.question.type"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": true,
+    "vc_f_right": 0,
+    "vc_f_wrong": 1,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": true,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 1,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action",
+     "log.level",
+     "log.logger",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "log.level",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action",
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "log.level",
+     "user.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "event.action",
+     "log.level",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "log.level",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "log.level",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action",
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 4,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "log.level",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action",
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user.name",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 7,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 7,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 2,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 2,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 2,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "source.ip",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 7,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 7,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 2,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 2,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   }
+  ],
+  "B": [
+   {
+    "source": "r7_389ds_31",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_389ds_31",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "destination.ip",
+     "source.ip",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "event.reason"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.reason"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_emqx_58",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_icinga2_214",
+    "seed": 4,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "event.reason",
+     "url.path",
+     "user.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "http.request.method",
+     "log.logger",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "log.logger"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.logger"
+    ],
+    "refused_constants": [],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_inspircd_47",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_kamailio_json",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "event.action"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "dns.question.type"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.type"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.type",
+     "event.action"
+    ],
+    "vc_contradicted": [
+     "dns.question.name",
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.type",
+     "event.action"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_knot_346",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "dns.question.type"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.type"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "http.request.method",
+     "http.response.status_code",
+     "log.origin.file.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action",
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.method",
+     "http.response.status_code",
+     "log.origin.file.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "http.request.method",
+     "http.response.status_code",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "log.origin.file.name",
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.method",
+     "http.response.status_code",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "http.request.method",
+     "http.response.status_code",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "log.origin.file.name",
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.method",
+     "http.response.status_code",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "http.request.method",
+     "http.response.status_code",
+     "log.origin.file.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.method",
+     "http.response.status_code",
+     "log.origin.file.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mattermost_text",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "http.request.method",
+     "http.response.status_code",
+     "log.origin.file.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "event.action",
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.method",
+     "http.response.status_code",
+     "log.origin.file.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 12,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 12,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 3,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_mumble_15",
+    "seed": 4,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "event.reason",
+     "user.name",
+     "user_agent.version"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 8,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 8,
+    "vc_rules": 0,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_nextcloud_syslog",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [
+     "dns.question.name"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 0,
+    "vc_det": 1
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": []
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 4,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 4,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category"
+    ]
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1
+   },
+   {
+    "source": "r7_nsd_4120",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V2",
+    "v4_deploys": false,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "log.level",
+     "source.ip"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 7,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 7,
+    "vc_rules": 1,
+    "vc_det": 1
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 0,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "host.hostname",
+     "process.name",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "host.hostname",
+     "process.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "host.hostname",
+     "process.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset",
+     "event.kind"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "host.hostname",
+     "process.name"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "host.hostname",
+     "process.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "host.hostname",
+     "process.name"
+    ],
+    "vc_contradicted": [
+     "event.action"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "host.hostname",
+     "process.name"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2
+   },
+   {
+    "source": "r7_ocserv_130",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "host.hostname"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "host.hostname"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 2
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "network.transport"
+    ],
+    "vc_contradicted": [
+     "event.action",
+     "log.level",
+     "log.logger"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "network.transport"
+    ],
+    "vc_contradicted": [
+     "log.level",
+     "log.logger"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type"
+    ],
+    "vc_contradicted": [
+     "log.level"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [
+     "dns.question.name",
+     "dns.question.type",
+     "network.transport"
+    ],
+    "vc_contradicted": [
+     "event.action",
+     "log.level",
+     "log.logger"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "dns.question.name",
+     "dns.question.type",
+     "network.transport"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 10,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 10,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_pdnsrec_52",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": false,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V3",
+    "v4_deploys": false,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 0,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 0,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 1,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "event.action",
+     "log.level",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "log.level",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "event.action",
+     "log.level",
+     "user.name"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "event.action",
+     "log.level",
+     "user.name"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_radicale_353",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "log.level"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "log.level"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 1,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 6,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 1,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 6,
+    "vc_rules": 0,
+    "vc_det": 0,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "service.name",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [
+     "error.message"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "service.name",
+     "tls.client.subject"
+    ],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category"
+    ]
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 2,
+    "outcome": "accepted",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 2,
+    "vc_verified": [
+     "error.message",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "error.message",
+     "tls.client.subject"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 2,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 2,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": false,
+    "vc_verified": [],
+    "vc_contradicted": [],
+    "vc_kind": "escalated",
+    "vc_deliver": [],
+    "refused_constants": [
+     "event.category"
+    ],
+    "vc_deploys": false,
+    "vc_det": 3
+   },
+   {
+    "source": "r7_stunnel_574",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 1,
+    "vc_verified": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "error.message",
+     "service.name",
+     "tls.client.subject"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 3,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 9,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 3,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 9,
+    "vc_rules": 1,
+    "vc_det": 3,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 0,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "source.ip",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "source.ip",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 1,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 2,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 2,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "log.logger",
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 5,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 5,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 3,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "log.logger",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 6,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 6,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 2,
+    "vc_det": 2,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   },
+   {
+    "source": "r7_synapse_json",
+    "seed": 4,
+    "outcome": "failed",
+    "rung": "V4",
+    "v4_deploys": true,
+    "v4_wrong": false,
+    "v4_rules": 0,
+    "vc_verified": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "url.path",
+     "user_agent.original"
+    ],
+    "vc_contradicted": [
+     "source.ip"
+    ],
+    "vc_kind": "partial",
+    "vc_deliver": [
+     "http.request.id",
+     "http.request.method",
+     "log.level",
+     "url.path",
+     "user_agent.original"
+    ],
+    "refused_constants": [
+     "event.category",
+     "event.dataset"
+    ],
+    "vc_deploys": true,
+    "vc_wrong": false,
+    "vc_f_right": 5,
+    "vc_f_wrong": 0,
+    "vc_f_gold": 13,
+    "vc_b3_wrong": false,
+    "vc_b3_f_right": 5,
+    "vc_b3_f_wrong": 0,
+    "vc_b3_f_gold": 13,
+    "vc_rules": 1,
+    "vc_det": 1,
+    "v4_refused_constants": [
+     "event.category",
+     "event.dataset"
+    ]
+   }
+  ]
+ },
+ "summary": {
+  "C": {
+   "runs": 75,
+   "v4_deploys": 50,
+   "v4_wrong": 0,
+   "vc_deploys": 63,
+   "vc_wrong": 0,
+   "vc_b3_wrong": 0,
+   "vc_any_contradicted": 28,
+   "v4_with_refused_constant": 47,
+   "v4_refused_key:event.dataset": 42,
+   "vc_with_refused_constant": 58,
+   "vc_f_right": 217,
+   "vc_f_wrong": 0,
+   "vc_f_gold": 592,
+   "vc_rules": 62,
+   "v4_rules": 42,
+   "rules_total": 260,
+   "vc_det": 100,
+   "v4_refused_key:event.type": 4,
+   "v4_refused_key:event.category": 20,
+   "vc_precision": 1.0,
+   "vc_coverage": 0.36655405405405406,
+   "vc_rules_pct": 23.846153846153847,
+   "vc_det_pct": 38.46153846153846,
+   "v4_rules_pct": 16.153846153846153
+  },
+  "14B": {
+   "runs": 75,
+   "v4_deploys": 67,
+   "v4_wrong": 1,
+   "vc_deploys": 67,
+   "vc_wrong": 2,
+   "vc_b3_wrong": 2,
+   "vc_any_contradicted": 37,
+   "v4_with_refused_constant": 67,
+   "v4_refused_key:event.category": 56,
+   "v4_refused_key:event.dataset": 63,
+   "vc_with_refused_constant": 67,
+   "vc_f_right": 208,
+   "vc_f_wrong": 2,
+   "vc_f_gold": 596,
+   "vc_rules": 45,
+   "v4_rules": 36,
+   "rules_total": 260,
+   "vc_det": 81,
+   "vc_precision": 0.9904761904761905,
+   "vc_coverage": 0.348993288590604,
+   "vc_rules_pct": 17.307692307692307,
+   "vc_det_pct": 31.153846153846153,
+   "v4_rules_pct": 13.846153846153847
+  },
+  "B": {
+   "runs": 75,
+   "v4_deploys": 44,
+   "v4_wrong": 0,
+   "vc_deploys": 64,
+   "vc_wrong": 0,
+   "vc_b3_wrong": 0,
+   "vc_any_contradicted": 33,
+   "v4_with_refused_constant": 43,
+   "v4_refused_key:event.category": 39,
+   "v4_refused_key:event.dataset": 41,
+   "vc_with_refused_constant": 62,
+   "vc_f_right": 161,
+   "vc_f_wrong": 0,
+   "vc_f_gold": 569,
+   "vc_rules": 27,
+   "v4_rules": 18,
+   "rules_total": 260,
+   "vc_det": 64,
+   "vc_precision": 1.0,
+   "vc_coverage": 0.28295254833040423,
+   "vc_rules_pct": 10.384615384615385,
+   "vc_det_pct": 24.615384615384617,
+   "v4_rules_pct": 6.923076923076923
+  }
+ },
+ "sources": {
+  "r7_389ds_31": {
+   "old_docs": 36,
+   "new_lines": 30,
+   "anchored_fields": [
+    "destination.ip",
+    "source.ip",
+    "user.name"
+   ],
+   "computed": [
+    "event.action",
+    "event.reason",
+    "user.name"
+   ],
+   "old_fields": [
+    "destination.ip",
+    "event.action",
+    "event.code",
+    "event.reason",
+    "source.ip",
+    "user.name"
+   ]
+  },
+  "r7_emqx_58": {
+   "old_docs": 12,
+   "new_lines": 12,
+   "anchored_fields": [
+    "log.level"
+   ],
+   "computed": [
+    "event.reason",
+    "log.level"
+   ],
+   "old_fields": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "log.origin.file.line",
+    "log.origin.file.name",
+    "log.origin.function",
+    "source.ip",
+    "source.port"
+   ]
+  },
+  "r7_icinga2_214": {
+   "old_docs": 9,
+   "new_lines": 10,
+   "anchored_fields": [
+    "http.request.method",
+    "url.path",
+    "user.name",
+    "user_agent.original"
+   ],
+   "computed": [
+    "event.action",
+    "event.reason",
+    "log.logger",
+    "url.path",
+    "user.name",
+    "user_agent.original"
+   ],
+   "old_fields": [
+    "event.action",
+    "event.reason",
+    "http.request.method",
+    "log.level",
+    "log.logger",
+    "source.ip",
+    "source.port",
+    "url.path",
+    "user.name",
+    "user_agent.original"
+   ]
+  },
+  "r7_inspircd_47": {
+   "old_docs": 10,
+   "new_lines": 12,
+   "anchored_fields": [
+    "destination.port",
+    "source.ip",
+    "user.effective.name"
+   ],
+   "computed": [
+    "event.action",
+    "event.reason",
+    "log.logger",
+    "user.full_name",
+    "user.name"
+   ],
+   "old_fields": [
+    "destination.port",
+    "event.action",
+    "event.reason",
+    "log.logger",
+    "source.ip",
+    "user.effective.name",
+    "user.full_name",
+    "user.name"
+   ]
+  },
+  "r7_kamailio_json": {
+   "old_docs": 9,
+   "new_lines": 10,
+   "anchored_fields": [
+    "log.level"
+   ],
+   "computed": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "user.name"
+   ],
+   "old_fields": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "source.ip",
+    "source.port",
+    "user.domain",
+    "user.name",
+    "user_agent.original"
+   ]
+  },
+  "r7_knot_346": {
+   "old_docs": 4,
+   "new_lines": 8,
+   "anchored_fields": [
+    "dns.question.type"
+   ],
+   "computed": [
+    "dns.question.name",
+    "event.action",
+    "source.ip"
+   ],
+   "old_fields": [
+    "dns.question.name",
+    "dns.question.type",
+    "event.action",
+    "log.level",
+    "source.ip",
+    "source.port"
+   ]
+  },
+  "r7_mattermost_text": {
+   "old_docs": 11,
+   "new_lines": 11,
+   "anchored_fields": [
+    "error.message",
+    "http.request.method",
+    "http.response.status_code",
+    "log.level",
+    "log.origin.file.name",
+    "source.ip",
+    "user.name"
+   ],
+   "computed": [
+    "event.action",
+    "log.level",
+    "log.origin.file.name",
+    "user.name"
+   ],
+   "old_fields": [
+    "error.message",
+    "event.action",
+    "http.request.id",
+    "http.request.method",
+    "http.response.status_code",
+    "log.level",
+    "log.origin.file.name",
+    "source.ip",
+    "url.original",
+    "url.path",
+    "user.id",
+    "user.name"
+   ]
+  },
+  "r7_mumble_15": {
+   "old_docs": 32,
+   "new_lines": 28,
+   "anchored_fields": [
+    "user_agent.os.full",
+    "user_agent.version"
+   ],
+   "computed": [
+    "event.action",
+    "event.reason",
+    "user.name"
+   ],
+   "old_fields": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "source.ip",
+    "source.port",
+    "user.name",
+    "user_agent.os.full",
+    "user_agent.version"
+   ]
+  },
+  "r7_nextcloud_syslog": {
+   "old_docs": 9,
+   "new_lines": 16,
+   "anchored_fields": [
+    "http.request.method",
+    "service.version",
+    "source.ip",
+    "url.path",
+    "user.name",
+    "user_agent.original"
+   ],
+   "computed": [
+    "event.action",
+    "http.request.id",
+    "url.path",
+    "user.name"
+   ],
+   "old_fields": [
+    "event.action",
+    "http.request.id",
+    "http.request.method",
+    "log.level",
+    "service.version",
+    "source.ip",
+    "url.path",
+    "user.name",
+    "user_agent.original"
+   ]
+  },
+  "r7_nsd_4120": {
+   "old_docs": 9,
+   "new_lines": 12,
+   "anchored_fields": [
+    "dns.question.type",
+    "log.level",
+    "source.ip"
+   ],
+   "computed": [
+    "dns.question.name",
+    "dns.question.type"
+   ],
+   "old_fields": [
+    "dns.question.name",
+    "dns.question.type",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "source.ip"
+   ]
+  },
+  "r7_ocserv_130": {
+   "old_docs": 16,
+   "new_lines": 25,
+   "anchored_fields": [
+    "host.hostname",
+    "process.name",
+    "source.ip",
+    "user.name"
+   ],
+   "computed": [
+    "event.action",
+    "source.ip",
+    "user.name"
+   ],
+   "old_fields": [
+    "event.action",
+    "host.hostname",
+    "process.name",
+    "process.pid",
+    "source.ip",
+    "user.name"
+   ]
+  },
+  "r7_pdnsrec_52": {
+   "old_docs": 8,
+   "new_lines": 7,
+   "anchored_fields": [
+    "dns.question.name",
+    "dns.question.type",
+    "log.level",
+    "log.logger",
+    "network.transport"
+   ],
+   "computed": [
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "log.logger"
+   ],
+   "old_fields": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "log.logger",
+    "network.transport",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ]
+  },
+  "r7_radicale_353": {
+   "old_docs": 9,
+   "new_lines": 10,
+   "anchored_fields": [
+    "log.level",
+    "user.name"
+   ],
+   "computed": [
+    "event.action",
+    "log.level",
+    "source.ip",
+    "user.name"
+   ],
+   "old_fields": [
+    "event.action",
+    "log.level",
+    "process.pid",
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ]
+  },
+  "r7_stunnel_574": {
+   "old_docs": 19,
+   "new_lines": 18,
+   "anchored_fields": [
+    "error.message",
+    "service.name",
+    "tls.client.subject"
+   ],
+   "computed": [
+    "error.message",
+    "event.reason",
+    "tls.client.subject"
+   ],
+   "old_fields": [
+    "error.message",
+    "event.action",
+    "event.reason",
+    "log.syslog.severity.code",
+    "process.thread.id",
+    "service.name",
+    "source.ip",
+    "source.port",
+    "tls.client.subject"
+   ]
+  },
+  "r7_synapse_json": {
+   "old_docs": 23,
+   "new_lines": 22,
+   "anchored_fields": [
+    "http.request.id",
+    "http.request.method",
+    "log.level",
+    "log.logger",
+    "source.ip",
+    "url.path",
+    "user_agent.original"
+   ],
+   "computed": [
+    "event.action",
+    "log.level",
+    "log.origin.file.line",
+    "user.id",
+    "user.name"
+   ],
+   "old_fields": [
+    "event.action",
+    "http.request.id",
+    "http.request.method",
+    "http.response.body.bytes",
+    "http.response.status_code",
+    "http.version",
+    "log.level",
+    "log.logger",
+    "log.origin.file.line",
+    "source.ip",
+    "url.path",
+    "user.id",
+    "user.name",
+    "user_agent.original"
+   ]
+  }
+ }
+}

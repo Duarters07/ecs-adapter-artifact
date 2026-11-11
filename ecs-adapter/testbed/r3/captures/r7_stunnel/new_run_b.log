@@ -1,0 +1,15 @@
+2026.10.30 21:21:43 LOG5[5]: Service [echo-tls] accepted connection from 172.21.91.213:36606
+2026.10.30 21:21:43 LOG5[5]: Certificate accepted at depth=0: CN=backup, O=Lab
+2026.10.30 21:21:43 LOG5[5]: s_connect: connected 127.0.0.1:7000
+2026.10.30 21:21:43 LOG5[5]: Service [echo-tls] connected remote server from 127.0.0.1:57528
+2026.10.30 21:21:43 LOG5[5]: Connection closed: 20 byte(s) sent to TLS, 20 byte(s) sent to socket
+2026.10.30 21:21:44 LOG5[6]: Service [echo-tls] accepted connection from 172.21.91.32:49596
+2026.10.30 21:21:44 LOG4[6]: CERT: Pre-verification error: unable to get local issuer certificate
+2026.10.30 21:21:44 LOG4[6]: Rejected by CERT at depth=0: CN=eve, O=Lab
+2026.10.30 21:21:44 LOG3[6]: SSL_accept: tls_process_client_certificate@../ssl/statem/statem_srvr.c:3777: error:0A000086:SSL routines::certificate verify failed
+2026.10.30 21:21:44 LOG5[6]: Connection reset/closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2026.10.30 21:21:46 LOG5[7]: Service [echo-tls] accepted connection from 172.21.91.214:52300
+2026.10.30 21:21:46 LOG4[7]: CERT: Pre-verification error: certificate not found in local repository: self-signed certificate
+2026.10.30 21:21:46 LOG4[7]: Rejected by CERT at depth=0: CN=printer, O=Office
+2026.10.30 21:21:46 LOG3[7]: SSL_accept: tls_process_client_certificate@../ssl/statem/statem_srvr.c:3777: error:0A000086:SSL routines::certificate verify failed
+2026.10.30 21:21:46 LOG5[7]: Connection reset/closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket

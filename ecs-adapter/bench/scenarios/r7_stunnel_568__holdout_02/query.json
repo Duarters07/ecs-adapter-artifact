@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.thread.id": 8
+        }
+      },
+      {
+        "term": {
+          "tls.client.subject": "CN=ops, O=Lab"
+        }
+      }
+    ]
+  }
+}

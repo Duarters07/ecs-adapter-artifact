@@ -1,0 +1,153 @@
+{
+  "source_id": "r7_knot_346",
+  "family": "knot",
+  "split": "test_r7",
+  "category_hint": "network",
+  "contamination_risk": "high",
+  "origin": "Produced by running Knot DNS 3.4.6 (Debian 13), not copied from documentation or a public dataset. Captured 2026-10-30T21:15:55Z on the author's laptop by testbed/r3/r7_knot.sh (docker logs (stdout, level info): transfer, refusal and notify lines); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), NEW VERSION of r7_knot_326: transfer lines gain the transport after the remote address.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "note": "client.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "zone",
+      "ecs_field": "dns.question.name",
+      "type": "keyword",
+      "role": "zone",
+      "difficulty": "medium",
+      "note": "The zone is the transfer request's question name.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "xfr_type",
+      "ecs_field": "dns.question.type",
+      "type": "keyword",
+      "role": "transfer_type",
+      "difficulty": "medium",
+      "note": "AXFR/IXFR are query types.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "transport",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "transport",
+      "difficulty": "hard",
+      "note": "Value convention: TCP on the wire, tcp in ECS (network.transport); declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "direction",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "direction",
+      "difficulty": "hard",
+      "note": "network.direction takes ingress/egress; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "serial",
+      "ecs_field": null,
+      "type": "long",
+      "role": "zone_serial",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "duration",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "seconds",
+      "difficulty": "hard",
+      "note": "event.duration is in nanoseconds; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "messages",
+      "ecs_field": null,
+      "type": "long",
+      "role": "message_count",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes",
+      "ecs_field": null,
+      "type": "long",
+      "role": "bytes_sent",
+      "difficulty": "hard",
+      "note": "destination.bytes would be a guess about direction; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "fallback",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "fallback",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_knot_346__holdout_01",
+    "r7_knot_346__holdout_02",
+    "r7_knot_346__holdout_03"
+  ],
+  "round3": {
+    "pair": "r7_knot",
+    "role": "new"
+  }
+}

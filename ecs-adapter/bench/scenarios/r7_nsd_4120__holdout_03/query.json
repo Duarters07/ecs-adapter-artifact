@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "refused, no acl matches"
+        }
+      },
+      {
+        "term": {
+          "log.level": "info"
+        }
+      }
+    ]
+  }
+}

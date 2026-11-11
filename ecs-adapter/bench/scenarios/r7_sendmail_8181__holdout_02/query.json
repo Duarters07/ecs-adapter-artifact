@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "email.local_id": "69UKog2s000077"
+        }
+      },
+      {
+        "term": {
+          "email.message_id": "202610302050.69UKog2s000077@mail01.lab.example"
+        }
+      }
+    ]
+  }
+}

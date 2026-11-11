@@ -1,0 +1,14 @@
+{
+ "expected_hits": 6,
+ "targets": [
+  "user_agent.original",
+  "source.ip"
+ ],
+ "labels": [
+  "foothold",
+  "service_scan"
+ ],
+ "message_type": 0,
+ "origin": "AIT-LDS v2.1 fox, intranet_server/logs/apache2/intranet.price.fox.org-access.log.2: 6 lines labelled ['foothold', 'service_scan'] and 60 unlabelled lines (seed 0); expected_hits counted on the reference parser's parse",
+ "split": "holdout"
+}

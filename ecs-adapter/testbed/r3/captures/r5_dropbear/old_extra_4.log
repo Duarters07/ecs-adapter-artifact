@@ -1,0 +1,17 @@
+[30] Oct 25 23:08:04 Child connection from 172.21.55.126:44570
+[30] Oct 25 23:08:04 Bad password attempt for 'monitor' from 172.21.55.126:44570
+[30] Oct 25 23:08:05 Exit before auth from <172.21.55.126:44570>: (user 'monitor', 1 fails): Exited normally
+[31] Oct 25 23:08:06 Child connection from 172.21.55.109:59504
+[31] Oct 25 23:08:06 Bad password attempt for 'rui' from 172.21.55.109:59504
+[31] Oct 25 23:08:06 Exit before auth from <172.21.55.109:59504>: (user 'rui', 1 fails): Exited normally
+[32] Oct 25 23:08:07 Child connection from 172.21.55.138:51466
+[32] Oct 25 23:08:07 Bad password attempt for 'ana' from 172.21.55.138:51466
+[32] Oct 25 23:08:08 Exit before auth from <172.21.55.138:51466>: (user 'ana', 1 fails): Exited normally
+[33] Oct 25 23:08:09 Child connection from 172.21.55.102:48320
+[33] Oct 25 23:08:09 Login attempt for nonexistent user
+[33] Oct 25 23:08:09 Exit before auth from <172.21.55.102:48320>: Exited normally
+[34] Oct 25 23:08:10 Child connection from 172.21.55.143:36948
+[34] Oct 25 23:08:10 Login attempt for nonexistent user
+[34] Oct 25 23:08:11 Exit before auth from <172.21.55.143:36948>: Exited normally
+[35] Oct 25 23:08:12 Child connection from 172.21.55.176:55240
+[35] Oct 25 23:08:12 Exit before auth from <172.21.55.176:55240>: (user 'backup', 1 fails): Exited normally

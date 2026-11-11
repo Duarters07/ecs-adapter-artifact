@@ -1,0 +1,6 @@
+2026-10-30T20:32:55.829024+00:00 vpn01 ocserv[11]: plain-auth: error authenticating user 'rui'
+2026-10-30T20:32:55.829311+00:00 vpn01 ocserv[39]: worker[rui]: 172.21.91.14 worker-auth.c:1724: failed authentication for 'rui'
+2026-10-30T20:32:57.612232+00:00 vpn01 ocserv[11]: plain-auth: error authenticating user 'admin'
+2026-10-30T20:32:57.612301+00:00 vpn01 ocserv[40]: worker[admin]: 172.21.91.202 worker-auth.c:1724: failed authentication for 'admin'
+2026-10-30T20:32:59.176277+00:00 vpn01 ocserv[11]: sec-mod: initiating session for user 'ana' (session: ZAgzQo)
+2026-10-30T20:33:04.132964+00:00 vpn01 ocserv[11]: sec-mod: invalidating session of user 'ana' (session: ZAgzQo)

@@ -1,0 +1,15 @@
+{"raw": "2026-10-14T08:01:21+00:00;10.20.1.11;11314;588;55373;659;1562;ED25519;mario.hernandez;SHA256:DQSXrPVed5HjrAoVrtyzpnVs+i4K9gVVk9jKMw378d/;ssh_accept;file.acme.local;;;;publickey;success"}
+{"raw": "2026-10-14T09:06:43+00:00;10.20.1.11;11314;588;55373;659;1562;;mario.hernandez;;ssh_close;file.acme.local;;;;;success"}
+{"raw": "2026-10-14T08:03:02+00:00;10.10.1.12;44612;210;59562;1091;2782;ECDSA;debra.jones;SHA256:2+b2tfU2AwO+c7vlOTDDXG7QacpvSoNa66CkiftMXRR;ssh_accept;erp.acme.local;;;;publickey;success"}
+{"raw": "2026-10-14T08:01:51+00:00;;52588;;;;3226;;michele.roberts;;sudo;ws-ops-003.acme.local;pts/0;/usr/bin/systemctl restart postgresql;/var/log;;"}
+{"raw": "2026-10-14T08:15:16+00:00;;39508;;;;1562;;mario.hernandez;;sudo;ws-it-001.acme.local;pts/2;/usr/bin/journalctl -u sshd -n 50;/home/mario.hernandez;;"}
+{"raw": "2026-10-14T08:17:03+00:00;;49929;;;;2782;;debra.jones;;sudo;mail.acme.local;pts/4;/usr/bin/journalctl -u sshd -n 50;/var/log;;"}
+{"raw": "2026-10-14T08:18:17+00:00;;32112;;;;3226;;michele.roberts;;sudo;ws-ops-003.acme.local;pts/1;/usr/bin/apt update;/opt;;"}
+{"raw": "2026-10-14T08:19:43+00:00;;29899;;;;2947;;barbara.sanders;;sudo;ws-ops-001.acme.local;pts/5;/usr/bin/tail -f /var/log/syslog;/var/log;;"}
+{"raw": "2026-10-14T08:20:13+00:00;;7357;;;;2947;;barbara.sanders;;sudo;ws-ops-001.acme.local;pts/3;/usr/bin/tcpdump -i eth0 -c 100;/etc;;"}
+{"raw": "2026-10-14T08:21:33+00:00;;43903;;;;3483;;amanda.diaz;;sudo;ws-it-003.acme.local;pts/4;/usr/bin/docker ps;/opt;;"}
+{"raw": "2026-10-14T08:22:55+00:00;;1916;;;;2782;;debra.jones;;sudo;dns.acme.local;pts/1;/usr/bin/systemctl restart nginx;/;;"}
+{"raw": "2026-10-14T08:24:13+00:00;;8793;;;;1562;;mario.hernandez;;sudo;file.acme.local;pts/4;/usr/bin/vim /etc/hosts;/;;"}
+{"raw": "2026-10-14T08:25:08+00:00;;34341;;;;3483;;amanda.diaz;;sudo;web.acme.local;pts/2;/usr/bin/docker ps;/;;"}
+{"raw": "2026-10-14T08:26:57+00:00;;18192;;;;2782;;debra.jones;;sudo;backup.acme.local;pts/6;/usr/bin/vim /etc/hosts;/var/log;;"}
+{"raw": "2026-10-14T08:29:27+00:00;;44827;;;;3483;;amanda.diaz;;sudo;erp.acme.local;pts/1;/usr/sbin/ufw status;/etc;;"}

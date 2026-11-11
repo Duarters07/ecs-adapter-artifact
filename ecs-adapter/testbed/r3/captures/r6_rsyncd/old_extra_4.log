@@ -1,0 +1,16 @@
+2026/10/27 16:49:17 [84] connect from UNDETERMINED (172.21.65.113)
+2026/10/27 16:49:17 [84] rsync allowed access on module finance from UNDETERMINED (172.21.65.113)
+2026/10/27 16:49:17 [84] auth failed on module finance from UNDETERMINED (172.21.65.113) for raquel: no matching rule
+2026/10/27 16:49:17 [85] connect from UNDETERMINED (172.21.65.100)
+2026/10/27 16:49:17 [85] rsync allowed access on module public from UNDETERMINED (172.21.65.100)
+2026/10/27 16:49:18 [86] connect from UNDETERMINED (172.21.65.199)
+2026/10/27 16:49:18 [86] rsync allowed access on module backup from UNDETERMINED (172.21.65.199)
+2026/10/27 16:49:18 [86] auth failed on module backup from UNDETERMINED (172.21.65.199) for scanner: no matching rule
+2026/10/27 16:49:19 [87] connect from UNDETERMINED (172.21.65.180)
+2026/10/27 16:49:19 [87] rsync allowed access on module backup from UNDETERMINED (172.21.65.180)
+2026/10/27 16:49:19 [87] auth failed on module backup from UNDETERMINED (172.21.65.180) for backup: no matching rule
+2026/10/27 16:49:19 [88] connect from UNDETERMINED (172.21.65.179)
+2026/10/27 16:49:19 [88] rsync allowed access on module public from UNDETERMINED (172.21.65.179)
+2026/10/27 16:49:20 [89] connect from UNDETERMINED (172.21.65.196)
+2026/10/27 16:49:20 [89] rsync allowed access on module backup from UNDETERMINED (172.21.65.196)
+2026/10/27 16:49:20 [89] auth failed on module backup from UNDETERMINED (172.21.65.196) for rui: password mismatch

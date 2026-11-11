@@ -1,0 +1,61 @@
+{
+ "source_id": "t3_ait_apache_error",
+ "ecs_version": "8.11",
+ "extraction": {
+  "kind": "grok",
+  "pattern": "^\\[%{HTTPDERROR_DATE:timestamp}\\] \\[%{WORD:module}:%{LOGLEVEL:level}\\] \\[pid %{POSINT:pid}\\] \\[client %{IP:client_ip}:%{POSINT:client_port}\\] (?:%{WORD:error_code}: )?%{GREEDYDATA:text}$"
+ },
+ "fields": [
+  {
+   "source_key": "client_ip",
+   "ecs_field": "source.ip",
+   "confidence": 1.0,
+   "type": "ip"
+  },
+  {
+   "source_key": "client_port",
+   "ecs_field": "source.port",
+   "confidence": 1.0,
+   "type": "long"
+  },
+  {
+   "source_key": "pid",
+   "ecs_field": "process.pid",
+   "confidence": 1.0,
+   "type": "long"
+  },
+  {
+   "source_key": "level",
+   "ecs_field": "log.level",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "module",
+   "ecs_field": "log.logger",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "error_code",
+   "ecs_field": "error.code",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "text",
+   "ecs_field": "message",
+   "confidence": 1.0
+  }
+ ],
+ "constants": {
+  "event.category": [
+   "web"
+  ],
+  "event.kind": "event",
+  "event.dataset": "apache.error"
+ },
+ "unresolved": [
+  {
+   "source_key": "timestamp",
+   "reason": "@timestamp is set at ingest"
+  }
+ ]
+}

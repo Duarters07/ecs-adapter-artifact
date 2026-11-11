@@ -1,0 +1,20 @@
+{"raw": "2015-07-29 17:41:41,536 - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /etc/zookeeper/conf/zoo.cfg"}
+{"raw": "2015-07-30 17:43:57,205 - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /etc/zookeeper/conf/zoo.cfg"}
+{"raw": "2015-07-31 15:15:15,835 - INFO  [main:QuorumPeerConfig@101] - Reading configuration from: /etc/zookeeper/conf/zoo.cfg"}
+{"raw": "2015-07-29 17:41:41,544 - INFO  [main:QuorumPeerConfig@334] - Defaulting to majority quorums"}
+{"raw": "2015-07-30 17:43:57,230 - INFO  [main:QuorumPeerConfig@334] - Defaulting to majority quorums"}
+{"raw": "2015-07-31 15:15:15,866 - INFO  [main:QuorumPeerConfig@334] - Defaulting to majority quorums"}
+{"raw": "2015-07-29 17:41:41,555 - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3"}
+{"raw": "2015-07-30 17:43:57,260 - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3"}
+{"raw": "2015-07-31 15:15:15,907 - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3"}
+{"raw": "2015-07-29 17:41:41,555 - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0"}
+{"raw": "2015-07-30 17:43:57,260 - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0"}
+{"raw": "2015-07-31 15:15:15,908 - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0"}
+{"raw": "2015-07-29 17:41:41,557 - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled."}
+{"raw": "2015-07-30 17:43:57,262 - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled."}
+{"raw": "2015-07-31 15:15:15,909 - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled."}
+{"raw": "2015-07-29 17:41:41,579 - INFO  [main:QuorumPeerMain@127] - Starting quorum peer"}
+{"raw": "2015-07-30 17:43:57,290 - INFO  [main:QuorumPeerMain@127] - Starting quorum peer"}
+{"raw": "2015-07-31 15:15:15,938 - INFO  [main:QuorumPeerMain@127] - Starting quorum peer"}
+{"raw": "2015-07-29 17:41:41,609 - INFO  [main:NIOServerCnxnFactory@94] - binding to port 0.0.0.0/0.0.0.0:2181"}
+{"raw": "2015-07-30 17:43:57,339 - INFO  [main:NIOServerCnxnFactory@94] - binding to port 0.0.0.0/0.0.0.0:2181"}

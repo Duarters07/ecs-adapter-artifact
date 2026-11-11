@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-25T13:57:14Z","old":"envoyproxy/envoy:v1.31-latest version: f30db0a84189cf3e681687a4a2fa1788062592d0/1.31.10/Clean/RELEASE/BoringSSL, default access-log format","new":"envoyproxy/envoy:v1.31-latest version: f30db0a84189cf3e681687a4a2fa1788062592d0/1.31.10/Clean/RELEASE/BoringSSL, json_format","collected_by":"docker logs, stdout (StdoutAccessLog)"}

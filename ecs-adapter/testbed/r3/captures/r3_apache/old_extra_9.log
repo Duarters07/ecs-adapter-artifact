@@ -1,0 +1,13 @@
+[Sun Oct 25 22:15:43 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/, referer: http://ops.local/wiki
+[Sun Oct 25 22:15:43 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/, referer: http://intranet.local/wiki
+[Sun Oct 25 22:15:43 2026] [error] [client 172.21.0.3] user pedro not found: /reports/
+[Sun Oct 25 22:15:43 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/
+[Sun Oct 25 22:15:43 2026] [error] [client 172.21.0.3] user jorge not found: /members/users.csv
+[Sun Oct 25 22:15:44 2026] [error] [client 172.21.0.3] user carlos not found: /members/q3.html, referer: http://status.local/wiki
+[Sun Oct 25 22:15:44 2026] [error] [client 172.21.0.3] user irene not found: /reports/q2.xlsx, referer: http://portal.local/intranet
+[Sun Oct 25 22:15:44 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/status, referer: http://intranet.local/finance
+[Sun Oct 25 22:15:44 2026] [error] [client 172.21.0.3] user carla not found: /members/users.csv
+[Sun Oct 25 22:15:44 2026] [error] [client 172.21.0.3] user teresa not found: /members/, referer: http://finance.local/home
+[Sun Oct 25 22:15:45 2026] [error] [client 172.21.0.3] user marta: authentication failure for "/members/index.html": Password Mismatch
+[Sun Oct 25 22:15:45 2026] [error] [client 172.21.0.3] user olga not found: /reports/notes.txt, referer: http://portal.local/intranet
+[Sun Oct 25 22:15:45 2026] [error] [client 172.21.0.3] user ana: authentication failure for "/members/data.json": Password Mismatch, referer: http://intranet.local/portal

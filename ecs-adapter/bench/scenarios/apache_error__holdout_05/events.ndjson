@@ -1,0 +1,13 @@
+{"raw": "[Thu Oct 15 14:55:59.585535 2026] [auth_basic:error] [pid 17:tid 38] [client 172.21.0.3:45756] AH01617: user hr: authentication failure for \"/payroll/\": Password Mismatch, referer: http://portal.example/hr"}
+{"raw": "[Thu Oct 15 14:56:01.603948 2026] [authz_core:error] [pid 18:tid 76] [client 172.21.0.3:45846] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/internal/.env, referer: http://portal.example/admin"}
+{"raw": "[Thu Oct 15 14:56:01.200105 2026] [auth_basic:error] [pid 19:tid 30] [client 172.21.0.3:45832] AH01618: user auditor not found: /payroll/april.csv"}
+{"raw": "[Thu Oct 15 14:55:59.383355 2026] [auth_basic:error] [pid 18:tid 56] [client 172.21.0.3:45750] AH01617: user finance: authentication failure for \"/payroll/march.csv\": Password Mismatch"}
+{"raw": "[Thu Oct 15 14:56:01.805394 2026] [auth_basic:error] [pid 19:tid 39] [client 172.21.0.3:45852] AH01618: user intern not found: /payroll/may.csv"}
+{"raw": "[Thu Oct 15 14:56:02.007052 2026] [authz_core:error] [pid 19:tid 42] [client 172.21.0.3:45868] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/internal/, referer: http://portal.example/status"}
+{"raw": "[Thu Oct 15 14:55:59.787084 2026] [auth_basic:error] [pid 17:tid 40] [client 172.21.0.3:45766] AH01618: user contractor not found: /payroll/march.csv"}
+{"raw": "[Thu Oct 15 14:55:59.988806 2026] [auth_basic:error] [pid 19:tid 89] [client 172.21.0.3:45776] AH01618: user backup not found: /payroll/"}
+{"raw": "[Thu Oct 15 14:56:00.392489 2026] [authz_core:error] [pid 17:tid 50] [client 172.21.0.3:45800] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/internal/db.sql, referer: http://portal.example/admin"}
+{"raw": "[Thu Oct 15 14:56:00.796761 2026] [auth_basic:error] [pid 19:tid 97] [client 172.21.0.3:45804] AH01617: user finance: authentication failure for \"/payroll/april.csv\": Password Mismatch, referer: http://portal.example/finance"}
+{"raw": "[Thu Oct 15 14:56:00.998299 2026] [authz_core:error] [pid 17:tid 60] [client 172.21.0.3:45816] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/internal/config.php"}
+{"raw": "[Thu Oct 15 14:56:00.190664 2026] [authz_core:error] [pid 19:tid 93] [client 172.21.0.3:45788] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/internal/"}
+{"raw": "[Thu Oct 15 14:56:01.402217 2026] [auth_basic:error] [pid 18:tid 68] [client 172.21.0.3:45844] AH01617: user hr: authentication failure for \"/payroll/\": Password Mismatch, referer: http://portal.example/hr"}

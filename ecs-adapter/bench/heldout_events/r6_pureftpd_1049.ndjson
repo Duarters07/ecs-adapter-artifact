@@ -1,0 +1,3 @@
+{"raw": "2026-10-27T15:59:37.460449+00:00 files02 pure-ftpd: (?@172.21.64.21) [WARNING] Authentication failed for user [scanner]"}
+{"raw": "2026-10-27T15:59:41.965528+00:00 files02 pure-ftpd: (?@172.21.64.95) [WARNING] Authentication failed for user [backup]"}
+{"raw": "2026-10-27T15:59:48.320046+00:00 files02 pure-ftpd: (?@172.21.64.94) [WARNING] Authentication failed for user [anonymous]"}

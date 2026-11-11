@@ -1,0 +1,15 @@
+2026.10.30 21:21:18 LOG5[5]: Service [echo-tls] accepted connection from 172.21.91.203:48832
+2026.10.30 21:21:18 LOG4[5]: CERT: Pre-verification error: self-signed certificate
+2026.10.30 21:21:18 LOG4[5]: Rejected by CERT at depth=0: CN=selfsigned, O=Nowhere
+2026.10.30 21:21:18 LOG3[5]: SSL_accept: ../ssl/statem/statem_srvr.c:3530: error:0A000086:SSL routines::certificate verify failed
+2026.10.30 21:21:18 LOG5[5]: Connection reset/closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2026.10.30 21:21:19 LOG5[6]: Service [echo-tls] accepted connection from 172.21.91.14:39186
+2026.10.30 21:21:19 LOG5[6]: Certificate accepted at depth=0: CN=rui, O=Lab
+2026.10.30 21:21:19 LOG5[6]: s_connect: connected 127.0.0.1:7000
+2026.10.30 21:21:19 LOG5[6]: Service [echo-tls] connected remote server from 127.0.0.1:48720
+2026.10.30 21:21:19 LOG5[6]: Connection closed: 20 byte(s) sent to TLS, 20 byte(s) sent to socket
+2026.10.30 21:21:20 LOG5[7]: Service [echo-tls] accepted connection from 172.21.91.15:49112
+2026.10.30 21:21:20 LOG5[7]: Certificate accepted at depth=0: CN=ana, O=Lab
+2026.10.30 21:21:20 LOG5[7]: s_connect: connected 127.0.0.1:7000
+2026.10.30 21:21:20 LOG5[7]: Service [echo-tls] connected remote server from 127.0.0.1:48722
+2026.10.30 21:21:20 LOG5[7]: Connection closed: 20 byte(s) sent to TLS, 20 byte(s) sent to socket

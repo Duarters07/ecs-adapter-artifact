@@ -1,0 +1,4 @@
+{"raw": "Oct 25 15:35:49 c2s644bb640ce10\tinfo\tAuthenticated as rui@lab.example"}
+{"raw": "Oct 25 15:35:47 c2s644bb641f060\tinfo\tClient disconnected: connection closed"}
+{"raw": "Oct 25 15:35:50 c2s644bb6405180\tinfo\tClient connected"}
+{"raw": "Oct 25 15:35:52 c2s644bb64048b0\tinfo\tAuthenticated as ana@lab.example"}

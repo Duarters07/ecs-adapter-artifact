@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.port": 45756
+              }
+            },
+            {
+              "term": {
+                "source.port": 45756
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "url.path": "/payroll/"
+        }
+      }
+    ]
+  }
+}

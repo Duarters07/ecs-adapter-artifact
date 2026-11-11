@@ -1,0 +1,15 @@
+2026.10.30 21:21:24 LOG5[8]: Service [echo-tls] accepted connection from 172.21.91.204:47064
+2026.10.30 21:21:24 LOG5[8]: Certificate accepted at depth=0: CN=ops, O=Lab
+2026.10.30 21:21:24 LOG5[8]: s_connect: connected 127.0.0.1:7000
+2026.10.30 21:21:24 LOG5[8]: Service [echo-tls] connected remote server from 127.0.0.1:48724
+2026.10.30 21:21:24 LOG5[8]: Connection closed: 20 byte(s) sent to TLS, 20 byte(s) sent to socket
+2026.10.30 21:21:25 LOG5[9]: Service [echo-tls] accepted connection from 172.21.91.21:58892
+2026.10.30 21:21:25 LOG4[9]: CERT: Pre-verification error: unable to get local issuer certificate
+2026.10.30 21:21:25 LOG4[9]: Rejected by CERT at depth=0: CN=eve, O=Lab
+2026.10.30 21:21:25 LOG3[9]: SSL_accept: ../ssl/statem/statem_srvr.c:3530: error:0A000086:SSL routines::certificate verify failed
+2026.10.30 21:21:25 LOG5[9]: Connection reset/closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2026.10.30 21:21:26 LOG5[10]: Service [echo-tls] accepted connection from 172.21.91.205:49914
+2026.10.30 21:21:26 LOG4[10]: CERT: Pre-verification error: self-signed certificate
+2026.10.30 21:21:26 LOG4[10]: Rejected by CERT at depth=0: CN=printer, O=Office
+2026.10.30 21:21:26 LOG3[10]: SSL_accept: ../ssl/statem/statem_srvr.c:3530: error:0A000086:SSL routines::certificate verify failed
+2026.10.30 21:21:26 LOG5[10]: Connection reset/closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket

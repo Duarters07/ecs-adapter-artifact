@@ -1,0 +1,20 @@
+{"raw": "7c36d45a714ace78 smtp message msgid=6cd696b8 size=193 nrcpt=1 proto=ESMTP"}
+{"raw": "7c36d45dc6f654fe smtp connected address=172.21.63.99 host=xenodochial_easley.r3-net"}
+{"raw": "7c36d4619b52495b smtp failed-command command=\"rcpt TO:<ceo@corp.example>\" result=\"550 Invalid recipient: <ceo@corp.example>\""}
+{"raw": "7c36d45e91e771ff smtp connected address=172.21.63.12 host=affectionate_leavitt.r3-net"}
+{"raw": "7c36d4624967b7a2 smtp connected address=172.21.63.13 host=awesome_mcclintock.r3-net"}
+{"raw": "7c36d465fd1f97cc smtp connected address=172.21.63.14 host=friendly_pascal.r3-net"}
+{"raw": "7c36d468f0d2fd2c smtp connected address=172.21.63.97 host=suspicious_almeida.r3-net"}
+{"raw": "7c36d46940de09db smtp connected address=172.21.63.15 host=happy_shamir.r3-net"}
+{"raw": "7c36d46a08ea471b smtp connected address=172.21.63.16 host=inspiring_germain.r3-net"}
+{"raw": "7c36d45a714ace78 smtp connected address=172.21.63.11 host=bold_napier.r3-net"}
+{"raw": "7c36d45a714ace78 smtp disconnected reason=quit"}
+{"raw": "7c36d45dc6f654fe smtp failed-command command=\"rcpt TO:<victim@other.org>\" result=\"550 Invalid recipient: <victim@other.org>\""}
+{"raw": "7c36d45e91e771ff smtp message msgid=a6f0333a size=205 nrcpt=1 proto=ESMTP"}
+{"raw": "7c36d4619b52495b smtp connected address=172.21.63.98 host=youthful_tharp.r3-net"}
+{"raw": "7c36d4624967b7a2 smtp message msgid=d90fdcb5 size=200 nrcpt=1 proto=ESMTP"}
+{"raw": "7c36d465fd1f97cc smtp message msgid=ecbed1ab size=197 nrcpt=1 proto=ESMTP"}
+{"raw": "7c36d468f0d2fd2c smtp failed-command command=\"rcpt TO:<b@target.org>\" result=\"550 Invalid recipient: <b@target.org>\""}
+{"raw": "7c36d46940de09db smtp failed-command command=\"rcpt TO:<admin@lab.local>\" result=\"550 Invalid recipient: <admin@lab.local>\""}
+{"raw": "7c36d46a08ea471b smtp message msgid=dbba8509 size=195 nrcpt=1 proto=ESMTP"}
+{"raw": "7c36d45dc6f654fe smtp disconnected reason=disconnect"}

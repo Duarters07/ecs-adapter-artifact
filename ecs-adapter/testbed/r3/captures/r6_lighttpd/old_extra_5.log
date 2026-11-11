@@ -1,0 +1,6 @@
+2026-10-27 16:41:01: mod_auth.c.828) password doesn't match for /admin/config username: simao IP: 172.21.62.157
+2026-10-27 16:41:02: mod_auth.c.828) password doesn't match for /admin/ username: ana IP: 172.21.62.140
+2026-10-27 16:41:02: mod_auth.c.828) password doesn't match for /admin/ username: test IP: 172.21.62.109
+2026-10-27 16:41:03: mod_auth.c.828) password doesn't match for /admin/index.html username: root IP: 172.21.62.103
+2026-10-27 16:41:04: mod_auth.c.828) password doesn't match for /admin/notes.txt username: bruno IP: 172.21.62.101
+2026-10-27 16:41:05: mod_auth.c.828) password doesn't match for /admin/ username: simao IP: 172.21.62.149

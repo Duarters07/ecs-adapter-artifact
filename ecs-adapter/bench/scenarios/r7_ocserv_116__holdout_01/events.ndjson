@@ -1,0 +1,4 @@
+{"raw": "2026-10-30T20:33:07.619310+00:00 vpn01 ocserv[47]: worker[root]: 172.21.91.203 worker-auth.c:1724: failed authentication for 'root'"}
+{"raw": "2026-10-30T20:33:08.797606+00:00 vpn01 ocserv[11]: sec-mod: initiating session for user 'monitor' (session: NVz+Uc)"}
+{"raw": "2026-10-30T20:33:07.619256+00:00 vpn01 ocserv[11]: plain-auth: error authenticating user 'root'"}
+{"raw": "2026-10-30T20:33:13.749240+00:00 vpn01 ocserv[11]: sec-mod: invalidating session of user 'monitor' (session: NVz+Uc)"}

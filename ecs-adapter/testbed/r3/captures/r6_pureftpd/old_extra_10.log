@@ -1,0 +1,20 @@
+2026-10-27T16:47:36.860156+00:00 files02 pure-ftpd: (?@172.21.64.198) [INFO] New connection from 172.21.64.198
+2026-10-27T16:47:40.526518+00:00 files02 pure-ftpd: (?@172.21.64.198) [WARNING] Authentication failed for user [hugo]
+2026-10-27T16:47:40.527674+00:00 files02 pure-ftpd: (?@172.21.64.198) [INFO] Logout.
+2026-10-27T16:47:41.238197+00:00 files02 pure-ftpd: (?@172.21.64.115) [INFO] New connection from 172.21.64.115
+2026-10-27T16:47:45.732080+00:00 files02 pure-ftpd: (?@172.21.64.115) [WARNING] Authentication failed for user [ftp]
+2026-10-27T16:47:45.733250+00:00 files02 pure-ftpd: (?@172.21.64.115) [INFO] Logout.
+2026-10-27T16:47:46.415565+00:00 files02 pure-ftpd: (?@172.21.64.116) [INFO] New connection from 172.21.64.116
+2026-10-27T16:47:46.436001+00:00 files02 pure-ftpd: (?@172.21.64.116) [INFO] rui is now logged in
+2026-10-27T16:47:46.437636+00:00 files02 pure-ftpd: (rui@172.21.64.116) [ERROR] Can't open q3.txt: No such file or directory
+2026-10-27T16:47:46.437695+00:00 files02 pure-ftpd: (rui@172.21.64.116) [INFO] Logout.
+2026-10-27T16:47:47.368120+00:00 files02 pure-ftpd: (?@172.21.64.160) [INFO] New connection from 172.21.64.160
+2026-10-27T16:47:50.570473+00:00 files02 pure-ftpd: (?@172.21.64.160) [WARNING] Authentication failed for user [luis]
+2026-10-27T16:47:50.571793+00:00 files02 pure-ftpd: (?@172.21.64.160) [INFO] Logout.
+2026-10-27T16:47:51.242836+00:00 files02 pure-ftpd: (?@172.21.64.205) [INFO] New connection from 172.21.64.205
+2026-10-27T16:47:55.696461+00:00 files02 pure-ftpd: (?@172.21.64.205) [WARNING] Authentication failed for user [diogo]
+2026-10-27T16:47:55.697776+00:00 files02 pure-ftpd: (?@172.21.64.205) [INFO] Logout.
+2026-10-27T16:47:56.385858+00:00 files02 pure-ftpd: (?@172.21.64.110) [INFO] New connection from 172.21.64.110
+2026-10-27T16:47:56.398871+00:00 files02 pure-ftpd: (?@172.21.64.110) [INFO] ana is now logged in
+2026-10-27T16:47:56.399631+00:00 files02 pure-ftpd: (ana@172.21.64.110) [NOTICE] /home/ana//q3.txt downloaded  (7 bytes, 362.94KB/sec)
+2026-10-27T16:47:56.399648+00:00 files02 pure-ftpd: (ana@172.21.64.110) [INFO] Logout.

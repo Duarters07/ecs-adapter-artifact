@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-25T14:26:32Z","old":"Debian 12 samba Version 4.17.12-Debian, log level 1 auth_audit:3","new":"Debian 12 samba Version 4.17.12-Debian, log level 1 auth_json_audit:3","collected_by":"/var/log/samba/log.smbd in the container, authentication lines"}

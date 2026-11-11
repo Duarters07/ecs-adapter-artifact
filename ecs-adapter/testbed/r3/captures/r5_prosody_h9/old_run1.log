@@ -1,0 +1,21 @@
+Oct 28 15:40:01 c2s588780a17020	info	Client connected
+Oct 28 15:40:01 c2s588780a17020	info	Authenticated as ana@lab.example
+Oct 28 15:40:01 c2s588780a17020	info	c2s stream for <172.21.57.11> closed: not-well-formed
+Oct 28 15:40:01 c2s588780a17020	info	Client disconnected: connection closed
+Oct 28 15:40:02 c2s588780a27790	info	Client connected
+Oct 28 15:40:02 c2s588780a27790	info	c2s stream for <172.21.57.11> closed: session closed
+Oct 28 15:40:02 c2s588780a27790	info	Client disconnected: connection closed
+Oct 28 15:40:03 c2s588780a34e00	info	Client connected
+Oct 28 15:40:03 c2s588780a34e00	info	Authenticated as rui@lab.example
+Oct 28 15:40:03 c2s588780a34e00	info	c2s stream for <172.21.57.12> closed: not-well-formed
+Oct 28 15:40:03 c2s588780a34e00	info	Client disconnected: connection closed
+Oct 28 15:40:04 c2s588780a4bf30	info	Client connected
+Oct 28 15:40:05 c2s588780a4bf30	info	c2s stream for <172.21.57.99> closed: session closed
+Oct 28 15:40:05 c2s588780a4bf30	info	Client disconnected: connection closed
+Oct 28 15:40:06 c2s588780a582a0	info	Client connected
+Oct 28 15:40:06 c2s588780a582a0	info	Authenticated as helpdesk@lab.example
+Oct 28 15:40:06 c2s588780a582a0	info	c2s stream for <172.21.57.13> closed: not-well-formed
+Oct 28 15:40:06 c2s588780a582a0	info	Client disconnected: connection closed
+Oct 28 15:40:07 c2s588780a67090	info	Client connected
+Oct 28 15:40:07 c2s588780a67090	info	c2s stream for <172.21.57.98> closed: session closed
+Oct 28 15:40:07 c2s588780a67090	info	Client disconnected: connection closed

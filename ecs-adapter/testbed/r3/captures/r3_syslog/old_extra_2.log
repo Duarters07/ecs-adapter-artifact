@@ -1,0 +1,40 @@
+Oct 25 22:27:05 web01 sshd[94]: Accepted password for ana from 172.21.0.3 port 50446 ssh2
+Oct 25 22:27:05 web01 sshd[94]: pam_unix(sshd:session): session opened for user ana(uid=1000) by (uid=0)
+Oct 25 22:27:05 web01 sshd[94]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:27:05 web01 sshd[94]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:27:05 web01 sshd[94]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:27:06 web01 sshd[94]: pam_unix(sshd:session): session closed for user ana
+Oct 25 22:27:06 web01 sshd[102]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=ines
+Oct 25 22:27:09 web01 sshd[102]: Failed password for ines from 172.21.0.3 port 51892 ssh2
+Oct 25 22:27:10 web01 sshd[104]: Invalid user mariana from 172.21.0.3 port 51902
+Oct 25 22:27:10 web01 sshd[104]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:27:10 web01 sshd[104]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:27:12 web01 sshd[104]: Failed password for invalid user mariana from 172.21.0.3 port 51902 ssh2
+Oct 25 22:27:14 web01 sshd[106]: Invalid user raquel from 172.21.0.3 port 51904
+Oct 25 22:27:14 web01 sshd[106]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:27:14 web01 sshd[106]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:27:15 web01 sshd[106]: Failed password for invalid user raquel from 172.21.0.3 port 51904 ssh2
+Oct 25 22:27:16 web01 sshd[108]: Invalid user bruno from 172.21.0.3 port 53502
+Oct 25 22:27:16 web01 sshd[108]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:27:16 web01 sshd[108]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:27:18 web01 sshd[108]: Failed password for invalid user bruno from 172.21.0.3 port 53502 ssh2
+Oct 25 22:27:20 web01 sshd[110]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=ines
+Oct 25 22:27:22 web01 sshd[110]: Failed password for ines from 172.21.0.3 port 53508 ssh2
+Oct 25 22:27:23 web01 sshd[110]: Connection closed by authenticating user ines 172.21.0.3 port 53508 [preauth]
+Oct 25 22:27:23 web01 sshd[102]: Connection closed by authenticating user ines 172.21.0.3 port 51892 [preauth]
+Oct 25 22:27:23 web01 sshd[104]: Connection closed by invalid user mariana 172.21.0.3 port 51902 [preauth]
+Oct 25 22:27:23 web01 sshd[108]: Connection closed by invalid user bruno 172.21.0.3 port 53502 [preauth]
+Oct 25 22:27:23 web01 sshd[106]: Connection closed by invalid user raquel 172.21.0.3 port 51904 [preauth]
+Oct 25 22:27:24 web01 sudo:      ana : PWD=/home/ana ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Oct 25 22:27:24 web01 sudo: pam_limits(sudo:session): Could not set limit for 'core' to soft=-1, hard=-1: Operation not permitted; uid=1000,euid=0
+Oct 25 22:27:24 web01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Oct 25 22:27:24 web01 sudo: pam_unix(sudo:session): session closed for user root
+Oct 25 22:27:24 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty= ruser=ana rhost=  user=ana
+Oct 25 22:27:26 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:27:26 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [ana]
+Oct 25 22:27:26 web01 sudo:      ana : 1 incorrect password attempt ; PWD=/home/ana ; USER=root ; COMMAND=/usr/bin/whoami
+Oct 25 22:27:26 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=sofia rhost=  user=sofia
+Oct 25 22:27:28 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:27:28 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [sofia]
+Oct 25 22:27:28 web01 sudo:    sofia : user NOT in sudoers ; PWD=/home/sofia ; USER=root ; COMMAND=/usr/bin/id
+Oct 25 22:27:29 web01 sudo:    sofia : user NOT in sudoers ; PWD=/home/sofia ; USER=root ; COMMAND=/usr/bin/uptime

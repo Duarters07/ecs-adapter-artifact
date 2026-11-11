@@ -1,0 +1,16 @@
+2026-10-25 15:41:49 172.21.58.31:35129 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 15:41:49 172.21.58.31:35129 VERIFY OK: depth=0, CN=nas-backup
+2026-10-25 15:41:49 172.21.58.31:35129 TLS Auth Error: Auth Username/Password verification failed for peer
+2026-10-25 15:41:49 172.21.58.31:35129 SENT CONTROL [UNDEF]: 'AUTH_FAILED' (status=1)
+2026-10-25 15:41:49 172.21.58.31:35129 SENT CONTROL [nas-backup]: 'AUTH_FAILED' (status=1)
+2026-10-25 15:41:49 172.21.58.31:35129 [nas-backup] Peer Connection Initiated with [AF_INET]172.21.58.31:35129
+2026-10-25 15:41:50 172.21.58.32:37496 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 15:41:50 172.21.58.32:37496 VERIFY OK: depth=0, CN=nas-backup
+2026-10-25 15:41:50 172.21.58.32:37496 [nas-backup] Peer Connection Initiated with [AF_INET]172.21.58.32:37496
+2026-10-25 15:41:50 MULTI_sva: pool returned IPv4=10.8.0.18, IPv6=(Not enabled)
+2026-10-25 15:41:51 172.21.58.95:44427 VERIFY ERROR: depth=0, error=unable to get local issuer certificate: CN=stolen-device, serial=554167279874443275350816482879182800470546623529
+2026-10-25 15:41:51 172.21.58.95:44427 TLS Error: TLS handshake failed
+2026-10-25 15:41:56 172.21.58.33:55297 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 15:41:56 172.21.58.33:55297 VERIFY OK: depth=0, CN=phone-sofia
+2026-10-25 15:41:56 172.21.58.33:55297 [phone-sofia] Peer Connection Initiated with [AF_INET]172.21.58.33:55297
+2026-10-25 15:41:56 MULTI_sva: pool returned IPv4=10.8.0.14, IPv6=(Not enabled)

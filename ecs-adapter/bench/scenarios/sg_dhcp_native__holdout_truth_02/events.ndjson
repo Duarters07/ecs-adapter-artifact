@@ -1,0 +1,14 @@
+{"raw": "Oct 15 08:42:57 dhcp dhcpd[3163]: DHCPREQUEST for 10.10.1.11 from 02:7c:4d:c1:2e:c0 (ws-it-001) via eth0"}
+{"raw": "Oct 15 08:42:57 dhcp dhcpd[3163]: DHCPACK on 10.10.1.11 to 02:7c:4d:c1:2e:c0 (ws-it-001) via eth0"}
+{"raw": "Oct 15 08:49:28 dhcp dhcpd[3163]: DHCPREQUEST for 10.10.1.11 from 02:7c:4d:c1:2e:c0 (ws-it-001) via eth0"}
+{"raw": "Oct 15 08:49:28 dhcp dhcpd[3163]: DHCPACK on 10.10.1.11 to 02:7c:4d:c1:2e:c0 (ws-it-001) via eth0"}
+{"raw": "Oct 15 08:58:26 dhcp dhcpd[3163]: DHCPREQUEST for 10.10.1.11 from 02:7c:4d:c1:2e:c0 (ws-it-001) via eth0"}
+{"raw": "Oct 15 08:58:26 dhcp dhcpd[3163]: DHCPACK on 10.10.1.11 to 02:7c:4d:c1:2e:c0 (ws-it-001) via eth0"}
+{"raw": "Oct 15 09:02:24 dhcp dhcpd[3163]: DHCPREQUEST for 10.10.1.11 from 02:7c:4d:c1:2e:c0 (ws-it-001) via eth0"}
+{"raw": "Oct 15 09:02:24 dhcp dhcpd[3163]: DHCPACK on 10.10.1.11 to 02:7c:4d:c1:2e:c0 (ws-it-001) via eth0"}
+{"raw": "Oct 15 08:07:45 dhcp dhcpd[3163]: DHCPREQUEST for 10.30.6.11 from 02:9d:92:36:60:56 (ws-exe-001) via eth0"}
+{"raw": "Oct 15 08:07:45 dhcp dhcpd[3163]: DHCPACK on 10.30.6.11 to 02:9d:92:36:60:56 (ws-exe-001) via eth0"}
+{"raw": "Oct 15 08:09:39 dhcp dhcpd[3163]: DHCPREQUEST for 10.30.5.12 from 02:9c:95:14:c4:f4 (ws-ops-002) via eth0"}
+{"raw": "Oct 15 08:09:39 dhcp dhcpd[3163]: DHCPACK on 10.30.5.12 to 02:9c:95:14:c4:f4 (ws-ops-002) via eth0"}
+{"raw": "Oct 15 08:09:49 dhcp dhcpd[3163]: DHCPREQUEST for 10.20.7.14 from 02:7a:09:0f:9b:c2 (ws-general-004) via eth0"}
+{"raw": "Oct 15 08:09:49 dhcp dhcpd[3163]: DHCPACK on 10.20.7.14 to 02:7a:09:0f:9b:c2 (ws-general-004) via eth0"}

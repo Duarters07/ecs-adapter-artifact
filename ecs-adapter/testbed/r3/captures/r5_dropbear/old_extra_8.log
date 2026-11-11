@@ -1,0 +1,17 @@
+[58] Oct 25 23:08:44 Child connection from 172.21.55.237:53498
+[58] Oct 25 23:08:44 Login attempt for nonexistent user
+[58] Oct 25 23:08:44 Exit before auth from <172.21.55.237:53498>: Exited normally
+[59] Oct 25 23:08:45 Child connection from 172.21.55.234:36114
+[59] Oct 25 23:08:45 Login attempt for nonexistent user
+[59] Oct 25 23:08:45 Exit before auth from <172.21.55.234:36114>: Exited normally
+[60] Oct 25 23:08:46 Child connection from 172.21.55.212:38030
+[60] Oct 25 23:08:46 Bad password attempt for 'rui' from 172.21.55.212:38030
+[60] Oct 25 23:08:47 Exit before auth from <172.21.55.212:38030>: (user 'rui', 1 fails): Exited normally
+[61] Oct 25 23:08:47 Child connection from 172.21.55.132:56086
+[61] Oct 25 23:08:48 Exit before auth from <172.21.55.132:56086>: (user 'backup', 1 fails): Exited normally
+[62] Oct 25 23:08:49 Child connection from 172.21.55.248:44488
+[62] Oct 25 23:08:49 Password auth succeeded for 'ana' from 172.21.55.248:44488
+[62] Oct 25 23:08:49 Exit (ana) from <172.21.55.248:44488>: Disconnect received
+[64] Oct 25 23:08:50 Child connection from 172.21.55.175:55174
+[64] Oct 25 23:08:50 Login attempt for nonexistent user
+[64] Oct 25 23:08:50 Exit before auth from <172.21.55.175:55174>: Exited normally

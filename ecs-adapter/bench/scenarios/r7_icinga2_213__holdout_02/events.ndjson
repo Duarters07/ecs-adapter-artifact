@@ -1,0 +1,4 @@
+{"raw": "[2026-10-30 21:47:12 +0000] information/HttpServerConnection: Request: GET /v1/objects/services (from [::ffff:172.21.91.203]:43424), user: ops, agent: Ansible-icinga2/1.4, status: OK)."}
+{"raw": "[2026-10-30 21:47:14 +0000] information/HttpServerConnection: Request: GET /v1/types (from [::ffff:172.21.91.22]:33200), user: <unauthenticated>, agent: Ansible-icinga2/1.4, status: Unauthorized)."}
+{"raw": "[2026-10-30 21:47:15 +0000] information/HttpServerConnection: Request: GET /v1/types (from [::ffff:172.21.91.23]:34230), user: backup, agent: Ansible-icinga2/1.4, status: OK)."}
+{"raw": "[2026-10-30 21:47:13 +0000] information/HttpServerConnection: Request: GET /v1/objects/services (from [::ffff:172.21.91.21]:50118), user: <unauthenticated>, agent: Ansible-icinga2/1.4, status: Unauthorized)."}

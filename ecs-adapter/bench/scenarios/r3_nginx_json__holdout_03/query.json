@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "http.request.referrer": "https://search.brave.com/"
+        }
+      },
+      {
+        "term": {
+          "http.response.body.bytes": 3
+        }
+      }
+    ]
+  }
+}

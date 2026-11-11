@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "source.port": 39026
+        }
+      },
+      {
+        "term": {
+          "user.name": "deploy"
+        }
+      }
+    ]
+  }
+}

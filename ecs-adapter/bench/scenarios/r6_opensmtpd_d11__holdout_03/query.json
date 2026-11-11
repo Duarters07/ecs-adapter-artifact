@@ -1,0 +1,23 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.domain": "jovial_stonebraker.r3-net"
+              }
+            },
+            {
+              "term": {
+                "source.domain": "jovial_stonebraker.r3-net"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

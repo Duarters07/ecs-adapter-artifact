@@ -1,0 +1,13 @@
+2026-10-27T15:59:32.765568+00:00 files02 pure-ftpd: (?@172.21.64.21) [INFO] New connection from 172.21.64.21
+2026-10-27T15:59:37.460449+00:00 files02 pure-ftpd: (?@172.21.64.21) [WARNING] Authentication failed for user [scanner]
+2026-10-27T15:59:37.461709+00:00 files02 pure-ftpd: (?@172.21.64.21) [INFO] Logout.
+2026-10-27T15:59:38.151539+00:00 files02 pure-ftpd: (?@172.21.64.21) [INFO] New connection from 172.21.64.21
+2026-10-27T15:59:38.167426+00:00 files02 pure-ftpd: (?@172.21.64.21) [INFO] scanner is now logged in
+2026-10-27T15:59:38.168039+00:00 files02 pure-ftpd: (scanner@172.21.64.21) [ERROR] Can't open q3.txt: No such file or directory
+2026-10-27T15:59:38.168060+00:00 files02 pure-ftpd: (scanner@172.21.64.21) [INFO] Logout.
+2026-10-27T15:59:38.852355+00:00 files02 pure-ftpd: (?@172.21.64.95) [INFO] New connection from 172.21.64.95
+2026-10-27T15:59:41.965528+00:00 files02 pure-ftpd: (?@172.21.64.95) [WARNING] Authentication failed for user [backup]
+2026-10-27T15:59:41.966880+00:00 files02 pure-ftpd: (?@172.21.64.95) [INFO] Logout.
+2026-10-27T15:59:42.708971+00:00 files02 pure-ftpd: (?@172.21.64.94) [INFO] New connection from 172.21.64.94
+2026-10-27T15:59:48.320046+00:00 files02 pure-ftpd: (?@172.21.64.94) [WARNING] Authentication failed for user [anonymous]
+2026-10-27T15:59:48.321122+00:00 files02 pure-ftpd: (?@172.21.64.94) [INFO] Logout.

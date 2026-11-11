@@ -1,0 +1,6 @@
+2026/10/27 17:02:40 [6ae0d930] router: completed GET /api/v1/user/data.json for 172.21.70.233:56442, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:41 [6ae0d931] router: completed GET /api/v1/user for 172.21.70.233:56452, 401 Unauthorized in 29.5ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:41 [6ae0d931-2] router: completed GET /api/v1/user/emails for 172.21.70.238:39736, 200 OK in 33.2ms @ user/email.go:20(user.ListEmails)
+2026/10/27 17:02:42 [6ae0d932] router: completed GET /api/v1/repos/search for 172.21.70.113:55660, 200 OK in 35.4ms @ repo/repo.go:36(repo.Search)
+2026/10/27 17:02:43 [6ae0d933] router: completed GET /api/v1/user/keys for 172.21.70.237:42228, 401 Unauthorized in 29.2ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:44 [6ae0d934] router: completed GET /api/v1/status for 172.21.70.131:37598, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)

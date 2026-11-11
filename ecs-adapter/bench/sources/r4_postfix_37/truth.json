@@ -1,0 +1,115 @@
+{
+  "source_id": "r4_postfix_37",
+  "family": "postfix",
+  "split": "test_r4",
+  "category_hint": "email",
+  "contamination_risk": "high",
+  "origin": "Produced by running Postfix 3.7.11 (Debian 12), not copied from documentation or a public dataset. Captured 2026-10-22T08:41:41Z on the author's laptop by testbed/r3/r4_postfix.sh (maillog_file /var/log/postfix.log); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 4 (fresh held-out), NEW VERSION of r4_postfix_35. Measured: the format is unchanged; the relay refusal moves from 554 5.7.1 to 454 4.7.1. A control pair.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_name",
+      "ecs_field": "source.domain",
+      "type": "keyword",
+      "role": "client_name",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "from",
+      "ecs_field": "email.from.address",
+      "type": "keyword",
+      "role": "sender",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "to",
+      "ecs_field": "email.to.address",
+      "type": "keyword",
+      "role": "recipient",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "queue_id",
+      "ecs_field": "email.local_id",
+      "type": "keyword",
+      "role": "message_id",
+      "difficulty": "hard",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "process",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "role": "program",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "role": "host",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "status",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "delivery_status",
+      "difficulty": "hard",
+      "note": "event.outcome needs a value map (sent->success); declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "helo",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "helo_name",
+      "difficulty": "hard",
+      "note": "No ECS field for a HELO name.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r4_postfix_37__holdout_01",
+    "r4_postfix_37__holdout_02",
+    "r4_postfix_37__holdout_03",
+    "r4_postfix_37__holdout_04",
+    "r4_postfix_37__holdout_05"
+  ],
+  "round3": {
+    "pair": "r4_postfix",
+    "role": "new"
+  }
+}

@@ -1,0 +1,29 @@
+Oct 25 22:28:14 web01 sshd[338]: Invalid user bruno from 172.21.0.3 port 47614
+Oct 25 22:28:14 web01 sshd[338]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:28:14 web01 sshd[338]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:28:16 web01 sshd[338]: Failed password for invalid user bruno from 172.21.0.3 port 47614 ssh2
+Oct 25 22:28:17 web01 sshd[340]: error: kex_exchange_identification: Connection closed by remote host
+Oct 25 22:28:17 web01 sshd[340]: Connection closed by 172.21.0.3 port 59084
+Oct 25 22:28:18 web01 sshd[341]: Accepted password for rui from 172.21.0.3 port 59098 ssh2
+Oct 25 22:28:18 web01 sshd[341]: pam_unix(sshd:session): session opened for user rui(uid=1001) by (uid=0)
+Oct 25 22:28:18 web01 sshd[341]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:28:18 web01 sshd[341]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:28:18 web01 sshd[341]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:28:18 web01 sshd[341]: pam_unix(sshd:session): session closed for user rui
+Oct 25 22:28:19 web01 sshd[349]: Invalid user jenkins from 172.21.0.3 port 59112
+Oct 25 22:28:19 web01 sshd[349]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:28:19 web01 sshd[349]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:28:21 web01 sshd[349]: Failed password for invalid user jenkins from 172.21.0.3 port 59112 ssh2
+Oct 25 22:28:22 web01 sshd[351]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=ana
+Oct 25 22:28:23 web01 sshd[351]: Failed password for ana from 172.21.0.3 port 59116 ssh2
+Oct 25 22:28:25 web01 sshd[353]: error: kex_exchange_identification: Connection closed by remote host
+Oct 25 22:28:25 web01 sshd[353]: Connection closed by 172.21.0.3 port 59132
+Oct 25 22:28:26 web01 sshd[349]: Connection closed by invalid user jenkins 172.21.0.3 port 59112 [preauth]
+Oct 25 22:28:26 web01 sshd[351]: Connection closed by authenticating user ana 172.21.0.3 port 59116 [preauth]
+Oct 25 22:28:26 web01 sshd[338]: Connection closed by invalid user bruno 172.21.0.3 port 47614 [preauth]
+Oct 25 22:28:26 web01 sudo:    marta : user NOT in sudoers ; PWD=/home/marta ; USER=root ; COMMAND=/usr/bin/uptime
+Oct 25 22:28:27 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1001 euid=0 tty= ruser=rui rhost=  user=rui
+Oct 25 22:28:29 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:28:29 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [rui]
+Oct 25 22:28:29 web01 sudo:      rui : 1 incorrect password attempt ; PWD=/home/rui ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Oct 25 22:28:29 web01 sudo:    sofia : user NOT in sudoers ; PWD=/home/sofia ; USER=root ; COMMAND=/bin/ls /root

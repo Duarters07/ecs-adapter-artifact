@@ -1,0 +1,20 @@
+{"raw": "type=USER_ACCT msg=audit(1642723741.072:375): pid=10125 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=USER_ACCT msg=audit(1642724221.094:383): pid=10197 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=USER_ACCT msg=audit(1642725541.126:389): pid=10202 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=CRED_ACQ msg=audit(1642723741.072:376): pid=10125 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=CRED_ACQ msg=audit(1642724221.098:384): pid=10197 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=CRED_ACQ msg=audit(1642725541.126:390): pid=10202 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=LOGIN msg=audit(1642723741.076:377): pid=10125 uid=0 old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=65 res=1"}
+{"raw": "type=LOGIN msg=audit(1642724221.098:385): pid=10197 uid=0 old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=66 res=1"}
+{"raw": "type=LOGIN msg=audit(1642725541.126:391): pid=10202 uid=0 old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 ses=67 res=1"}
+{"raw": "type=USER_START msg=audit(1642723741.080:378): pid=10125 uid=0 auid=0 ses=65 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=USER_START msg=audit(1642724221.102:386): pid=10197 uid=0 auid=0 ses=66 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=USER_START msg=audit(1642725541.134:392): pid=10202 uid=0 auid=0 ses=67 msg='op=PAM:session_open acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=CRED_DISP msg=audit(1642723741.084:379): pid=10125 uid=0 auid=0 ses=65 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=CRED_DISP msg=audit(1642724221.106:387): pid=10197 uid=0 auid=0 ses=66 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=CRED_DISP msg=audit(1642725541.138:393): pid=10202 uid=0 auid=0 ses=67 msg='op=PAM:setcred acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=USER_END msg=audit(1642723741.084:380): pid=10125 uid=0 auid=0 ses=65 msg='op=PAM:session_close acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=USER_END msg=audit(1642724221.106:388): pid=10197 uid=0 auid=0 ses=66 msg='op=PAM:session_close acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=USER_END msg=audit(1642725541.138:394): pid=10202 uid=0 auid=0 ses=67 msg='op=PAM:session_close acct=\"root\" exe=\"/usr/sbin/cron\" hostname=? addr=? terminal=cron res=success'"}
+{"raw": "type=SERVICE_START msg=audit(1642723752.624:381): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=phpsessionclean comm=\"systemd\" exe=\"/lib/systemd/systemd\" hostname=? addr=? terminal=? res=success'"}
+{"raw": "type=SERVICE_START msg=audit(1642725552.794:395): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=phpsessionclean comm=\"systemd\" exe=\"/lib/systemd/systemd\" hostname=? addr=? terminal=? res=success'"}

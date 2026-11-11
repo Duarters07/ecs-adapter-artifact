@@ -1,0 +1,139 @@
+{
+  "source_id": "r6_courier_d11",
+  "family": "courier",
+  "split": "train_r6",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Courier IMAP 5.0.13 (Debian 11), not copied from documentation or a public dataset. Captured 2026-10-27T16:17:44Z on the author's laptop by testbed/r3/r6_courier.sh (rsyslog (imuxsock, mail.*) to /var/log/mail.log, imapd lines); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 8 (pool r6), OLD VERSION: courier-imap 5.0.13 on Debian 11, syslog via rsyslog to a file.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "note": "client.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "role": "host",
+      "difficulty": "easy",
+      "note": "host.name is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "process",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "role": "program",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "rcvd",
+      "ecs_field": "source.bytes",
+      "type": "long",
+      "role": "bytes_received",
+      "difficulty": "medium",
+      "note": "client.bytes is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "sent",
+      "ecs_field": "destination.bytes",
+      "type": "long",
+      "role": "bytes_sent",
+      "difficulty": "medium",
+      "note": "server.bytes is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "protocol",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "mail_protocol",
+      "difficulty": "hard",
+      "note": "network.protocol expects lowercase; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "headers",
+      "ecs_field": null,
+      "type": "long",
+      "role": "header_bytes",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "body",
+      "ecs_field": null,
+      "type": "long",
+      "role": "body_bytes",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "time",
+      "ecs_field": null,
+      "type": "long",
+      "role": "session_seconds",
+      "difficulty": "hard",
+      "note": "event.duration is in nanoseconds; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r6_courier_d11__holdout_01",
+    "r6_courier_d11__holdout_03"
+  ],
+  "round3": {
+    "pair": "r6_courier",
+    "role": "old"
+  }
+}

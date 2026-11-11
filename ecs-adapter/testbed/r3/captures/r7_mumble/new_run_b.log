@@ -1,0 +1,16 @@
+<W>2026-10-30 21:20:48.472 1 => <0:(-1)> New connection: 172.21.91.31:47292
+<W>2026-10-30 21:20:48.487 1 => <0:(-1)> Client version 1.4.0 (Win 10.0.19045: 1.4.287)
+<W>2026-10-30 21:20:48.501 1 => <6:ines(-1)> Authenticated
+<W>2026-10-30 21:20:49.515 1 => <6:ines(-1)> Connection closed: The remote host closed the connection [1]
+<W>2026-10-30 21:20:50.905 1 => <0:(-1)> New connection: 172.21.91.32:56804
+<W>2026-10-30 21:20:50.942 1 => <0:(-1)> Client version 1.4.0 (Win 10.0.19045: 1.4.287)
+<W>2026-10-30 21:20:50.950 1 => <7:joao(-1)> Rejected connection from 172.21.91.32:56804: Invalid server password
+<W>2026-10-30 21:20:50.969 1 => <7:joao(-1)> Connection closed:  [-1]
+<W>2026-10-30 21:20:53.425 1 => <0:(-1)> New connection: 172.21.91.213:45820
+<W>2026-10-30 21:20:53.465 1 => <0:(-1)> Client version 1.4.0 (Win 10.0.19045: 1.4.287)
+<W>2026-10-30 21:20:53.504 1 => <8:kika(-1)> Authenticated
+<W>2026-10-30 21:20:54.528 1 => <8:kika(-1)> Connection closed: The remote host closed the connection [1]
+<W>2026-10-30 21:20:56.104 1 => <0:(-1)> New connection: 172.21.91.33:51086
+<W>2026-10-30 21:20:56.152 1 => <0:(-1)> Client version 1.4.0 (Win 10.0.19045: 1.4.287)
+<W>2026-10-30 21:20:56.199 1 => <9:luis(-1)> Rejected connection from 172.21.91.33:51086: Invalid server password
+<W>2026-10-30 21:20:56.229 1 => <9:luis(-1)> Connection closed:  [-1]

@@ -1,0 +1,14 @@
+{
+  "note": "NOT ground truth. Each entry records a value and the ECS field that value IS. The ladder may read this file; it may never read truth.json. See validators/v3_5_known_values.py.",
+  "origin": "samples.ndjson, via the per-family extractor",
+  "provenance": "Derived from samples.ndjson by bench/make_known_values.py, using the per-family extractor in corpus/heldout_scenarios.py for the keys and truth.json for the key -> ECS field map. These are the same lines V3 feeds the sandbox, so V3.5 can find them. NOT an independent observation: unlike the synthesised corpus, where the generator injected these values, here the field each value belongs to comes from the labelling. V3.5 on this source is therefore a consistency check rather than a probe. It still detects a value the parser dropped, which is what it is needed for.",
+  "source_id": "fail2ban_jail",
+  "values": {
+    "event.action": "Found",
+    "log.level": "INFO",
+    "log.logger": "fail2ban.filter",
+    "process.pid": "1",
+    "rule.name": "sshd",
+    "source.ip": "172.18.0.23"
+  }
+}

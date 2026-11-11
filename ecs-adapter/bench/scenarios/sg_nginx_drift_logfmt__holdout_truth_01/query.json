@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "http.response.body.bytes": 0
+        }
+      }
+    ]
+  }
+}

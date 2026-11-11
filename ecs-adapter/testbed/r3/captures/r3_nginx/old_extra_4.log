@@ -1,0 +1,8 @@
+172.21.0.3 - - [25/Oct/2026:22:25:36 +0000] "POST /api/login HTTP/1.1" 200 2 "-" "axios/1.4.0"
+172.21.0.3 - guest [25/Oct/2026:22:25:37 +0000] "GET /account/ HTTP/1.1" 401 179 "http://intranet.local/home" "axios/1.4.0"
+172.21.0.3 - - [25/Oct/2026:22:25:37 +0000] "POST /api/status HTTP/1.1" 200 2 "-" "curl/7.88.1"
+172.21.0.3 - jorge [25/Oct/2026:22:25:37 +0000] "GET /account/ HTTP/1.1" 401 179 "http://wiki.local/tools" "Mozilla/5.0 (Macintosh) Safari/16.6"
+172.21.0.3 - - [25/Oct/2026:22:25:37 +0000] "GET /private/notes.txt HTTP/1.1" 403 153 "-" "axios/1.4.0"
+172.21.0.3 - - [25/Oct/2026:22:25:37 +0000] "GET /static/app.js HTTP/1.1" 200 2 "https://shop.r3.local/shop/intranet" "HTTPie/3.2.1"
+172.21.0.3 - - [25/Oct/2026:22:25:38 +0000] "GET /shop/db.sql HTTP/1.1" 404 153 "https://www.google.com/ops" "sqlmap/1.7#stable (https://sqlmap.org)"
+172.21.0.3 - - [25/Oct/2026:22:25:38 +0000] "GET /phpmyadmin/ HTTP/1.1" 404 153 "-" "axios/1.4.0"

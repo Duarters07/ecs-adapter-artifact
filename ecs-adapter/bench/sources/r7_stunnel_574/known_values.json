@@ -1,0 +1,17 @@
+{
+  "note": "NOT ground truth. Each entry records a value and the ECS field that value IS. The ladder may read this file; it may never read truth.json. See validators/v3_5_known_values.py.",
+  "origin": "samples.ndjson, via the per-family extractor",
+  "provenance": "Derived from samples.ndjson by bench/make_known_values.py with the extractor in testbed/heldout_r2/specs.py. Like the round-1 test sources, the field each value belongs to comes from the DRAFT labelling, so V3.5 here is a consistency check, not a probe.",
+  "source_id": "r7_stunnel_574",
+  "values": {
+    "error.message": "error:0A0000C7:SSL routines::peer did not return a certificate",
+    "event.action": "Rejected by CERT",
+    "event.reason": "unable to get local issuer certificate",
+    "log.syslog.severity.code": "4",
+    "process.thread.id": "4",
+    "service.name": "echo-tls",
+    "source.ip": "172.21.91.11",
+    "source.port": "48210",
+    "tls.client.subject": "CN=mallory, O=Lab"
+  }
+}

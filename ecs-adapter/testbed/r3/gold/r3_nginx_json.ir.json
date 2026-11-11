@@ -1,0 +1,98 @@
+{
+  "source_id": "r3_nginx_json",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "json"
+  },
+  "fields": [
+    {
+      "source_key": "client",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "uri",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "protocol",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "bytes_sent",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "referer",
+      "ecs_field": "http.request.referrer",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "url.domain",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "forwarded_for",
+      "ecs_field": "network.forwarded_ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "request_id",
+      "ecs_field": "http.request.id",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "duration",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "time",
+      "reason": "carries no ECS field this source maps"
+    }
+  ],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "web"
+    ],
+    "event.dataset": "nginx.access"
+  }
+}

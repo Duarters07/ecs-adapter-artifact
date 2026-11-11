@@ -1,0 +1,5 @@
+{"raw": "1792939522: New client connected from 172.21.50.31:49146 as cam-dock (p2, c1, k60, u'camera03')."}
+{"raw": "1792939524: New client connected from 172.21.50.33:43616 as pump-east (p2, c1, k60, u'pump02')."}
+{"raw": "1792939526: New client connected from 172.21.50.32:52846 as hvac-attic (p2, c1, k60, u'hvac04')."}
+{"raw": "1792939523: Client scan-b disconnected, not authorised."}
+{"raw": "1792939525: Client bot-9 disconnected, not authorised."}

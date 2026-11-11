@@ -1,0 +1,13 @@
+{
+ "dataset": "Loghub-2.0",
+ "system": "Zookeeper",
+ "lines": 74273,
+ "sampler": "adapter.sampler.deduplicate(per_signature=3,total_cap=20)",
+ "log_sha256": "ac7459a7e4e5744fd8d7793486a8ce9a8c7e5a554bc90c4895ea8a1de213c372",
+ "selftest_ceiling": {
+  "lines": 74273,
+  "GA": 0.9993,
+  "PA": 0.9989,
+  "unmatched": 0.0004
+ }
+}

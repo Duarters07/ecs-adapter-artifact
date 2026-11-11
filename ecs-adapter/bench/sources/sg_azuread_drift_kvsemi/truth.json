@@ -1,0 +1,60 @@
+{
+  "category_hint": "authentication",
+  "contamination_risk": "none",
+  "extraction": {
+    "field_split": "; ",
+    "kind": "kv",
+    "value_split": "="
+  },
+  "family": "sg_azuread",
+  "fields": [
+    {
+      "ecs_field": "source.ip",
+      "source_key": "callerIpAddress",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "user.full_name",
+      "source_key": "identity",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "event.action",
+      "source_key": "operationName",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "event.outcome",
+      "source_key": "properties_conditionalAccessStatus",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "event.id",
+      "source_key": "properties_id",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "user.id",
+      "source_key": "properties_userId",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "user.email",
+      "source_key": "properties_userPrincipalName",
+      "type": "keyword"
+    }
+  ],
+  "level": 2,
+  "note": "Level-2 evaluation source: a TRAINING family rendered in a format no training source uses (corpus/drift_formats.py). Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_azuread_drift_kvsemi",
+  "split": "test_drift",
+  "timestamp": {
+    "formats": [
+      "ISO8601"
+    ],
+    "source_key": "time_"
+  },
+  "transform": "drift:kvsemi",
+  "value_maps": []
+}

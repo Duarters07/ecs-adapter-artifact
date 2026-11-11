@@ -1,0 +1,11 @@
+{"raw": "<38>1 2026-10-19T23:41:18.487069+00:00 web01 sshd 19 - -  Accepted password for ana from 172.21.0.3 port 43828 ssh2"}
+{"raw": "<81>1 2026-10-19T23:41:35.007066+00:00 web01 sudo - - -       rui : 1 incorrect password attempt ; PWD=/home/rui ; USER=root ; COMMAND=/usr/bin/whoami"}
+{"raw": "<38>1 2026-10-19T23:41:26.349311+00:00 web01 sshd 29 - -  Failed password for invalid user nuno from 172.21.0.3 port 43838 ssh2"}
+{"raw": "<81>1 2026-10-19T23:41:35.362212+00:00 web01 sudo - - -     sofia : user NOT in sudoers ; PWD=/home/sofia ; USER=root ; COMMAND=/usr/bin/apt-get update"}
+{"raw": "<38>1 2026-10-19T23:41:30.558353+00:00 web01 sshd 31 - -  Failed password for root from 172.21.0.3 port 41516 ssh2"}
+{"raw": "<35>1 2026-10-19T23:41:31.111811+00:00 web01 sshd 33 - -  error: kex_exchange_identification: Connection closed by remote host"}
+{"raw": "<85>1 2026-10-19T23:41:32.567584+00:00 web01 sudo - - -       ana : PWD=/home/ana ; USER=root ; COMMAND=/usr/bin/id"}
+{"raw": "<38>1 2026-10-19T23:41:21.605433+00:00 web01 sshd 27 - -  Failed password for ana from 172.21.0.3 port 43834 ssh2"}
+{"raw": "<38>1 2026-10-19T23:41:31.596709+00:00 web01 sshd 34 - -  Accepted password for rui from 172.21.0.3 port 41526 ssh2"}
+{"raw": "<38>1 2026-10-19T23:41:31.111818+00:00 web01 sshd 33 - -  Connection closed by 172.21.0.3 port 41522"}
+{"raw": "<85>1 2026-10-19T23:41:35.714048+00:00 web01 sudo - - -       ana : PWD=/home/ana ; USER=root ; COMMAND=/bin/ls /root"}

@@ -1,0 +1,13 @@
+1792969156: New connection from 172.21.50.228 on port 1883.
+1792969156: Socket error on client <unknown>, disconnecting.
+1792969157: New connection from 172.21.50.125 on port 1884.
+1792969157: Socket error on client <unknown>, disconnecting.
+1792969158: New connection from 172.21.50.248 on port 1883.
+1792969158: Socket error on client <unknown>, disconnecting.
+1792969159: New connection from 172.21.50.183 on port 1883.
+1792969159: Socket error on client <unknown>, disconnecting.
+1792969160: New connection from 172.21.50.135 on port 1884.
+1792969160: New client connected from 172.21.50.135 as probe-portal (p2, c1, k60, u'hvac04').
+1792969160: Client probe-portal disconnected.
+1792969161: New connection from 172.21.50.103 on port 1883.
+1792969161: Socket error on client <unknown>, disconnecting.

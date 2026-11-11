@@ -1,0 +1,14 @@
+{"raw": "2026-10-14T08:07:48+00:00;git;drew.wilson;4664;4664;228;ws-ops-004.acme.local;/usr/bin/git;839912;/var/log;6374460;pts4;57628;fc:02;4664;2484;59"}
+{"raw": "2026-10-14T08:09:25+00:00;ls;michele.roberts;3226;3226;280;ws-ops-003.acme.local;/usr/bin/ls;903846;/var/log;3455151;pts1;50105;fc:02;3226;2294;59"}
+{"raw": "2026-10-14T08:15:43+00:00;ls;mario.hernandez;1562;1562;378;ws-it-001.acme.local;/usr/bin/ls;282788;/var/log;7613160;pts1;44010;fd:01;1562;1526;59"}
+{"raw": "2026-10-14T08:17:48+00:00;ls;barbara.sanders;2947;2947;80;ws-ops-001.acme.local;/usr/bin/ls;292483;/var/log;2086457;pts4;56539;fd:01;2947;594;59"}
+{"raw": "2026-10-14T08:23:58+00:00;journalctl;barbara.sanders;2947;2947;840;ws-ops-001.acme.local;/usr/bin/journalctl;329462;/var/log;7722207;pts5;33066;fd:01;2947;3861;59"}
+{"raw": "2026-10-14T08:28:19+00:00;vim;michele.roberts;3226;3226;783;ws-ops-003.acme.local;/usr/bin/vim;23720;/var/log;4100931;pts0;23043;fc:02;3226;3604;59"}
+{"raw": "2026-10-14T08:29:22+00:00;grep;amanda.diaz;3483;3483;783;ws-it-003.acme.local;/usr/bin/grep;648795;/var/log;2992452;pts0;11119;fc:02;3483;3899;59"}
+{"raw": "2026-10-14T08:31:26+00:00;cat;mario.hernandez;1562;1562;120;ws-it-001.acme.local;/usr/bin/cat;263521;/var/log;7807650;pts1;18754;fd:01;1562;958;59"}
+{"raw": "2026-10-14T08:03:12+00:00;whoami;drew.wilson;4664;4664;353;ws-ops-004.acme.local;/usr/bin/whoami;824814;/tmp;9491215;pts1;49381;08:01;4664;1757;59"}
+{"raw": "2026-10-14T08:04:16+00:00;sed;amanda.diaz;3483;3483;493;ws-it-003.acme.local;/usr/bin/sed;174243;/opt/app;1516604;pts2;11947;fd:01;3483;3003;59"}
+{"raw": "2026-10-14T08:05:14+00:00;docker;drew.wilson;4664;4664;108;ws-ops-004.acme.local;/usr/bin/docker;518616;/tmp;7597441;pts1;31935;08:01;4664;1437;59"}
+{"raw": "2026-10-14T08:05:44+00:00;tcpdump;michele.roberts;3226;3226;807;ws-ops-003.acme.local;/usr/bin/tcpdump;954151;/home/michele.roberts;9066645;pts2;26082;fd:01;3226;845;59"}
+{"raw": "2026-10-14T08:05:50+00:00;apt;mario.hernandez;1562;1562;813;ws-it-001.acme.local;/usr/bin/apt;605499;/opt/app;7280878;pts1;40124;08:01;1562;3225;59"}
+{"raw": "2026-10-14T08:06:24+00:00;vim;michele.roberts;3226;3226;823;ws-ops-003.acme.local;/usr/bin/vim;870926;/tmp;226712;pts3;53605;fc:02;3226;3879;59"}

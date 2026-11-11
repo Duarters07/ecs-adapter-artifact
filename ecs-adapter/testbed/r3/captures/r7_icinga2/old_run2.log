@@ -1,0 +1,9 @@
+[2026-10-30 21:47:08 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.14]:55218 (no client certificate)
+[2026-10-30 21:47:08 +0000] information/HttpServerConnection: Request: GET /v1/objects/hosts (from [::ffff:172.21.91.14]:55218), user: <unauthenticated>, agent: curl/8.14.1, status: Unauthorized).
+[2026-10-30 21:47:08 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.14]:55218)
+[2026-10-30 21:47:09 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.202]:55432 (no client certificate)
+[2026-10-30 21:47:09 +0000] information/HttpServerConnection: Request: GET /v1/objects/hosts (from [::ffff:172.21.91.202]:55432), user: <unauthenticated>, agent: python-requests/2.31.0, status: Unauthorized).
+[2026-10-30 21:47:09 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.202]:55432)
+[2026-10-30 21:47:10 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.15]:45552 (no client certificate)
+[2026-10-30 21:47:10 +0000] information/HttpServerConnection: Request: GET /v1/objects/hosts (from [::ffff:172.21.91.15]:45552), user: ana, agent: Icinga Web 2, status: OK).
+[2026-10-30 21:47:10 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.15]:45552)

@@ -1,0 +1,4 @@
+[2026-10-30 19:03:09 +0000] [1/Thread-10 (process_request_thread)] [WARNING] Failed login attempt from 172.21.80.21: 'scanner'
+[2026-10-30 19:03:11 +0000] [1/Thread-11 (process_request_thread)] [WARNING] Failed login attempt from 172.21.80.203: 'root'
+[2026-10-30 19:03:13 +0000] [1/Thread-12 (process_request_thread)] [INFO] Successful login: 'monitor'
+[2026-10-30 19:03:13 +0000] [1/Thread-13 (process_request_thread)] [WARNING] Failed login attempt from 172.21.80.23: 'rui'

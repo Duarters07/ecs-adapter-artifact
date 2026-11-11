@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-22T08:45:22Z","old":"Debian 11 dovecot 2.3.13 (89f716dc2)","new":"Debian 13 dovecot 2.4.1-4 (7d8c0e5759)","collected_by":"docker logs, stderr (log_path=/dev/stderr)"}

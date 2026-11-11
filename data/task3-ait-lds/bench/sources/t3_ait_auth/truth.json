@@ -1,0 +1,71 @@
+{
+ "source_id": "t3_ait_auth",
+ "review_status": "DRAFT - every field below awaits the author's review",
+ "fields": [
+  {
+   "source_key": "host",
+   "ecs_field": "host.hostname",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "program",
+   "ecs_field": "process.name",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "pid",
+   "ecs_field": "process.pid",
+   "confidence": 1.0,
+   "type": "long",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "user",
+   "ecs_field": "user.name",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "target_user",
+   "ecs_field": "user.target.name",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "src_ip",
+   "ecs_field": "source.ip",
+   "confidence": 1.0,
+   "type": "ip",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "src_port",
+   "ecs_field": "source.port",
+   "confidence": 1.0,
+   "type": "long",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "command",
+   "ecs_field": "process.command_line",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "pwd",
+   "ecs_field": "process.working_directory",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "action",
+   "ecs_field": "event.action",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  }
+ ],
+ "split": "test_t3",
+ "family": "linux-auth"
+}

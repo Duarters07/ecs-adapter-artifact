@@ -1,0 +1,4 @@
+time="2026-10-27T15:42:37Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'ana'" method=POST path=/api/firstfactor remote_ip=172.21.61.11
+time="2026-10-27T15:42:41Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'admin'" error="user not found" method=POST path=/api/firstfactor remote_ip=172.21.61.99
+time="2026-10-27T15:42:42Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'root'" error="user not found" method=POST path=/api/firstfactor remote_ip=172.21.61.98
+time="2026-10-27T15:42:46Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'rui'" method=POST path=/api/firstfactor remote_ip=172.21.61.14

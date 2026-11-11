@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "admin"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "admin"
+              }
+            },
+            {
+              "term": {
+                "user.name": "admin"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "user_agent.original": "python-urllib/3.9"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+Oct 25 22:27:52 web01 sshd[240]: Accepted password for ana from 172.21.0.3 port 32918 ssh2
+Oct 25 22:27:52 web01 sshd[240]: pam_unix(sshd:session): session opened for user ana(uid=1000) by (uid=0)
+Oct 25 22:27:52 web01 sshd[240]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:27:52 web01 sshd[240]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:27:52 web01 sshd[240]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:27:52 web01 sshd[240]: pam_unix(sshd:session): session closed for user ana
+Oct 25 22:27:53 web01 sshd[248]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=marta
+Oct 25 22:27:55 web01 sshd[248]: Failed password for marta from 172.21.0.3 port 32930 ssh2
+Oct 25 22:27:56 web01 sshd[250]: Accepted password for ana from 172.21.0.3 port 48350 ssh2
+Oct 25 22:27:56 web01 sshd[250]: pam_unix(sshd:session): session opened for user ana(uid=1000) by (uid=0)
+Oct 25 22:27:56 web01 sshd[250]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:27:56 web01 sshd[250]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:27:56 web01 sshd[250]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:27:56 web01 sshd[250]: pam_unix(sshd:session): session closed for user ana
+Oct 25 22:27:57 web01 sshd[258]: Accepted password for sofia from 172.21.0.3 port 48358 ssh2
+Oct 25 22:27:57 web01 sshd[258]: pam_unix(sshd:session): session opened for user sofia(uid=1002) by (uid=0)
+Oct 25 22:27:57 web01 sshd[258]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:27:57 web01 sshd[258]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:27:57 web01 sshd[258]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:27:57 web01 sshd[258]: pam_unix(sshd:session): session closed for user sofia
+Oct 25 22:27:58 web01 sshd[266]: Accepted password for ines from 172.21.0.3 port 48364 ssh2
+Oct 25 22:27:58 web01 sshd[266]: pam_unix(sshd:session): session opened for user ines(uid=1004) by (uid=0)
+Oct 25 22:27:58 web01 sshd[266]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:27:58 web01 sshd[266]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:27:58 web01 sshd[266]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:27:58 web01 sshd[266]: pam_unix(sshd:session): session closed for user ines
+Oct 25 22:27:59 web01 sshd[274]: Accepted password for rui from 172.21.0.3 port 48376 ssh2
+Oct 25 22:27:59 web01 sshd[274]: pam_unix(sshd:session): session opened for user rui(uid=1001) by (uid=0)
+Oct 25 22:27:59 web01 sshd[274]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:27:59 web01 sshd[274]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:27:59 web01 sshd[274]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:27:59 web01 sshd[274]: pam_unix(sshd:session): session closed for user rui
+Oct 25 22:28:00 web01 sshd[282]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=ines
+Oct 25 22:28:02 web01 sshd[282]: Failed password for ines from 172.21.0.3 port 48384 ssh2
+Oct 25 22:28:03 web01 sshd[282]: Connection closed by authenticating user ines 172.21.0.3 port 48384 [preauth]
+Oct 25 22:28:03 web01 sshd[248]: Connection closed by authenticating user marta 172.21.0.3 port 32930 [preauth]
+Oct 25 22:28:03 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1005 euid=0 tty= ruser=marta rhost=  user=marta
+Oct 25 22:28:05 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:28:05 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [marta]
+Oct 25 22:28:05 web01 sudo:    marta : user NOT in sudoers ; PWD=/home/marta ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Oct 25 22:28:06 web01 sudo:     ines : PWD=/home/ines ; USER=root ; COMMAND=/usr/bin/id
+Oct 25 22:28:06 web01 sudo: pam_limits(sudo:session): Could not set limit for 'core' to soft=-1, hard=-1: Operation not permitted; uid=1004,euid=0
+Oct 25 22:28:06 web01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1004)
+Oct 25 22:28:06 web01 sudo: pam_unix(sudo:session): session closed for user root
+Oct 25 22:28:06 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1001 euid=0 tty= ruser=rui rhost=  user=rui
+Oct 25 22:28:08 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:28:08 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [rui]
+Oct 25 22:28:08 web01 sudo:      rui : 1 incorrect password attempt ; PWD=/home/rui ; USER=root ; COMMAND=/usr/bin/journalctl -n 5
+Oct 25 22:28:09 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1005 euid=0 tty= ruser=marta rhost=  user=marta
+Oct 25 22:28:11 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:28:11 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [marta]
+Oct 25 22:28:11 web01 sudo:    marta : user NOT in sudoers ; PWD=/home/marta ; USER=root ; COMMAND=/usr/bin/apt-get update

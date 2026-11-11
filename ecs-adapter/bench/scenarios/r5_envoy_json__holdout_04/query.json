@@ -1,0 +1,40 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.port": 34208
+              }
+            },
+            {
+              "term": {
+                "source.port": 34208
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "url.full": "/"
+              }
+            },
+            {
+              "term": {
+                "url.original": "/"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

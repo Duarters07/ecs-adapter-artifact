@@ -1,0 +1,21 @@
+2026-10-27T15:59:54.610286+00:00 files02 pure-ftpd: (?@172.21.64.11) [INFO] New connection from 172.21.64.11
+2026-10-27T15:59:54.624772+00:00 files02 pure-ftpd: (?@172.21.64.11) [INFO] ana is now logged in
+2026-10-27T15:59:54.625551+00:00 files02 pure-ftpd: (ana@172.21.64.11) [NOTICE] /home/ana//q3.txt downloaded  (7 bytes, 218.87KB/sec)
+2026-10-27T15:59:54.625570+00:00 files02 pure-ftpd: (ana@172.21.64.11) [INFO] Logout.
+2026-10-27T15:59:55.315556+00:00 files02 pure-ftpd: (?@172.21.64.11) [INFO] New connection from 172.21.64.11
+2026-10-27T16:00:00.170103+00:00 files02 pure-ftpd: (?@172.21.64.11) [WARNING] Authentication failed for user [ana]
+2026-10-27T16:00:00.171103+00:00 files02 pure-ftpd: (?@172.21.64.11) [INFO] Logout.
+2026-10-27T16:00:00.863618+00:00 files02 pure-ftpd: (?@172.21.64.12) [INFO] New connection from 172.21.64.12
+2026-10-27T16:00:00.885315+00:00 files02 pure-ftpd: (?@172.21.64.12) [INFO] rui is now logged in
+2026-10-27T16:00:00.885973+00:00 files02 pure-ftpd: (rui@172.21.64.12) [ERROR] Can't open q3.txt: No such file or directory
+2026-10-27T16:00:00.885993+00:00 files02 pure-ftpd: (rui@172.21.64.12) [INFO] Logout.
+2026-10-27T16:00:01.579599+00:00 files02 pure-ftpd: (?@172.21.64.92) [INFO] New connection from 172.21.64.92
+2026-10-27T16:00:05.291718+00:00 files02 pure-ftpd: (?@172.21.64.92) [WARNING] Authentication failed for user [test]
+2026-10-27T16:00:05.293026+00:00 files02 pure-ftpd: (?@172.21.64.92) [INFO] Logout.
+2026-10-27T16:00:05.982339+00:00 files02 pure-ftpd: (?@172.21.64.91) [INFO] New connection from 172.21.64.91
+2026-10-27T16:00:11.690392+00:00 files02 pure-ftpd: (?@172.21.64.91) [WARNING] Authentication failed for user [root]
+2026-10-27T16:00:11.691593+00:00 files02 pure-ftpd: (?@172.21.64.91) [INFO] Logout.
+2026-10-27T16:00:12.370872+00:00 files02 pure-ftpd: (?@172.21.64.13) [INFO] New connection from 172.21.64.13
+2026-10-27T16:00:12.387111+00:00 files02 pure-ftpd: (?@172.21.64.13) [INFO] scanner is now logged in
+2026-10-27T16:00:12.387886+00:00 files02 pure-ftpd: (scanner@172.21.64.13) [ERROR] Can't open q3.txt: No such file or directory
+2026-10-27T16:00:12.387907+00:00 files02 pure-ftpd: (scanner@172.21.64.13) [INFO] Logout.

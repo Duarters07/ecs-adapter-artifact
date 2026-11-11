@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "uid=dario,ou=people,dc=lab,dc=example"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "uid=dario,ou=people,dc=lab,dc=example"
+              }
+            },
+            {
+              "term": {
+                "user.name": "uid=dario,ou=people,dc=lab,dc=example"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

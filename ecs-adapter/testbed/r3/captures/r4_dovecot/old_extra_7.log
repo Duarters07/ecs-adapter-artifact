@@ -1,0 +1,12 @@
+Oct 25 22:46:50 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<43>: pam(marta,172.21.0.3,<gLww/LFeBJ2sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:46:52 imap-login: Info: Disconnected (auth failed, 1 attempts in 19 secs): user=<marta>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<gLww/LFeBJ2sFQAD>
+Oct 25 22:47:09 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<44>: pam(root,172.21.0.3,<GQhX/bFePO2sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:47:11 imap-login: Info: Disconnected (auth failed, 1 attempts in 19 secs): user=<root>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<GQhX/bFePO2sFQAD>
+Oct 25 22:47:28 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<45>: pam(ana,172.21.0.3,<pKZ2/rFehoisFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:47:30 imap-login: Info: Disconnected (auth failed, 1 attempts in 19 secs): user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<pKZ2/rFehoisFQAD>
+Oct 25 22:47:45 imap-login: Info: Login: user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=59, session=<vg+b/7FeZqasFQAD>
+Oct 25 22:47:45 imap(ana)<59><vg+b/7FeZqasFQAD>: Info: Logged out in=32 out=780 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 25 22:47:48 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<48>: pam(carlos,172.21.0.3,<IfqIALJezoCsFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:47:50 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<carlos>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<IfqIALJezoCsFQAD>
+Oct 25 22:47:51 imap-login: Info: Login: user=<sofia>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=62, session=<wfPNALJe0oCsFQAD>
+Oct 25 22:47:51 imap(sofia)<62><wfPNALJe0oCsFQAD>: Info: Logged out in=32 out=780 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0

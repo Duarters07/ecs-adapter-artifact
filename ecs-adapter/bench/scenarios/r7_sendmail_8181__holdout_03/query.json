@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "email.to.address": "ceo@hotmail.com"
+        }
+      },
+      {
+        "term": {
+          "event.reason": "550 5.7.1 <ceo@hotmail.com>... Relaying denied"
+        }
+      }
+    ]
+  }
+}

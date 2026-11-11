@@ -1,0 +1,10 @@
+{"raw": "Oct 15 14:51:35 imap-login: Info: Login: user=<accounts>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=30, session=<US0nL+JdaIisFQAD>"}
+{"raw": "Oct 15 14:51:41 auth: Info: passwd-file(helpdesk,172.21.0.3,<bHlML+Jdco+sFQAD>): Password mismatch"}
+{"raw": "Oct 15 14:52:42 pop3-login: Info: Disconnected: Connection closed (auth failed, 1 attempts in 49 secs): user=<webmaster>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<RPg6MOJdiNusFQAD>"}
+{"raw": "Oct 15 14:51:51 auth: Info: passwd-file(postmaster,172.21.0.3,<NiqlL+JdzJCsFQAD>): unknown user"}
+{"raw": "Oct 15 14:52:27 imap-login: Info: Disconnected: Connection closed (auth failed, 1 attempts in 17 secs): user=<oracle>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<qEhDMeJdiLKsFQAD>"}
+{"raw": "Oct 15 14:51:35 pop3-login: Info: Login: user=<helpdesk>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=32, session=<LgosL+JdxsysFQAD>"}
+{"raw": "Oct 15 14:51:43 imap-login: Info: Disconnected: Connection closed (auth failed, 1 attempts in 8 secs): user=<accounts>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<luUwL+JdboisFQAD>"}
+{"raw": "Oct 15 14:52:42 imap-login: Info: Login: user=<helpdesk>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=39, session=<iflDMuJd7JOsFQAD>"}
+{"raw": "Oct 15 14:51:53 pop3-login: Info: Disconnected: Connection closed (auth failed, 1 attempts in 16 secs): user=<helpdesk>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<bHlML+Jdco+sFQAD>"}
+{"raw": "Oct 15 14:52:10 imap-login: Info: Disconnected: Connection closed (auth failed, 1 attempts in 27 secs): user=<postmaster>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<NiqlL+JdzJCsFQAD>"}

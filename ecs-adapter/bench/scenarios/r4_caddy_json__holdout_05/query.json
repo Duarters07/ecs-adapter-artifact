@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "url.domain": "r4-caddy-new"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "url.full": "/"
+              }
+            },
+            {
+              "term": {
+                "url.original": "/"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

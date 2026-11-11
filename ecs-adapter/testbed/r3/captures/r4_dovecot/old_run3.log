@@ -1,0 +1,8 @@
+Oct 22 08:43:45 imap-login: Info: Login: user=<marta>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=30, session=<J1ta3GlezuqsFQAD>
+Oct 22 08:43:45 imap(marta)<30><J1ta3GlezuqsFQAD>: Info: Logged out in=32 out=780 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 22 08:43:48 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<19>: pam(marta,172.21.0.3,<dkyg3Gleyr2sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 22 08:43:50 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<marta>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<dkyg3Gleyr2sFQAD>
+Oct 22 08:43:56 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<20>: pam(backup,172.21.0.3,<Jnnm3Gle2L2sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 22 08:43:58 imap-login: Info: Disconnected (auth failed, 1 attempts in 8 secs): user=<backup>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<Jnnm3Gle2L2sFQAD>
+Oct 22 08:44:06 imap-login: Info: Login: user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=34, session=<oWJg3WleftWsFQAD>
+Oct 22 08:44:07 imap(ana)<34><oWJg3WleftWsFQAD>: Info: Logged out in=32 out=780 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0

@@ -1,0 +1,50 @@
+{
+  "category_hint": "authentication",
+  "contamination_risk": "none",
+  "extraction": {
+    "field_split": "; ",
+    "kind": "kv",
+    "value_split": "="
+  },
+  "family": "sg_auditd",
+  "fields": [
+    {
+      "ecs_field": "process.working_directory",
+      "source_key": "cwd",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "process.pid",
+      "source_key": "pid",
+      "type": "long"
+    },
+    {
+      "ecs_field": "process.parent.pid",
+      "source_key": "ppid",
+      "type": "long"
+    },
+    {
+      "ecs_field": "event.sequence",
+      "source_key": "seq",
+      "type": "long"
+    },
+    {
+      "ecs_field": "user.name",
+      "source_key": "user",
+      "type": "keyword"
+    }
+  ],
+  "level": 2,
+  "note": "Level-2 evaluation source: a TRAINING family rendered in a format no training source uses (corpus/drift_formats.py). Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_auditd_drift_kvsemi",
+  "split": "test_drift",
+  "timestamp": {
+    "formats": [
+      "ISO8601"
+    ],
+    "source_key": "time"
+  },
+  "transform": "drift:kvsemi",
+  "value_maps": []
+}

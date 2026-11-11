@@ -1,0 +1,23 @@
+2026.10.30 21:21:09 LOG5[0]: Service [echo-tls] accepted connection from 172.21.91.11:45454
+2026.10.30 21:21:10 LOG5[0]: Certificate accepted at depth=0: CN=ana, O=Lab
+2026.10.30 21:21:10 LOG5[0]: s_connect: connected 127.0.0.1:7000
+2026.10.30 21:21:10 LOG5[0]: Service [echo-tls] connected remote server from 127.0.0.1:45206
+2026.10.30 21:21:10 LOG5[0]: Connection closed: 20 byte(s) sent to TLS, 20 byte(s) sent to socket
+2026.10.30 21:21:11 LOG5[1]: Service [echo-tls] accepted connection from 172.21.91.201:56912
+2026.10.30 21:21:11 LOG4[1]: CERT: Pre-verification error: unable to get local issuer certificate
+2026.10.30 21:21:11 LOG4[1]: Rejected by CERT at depth=0: CN=mallory, O=Lab
+2026.10.30 21:21:11 LOG3[1]: SSL_accept: ../ssl/statem/statem_srvr.c:3530: error:0A000086:SSL routines::certificate verify failed
+2026.10.30 21:21:11 LOG5[1]: Connection reset/closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2026.10.30 21:21:12 LOG5[2]: Service [echo-tls] accepted connection from 172.21.91.12:37440
+2026.10.30 21:21:12 LOG5[2]: Certificate accepted at depth=0: CN=rui, O=Lab
+2026.10.30 21:21:12 LOG5[2]: s_connect: connected 127.0.0.1:7000
+2026.10.30 21:21:12 LOG5[2]: Service [echo-tls] connected remote server from 127.0.0.1:45212
+2026.10.30 21:21:12 LOG5[2]: Connection closed: 20 byte(s) sent to TLS, 20 byte(s) sent to socket
+2026.10.30 21:21:13 LOG5[3]: Service [echo-tls] accepted connection from 172.21.91.202:35562
+2026.10.30 21:21:13 LOG3[3]: SSL_accept: ../ssl/statem/statem_srvr.c:3517: error:0A0000C7:SSL routines::peer did not return a certificate
+2026.10.30 21:21:13 LOG5[3]: Connection reset/closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2026.10.30 21:21:14 LOG5[4]: Service [echo-tls] accepted connection from 172.21.91.13:58366
+2026.10.30 21:21:14 LOG5[4]: Certificate accepted at depth=0: CN=monitor, O=Lab
+2026.10.30 21:21:14 LOG5[4]: s_connect: connected 127.0.0.1:7000
+2026.10.30 21:21:14 LOG5[4]: Service [echo-tls] connected remote server from 127.0.0.1:45226
+2026.10.30 21:21:14 LOG5[4]: Connection closed: 20 byte(s) sent to TLS, 20 byte(s) sent to socket

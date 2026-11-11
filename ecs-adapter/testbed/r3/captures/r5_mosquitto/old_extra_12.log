@@ -1,0 +1,13 @@
+1792969186: New connection from 172.21.50.109 on port 1884.
+1792969186: Socket error on client <unknown>, disconnecting.
+1792969187: New connection from 172.21.50.107 on port 1883.
+1792969187: Socket error on client <unknown>, disconnecting.
+1792969188: New connection from 172.21.50.242 on port 1884.
+1792969188: Socket error on client <unknown>, disconnecting.
+1792969189: New connection from 172.21.50.190 on port 1884.
+1792969189: New client connected from 172.21.50.190 as probe-qa (p2, c1, k60, u'gateway').
+1792969189: Client probe-qa disconnected.
+1792969190: New connection from 172.21.50.144 on port 1883.
+1792969190: Socket error on client <unknown>, disconnecting.
+1792969191: New connection from 172.21.50.120 on port 1884.
+1792969191: Socket error on client <unknown>, disconnecting.

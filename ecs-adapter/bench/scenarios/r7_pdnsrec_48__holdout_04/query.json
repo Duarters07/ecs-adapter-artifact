@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.logger": "syncres"
+        }
+      },
+      {
+        "term": {
+          "network.transport": "udp"
+        }
+      }
+    ]
+  }
+}

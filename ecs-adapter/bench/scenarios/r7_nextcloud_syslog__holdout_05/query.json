@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "service.version": "30.0.17.2"
+        }
+      },
+      {
+        "term": {
+          "url.path": "/remote.php/dav/files/deploy/"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "source_id": "r3_suricata_v7",
+  "family": "suricata",
+  "split": "test_r3",
+  "category_hint": "network",
+  "contamination_risk": "high",
+  "origin": "Produced by running Suricata 7.0.17 (image jasonish/suricata:7.0), not copied from documentation or a public dataset. Captured 2026-10-19T23:42:58Z on the author's laptop by testbed/r3/r3_suricata.sh (eve.json inside the Suricata container, sniffing the web container eth0; image default suricata.yaml, rules conf/suricata-r3.rules); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 3, NEW VERSION of r3_suricata_v6 - evaluated. Measured: 7.0 only adds keys (pkt_src, direction, dns.version and the flow's endpoints inside `flow`); every 6.0 key is where it was. The pre-registration expected renamed fields; this pair is the CONTROL case where a real upgrade does not break the parser.",
+  "fields": [
+    {
+      "source_key": "src_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "src_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dest_ip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "role": "server_ip",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dest_port",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "role": "server_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "proto",
+      "ecs_field": "network.transport",
+      "type": "keyword",
+      "role": "transport_protocol",
+      "difficulty": "easy",
+      "note": "Value convention: TCP on the wire, tcp in ECS - no rule filters on it.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "app_proto",
+      "ecs_field": "network.protocol",
+      "type": "keyword",
+      "role": "application_protocol",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "in_iface",
+      "ecs_field": "observer.ingress.interface.name",
+      "type": "keyword",
+      "role": "capture_interface",
+      "difficulty": "hard",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "event_type",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "event_kind",
+      "difficulty": "ambiguous",
+      "note": "ECS event.kind takes `alert` but not `dns`; a value map would be needed. Declining is accepted. (Round 2's suricata_eve truth mapped it to event.kind - DRAFT, author to reconcile.)",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "flow_id",
+      "ecs_field": null,
+      "type": "long",
+      "role": "flow_identifier",
+      "difficulty": "hard",
+      "note": "No ECS field holds Suricata's flow id (network.community_id is a different hash).",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.signature",
+      "ecs_field": "rule.name",
+      "type": "keyword",
+      "role": "rule_message",
+      "difficulty": "easy",
+      "retrieval_unreachable": true,
+      "note": "MEASURED 2026-10-20: the ECS retrieval never offers rule.name for this source - 7.0's new generic keys (version, direction) promote ~dozens of *.version and *.direction fields and fill the 320-field budget (6.0 offers it). Still scored as a miss for every arm alike; no detection rule filters on it (unqueryable), so no arm is refused for a field it was never shown. Author's decision (b).",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.signature_id",
+      "ecs_field": "rule.id",
+      "type": "keyword",
+      "role": "rule_identifier",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.category",
+      "ecs_field": "rule.category",
+      "type": "keyword",
+      "role": "rule_classification",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.severity",
+      "ecs_field": "event.severity",
+      "type": "long",
+      "role": "priority",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "engine_action",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.rev",
+      "ecs_field": "rule.version",
+      "type": "keyword",
+      "role": "rule_revision",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "alert.gid",
+      "ecs_field": null,
+      "type": "long",
+      "role": "rule_group",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dns.rrname",
+      "ecs_field": "dns.question.name",
+      "type": "keyword",
+      "role": "query_name",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dns.rrtype",
+      "ecs_field": "dns.question.type",
+      "type": "keyword",
+      "role": "query_type",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dns.type",
+      "ecs_field": "dns.type",
+      "type": "keyword",
+      "role": "message_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dns.id",
+      "ecs_field": "dns.id",
+      "type": "keyword",
+      "role": "transaction_id",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dns.opcode",
+      "ecs_field": "dns.op_code",
+      "type": "keyword",
+      "role": "opcode",
+      "difficulty": "hard",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http.hostname",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "http_host",
+      "difficulty": "hard",
+      "note": "unreachable from `network`: the category offers no http/url/user_agent root",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http.url",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "http_url",
+      "difficulty": "hard",
+      "note": "unreachable from `network`: the category offers no http/url/user_agent root",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http.http_user_agent",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "user_agent",
+      "difficulty": "hard",
+      "note": "unreachable from `network`: the category offers no http/url/user_agent root",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http.http_method",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "http_method",
+      "difficulty": "hard",
+      "note": "unreachable from `network`: the category offers no http/url/user_agent root",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http.status",
+      "ecs_field": null,
+      "type": "long",
+      "role": "http_status",
+      "difficulty": "hard",
+      "note": "unreachable from `network`: the category offers no http/url/user_agent root",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pkt_src",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "packet_origin",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "direction",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "flow_direction",
+      "difficulty": "ambiguous",
+      "note": "ECS network.direction is relative to the monitored network (inbound/outbound), not to the flow, so to_server has no ECS home; declining is accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r3_suricata_v7__holdout_02",
+    "r3_suricata_v7__holdout_03",
+    "r3_suricata_v7__holdout_04",
+    "r3_suricata_v7__holdout_06",
+    "r3_suricata_v7__holdout_07",
+    "r3_suricata_v7__holdout_08"
+  ],
+  "round3": {
+    "pair": "r3_suricata",
+    "role": "new"
+  }
+}

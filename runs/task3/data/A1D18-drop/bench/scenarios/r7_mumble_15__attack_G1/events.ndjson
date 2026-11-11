@@ -1,0 +1,4 @@
+{"raw": "<W>2026-10-30 21:20:41.805 1 => <4:admin0(-1)> Rejected connection from 203.0.113.14:53966: Wrong certificate or password for existing user"}
+{"raw": "<W>2026-10-30 21:20:50.950 1 => <7:admin1(-1)> Rejected connection from 203.0.113.14:56804: Invalid server password"}
+{"raw": "<W>2026-10-30 21:20:56.199 1 => <9:admin2(-1)> Rejected connection from 203.0.113.14:51086: Invalid server password"}
+{"raw": "<W>2026-10-30 21:20:37.132 1 => <2:admin3(-1)> Rejected connection from 203.0.113.14:53594: Invalid server password"}

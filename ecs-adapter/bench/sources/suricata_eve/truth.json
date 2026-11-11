@@ -1,0 +1,111 @@
+{
+  "family": "suricata",
+  "category_hint": "network",
+  "contamination_risk": "medium",
+  "notes": "THE NESTED OBJECTS ARE NOT ANNOTATED, AND THE REASON IS THE IR, NOT ECS. adapter/compiler.py renders every source_key as `[_raw][<key>]`, one level deep, so no IR can address `alert.signature` or `flow.bytes_toserver`. ECS has homes for both: rule.name and source.bytes. Scoring a model on fields no IR it can emit could ever reach would measure the compiler, so the nested keys are left out of `fields` and recorded here instead. This is a real limitation of the artefact and a finding of the held-out set: nested JSON is the normal shape of modern telemetry.",
+  "fields": [
+    {
+      "source_key": "flow_id",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "flow_identifier",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Identifies a flow across records. Like Zeek's uid, it correlates events rather than describing one, and ECS 8.11 offers no field for it."
+    },
+    {
+      "source_key": "in_iface",
+      "ecs_field": "observer.ingress.interface.name",
+      "type": "keyword",
+      "role": "capture_interface",
+      "difficulty": "hard",
+      "note": "The interface the SENSOR captured on, so it belongs to the observer and not to the host that sent the traffic."
+    },
+    {
+      "source_key": "event_type",
+      "ecs_field": "event.kind",
+      "type": "keyword",
+      "role": "record_discriminator",
+      "difficulty": "medium",
+      "note": "`alert` is one of the values ECS event.kind takes, and that is what this record is. Other EVE record types in the same file carry values that are not event.kind values, which is a property of the file and not of these lines."
+    },
+    {
+      "source_key": "src_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "packet_source_ip",
+      "difficulty": "easy"
+    },
+    {
+      "source_key": "src_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "packet_source_port",
+      "difficulty": "easy"
+    },
+    {
+      "source_key": "dest_ip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "role": "packet_destination_ip",
+      "difficulty": "easy"
+    },
+    {
+      "source_key": "dest_port",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "role": "packet_destination_port",
+      "difficulty": "easy"
+    },
+    {
+      "source_key": "proto",
+      "ecs_field": "network.transport",
+      "type": "keyword",
+      "role": "transport_protocol",
+      "difficulty": "medium",
+      "note": "Upper case here, lower case in ECS's own examples. The field choice is unaffected; only the value convention differs."
+    },
+    {
+      "source_key": "app_proto",
+      "ecs_field": "network.protocol",
+      "type": "keyword",
+      "role": "application_protocol",
+      "difficulty": "hard",
+      "note": "Paired with `proto`, this is the same transport-versus-application trap Zeek sets with proto and service, in a different vendor's spelling."
+    },
+    {
+      "source_key": "pkt_src",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "packet_provenance",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`wire/pcap` describes how Suricata obtained the packet. A statement about the sensor's plumbing."
+    },
+    {
+      "source_key": "tx_id",
+      "ecs_field": null,
+      "type": "long",
+      "role": "application_transaction_id",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Identifies the application-layer transaction within the flow, so that an alert can be tied to the request that caused it. A correlation handle inside Suricata's own model, with no ECS 8.11 field."
+    },
+    {
+      "source_key": "direction",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "alert_direction",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`to_server` and `to_client` are directions relative to the FLOW. ECS network.direction takes ingress, egress, inbound, outbound, internal, external or unknown, which are directions relative to the MONITORED NETWORK. Translating one to the other needs to know where the sensor sits, and the line does not say."
+    }
+  ],
+  "source_id": "suricata_eve",
+  "split": "test",
+  "origin": "Produced by running the software, not copied from documentation or a public dataset. Captured on 2 October 2026 on the project's own Docker host.",
+  "scenarios": [
+    "suricata_eve__holdout_01",
+    "suricata_eve__holdout_02"
+  ]
+}

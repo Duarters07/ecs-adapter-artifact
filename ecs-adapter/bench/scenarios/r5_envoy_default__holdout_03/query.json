@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "http.response.status_code": 403
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "url.full": "/admin/db"
+              }
+            },
+            {
+              "term": {
+                "url.original": "/admin/db"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

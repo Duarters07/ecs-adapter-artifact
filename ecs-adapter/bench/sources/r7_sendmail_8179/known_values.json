@@ -1,0 +1,19 @@
+{
+  "note": "NOT ground truth. Each entry records a value and the ECS field that value IS. The ladder may read this file; it may never read truth.json. See validators/v3_5_known_values.py.",
+  "origin": "samples.ndjson, via the per-family extractor",
+  "provenance": "Derived from samples.ndjson by bench/make_known_values.py with the extractor in testbed/heldout_r2/specs.py. Like the round-1 test sources, the field each value belongs to comes from the DRAFT labelling, so V3.5 here is a consistency check, not a probe.",
+  "source_id": "r7_sendmail_8179",
+  "values": {
+    "email.from.address": "billing@partner.example",
+    "email.local_id": "69UKnhXr000056",
+    "email.message_id": "202610302049.69UKnhXr000056@mail01.lab.example",
+    "email.to.address": "rui@lab.example",
+    "event.reason": "550 5.7.1 <victim@gmail.com>... Relaying denied",
+    "host.hostname": "mail01",
+    "process.name": "sendmail",
+    "process.pid": "56",
+    "rule.name": "check_rcpt",
+    "source.domain": "r7-ws13.r3-net",
+    "source.ip": "172.21.91.13"
+  }
+}

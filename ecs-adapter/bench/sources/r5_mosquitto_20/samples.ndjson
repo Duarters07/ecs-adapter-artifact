@@ -1,0 +1,9 @@
+{"raw": "1792939514: New client connected from 172.21.50.11:51716 as temp-hall (p2, c1, k60, u'sensor01')."}
+{"raw": "1792939516: New client connected from 172.21.50.12:60706 as gw-main (p2, c1, k60, u'gateway')."}
+{"raw": "1792939518: New client connected from 172.21.50.13:35578 as grafana-bridge (p2, c1, k60, u'dashboard')."}
+{"raw": "1792939516: New connection from 172.21.50.93:49464 on port 1883."}
+{"raw": "1792939516: Client mqttx-cli disconnected, not authorised."}
+{"raw": "1792939519: New connection from 172.21.50.92:35920 on port 1883."}
+{"raw": "1792939515: New connection from 172.21.50.11:51732 on port 1883."}
+{"raw": "1792939516: New connection from 172.21.50.12:60706 on port 1884."}
+{"raw": "1792939519: Client probe-2 disconnected, not authorised."}

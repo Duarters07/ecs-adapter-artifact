@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.level": "Info"
+        }
+      },
+      {
+        "term": {
+          "process.name": "imap-login"
+        }
+      }
+    ]
+  }
+}

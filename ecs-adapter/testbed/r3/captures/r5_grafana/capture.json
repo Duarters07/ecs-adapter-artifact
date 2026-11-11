@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-25T14:12:32Z","old":"grafana/grafana:11.3.0, console log format (logfmt), router logging on","new":"grafana/grafana:11.3.0, console log format json, router logging on","collected_by":"docker logs, logger=context lines"}

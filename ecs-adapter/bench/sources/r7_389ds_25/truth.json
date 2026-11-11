@@ -1,0 +1,222 @@
+{
+  "source_id": "r7_389ds_25",
+  "family": "389ds",
+  "split": "train_r7",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running 389 Directory Server 2.5.0 (official image 389ds/dirsrv:2.4), not copied from documentation or a public dataset. Captured 2026-10-30T21:18:35Z on the author's laptop by testbed/r3/r7_389ds.sh (/data/logs/access, lines of client connections); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), OLD VERSION: 389-DS 2.5.0 access log (text). The candidate pin was 2.3.1; the official :2.3 image cannot start, so the oldest working 2.x image is used (ROUND3_VERSION_DRIFT.md, r7 captures).",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "server_ip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "role": "server_ip",
+      "difficulty": "medium",
+      "note": "server.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bind_dn",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "medium",
+      "note": "A distinguished name; ECS has no DN field, and user.name is where the authenticated identity goes.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "err",
+      "ecs_field": "event.code",
+      "type": "keyword",
+      "role": "result_code",
+      "difficulty": "hard",
+      "note": "The LDAP result code (49: invalid credentials); error.code is not offered for authentication.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "tls",
+      "ecs_field": "tls.established",
+      "type": "boolean",
+      "role": "tls_flag",
+      "difficulty": "hard",
+      "note": "Leaving it unmapped is acceptable.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "close_reason",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "close_reason",
+      "difficulty": "hard",
+      "note": "event.reason holds the bind result; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "conn",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "connection_id",
+      "difficulty": "hard",
+      "note": "No ECS field for a connection number.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "op",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "operation_id",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "key",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "connection_key",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "fd",
+      "ecs_field": null,
+      "type": "long",
+      "role": "file_descriptor",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "slot",
+      "ecs_field": null,
+      "type": "long",
+      "role": "connection_slot",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "bind_method",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "version",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "protocol_version",
+      "difficulty": "hard",
+      "note": "No ECS field for the LDAP version.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "tag",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "response_type",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "nentries",
+      "ecs_field": null,
+      "type": "long",
+      "role": "result_count",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "wtime",
+      "ecs_field": null,
+      "type": "float",
+      "role": "wait_time",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "optime",
+      "ecs_field": null,
+      "type": "float",
+      "role": "operation_time",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "etime",
+      "ecs_field": null,
+      "type": "float",
+      "role": "elapsed_time",
+      "difficulty": "hard",
+      "note": "event.duration is in nanoseconds; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_389ds_25__holdout_01",
+    "r7_389ds_25__holdout_02"
+  ],
+  "round3": {
+    "pair": "r7_389ds",
+    "role": "old"
+  }
+}

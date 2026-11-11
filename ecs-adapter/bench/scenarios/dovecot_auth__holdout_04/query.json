@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "helpdesk"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "helpdesk"
+              }
+            },
+            {
+              "term": {
+                "user.name": "helpdesk"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

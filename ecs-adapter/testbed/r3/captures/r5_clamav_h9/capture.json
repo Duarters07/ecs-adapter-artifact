@@ -1,0 +1,1 @@
+{"captured_utc": "2026-10-28T16:06:51Z", "history_of": "r5_clamav", "release": "9", "old": "Debian 9 ClamAV 0.103.6 (packages from archive.debian.org)", "collected_by": "/var/log/clamav/clamav.log in the container, FOUND lines", "note": "round-9 history release; the capture script's new-version run was discarded"}

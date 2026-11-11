@@ -1,0 +1,10 @@
+2026-10-30T20:49:44.543037+00:00 mail01 sendmail[56]: 69UKnhXr000056: from=<billing@partner.example>, size=94, class=0, nrcpts=1, msgid=<202610302049.69UKnhXr000056@mail01.lab.example>, proto=ESMTP, daemon=MTA-v4, relay=r7-ws11.r3-net [172.21.91.11]
+2026-10-30T20:49:45.577944+00:00 mail01 sendmail[57]: 69UKnhXr000056: to=<ana@lab.example>, delay=00:00:01, xdelay=00:00:01, mailer=local, pri=30411, dsn=2.0.0, stat=Sent
+2026-10-30T20:49:46.731313+00:00 mail01 sendmail[59]: 69UKnjXJ000059: <jdoe@lab.example>... User unknown
+2026-10-30T20:49:46.731805+00:00 mail01 sendmail[59]: 69UKnjXJ000059: from=<x@partner.example>, size=0, class=0, nrcpts=0, proto=ESMTP, daemon=MTA-v4, relay=r7-ws11.r3-net [172.21.91.11]
+2026-10-30T20:49:48.949259+00:00 mail01 sendmail[60]: 69UKnlol000060: from=<ops@partner.example>, size=90, class=0, nrcpts=1, msgid=<202610302049.69UKnlol000060@mail01.lab.example>, proto=ESMTP, daemon=MTA-v4, relay=r7-ws12.r3-net [172.21.91.12]
+2026-10-30T20:49:49.977005+00:00 mail01 sendmail[61]: 69UKnlol000060: to=<rui@lab.example>, delay=00:00:01, xdelay=00:00:01, mailer=local, pri=30407, dsn=2.0.0, stat=Sent
+2026-10-30T20:49:51.190969+00:00 mail01 sendmail[63]: 69UKnoJH000063: ruleset=check_rcpt, arg1=<victim@gmail.com>, relay=r7-ws201.r3-net [172.21.91.201], reject=550 5.7.1 <victim@gmail.com>... Relaying denied
+2026-10-30T20:49:51.191410+00:00 mail01 sendmail[63]: 69UKnoJH000063: from=<promo@spam.example>, size=0, class=0, nrcpts=0, proto=ESMTP, daemon=MTA-v4, relay=r7-ws201.r3-net [172.21.91.201]
+2026-10-30T20:49:53.419542+00:00 mail01 sendmail[64]: 69UKnqRX000064: from=<alerts@partner.example>, size=97, class=0, nrcpts=1, msgid=<202610302049.69UKnqRX000064@mail01.lab.example>, proto=ESMTP, daemon=MTA-v4, relay=r7-ws13.r3-net [172.21.91.13]
+2026-10-30T20:49:54.454782+00:00 mail01 sendmail[65]: 69UKnqRX000064: to=<monitor@lab.example>, delay=00:00:01, xdelay=00:00:01, mailer=local, pri=30418, dsn=2.0.0, stat=Sent

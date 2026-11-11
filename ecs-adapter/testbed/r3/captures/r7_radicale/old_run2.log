@@ -1,0 +1,4 @@
+[2026-10-30 19:03:01 +0000] [1/Thread-6 (process_request_thread)] [INFO] Successful login: 'rui'
+[2026-10-30 19:03:02 +0000] [1/Thread-7 (process_request_thread)] [WARNING] Failed login attempt from 172.21.80.14: 'rui'
+[2026-10-30 19:03:04 +0000] [1/Thread-8 (process_request_thread)] [WARNING] Failed login attempt from 172.21.80.202: 'admin'
+[2026-10-30 19:03:06 +0000] [1/Thread-9 (process_request_thread)] [INFO] Successful login: 'ana'

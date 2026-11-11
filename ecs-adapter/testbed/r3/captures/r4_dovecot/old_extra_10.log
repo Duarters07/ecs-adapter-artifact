@@ -1,0 +1,12 @@
+Oct 25 22:50:08 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<66>: pam(admin,172.21.0.3,<z+KsCLJeqqasFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:50:10 imap-login: Info: Disconnected (auth failed, 1 attempts in 7 secs): user=<admin>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<z+KsCLJeqqasFQAD>
+Oct 25 22:50:18 imap-login: Info: Login: user=<ines>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=80, session=<BCUlCbJeXJKsFQAD>
+Oct 25 22:50:18 imap(ines)<80><BCUlCbJeXJKsFQAD>: Info: Logged out in=32 out=780 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 25 22:50:19 imap-login: Info: Login: user=<tiago>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=82, session=<TQ6oCbJeGt+sFQAD>
+Oct 25 22:50:19 imap(tiago)<82><TQ6oCbJeGt+sFQAD>: Info: Logged out in=32 out=772 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 25 22:50:20 imap-login: Info: Login: user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=84, session=<9bWwCbJeJt+sFQAD>
+Oct 25 22:50:20 imap(ana)<84><9bWwCbJeJt+sFQAD>: Info: Logged out in=32 out=772 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 25 22:50:22 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<73>: pam(carlos,172.21.0.3,<s5y5CbJeNN+sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:50:24 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<carlos>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<s5y5CbJeNN+sFQAD>
+Oct 25 22:50:30 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<74>: pam(root,172.21.0.3,<GZn2CbJeQt+sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:50:32 imap-login: Info: Disconnected (auth failed, 1 attempts in 8 secs): user=<root>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<GZn2CbJeQt+sFQAD>

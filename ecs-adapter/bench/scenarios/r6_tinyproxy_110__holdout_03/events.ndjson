@@ -1,0 +1,9 @@
+{"raw": "CONNECT   Oct 27 16:11:05 [14]: Request (file descriptor 10): GET http://r6-web-target/intranet/login HTTP/1.1"}
+{"raw": "NOTICE    Oct 27 16:11:05 [16]: Unauthorized connection from \"bold_haibt.r3-net\" [172.21.66.204]."}
+{"raw": "CONNECT   Oct 27 16:11:06 [11]: Connect (file descriptor 10): magical_bardeen.r3-net [172.21.66.22]"}
+{"raw": "CONNECT   Oct 27 16:11:10 [7]: Connect (file descriptor 10): loving_shamir.r3-net [172.21.66.23]"}
+{"raw": "CONNECT   Oct 27 16:11:13 [15]: Connect (file descriptor 10): keen_black.r3-net [172.21.66.24]"}
+{"raw": "CONNECT   Oct 27 16:11:05 [14]: Connect (file descriptor 10): loving_mclaren.r3-net [172.21.66.21]"}
+{"raw": "CONNECT   Oct 27 16:11:06 [11]: Request (file descriptor 10): GET http://r6-web-target/data/export.json HTTP/1.1"}
+{"raw": "CONNECT   Oct 27 16:11:10 [7]: Request (file descriptor 10): GET http://r6-web-target/tickets/open HTTP/1.1"}
+{"raw": "CONNECT   Oct 27 16:11:13 [15]: Request (file descriptor 10): GET http://r6-web-target/mail/inbox HTTP/1.1"}

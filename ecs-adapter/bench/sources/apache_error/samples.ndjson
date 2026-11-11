@@ -1,0 +1,15 @@
+{"raw": "[Thu Oct 15 14:55:54.412159 2026] [auth_basic:error] [pid 19:tid 36] [client 172.21.0.3:47418] AH01617: user bob: authentication failure for \"/secret/\": Password Mismatch, referer: http://intranet.example/home"}
+{"raw": "[Thu Oct 15 14:55:56.632752 2026] [authz_core:error] [pid 18:tid 44] [client 172.21.0.3:47496] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/private/id_rsa, referer: http://intranet.example/files"}
+{"raw": "[Thu Oct 15 14:55:54.614108 2026] [auth_basic:error] [pid 18:tid 25] [client 172.21.0.3:47426] AH01618: user mallory not found: /secret/report.html"}
+{"raw": "[Thu Oct 15 14:55:55.825130 2026] [auth_basic:error] [pid 19:tid 62] [client 172.21.0.3:47482] AH01617: user alice: authentication failure for \"/secret/notes.txt\": Password Mismatch, referer: http://intranet.example/wiki"}
+{"raw": "[Thu Oct 15 14:55:54.816125 2026] [auth_basic:error] [pid 17:tid 22] [client 172.21.0.3:47442] AH01618: user root not found: /secret/"}
+{"raw": "[Thu Oct 15 14:55:57.237998 2026] [authz_core:error] [pid 19:tid 77] [client 172.21.0.3:45738] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/private/, referer: http://intranet.example/index"}
+{"raw": "[Thu Oct 15 14:55:55.219531 2026] [authz_core:error] [pid 19:tid 45] [client 172.21.0.3:47454] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/private/keys.txt, referer: http://intranet.example/files"}
+{"raw": "[Thu Oct 15 14:55:55.623075 2026] [auth_basic:error] [pid 19:tid 54] [client 172.21.0.3:47472] AH01618: user guest not found: /secret/"}
+{"raw": "[Thu Oct 15 14:55:56.026820 2026] [authz_core:error] [pid 17:tid 32] [client 172.21.0.3:47484] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/private/backup.tar"}
+{"raw": "[Thu Oct 15 14:55:56.228674 2026] [auth_basic:error] [pid 18:tid 34] [client 172.21.0.3:47492] AH01618: user operator not found: /secret/report.html"}
+{"raw": "[Thu Oct 15 14:55:56.430851 2026] [auth_basic:error] [pid 18:tid 37] [client 172.21.0.3:47494] AH01617: user bob: authentication failure for \"/secret/index.html\": Password Mismatch, referer: http://intranet.example/home"}
+{"raw": "[Thu Oct 15 14:55:56.834447 2026] [auth_basic:error] [pid 18:tid 49] [client 172.21.0.3:45722] AH01618: user tester not found: /secret/"}
+{"raw": "[Thu Oct 15 14:55:54.210357 2026] [auth_basic:error] [pid 19:tid 33] [client 172.21.0.3:47408] AH01617: user alice: authentication failure for \"/secret/report.html\": Password Mismatch"}
+{"raw": "[Thu Oct 15 14:55:55.018016 2026] [authz_core:error] [pid 17:tid 27] [client 172.21.0.3:47448] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/private/"}
+{"raw": "[Thu Oct 15 14:55:57.036442 2026] [auth_basic:error] [pid 19:tid 70] [client 172.21.0.3:45730] AH01617: user alice: authentication failure for \"/secret/notes.txt\": Password Mismatch"}

@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "user_not_found"
+        }
+      },
+      {
+        "term": {
+          "log.level": "WARN"
+        }
+      }
+    ]
+  }
+}

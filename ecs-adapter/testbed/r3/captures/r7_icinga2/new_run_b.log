@@ -1,0 +1,12 @@
+[2026-10-30 21:47:40 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.31]:48050 (no client certificate)
+[2026-10-30 21:47:40 +0000] information/HttpServerConnection: Request GET /v1/objects/services (from [::ffff:172.21.91.31]:48050), user: backup, agent: Ansible-icinga2/1.4, status: OK) took total 0ms.
+[2026-10-30 21:47:40 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.31]:48050)
+[2026-10-30 21:47:41 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.32]:47558 (no client certificate)
+[2026-10-30 21:47:41 +0000] information/HttpServerConnection: Request GET /v1/objects/services (from [::ffff:172.21.91.32]:47558), user: <unauthenticated>, agent: Ansible-icinga2/1.4, status: Unauthorized) took total 0ms.
+[2026-10-30 21:47:41 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.32]:47558)
+[2026-10-30 21:47:42 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.213]:48382 (no client certificate)
+[2026-10-30 21:47:42 +0000] information/HttpServerConnection: Request GET /v1/types (from [::ffff:172.21.91.213]:48382), user: <unauthenticated>, agent: Ansible-icinga2/1.4, status: Unauthorized) took total 0ms.
+[2026-10-30 21:47:42 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.213]:48382)
+[2026-10-30 21:47:43 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.33]:53562 (no client certificate)
+[2026-10-30 21:47:43 +0000] information/HttpServerConnection: Request GET /v1/types (from [::ffff:172.21.91.33]:53562), user: ops, agent: Ansible-icinga2/1.4, status: OK) took total 2ms.
+[2026-10-30 21:47:43 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.33]:53562)

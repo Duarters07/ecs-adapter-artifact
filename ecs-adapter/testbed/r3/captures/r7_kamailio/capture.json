@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T20:12:56Z","old":"Kamailio 5.8.4, stderr text log","new":"Kamailio 5.8.4, --log-engine=json:M","collected_by":"docker logs (stderr): the registrar script log lines (challenge, accepted, auth failed)"}

@@ -1,0 +1,16 @@
+2026/10/27 16:50:01 [251] connect from UNDETERMINED (172.21.65.210)
+2026/10/27 16:50:01 [251] rsync allowed access on module public from UNDETERMINED (172.21.65.210)
+2026/10/27 16:50:02 [252] connect from UNDETERMINED (172.21.65.225)
+2026/10/27 16:50:02 [252] rsync allowed access on module backup from UNDETERMINED (172.21.65.225)
+2026/10/27 16:50:02 [252] auth failed on module backup from UNDETERMINED (172.21.65.225) for admin: no matching rule
+2026/10/27 16:50:02 [253] connect from UNDETERMINED (172.21.65.215)
+2026/10/27 16:50:02 [253] rsync allowed access on module finance from UNDETERMINED (172.21.65.215)
+2026/10/27 16:50:02 [253] auth failed on module finance from UNDETERMINED (172.21.65.215) for simao: no matching rule
+2026/10/27 16:50:03 [254] connect from UNDETERMINED (172.21.65.243)
+2026/10/27 16:50:03 [254] unknown module 'etc' tried from UNDETERMINED (172.21.65.243)
+2026/10/27 16:50:04 [255] connect from UNDETERMINED (172.21.65.117)
+2026/10/27 16:50:04 [255] rsync allowed access on module backup from UNDETERMINED (172.21.65.117)
+2026/10/27 16:50:04 [255] auth failed on module backup from UNDETERMINED (172.21.65.117) for admin: no matching rule
+2026/10/27 16:50:04 [256] connect from UNDETERMINED (172.21.65.192)
+2026/10/27 16:50:04 [256] rsync allowed access on module backup from UNDETERMINED (172.21.65.192)
+2026/10/27 16:50:04 [256] auth failed on module backup from UNDETERMINED (172.21.65.192) for olga: no matching rule

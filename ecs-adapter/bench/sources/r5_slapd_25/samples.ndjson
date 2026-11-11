@@ -1,0 +1,21 @@
+{"raw": "6ade180c.2d0ea2e2 0x7540ed1336c0 conn=1002 op=1 SEARCH RESULT tag=101 err=0 qtime=0.000015 etime=0.001110 nentries=3 text="}
+{"raw": "6ade180a.3737f78f 0x7540ed9346c0 conn=1000 fd=11 ACCEPT from IP=172.21.51.11:35382 (IP=0.0.0.0:389)"}
+{"raw": "6ade180b.32beb5e3 0x7540ed1336c0 conn=1001 op=0 RESULT tag=97 err=49 qtime=0.000022 etime=0.000201 text="}
+{"raw": "6ade180d.2781ede8 0x7540ed1336c0 conn=1003 fd=11 ACCEPT from IP=172.21.51.92:38488 (IP=0.0.0.0:389)"}
+{"raw": "6ade180e.22c4177d 0x7540ed9346c0 conn=1004 fd=11 ACCEPT from IP=172.21.51.91:57254 (IP=0.0.0.0:389)"}
+{"raw": "6ade180f.1ad9d10e 0x7540ed1336c0 conn=1005 op=0 BIND dn=\"cn=admin,dc=lab,dc=example\" method=128"}
+{"raw": "6ade180a.373c243a 0x7540ed9346c0 conn=1000 op=0 BIND dn=\"uid=ana,ou=people,dc=lab,dc=example\" mech=SIMPLE bind_ssf=0 ssf=0"}
+{"raw": "6ade180a.373d7986 0x7540ed9346c0 conn=1000 op=0 RESULT tag=97 err=0 qtime=0.000012 etime=0.000225 text="}
+{"raw": "6ade180c.2cf58a69 0x7540ed1336c0 conn=1002 fd=11 ACCEPT from IP=172.21.51.12:59190 (IP=0.0.0.0:389)"}
+{"raw": "6ade180c.2cfe5412 0x7540ed1336c0 conn=1002 op=1 SRCH base=\"ou=people,dc=lab,dc=example\" scope=2 deref=0 filter=\"(uid=*)\""}
+{"raw": "6ade180d.27845bc8 0x7540ed1336c0 conn=1003 op=0 RESULT tag=97 err=0 qtime=0.000011 etime=0.000125 text="}
+{"raw": "6ade180d.278a4e9a 0x7540ed9346c0 conn=1003 op=1 SRCH base=\"dc=lab,dc=example\" scope=2 deref=0 filter=\"(objectClass=person)\""}
+{"raw": "6ade180d.27a0cc50 0x7540ed9346c0 conn=1003 op=1 SEARCH RESULT tag=101 err=0 qtime=0.000020 etime=0.001531 nentries=3 text="}
+{"raw": "6ade180e.22c99168 0x7540ed1336c0 conn=1004 op=0 RESULT tag=97 err=49 qtime=0.000023 etime=0.000180 text="}
+{"raw": "6ade180f.1adbe32c 0x7540ed1336c0 conn=1005 op=0 RESULT tag=97 err=49 qtime=0.000007 etime=0.000161 text="}
+{"raw": "6ade180a.373fa527 0x7540ed9346c0 conn=1000 op=1 RESULT oid= err=0 qtime=0.000022 etime=0.000059 text="}
+{"raw": "6ade180b.32b90d9c 0x7540ed9346c0 conn=1001 fd=11 ACCEPT from IP=172.21.51.11:35394 (IP=0.0.0.0:389)"}
+{"raw": "6ade180c.2cf90a6f 0x7540ed9346c0 conn=1002 op=0 BIND dn=\"uid=rui,ou=people,dc=lab,dc=example\" method=128"}
+{"raw": "6ade180c.2cfb679f 0x7540ed9346c0 conn=1002 op=0 RESULT tag=97 err=0 qtime=0.000015 etime=0.000202 text="}
+{"raw": "6ade180e.22c793d6 0x7540ed1336c0 conn=1004 op=0 BIND dn=\"uid=admin,ou=people,dc=lab,dc=example\" method=128"}
+{"raw": "6ade180f.1ad9164e 0x7540ed1336c0 conn=1005 fd=11 ACCEPT from IP=172.21.51.91:57266 (IP=0.0.0.0:389)"}

@@ -1,0 +1,6 @@
+2026-10-30T20:49:57.788863+00:00 mail01 sendmail[73]: 69UKnuwQ000073: <admin@lab.example>... User unknown
+2026-10-30T20:49:57.789309+00:00 mail01 sendmail[73]: 69UKnuwQ000073: from=<a@partner.example>, size=0, class=0, nrcpts=0, proto=ESMTP, daemon=MTA-v4, relay=r7-ws14.r3-net [172.21.91.14]
+2026-10-30T20:50:00.028438+00:00 mail01 sendmail[74]: 69UKnxoh000074: ruleset=check_rcpt, arg1=<target@yahoo.com>, relay=r7-ws202.r3-net [172.21.91.202], reject=550 5.7.1 <target@yahoo.com>... Relaying denied
+2026-10-30T20:50:00.029204+00:00 mail01 sendmail[74]: 69UKnxoh000074: from=<bulk@spam.example>, size=0, class=0, nrcpts=0, proto=ESMTP, daemon=MTA-v4, relay=r7-ws202.r3-net [172.21.91.202]
+2026-10-30T20:50:02.255591+00:00 mail01 sendmail[75]: 69UKo1Wb000075: from=<hr@partner.example>, size=89, class=0, nrcpts=1, msgid=<202610302050.69UKo1Wb000075@mail01.lab.example>, proto=ESMTP, daemon=MTA-v4, relay=r7-ws15.r3-net [172.21.91.15]
+2026-10-30T20:50:02.286031+00:00 mail01 sendmail[76]: 69UKo1Wb000075: to=<ana@lab.example>, delay=00:00:00, xdelay=00:00:00, mailer=local, pri=30406, dsn=2.0.0, stat=Sent

@@ -1,0 +1,3 @@
+{"raw": "1792939502: New client connected from 172.21.50.21 as pump-west (p2, c1, k60, u'pump02')."}
+{"raw": "1792939503: New client connected from 172.21.50.22 as cam-gate (p2, c1, k60, u'camera03')."}
+{"raw": "1792939504: New client connected from 172.21.50.23 as hvac-roof (p2, c1, k60, u'hvac04')."}

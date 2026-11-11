@@ -1,0 +1,18 @@
+2026-10-27T16:55:55.437634+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.105], port=[42276]
+2026-10-27T16:55:57.223267+00:00 mail02 imapd: LOGIN FAILED, user=ana, ip=[::ffff:172.21.67.105], port=[42276]
+2026-10-27T16:56:02.224710+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.105], port=[42276], time=7
+2026-10-27T16:56:02.929738+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.117], port=[46812]
+2026-10-27T16:56:05.012045+00:00 mail02 imapd: LOGIN FAILED, user=rui, ip=[::ffff:172.21.67.117], port=[46812]
+2026-10-27T16:56:10.013951+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.117], port=[46812], time=8
+2026-10-27T16:56:10.712767+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.235], port=[46170]
+2026-10-27T16:56:10.791061+00:00 mail02 imapd: LOGIN, user=scanner, ip=[::ffff:172.21.67.235], port=[46170], protocol=IMAP
+2026-10-27T16:56:10.791760+00:00 mail02 imapd: LOGOUT, user=scanner, ip=[::ffff:172.21.67.235], port=[46170], headers=0, body=0, rcvd=34, sent=340, time=0
+2026-10-27T16:56:11.525912+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.206], port=[47820]
+2026-10-27T16:56:11.526630+00:00 mail02 imapd: LOGIN FAILED, user=pi, ip=[::ffff:172.21.67.206], port=[47820]
+2026-10-27T16:56:16.528312+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.206], port=[47820], time=5
+2026-10-27T16:56:17.246202+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.250], port=[57114]
+2026-10-27T16:56:17.332638+00:00 mail02 imapd: LOGIN, user=ana, ip=[::ffff:172.21.67.250], port=[57114], protocol=IMAP
+2026-10-27T16:56:17.333116+00:00 mail02 imapd: LOGOUT, user=ana, ip=[::ffff:172.21.67.250], port=[57114], headers=0, body=0, rcvd=34, sent=340, time=0
+2026-10-27T16:56:18.057842+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.132], port=[39434]
+2026-10-27T16:56:18.057994+00:00 mail02 imapd: LOGIN FAILED, user=alice, ip=[::ffff:172.21.67.132], port=[39434]
+2026-10-27T16:56:23.059925+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.132], port=[39434], time=5

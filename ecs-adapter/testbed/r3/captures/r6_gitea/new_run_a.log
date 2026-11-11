@@ -1,0 +1,7 @@
+2026/10/27 16:27:43 ...eb/routing/logger.go:102:func1() [I] router: completed GET /api/v1/user for 172.21.70.11:56912, 200 OK in 26.9ms @ user/user.go:129(user.GetAuthenticatedUser)
+2026/10/27 16:27:44 ...rvices/auth/basic.go:139:Verify() [E] UserSignIn: user's password is invalid [uid: 1, name: ana]
+2026/10/27 16:27:44 ...eb/routing/logger.go:102:func1() [I] router: completed GET /api/v1/user for 172.21.70.11:56922, 401 Unauthorized in 13.1ms @ v1/api.go:756(v1.Routes.apiAuth)
+2026/10/27 16:27:45 ...eb/routing/logger.go:102:func1() [I] router: completed GET /api/v1/user/repos for 172.21.70.12:60662, 200 OK in 16.3ms @ user/repo.go:87(user.ListMyRepos)
+2026/10/27 16:27:46 ...eb/routing/logger.go:102:func1() [I] router: completed GET /api/v1/admin/users for 172.21.70.92:42210, 401 Unauthorized in 0.4ms @ v1/api.go:756(v1.Routes.apiAuth)
+2026/10/27 16:27:46 ...eb/routing/logger.go:102:func1() [I] router: completed GET /api/v1/user for 172.21.70.91:43052, 401 Unauthorized in 0.3ms @ v1/api.go:756(v1.Routes.apiAuth)
+2026/10/27 16:27:47 ...eb/routing/logger.go:102:func1() [I] router: completed GET /api/v1/repos/search for 172.21.70.13:33126, 200 OK in 14.0ms @ repo/repo.go:43(repo.Search)

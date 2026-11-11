@@ -1,0 +1,12 @@
+2026-10-25 23:04:26,781 files01 proftpd[73] 172.21.0.2 (172.21.52.224[172.21.52.224]): FTP session opened.
+2026-10-25 23:04:26,782 files01 proftpd[73] 172.21.0.2 (172.21.52.224[172.21.52.224]): USER postgres: no such user found from 172.21.52.224 [172.21.52.224] to 172.21.0.2:21
+2026-10-25 23:04:27,999 files01 proftpd[74] 172.21.0.2 (172.21.52.110[172.21.52.110]): FTP session opened.
+2026-10-25 23:04:28,001 files01 proftpd[74] 172.21.0.2 (172.21.52.110[172.21.52.110]): USER admin: no such user found from 172.21.52.110 [172.21.52.110] to 172.21.0.2:21
+2026-10-25 23:04:29,090 files01 proftpd[75] 172.21.0.2 (172.21.52.111[172.21.52.111]): FTP session opened.
+2026-10-25 23:04:31,345 files01 proftpd[75] 172.21.0.2 (172.21.52.111[172.21.52.111]): USER scanner (Login failed): Incorrect password
+2026-10-25 23:04:32,446 files01 proftpd[76] 172.21.0.2 (172.21.52.177[172.21.52.177]): FTP session opened.
+2026-10-25 23:04:34,785 files01 proftpd[76] 172.21.0.2 (172.21.52.177[172.21.52.177]): USER ana (Login failed): Incorrect password
+2026-10-25 23:04:35,870 files01 proftpd[77] 172.21.0.2 (172.21.52.237[172.21.52.237]): FTP session opened.
+2026-10-25 23:04:35,871 files01 proftpd[77] 172.21.0.2 (172.21.52.237[172.21.52.237]): SECURITY VIOLATION: Root login attempted
+2026-10-25 23:04:37,401 files01 proftpd[78] 172.21.0.2 (172.21.52.226[172.21.52.226]): FTP session opened.
+2026-10-25 23:04:37,442 files01 proftpd[78] 172.21.0.2 (172.21.52.226[172.21.52.226]): USER rui: Login successful.

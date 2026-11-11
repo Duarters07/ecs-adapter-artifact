@@ -1,0 +1,15 @@
+0a6ddc6bcb526d6d smtp connected address=172.21.63.122 host=gracious_dirac.r3-net
+0a6ddc6bcb526d6d smtp failed-command command="rcpt TO:<oracle@other.org>" result="550 Invalid recipient: <oracle@other.org>"
+0a6ddc6bcb526d6d smtp disconnected reason=disconnect
+0a6ddc6c8eccad32 smtp connected address=172.21.63.201 host=hopeful_carver.r3-net
+0a6ddc6c8eccad32 smtp failed-command command="rcpt TO:<ftpuser@lab.local>" result="550 Invalid recipient: <ftpuser@lab.local>"
+0a6ddc6c8eccad32 smtp disconnected reason=disconnect
+0a6ddc6dabb69e7c smtp connected address=172.21.63.222 host=suspicious_tu.r3-net
+0a6ddc6dabb69e7c smtp failed-command command="rcpt TO:<jenkins@lab.local>" result="550 Invalid recipient: <jenkins@lab.local>"
+0a6ddc6dabb69e7c smtp disconnected reason=disconnect
+0a6ddc6e6533bb47 smtp connected address=172.21.63.107 host=goofy_jepsen.r3-net
+0a6ddc6e6533bb47 smtp failed-command command="rcpt TO:<vasco@lab.local>" result="550 Invalid recipient: <vasco@lab.local>"
+0a6ddc6e6533bb47 smtp disconnected reason=disconnect
+0a6ddc6fc1248fb1 smtp connected address=172.21.63.247 host=intelligent_volhard.r3-net
+0a6ddc6fc1248fb1 smtp failed-command command="rcpt TO:<elsa@lab.local>" result="550 Invalid recipient: <elsa@lab.local>"
+0a6ddc6fc1248fb1 smtp disconnected reason=disconnect

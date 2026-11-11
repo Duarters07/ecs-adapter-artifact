@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.ip": "172.21.56.31"
+              }
+            },
+            {
+              "term": {
+                "source.ip": "172.21.56.31"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "rule.name": "Lab.Macro.Doc-8.UNOFFICIAL"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+Oct 25 22:26:48 web01 sshd[19]: Accepted password for ines from 172.21.0.3 port 56264 ssh2
+Oct 25 22:26:48 web01 sshd[19]: pam_unix(sshd:session): session opened for user ines(uid=1004) by (uid=0)
+Oct 25 22:26:48 web01 sshd[19]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:26:48 web01 sshd[19]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:26:48 web01 sshd[19]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:26:48 web01 sshd[19]: pam_unix(sshd:session): session closed for user ines
+Oct 25 22:26:48 web01 sshd[27]: error: kex_exchange_identification: Connection closed by remote host
+Oct 25 22:26:48 web01 sshd[27]: Connection closed by 172.21.0.3 port 56280
+Oct 25 22:26:49 web01 sshd[28]: Accepted password for ana from 172.21.0.3 port 56288 ssh2
+Oct 25 22:26:49 web01 sshd[28]: pam_unix(sshd:session): session opened for user ana(uid=1000) by (uid=0)
+Oct 25 22:26:49 web01 sshd[28]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:26:49 web01 sshd[28]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:26:49 web01 sshd[28]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:26:49 web01 sshd[28]: pam_unix(sshd:session): session closed for user ana
+Oct 25 22:26:50 web01 sshd[36]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=ines
+Oct 25 22:26:52 web01 sshd[36]: Failed password for ines from 172.21.0.3 port 56302 ssh2
+Oct 25 22:26:53 web01 sshd[38]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=sofia
+Oct 25 22:26:56 web01 sshd[38]: Failed password for sofia from 172.21.0.3 port 56314 ssh2
+Oct 25 22:26:56 web01 sshd[38]: Connection closed by authenticating user sofia 172.21.0.3 port 56314 [preauth]
+Oct 25 22:26:56 web01 sshd[36]: Connection closed by authenticating user ines 172.21.0.3 port 56302 [preauth]
+Oct 25 22:26:57 web01 sudo:    sofia : user NOT in sudoers ; PWD=/home/sofia ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+Oct 25 22:26:57 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty= ruser=ana rhost=  user=ana
+Oct 25 22:26:59 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:26:59 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [ana]
+Oct 25 22:26:59 web01 sudo:      ana : 1 incorrect password attempt ; PWD=/home/ana ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 25 22:27:00 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1002 euid=0 tty= ruser=sofia rhost=  user=sofia
+Oct 25 22:27:02 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:27:02 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [sofia]
+Oct 25 22:27:02 web01 sudo:    sofia : user NOT in sudoers ; PWD=/home/sofia ; USER=root ; COMMAND=/usr/bin/whoami
+Oct 25 22:27:02 web01 sudo:    tiago : user NOT in sudoers ; PWD=/home/tiago ; USER=root ; COMMAND=/usr/bin/uptime

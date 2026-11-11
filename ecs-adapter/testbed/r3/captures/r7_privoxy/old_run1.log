@@ -1,0 +1,8 @@
+2026-10-30 19:08:09.130 7c53cee5d6c0 Request: r7-web-target/
+2026-10-30 19:08:09.907 7c53cee5d6c0 Request: r7-web-target/admin
+2026-10-30 19:08:09.907 7c53cee5d6c0 Crunch: Blocked: http://r7-web-target/admin
+2026-10-30 19:08:10.681 7c53cee5d6c0 Request: r7-web-target/reports
+2026-10-30 19:08:11.468 7c53cee5d6c0 Request: no-such-host.lab/
+2026-10-30 19:08:11.469 7c53cee5d6c0 Crunch: DNS failure: http://no-such-host.lab/
+2026-10-30 19:08:12.257 7c53cee5d6c0 Request: r7-web-target/.env
+2026-10-30 19:08:12.257 7c53cee5d6c0 Crunch: Blocked: http://r7-web-target/.env

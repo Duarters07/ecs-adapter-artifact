@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.thread.id": 2
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.port": 40466
+              }
+            },
+            {
+              "term": {
+                "source.port": 40466
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

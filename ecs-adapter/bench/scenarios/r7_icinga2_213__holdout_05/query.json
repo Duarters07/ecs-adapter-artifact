@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "<unauthenticated>"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "<unauthenticated>"
+              }
+            },
+            {
+              "term": {
+                "user.name": "<unauthenticated>"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "user_agent.original": "Ansible-icinga2/1.4"
+        }
+      }
+    ]
+  }
+}

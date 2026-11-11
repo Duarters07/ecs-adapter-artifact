@@ -1,0 +1,40 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.ip": "172.21.52.21"
+              }
+            },
+            {
+              "term": {
+                "source.ip": "172.21.52.21"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "destination.ip": "172.21.0.2"
+              }
+            },
+            {
+              "term": {
+                "server.ip": "172.21.0.2"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

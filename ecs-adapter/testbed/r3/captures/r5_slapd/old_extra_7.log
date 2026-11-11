@@ -1,0 +1,29 @@
+6ade8a1f conn=1036 fd=11 ACCEPT from IP=172.21.51.102:38924 (IP=0.0.0.0:389)
+6ade8a1f conn=1036 op=0 BIND dn="uid=svc-backup,ou=people,dc=lab,dc=example" method=128
+6ade8a1f conn=1036 op=0 BIND dn="uid=svc-backup,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ade8a1f conn=1036 op=0 RESULT tag=97 err=0 text=
+6ade8a1f conn=1036 op=1 RESULT oid= err=0 text=
+6ade8a1f conn=1037 fd=11 ACCEPT from IP=172.21.51.151:44820 (IP=0.0.0.0:389)
+6ade8a1f conn=1037 op=0 BIND dn="uid=ana,ou=people,dc=lab,dc=example" method=128
+6ade8a1f conn=1037 op=0 BIND dn="uid=ana,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ade8a1f conn=1037 op=0 RESULT tag=97 err=0 text=
+6ade8a1f conn=1037 op=1 SRCH base="ou=people,dc=lab,dc=example" scope=2 deref=0 filter="(uid=*)"
+6ade8a1f conn=1037 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=
+6ade8a20 conn=1038 fd=11 ACCEPT from IP=172.21.51.177:32878 (IP=0.0.0.0:389)
+6ade8a20 conn=1038 op=0 BIND dn="uid=svc-backup,ou=people,dc=lab,dc=example" method=128
+6ade8a20 conn=1038 op=0 BIND dn="uid=svc-backup,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ade8a20 conn=1038 op=0 RESULT tag=97 err=0 text=
+6ade8a20 conn=1038 op=1 SRCH base="ou=people,dc=lab,dc=example" scope=2 deref=0 filter="(uid=*)"
+6ade8a20 conn=1038 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=
+6ade8a21 conn=1039 fd=11 ACCEPT from IP=172.21.51.219:34618 (IP=0.0.0.0:389)
+6ade8a21 conn=1039 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" method=128
+6ade8a21 conn=1039 op=0 RESULT tag=97 err=49 text=
+6ade8a23 conn=1040 fd=11 ACCEPT from IP=172.21.51.158:40258 (IP=0.0.0.0:389)
+6ade8a23 conn=1040 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" method=128
+6ade8a23 conn=1040 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ade8a23 conn=1040 op=0 RESULT tag=97 err=0 text=
+6ade8a23 conn=1040 op=1 SRCH base="ou=people,dc=lab,dc=example" scope=2 deref=0 filter="(uid=*)"
+6ade8a23 conn=1040 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=
+6ade8a24 conn=1041 fd=11 ACCEPT from IP=172.21.51.109:39766 (IP=0.0.0.0:389)
+6ade8a24 conn=1041 op=0 BIND dn="cn=service,dc=lab,dc=example" method=128
+6ade8a24 conn=1041 op=0 RESULT tag=97 err=49 text=

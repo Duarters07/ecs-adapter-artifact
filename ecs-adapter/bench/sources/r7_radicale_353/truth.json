@@ -1,0 +1,99 @@
+{
+  "source_id": "r7_radicale_353",
+  "family": "radicale",
+  "split": "test_r7",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Radicale 3.5.3 (Debian 13), not copied from documentation or a public dataset. Captured 2026-10-30T19:03:36Z on the author's laptop by testbed/r3/r7_radicale.sh (docker logs (stderr), level info: login and authentication lines); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), NEW VERSION of r7_radicale_318: login lines gain the backend; new verification lines.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "thread",
+      "ecs_field": "process.thread.name",
+      "type": "keyword",
+      "role": "thread",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "backend",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "auth_backend",
+      "difficulty": "hard",
+      "note": "No ECS field for the authentication backend.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "auth_method",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "auth_method",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_radicale_353__holdout_01",
+    "r7_radicale_353__holdout_03"
+  ],
+  "round3": {
+    "pair": "r7_radicale",
+    "role": "new"
+  }
+}

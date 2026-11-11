@@ -1,0 +1,89 @@
+{
+  "source_id": "r7_inspircd_315",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^(?<timestamp>%{DAY} %{MONTH} %{MONTHDAY} %{YEAR} %{TIME}) (?<type>CONNECT): (?<action>Client connecting) on port %{INT:port} \\(class (?<conn_class>[^)]+)\\): (?<nick>[^!\\s]+)!(?<ident>[^@\\s]+)@%{IP:client_ip} \\(%{IP}\\) \\[(?<realname>[^\\]\\x0f]*)\\x0f?\\]$",
+    "alternatives": [
+      "^(?<timestamp>%{DAY} %{MONTH} %{MONTHDAY} %{YEAR} %{TIME}) (?<type>QUIT): (?<action>Client exiting): (?<nick>[^!\\s]+)!(?<ident>[^@\\s]+)@%{IP:client_ip} \\(%{IP}\\) \\[(?<reason>[^\\]]*)\\]$",
+      "^(?<timestamp>%{DAY} %{MONTH} %{MONTHDAY} %{YEAR} %{TIME}) (?<type>OPER): (?<nick>\\S+) \\((?<ident>[^@\\s]+)@%{IP:client_ip}\\) (?<action>is now a server operator) of type (?<oper_type>[^\\s(]+) \\(using oper \\x27(?<oper_name>[^\\x27]+)\\x27\\)$",
+      "^(?<timestamp>%{DAY} %{MONTH} %{MONTHDAY} %{YEAR} %{TIME}) (?<type>OPER): WARNING! (?<action>Failed oper attempt) by (?<nick>[^!\\s]+)!(?<ident>[^@\\s]+)@%{IP:client_ip} using login \\x27(?<oper_name>[^\\x27]+)\\x27: The following fields do not match: %{GREEDYDATA:reason}$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "port",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "nick",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "realname",
+      "ecs_field": "user.full_name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "oper_name",
+      "ecs_field": "user.effective.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "type",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "ident",
+      "reason": "IRC user name; user.name holds the nick"
+    },
+    {
+      "source_key": "conn_class",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "oper_type",
+      "reason": "user.roles is an array; declined"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "network"
+    ],
+    "event.dataset": "inspircd.log"
+  }
+}

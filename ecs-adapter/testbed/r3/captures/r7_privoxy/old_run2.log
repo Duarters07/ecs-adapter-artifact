@@ -1,0 +1,4 @@
+2026-10-30 19:08:15.050 7c53cee5d6c0 Request: r7-web-target/index.html
+2026-10-30 19:08:15.811 7c53cee5d6c0 Request: r7-web-target/wp-login.php
+2026-10-30 19:08:15.811 7c53cee5d6c0 Crunch: Blocked: http://r7-web-target/wp-login.php
+2026-10-30 19:08:16.584 7c53cee5d6c0 Request: r7-web-target/docs/

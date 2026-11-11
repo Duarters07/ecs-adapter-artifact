@@ -1,0 +1,1 @@
+{"captured_utc": "2026-10-28T15:37:28Z", "history_of": "r5_freeradius", "release": "10", "old": "Debian 10 FreeRADIUS Version 3.0.17 (packages from snapshot.debian.org 2026-08-24)", "collected_by": "docker logs, stdout (freeradius -f -l stdout), Auth lines", "note": "round-9 history release; the capture script's new-version run was discarded"}

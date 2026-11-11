@@ -1,0 +1,4 @@
+{"raw": "2026-10-27T16:00:26.231154+00:00 files02 pure-ftpd: (ana@172.21.64.33) [NOTICE] /home/ana//q3.txt downloaded  (7 bytes, 377.26KB/sec)"}
+{"raw": "2026-10-27T16:00:19.558858+00:00 files02 pure-ftpd: (?@172.21.64.31) [WARNING] Authentication failed for user [scanner]"}
+{"raw": "2026-10-27T16:00:25.537976+00:00 files02 pure-ftpd: (?@172.21.64.90) [WARNING] Authentication failed for user [upload]"}
+{"raw": "2026-10-27T16:00:32.142402+00:00 files02 pure-ftpd: (?@172.21.64.88) [WARNING] Authentication failed for user [operator]"}

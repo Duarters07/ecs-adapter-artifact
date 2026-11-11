@@ -1,0 +1,8 @@
+172.21.0.3 - - [25/Oct/2026:22:25:33 +0000] "GET /shop/ HTTP/1.1" 200 3 "https://duckduckgo.com/tools" "Java/17.0.8"
+172.21.0.3 - - [25/Oct/2026:22:25:33 +0000] "GET /private/.env HTTP/1.1" 403 153 "http://portal.local/qa" "Go-http-client/1.1"
+172.21.0.3 - - [25/Oct/2026:22:25:33 +0000] "GET /shop/old.zip HTTP/1.1" 404 153 "https://www.google.com/status" "Nikto/2.1.6"
+172.21.0.3 - sofia [25/Oct/2026:22:25:33 +0000] "GET /account/ HTTP/1.1" 200 3 "-" "axios/1.4.0"
+172.21.0.3 - admin [25/Oct/2026:22:25:33 +0000] "GET /account/ HTTP/1.1" 401 179 "http://intranet.local/portal" "HTTPie/3.2.1"
+172.21.0.3 - - [25/Oct/2026:22:25:34 +0000] "POST /api/db.sql HTTP/1.1" 200 2 "-" "Wget/1.21.3"
+172.21.0.3 - - [25/Oct/2026:22:25:34 +0000] "POST /api/index.html HTTP/1.1" 200 2 "http://qa.local/finance" "Mozilla/5.0 (Windows NT 10.0) Chrome/118.0"
+172.21.0.3 - - [25/Oct/2026:22:25:34 +0000] "GET /shop/admin.php HTTP/1.1" 404 153 "https://www.bing.com/status" "okhttp/4.10.0"

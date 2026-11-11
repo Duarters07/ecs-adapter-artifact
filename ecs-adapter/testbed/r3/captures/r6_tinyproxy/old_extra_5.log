@@ -1,0 +1,13 @@
+CONNECT   Oct 27 16:50:52 [12]: Connect (file descriptor 10): serene_noyce.r3-net [172.21.66.224]
+NOTICE    Oct 27 16:50:52 [12]: Unauthorized connection from "serene_noyce.r3-net" [172.21.66.224].
+CONNECT   Oct 27 16:50:53 [15]: Connect (file descriptor 10): optimistic_banzai.r3-net [172.21.66.143]
+NOTICE    Oct 27 16:50:53 [15]: Unauthorized connection from "optimistic_banzai.r3-net" [172.21.66.143].
+CONNECT   Oct 27 16:50:53 [8]: Connect (file descriptor 10): objective_aryabhata.r3-net [172.21.66.187]
+NOTICE    Oct 27 16:50:53 [8]: Unauthorized connection from "objective_aryabhata.r3-net" [172.21.66.187].
+CONNECT   Oct 27 16:50:54 [14]: Connect (file descriptor 10): xenodochial_goldstine.r3-net [172.21.66.105]
+CONNECT   Oct 27 16:50:54 [14]: Request (file descriptor 10): GET http://r6-web-target/mail/admin.php HTTP/1.1
+CONNECT   Oct 27 16:50:54 [14]: Established connection to host "r6-web-target" using file descriptor 11.
+CONNECT   Oct 27 16:50:55 [9]: Connect (file descriptor 10): festive_babbage.r3-net [172.21.66.231]
+NOTICE    Oct 27 16:50:55 [9]: Unauthorized connection from "festive_babbage.r3-net" [172.21.66.231].
+CONNECT   Oct 27 16:50:56 [14]: Connect (file descriptor 10): nervous_wing.r3-net [172.21.66.169]
+NOTICE    Oct 27 16:50:56 [14]: Unauthorized connection from "nervous_wing.r3-net" [172.21.66.169].

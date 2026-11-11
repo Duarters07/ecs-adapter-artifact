@@ -1,0 +1,18 @@
+2026-10-27T16:59:46.827889+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.199], port=[54744]
+2026-10-27T16:59:48.657293+00:00 mail02 imapd: LOGIN FAILED, user=scanner, ip=[::ffff:172.21.67.199], port=[54744]
+2026-10-27T16:59:53.658847+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.199], port=[54744], time=7
+2026-10-27T16:59:54.394061+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.152], port=[58578]
+2026-10-27T16:59:54.394717+00:00 mail02 imapd: LOGIN FAILED, user=admin, ip=[::ffff:172.21.67.152], port=[58578]
+2026-10-27T16:59:59.396589+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.152], port=[58578], time=5
+2026-10-27T17:00:00.137758+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.200], port=[40678]
+2026-10-27T17:00:00.137932+00:00 mail02 imapd: LOGIN FAILED, user=administrator, ip=[::ffff:172.21.67.200], port=[40678]
+2026-10-27T17:00:05.139529+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.200], port=[40678], time=5
+2026-10-27T17:00:05.857990+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.185], port=[46574]
+2026-10-27T17:00:05.858167+00:00 mail02 imapd: LOGIN FAILED, user=katia, ip=[::ffff:172.21.67.185], port=[46574]
+2026-10-27T17:00:10.859797+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.185], port=[46574], time=5
+2026-10-27T17:00:11.600878+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.245], port=[59430]
+2026-10-27T17:00:11.601056+00:00 mail02 imapd: LOGIN FAILED, user=postmaster, ip=[::ffff:172.21.67.245], port=[59430]
+2026-10-27T17:00:16.602858+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.245], port=[59430], time=5
+2026-10-27T17:00:17.318149+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.201], port=[41084]
+2026-10-27T17:00:17.399723+00:00 mail02 imapd: LOGIN, user=ana, ip=[::ffff:172.21.67.201], port=[41084], protocol=IMAP
+2026-10-27T17:00:17.400409+00:00 mail02 imapd: LOGOUT, user=ana, ip=[::ffff:172.21.67.201], port=[41084], headers=0, body=0, rcvd=34, sent=340, time=0

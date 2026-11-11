@@ -1,0 +1,4 @@
+2026/10/27 16:27:00 [6ae0d0d4] router: completed GET /api/v1/user for 172.21.70.14:56596, 200 OK in 33.1ms @ user/user.go:109(user.GetAuthenticatedUser)
+2026/10/27 16:27:00 [6ae0d0d4-2] router: completed GET /api/v1/user/repos for 172.21.70.14:58600, 401 Unauthorized in 29.5ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 16:27:01 [6ae0d0d5] router: completed GET /api/v1/user for 172.21.70.97:56080, 401 Unauthorized in 0.5ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 16:27:02 [6ae0d0d6] router: completed GET /api/v1/repos/ana/secret for 172.21.70.15:58256, 404 Not Found in 30.0ms @ v1/api.go:135(v1.repoAssignment)

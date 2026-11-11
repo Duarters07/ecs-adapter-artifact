@@ -1,0 +1,12 @@
+[Sun Oct 25 22:15:23 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/notes.txt, referer: http://home.local/finance
+[Sun Oct 25 22:15:23 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/, referer: http://intranet.local/home
+[Sun Oct 25 22:15:23 2026] [error] [client 172.21.0.3] user katia not found: /members/q3.html
+[Sun Oct 25 22:15:24 2026] [error] [client 172.21.0.3] user elsa not found: /members/backup.tar
+[Sun Oct 25 22:15:24 2026] [error] [client 172.21.0.3] user rui: authentication failure for "/members/": Password Mismatch, referer: http://intranet.local/hr
+[Sun Oct 25 22:15:24 2026] [error] [client 172.21.0.3] user sofia: authentication failure for "/reports/report.pdf": Password Mismatch, referer: http://tools.local/finance
+[Sun Oct 25 22:15:24 2026] [error] [client 172.21.0.3] user tiago: authentication failure for "/reports/": Password Mismatch, referer: http://portal.local/ops
+[Sun Oct 25 22:15:24 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/login.php
+[Sun Oct 25 22:15:25 2026] [error] [client 172.21.0.3] user sofia: authentication failure for "/reports/backup.tar": Password Mismatch
+[Sun Oct 25 22:15:25 2026] [error] [client 172.21.0.3] user diogo not found: /reports/, referer: http://portal.local/qa
+[Sun Oct 25 22:15:25 2026] [error] [client 172.21.0.3] File does not exist: /usr/local/apache2/htdocs/members/data.json, referer: http://wiki.local/qa
+[Sun Oct 25 22:15:25 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/users.csv, referer: http://portal.local/tools

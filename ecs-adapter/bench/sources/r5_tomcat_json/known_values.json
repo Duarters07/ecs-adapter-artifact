@@ -1,0 +1,16 @@
+{
+  "note": "NOT ground truth. Each entry records a value and the ECS field that value IS. The ladder may read this file; it may never read truth.json. See validators/v3_5_known_values.py.",
+  "origin": "samples.ndjson, via the per-family extractor",
+  "provenance": "Derived from samples.ndjson by bench/make_known_values.py with the extractor in testbed/heldout_r2/specs.py. Like the round-1 test sources, the field each value belongs to comes from the DRAFT labelling, so V3.5 here is a consistency check, not a probe.",
+  "source_id": "r5_tomcat_json",
+  "values": {
+    "http.request.method": "GET",
+    "http.response.body.bytes": "9927",
+    "http.response.status_code": "200",
+    "http.version": "HTTP/1.1",
+    "source.ip": "172.21.0.3",
+    "url.original": "/missing.jsp",
+    "user.name": "ops",
+    "user_agent.original": "Mozilla/5.0 Firefox/128.0"
+  }
+}

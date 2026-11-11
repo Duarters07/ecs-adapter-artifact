@@ -1,0 +1,129 @@
+{
+  "source_id": "r7_389ds_31",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "json"
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "server_ip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "bind_dn",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "err",
+      "ecs_field": "event.code",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "msg",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "operation",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "tls",
+      "ecs_field": "tls.established",
+      "type": "boolean",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "tag",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "nentries",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "wtime",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "optime",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "etime",
+      "reason": "declined"
+    },
+    {
+      "source_key": "method",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "version",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "fd",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "slot",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "close_reason",
+      "reason": "declined"
+    },
+    {
+      "source_key": "local_time",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "conn_id",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "op_id",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "key",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "oid",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "oid_name",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "name",
+      "reason": "no ECS field"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.dataset": "389ds.access"
+  }
+}

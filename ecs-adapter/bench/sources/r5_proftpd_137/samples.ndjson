@@ -1,0 +1,11 @@
+{"raw": "2026-10-25 15:01:06,632 files01 proftpd[8] 172.21.0.2 (172.21.52.11[172.21.52.11]): USER ana (Login failed): Incorrect password"}
+{"raw": "2026-10-25 15:01:08,857 files01 proftpd[10] 172.21.0.2 (172.21.52.99[172.21.52.99]): USER admin: no such user found from 172.21.52.99 [172.21.52.99] to 172.21.0.2:21"}
+{"raw": "2026-10-25 15:01:07,772 files01 proftpd[9] 172.21.0.2 (172.21.52.12[172.21.52.12]): USER rui: Login successful."}
+{"raw": "2026-10-25 15:01:09,937 files01 proftpd[11] 172.21.0.2 (172.21.52.98[172.21.52.98]): FTP session opened."}
+{"raw": "2026-10-25 15:01:11,065 files01 proftpd[12] 172.21.0.2 (172.21.52.13[172.21.52.13]): USER scanner: Login successful."}
+{"raw": "2026-10-25 15:01:20,810 files01 proftpd[15] 172.21.0.2 (172.21.52.97[172.21.52.97]): USER ftp (Login failed): Incorrect password"}
+{"raw": "2026-10-25 15:01:23,025 files01 proftpd[17] 172.21.0.2 (172.21.52.96[172.21.52.96]): SECURITY VIOLATION: Root login attempted"}
+{"raw": "2026-10-25 15:01:14,487 files01 proftpd[13] 172.21.0.2 (172.21.52.14[172.21.52.14]): FTP session opened."}
+{"raw": "2026-10-25 15:01:21,870 files01 proftpd[16] 172.21.0.2 (172.21.52.15[172.21.52.15]): FTP session opened."}
+{"raw": "2026-10-25 15:01:03,465 files01 proftpd[7] 172.21.0.2 (172.21.52.11[172.21.52.11]): FTP session opened."}
+{"raw": "2026-10-25 15:01:15,601 files01 proftpd[14] 172.21.0.2 (172.21.52.14[172.21.52.14]): FTP session opened."}

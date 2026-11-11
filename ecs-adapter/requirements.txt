@@ -1,0 +1,16 @@
+# Pinned: reproducibility is a thesis requirement, not a convenience.
+httpx==0.28.1
+jsonschema==4.23.0
+PyYAML==6.0.2
+elasticsearch==8.17.0
+jinja2==3.1.5
+numpy==2.2.1
+
+# Embedding model for ECS field retrieval (adapter/ecs_index.py).
+# Heavy; see requirements-dev.txt for a install without it.
+sentence-transformers==3.3.1
+
+# Kafka consumer for the unknown-format queue (adapter/sampler.py wiring).
+confluent-kafka==2.6.1
+
+pytest==8.3.4

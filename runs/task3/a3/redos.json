@@ -1,0 +1,6 @@
+{"note": "Unbounded template miner (templates.py before deviation 6), mine() over each source's full input, 5 s cap; recorded 2026-11-08 16:08 UTC (laptop) and 2026-11-09 (sg_* recount). Sources that stall, of 44 per tree.",
+ "sources": 44,
+ "S1_A1": 0, "S1_A2": 0,
+ "A1D6": {"remap": 8, "drop": 8, "const": 9},
+ "A1D18": {"remap": 12, "drop": 10, "const": 12},
+ "train_sg": {"sources": 1703, "stall": 21}}

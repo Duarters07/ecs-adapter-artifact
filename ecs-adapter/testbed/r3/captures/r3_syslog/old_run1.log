@@ -1,0 +1,38 @@
+Oct 19 23:40:19 web01 sshd[19]: Accepted password for ana from 172.21.0.3 port 56342 ssh2
+Oct 19 23:40:19 web01 sshd[19]: pam_unix(sshd:session): session opened for user ana(uid=1000) by (uid=0)
+Oct 19 23:40:19 web01 sshd[19]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 19 23:40:19 web01 sshd[19]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 19 23:40:19 web01 sshd[19]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 19 23:40:19 web01 sshd[19]: pam_unix(sshd:session): session closed for user ana
+Oct 19 23:40:19 web01 sshd[27]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=ana
+Oct 19 23:40:21 web01 sshd[27]: Failed password for ana from 172.21.0.3 port 56350 ssh2
+Oct 19 23:40:22 web01 sshd[29]: Invalid user carlos from 172.21.0.3 port 56354
+Oct 19 23:40:22 web01 sshd[29]: pam_unix(sshd:auth): check pass; user unknown
+Oct 19 23:40:22 web01 sshd[29]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 19 23:40:25 web01 sshd[29]: Failed password for invalid user carlos from 172.21.0.3 port 56354 ssh2
+Oct 19 23:40:25 web01 sshd[31]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=root
+Oct 19 23:40:27 web01 sshd[31]: Failed password for root from 172.21.0.3 port 56362 ssh2
+Oct 19 23:40:29 web01 sshd[33]: error: kex_exchange_identification: Connection closed by remote host
+Oct 19 23:40:29 web01 sshd[33]: Connection closed by 172.21.0.3 port 46528
+Oct 19 23:40:29 web01 sshd[34]: Accepted password for rui from 172.21.0.3 port 46540 ssh2
+Oct 19 23:40:29 web01 sshd[34]: pam_unix(sshd:session): session opened for user rui(uid=1001) by (uid=0)
+Oct 19 23:40:29 web01 sshd[34]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 19 23:40:29 web01 sshd[34]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 19 23:40:29 web01 sshd[34]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 19 23:40:29 web01 sshd[34]: pam_unix(sshd:session): session closed for user rui
+Oct 19 23:40:30 web01 sshd[31]: Connection closed by authenticating user root 172.21.0.3 port 56362 [preauth]
+Oct 19 23:40:30 web01 sshd[27]: Connection closed by authenticating user ana 172.21.0.3 port 56350 [preauth]
+Oct 19 23:40:30 web01 sshd[29]: Connection closed by invalid user carlos 172.21.0.3 port 56354 [preauth]
+Oct 19 23:40:30 web01 sudo:      ana : PWD=/home/ana ; USER=root ; COMMAND=/usr/bin/id
+Oct 19 23:40:30 web01 sudo: pam_limits(sudo:session): Could not set limit for 'core' to soft=-1, hard=-1: Operation not permitted; uid=1000,euid=0
+Oct 19 23:40:30 web01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Oct 19 23:40:30 web01 sudo: pam_unix(sudo:session): session closed for user root
+Oct 19 23:40:30 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1001 euid=0 tty= ruser=rui rhost=  user=rui
+Oct 19 23:40:32 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 19 23:40:32 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [rui]
+Oct 19 23:40:32 web01 sudo:      rui : 1 incorrect password attempt ; PWD=/home/rui ; USER=root ; COMMAND=/usr/bin/whoami
+Oct 19 23:40:33 web01 sudo:    sofia : user NOT in sudoers ; PWD=/home/sofia ; USER=root ; COMMAND=/usr/bin/apt-get update
+Oct 19 23:40:33 web01 sudo:      ana : PWD=/home/ana ; USER=root ; COMMAND=/bin/ls /root
+Oct 19 23:40:33 web01 sudo: pam_limits(sudo:session): Could not set limit for 'core' to soft=-1, hard=-1: Operation not permitted; uid=1000,euid=0
+Oct 19 23:40:33 web01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Oct 19 23:40:33 web01 sudo: pam_unix(sudo:session): session closed for user root

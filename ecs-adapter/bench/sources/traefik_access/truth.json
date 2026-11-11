@@ -1,0 +1,258 @@
+{
+  "family": "traefik",
+  "category_hint": "web",
+  "contamination_risk": "medium",
+  "notes": "This source exists for two decisions no other family forces. First, the line carries TWO status codes and TWO body sizes, one per leg, and ECS has one http.response.*; only the value the client actually received is the response. Second, `Duration` is in NANOSECONDS, which is what ECS event.duration wants. Every duration in the training families is in milliseconds or seconds and the correct answer there is to abstain, so a model that has learned to abstain on anything called a duration is wrong here. The inversion is deliberate.",
+  "fields": [
+    {
+      "source_key": "ClientAddr",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "client_address_and_port",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`172.18.0.1:47322`. Two values in one string. ECS source.address does not include a port, and the IR has no operation that splits a value, so the two components reach their fields through ClientHost and ClientPort."
+    },
+    {
+      "source_key": "ClientHost",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "medium"
+    },
+    {
+      "source_key": "ClientPort",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "medium",
+      "note": "Written as a quoted string, not a number. The ECS type is long."
+    },
+    {
+      "source_key": "ClientUsername",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "authenticated_user",
+      "difficulty": "medium",
+      "note": "`-` on every line in this capture because no authentication middleware is configured. The placeholder does not change what the field means."
+    },
+    {
+      "source_key": "RequestAddr",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "host_header_with_port",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The Host header including the port when the client sent one. Same composite problem as ClientAddr, and RequestHost already carries the domain on its own."
+    },
+    {
+      "source_key": "RequestHost",
+      "ecs_field": "url.domain",
+      "type": "keyword",
+      "role": "requested_host",
+      "difficulty": "hard",
+      "note": "What the CLIENT asked for. Not destination.address: the backend that answers is ServiceAddr, and behind a proxy the two are routinely different names."
+    },
+    {
+      "source_key": "RequestPort",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "host_header_port",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`-` whenever the Host header carried no port, which is every line here. url.port would be the field if a value were present, but the client's Host header port is not the port the request was served on."
+    },
+    {
+      "source_key": "RequestMethod",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "http_method",
+      "difficulty": "easy"
+    },
+    {
+      "source_key": "RequestPath",
+      "ecs_field": "url.path",
+      "type": "keyword",
+      "role": "requested_path",
+      "difficulty": "easy"
+    },
+    {
+      "source_key": "RequestProtocol",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "role": "http_protocol_version",
+      "difficulty": "hard",
+      "note": "`HTTP/1.1` on the wire; ECS http.version uses `1.1`. The field is settled, the value convention is not, and normalising it is the parser's job."
+    },
+    {
+      "source_key": "RequestScheme",
+      "ecs_field": "url.scheme",
+      "type": "keyword",
+      "role": "request_scheme",
+      "difficulty": "medium"
+    },
+    {
+      "source_key": "RequestContentSize",
+      "ecs_field": "http.request.body.bytes",
+      "type": "long",
+      "role": "request_body_bytes",
+      "difficulty": "hard"
+    },
+    {
+      "source_key": "RequestCount",
+      "ecs_field": null,
+      "type": "long",
+      "role": "process_request_counter",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "A monotonic counter for the Traefik process, not a property of the request. Mapping it to any byte or duration field would be a category error that indexes cleanly."
+    },
+    {
+      "source_key": "ServiceAddr",
+      "ecs_field": "destination.address",
+      "type": "keyword",
+      "role": "backend_address",
+      "difficulty": "hard",
+      "note": "The backend that actually answered. This is the destination from the proxy's point of view, and it is the field RequestHost is most often confused with."
+    },
+    {
+      "source_key": "ServiceName",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "traefik_service_name",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`app@file`. A Traefik configuration object name, not a network entity."
+    },
+    {
+      "source_key": "ServiceURL",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "traefik_service_url",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The backend URL as Traefik configured it, not a URL the client requested. url.original describes what the client asked for."
+    },
+    {
+      "source_key": "RouterName",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "traefik_router_name",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`app@file`. The name of the Traefik routing rule that matched, qualified by the provider that defined it. rule.name describes a detection or security rule that fired; a routing decision is not one."
+    },
+    {
+      "source_key": "OriginStatus",
+      "ecs_field": null,
+      "type": "long",
+      "role": "backend_status_code",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The code the BACKEND returned. ECS has one http.response.status_code and it describes the response the client received, which is DownstreamStatus. 0 here whenever Traefik answered without reaching a backend."
+    },
+    {
+      "source_key": "OriginContentSize",
+      "ecs_field": null,
+      "type": "long",
+      "role": "backend_body_bytes",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The body size the BACKEND returned. The mirror of OriginStatus: ECS has one http.response.body.bytes and it describes what the client received, which is DownstreamContentSize."
+    },
+    {
+      "source_key": "OriginDuration",
+      "ecs_field": null,
+      "type": "long",
+      "role": "backend_duration_ns",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Nanoseconds, and a correct unit, but it measures only the backend leg. event.duration is the duration of the event, which is Duration."
+    },
+    {
+      "source_key": "Overhead",
+      "ecs_field": null,
+      "type": "long",
+      "role": "proxy_overhead_ns",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Duration minus OriginDuration. A derived figure about the proxy itself."
+    },
+    {
+      "source_key": "RetryAttempts",
+      "ecs_field": null,
+      "type": "long",
+      "role": "retry_count",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "How many times Traefik retried before an answer was obtained. A property of the proxy's behaviour, not a count of anything in the request or the response."
+    },
+    {
+      "source_key": "DownstreamStatus",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "role": "status_sent_to_client",
+      "difficulty": "hard",
+      "note": "The code the CLIENT received. This is the response, and it is the one a detection rule filtering on http.response.status_code has to match."
+    },
+    {
+      "source_key": "DownstreamContentSize",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "role": "bytes_sent_to_client",
+      "difficulty": "hard"
+    },
+    {
+      "source_key": "Duration",
+      "ecs_field": "event.duration",
+      "type": "long",
+      "role": "total_request_duration_ns",
+      "difficulty": "hard",
+      "note": "NANOSECONDS, which is exactly what ECS event.duration is. Abstaining here is wrong, and it is the trap this source sets for a model trained on families whose durations are in milliseconds or seconds."
+    },
+    {
+      "source_key": "GzipRatio",
+      "ecs_field": null,
+      "type": "float",
+      "role": "compression_ratio",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The compression ratio applied to the response, 0 when none was. A ratio, and ECS has no field for one."
+    },
+    {
+      "source_key": "entryPointName",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "listener_name",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "`web`. A Traefik listener name. observer.name would describe the appliance rather than one of its listeners, and the log does not name the appliance."
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "log_level",
+      "difficulty": "medium"
+    },
+    {
+      "source_key": "msg",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "logger_message",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Empty on every access record. ECS `message` is the log message, and an empty string is not one."
+    }
+  ],
+  "source_id": "traefik_access",
+  "split": "test",
+  "origin": "Produced by running the software, not copied from documentation or a public dataset. Captured on 2 October 2026 on the project's own Docker host.",
+  "scenarios": [
+    "traefik_access__holdout_01",
+    "traefik_access__holdout_02",
+    "traefik_access__holdout_03",
+    "traefik_access__holdout_04",
+    "traefik_access__holdout_05"
+  ]
+}

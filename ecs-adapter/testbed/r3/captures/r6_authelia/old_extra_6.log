@@ -1,0 +1,8 @@
+time="2026-10-27T16:37:42Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'admin'" error="user not found" method=POST path=/api/firstfactor remote_ip=172.21.61.103
+time="2026-10-27T16:37:44Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'ana' and they are banned until 2026-10-27 16:41:28.077570835 +0000 UTC" method=POST path=/api/firstfactor remote_ip=172.21.61.130
+time="2026-10-27T16:37:46Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'scanner' and they are banned until 2026-10-27 16:41:44.177714176 +0000 UTC" method=POST path=/api/firstfactor remote_ip=172.21.61.191
+time="2026-10-27T16:37:47Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'rui' and they are banned until 2026-10-27 16:42:35.976692513 +0000 UTC" method=POST path=/api/firstfactor remote_ip=172.21.61.154
+time="2026-10-27T16:37:49Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'gabriela'" error="user not found" method=POST path=/api/firstfactor remote_ip=172.21.61.170
+time="2026-10-27T16:37:51Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'root'" error="user not found" method=POST path=/api/firstfactor remote_ip=172.21.61.142
+time="2026-10-27T16:37:53Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'ana' and they are banned until 2026-10-27 16:41:28.077570835 +0000 UTC" method=POST path=/api/firstfactor remote_ip=172.21.61.103
+time="2026-10-27T16:37:54Z" level=error msg="Unsuccessful 1FA authentication attempt by user 'filipe'" error="user not found" method=POST path=/api/firstfactor remote_ip=172.21.61.168

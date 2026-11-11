@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.severity": 2
+        }
+      },
+      {
+        "term": {
+          "network.protocol": "http"
+        }
+      }
+    ]
+  }
+}

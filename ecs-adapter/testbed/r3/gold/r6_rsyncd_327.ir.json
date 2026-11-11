@@ -1,0 +1,67 @@
+{
+  "source_id": "r6_rsyncd_327",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^(?<timestamp>%{YEAR}/%{MONTHNUM}/%{MONTHDAY} %{TIME}) \\[%{INT:pid}\\] (?<action>connect) from %{NOTSPACE:client_name} \\(%{IP:client_ip}\\)$",
+    "alternatives": [
+      "^(?<timestamp>%{YEAR}/%{MONTHNUM}/%{MONTHDAY} %{TIME}) \\[%{INT:pid}\\] rsync (?<action>allowed access) on module %{NOTSPACE:module} from %{NOTSPACE:client_name} \\(%{IP:client_ip}\\)$",
+      "^(?<timestamp>%{YEAR}/%{MONTHNUM}/%{MONTHDAY} %{TIME}) \\[%{INT:pid}\\] (?<action>auth failed) on module %{NOTSPACE:module} from %{NOTSPACE:client_name} \\(%{IP:client_ip}\\) for (?<user>[^:]+): %{GREEDYDATA:reason}$",
+      "^(?<timestamp>%{YEAR}/%{MONTHNUM}/%{MONTHDAY} %{TIME}) \\[%{INT:pid}\\] (?<action>unknown module) .%{DATA:module}. tried from %{NOTSPACE:client_name} \\(%{IP:client_ip}\\)$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "module",
+      "reason": "no ECS field for an rsync module"
+    },
+    {
+      "source_key": "client_name",
+      "reason": "constant UNDETERMINED"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.dataset": "rsyncd.log"
+  }
+}

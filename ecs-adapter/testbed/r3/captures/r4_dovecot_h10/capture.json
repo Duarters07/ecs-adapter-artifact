@@ -1,0 +1,1 @@
+{"captured_utc": "2026-10-28T15:30:36Z", "history_of": "r4_dovecot", "release": "10", "old": "Debian 10 dovecot 2.3.4.1 (f79e8e7e4)", "collected_by": "docker logs, stderr (log_path=/dev/stderr)", "note": "round-9 history release; the capture script's new-version run was discarded"}

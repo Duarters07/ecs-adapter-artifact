@@ -1,0 +1,15 @@
+1792939502: New connection from 172.21.50.21 on port 1883.
+1792939502: New client connected from 172.21.50.21 as pump-west (p2, c1, k60, u'pump02').
+1792939502: Client pump-west disconnected.
+1792939503: New connection from 172.21.50.22 on port 1884.
+1792939503: New client connected from 172.21.50.22 as cam-gate (p2, c1, k60, u'camera03').
+1792939503: Client cam-gate disconnected.
+1792939504: New connection from 172.21.50.23 on port 1884.
+1792939504: New client connected from 172.21.50.23 as hvac-roof (p2, c1, k60, u'hvac04').
+1792939504: Client hvac-roof disconnected.
+1792939505: New connection from 172.21.50.95 on port 1883.
+1792939505: Socket error on client <unknown>, disconnecting.
+1792939506: New connection from 172.21.50.94 on port 1884.
+1792939506: Socket error on client <unknown>, disconnecting.
+1792939507: New connection from 172.21.50.21 on port 1883.
+1792939507: Socket error on client <unknown>, disconnecting.

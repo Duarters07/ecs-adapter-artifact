@@ -1,0 +1,16 @@
+2026/10/27 16:49:05 [37] connect from UNDETERMINED (172.21.65.225)
+2026/10/27 16:49:05 [37] rsync allowed access on module finance from UNDETERMINED (172.21.65.225)
+2026/10/27 16:49:05 [37] auth failed on module finance from UNDETERMINED (172.21.65.225) for ubuntu: no matching rule
+2026/10/27 16:49:06 [38] connect from UNDETERMINED (172.21.65.190)
+2026/10/27 16:49:06 [38] rsync allowed access on module backup from UNDETERMINED (172.21.65.190)
+2026/10/27 16:49:06 [38] auth failed on module backup from UNDETERMINED (172.21.65.190) for ana: password mismatch
+2026/10/27 16:49:06 [39] connect from UNDETERMINED (172.21.65.180)
+2026/10/27 16:49:06 [39] rsync allowed access on module finance from UNDETERMINED (172.21.65.180)
+2026/10/27 16:49:06 [39] auth failed on module finance from UNDETERMINED (172.21.65.180) for ana: password mismatch
+2026/10/27 16:49:07 [40] connect from UNDETERMINED (172.21.65.232)
+2026/10/27 16:49:07 [40] rsync allowed access on module backup from UNDETERMINED (172.21.65.232)
+2026/10/27 16:49:07 [40] auth failed on module backup from UNDETERMINED (172.21.65.232) for ana: password mismatch
+2026/10/27 16:49:07 [41] connect from UNDETERMINED (172.21.65.180)
+2026/10/27 16:49:07 [41] rsync allowed access on module public from UNDETERMINED (172.21.65.180)
+2026/10/27 16:49:08 [42] connect from UNDETERMINED (172.21.65.136)
+2026/10/27 16:49:08 [42] rsync allowed access on module backup from UNDETERMINED (172.21.65.136)

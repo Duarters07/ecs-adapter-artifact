@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "dns.response_code": "NXDOMAIN"
+        }
+      },
+      {
+        "term": {
+          "log.level": "info"
+        }
+      }
+    ]
+  }
+}

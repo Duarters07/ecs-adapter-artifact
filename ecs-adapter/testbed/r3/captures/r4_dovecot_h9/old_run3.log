@@ -1,0 +1,8 @@
+Oct 28 15:32:07 imap-login: Info: Login: user=<marta>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=31, session=<6TPPQ+heVr2sFQAD>
+Oct 28 15:32:07 imap(marta): Info: Logged out in=32 out=716
+Oct 28 15:32:09 auth-worker(14): Info: pam(marta,172.21.0.3,<SogUROhegJusFQAD>): pam_authenticate() failed: Authentication failure (password mismatch?)
+Oct 28 15:32:11 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<marta>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<SogUROhegJusFQAD>
+Oct 28 15:32:17 auth-worker(14): Info: pam(backup,172.21.0.3,<JoRSROheipusFQAD>): pam_authenticate() failed: Authentication failure (password mismatch?)
+Oct 28 15:32:19 imap-login: Info: Disconnected (auth failed, 1 attempts in 8 secs): user=<backup>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<JoRSROheipusFQAD>
+Oct 28 15:32:27 imap-login: Info: Login: user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=35, session=<W/LJROhe5OasFQAD>
+Oct 28 15:32:27 imap(ana): Info: Logged out in=32 out=716

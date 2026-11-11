@@ -1,0 +1,12 @@
+2026/10/27 16:04:32 [25] connect from UNDETERMINED (172.21.65.31)
+2026/10/27 16:04:32 [25] rsync allowed access on module finance from UNDETERMINED (172.21.65.31)
+2026/10/27 16:04:32 [25] auth failed on module finance from UNDETERMINED (172.21.65.31) for scanner: no matching rule
+2026/10/27 16:04:32 [26] connect from UNDETERMINED (172.21.65.32)
+2026/10/27 16:04:32 [26] rsync allowed access on module backup from UNDETERMINED (172.21.65.32)
+2026/10/27 16:04:33 [27] connect from UNDETERMINED (172.21.65.90)
+2026/10/27 16:04:33 [27] unknown module 'data' tried from UNDETERMINED (172.21.65.90)
+2026/10/27 16:04:34 [28] connect from UNDETERMINED (172.21.65.33)
+2026/10/27 16:04:34 [28] rsync allowed access on module finance from UNDETERMINED (172.21.65.33)
+2026/10/27 16:04:34 [29] connect from UNDETERMINED (172.21.65.88)
+2026/10/27 16:04:34 [29] rsync allowed access on module backup from UNDETERMINED (172.21.65.88)
+2026/10/27 16:04:34 [29] auth failed on module backup from UNDETERMINED (172.21.65.88) for deploy: no matching rule

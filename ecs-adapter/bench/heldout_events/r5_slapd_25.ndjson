@@ -1,0 +1,21 @@
+{"raw": "6ade1812.1891f01c 0x7540ed9346c0 conn=1006 op=1 SEARCH RESULT tag=101 err=0 qtime=0.000021 etime=0.000243 nentries=3 text="}
+{"raw": "6ade1815.38ace46e 0x7540ed1336c0 conn=1010 op=0 RESULT tag=97 err=49 qtime=0.000010 etime=0.000105 text="}
+{"raw": "6ade1813.12241293 0x7540ed9346c0 conn=1007 fd=11 ACCEPT from IP=172.21.51.90:59650 (IP=0.0.0.0:389)"}
+{"raw": "6ade1814.08c4790a 0x7540ed9346c0 conn=1008 op=1 SEARCH RESULT tag=101 err=0 qtime=0.000019 etime=0.000220 nentries=0 text="}
+{"raw": "6ade1815.02bc440d 0x7540ed9346c0 conn=1009 fd=11 ACCEPT from IP=172.21.51.32:45348 (IP=0.0.0.0:389)"}
+{"raw": "6ade1816.320ad41b 0x7540ed1336c0 conn=1011 fd=11 ACCEPT from IP=172.21.51.87:42528 (IP=0.0.0.0:389)"}
+{"raw": "6ade1812.18892451 0x7540ed1336c0 conn=1006 fd=11 ACCEPT from IP=172.21.51.31:56886 (IP=0.0.0.0:389)"}
+{"raw": "6ade1812.1889fcce 0x7540ed1336c0 conn=1006 op=0 BIND dn=\"uid=svc-backup,ou=people,dc=lab,dc=example\" method=128"}
+{"raw": "6ade1812.188bf217 0x7540ed1336c0 conn=1006 op=0 RESULT tag=97 err=0 qtime=0.000008 etime=0.000161 text="}
+{"raw": "6ade1812.188f03c4 0x7540ed9346c0 conn=1006 op=1 SRCH base=\"ou=people,dc=lab,dc=example\" scope=2 deref=0 filter=\"(uid=*)\""}
+{"raw": "6ade1813.12269940 0x7540ed9346c0 conn=1007 op=0 RESULT tag=97 err=49 qtime=0.000007 etime=0.000131 text="}
+{"raw": "6ade1814.08b7890f 0x7540ed9346c0 conn=1008 fd=11 ACCEPT from IP=172.21.51.89:35918 (IP=0.0.0.0:389)"}
+{"raw": "6ade1814.08bd5906 0x7540ed1336c0 conn=1008 op=0 RESULT tag=97 err=0 qtime=0.000017 etime=0.000124 text="}
+{"raw": "6ade1814.08c1d8a7 0x7540ed9346c0 conn=1008 op=1 SRCH base=\"dc=lab,dc=example\" scope=2 deref=0 filter=\"(objectClass=groupOfNames)\""}
+{"raw": "6ade1815.02bf869f 0x7540ed9346c0 conn=1009 op=0 BIND dn=\"uid=rui,ou=people,dc=lab,dc=example\" mech=SIMPLE bind_ssf=0 ssf=0"}
+{"raw": "6ade1815.02c11633 0x7540ed9346c0 conn=1009 op=0 RESULT tag=97 err=0 qtime=0.000009 etime=0.000284 text="}
+{"raw": "6ade1815.02c6e644 0x7540ed1336c0 conn=1009 op=1 RESULT oid= err=0 qtime=0.000015 etime=0.000075 text="}
+{"raw": "6ade1815.38aae454 0x7540ed1336c0 conn=1010 fd=11 ACCEPT from IP=172.21.51.88:46554 (IP=0.0.0.0:389)"}
+{"raw": "6ade1815.38abb036 0x7540ed1336c0 conn=1010 op=0 BIND dn=\"cn=directory\" method=128"}
+{"raw": "6ade1816.320ba1ba 0x7540ed1336c0 conn=1011 op=0 BIND dn=\"uid=operator,ou=people,dc=lab,dc=example\" method=128"}
+{"raw": "6ade1816.320d6aec 0x7540ed1336c0 conn=1011 op=0 RESULT tag=97 err=49 qtime=0.000008 etime=0.000148 text="}

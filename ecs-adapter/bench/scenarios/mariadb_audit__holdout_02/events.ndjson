@@ -1,0 +1,10 @@
+{"raw": "20261015 15:00:24,b2558312fb0c,report,172.21.0.3,13,0,CONNECT,warehouse,,0"}
+{"raw": "20261015 15:00:25,b2558312fb0c,etl,172.21.0.3,15,26,QUERY,warehouse,'CREATE TABLE facts (id int)',0"}
+{"raw": "20261015 15:00:27,b2558312fb0c,backup,172.21.0.3,17,0,FAILED_CONNECT,,,1045"}
+{"raw": "20261015 15:00:27,b2558312fb0c,sa,172.21.0.3,18,0,DISCONNECT,,,0"}
+{"raw": "20261015 15:00:28,b2558312fb0c,etl,172.21.0.3,19,29,QUERY,warehouse,'CREATE TABLE dims (id int)',0"}
+{"raw": "20261015 15:00:25,b2558312fb0c,etl,172.21.0.3,15,27,QUERY,warehouse,'DROP TABLE facts',0"}
+{"raw": "20261015 15:00:28,b2558312fb0c,etl,172.21.0.3,19,30,QUERY,warehouse,'TRUNCATE TABLE dims',0"}
+{"raw": "20261015 15:00:25,b2558312fb0c,report,172.21.0.3,14,0,FAILED_CONNECT,,,1045"}
+{"raw": "20261015 15:00:26,b2558312fb0c,etl,172.21.0.3,16,0,FAILED_CONNECT,,,1045"}
+{"raw": "20261015 15:00:28,b2558312fb0c,report,172.21.0.3,20,0,CONNECT,warehouse,,0"}

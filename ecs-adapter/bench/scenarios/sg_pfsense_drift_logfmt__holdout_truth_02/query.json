@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "destination.port": 443
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "source_id": "r4_caddy_json",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "json"
+  },
+  "fields": [
+    {
+      "source_key": "request.remote_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "request.remote_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "request.method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "request.uri",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "request.host",
+      "ecs_field": "url.domain",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "request.proto",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "size",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "bytes_read",
+      "ecs_field": "http.request.body.bytes",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "logger",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "request.client_ip",
+      "reason": "same value as remote_ip"
+    },
+    {
+      "source_key": "duration",
+      "reason": "event.duration is in nanoseconds; declined"
+    },
+    {
+      "source_key": "ts",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "msg",
+      "reason": "constant text"
+    },
+    {
+      "source_key": "user_id",
+      "reason": "empty"
+    },
+    {
+      "source_key": "resp_headers",
+      "reason": "response headers, lists of values"
+    },
+    {
+      "source_key": "request.headers",
+      "reason": "request headers, lists of values"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "web"
+    ],
+    "event.dataset": "caddy.access"
+  }
+}

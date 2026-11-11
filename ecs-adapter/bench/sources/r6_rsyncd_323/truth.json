@@ -1,0 +1,92 @@
+{
+  "source_id": "r6_rsyncd_323",
+  "family": "rsyncd",
+  "split": "train_r6",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running rsync 3.2.3 daemon (Debian 11), not copied from documentation or a public dataset. Captured 2026-10-27T16:04:37Z on the author's laptop by testbed/r3/r6_rsyncd.sh (rsync --daemon --log-file=/var/log/rsyncd.log); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 8 (pool r6), OLD VERSION: rsync 3.2.3 daemon, --log-file.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "module",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "rsync_module",
+      "difficulty": "hard",
+      "note": "No ECS field for an rsync module (file.directory is not it).",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_name",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "client_name",
+      "difficulty": "hard",
+      "note": "Constant UNDETERMINED (reverse lookup off).",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r6_rsyncd_323__holdout_01",
+    "r6_rsyncd_323__holdout_02",
+    "r6_rsyncd_323__holdout_03"
+  ],
+  "round3": {
+    "pair": "r6_rsyncd",
+    "role": "old"
+  }
+}

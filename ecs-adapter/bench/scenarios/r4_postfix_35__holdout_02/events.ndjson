@@ -1,0 +1,4 @@
+{"raw": "Oct 22 08:41:17 mail postfix/smtpd[108]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 550 5.1.1 <info@r4.local>: Recipient address rejected: User unknown in local recipient table; from=<news@bulk.test> to=<info@r4.local> proto=ESMTP helo=<bulk.test>"}
+{"raw": "Oct 22 08:41:17 mail postfix/local[114]: 4E2D3E91AAB: to=<ines@r4.local>, relay=local, delay=0.04, delays=0.02/0/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)"}
+{"raw": "Oct 22 08:41:18 mail postfix/smtpd[122]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 554 5.7.1 <ceo@yahoo.com>: Relay access denied; from=<z@hijack.test> to=<ceo@yahoo.com> proto=ESMTP helo=<hijack.test>"}
+{"raw": "Oct 22 08:41:17 mail postfix/qmgr[98]: 4E2D3E91AAB: from=<dave@home.example>, size=237, nrcpt=1 (queue active)"}

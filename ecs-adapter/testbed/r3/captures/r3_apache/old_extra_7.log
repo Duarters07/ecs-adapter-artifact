@@ -1,0 +1,13 @@
+[Sun Oct 25 22:15:33 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/old.zip
+[Sun Oct 25 22:15:33 2026] [error] [client 172.21.0.3] user rui: authentication failure for "/members/": Password Mismatch, referer: http://intranet.local/status
+[Sun Oct 25 22:15:33 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/
+[Sun Oct 25 22:15:33 2026] [error] [client 172.21.0.3] user carlos not found: /members/q3.html
+[Sun Oct 25 22:15:33 2026] [error] [client 172.21.0.3] user guest not found: /members/
+[Sun Oct 25 22:15:34 2026] [error] [client 172.21.0.3] user ines: authentication failure for "/reports/notes.txt": Password Mismatch, referer: http://portal.local/ops
+[Sun Oct 25 22:15:34 2026] [error] [client 172.21.0.3] user service not found: /members/db.sql, referer: http://home.local/intranet
+[Sun Oct 25 22:15:34 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/wp-login.php, referer: http://portal.local/qa
+[Sun Oct 25 22:15:34 2026] [error] [client 172.21.0.3] user backup not found: /reports/, referer: http://intranet.local/home
+[Sun Oct 25 22:15:34 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/login.php
+[Sun Oct 25 22:15:35 2026] [error] [client 172.21.0.3] user admin not found: /members/
+[Sun Oct 25 22:15:35 2026] [error] [client 172.21.0.3] user luis not found: /members/q3.html
+[Sun Oct 25 22:15:35 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/, referer: http://portal.local/wiki

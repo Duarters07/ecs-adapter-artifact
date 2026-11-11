@@ -1,0 +1,13 @@
+1792969179: New connection from 172.21.50.182 on port 1884.
+1792969179: Socket error on client <unknown>, disconnecting.
+1792969180: New connection from 172.21.50.164 on port 1883.
+1792969180: Socket error on client <unknown>, disconnecting.
+1792969181: New connection from 172.21.50.225 on port 1883.
+1792969181: Socket error on client <unknown>, disconnecting.
+1792969182: New connection from 172.21.50.182 on port 1884.
+1792969182: Socket error on client <unknown>, disconnecting.
+1792969182: New connection from 172.21.50.240 on port 1883.
+1792969182: New client connected from 172.21.50.240 as probe-finance (p2, c1, k60, u'sensor01').
+1792969182: Client probe-finance disconnected.
+1792969183: New connection from 172.21.50.131 on port 1883.
+1792969183: Socket error on client <unknown>, disconnecting.

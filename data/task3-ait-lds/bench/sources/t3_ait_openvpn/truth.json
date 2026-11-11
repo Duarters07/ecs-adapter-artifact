@@ -1,0 +1,34 @@
+{
+ "source_id": "t3_ait_openvpn",
+ "review_status": "DRAFT - every field below awaits the author's review",
+ "fields": [
+  {
+   "source_key": "user",
+   "ecs_field": "user.name",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "client_ip",
+   "ecs_field": "source.ip",
+   "confidence": 1.0,
+   "type": "ip",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "client_port",
+   "ecs_field": "source.port",
+   "confidence": 1.0,
+   "type": "long",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "text",
+   "ecs_field": "message",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  }
+ ],
+ "split": "test_t3",
+ "family": "openvpn"
+}

@@ -1,0 +1,5 @@
+[2026-10-25T13:56:54.860Z] "GET / HTTP/1.1" 200 - 0 615 0 0 "-" "Mozilla/5.0 Safari/15.1" "716fbf52-153f-4cb2-bd4d-e26a9483db83" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T13:56:55.112Z] "GET /admin/config HTTP/1.1" 403 - 0 10 0 - "-" "curl/7.79.1" "1116ec2f-06a7-4abc-998a-b5955a89e394" "r5-envoy-old:10000" "-"
+[2026-10-25T13:56:55.363Z] "GET /nope.php HTTP/1.1" 404 - 0 153 0 0 "-" "zgrab/0.x" "1d284849-9d48-415d-818e-9d439eb5bccb" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T13:56:55.614Z] "POST /login HTTP/1.1" 404 - 3 153 0 0 "-" "Go-http-client/1.1" "fe26e548-6d67-40ef-b9c5-dce4c96a3e7b" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T13:56:55.866Z] "GET /index.html HTTP/1.1" 200 - 0 615 0 0 "-" "Mozilla/5.0 Edge/96.0" "c067686b-cca9-4887-a4b8-79038c98c1c0" "r5-envoy-old:10000" "172.21.0.2:80"

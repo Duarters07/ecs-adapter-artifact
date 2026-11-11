@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "rule.version": "1"
+        }
+      }
+    ]
+  }
+}

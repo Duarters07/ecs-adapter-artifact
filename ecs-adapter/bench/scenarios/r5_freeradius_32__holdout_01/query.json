@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "pap: Cleartext password does not match \"known good\" password"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "vpn-ops"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "vpn-ops"
+              }
+            },
+            {
+              "term": {
+                "user.name": "vpn-ops"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

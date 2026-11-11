@@ -1,0 +1,11 @@
+{
+ "bool": {
+  "filter": [
+   {
+    "term": {
+     "destination.ip": "127.0.0.1"
+    }
+   }
+  ]
+ }
+}

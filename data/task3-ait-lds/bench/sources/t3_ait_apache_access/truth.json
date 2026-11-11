@@ -1,0 +1,59 @@
+{
+ "source_id": "t3_ait_apache_access",
+ "review_status": "DRAFT - every field below awaits the author's review",
+ "fields": [
+  {
+   "source_key": "client_ip",
+   "ecs_field": "source.ip",
+   "confidence": 1.0,
+   "type": "ip",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "method",
+   "ecs_field": "http.request.method",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "url",
+   "ecs_field": "url.original",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "http_version",
+   "ecs_field": "http.version",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "status",
+   "ecs_field": "http.response.status_code",
+   "confidence": 1.0,
+   "type": "long",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "bytes",
+   "ecs_field": "http.response.body.bytes",
+   "confidence": 1.0,
+   "type": "long",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "referrer",
+   "ecs_field": "http.request.referrer",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "user_agent",
+   "ecs_field": "user_agent.original",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  }
+ ],
+ "split": "test_t3",
+ "family": "apache-access"
+}

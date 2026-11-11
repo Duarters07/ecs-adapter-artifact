@@ -1,0 +1,8 @@
+{"raw": "<38>1 2026-10-19T23:41:38.361322+00:00 web01 sshd 84 - -  Accepted password for ines from 172.21.0.3 port 48860 ssh2"}
+{"raw": "<81>1 2026-10-19T23:41:54.200748+00:00 web01 sudo - - -     tiago : user NOT in sudoers ; PWD=/home/tiago ; USER=root ; COMMAND=/usr/bin/tail /var/log/auth.log"}
+{"raw": "<38>1 2026-10-19T23:41:45.502219+00:00 web01 sshd 94 - -  Failed password for invalid user operator from 172.21.0.3 port 48874 ssh2"}
+{"raw": "<85>1 2026-10-19T23:41:54.553536+00:00 web01 sudo - - -       rui : PWD=/home/rui ; USER=root ; COMMAND=/usr/sbin/usermod -L ana"}
+{"raw": "<38>1 2026-10-19T23:41:47.399239+00:00 web01 sshd 97 - -  Invalid user support from 172.21.0.3 port 44152"}
+{"raw": "<81>1 2026-10-19T23:41:53.846055+00:00 web01 sudo - - -      ines : 1 incorrect password attempt ; PWD=/home/ines ; USER=root ; COMMAND=/usr/bin/uptime"}
+{"raw": "<81>1 2026-10-19T23:41:54.935331+00:00 web01 sudo - - -     marta : user NOT in sudoers ; PWD=/home/marta ; USER=root ; COMMAND=/usr/bin/passwd root"}
+{"raw": "<38>1 2026-10-19T23:41:41.557117+00:00 web01 sshd 92 - -  Failed password for tiago from 172.21.0.3 port 48864 ssh2"}

@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.ip": "172.21.80.31"
+              }
+            },
+            {
+              "term": {
+                "source.ip": "172.21.80.31"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "event.action": "Failed login attempt"
+        }
+      }
+    ]
+  }
+}

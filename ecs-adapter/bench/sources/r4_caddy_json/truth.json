@@ -1,0 +1,132 @@
+{
+  "source_id": "r4_caddy_json",
+  "family": "caddy",
+  "split": "test_r4",
+  "category_hint": "web",
+  "contamination_risk": "high",
+  "origin": "Produced by running Caddy 2.8 (image caddy:2.8-alpine), log format json, not copied from documentation or a public dataset. Captured 2026-10-22T08:35:18Z on the author's laptop by testbed/r3/r4_caddy.sh (docker logs, stdout, http.log.access lines); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 4 (fresh held-out), NEW CONFIGURATION of r4_caddy_console: the access log as JSON.",
+  "fields": [
+    {
+      "source_key": "request.remote_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request.remote_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request.method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "request_method",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request.uri",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "role": "request_uri",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request.host",
+      "ecs_field": "url.domain",
+      "type": "keyword",
+      "role": "requested_host",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request.proto",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "role": "protocol_version",
+      "difficulty": "medium",
+      "note": "Value convention: HTTP/1.1 on the wire, 1.1 in ECS - no rule filters on it.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "role": "status_code",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "size",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "role": "response_body_size",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes_read",
+      "ecs_field": "http.request.body.bytes",
+      "type": "long",
+      "role": "request_body_size",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "logger",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "role": "logger",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request.client_ip",
+      "ecs_field": null,
+      "type": "ip",
+      "role": "client_ip_resolved",
+      "difficulty": "hard",
+      "note": "Same value as remote_ip here; one key per field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "duration",
+      "ecs_field": null,
+      "type": "float",
+      "role": "duration",
+      "difficulty": "hard",
+      "note": "event.duration is in nanoseconds; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r4_caddy_json__holdout_02",
+    "r4_caddy_json__holdout_03",
+    "r4_caddy_json__holdout_04",
+    "r4_caddy_json__holdout_05"
+  ],
+  "round3": {
+    "pair": "r4_caddy",
+    "role": "new"
+  }
+}

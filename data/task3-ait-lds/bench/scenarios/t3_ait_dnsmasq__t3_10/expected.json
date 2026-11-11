@@ -1,0 +1,14 @@
+{
+ "expected_hits": 16,
+ "targets": [
+  "dns.question.type",
+  "source.ip"
+ ],
+ "labels": [
+  "foothold",
+  "network_scan"
+ ],
+ "message_type": 0,
+ "origin": "AIT-LDS v2.1 fox, inet-firewall/logs/dnsmasq.log: 16 lines labelled ['foothold', 'network_scan'] and 60 unlabelled lines (seed 0); expected_hits counted on the reference parser's parse",
+ "split": "holdout"
+}

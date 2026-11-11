@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-25T15:14:45Z","old":"Debian 11 dropbear 2020.81-3+deb11u3 (packages from snapshot.debian.org 2026-08-24)","new":"Debian 13 dropbear 2025.89-1~deb13u1","collected_by":"docker logs, stderr (dropbear -F -E)"}

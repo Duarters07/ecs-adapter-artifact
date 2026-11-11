@@ -1,0 +1,199 @@
+{
+  "source_id": "r7_synapse_text",
+  "family": "synapse",
+  "split": "train_r7",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Matrix Synapse 1.120.2 (official image), default text formatter, not copied from documentation or a public dataset. Captured 2026-10-30T19:36:11Z on the author's laptop by testbed/r3/r7_synapse.sh (docker logs (console): login handler and access lines for /login); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), OLD VERSION: Synapse 1.120.2, default text log formatter.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "login_user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user_id",
+      "ecs_field": "user.id",
+      "type": "keyword",
+      "role": "account_id",
+      "difficulty": "medium",
+      "note": "The full Matrix id.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "role": "http_status",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "http_method",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "url",
+      "ecs_field": "url.path",
+      "type": "keyword",
+      "role": "url_path",
+      "difficulty": "easy",
+      "note": "url.original is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "http_version",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "role": "http_version",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user_agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "role": "user_agent",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "role": "response_bytes",
+      "difficulty": "medium",
+      "note": "http.response.bytes is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request",
+      "ecs_field": "http.request.id",
+      "type": "keyword",
+      "role": "request_id",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "logger",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "role": "logger",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "lineno",
+      "ecs_field": "log.origin.file.line",
+      "type": "long",
+      "role": "source_line",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "device",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "device_id",
+      "difficulty": "hard",
+      "note": "A Matrix device id; no ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "site",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "listener_port",
+      "difficulty": "hard",
+      "note": "The listener's tag; no ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "requester",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "requester",
+      "difficulty": "hard",
+      "note": "None for unauthenticated requests.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timing",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timings",
+      "difficulty": "hard",
+      "note": "Several durations; no ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dbevts",
+      "ecs_field": null,
+      "type": "long",
+      "role": "db_events",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_synapse_text__holdout_01",
+    "r7_synapse_text__holdout_02",
+    "r7_synapse_text__holdout_03",
+    "r7_synapse_text__holdout_04",
+    "r7_synapse_text__holdout_05"
+  ],
+  "round3": {
+    "pair": "r7_synapse",
+    "role": "old"
+  }
+}

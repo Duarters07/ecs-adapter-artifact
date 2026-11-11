@@ -1,0 +1,6 @@
+{"raw": "Oct 22 08:44:59 imap-login: Info: Logged in: user=<tiago>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=43, session=</mPB4GleUoKsFQAD>"}
+{"raw": "Oct 22 08:45:04 imap-login: Info: Login aborted: Connection closed (auth failed, 1 attempts in 4 secs) (auth_failed): user=<operator>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<MXsI4WleWIKsFQAD>"}
+{"raw": "Oct 22 08:45:09 imap-login: Info: Logged in: user=<ines>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=50, session=</cxP4Wle2IGsFQAD>"}
+{"raw": "Oct 22 08:45:17 imap-login: Info: Logged in: user=<marta>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=57, session=<4uPX4Wle8IGsFQAD>"}
+{"raw": "Oct 22 08:45:13 imap-login: Info: Login aborted: Connection closed (auth failed, 1 attempts in 4 secs) (auth_failed): user=<support>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<5uSW4Wle4IGsFQAD>"}
+{"raw": "Oct 22 08:44:55 imap-login: Info: Login aborted: Connection closed (auth failed, 1 attempts in 4 secs) (auth_failed): user=<tiago>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<IdeA4GleuN+sFQAD>"}

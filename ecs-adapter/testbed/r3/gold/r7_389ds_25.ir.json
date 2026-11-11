@@ -1,0 +1,113 @@
+{
+  "source_id": "r7_389ds_25",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^\\[(?<timestamp>%{MONTHDAY}/%{MONTH}/%{YEAR}:%{TIME} %{ISO8601_TIMEZONE})\\] conn=%{INT:conn} fd=%{INT:fd} slot=%{INT:slot} (?<action>connection) from %{IP:client_ip} to %{IP:server_ip}$",
+    "alternatives": [
+      "^\\[(?<timestamp>%{MONTHDAY}/%{MONTH}/%{YEAR}:%{TIME} %{ISO8601_TIMEZONE})\\] conn=%{INT:conn} op=%{INT:op} (?<action>BIND) dn=\"(?<bind_dn>[^\"]*)\" method=%{NOTSPACE:method} version=%{INT:version}$",
+      "^\\[(?<timestamp>%{MONTHDAY}/%{MONTH}/%{YEAR}:%{TIME} %{ISO8601_TIMEZONE})\\] conn=%{INT:conn} op=%{INT:op} (?<action>RESULT) err=%{INT:err} tag=%{INT:tag} nentries=%{INT:nentries} wtime=%{NUMBER:wtime} optime=%{NUMBER:optime} etime=%{NUMBER:etime}(?: dn=\"(?<bind_dn>[^\"]*)\"| - %{GREEDYDATA:reason})?$",
+      "^\\[(?<timestamp>%{MONTHDAY}/%{MONTH}/%{YEAR}:%{TIME} %{ISO8601_TIMEZONE})\\] conn=%{INT:conn} op=-?%{INT:op} fd=%{INT:fd} (?<action>Disconnect) - %{GREEDYDATA:close_reason}$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "server_ip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "bind_dn",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "err",
+      "ecs_field": "event.code",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "tag",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "nentries",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "wtime",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "optime",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "etime",
+      "reason": "declined"
+    },
+    {
+      "source_key": "method",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "version",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "fd",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "slot",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "close_reason",
+      "reason": "declined"
+    },
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "conn",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "op",
+      "reason": "no ECS field"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.dataset": "389ds.access"
+  }
+}

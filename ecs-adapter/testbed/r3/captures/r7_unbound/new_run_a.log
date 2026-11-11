@@ -1,0 +1,9 @@
+[1793387958] unbound[1:0] info: 172.21.86.11 www.lab.example. A IN
+[1793387958] unbound[1:0] info: 172.21.86.11 www.lab.example. A IN NOERROR 0.000000 1 60
+[1793387959] unbound[1:0] info: 172.21.86.11 nope.lab.example. A IN
+[1793387959] unbound[1:0] info: 172.21.86.11 nope.lab.example. A IN NXDOMAIN 0.000000 1 45
+[1793387960] unbound[1:0] info: 172.21.86.12 lab.example. TXT IN
+[1793387960] unbound[1:0] info: 172.21.86.12 lab.example. TXT IN NOERROR 0.000000 1 58
+[1793387960] unbound[1:0] info: 172.21.86.211 null TYPE0 CLASS0 REFUSED 0.000000 1 12
+[1793387961] unbound[1:0] info: 172.21.86.13 lab.example. MX IN
+[1793387961] unbound[1:0] info: 172.21.86.13 lab.example. MX IN NOERROR 0.000000 1 40

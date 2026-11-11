@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "url.domain": "billing.internal"
+        }
+      },
+      {
+        "term": {
+          "url.path": "/invoices/open"
+        }
+      }
+    ]
+  }
+}

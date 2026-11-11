@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "http.request.id": "3a3a131fa5c0221dc5c4cfa62e23202f"
+        }
+      },
+      {
+        "term": {
+          "http.request.method": "GET"
+        }
+      }
+    ]
+  }
+}

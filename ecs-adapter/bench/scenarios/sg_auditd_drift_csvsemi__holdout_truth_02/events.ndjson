@@ -1,0 +1,14 @@
+{"raw": "2026-10-14T08:08:05+00:00;ssh;barbara.sanders;2947;2947;51;ws-ops-001.acme.local;/usr/bin/ssh;26737;/tmp;7904223;pts1;57505;fd:01;2947;600;59"}
+{"raw": "2026-10-14T08:12:28+00:00;cp;barbara.sanders;2947;2947;438;ws-ops-001.acme.local;/usr/bin/cp;87222;/home/barbara.sanders/src;5451643;pts3;30191;fd:01;2947;3906;59"}
+{"raw": "2026-10-14T08:14:57+00:00;ls;barbara.sanders;2947;2947;125;ws-ops-001.acme.local;/usr/bin/ls;456925;/tmp;7990796;pts5;16656;fc:02;2947;1619;59"}
+{"raw": "2026-10-14T08:24:11+00:00;vim;barbara.sanders;2947;2947;672;ws-ops-001.acme.local;/usr/bin/vim;509305;/tmp;4366973;pts3;45373;fc:02;2947;3291;59"}
+{"raw": "2026-10-14T08:35:02+00:00;git;barbara.sanders;2947;2947;264;ws-ops-001.acme.local;/usr/bin/git;151648;/home/barbara.sanders/src;7454959;pts2;7816;08:01;2947;564;59"}
+{"raw": "2026-10-14T08:35:11+00:00;ssh;barbara.sanders;2947;2947;141;ws-ops-001.acme.local;/usr/bin/ssh;54983;/opt/app;7997837;pts5;33259;08:01;2947;3852;59"}
+{"raw": "2026-10-14T08:37:05+00:00;tcpdump;barbara.sanders;2947;2947;108;ws-ops-001.acme.local;/usr/bin/tcpdump;21574;/var/log;9356237;pts2;29561;fd:01;2947;2451;59"}
+{"raw": "2026-10-14T08:38:02+00:00;cat;barbara.sanders;2947;2947;546;ws-ops-001.acme.local;/usr/bin/cat;690926;/tmp;4542833;pts1;21533;08:01;2947;1701;59"}
+{"raw": "2026-10-14T08:08:55+00:00;ssh;theresa.williams;4514;4514;469;ws-ops-002.acme.local;/usr/bin/ssh;213868;/tmp;367491;pts3;21614;08:01;4514;916;59"}
+{"raw": "2026-10-14T08:09:10+00:00;cp;michele.roberts;3226;3226;142;ws-ops-003.acme.local;/usr/bin/cp;606504;/home/michele.roberts;2680506;pts1;45175;fd:01;3226;3309;59"}
+{"raw": "2026-10-14T08:09:45+00:00;journalctl;drew.wilson;4664;4664;270;ws-ops-004.acme.local;/usr/bin/journalctl;853184;/tmp;6814749;pts1;7602;fc:02;4664;955;59"}
+{"raw": "2026-10-14T08:10:27+00:00;sudo;debra.jones;2782;2782;779;ws-it-002.acme.local;/usr/bin/sudo;193118;/home/debra.jones/src;400169;pts2;58769;fc:02;2782;2243;59"}
+{"raw": "2026-10-14T08:11:12+00:00;docker;debra.jones;2782;2782;147;ws-it-002.acme.local;/usr/bin/docker;172825;/opt/app;7311372;pts1;37581;fc:02;2782;2140;59"}
+{"raw": "2026-10-14T08:12:18+00:00;git;michele.roberts;3226;3226;791;ws-ops-003.acme.local;/usr/bin/git;708818;/home/michele.roberts/src;4732759;pts1;19912;fc:02;3226;2621;59"}

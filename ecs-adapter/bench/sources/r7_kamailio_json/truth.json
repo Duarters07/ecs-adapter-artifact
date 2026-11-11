@@ -1,0 +1,199 @@
+{
+  "source_id": "r7_kamailio_json",
+  "family": "kamailio",
+  "split": "test_r7",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Kamailio 5.8.4 (ghcr.io official image), --log-engine=json:M, not copied from documentation or a public dataset. Captured 2026-10-30T20:12:56Z on the author's laptop by testbed/r3/r7_kamailio.sh (docker logs (stderr): the registrar script log lines (challenge, accepted, auth failed)); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), NEW VERSION of r7_kamailio_text: core JSON log engine (same version and config).",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "domain",
+      "ecs_field": "user.domain",
+      "type": "keyword",
+      "role": "account_domain",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user_agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "role": "user_agent",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "module",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "role": "logger",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "file",
+      "ecs_field": "log.origin.file.name",
+      "type": "keyword",
+      "role": "source_file",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "line",
+      "ecs_field": "log.origin.file.line",
+      "type": "long",
+      "role": "source_line",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "call_id",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "call_id",
+      "difficulty": "hard",
+      "note": "SIP Call-ID; no ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "cseq",
+      "ecs_field": null,
+      "type": "long",
+      "role": "sequence",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "sip_method",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "sip_method",
+      "difficulty": "hard",
+      "note": "No ECS field for a SIP method.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "msg_type",
+      "ecs_field": null,
+      "type": "long",
+      "role": "message_type",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "contact",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "contact_uri",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "expires",
+      "ecs_field": null,
+      "type": "long",
+      "role": "lifetime",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "idx",
+      "ecs_field": null,
+      "type": "long",
+      "role": "process_rank",
+      "difficulty": "hard",
+      "note": "Kamailio's process rank, not a pid.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "function",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "function",
+      "difficulty": "hard",
+      "note": "Empty for xlog lines.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_kamailio_json__holdout_01",
+    "r7_kamailio_json__holdout_02",
+    "r7_kamailio_json__holdout_04",
+    "r7_kamailio_json__holdout_06"
+  ],
+  "round3": {
+    "pair": "r7_kamailio",
+    "role": "new"
+  }
+}

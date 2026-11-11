@@ -1,0 +1,12 @@
+CONNECT   Oct 27 16:51:13 [7]: Connect (file descriptor 10): festive_euler.r3-net [172.21.66.227]
+NOTICE    Oct 27 16:51:13 [7]: Unauthorized connection from "festive_euler.r3-net" [172.21.66.227].
+CONNECT   Oct 27 16:51:14 [12]: Connect (file descriptor 10): quirky_heisenberg.r3-net [172.21.66.161]
+NOTICE    Oct 27 16:51:14 [12]: Unauthorized connection from "quirky_heisenberg.r3-net" [172.21.66.161].
+CONNECT   Oct 27 16:51:14 [13]: Connect (file descriptor 10): festive_sanderson.r3-net [172.21.66.241]
+NOTICE    Oct 27 16:51:14 [13]: Unauthorized connection from "festive_sanderson.r3-net" [172.21.66.241].
+CONNECT   Oct 27 16:51:15 [8]: Connect (file descriptor 10): interesting_chatterjee.r3-net [172.21.66.116]
+CONNECT   Oct 27 16:51:15 [8]: Request (file descriptor 10): GET http://r6-web-target/ HTTP/1.1
+CONNECT   Oct 27 16:51:16 [13]: Connect (file descriptor 10): peaceful_ellis.r3-net [172.21.66.135]
+NOTICE    Oct 27 16:51:16 [13]: Unauthorized connection from "peaceful_ellis.r3-net" [172.21.66.135].
+CONNECT   Oct 27 16:51:17 [15]: Connect (file descriptor 10): condescending_euler.r3-net [172.21.66.187]
+NOTICE    Oct 27 16:51:17 [15]: Unauthorized connection from "condescending_euler.r3-net" [172.21.66.187].

@@ -1,0 +1,6 @@
+Sun Oct 25 23:04:52 2026 : Auth: (0) Login OK: [vpn-ops] (from client vpn-gw port 27)
+Sun Oct 25 23:04:55 2026 : Auth: (1) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [root] (from client vpn-gw port 34)
+Sun Oct 25 23:04:57 2026 : Auth: (2) Login incorrect (pap: Cleartext password does not match "known good" password): [rui] (from client vpn-gw port 34)
+Sun Oct 25 23:04:59 2026 : Auth: (3) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [guest] (from client ap-floor1 port 28)
+Sun Oct 25 23:05:01 2026 : Auth: (4) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [irene] (from client ap-floor1 port 58)
+Sun Oct 25 23:05:03 2026 : Auth: (5) Login OK: [ana] (from client ap-floor1 port 54)

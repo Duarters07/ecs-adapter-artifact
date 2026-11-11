@@ -1,0 +1,14 @@
+{"raw": "Oct 15 08:01:26 vpn openvpn[2921]: nicholas.wilson/192.0.2.195:2486 TLS: soft reset sec=3600/3600 bytes=27522286/-1 pkts=22935/0"}
+{"raw": "Oct 15 08:05:16 vpn openvpn[2921]: nicholas.wilson/192.0.2.195:62394 TLS: soft reset sec=3600/3600 bytes=453433942/-1 pkts=377861/0"}
+{"raw": "Oct 15 08:11:20 vpn openvpn[2921]: nicholas.wilson/192.0.2.195:40336 TLS: soft reset sec=3600/3600 bytes=30237904/-1 pkts=25198/0"}
+{"raw": "Oct 15 08:16:16 vpn openvpn[2921]: nicholas.wilson/192.0.2.195:32073 TLS: soft reset sec=3600/3600 bytes=122811279/-1 pkts=102342/0"}
+{"raw": "Oct 15 08:17:12 vpn openvpn[2921]: nicholas.wilson/192.0.2.195:53203 TLS: soft reset sec=3600/3600 bytes=202105667/-1 pkts=168421/0"}
+{"raw": "Oct 15 08:20:56 vpn openvpn[2921]: nicholas.wilson/192.0.2.195:42373 TLS: soft reset sec=3600/3600 bytes=457935475/-1 pkts=381612/0"}
+{"raw": "Oct 15 08:25:53 vpn openvpn[2921]: nicholas.wilson/192.0.2.195:58146 TLS: soft reset sec=3600/3600 bytes=432192865/-1 pkts=360160/0"}
+{"raw": "Oct 15 08:27:18 vpn openvpn[2921]: nicholas.wilson/192.0.2.195:14985 TLS: soft reset sec=3600/3600 bytes=286390257/-1 pkts=238658/0"}
+{"raw": "Oct 15 08:01:20 vpn openvpn[2921]: nicholas.guerrero/192.0.2.241:50980 TLS: soft reset sec=3600/3600 bytes=823929238/-1 pkts=686607/0"}
+{"raw": "Oct 15 08:01:32 vpn openvpn[2921]: nicholas.guerrero/192.0.2.241:35602 TLS: soft reset sec=3600/3600 bytes=238239615/-1 pkts=198533/0"}
+{"raw": "Oct 15 08:02:46 vpn openvpn[2921]: nicholas.guerrero/192.0.2.241:61460 TLS: soft reset sec=3600/3600 bytes=689858324/-1 pkts=574881/0"}
+{"raw": "Oct 15 08:04:09 vpn openvpn[2921]: shawn.simpson/203.0.113.243:48448 TLS: soft reset sec=3600/3600 bytes=318446764/-1 pkts=265372/0"}
+{"raw": "Oct 15 08:06:44 vpn openvpn[2921]: nicholas.guerrero/192.0.2.241:12362 TLS: soft reset sec=3600/3600 bytes=394396212/-1 pkts=328663/0"}
+{"raw": "Oct 15 08:07:53 vpn openvpn[2921]: shawn.simpson/203.0.113.243:56071 TLS: soft reset sec=3600/3600 bytes=422454446/-1 pkts=352045/0"}

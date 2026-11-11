@@ -1,0 +1,12 @@
+2026/10/27 16:04:12 [25] connect from UNDETERMINED (172.21.65.14)
+2026/10/27 16:04:12 [25] rsync allowed access on module backup from UNDETERMINED (172.21.65.14)
+2026/10/27 16:04:13 [26] connect from UNDETERMINED (172.21.65.14)
+2026/10/27 16:04:13 [26] rsync allowed access on module backup from UNDETERMINED (172.21.65.14)
+2026/10/27 16:04:13 [26] auth failed on module backup from UNDETERMINED (172.21.65.14) for rui: password mismatch
+2026/10/27 16:04:13 [27] connect from UNDETERMINED (172.21.65.15)
+2026/10/27 16:04:13 [27] rsync allowed access on module finance from UNDETERMINED (172.21.65.15)
+2026/10/27 16:04:14 [28] connect from UNDETERMINED (172.21.65.97)
+2026/10/27 16:04:14 [28] unknown module 'home' tried from UNDETERMINED (172.21.65.97)
+2026/10/27 16:04:16 [29] connect from UNDETERMINED (172.21.65.16)
+2026/10/27 16:04:16 [29] rsync allowed access on module backup from UNDETERMINED (172.21.65.16)
+2026/10/27 16:04:16 [29] auth failed on module backup from UNDETERMINED (172.21.65.16) for scanner: no matching rule

@@ -1,0 +1,5 @@
+[2026-10-30 21:16:03.037] nsd[8]: info: axfr for lab.example. from 172.21.85.10
+[2026-10-30 21:16:04.003] nsd[8]: info: axfr for lab.example. from 172.21.85.201 refused, no acl matches
+[2026-10-30 21:16:04.982] nsd[8]: info: ixfr for lab.example. from 172.21.85.11
+[2026-10-30 21:16:06.207] nsd[8]: info: axfr for other.example. from 172.21.85.10 refused, no acl matches
+[2026-10-30 21:16:07.225] nsd[8]: info: axfr for corp.example. from 172.21.85.202 refused, no acl matches

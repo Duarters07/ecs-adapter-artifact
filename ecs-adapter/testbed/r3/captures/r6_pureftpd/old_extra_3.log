@@ -1,0 +1,20 @@
+2026-10-27T16:44:22.767488+00:00 files02 pure-ftpd: (?@172.21.64.184) [INFO] New connection from 172.21.64.184
+2026-10-27T16:44:26.019834+00:00 files02 pure-ftpd: (?@172.21.64.184) [WARNING] Authentication failed for user [root]
+2026-10-27T16:44:26.021226+00:00 files02 pure-ftpd: (?@172.21.64.184) [INFO] Logout.
+2026-10-27T16:44:26.741544+00:00 files02 pure-ftpd: (?@172.21.64.125) [INFO] New connection from 172.21.64.125
+2026-10-27T16:44:26.769415+00:00 files02 pure-ftpd: (?@172.21.64.125) [INFO] rui is now logged in
+2026-10-27T16:44:26.770182+00:00 files02 pure-ftpd: (rui@172.21.64.125) [ERROR] Can't open q3.txt: No such file or directory
+2026-10-27T16:44:26.770204+00:00 files02 pure-ftpd: (rui@172.21.64.125) [INFO] Logout.
+2026-10-27T16:44:27.466507+00:00 files02 pure-ftpd: (?@172.21.64.199) [INFO] New connection from 172.21.64.199
+2026-10-27T16:44:30.506655+00:00 files02 pure-ftpd: (?@172.21.64.199) [WARNING] Authentication failed for user [jorge]
+2026-10-27T16:44:30.507986+00:00 files02 pure-ftpd: (?@172.21.64.199) [INFO] Logout.
+2026-10-27T16:44:31.357597+00:00 files02 pure-ftpd: (?@172.21.64.152) [INFO] New connection from 172.21.64.152
+2026-10-27T16:44:31.370406+00:00 files02 pure-ftpd: (?@172.21.64.152) [INFO] scanner is now logged in
+2026-10-27T16:44:31.371049+00:00 files02 pure-ftpd: (scanner@172.21.64.152) [ERROR] Can't open q3.txt: No such file or directory
+2026-10-27T16:44:31.371141+00:00 files02 pure-ftpd: (scanner@172.21.64.152) [INFO] Logout.
+2026-10-27T16:44:32.063745+00:00 files02 pure-ftpd: (?@172.21.64.228) [INFO] New connection from 172.21.64.228
+2026-10-27T16:44:37.512808+00:00 files02 pure-ftpd: (?@172.21.64.228) [WARNING] Authentication failed for user [root]
+2026-10-27T16:44:37.514096+00:00 files02 pure-ftpd: (?@172.21.64.228) [INFO] Logout.
+2026-10-27T16:44:38.195300+00:00 files02 pure-ftpd: (?@172.21.64.106) [INFO] New connection from 172.21.64.106
+2026-10-27T16:44:41.270460+00:00 files02 pure-ftpd: (?@172.21.64.106) [WARNING] Authentication failed for user [ana]
+2026-10-27T16:44:41.271390+00:00 files02 pure-ftpd: (?@172.21.64.106) [INFO] Logout.

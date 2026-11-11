@@ -1,0 +1,4 @@
+2026-10-30T19:28:24.990643+00:00 [warning] dev-scan@172.21.88.21:45514 [Channel] Cannot subscribe # with options #{nl => 0,qos => 0,rap => 0,rh => 0} due to Not authorized.
+2026-10-30T19:28:24.991414+00:00 [info] dev-scan@172.21.88.21:45514 file: emqx_connection.erl, line: 559, mfa: {emqx_connection,terminate,2}, msg: terminate, pid: <0.2259.0>, reason: {shutdown,normal}
+2026-10-30T19:28:25.836005+00:00 [info] x-203@172.21.88.203:42216 PUBLISH to admin/reboot: <<"{\"v\":1}">>
+2026-10-30T19:28:25.836174+00:00 [info] x-203@172.21.88.203:42216 file: emqx_connection.erl, line: 559, mfa: {emqx_connection,terminate,2}, msg: terminate, pid: <0.2262.0>, reason: {shutdown,normal}

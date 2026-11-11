@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "dns.question.type": "axfr"
+        }
+      },
+      {
+        "term": {
+          "event.reason": "refused, no acl matches"
+        }
+      }
+    ]
+  }
+}

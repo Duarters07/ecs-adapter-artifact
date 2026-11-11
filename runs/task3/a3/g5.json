@@ -1,0 +1,308 @@
+{
+ "parser_lines": 45887,
+ "max_seconds": 0.1965,
+ "over_100ms": 74,
+ "at_cap_1s": 0,
+ "slow": [
+  {
+   "arm": "C",
+   "source_id": "r5_dropbear_2025",
+   "seconds": 0.12,
+   "len": 2129
+  },
+  {
+   "arm": "C",
+   "source_id": "r5_openvpn_26",
+   "seconds": 0.144,
+   "len": 2158
+  },
+  {
+   "arm": "C",
+   "source_id": "r5_openvpn_26",
+   "seconds": 0.143,
+   "len": 2156
+  },
+  {
+   "arm": "C",
+   "source_id": "r5_openvpn_26",
+   "seconds": 0.143,
+   "len": 2157
+  },
+  {
+   "arm": "C",
+   "source_id": "r5_openvpn_26",
+   "seconds": 0.1,
+   "len": 2138
+  },
+  {
+   "arm": "C",
+   "source_id": "r5_openvpn_26",
+   "seconds": 0.144,
+   "len": 2158
+  },
+  {
+   "arm": "C",
+   "source_id": "r5_openvpn_26",
+   "seconds": 0.143,
+   "len": 2156
+  },
+  {
+   "arm": "C",
+   "source_id": "r5_openvpn_26",
+   "seconds": 0.143,
+   "len": 2157
+  },
+  {
+   "arm": "C",
+   "source_id": "r5_openvpn_26",
+   "seconds": 0.101,
+   "len": 2138
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.139,
+   "len": 2130
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.121,
+   "len": 2144
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.139,
+   "len": 2130
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.121,
+   "len": 2144
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.138,
+   "len": 2130
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.121,
+   "len": 2144
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.148,
+   "len": 2130
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.12,
+   "len": 2144
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ocserv_130",
+   "seconds": 0.142,
+   "len": 2147
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ocserv_130",
+   "seconds": 0.141,
+   "len": 2141
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ocserv_130",
+   "seconds": 0.104,
+   "len": 2180
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ocserv_130",
+   "seconds": 0.142,
+   "len": 2147
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ocserv_130",
+   "seconds": 0.14,
+   "len": 2141
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ocserv_130",
+   "seconds": 0.105,
+   "len": 2176
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ocserv_130",
+   "seconds": 0.142,
+   "len": 2147
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_ocserv_130",
+   "seconds": 0.141,
+   "len": 2141
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_pdnsrec_52",
+   "seconds": 0.108,
+   "len": 2481
+  },
+  {
+   "arm": "C",
+   "source_id": "r7_pdnsrec_52",
+   "seconds": 0.108,
+   "len": 2482
+  },
+  {
+   "arm": "14B",
+   "source_id": "r5_dropbear_2025",
+   "seconds": 0.12,
+   "len": 2129
+  },
+  {
+   "arm": "14B",
+   "source_id": "r5_openvpn_26",
+   "seconds": 0.144,
+   "len": 2158
+  },
+  {
+   "arm": "14B",
+   "source_id": "r5_openvpn_26",
+   "seconds": 0.144,
+   "len": 2156
+  },
+  {
+   "arm": "14B",
+   "source_id": "r5_openvpn_26",
+   "seconds": 0.142,
+   "len": 2157
+  },
+  {
+   "arm": "14B",
+   "source_id": "r6_rsyncd_327",
+   "seconds": 0.187,
+   "len": 2161
+  },
+  {
+   "arm": "14B",
+   "source_id": "r6_rsyncd_327",
+   "seconds": 0.187,
+   "len": 2164
+  },
+  {
+   "arm": "14B",
+   "source_id": "r6_rsyncd_327",
+   "seconds": 0.188,
+   "len": 2165
+  },
+  {
+   "arm": "14B",
+   "source_id": "r6_rsyncd_327",
+   "seconds": 0.19,
+   "len": 2163
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_emqx_58",
+   "seconds": 0.116,
+   "len": 2193
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_emqx_58",
+   "seconds": 0.119,
+   "len": 2197
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_nextcloud_syslog",
+   "seconds": 0.114,
+   "len": 2448
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_nextcloud_syslog",
+   "seconds": 0.114,
+   "len": 2447
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_nextcloud_syslog",
+   "seconds": 0.114,
+   "len": 2460
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_nextcloud_syslog",
+   "seconds": 0.113,
+   "len": 2444
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_nextcloud_syslog",
+   "seconds": 0.113,
+   "len": 2448
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_nextcloud_syslog",
+   "seconds": 0.111,
+   "len": 2447
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_nextcloud_syslog",
+   "seconds": 0.111,
+   "len": 2460
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_nextcloud_syslog",
+   "seconds": 0.112,
+   "len": 2444
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.14,
+   "len": 2130
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.12,
+   "len": 2144
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.139,
+   "len": 2130
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.121,
+   "len": 2144
+  },
+  {
+   "arm": "14B",
+   "source_id": "r7_ngircd_27",
+   "seconds": 0.14,
+   "len": 2130
+  }
+ ]
+}

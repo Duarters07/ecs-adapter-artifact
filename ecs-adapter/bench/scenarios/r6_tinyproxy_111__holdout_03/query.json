@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.pid": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "url.full": "http://r6-web-target/finance/q3.csv"
+              }
+            },
+            {
+              "term": {
+                "url.original": "http://r6-web-target/finance/q3.csv"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

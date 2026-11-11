@@ -1,0 +1,13 @@
+{
+ "dataset": "Loghub-2.0",
+ "system": "OpenSSH",
+ "lines": 638947,
+ "sampler": "adapter.sampler.deduplicate(per_signature=3,total_cap=20)",
+ "log_sha256": "aecae85174ea0c4b324bb2076fa8f1452b23ecd1fed8e69ba3a0c6ec5452adb3",
+ "selftest_ceiling": {
+  "lines": 638947,
+  "GA": 0.4247,
+  "PA": 0.7209,
+  "unmatched": 0.0002
+ }
+}

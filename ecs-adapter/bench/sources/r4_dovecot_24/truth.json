@@ -1,0 +1,91 @@
+{
+  "source_id": "r4_dovecot_24",
+  "family": "dovecot",
+  "split": "test_r4",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Dovecot 2.4.1 (Debian 13), not copied from documentation or a public dataset. Captured 2026-10-22T08:45:22Z on the author's laptop by testbed/r3/r4_dovecot.sh (docker logs, stderr (log_path=/dev/stderr)); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 4 (fresh held-out), NEW VERSION of r4_dovecot_23. Measured: `Login:` becomes `Logged in:`, a failed login `Login aborted: Connection closed (...) (auth_failed)`, a logout `Disconnected: Logged out`.",
+  "fields": [
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "rip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "lip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "role": "server_ip",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "result",
+      "ecs_field": "event.outcome",
+      "type": "keyword",
+      "role": "auth_outcome",
+      "difficulty": "medium",
+      "note": "value map: login -> success, auth failed -> failure",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "process",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "role": "program",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "auth_mechanism",
+      "difficulty": "hard",
+      "note": "No ECS field for a SASL mechanism.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "session",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_id",
+      "difficulty": "hard",
+      "note": "No ECS field fits a mail session id cleanly.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "mpid",
+      "ecs_field": null,
+      "type": "long",
+      "role": "mail_pid",
+      "difficulty": "hard",
+      "note": "process.pid would be the login process; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r4_dovecot_24__holdout_02",
+    "r4_dovecot_24__holdout_03"
+  ],
+  "round3": {
+    "pair": "r4_dovecot",
+    "role": "new"
+  }
+}

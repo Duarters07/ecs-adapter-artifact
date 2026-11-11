@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.action": "query (cache)"
+        }
+      },
+      {
+        "term": {
+          "event.reason": "allow-query-cache did not match"
+        }
+      }
+    ]
+  }
+}

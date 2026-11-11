@@ -1,0 +1,18 @@
+2026-10-27 15:30:01.956892+00:00 [info] <0.957.0> accepting AMQP connection <0.957.0> (172.21.60.14:55142 -> 172.21.0.2:5672)[0m
+2026-10-27 15:30:01.957905+00:00 [info] <0.957.0> connection <0.957.0> (172.21.60.14:55142 -> 172.21.0.2:5672): user 'rui' authenticated and granted access to vhost '/'[0m
+2026-10-27 15:30:01.958071+00:00 [info] <0.957.0> closing AMQP connection <0.957.0> (172.21.60.14:55142 -> 172.21.0.2:5672, vhost: '/', user: 'rui')[0m
+2026-10-27 15:30:02.595782+00:00 [info] <0.967.0> accepting AMQP connection <0.967.0> (172.21.60.14:55152 -> 172.21.0.2:5672)[0m
+[38;5;160m2026-10-27 15:30:02.597099+00:00 [error] <0.967.0> Error on AMQP connection <0.967.0> (172.21.60.14:55152 -> 172.21.0.2:5672, state: starting):[0m
+[38;5;160m2026-10-27 15:30:02.597099+00:00 [error] <0.967.0> PLAIN login refused: user 'rui' - invalid credentials[0m
+2026-10-27 15:30:02.597331+00:00 [info] <0.967.0> closing AMQP connection <0.967.0> (172.21.60.14:55152 -> 172.21.0.2:5672)[0m
+2026-10-27 15:30:03.247477+00:00 [info] <0.972.0> accepting AMQP connection <0.972.0> (172.21.60.97:60228 -> 172.21.0.2:5672)[0m
+[38;5;160m2026-10-27 15:30:03.248209+00:00 [error] <0.972.0> Error on AMQP connection <0.972.0> (172.21.60.97:60228 -> 172.21.0.2:5672, state: starting):[0m
+[38;5;160m2026-10-27 15:30:03.248209+00:00 [error] <0.972.0> PLAIN login refused: user 'test' - invalid credentials[0m
+2026-10-27 15:30:03.248448+00:00 [info] <0.972.0> closing AMQP connection <0.972.0> (172.21.60.97:60228 -> 172.21.0.2:5672)[0m
+2026-10-27 15:30:03.915890+00:00 [info] <0.977.0> accepting AMQP connection <0.977.0> (172.21.60.15:33212 -> 172.21.0.2:5672)[0m
+2026-10-27 15:30:03.916984+00:00 [info] <0.977.0> connection <0.977.0> (172.21.60.15:33212 -> 172.21.0.2:5672): user 'billing' authenticated and granted access to vhost 'billing'[0m
+2026-10-27 15:30:03.917147+00:00 [info] <0.977.0> closing AMQP connection <0.977.0> (172.21.60.15:33212 -> 172.21.0.2:5672, vhost: 'billing', user: 'billing')[0m
+2026-10-27 15:30:04.573510+00:00 [info] <0.987.0> accepting AMQP connection <0.987.0> (172.21.60.16:39236 -> 172.21.0.2:5672)[0m
+[38;5;160m2026-10-27 15:30:04.574516+00:00 [error] <0.987.0> Error on AMQP connection <0.987.0> (172.21.60.16:39236 -> 172.21.0.2:5672, user: 'ana', state: opening):[0m
+[38;5;160m2026-10-27 15:30:04.574516+00:00 [error] <0.987.0> access to vhost 'billing' refused for user 'ana'[0m
+2026-10-27 15:30:04.574812+00:00 [info] <0.987.0> closing AMQP connection <0.987.0> (172.21.60.16:39236 -> 172.21.0.2:5672, vhost: 'none', user: 'ana')[0m

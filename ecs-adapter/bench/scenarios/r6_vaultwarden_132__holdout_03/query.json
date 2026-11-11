@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "payroll@lab.local"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "payroll@lab.local"
+              }
+            },
+            {
+              "term": {
+                "user.name": "payroll@lab.local"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

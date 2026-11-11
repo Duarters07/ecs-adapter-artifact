@@ -1,0 +1,12 @@
+CONNECT   Oct 27 16:51:26 [8]: Connect (file descriptor 10): angry_ptolemy.r3-net [172.21.66.162]
+NOTICE    Oct 27 16:51:26 [8]: Unauthorized connection from "angry_ptolemy.r3-net" [172.21.66.162].
+CONNECT   Oct 27 16:51:27 [10]: Connect (file descriptor 10): reverent_golick.r3-net [172.21.66.192]
+NOTICE    Oct 27 16:51:27 [10]: Unauthorized connection from "reverent_golick.r3-net" [172.21.66.192].
+CONNECT   Oct 27 16:51:28 [13]: Connect (file descriptor 10): bold_golick.r3-net [172.21.66.221]
+NOTICE    Oct 27 16:51:28 [13]: Unauthorized connection from "bold_golick.r3-net" [172.21.66.221].
+CONNECT   Oct 27 16:51:29 [15]: Connect (file descriptor 10): zealous_kepler.r3-net [172.21.66.116]
+CONNECT   Oct 27 16:51:29 [15]: Request (file descriptor 10): GET http://r6-web-target/data/index.html HTTP/1.1
+CONNECT   Oct 27 16:51:30 [11]: Connect (file descriptor 10): kind_mcnulty.r3-net [172.21.66.109]
+CONNECT   Oct 27 16:51:30 [11]: Request (file descriptor 10): GET http://r6-web-target/wp-login.php HTTP/1.1
+CONNECT   Oct 27 16:51:31 [14]: Connect (file descriptor 10): zen_mendel.r3-net [172.21.66.170]
+NOTICE    Oct 27 16:51:31 [14]: Unauthorized connection from "zen_mendel.r3-net" [172.21.66.170].

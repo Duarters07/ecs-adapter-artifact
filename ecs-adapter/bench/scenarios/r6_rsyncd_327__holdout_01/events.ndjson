@@ -1,0 +1,3 @@
+{"raw": "2026/10/27 16:04:32 [25] auth failed on module finance from UNDETERMINED (172.21.65.31) for scanner: no matching rule"}
+{"raw": "2026/10/27 16:04:33 [27] unknown module 'data' tried from UNDETERMINED (172.21.65.90)"}
+{"raw": "2026/10/27 16:04:34 [29] auth failed on module backup from UNDETERMINED (172.21.65.88) for deploy: no matching rule"}

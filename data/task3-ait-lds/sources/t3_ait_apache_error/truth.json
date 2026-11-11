@@ -1,0 +1,51 @@
+{
+ "source_id": "t3_ait_apache_error",
+ "review_status": "DRAFT - every field below awaits the author's review",
+ "fields": [
+  {
+   "source_key": "client_ip",
+   "ecs_field": "source.ip",
+   "confidence": 1.0,
+   "type": "ip",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "client_port",
+   "ecs_field": "source.port",
+   "confidence": 1.0,
+   "type": "long",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "pid",
+   "ecs_field": "process.pid",
+   "confidence": 1.0,
+   "type": "long",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "level",
+   "ecs_field": "log.level",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "module",
+   "ecs_field": "log.logger",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "error_code",
+   "ecs_field": "error.code",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "text",
+   "ecs_field": "message",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  }
+ ]
+}

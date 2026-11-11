@@ -1,0 +1,36 @@
+Oct 25 22:27:32 web01 sshd[169]: Accepted password for ines from 172.21.0.3 port 49426 ssh2
+Oct 25 22:27:32 web01 sshd[169]: pam_unix(sshd:session): session opened for user ines(uid=1004) by (uid=0)
+Oct 25 22:27:32 web01 sshd[169]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:27:32 web01 sshd[169]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:27:32 web01 sshd[169]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:27:33 web01 sshd[169]: pam_unix(sshd:session): session closed for user ines
+Oct 25 22:27:33 web01 sshd[177]: Invalid user bruno from 172.21.0.3 port 49434
+Oct 25 22:27:33 web01 sshd[177]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:27:33 web01 sshd[177]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:27:35 web01 sshd[177]: Failed password for invalid user bruno from 172.21.0.3 port 49434 ssh2
+Oct 25 22:27:37 web01 sshd[179]: Accepted password for rui from 172.21.0.3 port 44028 ssh2
+Oct 25 22:27:37 web01 sshd[179]: pam_unix(sshd:session): session opened for user rui(uid=1001) by (uid=0)
+Oct 25 22:27:37 web01 sshd[179]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:27:37 web01 sshd[179]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:27:37 web01 sshd[179]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:27:37 web01 sshd[179]: pam_unix(sshd:session): session closed for user rui
+Oct 25 22:27:38 web01 sshd[187]: Invalid user git from 172.21.0.3 port 44030
+Oct 25 22:27:38 web01 sshd[187]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:27:38 web01 sshd[187]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:27:40 web01 sshd[187]: Failed password for invalid user git from 172.21.0.3 port 44030 ssh2
+Oct 25 22:27:42 web01 sshd[189]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=marta
+Oct 25 22:27:44 web01 sshd[189]: Failed password for marta from 172.21.0.3 port 44040 ssh2
+Oct 25 22:27:45 web01 sshd[191]: error: kex_exchange_identification: Connection closed by remote host
+Oct 25 22:27:45 web01 sshd[191]: Connection closed by 172.21.0.3 port 44056
+Oct 25 22:27:45 web01 sshd[187]: Connection closed by invalid user git 172.21.0.3 port 44030 [preauth]
+Oct 25 22:27:45 web01 sshd[177]: Connection closed by invalid user bruno 172.21.0.3 port 49434 [preauth]
+Oct 25 22:27:45 web01 sshd[189]: Connection closed by authenticating user marta 172.21.0.3 port 44040 [preauth]
+Oct 25 22:27:46 web01 sudo:    marta : user NOT in sudoers ; PWD=/home/marta ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+Oct 25 22:27:46 web01 sudo:      rui : PWD=/home/rui ; USER=root ; COMMAND=/bin/ls /root
+Oct 25 22:27:46 web01 sudo: pam_limits(sudo:session): Could not set limit for 'core' to soft=-1, hard=-1: Operation not permitted; uid=1001,euid=0
+Oct 25 22:27:46 web01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Oct 25 22:27:46 web01 sudo: pam_unix(sudo:session): session closed for user root
+Oct 25 22:27:47 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1003 euid=0 tty= ruser=tiago rhost=  user=tiago
+Oct 25 22:27:48 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:27:48 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [tiago]
+Oct 25 22:27:48 web01 sudo:    tiago : user NOT in sudoers ; PWD=/home/tiago ; USER=root ; COMMAND=/usr/bin/systemctl status ssh

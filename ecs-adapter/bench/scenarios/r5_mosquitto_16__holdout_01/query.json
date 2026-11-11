@@ -1,0 +1,45 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.ip": "172.21.50.21"
+              }
+            },
+            {
+              "term": {
+                "source.ip": "172.21.50.21"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "pump02"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "pump02"
+              }
+            },
+            {
+              "term": {
+                "user.name": "pump02"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

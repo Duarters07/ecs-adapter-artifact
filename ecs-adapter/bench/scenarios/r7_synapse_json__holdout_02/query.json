@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "http.request.id": "POST-14"
+        }
+      },
+      {
+        "term": {
+          "http.request.method": "POST"
+        }
+      }
+    ]
+  }
+}

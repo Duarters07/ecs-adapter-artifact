@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "email.to.address": "root@outside.example"
+        }
+      },
+      {
+        "term": {
+          "event.reason": "550 5.7.1 <root@outside.example>... Relaying denied"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+[Sun Oct 25 22:15:53 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/config.ini, referer: http://intranet.local/finance
+[Sun Oct 25 22:15:53 2026] [error] [client 172.21.0.3] user root not found: /members/
+[Sun Oct 25 22:15:53 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/keys.pem, referer: http://intranet.local/home
+[Sun Oct 25 22:15:53 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/
+[Sun Oct 25 22:15:54 2026] [error] [client 172.21.0.3] user sofia: authentication failure for "/reports/app.js": Password Mismatch, referer: http://portal.local/portal
+[Sun Oct 25 22:15:54 2026] [error] [client 172.21.0.3] user root not found: /members/wp-login.php
+[Sun Oct 25 22:15:54 2026] [error] [client 172.21.0.3] user gabriela not found: /reports/
+[Sun Oct 25 22:15:54 2026] [error] [client 172.21.0.3] user rui: authentication failure for "/members/": Password Mismatch, referer: http://intranet.local/wiki
+[Sun Oct 25 22:15:54 2026] [error] [client 172.21.0.3] user marta: authentication failure for "/members/q3.html": Password Mismatch, referer: http://ops.local/finance
+[Sun Oct 25 22:15:55 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/login.php, referer: http://portal.local/status
+[Sun Oct 25 22:15:55 2026] [error] [client 172.21.0.3] user auditor not found: /reports/
+[Sun Oct 25 22:15:55 2026] [error] [client 172.21.0.3] user paulo not found: /reports/annual.pdf
+[Sun Oct 25 22:15:55 2026] [error] [client 172.21.0.3] user ana: authentication failure for "/members/data.json": Password Mismatch, referer: http://home.local/ops

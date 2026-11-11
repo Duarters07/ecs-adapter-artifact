@@ -1,0 +1,115 @@
+{
+  "category_hint": "authentication",
+  "contamination_risk": "none",
+  "extraction": {
+    "columns": [
+      "time_",
+      "callerIpAddress",
+      "properties_resourceDisplayName",
+      "durationMs",
+      "properties_resourceId",
+      "properties_processingTimeInMilliseconds",
+      "properties_location_geoCoordinates_latitude",
+      "time",
+      "properties_appDisplayName",
+      "properties_createdDateTime",
+      "properties_riskDetail",
+      "properties_location_countryOrRegion",
+      "operationVersion",
+      "category",
+      "properties_userType",
+      "properties_riskLevelDuringSignIn",
+      "properties_deviceDetail_deviceId",
+      "properties_userPrincipalName",
+      "properties_appId",
+      "location",
+      "properties_incomingTokenType",
+      "tenantId",
+      "Level",
+      "identity",
+      "correlationId",
+      "resultDescription",
+      "properties_location_state",
+      "properties_authenticationProtocol",
+      "properties_location_geoCoordinates_longitude",
+      "properties_userId",
+      "properties_crossTenantAccessType",
+      "properties_status_failureReason",
+      "resultType",
+      "properties_riskState",
+      "properties_conditionalAccessStatus",
+      "properties_correlationId",
+      "properties_uniqueTokenIdentifier",
+      "properties_riskLevelAggregated",
+      "properties_location_city",
+      "resultSignature",
+      "properties_ipAddress",
+      "properties_status_errorCode",
+      "properties_deviceDetail_trustType",
+      "properties_deviceDetail_browser",
+      "properties_id",
+      "properties_deviceDetail_operatingSystem",
+      "operationName",
+      "properties_userDisplayName",
+      "properties_tokenIssuerType",
+      "properties_status_additionalDetails",
+      "properties_authenticationRequirement",
+      "resourceId",
+      "properties_deviceDetail_displayName",
+      "properties_clientAppUsed"
+    ],
+    "field_split": ";",
+    "kind": "csv"
+  },
+  "family": "sg_azuread",
+  "fields": [
+    {
+      "ecs_field": "source.ip",
+      "source_key": "callerIpAddress",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "user.full_name",
+      "source_key": "identity",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "event.action",
+      "source_key": "operationName",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "event.outcome",
+      "source_key": "properties_conditionalAccessStatus",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "event.id",
+      "source_key": "properties_id",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "user.id",
+      "source_key": "properties_userId",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "user.email",
+      "source_key": "properties_userPrincipalName",
+      "type": "keyword"
+    }
+  ],
+  "level": 2,
+  "note": "Level-2 evaluation source: a TRAINING family rendered in a format no training source uses (corpus/drift_formats.py). Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_azuread_drift_csvsemi",
+  "split": "test_drift",
+  "timestamp": {
+    "formats": [
+      "ISO8601"
+    ],
+    "source_key": "time_"
+  },
+  "transform": "drift:csvsemi",
+  "value_maps": []
+}

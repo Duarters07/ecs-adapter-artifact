@@ -1,0 +1,10 @@
+{"raw": "2026-10-30T20:50:26.821407+00:00 mail01 sendmail[59]: 69UKoP7v000059: from=<billing@partner.example>, size=94, class=0, nrcpts=1, msgid=<202610302050.69UKoP7v000059@mail01.lab.example>, proto=ESMTP, daemon=MTA-v4, relay=r7-ws11.r3-net [172.21.91.11]"}
+{"raw": "2026-10-30T20:50:32.872568+00:00 mail01 sendmail[64]: 69UKoUGI000063: to=<rui@lab.example>, delay=00:00:01, xdelay=00:00:01, mailer=local, pri=30395, dsn=2.0.0, stat=Sent"}
+{"raw": "2026-10-30T20:50:34.387894+00:00 mail01 sendmail[66]: 69UKoX4S000066: ruleset=check_rcpt, arg1=<victim@gmail.com>, relay=r7-ws211.r3-net [172.21.91.211], reject=550 5.7.1 <victim@gmail.com>... Relaying denied"}
+{"raw": "2026-10-30T20:50:36.822445+00:00 mail01 sendmail[67]: 69UKoZmR000067: from=<alerts@partner.example>, size=97, class=0, nrcpts=1, msgid=<202610302050.69UKoZmR000067@mail01.lab.example>, proto=ESMTP, daemon=MTA-v4, relay=r7-ws13.r3-net [172.21.91.13]"}
+{"raw": "2026-10-30T20:50:31.842272+00:00 mail01 sendmail[63]: 69UKoUGI000063: from=<ops@partner.example>, size=90, class=0, nrcpts=1, msgid=<202610302050.69UKoUGI000063@mail01.lab.example>, proto=ESMTP, daemon=MTA-v4, relay=r7-ws12.r3-net [172.21.91.12]"}
+{"raw": "2026-10-30T20:50:29.420457+00:00 mail01 sendmail[62]: 69UKoS4X000062: from=<x@partner.example>, size=0, class=0, nrcpts=0, proto=ESMTP, daemon=MTA-v4, relay=r7-ws11.r3-net [172.21.91.11]"}
+{"raw": "2026-10-30T20:50:27.880004+00:00 mail01 sendmail[60]: 69UKoP7v000059: to=<ana@lab.example>, delay=00:00:01, xdelay=00:00:01, mailer=local, pri=30399, dsn=2.0.0, stat=Sent"}
+{"raw": "2026-10-30T20:50:37.889888+00:00 mail01 sendmail[68]: 69UKoZmR000067: to=<monitor@lab.example>, delay=00:00:01, xdelay=00:00:01, mailer=local, pri=30406, dsn=2.0.0, stat=Sent"}
+{"raw": "2026-10-30T20:50:29.420214+00:00 mail01 sendmail[62]: 69UKoS4X000062: <jdoe@lab.example>... User unknown"}
+{"raw": "2026-10-30T20:50:34.388370+00:00 mail01 sendmail[66]: 69UKoX4S000066: from=<promo@spam.example>, size=0, class=0, nrcpts=0, proto=ESMTP, daemon=MTA-v4, relay=r7-ws211.r3-net [172.21.91.211]"}

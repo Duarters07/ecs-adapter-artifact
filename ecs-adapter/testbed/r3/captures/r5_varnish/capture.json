@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-25T14:29:35Z","old":"varnishd (varnish-7.6.5 revision 535bdafb06e0a4f7daf745c5dcd3873ce2ef2d53), varnishncsa stock NCSA format","new":"varnishd (varnish-7.6.5 revision 535bdafb06e0a4f7daf745c5dcd3873ce2ef2d53), varnishncsa -j -F <site JSON format>","collected_by":"docker logs, varnishncsa stdout"}

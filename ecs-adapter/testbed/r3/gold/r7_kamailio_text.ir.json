@@ -1,0 +1,106 @@
+{
+  "source_id": "r7_kamailio_text",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^\\s*%{INT:idx}\\(%{INT:pid}\\) %{WORD:level}: \\{%{INT:msg_type} %{INT:cseq} %{WORD:sip_method} %{NOTSPACE:call_id}\\} <script>: (?<action>REGISTER challenge) for %{DATA:user}@%{NOTSPACE:domain} from %{IP:client_ip}:%{INT:client_port} ua=\\[%{DATA:user_agent}\\]$",
+    "alternatives": [
+      "^\\s*%{INT:idx}\\(%{INT:pid}\\) %{WORD:level}: \\{%{INT:msg_type} %{INT:cseq} %{WORD:sip_method} %{NOTSPACE:call_id}\\} <script>: (?<action>REGISTER accepted) for %{DATA:user}@%{NOTSPACE:domain} from %{IP:client_ip}:%{INT:client_port} contact=<%{DATA:contact}> expires=%{INT:expires}$",
+      "^\\s*%{INT:idx}\\(%{INT:pid}\\) %{WORD:level}: \\{%{INT:msg_type} %{INT:cseq} %{WORD:sip_method} %{NOTSPACE:call_id}\\} <script>: (?<action>REGISTER auth failed): (?<reason>wrong password|unknown user) (?:for )?%{DATA:user}@%{NOTSPACE:domain} from %{IP:client_ip}:%{INT:client_port} ua=\\[%{DATA:user_agent}\\]$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "domain",
+      "ecs_field": "user.domain",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "user_agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "call_id",
+      "reason": "SIP Call-ID; no ECS field"
+    },
+    {
+      "source_key": "cseq",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "sip_method",
+      "reason": "no ECS field for a SIP method"
+    },
+    {
+      "source_key": "msg_type",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "contact",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "expires",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "idx",
+      "reason": "process rank, not a pid"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.dataset": "kamailio.log"
+  }
+}

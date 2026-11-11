@@ -1,0 +1,19 @@
+2026-10-27T16:43:52.735133+00:00 files02 pure-ftpd: (?@172.21.64.148) [INFO] New connection from 172.21.64.148
+2026-10-27T16:43:55.929682+00:00 files02 pure-ftpd: (?@172.21.64.148) [WARNING] Authentication failed for user [scanner]
+2026-10-27T16:43:55.930822+00:00 files02 pure-ftpd: (?@172.21.64.148) [INFO] Logout.
+2026-10-27T16:43:56.656229+00:00 files02 pure-ftpd: (?@172.21.64.123) [INFO] New connection from 172.21.64.123
+2026-10-27T16:44:02.214327+00:00 files02 pure-ftpd: (?@172.21.64.123) [WARNING] Authentication failed for user [carla]
+2026-10-27T16:44:02.215384+00:00 files02 pure-ftpd: (?@172.21.64.123) [INFO] Logout.
+2026-10-27T16:44:02.925640+00:00 files02 pure-ftpd: (?@172.21.64.234) [INFO] New connection from 172.21.64.234
+2026-10-27T16:44:02.946694+00:00 files02 pure-ftpd: (?@172.21.64.234) [INFO] ana is now logged in
+2026-10-27T16:44:02.947514+00:00 files02 pure-ftpd: (ana@172.21.64.234) [NOTICE] /home/ana//q3.txt downloaded  (7 bytes, 131.52KB/sec)
+2026-10-27T16:44:02.947679+00:00 files02 pure-ftpd: (ana@172.21.64.234) [INFO] Logout.
+2026-10-27T16:44:03.642375+00:00 files02 pure-ftpd: (?@172.21.64.122) [INFO] New connection from 172.21.64.122
+2026-10-27T16:44:08.168204+00:00 files02 pure-ftpd: (?@172.21.64.122) [WARNING] Authentication failed for user [root]
+2026-10-27T16:44:08.169302+00:00 files02 pure-ftpd: (?@172.21.64.122) [INFO] Logout.
+2026-10-27T16:44:08.861097+00:00 files02 pure-ftpd: (?@172.21.64.169) [INFO] New connection from 172.21.64.169
+2026-10-27T16:44:14.615261+00:00 files02 pure-ftpd: (?@172.21.64.169) [WARNING] Authentication failed for user [www]
+2026-10-27T16:44:14.616341+00:00 files02 pure-ftpd: (?@172.21.64.169) [INFO] Logout.
+2026-10-27T16:44:15.337447+00:00 files02 pure-ftpd: (?@172.21.64.131) [INFO] New connection from 172.21.64.131
+2026-10-27T16:44:19.953710+00:00 files02 pure-ftpd: (?@172.21.64.131) [WARNING] Authentication failed for user [oracle]
+2026-10-27T16:44:19.955296+00:00 files02 pure-ftpd: (?@172.21.64.131) [INFO] Logout.

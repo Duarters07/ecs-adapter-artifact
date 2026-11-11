@@ -1,0 +1,4 @@
+{"raw": "[2026-10-30 21:47:36 +0000] information/HttpServerConnection: Request GET /v1/objects/hosts (from [::ffff:203.0.113.10]:36304), user: <unauthenticated>, agent: python-requests/2.31.0, status: Unauthorized) took total 0ms."}
+{"raw": "[2026-10-30 21:47:37 +0000] information/HttpServerConnection: Request GET /v1/status/IcingaApplication (from [::ffff:203.0.113.10]:49352), user: monitor, agent: python-requests/2.31.0, status: OK) took total 0ms."}
+{"raw": "[2026-10-30 21:47:35 +0000] information/HttpServerConnection: Request GET /v1/status/IcingaApplication (from [::ffff:203.0.113.10]:50482), user: rui, agent: Icinga Web 2, status: OK) took total 0ms."}
+{"raw": "[2026-10-30 21:47:40 +0000] information/HttpServerConnection: Request GET /v1/objects/services (from [::ffff:203.0.113.10]:48050), user: backup, agent: Ansible-icinga2/1.4, status: OK) took total 0ms."}

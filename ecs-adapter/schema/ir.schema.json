@@ -1,0 +1,320 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ECS adaptation IR",
+  "description": "The contract between the language model and the compiler. The model may emit nothing else.",
+  "type": "object",
+  "required": [
+    "source_id",
+    "ecs_version",
+    "extraction",
+    "fields",
+    "constants"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]{1,63}$"
+    },
+    "ecs_version": {
+      "type": "string",
+      "pattern": "^8\\.[0-9]+$"
+    },
+    "extraction": {
+      "type": "object",
+      "required": [
+        "kind"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "json",
+            "kv",
+            "grok",
+            "csv"
+          ]
+        },
+        "pattern": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "alternatives": {
+          "type": "array",
+          "maxItems": 7,
+          "items": {
+            "type": "string",
+            "maxLength": 2000
+          },
+          "description": "grok only. Further patterns for lines that are a DIFFERENT KIND of message from the one `pattern` reads - 'job N started by X' beside 'node aborted job N owned by X'. Tried in order after `pattern`; the first that matches a line wins. A segment that is sometimes absent from the SAME kind of message belongs in `pattern` as (?:...)?, not here."
+        },
+        "field_split": {
+          "type": "string",
+          "maxLength": 8
+        },
+        "value_split": {
+          "type": "string",
+          "maxLength": 8
+        },
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 64
+        },
+        "inner": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "pattern"
+          ],
+          "description": "json only. A grok over the TEXT of one JSON key, for a JSON line whose values sit inside a message string: {\"msg\": \"Login failed for user ana from 10.0.0.1\"}. The json extraction keeps `msg` whole, so no key holds `ana` or `10.0.0.1`; `inner` reads them. `source` names the key (a dotted path for a nested key: log.message). `pattern` and `alternatives` work as for grok, on that key's text, and their capture names become keys beside the JSON keys. Omit when every value already has its own JSON key.",
+          "properties": {
+            "source": {
+              "type": "string",
+              "maxLength": 128,
+              "description": "The JSON key whose text the grok reads, e.g. msg."
+            },
+            "pattern": {
+              "type": "string",
+              "maxLength": 2000,
+              "description": "A grok over that key's text, matching ALL of it."
+            },
+            "alternatives": {
+              "type": "array",
+              "maxItems": 7,
+              "items": {
+                "type": "string",
+                "maxLength": 2000
+              },
+              "description": "Further patterns for texts that are a DIFFERENT KIND of message."
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "csv"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "kind",
+              "columns"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "grok"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "kind",
+              "pattern"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "kv"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "required": [
+              "kind",
+              "field_split",
+              "value_split"
+            ]
+          }
+        }
+      ]
+    },
+    "fields": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "required": [
+          "source_key",
+          "ecs_field",
+          "confidence"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "source_key": {
+            "type": "string",
+            "maxLength": 128
+          },
+          "semantic_role": {
+            "type": "string",
+            "maxLength": 128
+          },
+          "ecs_field": {
+            "type": "string",
+            "pattern": "^[a-z_][a-z0-9_]*(\\.[a-z_][a-z0-9_]*)*$"
+          },
+          "type": {
+            "enum": [
+              "keyword",
+              "text",
+              "ip",
+              "long",
+              "float",
+              "boolean",
+              "date"
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "evidence": {
+            "type": "string",
+            "maxLength": 256
+          }
+        }
+      }
+    },
+    "value_maps": {
+      "type": "array",
+      "maxItems": 32,
+      "items": {
+        "type": "object",
+        "required": [
+          "ecs_field",
+          "map"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "ecs_field": {
+            "type": "string"
+          },
+          "from_source_key": {
+            "type": "string",
+            "maxLength": 128
+          },
+          "map": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "fallback": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "timestamp": {
+      "type": "object",
+      "required": [
+        "source_key",
+        "formats"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source_key": {
+          "type": "string"
+        },
+        "formats": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "maxItems": 8
+        },
+        "timezone": {
+          "type": "string"
+        }
+      }
+    },
+    "constants": {
+      "type": "object",
+      "required": [
+        "event.dataset",
+        "event.kind",
+        "event.category"
+      ],
+      "properties": {
+        "event.dataset": {
+          "type": "string"
+        },
+        "event.kind": {
+          "enum": [
+            "event",
+            "alert",
+            "metric",
+            "state",
+            "signal"
+          ]
+        },
+        "event.category": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "event.type": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "maxItems": 64,
+      "description": "A measured outcome, not an error path. Declining a genuinely ambiguous field is correct behaviour.",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_key",
+          "reason"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "source_key": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 256
+          },
+          "candidates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 8
+          }
+        }
+      }
+    }
+  }
+}

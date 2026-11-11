@@ -1,0 +1,109 @@
+{
+ "source_id": "t3_ait_auth",
+ "ecs_version": "8.11",
+ "extraction": {
+  "kind": "grok",
+  "pattern": "^%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} %{DATA:program}(?:\\[%{POSINT:pid}\\])?: pam_unix\\(%{DATA:pam_service}:session\\): session %{WORD:action} for user %{USERNAME:user}(?: by \\(uid=%{INT:by_uid}\\))?$",
+  "alternatives": [
+   "^%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} %{DATA:program}(?:\\[%{POSINT:pid}\\])?: Accepted %{WORD:auth_method} for %{USERNAME:user} from %{IP:src_ip} port %{INT:src_port} ssh2(?:: %{GREEDYDATA:key_info})?$",
+   "^%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} %{DATA:program}(?:\\[%{POSINT:pid}\\])?: Did not receive identification string from %{IP:src_ip} port %{INT:src_port}$",
+   "^%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} %{DATA:program}(?:\\[%{POSINT:pid}\\])?: Successful su for %{USERNAME:target_user} by %{USERNAME:user}$",
+   "^%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} %{DATA:program}(?:\\[%{POSINT:pid}\\])?: \\+ %{NOTSPACE:tty} %{USERNAME:user}:%{USERNAME:target_user}$",
+   "^%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} %{DATA:program}(?:\\[%{POSINT:pid}\\])?: New session %{NOTSPACE:session} of user %{USERNAME:user}\\.$",
+   "^%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} %{DATA:program}(?:\\[%{POSINT:pid}\\])?: Removed session %{NOTSPACE:session}\\.$",
+   "^%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGHOST:host} %{DATA:program}(?:\\[%{POSINT:pid}\\])?:  +%{USERNAME:user} : TTY=%{NOTSPACE:tty} ; PWD=%{DATA:pwd} ; USER=%{USERNAME:target_user} ; COMMAND=%{GREEDYDATA:command}$"
+  ]
+ },
+ "fields": [
+  {
+   "source_key": "host",
+   "ecs_field": "host.hostname",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "program",
+   "ecs_field": "process.name",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "pid",
+   "ecs_field": "process.pid",
+   "confidence": 1.0,
+   "type": "long"
+  },
+  {
+   "source_key": "user",
+   "ecs_field": "user.name",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "target_user",
+   "ecs_field": "user.target.name",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "src_ip",
+   "ecs_field": "source.ip",
+   "confidence": 1.0,
+   "type": "ip"
+  },
+  {
+   "source_key": "src_port",
+   "ecs_field": "source.port",
+   "confidence": 1.0,
+   "type": "long"
+  },
+  {
+   "source_key": "command",
+   "ecs_field": "process.command_line",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "pwd",
+   "ecs_field": "process.working_directory",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "action",
+   "ecs_field": "event.action",
+   "confidence": 1.0
+  }
+ ],
+ "constants": {
+  "event.category": [
+   "authentication"
+  ],
+  "event.kind": "event",
+  "event.dataset": "system.auth"
+ },
+ "unresolved": [
+  {
+   "source_key": "timestamp",
+   "reason": "@timestamp is set at ingest"
+  },
+  {
+   "source_key": "pam_service",
+   "reason": "PAM service name, no ECS field"
+  },
+  {
+   "source_key": "by_uid",
+   "reason": "uid of the opening process"
+  },
+  {
+   "source_key": "auth_method",
+   "reason": "ssh method, no ECS field in this subset"
+  },
+  {
+   "source_key": "key_info",
+   "reason": "key fingerprint"
+  },
+  {
+   "source_key": "tty",
+   "reason": "terminal"
+  },
+  {
+   "source_key": "session",
+   "reason": "logind session id"
+  }
+ ]
+}

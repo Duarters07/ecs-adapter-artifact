@@ -1,0 +1,4 @@
+{"raw": "2026-10-25 15:01:47,012 files01 proftpd[10] 172.21.0.2 (203.0.113.11[203.0.113.11]): USER test: no such user found from 203.0.113.11 [203.0.113.11] to 172.21.0.2:21"}
+{"raw": "2026-10-25 15:01:45,931 files01 proftpd[9] 172.21.0.2 (203.0.113.11[203.0.113.11]): USER rui: Login successful."}
+{"raw": "2026-10-25 15:01:49,209 files01 proftpd[12] 172.21.0.2 (203.0.113.11[203.0.113.11]): USER scanner: Login successful."}
+{"raw": "2026-10-25 15:01:54,671 files01 proftpd[13] 172.21.0.2 (203.0.113.11[203.0.113.11]): USER scanner (Login failed): Incorrect password"}

@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T19:08:38Z","old":"Debian 12 Privoxy version 3.0.34 (https://www.privoxy.org/)","new":"Debian 13 Privoxy version 4.0.0 (https://www.privoxy.org/)","collected_by":"docker logs (privoxy --no-daemon logs to the console): Request, Crunch and Error lines"}

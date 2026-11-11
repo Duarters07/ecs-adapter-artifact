@@ -1,0 +1,5 @@
+{"raw": "2026-10-30 19:08:34.205 76a3926f06c0 Request: r7-web-target/finance/q3.csv"}
+{"raw": "2026-10-30 19:08:34.995 76a3926f06c0 Crunch: Blocked: http://r7-web-target/admin/config"}
+{"raw": "2026-10-30 19:08:35.796 76a3926f06c0 Request: ghost.lab/"}
+{"raw": "2026-10-30 19:08:35.797 76a3926f06c0 Crunch: DNS failure: http://ghost.lab/"}
+{"raw": "2026-10-30 19:08:34.995 76a3926f06c0 Request: r7-web-target/admin/config"}

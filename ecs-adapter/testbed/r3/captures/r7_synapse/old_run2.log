@@ -1,0 +1,9 @@
+2026-10-30 19:35:40,879 - synapse.rest.client.login - 341 - INFO - POST-12 - Got login request with identifier: {'type': 'm.id.user', 'user': 'rui'}, medium: None, address: None, user: None
+2026-10-30 19:35:41,080 - synapse.handlers.auth - 1434 - WARNING - POST-12 - Failed password login for user @rui:lab.example
+2026-10-30 19:35:41,080 - synapse.access.http.8008 - 508 - INFO - POST-12 - ::ffff:172.21.90.14 - 8008 - {None} Processed request: 0.201sec/0.000sec (0.198sec, 0.000sec) (0.000sec/0.000sec/1) 64B 403 "POST /_matrix/client/v3/login HTTP/1.1" "Element/1.11" [0 dbevts]
+2026-10-30 19:35:41,931 - synapse.rest.client.login - 341 - INFO - POST-13 - Got login request with identifier: {'type': 'm.id.user', 'user': 'admin'}, medium: None, address: None, user: None
+2026-10-30 19:35:41,931 - synapse.handlers.auth - 1078 - WARNING - POST-13 - Attempted to login as @admin:lab.example but they do not exist
+2026-10-30 19:35:41,932 - synapse.access.http.8008 - 508 - INFO - POST-13 - ::ffff:172.21.90.202 - 8008 - {None} Processed request: 0.001sec/0.000sec (0.000sec, 0.000sec) (0.000sec/0.000sec/1) 64B 403 "POST /_matrix/client/v3/login HTTP/1.1" "Element/1.11" [0 dbevts]
+2026-10-30 19:35:42,789 - synapse.rest.client.login - 341 - INFO - POST-14 - Got login request with identifier: {'type': 'm.id.user', 'user': 'ana'}, medium: None, address: None, user: None
+2026-10-30 19:35:42,982 - synapse.handlers.auth - 1004 - INFO - POST-14 - Logging in user @ana:lab.example on device XWQMITCAUE
+2026-10-30 19:35:42,984 - synapse.access.http.8008 - 508 - INFO - POST-14 - ::ffff:172.21.90.15 - 8008 - {None} Processed request: 0.196sec/0.000sec (0.186sec, 0.002sec) (0.001sec/0.006sec/7) 137B 200 "POST /_matrix/client/v3/login HTTP/1.1" "Element/1.11" [0 dbevts]

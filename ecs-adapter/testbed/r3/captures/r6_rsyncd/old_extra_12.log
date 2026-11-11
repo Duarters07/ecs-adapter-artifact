@@ -1,0 +1,16 @@
+2026/10/27 16:50:07 [275] connect from UNDETERMINED (172.21.65.204)
+2026/10/27 16:50:07 [275] rsync allowed access on module finance from UNDETERMINED (172.21.65.204)
+2026/10/27 16:50:07 [275] auth failed on module finance from UNDETERMINED (172.21.65.204) for irene: no matching rule
+2026/10/27 16:50:08 [276] connect from UNDETERMINED (172.21.65.228)
+2026/10/27 16:50:08 [276] rsync allowed access on module backup from UNDETERMINED (172.21.65.228)
+2026/10/27 16:50:08 [276] auth failed on module backup from UNDETERMINED (172.21.65.228) for diogo: no matching rule
+2026/10/27 16:50:08 [277] connect from UNDETERMINED (172.21.65.220)
+2026/10/27 16:50:08 [277] rsync allowed access on module public from UNDETERMINED (172.21.65.220)
+2026/10/27 16:50:09 [278] connect from UNDETERMINED (172.21.65.155)
+2026/10/27 16:50:09 [278] rsync allowed access on module backup from UNDETERMINED (172.21.65.155)
+2026/10/27 16:50:09 [278] auth failed on module backup from UNDETERMINED (172.21.65.155) for oracle: no matching rule
+2026/10/27 16:50:10 [279] connect from UNDETERMINED (172.21.65.168)
+2026/10/27 16:50:10 [279] unknown module 'home' tried from UNDETERMINED (172.21.65.168)
+2026/10/27 16:50:10 [280] connect from UNDETERMINED (172.21.65.139)
+2026/10/27 16:50:10 [280] rsync allowed access on module finance from UNDETERMINED (172.21.65.139)
+2026/10/27 16:50:10 [280] auth failed on module finance from UNDETERMINED (172.21.65.139) for bruno: no matching rule

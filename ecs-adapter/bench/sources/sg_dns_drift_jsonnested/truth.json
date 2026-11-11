@@ -1,0 +1,58 @@
+{
+  "category_hint": "network",
+  "contamination_risk": "none",
+  "extraction": {
+    "kind": "json"
+  },
+  "family": "sg_dns",
+  "fields": [
+    {
+      "ecs_field": "dns.question.name",
+      "source_key": "domain",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "network.protocol",
+      "source_key": "host",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "dns.question.type",
+      "source_key": "qtype",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "dns.response_code",
+      "source_key": "rcode",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "destination.ip",
+      "source_key": "resolver",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "source.ip",
+      "source_key": "src_ip",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "dns.id",
+      "source_key": "txid",
+      "type": "keyword"
+    }
+  ],
+  "level": 2,
+  "note": "Level-2 evaluation source: a TRAINING family rendered in a format no training source uses (corpus/drift_formats.py). Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_dns_drift_jsonnested",
+  "split": "test_drift",
+  "timestamp": {
+    "formats": [
+      "UNIX"
+    ],
+    "source_key": "time"
+  },
+  "transform": "drift:jsonnested",
+  "value_maps": []
+}

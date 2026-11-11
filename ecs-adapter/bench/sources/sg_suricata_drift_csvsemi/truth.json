@@ -1,0 +1,161 @@
+{
+  "category_hint": "web",
+  "contamination_risk": "none",
+  "extraction": {
+    "columns": [
+      "time",
+      "flow_end",
+      "dns_rrtype",
+      "flow_id",
+      "flow_reason",
+      "http_http_content_type",
+      "event_type",
+      "tls_notbefore",
+      "tls_issuerdn",
+      "src_port",
+      "dns_id",
+      "http_http_method",
+      "dns_rrname",
+      "flow_state",
+      "tls_ja3s_hash",
+      "flow_bytes_toclient",
+      "dest_ip",
+      "tls_sni",
+      "in_iface",
+      "flow_pkts_toserver",
+      "tls_fingerprint",
+      "src_ip",
+      "flow_bytes_toserver",
+      "http_hostname",
+      "dns_type",
+      "tls_notafter",
+      "tls_subject",
+      "community_id",
+      "tls_ja3_hash",
+      "tls_cipher",
+      "http_http_user_agent",
+      "dns_tx_id",
+      "http_length",
+      "proto",
+      "dns_version",
+      "http_status",
+      "flow_pkts_toclient",
+      "http_url",
+      "flow_age",
+      "timestamp",
+      "flow_start",
+      "tls_version",
+      "app_proto",
+      "dest_port",
+      "http_protocol"
+    ],
+    "field_split": ";",
+    "kind": "csv"
+  },
+  "family": "sg_suricata",
+  "fields": [
+    {
+      "ecs_field": "network.protocol",
+      "source_key": "app_proto",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "network.community_id",
+      "source_key": "community_id",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "destination.ip",
+      "source_key": "dest_ip",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "destination.port",
+      "source_key": "dest_port",
+      "type": "long"
+    },
+    {
+      "ecs_field": "destination.bytes",
+      "source_key": "flow_bytes_toclient",
+      "type": "long"
+    },
+    {
+      "ecs_field": "source.bytes",
+      "source_key": "flow_bytes_toserver",
+      "type": "long"
+    },
+    {
+      "ecs_field": "event.end",
+      "source_key": "flow_end",
+      "type": "date"
+    },
+    {
+      "ecs_field": "destination.packets",
+      "source_key": "flow_pkts_toclient",
+      "type": "long"
+    },
+    {
+      "ecs_field": "source.packets",
+      "source_key": "flow_pkts_toserver",
+      "type": "long"
+    },
+    {
+      "ecs_field": "event.start",
+      "source_key": "flow_start",
+      "type": "date"
+    },
+    {
+      "ecs_field": "url.domain",
+      "source_key": "http_hostname",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "http.request.method",
+      "source_key": "http_http_method",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "http.response.bytes",
+      "source_key": "http_length",
+      "type": "long"
+    },
+    {
+      "ecs_field": "http.response.status_code",
+      "source_key": "http_status",
+      "type": "long"
+    },
+    {
+      "ecs_field": "url.original",
+      "source_key": "http_url",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "observer.ingress.interface.name",
+      "source_key": "in_iface",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "source.ip",
+      "source_key": "src_ip",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "source.port",
+      "source_key": "src_port",
+      "type": "long"
+    }
+  ],
+  "level": 2,
+  "note": "Level-2 evaluation source: a TRAINING family rendered in a format no training source uses (corpus/drift_formats.py). Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_suricata_drift_csvsemi",
+  "split": "test_drift",
+  "timestamp": {
+    "formats": [
+      "ISO8601"
+    ],
+    "source_key": "time"
+  },
+  "transform": "drift:csvsemi",
+  "value_maps": []
+}

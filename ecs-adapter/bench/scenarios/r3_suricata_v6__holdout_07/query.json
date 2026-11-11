@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "observer.ingress.interface.name": "eth0"
+        }
+      },
+      {
+        "term": {
+          "rule.category": "Web Application Attack"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "http.request.method": "GET"
+        }
+      },
+      {
+        "term": {
+          "http.response.body.bytes": 10
+        }
+      }
+    ]
+  }
+}

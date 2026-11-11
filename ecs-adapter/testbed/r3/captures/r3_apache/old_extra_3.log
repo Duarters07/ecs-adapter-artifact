@@ -1,0 +1,12 @@
+[Sun Oct 25 22:15:12 2026] [error] [client 172.21.0.3] user test not found: /reports/, referer: http://portal.local/tools
+[Sun Oct 25 22:15:13 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/app.js
+[Sun Oct 25 22:15:13 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/config.ini, referer: http://intranet.local/home
+[Sun Oct 25 22:15:13 2026] [error] [client 172.21.0.3] user ana: authentication failure for "/members/notes.txt": Password Mismatch, referer: http://intranet.local/intranet
+[Sun Oct 25 22:15:13 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/, referer: http://intranet.local/finance
+[Sun Oct 25 22:15:13 2026] [error] [client 172.21.0.3] user marta: authentication failure for "/members/index.html": Password Mismatch, referer: http://hr.local/status
+[Sun Oct 25 22:15:14 2026] [error] [client 172.21.0.3] user vasco not found: /members/
+[Sun Oct 25 22:15:14 2026] [error] [client 172.21.0.3] user tiago: authentication failure for "/reports/": Password Mismatch, referer: http://portal.local/tools
+[Sun Oct 25 22:15:14 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/keys.pem
+[Sun Oct 25 22:15:14 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/, referer: http://portal.local/portal
+[Sun Oct 25 22:15:15 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/
+[Sun Oct 25 22:15:15 2026] [error] [client 172.21.0.3] user bruno not found: /members/

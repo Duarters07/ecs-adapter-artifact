@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "http.request.body.bytes": 0
+        }
+      },
+      {
+        "term": {
+          "http.request.id": "8a6fa069-c77b-4b91-8eb9-05014803d05b"
+        }
+      }
+    ]
+  }
+}

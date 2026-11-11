@@ -1,0 +1,6 @@
+{"raw": "[9] Oct 25 15:14:23 Exit before auth from <172.21.55.11:52942>: (user 'ana', 1 fails): Exited normally"}
+{"raw": "[10] Oct 25 15:14:24 Password auth succeeded for 'rui' from 172.21.55.12:48326"}
+{"raw": "[13] Oct 25 15:14:28 Bad password attempt for 'root' from 172.21.55.92:36838"}
+{"raw": "[14] Oct 25 15:14:32 Exit (deploy) from <172.21.55.13:46662>: Disconnect received"}
+{"raw": "[12] Oct 25 15:14:25 Login attempt for nonexistent user from 172.21.55.93:55370"}
+{"raw": "[7] Oct 25 15:14:22 Child connection from 172.21.55.11:52938"}

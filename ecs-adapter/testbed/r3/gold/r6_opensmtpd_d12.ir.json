@@ -1,0 +1,74 @@
+{
+  "source_id": "r6_opensmtpd_d12",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^%{BASE16NUM:session} smtp (?<action>connected) address=%{IP:client_ip} host=%{NOTSPACE:client_host}$",
+    "alternatives": [
+      "^%{BASE16NUM:session} smtp (?<action>message) msgid=%{BASE16NUM:msgid} size=%{INT:size} nrcpt=%{INT:nrcpt} proto=%{WORD:proto}$",
+      "^%{BASE16NUM:session} smtp (?<action>failed-command) command=\"%{DATA:command}\" result=\"%{DATA:reason}\"$",
+      "^%{BASE16NUM:session} smtp (?<action>disconnected) reason=(?:\"%{DATA:reason}\"|%{NOTSPACE:reason})$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "client_host",
+      "ecs_field": "source.domain",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "session",
+      "reason": "session id; declined"
+    },
+    {
+      "source_key": "msgid",
+      "reason": "internal queue id"
+    },
+    {
+      "source_key": "size",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "nrcpt",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "proto",
+      "reason": "declined"
+    },
+    {
+      "source_key": "command",
+      "reason": "no ECS field"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "network",
+      "email"
+    ],
+    "event.dataset": "opensmtpd.smtp"
+  }
+}

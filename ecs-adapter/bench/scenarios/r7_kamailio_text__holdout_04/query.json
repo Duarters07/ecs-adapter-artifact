@@ -1,0 +1,50 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.domain": "lab.example"
+              }
+            },
+            {
+              "term": {
+                "source.user.domain": "lab.example"
+              }
+            },
+            {
+              "term": {
+                "user.domain": "lab.example"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "monitor"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "monitor"
+              }
+            },
+            {
+              "term": {
+                "user.name": "monitor"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

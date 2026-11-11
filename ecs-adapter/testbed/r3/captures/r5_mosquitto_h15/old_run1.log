@@ -1,0 +1,15 @@
+1793203934: New connection from 172.21.50.11 on port 1883.
+1793203934: New client connected from 172.21.50.11 as temp-hall (c1, k60, u'sensor01').
+1793203934: Client temp-hall disconnected.
+1793203935: New connection from 172.21.50.11 on port 1883.
+1793203935: Socket error on client <unknown>, disconnecting.
+1793203938: New connection from 172.21.50.12 on port 1884.
+1793203938: New client connected from 172.21.50.12 as gw-main (c1, k60, u'gateway').
+1793203938: Client gw-main disconnected.
+1793203940: New connection from 172.21.50.99 on port 1883.
+1793203940: Socket error on client <unknown>, disconnecting.
+1793203943: New connection from 172.21.50.13 on port 1884.
+1793203943: New client connected from 172.21.50.13 as grafana-bridge (c1, k60, u'dashboard').
+1793203943: Client grafana-bridge disconnected.
+1793203946: New connection from 172.21.50.98 on port 1883.
+1793203946: Socket error on client <unknown>, disconnecting.

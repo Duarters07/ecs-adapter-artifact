@@ -1,0 +1,11 @@
+[Mon Oct 19 09:18:45 2026] [error] [client 172.21.0.3] user ana: authentication failure for "/members/q3.html": Password Mismatch
+[Mon Oct 19 09:18:46 2026] [error] [client 172.21.0.3] user rui: authentication failure for "/members/": Password Mismatch, referer: http://intranet.local/home
+[Mon Oct 19 09:18:46 2026] [error] [client 172.21.0.3] user carlos not found: /members/q3.html
+[Mon Oct 19 09:18:46 2026] [error] [client 172.21.0.3] user root not found: /members/
+[Mon Oct 19 09:18:46 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/
+[Mon Oct 19 09:18:46 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/users.db, referer: http://intranet.local/tools
+[Mon Oct 19 09:18:47 2026] [error] [client 172.21.0.3] user guest not found: /members/
+[Mon Oct 19 09:18:47 2026] [error] [client 172.21.0.3] user ana: authentication failure for "/members/notes.txt": Password Mismatch, referer: http://intranet.local/wiki
+[Mon Oct 19 09:18:47 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/dump.sql
+[Mon Oct 19 09:18:47 2026] [error] [client 172.21.0.3] user operator not found: /members/
+[Mon Oct 19 09:18:48 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/, referer: http://intranet.local/index

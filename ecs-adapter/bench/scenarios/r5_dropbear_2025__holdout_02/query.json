@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "Exited normally"
+        }
+      },
+      {
+        "term": {
+          "process.pid": 18
+        }
+      }
+    ]
+  }
+}

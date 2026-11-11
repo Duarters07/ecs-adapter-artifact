@@ -1,0 +1,89 @@
+{
+  "source_id": "r3_firewall_logemu",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^%{SYSLOGTIMESTAMP:timestamp} %{HOSTNAME:host} %{NOTSPACE:prefix} IN=%{DATA:IN} OUT=%{DATA:OUT} MAC=%{NOTSPACE:MAC} SRC=%{IP:SRC} DST=%{IP:DST} LEN=%{INT:LEN} .*?PROTO=%{WORD:PROTO} SPT=%{INT:SPT} DPT=%{INT:DPT} .*$",
+    "alternatives": [
+      "^%{SYSLOGTIMESTAMP:timestamp} %{HOSTNAME:host} %{NOTSPACE:prefix} IN=%{DATA:IN} OUT=%{DATA:OUT} MAC=%{NOTSPACE:MAC} SRC=%{IP:SRC} DST=%{IP:DST} LEN=%{INT:LEN} .*?PROTO=%{WORD:PROTO} .*$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "host",
+      "ecs_field": "observer.hostname",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "prefix",
+      "ecs_field": "rule.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "IN",
+      "ecs_field": "observer.ingress.interface.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "SRC",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "DST",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "SPT",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "DPT",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "PROTO",
+      "ecs_field": "network.transport",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "OUT",
+      "reason": "empty for input traffic"
+    },
+    {
+      "source_key": "LEN",
+      "reason": "one packet's length; network.bytes is a flow's"
+    },
+    {
+      "source_key": "MAC",
+      "reason": "two MACs and an EtherType in one string"
+    }
+  ],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "network"
+    ],
+    "event.type": [
+      "connection"
+    ],
+    "event.dataset": "netfilter.ulogd"
+  }
+}

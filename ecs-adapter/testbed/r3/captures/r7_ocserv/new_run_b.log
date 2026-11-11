@@ -1,0 +1,9 @@
+2026-10-30T20:33:47.881432+00:00 vpn01 ocserv[11]: plain-auth: error authenticating user 'deploy'
+2026-10-30T20:33:47.881511+00:00 vpn01 ocserv[39]: worker[deploy]: 172.21.91.31 worker-auth.c:1745: failed authentication for 'deploy'
+2026-10-30T20:33:49.052985+00:00 vpn01 ocserv[11]: sec-mod: initiating session for user 'ana' (session: 240mjW)
+2026-10-30T20:33:49.053088+00:00 vpn01 ocserv[1]: main[ana]:172.21.91.32:56218 new user session
+2026-10-30T20:33:49.053781+00:00 vpn01 ocserv[1]: main[ana]:172.21.91.32:56218 user logged in
+2026-10-30T20:33:54.017689+00:00 vpn01 ocserv[11]: sec-mod: invalidating session of user 'ana' (session: 240mjW)
+2026-10-30T20:33:54.017713+00:00 vpn01 ocserv[1]: main[ana]:172.21.91.32:56218 user disconnected (reason: user disconnected, rx: 0, tx: 400)
+2026-10-30T20:33:55.284813+00:00 vpn01 ocserv[11]: plain-auth: error authenticating user 'guest'
+2026-10-30T20:33:55.285003+00:00 vpn01 ocserv[41]: worker[guest]: 172.21.91.213 worker-auth.c:1745: failed authentication for 'guest'

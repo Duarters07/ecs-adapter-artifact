@@ -1,0 +1,11 @@
+{"raw": "2026-10-15 15:06:09 1xHN21-000179-1r <= sales@partner.example H=eloquent_torvalds.r2ho-net (ws01.partner.example) [172.21.0.3] P=esmtp S=296"}
+{"raw": "2026-10-15 15:06:10 1xHN22-00017D-0I => /var/mail/mail (root@mx1.corp.example) <nobody@corp.example> R=mail4root T=address_file"}
+{"raw": "2026-10-15 15:06:10 H=eloquent_torvalds.r2ho-net (relay.spam.example) [172.21.0.3] F=<promo@spam.example> rejected RCPT <victim@gmail.com>: relay not permitted"}
+{"raw": "2026-10-15 15:06:10 1xHN22-00017I-2x => bob <bob@corp.example> R=local_user T=mail_spool"}
+{"raw": "2026-10-15 15:06:10 H=eloquent_torvalds.r2ho-net (ws02.partner.example) [172.21.0.3] F=<billing@partner.example> rejected RCPT <ghost@corp.example>: Unrouteable address"}
+{"raw": "2026-10-15 15:06:09 1xHN21-000179-1r => alice <alice@corp.example> R=local_user T=mail_spool"}
+{"raw": "2026-10-15 15:06:11 1xHN23-00017N-2N <= sales@partner.example H=eloquent_torvalds.r2ho-net (ws01.partner.example) [172.21.0.3] P=esmtp S=294"}
+{"raw": "2026-10-15 15:06:09 1xHN21-000179-1r Completed"}
+{"raw": "2026-10-15 15:06:10 1xHN22-00017D-0I <= sales@partner.example H=eloquent_torvalds.r2ho-net (ws01.partner.example) [172.21.0.3] P=esmtp S=297"}
+{"raw": "2026-10-15 15:06:10 1xHN22-00017I-2x <= billing@partner.example H=eloquent_torvalds.r2ho-net (ws02.partner.example) [172.21.0.3] P=esmtp S=298"}
+{"raw": "2026-10-15 15:06:11 H=eloquent_torvalds.r2ho-net (relay.spam.example) [172.21.0.3] F=<promo@spam.example> rejected RCPT <ceo@bigbank.example>: relay not permitted"}

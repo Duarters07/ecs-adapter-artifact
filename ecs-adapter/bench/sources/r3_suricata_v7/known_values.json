@@ -1,0 +1,20 @@
+{
+  "note": "NOT ground truth. Each entry records a value and the ECS field that value IS. The ladder may read this file; it may never read truth.json. See validators/v3_5_known_values.py.",
+  "origin": "samples.ndjson, via the per-family extractor",
+  "provenance": "Derived from samples.ndjson by bench/make_known_values.py with the extractor in testbed/heldout_r2/specs.py. Like the round-1 test sources, the field each value belongs to comes from the DRAFT labelling, so V3.5 here is a consistency check, not a probe.",
+  "source_id": "r3_suricata_v7",
+  "values": {
+    "dns.id": "5208",
+    "dns.question.name": "files.tunnel-relay.com",
+    "dns.question.type": "A",
+    "dns.type": "query",
+    "event.action": "allowed",
+    "network.protocol": "dns",
+    "network.transport": "UDP",
+    "observer.ingress.interface.name": "eth0",
+    "rule.category": "Potentially Bad Traffic",
+    "rule.id": "3000002",
+    "rule.name": "R3 scanner user agent",
+    "source.port": "56253"
+  }
+}

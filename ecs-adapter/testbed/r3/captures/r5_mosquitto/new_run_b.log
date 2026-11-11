@@ -1,0 +1,15 @@
+1792939522: New connection from 172.21.50.31:49146 on port 1884.
+1792939522: New client connected from 172.21.50.31:49146 as cam-dock (p2, c1, k60, u'camera03').
+1792939522: Client cam-dock disconnected.
+1792939523: New connection from 172.21.50.32:46240 on port 1883.
+1792939523: Client hvac-attic disconnected, not authorised.
+1792939523: New connection from 172.21.50.91:47994 on port 1884.
+1792939523: Client scan-b disconnected, not authorised.
+1792939524: New connection from 172.21.50.33:43616 on port 1883.
+1792939524: New client connected from 172.21.50.33:43616 as pump-east (p2, c1, k60, u'pump02').
+1792939524: Client pump-east disconnected.
+1792939525: New connection from 172.21.50.90:51766 on port 1883.
+1792939525: Client bot-9 disconnected, not authorised.
+1792939526: New connection from 172.21.50.32:52846 on port 1884.
+1792939526: New client connected from 172.21.50.32:52846 as hvac-attic (p2, c1, k60, u'hvac04').
+1792939526: Client hvac-attic disconnected.

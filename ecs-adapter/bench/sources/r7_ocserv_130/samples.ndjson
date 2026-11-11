@@ -1,0 +1,19 @@
+{"raw": "2026-10-30T20:33:29.447299+00:00 vpn01 ocserv[1]: main[ana]:172.21.91.11:55752 user disconnected (reason: user disconnected, rx: 0, tx: 400)"}
+{"raw": "2026-10-30T20:33:38.289105+00:00 vpn01 ocserv[31]: worker[ghost]: 172.21.91.211 worker-auth.c:1745: failed authentication for 'ghost'"}
+{"raw": "2026-10-30T20:33:32.037039+00:00 vpn01 ocserv[11]: sec-mod: initiating session for user 'rui' (session: a4XjT2)"}
+{"raw": "2026-10-30T20:33:39.509850+00:00 vpn01 ocserv[1]: main[monitor]:172.21.91.13:55668 new user session"}
+{"raw": "2026-10-30T20:33:32.037809+00:00 vpn01 ocserv[1]: main[rui]:172.21.91.12:44262 user logged in"}
+{"raw": "2026-10-30T20:33:29.447234+00:00 vpn01 ocserv[11]: sec-mod: invalidating session of user 'ana' (session: kkUCvA)"}
+{"raw": "2026-10-30T20:33:30.743114+00:00 vpn01 ocserv[11]: plain-auth: error authenticating user 'ana'"}
+{"raw": "2026-10-30T20:33:30.743390+00:00 vpn01 ocserv[29]: worker[ana]: 172.21.91.11 worker-auth.c:1745: failed authentication for 'ana'"}
+{"raw": "2026-10-30T20:33:39.509818+00:00 vpn01 ocserv[11]: sec-mod: initiating session for user 'monitor' (session: 3oy8wI)"}
+{"raw": "2026-10-30T20:33:24.501974+00:00 vpn01 ocserv[11]: sec-mod: initiating session for user 'ana' (session: kkUCvA)"}
+{"raw": "2026-10-30T20:33:24.502017+00:00 vpn01 ocserv[1]: main[ana]:172.21.91.11:55752 new user session"}
+{"raw": "2026-10-30T20:33:24.503326+00:00 vpn01 ocserv[1]: main[ana]:172.21.91.11:55752 user logged in"}
+{"raw": "2026-10-30T20:33:32.037152+00:00 vpn01 ocserv[1]: main[rui]:172.21.91.12:44262 new user session"}
+{"raw": "2026-10-30T20:33:36.994669+00:00 vpn01 ocserv[11]: sec-mod: invalidating session of user 'rui' (session: a4XjT2)"}
+{"raw": "2026-10-30T20:33:36.994808+00:00 vpn01 ocserv[1]: main[rui]:172.21.91.12:44262 user disconnected (reason: user disconnected, rx: 0, tx: 400)"}
+{"raw": "2026-10-30T20:33:38.289009+00:00 vpn01 ocserv[11]: plain-auth: error authenticating user 'ghost'"}
+{"raw": "2026-10-30T20:33:39.511006+00:00 vpn01 ocserv[1]: main[monitor]:172.21.91.13:55668 user logged in"}
+{"raw": "2026-10-30T20:33:44.457876+00:00 vpn01 ocserv[11]: sec-mod: invalidating session of user 'monitor' (session: 3oy8wI)"}
+{"raw": "2026-10-30T20:33:44.457892+00:00 vpn01 ocserv[1]: main[monitor]:172.21.91.13:55668 user disconnected (reason: user disconnected, rx: 0, tx: 400)"}

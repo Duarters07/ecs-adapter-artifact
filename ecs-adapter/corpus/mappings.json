@@ -1,0 +1,1020 @@
+[
+  {
+    "category_hint": "web",
+    "constants": {
+      "event.category": "web",
+      "event.dataset": "caddy.access",
+      "event.kind": "event",
+      "event.type": "access"
+    },
+    "family": "caddy",
+    "fields": [
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "_cad.request.remote_ip",
+        "semantic_name": "remote_ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "source.port",
+        "intermediate": "_cad.request.remote_port",
+        "semantic_name": "remote_port",
+        "type": "long"
+      },
+      {
+        "ecs_field": "http.request.method",
+        "intermediate": "_cad.request.method",
+        "semantic_name": "method",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "http.version",
+        "intermediate": "_cad.request.proto",
+        "semantic_name": "proto",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "url.domain",
+        "intermediate": "_cad.request.host",
+        "semantic_name": "host",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "url.original",
+        "intermediate": "_cad.request.uri",
+        "semantic_name": "uri",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "http.response.status_code",
+        "intermediate": "_cad.status",
+        "semantic_name": "status",
+        "type": "long"
+      },
+      {
+        "ecs_field": "http.response.body.bytes",
+        "intermediate": "_cad.size",
+        "semantic_name": "size",
+        "type": "long"
+      }
+    ],
+    "pipeline": "caddy.conf"
+  },
+  {
+    "category_hint": "network",
+    "constants": {
+      "event.category": "network",
+      "event.dataset": "coredns.log",
+      "event.kind": "event",
+      "event.type": "protocol"
+    },
+    "family": "coredns",
+    "fields": [
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "_dns.cip",
+        "semantic_name": "cip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "source.port",
+        "intermediate": "_dns.cport",
+        "semantic_name": "cport",
+        "type": "long"
+      },
+      {
+        "ecs_field": "dns.question.name",
+        "intermediate": "_dns.qn",
+        "semantic_name": "qn",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "dns.question.type",
+        "intermediate": "_dns.qt",
+        "semantic_name": "qt",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "dns.question.class",
+        "intermediate": "_dns.qc",
+        "semantic_name": "qc",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "dns.response_code",
+        "intermediate": "_dns.rc",
+        "semantic_name": "rc",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "network.transport",
+        "intermediate": "_dns.netproto",
+        "semantic_name": "netproto",
+        "type": "keyword"
+      }
+    ],
+    "pipeline": "coredns.conf"
+  },
+  {
+    "category_hint": "network",
+    "constants": {
+      "event.category": "network",
+      "event.dataset": "pfsense.firewall",
+      "event.kind": "event",
+      "event.type": "connection"
+    },
+    "family": "firewall-pfsense",
+    "fields": [
+      {
+        "ecs_field": "event.action",
+        "intermediate": "pf.action",
+        "semantic_name": "action",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "observer.ingress.interface.name",
+        "intermediate": "pf.interface",
+        "semantic_name": "interface",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "observer.hostname",
+        "intermediate": "host.name",
+        "semantic_name": "name",
+        "type": "keyword"
+      }
+    ],
+    "pipeline": "firewall-pfsense.conf"
+  },
+  {
+    "category_hint": "web",
+    "constants": {
+      "event.category": "web",
+      "event.dataset": "haproxy.access",
+      "event.kind": "event",
+      "event.type": "access"
+    },
+    "family": "haproxy",
+    "fields": [
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "_hap.cip",
+        "semantic_name": "cip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "source.port",
+        "intermediate": "_hap.cport",
+        "semantic_name": "cport",
+        "type": "long"
+      },
+      {
+        "ecs_field": "observer.name",
+        "intermediate": "_hap.fe",
+        "semantic_name": "fe",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "destination.address",
+        "intermediate": "_hap.srv",
+        "semantic_name": "srv",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "http.response.status_code",
+        "intermediate": "_hap.st",
+        "semantic_name": "st",
+        "type": "long"
+      },
+      {
+        "ecs_field": "http.request.method",
+        "intermediate": "_hap.meth",
+        "semantic_name": "meth",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "url.path",
+        "intermediate": "_hap.path",
+        "semantic_name": "path",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "http.response.body.bytes",
+        "intermediate": "_hap.bytes",
+        "semantic_name": "bytes",
+        "type": "long"
+      }
+    ],
+    "pipeline": "haproxy.conf"
+  },
+  {
+    "category_hint": "authentication",
+    "constants": {
+      "event.category": "network",
+      "event.dataset": "linux.audit",
+      "event.kind": "event"
+    },
+    "family": "linux-auditd",
+    "fields": [
+      {
+        "ecs_field": "process.executable",
+        "intermediate": "auditd.exe",
+        "semantic_name": "exe",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "process.name",
+        "intermediate": "auditd.comm",
+        "semantic_name": "comm",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "process.pid",
+        "intermediate": "auditd.pid",
+        "semantic_name": "pid",
+        "type": "long"
+      },
+      {
+        "ecs_field": "user.id",
+        "intermediate": "auditd.uid",
+        "semantic_name": "uid",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user.audit.id",
+        "intermediate": "auditd.auid",
+        "semantic_name": "auid",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.action",
+        "intermediate": "auditd.key",
+        "semantic_name": "key",
+        "type": "keyword"
+      }
+    ],
+    "pipeline": "linux-auditd.conf"
+  },
+  {
+    "category_hint": "web",
+    "constants": {
+      "event.category": "web",
+      "event.dataset": "nginx.access",
+      "event.kind": "event",
+      "event.type": "access"
+    },
+    "family": "nginx",
+    "fields": [
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "nginx.access.remote_ip",
+        "semantic_name": "remote_ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "url.original",
+        "intermediate": "nginx.access.url",
+        "semantic_name": "url",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "http.request.method",
+        "intermediate": "nginx.access.method",
+        "semantic_name": "method",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "http.response.status_code",
+        "intermediate": "nginx.access.response_code",
+        "semantic_name": "response_code",
+        "type": "long"
+      },
+      {
+        "ecs_field": "http.response.body.bytes",
+        "intermediate": "nginx.access.body_sent.bytes",
+        "semantic_name": "bytes",
+        "type": "long"
+      },
+      {
+        "ecs_field": "http.request.referrer",
+        "intermediate": "nginx.access.referrer",
+        "semantic_name": "referrer",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user_agent.original",
+        "intermediate": "nginx.access.agent",
+        "semantic_name": "agent",
+        "type": "keyword"
+      }
+    ],
+    "pipeline": "nginx.conf"
+  },
+  {
+    "category_hint": "web",
+    "constants": {
+      "event.category": "web",
+      "event.dataset": "squid.access",
+      "event.kind": "event",
+      "event.type": "access"
+    },
+    "family": "squid",
+    "fields": [
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "_sq.cli",
+        "semantic_name": "cli",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "observer.ip",
+        "intermediate": "_sq.proxy",
+        "semantic_name": "proxy",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "destination.address",
+        "intermediate": "_sq.peer",
+        "semantic_name": "peer",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "http.response.status_code",
+        "intermediate": "_sq.sc",
+        "semantic_name": "sc",
+        "type": "long"
+      },
+      {
+        "ecs_field": "http.response.body.bytes",
+        "intermediate": "_sq.sz",
+        "semantic_name": "sz",
+        "type": "long"
+      },
+      {
+        "ecs_field": "http.request.method",
+        "intermediate": "_sq.verb",
+        "semantic_name": "verb",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "url.original",
+        "intermediate": "_sq.uri",
+        "semantic_name": "uri",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user.name",
+        "intermediate": "_sq.who",
+        "semantic_name": "who",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "http.response.mime_type",
+        "intermediate": "_sq.ctype",
+        "semantic_name": "ctype",
+        "type": "keyword"
+      }
+    ],
+    "pipeline": "squid.conf"
+  },
+  {
+    "category_hint": "authentication",
+    "constants": {
+      "event.category": "authentication",
+      "event.dataset": "windows.security",
+      "event.kind": "event",
+      "event.type": "info"
+    },
+    "family": "windows-security",
+    "fields": [
+      {
+        "ecs_field": "host.name",
+        "intermediate": "winlog.computer_name",
+        "semantic_name": "computer_name",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user.name",
+        "intermediate": "winlog.user.name",
+        "semantic_name": "name",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user.domain",
+        "intermediate": "winlog.user.domain",
+        "semantic_name": "domain",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "winlog.event_data.IpAddress",
+        "semantic_name": "IpAddress",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "source.domain",
+        "intermediate": "winlog.event_data.WorkstationName",
+        "semantic_name": "WorkstationName",
+        "type": "keyword"
+      }
+    ],
+    "pipeline": "windows-security.conf"
+  },
+  {
+    "family": "netflow",
+    "category_hint": "network",
+    "pipeline": "netflow.conf",
+    "constants": {
+      "event.category": "network",
+      "event.dataset": "netflow.conn",
+      "event.kind": "event",
+      "event.type": "connection"
+    },
+    "fields": [
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "_nf.source_ip",
+        "semantic_name": "ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "source.port",
+        "intermediate": "_nf.source_port",
+        "semantic_name": "port",
+        "type": "long"
+      },
+      {
+        "ecs_field": "destination.ip",
+        "intermediate": "_nf.destination_ip",
+        "semantic_name": "ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "destination.port",
+        "intermediate": "_nf.destination_port",
+        "semantic_name": "port",
+        "type": "long"
+      },
+      {
+        "ecs_field": "network.protocol",
+        "intermediate": "_nf.network_protocol",
+        "semantic_name": "protocol",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "network.transport",
+        "intermediate": "_nf.network_transport",
+        "semantic_name": "transport",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.duration",
+        "intermediate": "_nf.event_duration",
+        "semantic_name": "duration",
+        "type": "long"
+      },
+      {
+        "ecs_field": "event.action",
+        "intermediate": "_nf.event_action",
+        "semantic_name": "action",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "observer.name",
+        "intermediate": "_nf.observer_name",
+        "semantic_name": "name",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "observer.hostname",
+        "intermediate": "_nf.observer_hostname",
+        "semantic_name": "hostname",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "observer.ip",
+        "intermediate": "_nf.observer_ip",
+        "semantic_name": "ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "observer.ingress.interface.name",
+        "intermediate": "_nf.observer_ingress_interface_name",
+        "semantic_name": "name",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "source.domain",
+        "intermediate": "_nf.source_domain",
+        "semantic_name": "domain",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.outcome",
+        "intermediate": "_nf.event_outcome",
+        "semantic_name": "outcome",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.code",
+        "intermediate": "_nf.event_code",
+        "semantic_name": "code",
+        "type": "keyword"
+      }
+    ]
+  },
+  {
+    "family": "webproxy",
+    "category_hint": "web",
+    "pipeline": "webproxy.conf",
+    "constants": {
+      "event.category": "web",
+      "event.dataset": "webproxy.access",
+      "event.kind": "event",
+      "event.type": "access"
+    },
+    "fields": [
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "_wp.source_ip",
+        "semantic_name": "ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "source.port",
+        "intermediate": "_wp.source_port",
+        "semantic_name": "port",
+        "type": "long"
+      },
+      {
+        "ecs_field": "destination.address",
+        "intermediate": "_wp.destination_address",
+        "semantic_name": "address",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "destination.ip",
+        "intermediate": "_wp.destination_ip",
+        "semantic_name": "ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "destination.port",
+        "intermediate": "_wp.destination_port",
+        "semantic_name": "port",
+        "type": "long"
+      },
+      {
+        "ecs_field": "http.request.method",
+        "intermediate": "_wp.http_request_method",
+        "semantic_name": "method",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "http.request.referrer",
+        "intermediate": "_wp.http_request_referrer",
+        "semantic_name": "referrer",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "http.response.status_code",
+        "intermediate": "_wp.http_response_status_code",
+        "semantic_name": "status_code",
+        "type": "long"
+      },
+      {
+        "ecs_field": "http.response.body.bytes",
+        "intermediate": "_wp.http_response_body_bytes",
+        "semantic_name": "bytes",
+        "type": "long"
+      },
+      {
+        "ecs_field": "http.response.mime_type",
+        "intermediate": "_wp.http_response_mime_type",
+        "semantic_name": "mime_type",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "http.version",
+        "intermediate": "_wp.http_version",
+        "semantic_name": "version",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "url.original",
+        "intermediate": "_wp.url_original",
+        "semantic_name": "original",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "url.path",
+        "intermediate": "_wp.url_path",
+        "semantic_name": "path",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "url.domain",
+        "intermediate": "_wp.url_domain",
+        "semantic_name": "domain",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user_agent.original",
+        "intermediate": "_wp.user_agent_original",
+        "semantic_name": "original",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user.name",
+        "intermediate": "_wp.user_name",
+        "semantic_name": "name",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user.domain",
+        "intermediate": "_wp.user_domain",
+        "semantic_name": "domain",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user.id",
+        "intermediate": "_wp.user_id",
+        "semantic_name": "id",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.duration",
+        "intermediate": "_wp.event_duration",
+        "semantic_name": "duration",
+        "type": "long"
+      },
+      {
+        "ecs_field": "event.outcome",
+        "intermediate": "_wp.event_outcome",
+        "semantic_name": "outcome",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "observer.ip",
+        "intermediate": "_wp.observer_ip",
+        "semantic_name": "ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "observer.name",
+        "intermediate": "_wp.observer_name",
+        "semantic_name": "name",
+        "type": "keyword"
+      }
+    ]
+  },
+  {
+    "family": "filesvc",
+    "category_hint": "file",
+    "pipeline": "filesvc.conf",
+    "constants": {
+      "event.category": "file",
+      "event.dataset": "filesvc.transfer",
+      "event.kind": "event",
+      "event.type": "access"
+    },
+    "fields": [
+      {
+        "ecs_field": "file.name",
+        "intermediate": "_fs.file_name",
+        "semantic_name": "name",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "file.path",
+        "intermediate": "_fs.file_path",
+        "semantic_name": "path",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "file.size",
+        "intermediate": "_fs.file_size",
+        "semantic_name": "size",
+        "type": "long"
+      },
+      {
+        "ecs_field": "user.name",
+        "intermediate": "_fs.user_name",
+        "semantic_name": "name",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user.id",
+        "intermediate": "_fs.user_id",
+        "semantic_name": "id",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user.domain",
+        "intermediate": "_fs.user_domain",
+        "semantic_name": "domain",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "host.name",
+        "intermediate": "_fs.host_name",
+        "semantic_name": "name",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "_fs.source_ip",
+        "semantic_name": "ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "source.port",
+        "intermediate": "_fs.source_port",
+        "semantic_name": "port",
+        "type": "long"
+      },
+      {
+        "ecs_field": "destination.address",
+        "intermediate": "_fs.destination_address",
+        "semantic_name": "address",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.action",
+        "intermediate": "_fs.event_action",
+        "semantic_name": "action",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.outcome",
+        "intermediate": "_fs.event_outcome",
+        "semantic_name": "outcome",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.code",
+        "intermediate": "_fs.event_code",
+        "semantic_name": "code",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.duration",
+        "intermediate": "_fs.event_duration",
+        "semantic_name": "duration",
+        "type": "long"
+      },
+      {
+        "ecs_field": "observer.hostname",
+        "intermediate": "_fs.observer_hostname",
+        "semantic_name": "hostname",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "network.protocol",
+        "intermediate": "_fs.network_protocol",
+        "semantic_name": "protocol",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "network.transport",
+        "intermediate": "_fs.network_transport",
+        "semantic_name": "transport",
+        "type": "keyword"
+      }
+    ]
+  },
+  {
+    "family": "appsvc",
+    "category_hint": "database",
+    "pipeline": "appsvc.conf",
+    "constants": {
+      "event.category": "database",
+      "event.dataset": "appsvc.log",
+      "event.kind": "event"
+    },
+    "fields": [
+      {
+        "ecs_field": "log.level",
+        "intermediate": "_x.level",
+        "semantic_name": "level",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "log.logger",
+        "intermediate": "_x.logger",
+        "semantic_name": "logger",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "message",
+        "intermediate": "_x.msg",
+        "semantic_name": "msg",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "error.message",
+        "intermediate": "_x.error",
+        "semantic_name": "error",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user.name",
+        "intermediate": "_x.user",
+        "semantic_name": "user",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "process.pid",
+        "intermediate": "_x.pid",
+        "semantic_name": "pid",
+        "type": "long"
+      },
+      {
+        "ecs_field": "host.name",
+        "intermediate": "_x.host",
+        "semantic_name": "host",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.action",
+        "intermediate": "_x.action",
+        "semantic_name": "action",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.outcome",
+        "intermediate": "_x.outcome",
+        "semantic_name": "outcome",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.code",
+        "intermediate": "_x.code",
+        "semantic_name": "code",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "_x.src_ip",
+        "semantic_name": "src_ip",
+        "type": "ip"
+      }
+    ]
+  },
+  {
+    "family": "idsalert",
+    "category_hint": "network",
+    "pipeline": "idsalert.conf",
+    "constants": {
+      "event.category": "network",
+      "event.dataset": "ids.alert",
+      "event.type": "info"
+    },
+    "fields": [
+      {
+        "ecs_field": "rule.name",
+        "intermediate": "_x.rule",
+        "semantic_name": "rule",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.kind",
+        "intermediate": "_x.kind",
+        "semantic_name": "kind",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "log.level",
+        "intermediate": "_x.severity",
+        "semantic_name": "severity",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "_x.src_ip",
+        "semantic_name": "src_ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "source.port",
+        "intermediate": "_x.src_port",
+        "semantic_name": "src_port",
+        "type": "long"
+      },
+      {
+        "ecs_field": "destination.ip",
+        "intermediate": "_x.dst_ip",
+        "semantic_name": "dst_ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "destination.port",
+        "intermediate": "_x.dst_port",
+        "semantic_name": "dst_port",
+        "type": "long"
+      },
+      {
+        "ecs_field": "network.protocol",
+        "intermediate": "_x.proto",
+        "semantic_name": "proto",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "network.transport",
+        "intermediate": "_x.transport",
+        "semantic_name": "transport",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "event.action",
+        "intermediate": "_x.action",
+        "semantic_name": "action",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "observer.hostname",
+        "intermediate": "_x.sensor",
+        "semantic_name": "sensor",
+        "type": "keyword"
+      }
+    ]
+  },
+  {
+    "family": "authsvc",
+    "category_hint": "authentication",
+    "pipeline": "authsvc.conf",
+    "constants": {
+      "event.category": "authentication",
+      "event.dataset": "auth.log",
+      "event.kind": "event"
+    },
+    "fields": [
+      {
+        "ecs_field": "event.outcome",
+        "intermediate": "_x.result",
+        "semantic_name": "result",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "user.name",
+        "intermediate": "_x.user",
+        "semantic_name": "user",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "source.ip",
+        "intermediate": "_x.src_ip",
+        "semantic_name": "src_ip",
+        "type": "ip"
+      },
+      {
+        "ecs_field": "source.port",
+        "intermediate": "_x.src_port",
+        "semantic_name": "src_port",
+        "type": "long"
+      },
+      {
+        "ecs_field": "log.level",
+        "intermediate": "_x.level",
+        "semantic_name": "level",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "log.logger",
+        "intermediate": "_x.logger",
+        "semantic_name": "logger",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "process.name",
+        "intermediate": "_x.proc",
+        "semantic_name": "proc",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "process.pid",
+        "intermediate": "_x.pid",
+        "semantic_name": "pid",
+        "type": "long"
+      },
+      {
+        "ecs_field": "event.action",
+        "intermediate": "_x.action",
+        "semantic_name": "action",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "host.name",
+        "intermediate": "_x.host",
+        "semantic_name": "host",
+        "type": "keyword"
+      },
+      {
+        "ecs_field": "message",
+        "intermediate": "_x.msg",
+        "semantic_name": "msg",
+        "type": "keyword"
+      }
+    ]
+  }
+]

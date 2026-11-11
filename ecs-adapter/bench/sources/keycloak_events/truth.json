@@ -1,0 +1,203 @@
+{
+  "source_id": "keycloak_events",
+  "family": "keycloak",
+  "split": "test",
+  "category_hint": "authentication",
+  "contamination_risk": "medium",
+  "origin": "Produced by running Keycloak 24.0.5 (image quay.io/keycloak/keycloak:24.0.5), jboss-logging events listener, not copied from documentation or a public dataset. Captured on 2026-10-15 on the author's laptop by testbed/heldout_r2/keycloak_events.sh, two runs driven with different words (run A -> samples, run B -> scenario events).",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "JAVA LOG PREAMBLE, THEN QUOTED KEY=VALUE PAIRS SEPARATED BY COMMA AND SPACE - and the timestamp itself contains a comma. WHICH ENTITY: `clientId` is the OAuth client, an APPLICATION registered in Keycloak, not the network client - client.* would be wrong; `userId` is Keycloak's internal UUID and `username` the login name, so user.id and user.name are not interchangeable. `userId` is the literal string `null` when the account does not exist. Most keys have no ECS home and are acceptable abstentions.",
+  "fields": [
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "logger",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "role": "java_logger",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "thread",
+      "ecs_field": "process.thread.name",
+      "type": "keyword",
+      "role": "worker_thread",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "type",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "clientId",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "oauth_application",
+      "difficulty": "hard",
+      "note": "The APPLICATION the login was for. client.* describes the network client and would be WRONG; ECS 8.11 has no field for an OAuth client id.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "userId",
+      "ecs_field": "user.id",
+      "type": "keyword",
+      "role": "user_uuid",
+      "difficulty": "medium",
+      "note": "Keycloak's UUID for the account; `null` when it does not exist.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "username",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "login_name",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "ipAddress",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "error",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "error_code",
+      "difficulty": "medium",
+      "note": "A short error code. error.code is defensible but outside the authentication fieldset this benchmark offers; DRAFT - author to decide.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "realmId",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "tenant_identifier",
+      "difficulty": "ambiguous",
+      "note": "The realm (tenant) the event belongs to, as a UUID; ECS 8.11 has no tenant field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "sessionId",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_identifier",
+      "difficulty": "ambiguous",
+      "note": "No ECS session identifier.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "auth_method",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "authentication_protocol",
+      "difficulty": "ambiguous",
+      "note": "The protocol (openid-connect); no ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "grant_type",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "oauth_grant_type",
+      "difficulty": "ambiguous",
+      "note": "The OAuth grant used; no ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_auth_method",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "client_authentication_method",
+      "difficulty": "ambiguous",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "token_id",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "token_identifier",
+      "difficulty": "ambiguous",
+      "note": "Correlates tokens; no ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "refresh_token_id",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "token_identifier",
+      "difficulty": "ambiguous",
+      "note": "As token_id.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "refresh_token_type",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "token_type",
+      "difficulty": "ambiguous",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "scope",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "oauth_scope",
+      "difficulty": "ambiguous",
+      "note": "Granted OAuth scopes; no ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "authSessionParentId",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_identifier",
+      "difficulty": "ambiguous",
+      "note": "As sessionId.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "authSessionTabId",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_identifier",
+      "difficulty": "ambiguous",
+      "note": "A browser-tab discriminator; no ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "keycloak_events__holdout_01",
+    "keycloak_events__holdout_02",
+    "keycloak_events__holdout_04"
+  ]
+}

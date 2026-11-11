@@ -1,0 +1,8 @@
+{
+ "dataset": "AIT-LDS v2.1",
+ "scenario": "russellmitchell",
+ "file": "gather/intranet_server/logs/apache2/intranet.smith.russellmitchell.com-error.log.2",
+ "lines_in_file": 36,
+ "sampler": "adapter.sampler.deduplicate(per_signature=3,total_cap=20)",
+ "file_sha256": "ff3d6815b660b87bc0576bbb7fee011d48a08c2a81d12ab83c052e98a58b281b"
+}

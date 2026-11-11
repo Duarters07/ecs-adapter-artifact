@@ -1,0 +1,64 @@
+{"raw": "Jan 18 13:14:43 intranet-server sudo: pam_unix(sudo:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 18 13:14:43 intranet-server sudo: pam_unix(sudo:session): session closed for user root"}
+{"raw": "Jan 18 13:14:49 intranet-server sudo: pam_unix(sudo:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 18 13:14:49 intranet-server sudo: pam_unix(sudo:session): session closed for user root"}
+{"raw": "Jan 16 06:39:01 intranet-server CRON[18209]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 16 08:09:01 intranet-server CRON[18546]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 16 12:39:01 intranet-server CRON[19338]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 16 16:17:01 intranet-server CRON[20052]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 16 16:17:01 intranet-server CRON[20052]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 16 18:17:01 intranet-server CRON[20438]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 16 19:17:01 intranet-server CRON[20586]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 16 21:17:01 intranet-server CRON[20897]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 16 21:39:01 intranet-server CRON[20903]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 16 22:09:01 intranet-server CRON[20979]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 16 22:39:01 intranet-server CRON[21066]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 16 23:09:01 intranet-server CRON[21138]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 17 00:17:01 intranet-server CRON[21377]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 17 03:09:01 intranet-server CRON[22360]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 17 05:17:01 intranet-server CRON[22747]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 17 05:39:01 intranet-server CRON[22752]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 17 06:09:01 intranet-server CRON[22824]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 17 06:25:12 intranet-server CRON[22905]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 17 13:39:01 intranet-server CRON[24385]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 17 15:39:01 intranet-server CRON[24766]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 17 16:09:01 intranet-server CRON[24846]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 17 18:09:01 intranet-server CRON[25187]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 17 18:39:01 intranet-server CRON[25260]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 17 20:39:01 intranet-server CRON[25725]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 17 21:39:01 intranet-server CRON[25878]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 17 22:39:01 intranet-server CRON[26031]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 18 00:17:01 intranet-server CRON[26405]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 18 00:17:01 intranet-server CRON[26405]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 18 04:09:01 intranet-server CRON[26915]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 18 05:39:01 intranet-server CRON[27149]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 18 07:07:01 intranet-server CRON[27690]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 18 07:09:01 intranet-server CRON[27693]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 18 08:17:01 intranet-server CRON[27918]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 18 09:17:02 intranet-server CRON[28067]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 18 10:09:01 intranet-server CRON[28164]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 18 11:09:01 intranet-server CRON[28328]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 18 11:39:01 intranet-server CRON[28415]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 18 12:09:02 intranet-server CRON[28496]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 18 12:17:01 intranet-server CRON[28569]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 18 15:39:01 intranet-server CRON[29206]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 18 16:17:01 intranet-server CRON[29349]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 18 21:09:01 intranet-server CRON[30621]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 18 23:17:01 intranet-server CRON[30992]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 19 00:17:01 intranet-server CRON[31149]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 19 03:09:01 intranet-server CRON[31547]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 19 05:17:01 intranet-server CRON[32441]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 19 06:25:29 intranet-server CRON[32595]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 19 07:09:01 intranet-server CRON[711]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 19 11:09:01 intranet-server CRON[1415]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 19 12:09:01 intranet-server CRON[1637]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 19 13:17:02 intranet-server CRON[1862]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 19 14:09:01 intranet-server CRON[1949]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 19 14:39:01 intranet-server CRON[2034]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 19 16:39:01 intranet-server CRON[2373]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 19 17:17:01 intranet-server CRON[2521]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 19 17:39:01 intranet-server CRON[2529]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 19 19:17:01 intranet-server CRON[2826]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 19 21:17:01 intranet-server CRON[3139]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 19 22:39:01 intranet-server CRON[3317]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 19 23:17:01 intranet-server CRON[3531]: pam_unix(cron:session): session opened for user root by (uid=0)"}

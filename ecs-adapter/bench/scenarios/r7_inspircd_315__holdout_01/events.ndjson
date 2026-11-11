@@ -1,0 +1,3 @@
+{"raw": "Fri Oct 30 2026 19:12:39 CONNECT: Client connecting on port 6667 (class unnamed-0): evil!evil@172.21.83.203 (172.21.83.203) [evil\u000f]"}
+{"raw": "Fri Oct 30 2026 19:12:39 OPER: WARNING! Failed oper attempt by evil!evil@172.21.83.203 using login 'root': The following fields do not match: login password hosts"}
+{"raw": "Fri Oct 30 2026 19:12:40 QUIT: Client exiting: evil!evil@172.21.83.203 (172.21.83.203) [Connection closed]"}

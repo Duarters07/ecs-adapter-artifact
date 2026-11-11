@@ -1,0 +1,6 @@
+172.21.0.4 - - [25/Oct/2026:22:57:14 +0000] "GET http://r5-varnish-old/admin/config HTTP/1.1" 403 249 "-" "curl/7.88.1"
+172.21.0.4 - - [25/Oct/2026:22:57:14 +0000] "GET http://r5-varnish-old/nope.php HTTP/1.1" 404 153 "-" "Java/17.0.8"
+172.21.0.4 - - [25/Oct/2026:22:57:14 +0000] "GET http://r5-varnish-old/ HTTP/1.1" 200 615 "-" "Lynx/2.9.0"
+172.21.0.4 - - [25/Oct/2026:22:57:14 +0000] "GET http://r5-varnish-old/admin/login.php HTTP/1.1" 403 246 "-" "Java/17.0.8"
+172.21.0.4 - - [25/Oct/2026:22:57:15 +0000] "GET http://r5-varnish-old/old.bak HTTP/1.1" 404 153 "-" "HTTPie/3.2.1"
+172.21.0.4 - - [25/Oct/2026:22:57:15 +0000] "POST http://r5-varnish-old/config.bak HTTP/1.1" 404 153 "-" "zgrab/0.x"

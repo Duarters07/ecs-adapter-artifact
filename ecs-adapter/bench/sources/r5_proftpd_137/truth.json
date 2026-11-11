@@ -1,0 +1,119 @@
+{
+  "source_id": "r5_proftpd_137",
+  "family": "proftpd",
+  "split": "train_r5",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running ProFTPD 1.3.7a (Debian 11), not copied from documentation or a public dataset. Captured 2026-10-25T15:02:12Z on the author's laptop by testbed/r3/r5_proftpd.sh (docker logs, stderr (proftpd --nodaemon), USER/SECURITY/session-opened lines); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 6 (pool r5), OLD VERSION: ProFTPD 1.3.7a, the packaged configuration.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "server_ip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "role": "server_ip",
+      "difficulty": "medium",
+      "note": "server.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "server_port",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "role": "server_port",
+      "difficulty": "medium",
+      "note": "server.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "role": "host",
+      "difficulty": "easy",
+      "note": "host.name is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "process",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "role": "program",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "result",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "auth_outcome",
+      "difficulty": "hard",
+      "note": "event.outcome needs a value map (Login successful -> success); declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_name",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "client_name",
+      "difficulty": "hard",
+      "note": "Equal to the address here (reverse DNS off).",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "session",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_state",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r5_proftpd_137__holdout_01",
+    "r5_proftpd_137__holdout_02",
+    "r5_proftpd_137__holdout_04"
+  ],
+  "round3": {
+    "pair": "r5_proftpd",
+    "role": "old"
+  }
+}

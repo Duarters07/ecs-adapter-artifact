@@ -1,0 +1,18 @@
+2026-10-27T16:46:37.942696+00:00 files02 pure-ftpd: (?@172.21.64.146) [INFO] New connection from 172.21.64.146
+2026-10-27T16:46:40.991387+00:00 files02 pure-ftpd: (?@172.21.64.146) [WARNING] Authentication failed for user [anonymous]
+2026-10-27T16:46:40.992933+00:00 files02 pure-ftpd: (?@172.21.64.146) [INFO] Logout.
+2026-10-27T16:46:41.695057+00:00 files02 pure-ftpd: (?@172.21.64.214) [INFO] New connection from 172.21.64.214
+2026-10-27T16:46:47.419398+00:00 files02 pure-ftpd: (?@172.21.64.214) [WARNING] Authentication failed for user [scanner]
+2026-10-27T16:46:47.420476+00:00 files02 pure-ftpd: (?@172.21.64.214) [INFO] Logout.
+2026-10-27T16:46:48.133219+00:00 files02 pure-ftpd: (?@172.21.64.178) [INFO] New connection from 172.21.64.178
+2026-10-27T16:46:52.251200+00:00 files02 pure-ftpd: (?@172.21.64.178) [WARNING] Authentication failed for user [backup]
+2026-10-27T16:46:52.252234+00:00 files02 pure-ftpd: (?@172.21.64.178) [INFO] Logout.
+2026-10-27T16:46:52.940227+00:00 files02 pure-ftpd: (?@172.21.64.155) [INFO] New connection from 172.21.64.155
+2026-10-27T16:46:58.798438+00:00 files02 pure-ftpd: (?@172.21.64.155) [WARNING] Authentication failed for user [ana]
+2026-10-27T16:46:58.799308+00:00 files02 pure-ftpd: (?@172.21.64.155) [INFO] Logout.
+2026-10-27T16:46:59.483886+00:00 files02 pure-ftpd: (?@172.21.64.227) [INFO] New connection from 172.21.64.227
+2026-10-27T16:47:04.705361+00:00 files02 pure-ftpd: (?@172.21.64.227) [WARNING] Authentication failed for user [scanner]
+2026-10-27T16:47:04.706289+00:00 files02 pure-ftpd: (?@172.21.64.227) [INFO] Logout.
+2026-10-27T16:47:08.402493+00:00 files02 pure-ftpd: (?@172.21.64.145) [INFO] New connection from 172.21.64.145
+2026-10-27T16:47:14.413959+00:00 files02 pure-ftpd: (?@172.21.64.145) [WARNING] Authentication failed for user [rui]
+2026-10-27T16:47:14.414867+00:00 files02 pure-ftpd: (?@172.21.64.145) [INFO] Logout.

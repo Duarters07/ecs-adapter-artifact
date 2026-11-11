@@ -1,0 +1,18 @@
+2026-10-27T16:52:47.571841+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.149], port=[51816]
+2026-10-27T16:52:49.528352+00:00 mail02 imapd: LOGIN FAILED, user=root, ip=[::ffff:172.21.67.149], port=[51816]
+2026-10-27T16:52:54.530019+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.149], port=[51816], time=7
+2026-10-27T16:53:02.694683+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.145], port=[45644]
+2026-10-27T16:53:02.782738+00:00 mail02 imapd: LOGIN, user=ana, ip=[::ffff:172.21.67.145], port=[45644], protocol=IMAP
+2026-10-27T16:53:02.783488+00:00 mail02 imapd: LOGOUT, user=ana, ip=[::ffff:172.21.67.145], port=[45644], headers=0, body=0, rcvd=34, sent=340, time=0
+2026-10-27T16:53:03.530002+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.166], port=[39984]
+2026-10-27T16:53:03.530167+00:00 mail02 imapd: LOGIN FAILED, user=postgres, ip=[::ffff:172.21.67.166], port=[39984]
+2026-10-27T16:53:08.531713+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.166], port=[39984], time=5
+2026-10-27T16:53:09.460949+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.155], port=[34124]
+2026-10-27T16:53:09.461410+00:00 mail02 imapd: LOGIN FAILED, user=test, ip=[::ffff:172.21.67.155], port=[34124]
+2026-10-27T16:53:14.463832+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.155], port=[34124], time=5
+2026-10-27T16:53:15.226873+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.206], port=[50524]
+2026-10-27T16:53:15.227103+00:00 mail02 imapd: LOGIN FAILED, user=postmaster, ip=[::ffff:172.21.67.206], port=[50524]
+2026-10-27T16:53:20.229198+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.206], port=[50524], time=5
+2026-10-27T16:53:20.980834+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.217], port=[40930]
+2026-10-27T16:53:20.980963+00:00 mail02 imapd: LOGIN FAILED, user=hugo, ip=[::ffff:172.21.67.217], port=[40930]
+2026-10-27T16:53:25.982388+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.217], port=[40930], time=5

@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "http.response.status_code": 401
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.port": 51340
+              }
+            },
+            {
+              "term": {
+                "source.port": 51340
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "source_id": "r3_apache_v22",
+  "family": "apache-httpd",
+  "split": "train_r3",
+  "category_hint": "web",
+  "contamination_risk": "high",
+  "origin": "Produced by running Apache httpd 2.2.34 (image httpd:2.2), not copied from documentation or a public dataset. Captured 2026-10-19T09:19:11Z on the author's laptop by testbed/r3/r3_apache.sh (docker logs, container stderr only); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 3, OLD VERSION - training material only. Apache 2.2's error log: the same three events as the 2.4 capture, in 2.2's format, which has no module, no worker pid/tid, no client port and no AH message code.",
+  "fields": [
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent for scoring.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "url_path",
+      "ecs_field": "url.path",
+      "type": "keyword",
+      "role": "request_path",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "file_path",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "filesystem_path",
+      "difficulty": "hard",
+      "note": "As in apache_error: file.path is unreachable from `web`.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "referer",
+      "ecs_field": "http.request.referrer",
+      "type": "keyword",
+      "role": "referrer",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r3_apache_v22__holdout_01",
+    "r3_apache_v22__holdout_02",
+    "r3_apache_v22__holdout_03"
+  ],
+  "round3": {
+    "pair": "r3_apache",
+    "role": "old"
+  }
+}

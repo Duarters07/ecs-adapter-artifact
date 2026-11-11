@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "http.response.body.bytes": 615
+        }
+      },
+      {
+        "term": {
+          "http.response.status_code": 200
+        }
+      }
+    ]
+  }
+}

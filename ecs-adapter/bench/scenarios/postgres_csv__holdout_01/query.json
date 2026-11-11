@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.code": "00000"
+        }
+      },
+      {
+        "term": {
+          "log.level": "LOG"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.id": "91cafe5c-4e77-4d78-af89-0639d7c354ba"
+              }
+            },
+            {
+              "term": {
+                "source.user.id": "91cafe5c-4e77-4d78-af89-0639d7c354ba"
+              }
+            },
+            {
+              "term": {
+                "user.id": "91cafe5c-4e77-4d78-af89-0639d7c354ba"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "vendor1"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "vendor1"
+              }
+            },
+            {
+              "term": {
+                "user.name": "vendor1"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{"raw": "2022-01-21 00:09:11 jhall/192.168.230.165:46011 TLS: soft reset sec=3308/3308 bytes=45748/-1 pkts=649/0"}
+{"raw": "2022-01-21 01:04:19 jhall/192.168.230.165:46011 TLS: soft reset sec=3308/3308 bytes=55900/-1 pkts=687/0"}
+{"raw": "2022-01-21 01:59:27 jhall/192.168.230.165:46011 TLS: soft reset sec=3308/3308 bytes=45588/-1 pkts=649/0"}
+{"raw": "2022-01-21 00:09:11 jhall/192.168.230.165:46011 VERIFY OK: depth=1, C=AT, ST=Vienna, L=Vienna, O=Some Organisation GmbH, CN=OpenVPN CA, emailAddress=admin@organisation.cyberrange.at"}
+{"raw": "2022-01-21 01:04:19 jhall/192.168.230.165:46011 VERIFY OK: depth=1, C=AT, ST=Vienna, L=Vienna, O=Some Organisation GmbH, CN=OpenVPN CA, emailAddress=admin@organisation.cyberrange.at"}
+{"raw": "2022-01-21 01:59:27 jhall/192.168.230.165:46011 VERIFY OK: depth=1, C=AT, ST=Vienna, L=Vienna, O=Some Organisation GmbH, CN=OpenVPN CA, emailAddress=admin@organisation.cyberrange.at"}
+{"raw": "2022-01-21 00:09:11 jhall/192.168.230.165:46011 VERIFY KU OK"}
+{"raw": "2022-01-21 01:04:19 jhall/192.168.230.165:46011 VERIFY KU OK"}
+{"raw": "2022-01-21 01:59:27 jhall/192.168.230.165:46011 VERIFY KU OK"}
+{"raw": "2022-01-21 00:09:11 jhall/192.168.230.165:46011 Validating certificate extended key usage"}
+{"raw": "2022-01-21 01:04:19 jhall/192.168.230.165:46011 Validating certificate extended key usage"}
+{"raw": "2022-01-21 01:59:27 jhall/192.168.230.165:46011 Validating certificate extended key usage"}
+{"raw": "2022-01-21 00:09:11 jhall/192.168.230.165:46011 ++ Certificate has EKU (str) TLS Web Client Authentication, expects TLS Web Client Authentication"}
+{"raw": "2022-01-21 01:04:19 jhall/192.168.230.165:46011 ++ Certificate has EKU (str) TLS Web Client Authentication, expects TLS Web Client Authentication"}
+{"raw": "2022-01-21 01:59:27 jhall/192.168.230.165:46011 ++ Certificate has EKU (str) TLS Web Client Authentication, expects TLS Web Client Authentication"}
+{"raw": "2022-01-21 00:09:11 jhall/192.168.230.165:46011 VERIFY EKU OK"}
+{"raw": "2022-01-21 01:04:19 jhall/192.168.230.165:46011 VERIFY EKU OK"}
+{"raw": "2022-01-21 01:59:27 jhall/192.168.230.165:46011 VERIFY EKU OK"}
+{"raw": "2022-01-21 00:09:11 jhall/192.168.230.165:46011 VERIFY OK: depth=0, CN=jhall"}
+{"raw": "2022-01-21 01:04:19 jhall/192.168.230.165:46011 VERIFY OK: depth=0, CN=jhall"}

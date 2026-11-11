@@ -1,0 +1,15 @@
+2026/10/27 16:48:59 [13] connect from UNDETERMINED (172.21.65.124)
+2026/10/27 16:48:59 [13] rsync allowed access on module public from UNDETERMINED (172.21.65.124)
+2026/10/27 16:49:00 [14] connect from UNDETERMINED (172.21.65.234)
+2026/10/27 16:49:00 [14] rsync allowed access on module finance from UNDETERMINED (172.21.65.234)
+2026/10/27 16:49:00 [14] auth failed on module finance from UNDETERMINED (172.21.65.234) for rui: no matching rule
+2026/10/27 16:49:00 [15] connect from UNDETERMINED (172.21.65.243)
+2026/10/27 16:49:00 [15] unknown module 'home' tried from UNDETERMINED (172.21.65.243)
+2026/10/27 16:49:01 [16] connect from UNDETERMINED (172.21.65.203)
+2026/10/27 16:49:01 [16] unknown module 'etc' tried from UNDETERMINED (172.21.65.203)
+2026/10/27 16:49:02 [17] connect from UNDETERMINED (172.21.65.210)
+2026/10/27 16:49:02 [17] rsync allowed access on module backup from UNDETERMINED (172.21.65.210)
+2026/10/27 16:49:02 [17] auth failed on module backup from UNDETERMINED (172.21.65.210) for backup: no matching rule
+2026/10/27 16:49:02 [18] connect from UNDETERMINED (172.21.65.199)
+2026/10/27 16:49:02 [18] rsync allowed access on module backup from UNDETERMINED (172.21.65.199)
+2026/10/27 16:49:02 [18] auth failed on module backup from UNDETERMINED (172.21.65.199) for paulo: no matching rule

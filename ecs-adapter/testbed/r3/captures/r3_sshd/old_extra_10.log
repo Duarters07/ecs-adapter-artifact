@@ -1,0 +1,25 @@
+Did not receive identification string from 172.21.0.3 port 35964
+Failed password for tiago from 172.21.0.3 port 35972 ssh2
+Failed password for rui from 172.21.0.3 port 35974 ssh2
+Invalid user olga from 172.21.0.3 port 37390
+Failed password for invalid user olga from 172.21.0.3 port 37390 ssh2
+Invalid user olga from 172.21.0.3 port 37402
+Failed password for invalid user olga from 172.21.0.3 port 37402 ssh2
+Invalid user administrator from 172.21.0.3 port 37414
+Failed password for invalid user administrator from 172.21.0.3 port 37414 ssh2
+Did not receive identification string from 172.21.0.3 port 47734
+Invalid user teresa from 172.21.0.3 port 47740
+Failed password for invalid user teresa from 172.21.0.3 port 47740 ssh2
+Accepted password for tiago from 172.21.0.3 port 47746 ssh2
+Invalid user monitor from 172.21.0.3 port 47758
+Failed password for invalid user monitor from 172.21.0.3 port 47758 ssh2
+Invalid user postgres from 172.21.0.3 port 47762
+Failed password for invalid user postgres from 172.21.0.3 port 47762 ssh2
+Connection closed by invalid user postgres 172.21.0.3 port 47762 [preauth]
+Connection closed by authenticating user tiago 172.21.0.3 port 35972 [preauth]
+Connection closed by invalid user monitor 172.21.0.3 port 47758 [preauth]
+Connection closed by invalid user teresa 172.21.0.3 port 47740 [preauth]
+Connection closed by authenticating user rui 172.21.0.3 port 35974 [preauth]
+Connection closed by invalid user administrator 172.21.0.3 port 37414 [preauth]
+Connection closed by invalid user olga 172.21.0.3 port 37390 [preauth]
+Connection closed by invalid user olga 172.21.0.3 port 37402 [preauth]

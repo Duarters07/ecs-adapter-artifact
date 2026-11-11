@@ -1,0 +1,4 @@
+Sun Oct 25 15:07:50 2026 : Auth: (11) Login incorrect (pap: Cleartext password does not match "known good" password): [rui] (from client vpn-gw port 11)
+Sun Oct 25 15:07:52 2026 : Auth: (12) Login OK: [wifi-guest] (from client ap-floor1 port 6)
+Sun Oct 25 15:07:53 2026 : Auth: (13) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [radius] (from client ap-floor1 port 12)
+Sun Oct 25 15:07:55 2026 : Auth: (14) Login OK: [vpn-ops] (from client vpn-gw port 13)

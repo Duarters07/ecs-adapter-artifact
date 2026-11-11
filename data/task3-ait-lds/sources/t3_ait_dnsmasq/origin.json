@@ -1,0 +1,8 @@
+{
+ "dataset": "AIT-LDS v2.1",
+ "scenario": "russellmitchell",
+ "file": "gather/inet-firewall/logs/dnsmasq.log",
+ "lines_in_file": 275900,
+ "sampler": "adapter.sampler.deduplicate(per_signature=3,total_cap=20)",
+ "file_sha256": "3b26c8774eab02ea72c46e7c3eead9e7a3601c6f169ce83b3bd4cafd7674888b"
+}

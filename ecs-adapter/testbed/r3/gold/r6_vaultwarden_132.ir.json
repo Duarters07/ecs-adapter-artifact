@@ -1,0 +1,58 @@
+{
+  "source_id": "r6_vaultwarden_132",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^\\[(?<timestamp>%{TIMESTAMP_ISO8601})\\]\\[(?<logger>vaultwarden::api::\\w+)\\]\\[%{LOGLEVEL:level}\\] (?<reason>Username or password is incorrect)\\. Try again\\. IP: %{IP:client_ip}\\. Username: (?<user>\\S+?)\\.$",
+    "alternatives": [
+      "^\\[(?<timestamp>%{TIMESTAMP_ISO8601})\\]\\[(?<logger>vaultwarden::api::\\w+)\\]\\[%{LOGLEVEL:level}\\] (?<reason>Invalid admin token)\\. IP: %{IP:client_ip}$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "logger",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.outcome": "failure",
+    "event.dataset": "vaultwarden.log"
+  }
+}

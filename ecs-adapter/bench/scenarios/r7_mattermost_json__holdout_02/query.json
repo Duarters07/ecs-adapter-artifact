@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.action": "Enter a valid email or username and/or password."
+        }
+      },
+      {
+        "term": {
+          "http.request.id": "z7o9kerigjyp3y8cpczsn7i31e"
+        }
+      }
+    ]
+  }
+}

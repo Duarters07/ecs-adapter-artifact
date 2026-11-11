@@ -1,0 +1,6 @@
+Sun Oct 25 23:05:18 2026 : Auth: (12) Login incorrect (pap: Cleartext password does not match "known good" password): [wifi-guest] (from client ap-floor1 port 47)
+Sun Oct 25 23:05:19 2026 : Auth: (13) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [deploy] (from client vpn-gw port 43)
+Sun Oct 25 23:05:21 2026 : Auth: (14) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [ftpuser] (from client ap-floor1 port 28)
+Sun Oct 25 23:05:24 2026 : Auth: (15) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [radius] (from client ap-floor1 port 43)
+Sun Oct 25 23:05:26 2026 : Auth: (16) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [gabriela] (from client ap-floor1 port 24)
+Sun Oct 25 23:05:28 2026 : Auth: (17) Login OK: [vpn-ops] (from client vpn-gw port 39)

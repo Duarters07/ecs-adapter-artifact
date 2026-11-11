@@ -1,0 +1,36 @@
+Oct 25 22:30:01 web01 sshd[694]: Invalid user paulo from 172.21.0.3 port 50902
+Oct 25 22:30:01 web01 sshd[694]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:30:01 web01 sshd[694]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:30:03 web01 sshd[694]: Failed password for invalid user paulo from 172.21.0.3 port 50902 ssh2
+Oct 25 22:30:05 web01 sshd[696]: Invalid user bruno from 172.21.0.3 port 50910
+Oct 25 22:30:05 web01 sshd[696]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:30:05 web01 sshd[696]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:30:07 web01 sshd[696]: Failed password for invalid user bruno from 172.21.0.3 port 50910 ssh2
+Oct 25 22:30:07 web01 sshd[698]: error: kex_exchange_identification: Connection closed by remote host
+Oct 25 22:30:07 web01 sshd[698]: Connection closed by 172.21.0.3 port 42058
+Oct 25 22:30:08 web01 sshd[699]: Invalid user www from 172.21.0.3 port 42062
+Oct 25 22:30:08 web01 sshd[699]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:30:08 web01 sshd[699]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:30:09 web01 sshd[699]: Failed password for invalid user www from 172.21.0.3 port 42062 ssh2
+Oct 25 22:30:10 web01 sshd[701]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=ana
+Oct 25 22:30:12 web01 sshd[701]: Failed password for ana from 172.21.0.3 port 42072 ssh2
+Oct 25 22:30:13 web01 sshd[703]: Accepted password for sofia from 172.21.0.3 port 42074 ssh2
+Oct 25 22:30:13 web01 sshd[703]: pam_unix(sshd:session): session opened for user sofia(uid=1002) by (uid=0)
+Oct 25 22:30:13 web01 sshd[703]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:30:13 web01 sshd[703]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:30:13 web01 sshd[703]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:30:14 web01 sshd[703]: pam_unix(sshd:session): session closed for user sofia
+Oct 25 22:30:14 web01 sshd[711]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=rui
+Oct 25 22:30:17 web01 sshd[711]: Failed password for rui from 172.21.0.3 port 42076 ssh2
+Oct 25 22:30:19 web01 sshd[711]: Connection closed by authenticating user rui 172.21.0.3 port 42076 [preauth]
+Oct 25 22:30:19 web01 sshd[701]: Connection closed by authenticating user ana 172.21.0.3 port 42072 [preauth]
+Oct 25 22:30:19 web01 sshd[699]: Connection closed by invalid user www 172.21.0.3 port 42062 [preauth]
+Oct 25 22:30:19 web01 sshd[694]: Connection closed by invalid user paulo 172.21.0.3 port 50902 [preauth]
+Oct 25 22:30:19 web01 sshd[696]: Connection closed by invalid user bruno 172.21.0.3 port 50910 [preauth]
+Oct 25 22:30:19 web01 sudo:    tiago : user NOT in sudoers ; PWD=/home/tiago ; USER=root ; COMMAND=/usr/bin/id
+Oct 25 22:30:20 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1001 euid=0 tty= ruser=rui rhost=  user=rui
+Oct 25 22:30:22 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:30:22 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [rui]
+Oct 25 22:30:22 web01 sudo:      rui : 1 incorrect password attempt ; PWD=/home/rui ; USER=root ; COMMAND=/usr/bin/whoami
+Oct 25 22:30:22 web01 sudo:    marta : user NOT in sudoers ; PWD=/home/marta ; USER=root ; COMMAND=/usr/bin/id
+Oct 25 22:30:23 web01 sudo:    tiago : user NOT in sudoers ; PWD=/home/tiago ; USER=root ; COMMAND=/usr/bin/journalctl -n 5

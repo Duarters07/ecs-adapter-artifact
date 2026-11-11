@@ -1,0 +1,18 @@
+{"raw": "2026-10-27T16:16:43.607509+00:00 mail02 imapd: LOGOUT, user=ana, ip=[::ffff:172.21.67.11], port=[52916], headers=0, body=0, rcvd=34, sent=340, time=0"}
+{"raw": "2026-10-27T16:16:52.490473+00:00 mail02 imapd: LOGIN, user=rui, ip=[::ffff:172.21.67.12], port=[51460], protocol=IMAP"}
+{"raw": "2026-10-27T16:16:53.189192+00:00 mail02 imapd: LOGIN FAILED, user=monitor, ip=[::ffff:172.21.67.92], port=[56520]"}
+{"raw": "2026-10-27T16:17:05.172700+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.91], port=[41820], time=7"}
+{"raw": "2026-10-27T16:17:05.895831+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.13], port=[50188]"}
+{"raw": "2026-10-27T16:16:44.329080+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.11], port=[52918]"}
+{"raw": "2026-10-27T16:16:58.191267+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.92], port=[56520], time=5"}
+{"raw": "2026-10-27T16:17:00.171274+00:00 mail02 imapd: LOGIN FAILED, user=root, ip=[::ffff:172.21.67.91], port=[41820]"}
+{"raw": "2026-10-27T16:17:05.977317+00:00 mail02 imapd: LOGIN, user=scanner, ip=[::ffff:172.21.67.13], port=[50188], protocol=IMAP"}
+{"raw": "2026-10-27T16:16:43.523603+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.11], port=[52916]"}
+{"raw": "2026-10-27T16:16:43.607116+00:00 mail02 imapd: LOGIN, user=ana, ip=[::ffff:172.21.67.11], port=[52916], protocol=IMAP"}
+{"raw": "2026-10-27T16:16:46.695829+00:00 mail02 imapd: LOGIN FAILED, user=ana, ip=[::ffff:172.21.67.11], port=[52918]"}
+{"raw": "2026-10-27T16:16:51.697637+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.11], port=[52918], time=7"}
+{"raw": "2026-10-27T16:16:52.411505+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.12], port=[51460]"}
+{"raw": "2026-10-27T16:16:52.490830+00:00 mail02 imapd: LOGOUT, user=rui, ip=[::ffff:172.21.67.12], port=[51460], headers=0, body=0, rcvd=34, sent=340, time=0"}
+{"raw": "2026-10-27T16:16:53.188517+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.92], port=[56520]"}
+{"raw": "2026-10-27T16:16:58.902916+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.91], port=[41820]"}
+{"raw": "2026-10-27T16:17:05.978053+00:00 mail02 imapd: LOGOUT, user=scanner, ip=[::ffff:172.21.67.13], port=[50188], headers=0, body=0, rcvd=34, sent=340, time=0"}

@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T21:18:35Z","old":"389-DS 2.5.0 (image tag 2.4), access log (text)","new":"389-DS 3.1.2, access log JSON (nsslapd-accesslog-log-format=json)","collected_by":"/data/logs/access, lines of client connections"}

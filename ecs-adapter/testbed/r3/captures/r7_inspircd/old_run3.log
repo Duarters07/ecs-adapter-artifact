@@ -1,0 +1,5 @@
+Fri Oct 30 2026 19:12:39 CONNECT: Client connecting on port 6667 (class unnamed-0): evil!evil@172.21.83.203 (172.21.83.203) [evil]
+Fri Oct 30 2026 19:12:39 OPER: WARNING! Failed oper attempt by evil!evil@172.21.83.203 using login 'root': The following fields do not match: login password hosts
+Fri Oct 30 2026 19:12:40 QUIT: Client exiting: evil!evil@172.21.83.203 (172.21.83.203) [Connection closed]
+Fri Oct 30 2026 19:12:42 CONNECT: Client connecting on port 6667 (class unnamed-0): mon!mon@172.21.83.22 (172.21.83.22) [mon]
+Fri Oct 30 2026 19:12:42 QUIT: Client exiting: mon!mon@172.21.83.22 (172.21.83.22) [bye]

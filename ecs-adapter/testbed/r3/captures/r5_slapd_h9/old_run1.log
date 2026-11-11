@@ -1,0 +1,25 @@
+6ae21d06 conn=1000 fd=11 ACCEPT from IP=172.21.51.11:57766 (IP=0.0.0.0:389)
+6ae21d06 conn=1000 op=0 BIND dn="uid=ana,ou=people,dc=lab,dc=example" method=128
+6ae21d06 conn=1000 op=0 BIND dn="uid=ana,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ae21d06 conn=1000 op=0 RESULT tag=97 err=0 text=
+6ae21d06 conn=1000 op=1 RESULT oid= err=0 text=
+6ae21d06 conn=1001 fd=11 ACCEPT from IP=172.21.51.11:57778 (IP=0.0.0.0:389)
+6ae21d06 conn=1001 op=0 BIND dn="uid=ana,ou=people,dc=lab,dc=example" method=128
+6ae21d06 conn=1001 op=0 RESULT tag=97 err=49 text=
+6ae21d07 conn=1002 fd=11 ACCEPT from IP=172.21.51.12:59198 (IP=0.0.0.0:389)
+6ae21d07 conn=1002 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" method=128
+6ae21d07 conn=1002 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ae21d07 conn=1002 op=0 RESULT tag=97 err=0 text=
+6ae21d07 conn=1002 op=1 SRCH base="ou=people,dc=lab,dc=example" scope=2 deref=0 filter="(uid=*)"
+6ae21d07 conn=1002 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=
+6ae21d08 conn=1003 fd=11 ACCEPT from IP=172.21.51.99:55806 (IP=0.0.0.0:389)
+6ae21d08 conn=1003 op=0 BIND dn="" method=128
+6ae21d08 conn=1003 op=0 RESULT tag=97 err=0 text=
+6ae21d08 conn=1003 op=1 SRCH base="dc=lab,dc=example" scope=2 deref=0 filter="(objectClass=person)"
+6ae21d08 conn=1003 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=
+6ae21d08 conn=1004 fd=11 ACCEPT from IP=172.21.51.98:40058 (IP=0.0.0.0:389)
+6ae21d08 conn=1004 op=0 BIND dn="uid=admin,ou=people,dc=lab,dc=example" method=128
+6ae21d08 conn=1004 op=0 RESULT tag=97 err=49 text=
+6ae21d09 conn=1005 fd=11 ACCEPT from IP=172.21.51.98:40074 (IP=0.0.0.0:389)
+6ae21d09 conn=1005 op=0 BIND dn="cn=admin,dc=lab,dc=example" method=128
+6ae21d09 conn=1005 op=0 RESULT tag=97 err=49 text=

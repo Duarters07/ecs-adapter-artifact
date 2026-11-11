@@ -1,0 +1,8 @@
+{"raw": "[1793387940] unbound[1:0] info: 172.21.86.11 www.lab.example. A IN NOERROR 0.000000 1 60"}
+{"raw": "[1793387942] unbound[1:0] info: 172.21.86.201 null TYPE0 CLASS0 REFUSED 0.000000 1 12"}
+{"raw": "[1793387943] unbound[1:0] info: 172.21.86.13 lab.example. MX IN NOERROR 0.000000 1 40"}
+{"raw": "[1793387947] unbound[1:0] info: 172.21.86.15 vpn.lab.example. A IN NXDOMAIN 0.000000 1 44"}
+{"raw": "[1793387946] unbound[1:0] info: 172.21.86.14 mail.lab.example. A IN NOERROR 0.000000 1 61"}
+{"raw": "[1793387941] unbound[1:0] info: 172.21.86.11 nope.lab.example. A IN NXDOMAIN 0.000000 1 45"}
+{"raw": "[1793387942] unbound[1:0] info: 172.21.86.12 lab.example. TXT IN NOERROR 0.000000 1 58"}
+{"raw": "[1793387946] unbound[1:0] info: 172.21.86.202 null TYPE0 CLASS0 REFUSED 0.000000 1 12"}

@@ -1,0 +1,14 @@
+{
+ "expected_hits": 60,
+ "targets": [
+  "log.level",
+  "source.ip"
+ ],
+ "labels": [
+  "attacker_http",
+  "dirb",
+  "foothold"
+ ],
+ "message_type": 0,
+ "origin": "AIT-LDS v2.1 fox, intranet_server/logs/apache2/intranet.price.fox.org-error.log.1: 60 lines labelled ['attacker_http', 'dirb', 'foothold'] and 2 unlabelled lines (seed 0); expected_hits counted on the reference parser's parse"
+}

@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "NT_STATUS_NO_SUCH_USER"
+        }
+      },
+      {
+        "term": {
+          "log.level": "2"
+        }
+      }
+    ]
+  }
+}

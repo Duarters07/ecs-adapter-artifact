@@ -1,0 +1,20 @@
+{"raw": "Jan 23 06:25:05 intranet-server CRON[22883]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 23 06:39:01 intranet-server CRON[23064]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 23 06:47:02 intranet-server CRON[23137]: pam_unix(cron:session): session closed for user root"}
+{"raw": "Jan 23 06:39:01 intranet-server CRON[23064]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 23 06:47:01 intranet-server CRON[23137]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 23 07:07:01 intranet-server CRON[23159]: pam_unix(cron:session): session opened for user root by (uid=0)"}
+{"raw": "Jan 23 16:23:04 intranet-server sshd[15014]: pam_unix(sshd:session): session closed for user jhall"}
+{"raw": "Jan 23 16:23:04 intranet-server systemd-logind[957]: Removed session 111."}
+{"raw": "Jan 23 16:30:46 intranet-server sshd[25184]: Accepted publickey for jhall from 172.19.131.174 port 49828 ssh2: RSA SHA256:8wFbiaYPevKS/wYKnePO20v0iymTcrRh4Kr+1uRS1UM"}
+{"raw": "Jan 23 16:30:46 intranet-server sshd[25184]: pam_unix(sshd:session): session opened for user jhall by (uid=0)"}
+{"raw": "Jan 23 16:30:47 intranet-server systemd: pam_unix(systemd-user:session): session opened for user jhall by (uid=0)"}
+{"raw": "Jan 23 16:30:47 intranet-server systemd-logind[957]: New session 271 of user jhall."}
+{"raw": "Jan 24 03:56:47 intranet-server sshd[27751]: Did not receive identification string from 172.19.131.174 port 40876"}
+{"raw": "Jan 24 04:37:40 intranet-server su[27950]: Successful su for jhall by www-data"}
+{"raw": "Jan 24 04:37:40 intranet-server su[27950]: + /dev/pts/1 www-data:jhall"}
+{"raw": "Jan 24 04:37:40 intranet-server su[27950]: pam_unix(su:session): session opened for user jhall by (uid=33)"}
+{"raw": "Jan 24 04:37:40 intranet-server systemd-logind[957]: New session c1 of user jhall."}
+{"raw": "Jan 24 04:37:58 intranet-server sudo:    jhall : TTY=pts/1 ; PWD=/var/www/intranet.smith.russellmitchell.com/wp-content/uploads/2022/01 ; USER=root ; COMMAND=list"}
+{"raw": "Jan 24 04:38:06 intranet-server sudo:    jhall : TTY=pts/1 ; PWD=/var/www/intranet.smith.russellmitchell.com/wp-content/uploads/2022/01 ; USER=root ; COMMAND=/bin/cat /etc/shadow"}
+{"raw": "Jan 24 04:38:06 intranet-server sudo: pam_unix(sudo:session): session opened for user root by (uid=0)"}

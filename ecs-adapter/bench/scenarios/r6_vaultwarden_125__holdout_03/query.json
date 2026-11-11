@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "backup@lab.local"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "backup@lab.local"
+              }
+            },
+            {
+              "term": {
+                "user.name": "backup@lab.local"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

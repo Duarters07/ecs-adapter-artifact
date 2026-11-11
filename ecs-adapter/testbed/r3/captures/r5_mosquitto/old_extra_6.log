@@ -1,0 +1,13 @@
+1792969141: New connection from 172.21.50.206 on port 1884.
+1792969141: Socket error on client <unknown>, disconnecting.
+1792969141: New connection from 172.21.50.164 on port 1884.
+1792969141: Socket error on client <unknown>, disconnecting.
+1792969142: New connection from 172.21.50.205 on port 1883.
+1792969142: Socket error on client <unknown>, disconnecting.
+1792969143: New connection from 172.21.50.147 on port 1883.
+1792969143: Socket error on client <unknown>, disconnecting.
+1792969144: New connection from 172.21.50.101 on port 1884.
+1792969144: Socket error on client <unknown>, disconnecting.
+1792969145: New connection from 172.21.50.222 on port 1883.
+1792969145: New client connected from 172.21.50.222 as cam-home (p2, c1, k60, u'pump02').
+1792969145: Client cam-home disconnected.

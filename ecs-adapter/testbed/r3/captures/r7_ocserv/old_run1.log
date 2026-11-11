@@ -1,0 +1,10 @@
+2026-10-30T20:32:31.979908+00:00 vpn01 ocserv[11]: sec-mod: initiating session for user 'ana' (session: 20RTXp)
+2026-10-30T20:32:36.932606+00:00 vpn01 ocserv[11]: sec-mod: invalidating session of user 'ana' (session: 20RTXp)
+2026-10-30T20:32:38.203248+00:00 vpn01 ocserv[11]: plain-auth: error authenticating user 'ana'
+2026-10-30T20:32:38.203507+00:00 vpn01 ocserv[29]: worker[ana]: 172.21.91.11 worker-auth.c:1724: failed authentication for 'ana'
+2026-10-30T20:32:39.393103+00:00 vpn01 ocserv[11]: sec-mod: initiating session for user 'rui' (session: PZ6ZYL)
+2026-10-30T20:32:44.364726+00:00 vpn01 ocserv[11]: sec-mod: invalidating session of user 'rui' (session: PZ6ZYL)
+2026-10-30T20:32:45.907066+00:00 vpn01 ocserv[11]: plain-auth: error authenticating user 'ghost'
+2026-10-30T20:32:45.907256+00:00 vpn01 ocserv[31]: worker[ghost]: 172.21.91.201 worker-auth.c:1724: failed authentication for 'ghost'
+2026-10-30T20:32:47.206007+00:00 vpn01 ocserv[11]: sec-mod: initiating session for user 'monitor' (session: ltr+ym)
+2026-10-30T20:32:52.148677+00:00 vpn01 ocserv[11]: sec-mod: invalidating session of user 'monitor' (session: ltr+ym)

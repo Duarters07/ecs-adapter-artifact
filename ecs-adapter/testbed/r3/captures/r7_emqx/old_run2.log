@@ -1,0 +1,4 @@
+2026-10-30T19:28:21.267311+00:00 [info] dev-ana@172.21.88.14:48880 PUBLISH to plant/line1/pressure: <<"{\"v\":1}">>
+2026-10-30T19:28:21.267452+00:00 [info] dev-ana@172.21.88.14:48880 file: emqx_connection.erl, line: 559, mfa: {emqx_connection,terminate,2}, msg: terminate, pid: <0.2253.0>, reason: {shutdown,normal}
+2026-10-30T19:28:22.112052+00:00 [warning] x-202@172.21.88.202:56754 [Channel] Cannot subscribe $SYS/# with options #{nl => 0,qos => 0,rap => 0,rh => 0} due to Not authorized.
+2026-10-30T19:28:22.112396+00:00 [info] x-202@172.21.88.202:56754 file: emqx_connection.erl, line: 559, mfa: {emqx_connection,terminate,2}, msg: terminate, pid: <0.2256.0>, reason: {shutdown,normal}

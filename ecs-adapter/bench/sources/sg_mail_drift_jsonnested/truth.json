@@ -1,0 +1,43 @@
+{
+  "category_hint": "email",
+  "contamination_risk": "none",
+  "extraction": {
+    "kind": "json"
+  },
+  "family": "sg_mail",
+  "fields": [
+    {
+      "ecs_field": "email.from.address",
+      "source_key": "from",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "event.id",
+      "source_key": "qid",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "event.action",
+      "source_key": "status",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "email.to.address",
+      "source_key": "to",
+      "type": "keyword"
+    }
+  ],
+  "level": 2,
+  "note": "Level-2 evaluation source: a TRAINING family rendered in a format no training source uses (corpus/drift_formats.py). Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_mail_drift_jsonnested",
+  "split": "test_drift",
+  "timestamp": {
+    "formats": [
+      "UNIX"
+    ],
+    "source_key": "time"
+  },
+  "transform": "drift:jsonnested",
+  "value_maps": []
+}

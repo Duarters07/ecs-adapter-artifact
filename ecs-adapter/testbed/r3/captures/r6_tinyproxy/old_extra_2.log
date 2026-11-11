@@ -1,0 +1,12 @@
+CONNECT   Oct 27 16:50:25 [8]: Connect (file descriptor 10): pedantic_hodgkin.r3-net [172.21.66.141]
+NOTICE    Oct 27 16:50:25 [8]: Unauthorized connection from "pedantic_hodgkin.r3-net" [172.21.66.141].
+CONNECT   Oct 27 16:50:25 [11]: Connect (file descriptor 10): inspiring_khayyam.r3-net [172.21.66.235]
+NOTICE    Oct 27 16:50:25 [11]: Unauthorized connection from "inspiring_khayyam.r3-net" [172.21.66.235].
+CONNECT   Oct 27 16:50:26 [14]: Connect (file descriptor 10): gallant_keldysh.r3-net [172.21.66.224]
+NOTICE    Oct 27 16:50:26 [14]: Unauthorized connection from "gallant_keldysh.r3-net" [172.21.66.224].
+CONNECT   Oct 27 16:50:27 [10]: Connect (file descriptor 10): inspiring_moser.r3-net [172.21.66.130]
+NOTICE    Oct 27 16:50:27 [10]: Unauthorized connection from "inspiring_moser.r3-net" [172.21.66.130].
+CONNECT   Oct 27 16:50:28 [7]: Connect (file descriptor 10): pensive_spence.r3-net [172.21.66.184]
+NOTICE    Oct 27 16:50:28 [7]: Unauthorized connection from "pensive_spence.r3-net" [172.21.66.184].
+CONNECT   Oct 27 16:50:29 [7]: Connect (file descriptor 10): great_carver.r3-net [172.21.66.221]
+NOTICE    Oct 27 16:50:29 [7]: Unauthorized connection from "great_carver.r3-net" [172.21.66.221].

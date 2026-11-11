@@ -1,0 +1,10 @@
+{"raw": "2026-10-15 15:06:16 1xHN27-00017Y-3D <= orders@vendor.example H=epic_pike.r2ho-net (gw.vendor.example) [172.21.0.3] P=esmtp S=286"}
+{"raw": "2026-10-15 15:06:17 1xHN29-00017e-0R => hr <hr@lab.example> R=local_user T=mail_spool"}
+{"raw": "2026-10-15 15:06:16 H=epic_pike.r2ho-net (mx.badactor.example) [172.21.0.3] F=<invoice@badactor.example> rejected RCPT <someone@outlook.example>: relay not permitted"}
+{"raw": "2026-10-15 15:06:17 H=epic_pike.r2ho-net (gw.vendor.example) [172.21.0.3] F=<support@vendor.example> rejected RCPT <recruiting@lab.example>: Unrouteable address"}
+{"raw": "2026-10-15 15:06:16 1xHN27-00017Y-3D => finance <finance@lab.example> R=local_user T=mail_spool"}
+{"raw": "2026-10-15 15:06:18 1xHN29-00017j-37 <= orders@vendor.example H=epic_pike.r2ho-net (gw.vendor.example) [172.21.0.3] P=esmtp S=281"}
+{"raw": "2026-10-15 15:06:16 1xHN27-00017Y-3D Completed"}
+{"raw": "2026-10-15 15:06:16 H=epic_pike.r2ho-net (gw.vendor.example) [172.21.0.3] F=<orders@vendor.example> rejected RCPT <payroll@lab.example>: Unrouteable address"}
+{"raw": "2026-10-15 15:06:17 1xHN29-00017e-0R <= support@vendor.example H=epic_pike.r2ho-net (gw.vendor.example) [172.21.0.3] P=esmtp S=283"}
+{"raw": "2026-10-15 15:06:17 H=epic_pike.r2ho-net (mx.badactor.example) [172.21.0.3] F=<invoice@badactor.example> rejected RCPT <it@university.example>: relay not permitted"}

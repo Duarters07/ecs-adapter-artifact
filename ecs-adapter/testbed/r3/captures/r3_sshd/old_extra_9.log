@@ -1,0 +1,27 @@
+Failed password for ana from 172.21.0.3 port 49120 ssh2
+Invalid user support from 172.21.0.3 port 49136
+Failed password for invalid user support from 172.21.0.3 port 49136 ssh2
+Invalid user raquel from 172.21.0.3 port 49152
+Failed password for invalid user raquel from 172.21.0.3 port 49152 ssh2
+Accepted password for tiago from 172.21.0.3 port 46738 ssh2
+Invalid user support from 172.21.0.3 port 46742
+Failed password for invalid user support from 172.21.0.3 port 46742 ssh2
+Invalid user teresa from 172.21.0.3 port 46746
+Failed password for invalid user teresa from 172.21.0.3 port 46746 ssh2
+Invalid user guest from 172.21.0.3 port 46748
+Failed password for invalid user guest from 172.21.0.3 port 46748 ssh2
+Failed password for ines from 172.21.0.3 port 44164 ssh2
+Failed password for sofia from 172.21.0.3 port 44174 ssh2
+Failed password for ana from 172.21.0.3 port 44186 ssh2
+Invalid user monitor from 172.21.0.3 port 44194
+Failed password for invalid user monitor from 172.21.0.3 port 44194 ssh2
+Connection closed by invalid user monitor 172.21.0.3 port 44194 [preauth]
+Connection closed by invalid user support 172.21.0.3 port 49136 [preauth]
+Connection closed by invalid user teresa 172.21.0.3 port 46746 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 49120 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 44186 [preauth]
+Connection closed by authenticating user ines 172.21.0.3 port 44164 [preauth]
+Connection closed by invalid user raquel 172.21.0.3 port 49152 [preauth]
+Connection closed by authenticating user sofia 172.21.0.3 port 44174 [preauth]
+Connection closed by invalid user support 172.21.0.3 port 46742 [preauth]
+Connection closed by invalid user guest 172.21.0.3 port 46748 [preauth]

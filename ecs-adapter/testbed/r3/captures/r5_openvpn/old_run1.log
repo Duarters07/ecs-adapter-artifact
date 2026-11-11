@@ -1,0 +1,24 @@
+2026-10-25 15:40:39 172.21.58.11:38009 TLS: Initial packet from [AF_INET]172.21.58.11:38009, sid=52c92d70 e1e9c27c
+2026-10-25 15:40:39 172.21.58.11:38009 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 15:40:39 172.21.58.11:38009 VERIFY OK: depth=0, CN=laptop-ana
+2026-10-25 15:40:39 172.21.58.11:38009 [laptop-ana] Peer Connection Initiated with [AF_INET]172.21.58.11:38009
+2026-10-25 15:40:39 laptop-ana/172.21.58.11:38009 MULTI_sva: pool returned IPv4=10.8.0.6, IPv6=(Not enabled)
+2026-10-25 15:40:40 172.21.58.11:52405 TLS: Initial packet from [AF_INET]172.21.58.11:52405, sid=a79f9303 3feb5bcc
+2026-10-25 15:40:40 172.21.58.11:52405 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 15:40:40 172.21.58.11:52405 VERIFY OK: depth=0, CN=laptop-ana
+2026-10-25 15:40:40 172.21.58.11:52405 TLS Auth Error: Auth Username/Password verification failed for peer
+2026-10-25 15:40:40 172.21.58.11:52405 [laptop-ana] Peer Connection Initiated with [AF_INET]172.21.58.11:52405
+2026-10-25 15:40:41 172.21.58.11:52405 SENT CONTROL [laptop-ana]: 'AUTH_FAILED' (status=1)
+2026-10-25 15:40:42 172.21.58.12:52952 TLS: Initial packet from [AF_INET]172.21.58.12:52952, sid=a60fe383 67c277c9
+2026-10-25 15:40:42 172.21.58.12:52952 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 15:40:42 172.21.58.12:52952 VERIFY OK: depth=0, CN=laptop-rui
+2026-10-25 15:40:42 172.21.58.12:52952 [laptop-rui] Peer Connection Initiated with [AF_INET]172.21.58.12:52952
+2026-10-25 15:40:42 laptop-rui/172.21.58.12:52952 MULTI_sva: pool returned IPv4=10.8.0.10, IPv6=(Not enabled)
+2026-10-25 15:40:42 172.21.58.99:54686 TLS: Initial packet from [AF_INET]172.21.58.99:54686, sid=64ef1d8c 7b82077a
+2026-10-25 15:40:42 172.21.58.99:54686 VERIFY ERROR: depth=0, error=unable to get local issuer certificate: CN=stolen-device, serial=114736102961999147963216122383052156434275343593
+2026-10-25 15:40:42 172.21.58.99:54686 TLS Error: TLS handshake failed
+2026-10-25 15:40:48 172.21.58.13:56592 TLS: Initial packet from [AF_INET]172.21.58.13:56592, sid=cb9acb4c 32d06f9c
+2026-10-25 15:40:48 172.21.58.13:56592 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 15:40:48 172.21.58.13:56592 VERIFY OK: depth=0, CN=phone-sofia
+2026-10-25 15:40:48 172.21.58.13:56592 [phone-sofia] Peer Connection Initiated with [AF_INET]172.21.58.13:56592
+2026-10-25 15:40:48 phone-sofia/172.21.58.13:56592 MULTI_sva: pool returned IPv4=10.8.0.14, IPv6=(Not enabled)

@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.name": "smtpd"
+        }
+      },
+      {
+        "term": {
+          "process.pid": 108
+        }
+      }
+    ]
+  }
+}

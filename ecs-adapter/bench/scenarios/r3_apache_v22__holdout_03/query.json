@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "url.path": "/reports/annual.pdf"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "ines"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "ines"
+              }
+            },
+            {
+              "term": {
+                "user.name": "ines"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

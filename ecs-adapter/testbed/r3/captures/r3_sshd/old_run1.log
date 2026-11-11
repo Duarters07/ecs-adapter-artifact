@@ -1,0 +1,21 @@
+Accepted password for ana from 172.21.0.3 port 59318 ssh2
+Failed password for ana from 172.21.0.3 port 55786 ssh2
+Failed password for rui from 172.21.0.3 port 55798 ssh2
+Invalid user carlos from 172.21.0.3 port 55814
+Failed password for invalid user carlos from 172.21.0.3 port 55814 ssh2
+Failed password for root from 172.21.0.3 port 55824 ssh2
+Accepted password for rui from 172.21.0.3 port 37564 ssh2
+Invalid user admin from 172.21.0.3 port 37566
+Failed password for invalid user admin from 172.21.0.3 port 37566 ssh2
+Did not receive identification string from 172.21.0.3 port 37570
+Accepted password for ana from 172.21.0.3 port 37574 ssh2
+Invalid user oracle from 172.21.0.3 port 37584
+Failed password for invalid user oracle from 172.21.0.3 port 37584 ssh2
+Failed password for sofia from 172.21.0.3 port 44496 ssh2
+Connection closed by authenticating user sofia 172.21.0.3 port 44496 [preauth]
+Connection closed by authenticating user root 172.21.0.3 port 55824 [preauth]
+Connection closed by authenticating user rui 172.21.0.3 port 55798 [preauth]
+Connection closed by invalid user carlos 172.21.0.3 port 55814 [preauth]
+Connection closed by invalid user oracle 172.21.0.3 port 37584 [preauth]
+Connection closed by invalid user admin 172.21.0.3 port 37566 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 55786 [preauth]

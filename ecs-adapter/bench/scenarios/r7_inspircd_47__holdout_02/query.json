@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.action": "failed to log into"
+        }
+      },
+      {
+        "term": {
+          "event.reason": "they specified the wrong password"
+        }
+      }
+    ]
+  }
+}

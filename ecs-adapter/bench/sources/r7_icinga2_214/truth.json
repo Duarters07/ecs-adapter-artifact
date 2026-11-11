@@ -1,0 +1,136 @@
+{
+  "source_id": "r7_icinga2_214",
+  "family": "icinga2",
+  "split": "test_r7",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Icinga 2 2.14.6 (Debian 13), not copied from documentation or a public dataset. Captured 2026-10-30T21:47:46Z on the author's laptop by testbed/r3/r7_icinga2.sh (/var/log/icinga2/icinga2.log: API client lines); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), NEW VERSION of r7_icinga2_213: `Request:` -> `Request`, `took total <n>ms.` added.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "note": "client.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "http_method",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "path",
+      "ecs_field": "url.path",
+      "type": "keyword",
+      "role": "url_path",
+      "difficulty": "easy",
+      "note": "url.original is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "role": "user_agent",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "http_status_phrase",
+      "difficulty": "medium",
+      "note": "The phrase, not the numeric status code.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "logger",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "role": "component",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "cert",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "client_certificate_note",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "took_ms",
+      "ecs_field": null,
+      "type": "long",
+      "role": "duration_ms",
+      "difficulty": "hard",
+      "note": "event.duration is nanoseconds; declined.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_icinga2_214__holdout_01",
+    "r7_icinga2_214__holdout_02",
+    "r7_icinga2_214__holdout_04",
+    "r7_icinga2_214__holdout_05"
+  ],
+  "round3": {
+    "pair": "r7_icinga2",
+    "role": "new"
+  }
+}

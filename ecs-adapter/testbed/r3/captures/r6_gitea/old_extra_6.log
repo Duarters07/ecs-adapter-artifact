@@ -1,0 +1,6 @@
+2026/10/27 17:02:54 [6ae0d93e] router: completed GET /api/v1/user/wp-login.php for 172.21.70.167:57906, 404 Not Found in 30.6ms @ context/auth.go:112(context.ToggleAPI)
+2026/10/27 17:02:54 [6ae0d93e-2] router: completed GET /api/v1/repos/search for 172.21.70.155:45554, 401 Unauthorized in 29.6ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:55 [6ae0d93f] router: completed GET /api/v1/admin/users for 172.21.70.239:34518, 401 Unauthorized in 0.4ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:56 [6ae0d940] router: completed GET /api/v1/data.json for 172.21.70.249:45364, 401 Unauthorized in 30.2ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:57 [6ae0d941] router: completed GET /api/v1/login.php for 172.21.70.191:49274, 401 Unauthorized in 0.4ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:58 [6ae0d942] router: completed GET /api/v1/user/repos for 172.21.70.176:40558, 401 Unauthorized in 31.6ms @ auth/middleware.go:31(auth.APIAuth)

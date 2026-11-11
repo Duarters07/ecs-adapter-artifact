@@ -1,0 +1,13 @@
+{
+ "dataset": "Loghub-2.0",
+ "system": "Linux",
+ "lines": 23921,
+ "sampler": "adapter.sampler.deduplicate(per_signature=3,total_cap=20)",
+ "log_sha256": "9ef66a377aa89f23e646a91fbb5f8d656f60191c75176f01933d64afdad4fb0e",
+ "selftest_ceiling": {
+  "lines": 23921,
+  "GA": 0.7289,
+  "PA": 0.8118,
+  "unmatched": 0.0199
+ }
+}

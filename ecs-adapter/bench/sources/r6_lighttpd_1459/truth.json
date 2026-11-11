@@ -1,0 +1,74 @@
+{
+  "source_id": "r6_lighttpd_1459",
+  "family": "lighttpd",
+  "split": "train_r6",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running lighttpd 1.4.59 (Debian 11), not copied from documentation or a public dataset. Captured 2026-10-27T15:49:38Z on the author's laptop by testbed/r3/r6_lighttpd.sh (/var/log/lighttpd/error.log, mod_auth lines); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 8 (pool r6), OLD VERSION: lighttpd 1.4.59, packaged error log, mod_auth basic auth on /admin/.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "path",
+      "ecs_field": "url.path",
+      "type": "keyword",
+      "role": "url_path",
+      "difficulty": "easy",
+      "note": "url.original is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "module",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "source_module",
+      "difficulty": "hard",
+      "note": "log.origin.file.name would need the .c suffix; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "src_line",
+      "ecs_field": null,
+      "type": "long",
+      "role": "source_line",
+      "difficulty": "hard",
+      "note": "log.origin.file.line is acceptable; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r6_lighttpd_1459__holdout_01",
+    "r6_lighttpd_1459__holdout_02"
+  ],
+  "round3": {
+    "pair": "r6_lighttpd",
+    "role": "old"
+  }
+}

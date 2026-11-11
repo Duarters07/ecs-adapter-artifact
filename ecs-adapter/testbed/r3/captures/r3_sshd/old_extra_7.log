@@ -1,0 +1,27 @@
+Failed password for root from 172.21.0.3 port 46044 ssh2
+Invalid user postgres from 172.21.0.3 port 46048
+Failed password for invalid user postgres from 172.21.0.3 port 46048 ssh2
+Invalid user monitor from 172.21.0.3 port 53692
+Failed password for invalid user monitor from 172.21.0.3 port 53692 ssh2
+Invalid user oracle from 172.21.0.3 port 53698
+Failed password for invalid user oracle from 172.21.0.3 port 53698 ssh2
+Invalid user support from 172.21.0.3 port 53704
+Failed password for invalid user support from 172.21.0.3 port 53704 ssh2
+Invalid user service from 172.21.0.3 port 53830
+Failed password for invalid user service from 172.21.0.3 port 53830 ssh2
+Failed password for backup from 172.21.0.3 port 53844 ssh2
+Invalid user filipe from 172.21.0.3 port 53852
+Failed password for invalid user filipe from 172.21.0.3 port 53852 ssh2
+Accepted password for rui from 172.21.0.3 port 58806 ssh2
+Did not receive identification string from 172.21.0.3 port 58814
+Invalid user monitor from 172.21.0.3 port 58820
+Failed password for invalid user monitor from 172.21.0.3 port 58820 ssh2
+Connection closed by invalid user monitor 172.21.0.3 port 58820 [preauth]
+Connection closed by invalid user oracle 172.21.0.3 port 53698 [preauth]
+Connection closed by invalid user support 172.21.0.3 port 53704 [preauth]
+Connection closed by authenticating user backup 172.21.0.3 port 53844 [preauth]
+Connection closed by invalid user postgres 172.21.0.3 port 46048 [preauth]
+Connection closed by authenticating user root 172.21.0.3 port 46044 [preauth]
+Connection closed by invalid user monitor 172.21.0.3 port 53692 [preauth]
+Connection closed by invalid user filipe 172.21.0.3 port 53852 [preauth]
+Connection closed by invalid user service 172.21.0.3 port 53830 [preauth]

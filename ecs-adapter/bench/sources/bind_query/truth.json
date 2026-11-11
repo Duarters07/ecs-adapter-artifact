@@ -1,0 +1,131 @@
+{
+  "source_id": "bind_query",
+  "family": "bind9",
+  "split": "test",
+  "category_hint": "network",
+  "contamination_risk": "medium",
+  "origin": "Produced by running BIND 9.18.50 (image internetsystemsconsortium/bind9:9.18), not copied from documentation or a public dataset. Captured on 2026-10-15 on the author's laptop by testbed/heldout_r2/bind_query.sh, two runs driven with different words (run A -> samples, run B -> scenario events).",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "FREE TEXT; THE CLIENT AND THE SERVER ARE ON THE SAME LINE. The client is `ip#port` after the client object; the address the query was SENT TO - this server, also the reporter - closes the line in parentheses. destination.ip is drafted (observer.ip defensible, author to decide). Three message shapes: the query itself, a refusal (cache query or zone transfer), and a failure with its DNS response code. Capture names fixed in documentation.md.",
+  "fields": [
+    {
+      "source_key": "client_object",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "debug_handle",
+      "difficulty": "ambiguous",
+      "note": "A memory address; no ECS field describes it.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "query_name",
+      "ecs_field": "dns.question.name",
+      "type": "keyword",
+      "role": "queried_name",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "query_class",
+      "ecs_field": "dns.question.class",
+      "type": "keyword",
+      "role": "query_class",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "query_type",
+      "ecs_field": "dns.question.type",
+      "type": "keyword",
+      "role": "query_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "flags",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "query_flags",
+      "difficulty": "ambiguous",
+      "note": "BIND's own flag notation; dns.header_flags holds header flag NAMES (RD, AA), not this string.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "server_ip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "role": "server_ip",
+      "difficulty": "hard",
+      "note": "The server the query was sent to, which also wrote the line. destination.ip drafted; observer.ip defensible - author to decide. source.ip is wrong.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "refused_operation",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "question",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "refused_question",
+      "difficulty": "ambiguous",
+      "note": "name/type/class in one string; no single ECS field holds the triple.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "response_code",
+      "ecs_field": "dns.response_code",
+      "type": "keyword",
+      "role": "dns_response_code",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "code_location",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "source_code_location",
+      "difficulty": "ambiguous",
+      "note": "Where in BIND's source the line was logged; log.origin.file.name/line split it and the IR cannot split one capture.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "bind_query__holdout_01",
+    "bind_query__holdout_02",
+    "bind_query__holdout_04",
+    "bind_query__holdout_05"
+  ]
+}

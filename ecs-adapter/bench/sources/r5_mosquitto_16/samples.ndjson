@@ -1,0 +1,11 @@
+{"raw": "1792939488: New client connected from 172.21.50.11 as temp-hall (p2, c1, k60, u'sensor01')."}
+{"raw": "1792939489: New client connected from 172.21.50.12 as gw-main (p2, c1, k60, u'gateway')."}
+{"raw": "1792939491: New client connected from 172.21.50.13 as grafana-bridge (p2, c1, k60, u'dashboard')."}
+{"raw": "1792939490: New connection from 172.21.50.99 on port 1883."}
+{"raw": "1792939495: New connection from 172.21.50.14 on port 1884."}
+{"raw": "1792939498: New client connected from 172.21.50.15 as temp-lab (p2, c1, k60, u'sensor01')."}
+{"raw": "1792939489: Socket error on client <unknown>, disconnecting."}
+{"raw": "1792939492: New connection from 172.21.50.98 on port 1883."}
+{"raw": "1792939495: New client connected from 172.21.50.14 as gw-backup (p2, c1, k60, u'gateway')."}
+{"raw": "1792939497: New connection from 172.21.50.97 on port 1883."}
+{"raw": "1792939499: New connection from 172.21.50.96 on port 1884."}

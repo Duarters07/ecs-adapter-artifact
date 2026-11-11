@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "url.full": "http://r5-varnish-old/admin/db"
+              }
+            },
+            {
+              "term": {
+                "url.original": "http://r5-varnish-old/admin/db"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "user_agent.original": "sqlmap/1.5"
+        }
+      }
+    ]
+  }
+}

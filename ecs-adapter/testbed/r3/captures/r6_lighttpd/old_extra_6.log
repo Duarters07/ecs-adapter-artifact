@@ -1,0 +1,6 @@
+2026-10-27 16:41:09: mod_auth.c.828) password doesn't match for /admin/ username: admin IP: 172.21.62.236
+2026-10-27 16:41:09: mod_auth.c.828) password doesn't match for /admin/ username: ana IP: 172.21.62.224
+2026-10-27 16:41:10: mod_auth.c.828) password doesn't match for /admin/old.zip username: backup IP: 172.21.62.180
+2026-10-27 16:41:11: mod_auth.c.828) password doesn't match for /admin/ username: rui IP: 172.21.62.218
+2026-10-27 16:41:12: mod_auth.c.828) password doesn't match for /admin/config username: rui IP: 172.21.62.195
+2026-10-27 16:41:12: mod_auth.c.828) password doesn't match for /admin/ username: scanner IP: 172.21.62.135

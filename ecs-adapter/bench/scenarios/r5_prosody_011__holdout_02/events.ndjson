@@ -1,0 +1,3 @@
+{"raw": "Oct 25 15:35:26 c2s5dd762633f70\tinfo\tAuthenticated as helpdesk@lab.example"}
+{"raw": "Oct 25 15:35:24 c2s5dd76256c2f0\tinfo\tClient disconnected: connection closed"}
+{"raw": "Oct 25 15:35:28 c2s5dd762649700\tinfo\tClient connected"}

@@ -1,0 +1,116 @@
+{
+  "source_id": "r6_opensmtpd_d11",
+  "family": "opensmtpd",
+  "split": "train_r6",
+  "category_hint": "network",
+  "contamination_risk": "high",
+  "origin": "Produced by running OpenSMTPD 6.8.0p2 (Debian 11), not copied from documentation or a public dataset. Captured 2026-10-27T15:53:58Z on the author's laptop by testbed/r3/r6_opensmtpd.sh (docker logs (smtpd -d), smtp session lines; SMTP AUTH not driven (Debian 12 TLS fails)); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 8 (pool r6), OLD VERSION: OpenSMTPD 6.8.0p2 on Debian 11; port-25 sessions only (see capture.json).",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_host",
+      "ecs_field": "source.domain",
+      "type": "keyword",
+      "role": "client_hostname",
+      "difficulty": "medium",
+      "note": "client.domain is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_or_end_reason",
+      "difficulty": "medium",
+      "note": "the refused command's reply, or why the session ended.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "session_event",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "session",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_id",
+      "difficulty": "hard",
+      "note": "event.id is acceptable; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "msgid",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "queue_id",
+      "difficulty": "hard",
+      "note": "internal queue id, not the Message-ID header.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "size",
+      "ecs_field": null,
+      "type": "long",
+      "role": "message_size",
+      "difficulty": "hard",
+      "note": "email has no plain size field in ECS 8.11.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "nrcpt",
+      "ecs_field": null,
+      "type": "long",
+      "role": "recipient_count",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "proto",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "smtp_protocol",
+      "difficulty": "hard",
+      "note": "network.protocol expects lowercase names; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "command",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "smtp_command",
+      "difficulty": "hard",
+      "note": "No ECS field for the refused command.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r6_opensmtpd_d11__holdout_01",
+    "r6_opensmtpd_d11__holdout_02",
+    "r6_opensmtpd_d11__holdout_03"
+  ],
+  "round3": {
+    "pair": "r6_opensmtpd",
+    "role": "old"
+  }
+}

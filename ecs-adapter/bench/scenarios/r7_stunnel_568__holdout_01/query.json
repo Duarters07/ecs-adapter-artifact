@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.action": "Rejected by CERT"
+        }
+      },
+      {
+        "term": {
+          "log.syslog.severity.code": 4
+        }
+      }
+    ]
+  }
+}

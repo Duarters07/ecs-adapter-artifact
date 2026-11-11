@@ -1,0 +1,12 @@
+{"raw": "Oct 22 08:41:06 mail postfix/smtpd[108]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 554 5.7.1 <victim@gmail.com>: Relay access denied; from=<x@bad.test> to=<victim@gmail.com> proto=ESMTP helo=<relay.bad.test>"}
+{"raw": "Oct 22 08:41:05 mail postfix/local[114]: 2D9F9E919A3: to=<ana@r4.local>, relay=local, delay=0.02, delays=0.01/0.01/0/0, dsn=2.0.0, status=sent (delivered to mailbox)"}
+{"raw": "Oct 22 08:41:05 mail postfix/qmgr[98]: AABF0E919A9: from=<promo@spam.test>, size=236, nrcpt=1 (queue active)"}
+{"raw": "Oct 22 08:41:11 mail postfix/smtpd[108]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 550 5.1.1 <admin@r4.local>: Recipient address rejected: User unknown in local recipient table; from=<a@scan.test> to=<admin@r4.local> proto=ESMTP helo=<scan.test>"}
+{"raw": "Oct 22 08:41:12 mail postfix/smtpd[108]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 554 5.7.1 <boss@outlook.com>: Relay access denied; from=<y@open.test> to=<boss@outlook.com> proto=ESMTP helo=<open.test>"}
+{"raw": "Oct 22 08:41:06 mail postfix/qmgr[98]: 33BBCE919AC: from=<bob@example.org>, size=237, nrcpt=1 (queue active)"}
+{"raw": "Oct 22 08:41:11 mail postfix/qmgr[98]: 3655AE91A2A: from=<carol@corp.example>, size=241, nrcpt=1 (queue active)"}
+{"raw": "Oct 22 08:41:12 mail postfix/smtpd[122]: 3E7CFE91A2D: client=unknown[172.21.0.3]"}
+{"raw": "Oct 22 08:41:05 mail postfix/local[114]: AABF0E919A9: to=<nobody@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)"}
+{"raw": "Oct 22 08:41:06 mail postfix/local[114]: 33BBCE919AC: to=<rui@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)"}
+{"raw": "Oct 22 08:41:11 mail postfix/local[114]: 3655AE91A2A: to=<sofia@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)"}
+{"raw": "Oct 22 08:41:12 mail postfix/local[114]: 3E7CFE91A2D: to=<tiago@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)"}

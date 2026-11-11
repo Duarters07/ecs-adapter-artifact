@@ -1,0 +1,50 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.id": "1"
+              }
+            },
+            {
+              "term": {
+                "source.user.id": "1"
+              }
+            },
+            {
+              "term": {
+                "user.id": "1"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "admin"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "admin"
+              }
+            },
+            {
+              "term": {
+                "user.name": "admin"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

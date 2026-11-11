@@ -1,0 +1,236 @@
+{
+  "source_id": "r7_sendmail_8181",
+  "family": "sendmail",
+  "split": "test_r7",
+  "category_hint": "email",
+  "contamination_risk": "high",
+  "origin": "Produced by running Sendmail 8.18.1 (Debian 13), not copied from documentation or a public dataset. Captured 2026-10-30T20:50:49Z on the author's laptop by testbed/r3/r7_sendmail.sh (rsyslog /var/log/mail.log: transaction lines (from/to/reject)); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), NEW VERSION of r7_sendmail_8179. CONTROL: the transaction lines are unchanged.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "relay_host",
+      "ecs_field": "source.domain",
+      "type": "keyword",
+      "role": "client_hostname",
+      "difficulty": "medium",
+      "note": "client.domain is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "sender",
+      "ecs_field": "email.from.address",
+      "type": "keyword",
+      "role": "sender",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "rcpt",
+      "ecs_field": "email.to.address",
+      "type": "keyword",
+      "role": "recipient",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "queue_id",
+      "ecs_field": "email.local_id",
+      "type": "keyword",
+      "role": "queue_id",
+      "difficulty": "hard",
+      "note": "The queue id is the id the MTA gives the message (ECS email.local_id).",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "msgid",
+      "ecs_field": "email.message_id",
+      "type": "keyword",
+      "role": "message_id",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "stat",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "delivery_status",
+      "difficulty": "hard",
+      "note": "event.outcome would need a value map (Sent -> success); declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "ruleset",
+      "ecs_field": "rule.name",
+      "type": "keyword",
+      "role": "ruleset",
+      "difficulty": "medium",
+      "note": "The ruleset that refused the recipient.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "role": "host",
+      "difficulty": "easy",
+      "note": "host.name is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "program",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "role": "program",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "dsn",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "status_code",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "size",
+      "ecs_field": null,
+      "type": "long",
+      "role": "message_size",
+      "difficulty": "hard",
+      "note": "email has no plain size field in ECS 8.11.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "class",
+      "ecs_field": null,
+      "type": "long",
+      "role": "message_class",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "nrcpts",
+      "ecs_field": null,
+      "type": "long",
+      "role": "recipient_count",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "proto",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "smtp_protocol",
+      "difficulty": "hard",
+      "note": "network.protocol expects lowercase names; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "daemon",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "daemon",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "delay",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "delay",
+      "difficulty": "hard",
+      "note": "event.duration is in nanoseconds; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "xdelay",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "xdelay",
+      "difficulty": "hard",
+      "note": "As delay.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "mailer",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "mailer",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pri",
+      "ecs_field": null,
+      "type": "long",
+      "role": "priority",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_sendmail_8181__holdout_01",
+    "r7_sendmail_8181__holdout_02",
+    "r7_sendmail_8181__holdout_03",
+    "r7_sendmail_8181__holdout_05",
+    "r7_sendmail_8181__holdout_06"
+  ],
+  "round3": {
+    "pair": "r7_sendmail",
+    "role": "new"
+  }
+}

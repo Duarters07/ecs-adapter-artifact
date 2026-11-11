@@ -1,0 +1,10 @@
+CONNECT   Oct 27 16:10:59 [13]: Connect (file descriptor 10): boring_swanson.r3-net [172.21.66.14]
+CONNECT   Oct 27 16:10:59 [13]: Request (file descriptor 10): GET http://r6-web-target/ HTTP/1.1
+CONNECT   Oct 27 16:10:59 [13]: Established connection to host "r6-web-target" using file descriptor 11.
+CONNECT   Oct 27 16:11:00 [9]: Connect (file descriptor 10): zealous_hoover.r3-net [172.21.66.14]
+CONNECT   Oct 27 16:11:00 [9]: Request (file descriptor 10): GET http://r6-web-target/config HTTP/1.1
+CONNECT   Oct 27 16:11:01 [9]: Connect (file descriptor 10): pensive_merkle.r3-net [172.21.66.203]
+NOTICE    Oct 27 16:11:01 [9]: Unauthorized connection from "pensive_merkle.r3-net" [172.21.66.203].
+CONNECT   Oct 27 16:11:02 [9]: Connect (file descriptor 10): gifted_ellis.r3-net [172.21.66.15]
+CONNECT   Oct 27 16:11:02 [9]: Request (file descriptor 10): GET http://r6-web-target/index.html HTTP/1.1
+CONNECT   Oct 27 16:11:02 [9]: Established connection to host "r6-web-target" using file descriptor 11.

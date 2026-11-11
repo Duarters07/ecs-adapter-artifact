@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "etl"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "etl"
+              }
+            },
+            {
+              "term": {
+                "user.name": "etl"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

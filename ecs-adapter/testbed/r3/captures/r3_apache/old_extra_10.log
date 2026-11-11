@@ -1,0 +1,12 @@
+[Sun Oct 25 22:15:48 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/users.csv
+[Sun Oct 25 22:15:48 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/, referer: http://portal.local/intranet
+[Sun Oct 25 22:15:48 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/, referer: http://finance.local/qa
+[Sun Oct 25 22:15:48 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/dump.sql
+[Sun Oct 25 22:15:49 2026] [error] [client 172.21.0.3] user test not found: /reports/, referer: http://portal.local/wiki
+[Sun Oct 25 22:15:49 2026] [error] [client 172.21.0.3] user alice not found: /reports/annual.pdf, referer: http://ops.local/ops
+[Sun Oct 25 22:15:49 2026] [error] [client 172.21.0.3] user backup not found: /reports/
+[Sun Oct 25 22:15:49 2026] [error] [client 172.21.0.3] user joao not found: /reports/report.pdf, referer: http://ops.local/portal
+[Sun Oct 25 22:15:49 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/data.json
+[Sun Oct 25 22:15:50 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/report.pdf, referer: http://portal.local/tools
+[Sun Oct 25 22:15:50 2026] [error] [client 172.21.0.3] user postgres not found: /members/
+[Sun Oct 25 22:15:50 2026] [error] [client 172.21.0.3] user simao not found: /reports/report.pdf, referer: http://portal.local/ops

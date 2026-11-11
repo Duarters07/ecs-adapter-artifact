@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "url.path": "/api/firstfactor"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "rui"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "rui"
+              }
+            },
+            {
+              "term": {
+                "user.name": "rui"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

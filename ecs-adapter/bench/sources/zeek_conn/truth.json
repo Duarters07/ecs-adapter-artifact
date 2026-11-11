@@ -1,0 +1,181 @@
+{
+  "family": "zeek",
+  "category_hint": "network",
+  "contamination_risk": "medium",
+  "notes": "Zeek conn.log appears in public security datasets, so the format is probably not unseen. What makes it a held-out source is the VOCABULARY: originator and responder are not source and destination, and half the columns describe things ECS 8.11 has no field for. HAZARD: four column names contain a dot. A csv extraction declaring `id.orig_h` produces a Logstash field whose name literally contains a dot, which is legal and is not nesting.",
+  "fields": [
+    {
+      "source_key": "uid",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "connection_identifier",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Identifies the CONNECTION, which spans many events and many Zeek logs. event.id identifies an event, so it is not the same thing, and ECS 8.11 offers nothing for a cross-log correlation handle."
+    },
+    {
+      "source_key": "id.orig_h",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "connection_originator_ip",
+      "difficulty": "hard",
+      "note": "`orig` is the handshake initiator, which is what ECS calls the source. Nothing in the name says src."
+    },
+    {
+      "source_key": "id.orig_p",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "connection_originator_port",
+      "difficulty": "hard"
+    },
+    {
+      "source_key": "id.resp_h",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "role": "connection_responder_ip",
+      "difficulty": "hard"
+    },
+    {
+      "source_key": "id.resp_p",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "role": "connection_responder_port",
+      "difficulty": "hard"
+    },
+    {
+      "source_key": "proto",
+      "ecs_field": "network.transport",
+      "type": "keyword",
+      "role": "transport_protocol",
+      "difficulty": "medium",
+      "note": "tcp/udp/icmp is the TRANSPORT. The pair with `service` is the trap: one is network.transport and the other is network.protocol."
+    },
+    {
+      "source_key": "service",
+      "ecs_field": "network.protocol",
+      "type": "keyword",
+      "role": "application_protocol",
+      "difficulty": "hard",
+      "note": "dns/http is the APPLICATION protocol, which ECS calls network.protocol. Unset as `-` on connections Zeek could not classify."
+    },
+    {
+      "source_key": "duration",
+      "ecs_field": null,
+      "type": "float",
+      "role": "connection_duration_seconds",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "SECONDS as a decimal. ECS event.duration is NANOSECONDS as a long and the IR carries no unit conversion, so assigning it is wrong by nine orders of magnitude."
+    },
+    {
+      "source_key": "orig_bytes",
+      "ecs_field": "source.bytes",
+      "type": "long",
+      "role": "originator_payload_bytes",
+      "difficulty": "hard"
+    },
+    {
+      "source_key": "resp_bytes",
+      "ecs_field": "destination.bytes",
+      "type": "long",
+      "role": "responder_payload_bytes",
+      "difficulty": "hard"
+    },
+    {
+      "source_key": "conn_state",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "zeek_connection_state",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "S0, SF, RSTO, REJ. A Zeek-internal summary of how the connection ended. It is not event.outcome: a connection that was reset is not a failed security event, and SF does not mean success."
+    },
+    {
+      "source_key": "local_orig",
+      "ecs_field": null,
+      "type": "boolean",
+      "role": "originator_is_local",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Whether the originator falls inside Zeek's configured local networks. A property of the sensor's configuration, not of the event."
+    },
+    {
+      "source_key": "local_resp",
+      "ecs_field": null,
+      "type": "boolean",
+      "role": "responder_is_local",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The mirror of local_orig: whether the responder falls inside Zeek's configured local networks. A property of the sensor's configuration."
+    },
+    {
+      "source_key": "missed_bytes",
+      "ecs_field": null,
+      "type": "long",
+      "role": "capture_loss_bytes",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Bytes the sensor failed to capture. Describes the observer's fidelity, not the traffic. ECS 8.11 has no field for it."
+    },
+    {
+      "source_key": "history",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "connection_event_history",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "One letter per connection event, in order. A Zeek-specific encoding."
+    },
+    {
+      "source_key": "orig_pkts",
+      "ecs_field": "source.packets",
+      "type": "long",
+      "role": "originator_packet_count",
+      "difficulty": "hard"
+    },
+    {
+      "source_key": "orig_ip_bytes",
+      "ecs_field": null,
+      "type": "long",
+      "role": "originator_ip_layer_bytes",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "Total IP-layer bytes including headers. source.bytes is already taken by orig_bytes, which is the payload count, and ECS offers no second byte counter per direction. Only one of the two can be source.bytes."
+    },
+    {
+      "source_key": "resp_pkts",
+      "ecs_field": "destination.packets",
+      "type": "long",
+      "role": "responder_packet_count",
+      "difficulty": "hard"
+    },
+    {
+      "source_key": "resp_ip_bytes",
+      "ecs_field": null,
+      "type": "long",
+      "role": "responder_ip_layer_bytes",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "The mirror of orig_ip_bytes: total IP-layer bytes including headers. destination.bytes is already taken by resp_bytes, the payload count."
+    },
+    {
+      "source_key": "tunnel_parents",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "enclosing_tunnel_uids",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "A set of connection identifiers, not a value."
+    }
+  ],
+  "source_id": "zeek_conn",
+  "split": "test",
+  "origin": "Produced by running the software, not copied from documentation or a public dataset. Captured on 2 October 2026 on the project's own Docker host.",
+  "scenarios": [
+    "zeek_conn__holdout_01",
+    "zeek_conn__holdout_02",
+    "zeek_conn__holdout_03",
+    "zeek_conn__holdout_04",
+    "zeek_conn__holdout_05"
+  ]
+}

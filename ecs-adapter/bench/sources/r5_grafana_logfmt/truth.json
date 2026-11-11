@@ -1,0 +1,183 @@
+{
+  "source_id": "r5_grafana_logfmt",
+  "family": "grafana",
+  "split": "train_r5",
+  "category_hint": "web",
+  "contamination_risk": "high",
+  "origin": "Produced by running Grafana 11.3.0 (image grafana/grafana:11.3.0), console logfmt, router logging on, not copied from documentation or a public dataset. Captured 2026-10-25T14:12:32Z on the author's laptop by testbed/r3/r5_grafana.sh (docker logs, logger=context lines); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 6 (pool r5), OLD CONFIGURATION: Grafana's console log as shipped (logfmt), request-context lines.",
+  "fields": [
+    {
+      "source_key": "remote_addr",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "request_method",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "path",
+      "ecs_field": "url.path",
+      "type": "keyword",
+      "role": "request_path",
+      "difficulty": "medium",
+      "note": "url.original is arguable: no query string in the capture.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "role": "status_code",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "size",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "role": "response_body_size",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "uname",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "userId",
+      "ecs_field": "user.id",
+      "type": "keyword",
+      "role": "account_id",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "logger",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "role": "logger",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "msg",
+      "ecs_field": "message",
+      "type": "keyword",
+      "role": "message",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "referer",
+      "ecs_field": "http.request.referrer",
+      "type": "keyword",
+      "role": "referrer",
+      "difficulty": "medium",
+      "note": "Always empty in the capture.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "error",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "auth_error",
+      "difficulty": "hard",
+      "note": "error.message is the home, but `error` is not offered for category web. Declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "orgId",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "tenant_id",
+      "difficulty": "hard",
+      "note": "organization.id is the home, but `organization` is not offered for category web.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "traceID",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "trace_id",
+      "difficulty": "hard",
+      "note": "trace.id; not offered for web, and always empty.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "handler",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "route",
+      "difficulty": "hard",
+      "note": "No ECS 8.11 field for a route template.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "time_ms",
+      "ecs_field": null,
+      "type": "long",
+      "role": "duration",
+      "difficulty": "hard",
+      "note": "event.duration is in nanoseconds; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "duration",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "duration_text",
+      "difficulty": "hard",
+      "note": "A duration with its unit; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "status_source",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "status_origin",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r5_grafana_logfmt__holdout_01",
+    "r5_grafana_logfmt__holdout_02",
+    "r5_grafana_logfmt__holdout_04",
+    "r5_grafana_logfmt__holdout_05"
+  ],
+  "round3": {
+    "pair": "r5_grafana",
+    "role": "old"
+  }
+}

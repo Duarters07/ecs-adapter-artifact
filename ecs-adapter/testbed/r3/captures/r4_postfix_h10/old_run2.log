@@ -1,0 +1,6 @@
+Oct 28 15:34:18 mail postfix/qmgr[99]: E768CF26C50: from=<carol@corp.example>, size=241, nrcpt=1 (queue active)
+Oct 28 15:34:18 mail postfix/local[115]: E768CF26C50: to=<sofia@r4.local>, relay=local, delay=0.01, delays=0/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 28 15:34:18 mail postfix/qmgr[99]: E768CF26C50: removed
+Oct 28 15:34:19 mail postfix/qmgr[99]: EBC4DF26C53: from=<carol@corp.example>, size=241, nrcpt=1 (queue active)
+Oct 28 15:34:19 mail postfix/local[115]: EBC4DF26C53: to=<tiago@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 28 15:34:19 mail postfix/qmgr[99]: EBC4DF26C53: removed

@@ -1,0 +1,12 @@
+CONNECT   Oct 27 16:51:06 [10]: Connect (file descriptor 10): reverent_mirzakhani.r3-net [172.21.66.159]
+NOTICE    Oct 27 16:51:06 [10]: Unauthorized connection from "reverent_mirzakhani.r3-net" [172.21.66.159].
+CONNECT   Oct 27 16:51:07 [9]: Connect (file descriptor 10): nice_burnell.r3-net [172.21.66.248]
+NOTICE    Oct 27 16:51:07 [9]: Unauthorized connection from "nice_burnell.r3-net" [172.21.66.248].
+CONNECT   Oct 27 16:51:07 [11]: Connect (file descriptor 10): optimistic_heisenberg.r3-net [172.21.66.167]
+NOTICE    Oct 27 16:51:07 [11]: Unauthorized connection from "optimistic_heisenberg.r3-net" [172.21.66.167].
+CONNECT   Oct 27 16:51:08 [9]: Connect (file descriptor 10): admiring_mendel.r3-net [172.21.66.214]
+NOTICE    Oct 27 16:51:08 [9]: Unauthorized connection from "admiring_mendel.r3-net" [172.21.66.214].
+CONNECT   Oct 27 16:51:09 [16]: Connect (file descriptor 10): epic_wiles.r3-net [172.21.66.117]
+CONNECT   Oct 27 16:51:09 [16]: Request (file descriptor 10): GET http://r6-web-target/ HTTP/1.1
+CONNECT   Oct 27 16:51:10 [14]: Connect (file descriptor 10): ecstatic_lalande.r3-net [172.21.66.199]
+NOTICE    Oct 27 16:51:10 [14]: Unauthorized connection from "ecstatic_lalande.r3-net" [172.21.66.199].

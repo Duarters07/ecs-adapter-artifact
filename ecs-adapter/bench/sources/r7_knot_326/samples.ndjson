@@ -1,0 +1,4 @@
+{"raw": "2026-10-30T21:15:10+0000 info: [lab.example.] AXFR, outgoing, remote 172.21.84.10@55501, finished, 0.00 seconds, 1 messages, 221 bytes"}
+{"raw": "2026-10-30T21:15:12+0000 info: [lab.example.] IXFR, outgoing, remote 172.21.84.11@52376, incomplete history, serial 2026103000, fallback to AXFR"}
+{"raw": "2026-10-30T21:15:18+0000 info: [corp.example.] AXFR, outgoing, remote 172.21.84.11@51864, started, serial 2026103001"}
+{"raw": "2026-10-30T21:15:20+0000 info: [corp.example.] AXFR, outgoing, remote 172.21.84.10@49318, finished, 0.00 seconds, 1 messages, 222 bytes"}

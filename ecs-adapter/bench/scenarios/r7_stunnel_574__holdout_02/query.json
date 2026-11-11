@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.syslog.severity.code": 4
+        }
+      },
+      {
+        "term": {
+          "process.thread.id": 7
+        }
+      }
+    ]
+  }
+}

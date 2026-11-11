@@ -1,0 +1,12 @@
+2026-10-25 23:02:11,545 files01 proftpd[19] 172.21.0.2 (172.21.52.134[172.21.52.134]): FTP session opened.
+2026-10-25 23:02:13,854 files01 proftpd[19] 172.21.0.2 (172.21.52.134[172.21.52.134]): USER ana (Login failed): Incorrect password
+2026-10-25 23:02:14,931 files01 proftpd[20] 172.21.0.2 (172.21.52.198[172.21.52.198]): FTP session opened.
+2026-10-25 23:02:14,932 files01 proftpd[20] 172.21.0.2 (172.21.52.198[172.21.52.198]): USER vasco: no such user found from 172.21.52.198 [172.21.52.198] to 172.21.0.2:21
+2026-10-25 23:02:15,960 files01 proftpd[21] 172.21.0.2 (172.21.52.148[172.21.52.148]): FTP session opened.
+2026-10-25 23:02:15,961 files01 proftpd[21] 172.21.0.2 (172.21.52.148[172.21.52.148]): SECURITY VIOLATION: Root login attempted
+2026-10-25 23:02:17,046 files01 proftpd[22] 172.21.0.2 (172.21.52.170[172.21.52.170]): FTP session opened.
+2026-10-25 23:02:17,047 files01 proftpd[22] 172.21.0.2 (172.21.52.170[172.21.52.170]): USER paulo: no such user found from 172.21.52.170 [172.21.52.170] to 172.21.0.2:21
+2026-10-25 23:02:18,075 files01 proftpd[23] 172.21.0.2 (172.21.52.163[172.21.52.163]): FTP session opened.
+2026-10-25 23:02:20,016 files01 proftpd[23] 172.21.0.2 (172.21.52.163[172.21.52.163]): USER scanner (Login failed): Incorrect password
+2026-10-25 23:02:21,113 files01 proftpd[24] 172.21.0.2 (172.21.52.176[172.21.52.176]): FTP session opened.
+2026-10-25 23:02:21,147 files01 proftpd[24] 172.21.0.2 (172.21.52.176[172.21.52.176]): USER scanner: Login successful.

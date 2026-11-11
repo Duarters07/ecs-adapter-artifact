@@ -1,0 +1,15 @@
+[2026-10-30 21:47:34 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.11]:57512 (no client certificate)
+[2026-10-30 21:47:34 +0000] information/HttpServerConnection: Request GET /v1/status/IcingaApplication (from [::ffff:172.21.91.11]:57512), user: ana, agent: curl/8.14.1, status: OK) took total 0ms.
+[2026-10-30 21:47:34 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.11]:57512)
+[2026-10-30 21:47:34 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.11]:57526 (no client certificate)
+[2026-10-30 21:47:34 +0000] information/HttpServerConnection: Request GET /v1/status/IcingaApplication (from [::ffff:172.21.91.11]:57526), user: <unauthenticated>, agent: curl/8.14.1, status: Unauthorized) took total 0ms.
+[2026-10-30 21:47:34 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.11]:57526)
+[2026-10-30 21:47:35 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.12]:50482 (no client certificate)
+[2026-10-30 21:47:35 +0000] information/HttpServerConnection: Request GET /v1/status/IcingaApplication (from [::ffff:172.21.91.12]:50482), user: rui, agent: Icinga Web 2, status: OK) took total 0ms.
+[2026-10-30 21:47:35 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.12]:50482)
+[2026-10-30 21:47:36 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.211]:36304 (no client certificate)
+[2026-10-30 21:47:36 +0000] information/HttpServerConnection: Request GET /v1/objects/hosts (from [::ffff:172.21.91.211]:36304), user: <unauthenticated>, agent: python-requests/2.31.0, status: Unauthorized) took total 0ms.
+[2026-10-30 21:47:36 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.211]:36304)
+[2026-10-30 21:47:37 +0000] information/ApiListener: New client connection from [::ffff:172.21.91.13]:49352 (no client certificate)
+[2026-10-30 21:47:37 +0000] information/HttpServerConnection: Request GET /v1/status/IcingaApplication (from [::ffff:172.21.91.13]:49352), user: monitor, agent: python-requests/2.31.0, status: OK) took total 0ms.
+[2026-10-30 21:47:37 +0000] information/HttpServerConnection: HTTP client disconnected (from [::ffff:172.21.91.13]:49352)

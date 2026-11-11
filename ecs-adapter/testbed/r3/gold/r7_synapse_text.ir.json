@@ -1,0 +1,134 @@
+{
+  "source_id": "r7_synapse_text",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^%{TIMESTAMP_ISO8601:timestamp} - %{NOTSPACE:logger} - %{INT:lineno} - %{LOGLEVEL:level} - %{NOTSPACE:request} - (?<action>Got login request) with identifier: \\{\\x27type\\x27: \\x27m\\.id\\.user\\x27, \\x27user\\x27: \\x27%{DATA:login_user}\\x27\\}, medium: None, address: None, user: None$",
+    "alternatives": [
+      "^%{TIMESTAMP_ISO8601:timestamp} - %{NOTSPACE:logger} - %{INT:lineno} - %{LOGLEVEL:level} - %{NOTSPACE:request} - (?<action>Logging in user) (?<user_id>@\\S+) on device %{NOTSPACE:device}$",
+      "^%{TIMESTAMP_ISO8601:timestamp} - %{NOTSPACE:logger} - %{INT:lineno} - %{LOGLEVEL:level} - %{NOTSPACE:request} - (?<action>Failed password login) for user (?<user_id>@\\S+)$",
+      "^%{TIMESTAMP_ISO8601:timestamp} - %{NOTSPACE:logger} - %{INT:lineno} - %{LOGLEVEL:level} - %{NOTSPACE:request} - (?<action>Attempted to login) as (?<user_id>@\\S+) but they do not exist$",
+      "^%{TIMESTAMP_ISO8601:timestamp} - %{NOTSPACE:logger} - %{INT:lineno} - %{LOGLEVEL:level} - %{NOTSPACE:request} - %{NOTSPACE:client_ip} - %{INT:site} - \\{%{DATA:requester}\\} (?<action>Processed request): %{DATA:timing} %{INT:bytes}B %{INT:status} \"%{WORD:method} %{NOTSPACE:url} HTTP/%{NUMBER:http_version}\" \"%{DATA:user_agent}\" \\[%{INT:dbevts} dbevts\\]$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "login_user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "user_id",
+      "ecs_field": "user.id",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "url",
+      "ecs_field": "url.path",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "http_version",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "user_agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "bytes",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "request",
+      "ecs_field": "http.request.id",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "logger",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "lineno",
+      "ecs_field": "log.origin.file.line",
+      "type": "long",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "device",
+      "reason": "Matrix device id; no ECS field"
+    },
+    {
+      "source_key": "site",
+      "reason": "listener tag; no ECS field"
+    },
+    {
+      "source_key": "requester",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "timing",
+      "reason": "several durations; no ECS field"
+    },
+    {
+      "source_key": "dbevts",
+      "reason": "no ECS field"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.dataset": "synapse.log"
+  }
+}

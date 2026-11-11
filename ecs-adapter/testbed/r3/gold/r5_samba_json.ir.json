@@ -1,0 +1,138 @@
+{
+  "source_id": "r5_samba_json",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^\\s*\\{\"timestamp\": \"%{DATA:timestamp}\", \"type\": \"Authentication\", \"Authentication\": \\{\"version\": \\{\"major\": %{INT:major}, \"minor\": %{INT:minor}\\}, \"eventId\": %{INT:eventId}, \"logonId\": \"%{DATA:logonId}\", \"logonType\": %{INT:logonType}, \"status\": \"%{DATA:status}\", \"localAddress\": \"(?<localAddress>ipv4:%{IP:local_ip}:%{INT:local_port})\", \"remoteAddress\": \"(?<remoteAddress>ipv4:%{IP:remote_ip}:%{INT:remote_port})\", \"serviceDescription\": \"%{DATA:serviceDescription}\", \"authDescription\": (?:null|\"%{DATA:authDescription}\"), \"clientDomain\": \"%{DATA:clientDomain}\", \"clientAccount\": \"%{DATA:clientAccount}\", \"workstation\": \"%{DATA:workstation}\", \"becameAccount\": (?:null|\"%{DATA:becameAccount}\"), \"becameDomain\": (?:null|\"%{DATA:becameDomain}\"), \"becameSid\": (?:null|\"%{DATA:becameSid}\"), \"mappedAccount\": (?:null|\"%{DATA:mappedAccount}\"), \"mappedDomain\": (?:null|\"%{DATA:mappedDomain}\"), .*\"passwordType\": \"%{DATA:passwordType}\", \"duration\": %{INT:duration}\\}\\}\\s*$"
+  },
+  "fields": [
+    {
+      "source_key": "clientAccount",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "clientDomain",
+      "ecs_field": "user.domain",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "eventId",
+      "ecs_field": "event.code",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "becameSid",
+      "ecs_field": "user.id",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "remote_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "remote_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "local_ip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "local_port",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "remoteAddress",
+      "reason": "split into remote_ip and remote_port"
+    },
+    {
+      "source_key": "localAddress",
+      "reason": "split into local_ip and local_port"
+    },
+    {
+      "source_key": "workstation",
+      "reason": "NetBIOS name; declined"
+    },
+    {
+      "source_key": "logonType",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "passwordType",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "duration",
+      "reason": "microseconds"
+    },
+    {
+      "source_key": "logonId",
+      "reason": "logon session id"
+    },
+    {
+      "source_key": "serviceDescription",
+      "reason": "network.protocol not offered"
+    },
+    {
+      "source_key": "authDescription",
+      "reason": "always null"
+    },
+    {
+      "source_key": "becameAccount",
+      "reason": "same as clientAccount"
+    },
+    {
+      "source_key": "becameDomain",
+      "reason": "local SAM domain"
+    },
+    {
+      "source_key": "mappedAccount",
+      "reason": "same as clientAccount"
+    },
+    {
+      "source_key": "mappedDomain",
+      "reason": "same as clientDomain"
+    },
+    {
+      "source_key": "major",
+      "reason": "format version"
+    },
+    {
+      "source_key": "minor",
+      "reason": "format version"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.dataset": "samba.auth_audit"
+  }
+}

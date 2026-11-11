@@ -1,0 +1,16 @@
+{
+ "bool": {
+  "filter": [
+   {
+    "term": {
+     "process.name": "dnsmasq"
+    }
+   },
+   {
+    "term": {
+     "source.ip": "172.17.130.196"
+    }
+   }
+  ]
+ }
+}

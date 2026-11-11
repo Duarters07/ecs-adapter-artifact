@@ -1,0 +1,4 @@
+{"raw": "1792939516: New client connected from 203.0.113.14:60706 as gw-main (p2, c1, k60, u'gateway')."}
+{"raw": "1792939518: New client connected from 203.0.113.14:35578 as grafana-bridge (p2, c1, k60, u'dashboard')."}
+{"raw": "1792939522: New client connected from 203.0.113.14:49146 as cam-dock (p2, c1, k60, u'camera03')."}
+{"raw": "1792939524: New client connected from 203.0.113.14:43616 as pump-east (p2, c1, k60, u'pump02')."}

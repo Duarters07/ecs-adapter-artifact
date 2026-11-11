@@ -1,0 +1,99 @@
+{
+  "source_id": "r7_nsd_461",
+  "family": "nsd",
+  "split": "train_r7",
+  "category_hint": "network",
+  "contamination_risk": "high",
+  "origin": "Produced by running NSD 4.6.1 (Debian 12), not copied from documentation or a public dataset. Captured 2026-10-30T21:16:42Z on the author's laptop by testbed/r3/r7_nsd.sh (docker logs (stderr, verbosity 2): transfer and refusal lines); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), OLD VERSION: NSD 4.6.1, four zones, transfers provided to two addresses, verbosity 2.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "zone",
+      "ecs_field": "dns.question.name",
+      "type": "keyword",
+      "role": "zone",
+      "difficulty": "medium",
+      "note": "The zone is the transfer request's question name.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "xfr_type",
+      "ecs_field": "dns.question.type",
+      "type": "keyword",
+      "role": "transfer_type",
+      "difficulty": "medium",
+      "note": "axfr/ixfr are query types (lowercase here).",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "verification",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "tsig_status",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_nsd_461__holdout_01",
+    "r7_nsd_461__holdout_02"
+  ],
+  "round3": {
+    "pair": "r7_nsd",
+    "role": "old"
+  }
+}

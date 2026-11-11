@@ -1,0 +1,15 @@
+CONNECT   Oct 27 16:11:30.410 [1]: Connect (file descriptor 6): 172.21.66.31
+CONNECT   Oct 27 16:11:30.414 [1]: Request (file descriptor 6): GET http://r6-web-target/finance/q3.csv HTTP/1.1
+CONNECT   Oct 27 16:11:30.421 [1]: Established connection to host "r6-web-target" using file descriptor 7.
+CONNECT   Oct 27 16:11:31.182 [1]: Connect (file descriptor 6): 172.21.66.33
+CONNECT   Oct 27 16:11:31.186 [1]: Request (file descriptor 6): GET http://r6-web-target/payroll.xlsx HTTP/1.1
+CONNECT   Oct 27 16:11:31.967 [1]: Connect (file descriptor 6): 172.21.66.32
+CONNECT   Oct 27 16:11:31.971 [1]: Request (file descriptor 6): GET http://r6-web-target/hr/contracts HTTP/1.1
+CONNECT   Oct 27 16:11:32.839 [1]: Connect (file descriptor 6): 172.21.66.34
+CONNECT   Oct 27 16:11:32.841 [1]: Request (file descriptor 6): GET http://r6-web-target/exports/users.csv HTTP/1.1
+CONNECT   Oct 27 16:11:32.846 [1]: Established connection to host "r6-web-target" using file descriptor 7.
+CONNECT   Oct 27 16:11:33.619 [1]: Connect (file descriptor 6): 172.21.66.213
+NOTICE    Oct 27 16:11:33.624 [1]: Unauthorized connection from "172.21.66.213".
+CONNECT   Oct 27 16:11:34.398 [1]: Connect (file descriptor 6): 172.21.66.35
+CONNECT   Oct 27 16:11:34.403 [1]: Request (file descriptor 6): GET http://r6-web-target/wiki/onboarding HTTP/1.1
+CONNECT   Oct 27 16:11:34.409 [1]: Established connection to host "r6-web-target" using file descriptor 7.

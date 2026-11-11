@@ -1,0 +1,130 @@
+{
+  "source_id": "r7_inspircd_47",
+  "family": "inspircd",
+  "split": "test_r7",
+  "category_hint": "network",
+  "contamination_risk": "high",
+  "origin": "Produced by running InspIRCd 4.7.0 (Debian 13), not copied from documentation or a public dataset. Captured 2026-10-30T19:13:15Z on the author's laptop by testbed/r3/r7_inspircd.sh (/var/log/inspircd/ircd.log, every type except USERINPUT/USEROUTPUT: connect, password, OPER and quit lines); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), NEW VERSION of r7_inspircd_315: date order changed, OPER lines reworded.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "port",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "role": "server_port",
+      "difficulty": "medium",
+      "note": "server.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "nick",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "realname",
+      "ecs_field": "user.full_name",
+      "type": "keyword",
+      "role": "real_name",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "oper_name",
+      "ecs_field": "user.effective.name",
+      "type": "keyword",
+      "role": "privileged_account",
+      "difficulty": "hard",
+      "note": "The operator account the user takes on; leaving it unmapped is acceptable.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "type",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "role": "log_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "oper_type",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "oper_type",
+      "difficulty": "hard",
+      "note": "user.roles is an array of roles; leaving it unmapped is acceptable.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "ident",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "ident",
+      "difficulty": "hard",
+      "note": "The IRC user name; user.name holds the nick.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "conn_class",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "connect_class",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_inspircd_47__holdout_01",
+    "r7_inspircd_47__holdout_02",
+    "r7_inspircd_47__holdout_03",
+    "r7_inspircd_47__holdout_04"
+  ],
+  "round3": {
+    "pair": "r7_inspircd",
+    "role": "new"
+  }
+}

@@ -1,0 +1,23 @@
+6ade8a00 conn=1012 fd=11 ACCEPT from IP=172.21.51.212:37362 (IP=0.0.0.0:389)
+6ade8a00 conn=1012 op=0 BIND dn="" method=128
+6ade8a00 conn=1012 op=0 RESULT tag=97 err=0 text=
+6ade8a00 conn=1012 op=1 SRCH base="dc=lab,dc=example" scope=2 deref=0 filter="(objectClass=inetOrgPerson)"
+6ade8a00 conn=1012 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=
+6ade8a01 conn=1013 fd=11 ACCEPT from IP=172.21.51.187:51526 (IP=0.0.0.0:389)
+6ade8a01 conn=1013 op=0 BIND dn="uid=www,ou=people,dc=lab,dc=example" method=128
+6ade8a01 conn=1013 op=0 RESULT tag=97 err=49 text=
+6ade8a02 conn=1014 fd=11 ACCEPT from IP=172.21.51.215:36046 (IP=0.0.0.0:389)
+6ade8a02 conn=1014 op=0 BIND dn="cn=root,dc=lab,dc=example" method=128
+6ade8a02 conn=1014 op=0 RESULT tag=97 err=49 text=
+6ade8a03 conn=1015 fd=11 ACCEPT from IP=172.21.51.113:32994 (IP=0.0.0.0:389)
+6ade8a03 conn=1015 op=0 BIND dn="cn=service,dc=lab,dc=example" method=128
+6ade8a03 conn=1015 op=0 RESULT tag=97 err=49 text=
+6ade8a04 conn=1016 fd=11 ACCEPT from IP=172.21.51.134:40082 (IP=0.0.0.0:389)
+6ade8a04 conn=1016 op=0 BIND dn="uid=olga,ou=people,dc=lab,dc=example" method=128
+6ade8a04 conn=1016 op=0 RESULT tag=97 err=49 text=
+6ade8a05 conn=1017 fd=11 ACCEPT from IP=172.21.51.167:36564 (IP=0.0.0.0:389)
+6ade8a05 conn=1017 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" method=128
+6ade8a05 conn=1017 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ade8a05 conn=1017 op=0 RESULT tag=97 err=0 text=
+6ade8a05 conn=1017 op=1 SRCH base="ou=people,dc=lab,dc=example" scope=2 deref=0 filter="(uid=*)"
+6ade8a05 conn=1017 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=

@@ -1,0 +1,51 @@
+{
+ "source_id": "t3_ait_dnsmasq",
+ "review_status": "DRAFT - every field below awaits the author's review",
+ "fields": [
+  {
+   "source_key": "query_type",
+   "ecs_field": "dns.question.type",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "query_name",
+   "ecs_field": "dns.question.name",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "client_ip",
+   "ecs_field": "source.ip",
+   "confidence": 1.0,
+   "type": "ip",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "upstream_ip",
+   "ecs_field": "destination.ip",
+   "confidence": 1.0,
+   "type": "ip",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "answer",
+   "ecs_field": "dns.answers.data",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "program",
+   "ecs_field": "process.name",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "pid",
+   "ecs_field": "process.pid",
+   "confidence": 1.0,
+   "type": "long",
+   "review_status": "DRAFT"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{"raw": "3dfc37c5ce984ab1 smtp message msgid=77472a7f size=197 nrcpt=1 proto=ESMTP"}
+{"raw": "3dfc37c34b13cd95 smtp connected address=172.21.63.90 host=hungry_black.r3-net"}
+{"raw": "3dfc37c472a28adb smtp failed-command command=\"rcpt TO:<sales@lab.local>\" result=\"550 Invalid recipient: <sales@lab.local>\""}
+{"raw": "3dfc37c88a1d61d7 smtp connected address=172.21.63.88 host=jolly_kalam.r3-net"}
+{"raw": "3dfc37c34b13cd95 smtp failed-command command=\"rcpt TO:<b@far.org>\" result=\"550 Invalid recipient: <b@far.org>\""}
+{"raw": "3dfc37c34b13cd95 smtp disconnected reason=disconnect"}
+{"raw": "3dfc37c472a28adb smtp connected address=172.21.63.31 host=happy_austin.r3-net"}
+{"raw": "3dfc37c5ce984ab1 smtp connected address=172.21.63.32 host=hardcore_jepsen.r3-net"}
+{"raw": "3dfc37c88a1d61d7 smtp failed-command command=\"rcpt TO:<x@nowhere.net>\" result=\"550 Invalid recipient: <x@nowhere.net>\""}
+{"raw": "3dfc37c5ce984ab1 smtp disconnected reason=quit"}

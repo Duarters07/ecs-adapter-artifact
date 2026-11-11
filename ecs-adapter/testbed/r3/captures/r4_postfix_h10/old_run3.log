@@ -1,0 +1,3 @@
+Oct 28 15:34:24 mail postfix/qmgr[99]: 721CFF26CD1: from=<dave@home.example>, size=237, nrcpt=1 (queue active)
+Oct 28 15:34:24 mail postfix/local[115]: 721CFF26CD1: to=<ines@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 28 15:34:24 mail postfix/qmgr[99]: 721CFF26CD1: removed

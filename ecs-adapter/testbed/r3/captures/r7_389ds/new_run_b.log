@@ -1,0 +1,29 @@
+{"local_time":"2026-10-30T21:18:28.244826912 +0000","operation":"CONNECTION","key":"1793395108-32","conn_id":32,"fd":65,"slot":65,"tls":false,"client_ip":"172.21.91.31","server_ip":"172.21.0.2"}
+{"local_time":"2026-10-30T21:18:28.247255025 +0000","operation":"BIND","key":"1793395108-32","conn_id":32,"op_id":0,"bind_dn":"uid=dario,ou=people,dc=lab,dc=example","version":3,"method":"128"}
+{"local_time":"2026-10-30T21:18:28.379012507 +0000","operation":"RESULT","key":"1793395108-32","conn_id":32,"op_id":0,"msg":"SASL bind in progress","tag":97,"err":0,"nentries":0,"wtime":"0.000070939","optime":"0.131800747","etime":"0.131867452","client_ip":"172.21.91.31","bind_dn":"uid=dario,ou=people,dc=lab,dc=example"}
+{"local_time":"2026-10-30T21:18:28.379556312 +0000","operation":"EXTENDED_OP","key":"1793395108-32","conn_id":32,"op_id":1,"oid":"1.3.6.1.4.1.4203.1.11.3","oid_name":"Unknown","name":"whoami-plugin"}
+{"local_time":"2026-10-30T21:18:28.387793940 +0000","operation":"RESULT","key":"1793395108-32","conn_id":32,"op_id":1,"msg":"","tag":120,"err":0,"nentries":0,"wtime":"0.000194254","optime":"0.008243417","etime":"0.008432887","client_ip":"172.21.91.31"}
+{"local_time":"2026-10-30T21:18:28.388302310 +0000","operation":"UNBIND","key":"1793395108-32","conn_id":32,"op_id":2}
+{"local_time":"2026-10-30T21:18:28.392346019 +0000","operation":"DISCONNECT","key":"1793395108-32","conn_id":32,"op_id":2,"fd":65,"close_reason":"Cleanly Closed Connection - U1"}
+{"local_time":"2026-10-30T21:18:29.411812712 +0000","operation":"CONNECTION","key":"1793395109-34","conn_id":34,"fd":66,"slot":66,"tls":false,"client_ip":"172.21.91.32","server_ip":"172.21.0.2"}
+{"local_time":"2026-10-30T21:18:29.414503158 +0000","operation":"BIND","key":"1793395109-34","conn_id":34,"op_id":0,"bind_dn":"uid=carla,ou=people,dc=lab,dc=example","version":3,"method":"128"}
+{"local_time":"2026-10-30T21:18:29.521357817 +0000","operation":"RESULT","key":"1793395109-34","conn_id":34,"op_id":0,"msg":" - Invalid credentials","tag":97,"err":49,"nentries":0,"wtime":"0.000212202","optime":"0.106935355","etime":"0.107142540","client_ip":"172.21.91.32"}
+{"local_time":"2026-10-30T21:18:29.521852842 +0000","operation":"UNBIND","key":"1793395109-34","conn_id":34,"op_id":1}
+{"local_time":"2026-10-30T21:18:29.527473063 +0000","operation":"DISCONNECT","key":"1793395109-34","conn_id":34,"op_id":1,"fd":66,"close_reason":"Cleanly Closed Connection - U1"}
+{"local_time":"2026-10-30T21:18:30.492910847 +0000","operation":"CONNECTION","key":"1793395110-35","conn_id":35,"fd":65,"slot":65,"tls":false,"client_ip":"172.21.91.213","server_ip":"172.21.0.2"}
+{"local_time":"2026-10-30T21:18:30.495163124 +0000","operation":"BIND","key":"1793395110-35","conn_id":35,"op_id":0,"bind_dn":"uid=svcscan,ou=people,dc=lab,dc=example","version":3,"method":"128"}
+{"local_time":"2026-10-30T21:18:30.498198107 +0000","operation":"RESULT","key":"1793395110-35","conn_id":35,"op_id":0,"msg":" - No such entry","tag":97,"err":49,"nentries":0,"wtime":"0.000181901","optime":"0.003119253","etime":"0.003299497","client_ip":"172.21.91.213"}
+{"local_time":"2026-10-30T21:18:30.498696640 +0000","operation":"UNBIND","key":"1793395110-35","conn_id":35,"op_id":1}
+{"local_time":"2026-10-30T21:18:30.502182918 +0000","operation":"DISCONNECT","key":"1793395110-35","conn_id":35,"op_id":1,"fd":65,"close_reason":"Cleanly Closed Connection - U1"}
+{"local_time":"2026-10-30T21:18:31.496339058 +0000","operation":"CONNECTION","key":"1793395111-36","conn_id":36,"fd":65,"slot":65,"tls":false,"client_ip":"172.21.91.33","server_ip":"172.21.0.2"}
+{"local_time":"2026-10-30T21:18:31.498702588 +0000","operation":"BIND","key":"1793395111-36","conn_id":36,"op_id":0,"bind_dn":"uid=backup,ou=people,dc=lab,dc=example","version":3,"method":"128"}
+{"local_time":"2026-10-30T21:18:31.599536681 +0000","operation":"RESULT","key":"1793395111-36","conn_id":36,"op_id":0,"msg":"SASL bind in progress","tag":97,"err":0,"nentries":0,"wtime":"0.000122339","optime":"0.100914552","etime":"0.101032135","client_ip":"172.21.91.33","bind_dn":"uid=backup,ou=people,dc=lab,dc=example"}
+{"local_time":"2026-10-30T21:18:31.599768789 +0000","operation":"EXTENDED_OP","key":"1793395111-36","conn_id":36,"op_id":1,"oid":"1.3.6.1.4.1.4203.1.11.3","oid_name":"Unknown","name":"whoami-plugin"}
+{"local_time":"2026-10-30T21:18:31.603670097 +0000","operation":"RESULT","key":"1793395111-36","conn_id":36,"op_id":1,"msg":"","tag":120,"err":0,"nentries":0,"wtime":"0.000131052","optime":"0.003905250","etime":"0.004033573","client_ip":"172.21.91.33"}
+{"local_time":"2026-10-30T21:18:31.603892835 +0000","operation":"UNBIND","key":"1793395111-36","conn_id":36,"op_id":2}
+{"local_time":"2026-10-30T21:18:31.607957140 +0000","operation":"DISCONNECT","key":"1793395111-36","conn_id":36,"op_id":2,"fd":65,"close_reason":"Cleanly Closed Connection - U1"}
+{"local_time":"2026-10-30T21:18:32.565606576 +0000","operation":"CONNECTION","key":"1793395112-37","conn_id":37,"fd":65,"slot":65,"tls":false,"client_ip":"172.21.91.214","server_ip":"172.21.0.2"}
+{"local_time":"2026-10-30T21:18:32.568404114 +0000","operation":"BIND","key":"1793395112-37","conn_id":37,"op_id":0,"bind_dn":"uid=trainee,ou=people,dc=lab,dc=example","version":3,"method":"128"}
+{"local_time":"2026-10-30T21:18:32.571646584 +0000","operation":"RESULT","key":"1793395112-37","conn_id":37,"op_id":0,"msg":" - No such entry","tag":97,"err":49,"nentries":0,"wtime":"0.000194227","optime":"0.003335696","etime":"0.003528870","client_ip":"172.21.91.214"}
+{"local_time":"2026-10-30T21:18:32.572024142 +0000","operation":"UNBIND","key":"1793395112-37","conn_id":37,"op_id":1}
+{"local_time":"2026-10-30T21:18:32.575506552 +0000","operation":"DISCONNECT","key":"1793395112-37","conn_id":37,"op_id":1,"fd":65,"close_reason":"Cleanly Closed Connection - U1"}

@@ -1,0 +1,127 @@
+{
+  "source_id": "r7_nextcloud_file",
+  "family": "nextcloud",
+  "split": "train_r7",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Nextcloud 30.0.17 (official image), admin_audit, log_type_audit=file, not copied from documentation or a public dataset. Captured 2026-10-30T20:07:59Z on the author's laptop by testbed/r3/r7_nextcloud.sh (audit.log / /var/log/syslog: Login attempt/successful/failed lines); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), OLD VERSION: Nextcloud 30.0.17 admin_audit to its JSON file.",
+  "fields": [
+    {
+      "source_key": "remote_addr",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "login_user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "http_method",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "url",
+      "ecs_field": "url.path",
+      "type": "keyword",
+      "role": "url_path",
+      "difficulty": "easy",
+      "note": "url.original is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user_agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "role": "user_agent",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "req_id",
+      "ecs_field": "http.request.id",
+      "type": "keyword",
+      "role": "request_id",
+      "difficulty": "medium",
+      "note": "trace.id is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "version",
+      "ecs_field": "service.version",
+      "type": "keyword",
+      "role": "server_version",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "medium",
+      "note": "Nextcloud's numeric level.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_user",
+      "difficulty": "hard",
+      "note": "'--' before login; user.name is the account the message names.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "app",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "app",
+      "difficulty": "hard",
+      "note": "Constant admin_audit.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "time",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_nextcloud_file__holdout_01",
+    "r7_nextcloud_file__holdout_02",
+    "r7_nextcloud_file__holdout_04"
+  ],
+  "round3": {
+    "pair": "r7_nextcloud",
+    "role": "old"
+  }
+}

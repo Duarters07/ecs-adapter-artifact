@@ -1,0 +1,110 @@
+{
+  "category_hint": "web",
+  "contamination_risk": "none",
+  "extraction": {
+    "field_split": " ",
+    "kind": "kv",
+    "value_split": "="
+  },
+  "family": "sg_suricata",
+  "fields": [
+    {
+      "ecs_field": "network.protocol",
+      "source_key": "app_proto",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "destination.ip",
+      "source_key": "dest_ip",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "destination.port",
+      "source_key": "dest_port",
+      "type": "long"
+    },
+    {
+      "ecs_field": "destination.bytes",
+      "source_key": "flow_bytes_toclient",
+      "type": "long"
+    },
+    {
+      "ecs_field": "source.bytes",
+      "source_key": "flow_bytes_toserver",
+      "type": "long"
+    },
+    {
+      "ecs_field": "event.end",
+      "source_key": "flow_end",
+      "type": "date"
+    },
+    {
+      "ecs_field": "destination.packets",
+      "source_key": "flow_pkts_toclient",
+      "type": "long"
+    },
+    {
+      "ecs_field": "source.packets",
+      "source_key": "flow_pkts_toserver",
+      "type": "long"
+    },
+    {
+      "ecs_field": "event.start",
+      "source_key": "flow_start",
+      "type": "date"
+    },
+    {
+      "ecs_field": "url.domain",
+      "source_key": "http_hostname",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "http.request.method",
+      "source_key": "http_http_method",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "http.response.bytes",
+      "source_key": "http_length",
+      "type": "long"
+    },
+    {
+      "ecs_field": "http.response.status_code",
+      "source_key": "http_status",
+      "type": "long"
+    },
+    {
+      "ecs_field": "url.original",
+      "source_key": "http_url",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "observer.ingress.interface.name",
+      "source_key": "in_iface",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "source.ip",
+      "source_key": "src_ip",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "source.port",
+      "source_key": "src_port",
+      "type": "long"
+    }
+  ],
+  "level": 2,
+  "note": "Level-2 evaluation source: a TRAINING family rendered in a format no training source uses (corpus/drift_formats.py). Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_suricata_drift_logfmt",
+  "split": "test_drift",
+  "timestamp": {
+    "formats": [
+      "UNIX"
+    ],
+    "source_key": "ts"
+  },
+  "transform": "drift:logfmt",
+  "value_maps": []
+}

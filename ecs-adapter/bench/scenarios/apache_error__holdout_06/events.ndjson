@@ -1,0 +1,6 @@
+{"raw": "[Thu Oct 15 14:54:27.049789 2026] [auth_basic:error] [pid 18:tid 46] [client 172.21.0.3:47194] AH01617: user hr: authentication failure for \"/payroll/\": Password Mismatch, referer: http://portal.example/hr"}
+{"raw": "[Thu Oct 15 14:54:27.251630 2026] [auth_basic:error] [pid 19:tid 57] [client 172.21.0.3:47206] AH01618: user contractor not found: /payroll/march.csv"}
+{"raw": "[Thu Oct 15 14:54:27.856674 2026] [authz_core:error] [pid 18:tid 56] [client 172.21.0.3:47230] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/internal/db.sql, referer: http://portal.example/admin"}
+{"raw": "[Thu Oct 15 14:54:26.847570 2026] [auth_basic:error] [pid 17:tid 27] [client 172.21.0.3:47190] AH01617: user finance: authentication failure for \"/payroll/march.csv\": Password Mismatch"}
+{"raw": "[Thu Oct 15 14:54:27.453511 2026] [auth_basic:error] [pid 17:tid 32] [client 172.21.0.3:47210] AH01618: user backup not found: /payroll/"}
+{"raw": "[Thu Oct 15 14:54:27.655216 2026] [authz_core:error] [pid 18:tid 52] [client 172.21.0.3:47222] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/internal/"}

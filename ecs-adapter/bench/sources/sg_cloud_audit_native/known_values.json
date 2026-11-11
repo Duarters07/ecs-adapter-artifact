@@ -1,0 +1,13 @@
+{
+  "note": "NOT ground truth. Values the sample lines carry, taken from SIEMgen's per-line truth; every line in samples.ndjson is real.",
+  "origin": "corpus/siemgen_corpus.py",
+  "probe_line": false,
+  "source_id": "sg_cloud_audit_native",
+  "values": {
+    "event.id": "042D7C7E6A32AAEA8016",
+    "http.request.method": "PROPFIND",
+    "source.ip": "10.20.1.11",
+    "user.name": "mario.hernandez",
+    "user_agent.original": "Mozilla/5.0 (Linux) mirall/3.13.2 (Nextcloud, ubuntu-6.8.0 ClientArchitecture: x86_64 OsArchitecture: x86_64)"
+  }
+}

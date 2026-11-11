@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-22T08:35:18Z","old":"caddy:2.8-alpine, log format console","new":"caddy:2.8-alpine, log format json","collected_by":"docker logs, stdout, http.log.access lines"}

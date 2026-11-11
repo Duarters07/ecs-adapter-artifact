@@ -1,0 +1,16 @@
+{
+ "bool": {
+  "filter": [
+   {
+    "term": {
+     "http.request.method": "HEAD"
+    }
+   },
+   {
+    "term": {
+     "source.ip": "172.17.130.196"
+    }
+   }
+  ]
+ }
+}

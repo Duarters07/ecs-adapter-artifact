@@ -1,0 +1,5 @@
+[1793387946] unbound[1:0] info: 172.21.86.14 mail.lab.example. A IN
+[1793387946] unbound[1:0] info: 172.21.86.14 mail.lab.example. A IN NOERROR 0.000000 1 61
+[1793387946] unbound[1:0] info: 172.21.86.202 null TYPE0 CLASS0 REFUSED 0.000000 1 12
+[1793387947] unbound[1:0] info: 172.21.86.15 vpn.lab.example. A IN
+[1793387947] unbound[1:0] info: 172.21.86.15 vpn.lab.example. A IN NXDOMAIN 0.000000 1 44

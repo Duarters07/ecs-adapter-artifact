@@ -1,0 +1,8 @@
+{"raw": "7c36d46e7ca9fedf smtp message msgid=ad1e1733 size=198 nrcpt=1 proto=ESMTP"}
+{"raw": "7c36d46d2106d617 smtp connected address=172.21.63.95 host=jovial_stonebraker.r3-net"}
+{"raw": "7c36d46d2106d617 smtp failed-command command=\"rcpt TO:<root@other.net>\" result=\"550 Invalid recipient: <root@other.net>\""}
+{"raw": "7c36d47135c6b1e9 smtp connected address=172.21.63.22 host=quirky_brattain.r3-net"}
+{"raw": "7c36d46d2106d617 smtp disconnected reason=disconnect"}
+{"raw": "7c36d46e7ca9fedf smtp connected address=172.21.63.21 host=hopeful_tharp.r3-net"}
+{"raw": "7c36d47135c6b1e9 smtp message msgid=e120562b size=201 nrcpt=1 proto=ESMTP"}
+{"raw": "7c36d46e7ca9fedf smtp disconnected reason=quit"}

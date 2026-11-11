@@ -1,0 +1,22 @@
+Invalid user pi from 172.21.0.3 port 54326
+Failed password for invalid user pi from 172.21.0.3 port 54326 ssh2
+Failed password for root from 172.21.0.3 port 54338 ssh2
+Did not receive identification string from 172.21.0.3 port 58684
+Accepted password for ana from 172.21.0.3 port 58694 ssh2
+Failed password for rui from 172.21.0.3 port 58702 ssh2
+Failed password for rui from 172.21.0.3 port 58710 ssh2
+Invalid user postgres from 172.21.0.3 port 58718
+Failed password for invalid user postgres from 172.21.0.3 port 58718 ssh2
+Failed password for ana from 172.21.0.3 port 47150 ssh2
+Failed password for backup from 172.21.0.3 port 47154 ssh2
+Invalid user hugo from 172.21.0.3 port 47170
+Failed password for invalid user hugo from 172.21.0.3 port 47170 ssh2
+Did not receive identification string from 172.21.0.3 port 37986
+Connection closed by invalid user pi 172.21.0.3 port 54326 [preauth]
+Connection closed by authenticating user backup 172.21.0.3 port 47154 [preauth]
+Connection closed by invalid user postgres 172.21.0.3 port 58718 [preauth]
+Connection closed by authenticating user rui 172.21.0.3 port 58710 [preauth]
+Connection closed by authenticating user root 172.21.0.3 port 54338 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 47150 [preauth]
+Connection closed by invalid user hugo 172.21.0.3 port 47170 [preauth]
+Connection closed by authenticating user rui 172.21.0.3 port 58702 [preauth]

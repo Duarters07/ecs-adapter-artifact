@@ -1,0 +1,55 @@
+{
+  "category_hint": "web",
+  "contamination_risk": "none",
+  "extraction": {
+    "field_split": " ",
+    "kind": "kv",
+    "value_split": "="
+  },
+  "family": "sg_nginx",
+  "fields": [
+    {
+      "ecs_field": "http.response.body.bytes",
+      "source_key": "bytes",
+      "type": "long"
+    },
+    {
+      "ecs_field": "http.request.method",
+      "source_key": "method",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "http.request.referrer",
+      "source_key": "referrer",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "source.ip",
+      "source_key": "src_ip",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "http.response.status_code",
+      "source_key": "status",
+      "type": "long"
+    },
+    {
+      "ecs_field": "url.domain",
+      "source_key": "vhost",
+      "type": "keyword"
+    }
+  ],
+  "level": 2,
+  "note": "Level-2 evaluation source: a TRAINING family rendered in a format no training source uses (corpus/drift_formats.py). Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_nginx_drift_logfmt",
+  "split": "test_drift",
+  "timestamp": {
+    "formats": [
+      "UNIX"
+    ],
+    "source_key": "ts"
+  },
+  "transform": "drift:logfmt",
+  "value_maps": []
+}

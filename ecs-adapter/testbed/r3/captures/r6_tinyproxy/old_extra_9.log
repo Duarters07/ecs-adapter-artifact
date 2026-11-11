@@ -1,0 +1,12 @@
+CONNECT   Oct 27 16:51:20 [11]: Connect (file descriptor 10): suspicious_jackson.r3-net [172.21.66.143]
+NOTICE    Oct 27 16:51:20 [11]: Unauthorized connection from "suspicious_jackson.r3-net" [172.21.66.143].
+CONNECT   Oct 27 16:51:20 [16]: Connect (file descriptor 10): kind_perlman.r3-net [172.21.66.159]
+NOTICE    Oct 27 16:51:20 [16]: Unauthorized connection from "kind_perlman.r3-net" [172.21.66.159].
+CONNECT   Oct 27 16:51:21 [16]: Connect (file descriptor 10): modest_hopper.r3-net [172.21.66.100]
+CONNECT   Oct 27 16:51:21 [16]: Request (file descriptor 10): GET http://r6-web-target/login.php HTTP/1.1
+CONNECT   Oct 27 16:51:22 [9]: Connect (file descriptor 10): magical_leakey.r3-net [172.21.66.133]
+NOTICE    Oct 27 16:51:22 [9]: Unauthorized connection from "magical_leakey.r3-net" [172.21.66.133].
+CONNECT   Oct 27 16:51:23 [7]: Connect (file descriptor 10): bold_thompson.r3-net [172.21.66.234]
+NOTICE    Oct 27 16:51:23 [7]: Unauthorized connection from "bold_thompson.r3-net" [172.21.66.234].
+CONNECT   Oct 27 16:51:24 [12]: Connect (file descriptor 10): sharp_heyrovsky.r3-net [172.21.66.248]
+NOTICE    Oct 27 16:51:24 [12]: Unauthorized connection from "sharp_heyrovsky.r3-net" [172.21.66.248].

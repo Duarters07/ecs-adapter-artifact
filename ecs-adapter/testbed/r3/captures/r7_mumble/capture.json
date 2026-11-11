@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T21:21:00Z","old":"Mumble server 1.3.4 (Debian bookworm)","new":"Mumble server 1.5.735 (Debian trixie)","collected_by":"docker logs (stderr, foreground): per-session lines"}

@@ -1,0 +1,93 @@
+{
+  "source_id": "r5_openvpn_25",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^%{TIMESTAMP_ISO8601:timestamp} (?:%{DATA:peer_name}/)?%{IP:client_ip}:%{INT:client_port} TLS: Initial packet from \\[AF_INET\\]%{IP}:%{INT}, sid=%{GREEDYDATA:sid}$",
+    "alternatives": [
+      "^%{TIMESTAMP_ISO8601:timestamp} (?:%{DATA:peer_name}/)?%{IP:client_ip}:%{INT:client_port} VERIFY OK: depth=%{INT:depth}, CN=%{GREEDYDATA:cert_cn}$",
+      "^%{TIMESTAMP_ISO8601:timestamp} (?:%{DATA:peer_name}/)?%{IP:client_ip}:%{INT:client_port} VERIFY ERROR: depth=%{INT:depth}, error=(?<error>[^:]+): CN=(?<cert_cn>[^,]+), serial=%{INT:serial}$",
+      "^%{TIMESTAMP_ISO8601:timestamp} (?:%{DATA:peer_name}/)?%{IP:client_ip}:%{INT:client_port} TLS Auth Error: %{GREEDYDATA:error}$",
+      "^%{TIMESTAMP_ISO8601:timestamp} (?:%{DATA:peer_name}/)?%{IP:client_ip}:%{INT:client_port} \\[%{DATA:common_name}\\] Peer Connection Initiated with \\[AF_INET\\]%{IP}:%{INT}$",
+      "^%{TIMESTAMP_ISO8601:timestamp} (?:%{DATA:peer_name}/)?%{IP:client_ip}:%{INT:client_port} SENT CONTROL \\[%{DATA:common_name}\\]: '%{DATA:control}' \\(status=%{INT:status}\\)$",
+      "^%{TIMESTAMP_ISO8601:timestamp} (?:%{DATA:peer_name}/)?%{IP:client_ip}:%{INT:client_port} TLS Error: %{GREEDYDATA:error}$",
+      "^%{TIMESTAMP_ISO8601:timestamp} %{DATA:common_name}/%{IP:client_ip}:%{INT:client_port} MULTI_sva: pool returned IPv4=%{IP:vpn_ip}, IPv6=%{GREEDYDATA:vpn_ipv6}$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "common_name",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "error",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "cert_cn",
+      "reason": "tls.* not offered"
+    },
+    {
+      "source_key": "serial",
+      "reason": "tls.* not offered"
+    },
+    {
+      "source_key": "vpn_ip",
+      "reason": "tunnel address"
+    },
+    {
+      "source_key": "control",
+      "reason": "control message"
+    },
+    {
+      "source_key": "depth",
+      "reason": "chain depth"
+    },
+    {
+      "source_key": "status",
+      "reason": "control status"
+    },
+    {
+      "source_key": "sid",
+      "reason": "TLS session id"
+    },
+    {
+      "source_key": "vpn_ipv6",
+      "reason": "tunnel address"
+    },
+    {
+      "source_key": "peer_name",
+      "reason": "same value as common_name"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.dataset": "openvpn.server"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.name": "sshd"
+        }
+      },
+      {
+        "term": {
+          "process.pid": 84
+        }
+      }
+    ]
+  }
+}

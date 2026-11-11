@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T21:21:49Z","old":"stunnel 5.68 (Debian bookworm, OpenSSL 3.0)","new":"stunnel 5.74 (Debian trixie, OpenSSL 3.5)","collected_by":"docker logs (stderr, debug 5): connection lines"}

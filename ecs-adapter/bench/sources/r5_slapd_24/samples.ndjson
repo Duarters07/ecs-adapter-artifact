@@ -1,0 +1,22 @@
+{"raw": "6ade17f2 conn=1000 fd=11 ACCEPT from IP=172.21.51.11:44482 (IP=0.0.0.0:389)"}
+{"raw": "6ade17f3 conn=1002 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text="}
+{"raw": "6ade17f2 conn=1001 op=0 BIND dn=\"uid=ana,ou=people,dc=lab,dc=example\" method=128"}
+{"raw": "6ade17f4 conn=1003 fd=11 ACCEPT from IP=172.21.51.99:60906 (IP=0.0.0.0:389)"}
+{"raw": "6ade17f5 conn=1004 fd=11 ACCEPT from IP=172.21.51.98:55246 (IP=0.0.0.0:389)"}
+{"raw": "6ade17f6 conn=1005 op=0 RESULT tag=97 err=49 text="}
+{"raw": "6ade17f9 conn=1006 fd=11 ACCEPT from IP=172.21.51.13:45160 (IP=0.0.0.0:389)"}
+{"raw": "6ade17fb conn=1008 fd=11 ACCEPT from IP=172.21.51.97:49306 (IP=0.0.0.0:389)"}
+{"raw": "6ade17fc conn=1009 fd=11 ACCEPT from IP=172.21.51.14:52944 (IP=0.0.0.0:389)"}
+{"raw": "6ade17fd conn=1010 fd=11 ACCEPT from IP=172.21.51.96:46884 (IP=0.0.0.0:389)"}
+{"raw": "6ade17f3 conn=1002 fd=11 ACCEPT from IP=172.21.51.12:46122 (IP=0.0.0.0:389)"}
+{"raw": "6ade17f3 conn=1002 op=0 BIND dn=\"uid=rui,ou=people,dc=lab,dc=example\" mech=SIMPLE ssf=0"}
+{"raw": "6ade17f3 conn=1002 op=1 SRCH base=\"ou=people,dc=lab,dc=example\" scope=2 deref=0 filter=\"(uid=*)\""}
+{"raw": "6ade17f4 conn=1003 op=1 SRCH base=\"dc=lab,dc=example\" scope=2 deref=0 filter=\"(objectClass=person)\""}
+{"raw": "6ade17fa conn=1007 fd=11 ACCEPT from IP=172.21.51.13:45176 (IP=0.0.0.0:389)"}
+{"raw": "6ade17f2 conn=1001 fd=11 ACCEPT from IP=172.21.51.11:44490 (IP=0.0.0.0:389)"}
+{"raw": "6ade17f5 conn=1004 op=0 BIND dn=\"uid=admin,ou=people,dc=lab,dc=example\" method=128"}
+{"raw": "6ade17f6 conn=1005 fd=11 ACCEPT from IP=172.21.51.98:55258 (IP=0.0.0.0:389)"}
+{"raw": "6ade17f6 conn=1005 op=0 BIND dn=\"cn=admin,dc=lab,dc=example\" method=128"}
+{"raw": "6ade17fb conn=1008 op=1 SRCH base=\"dc=lab,dc=example\" scope=2 deref=0 filter=\"(objectClass=organizationalUnit)\""}
+{"raw": "6ade17fb conn=1008 op=1 SEARCH RESULT tag=101 err=0 nentries=1 text="}
+{"raw": "6ade17fd conn=1010 op=0 BIND dn=\"cn=Manager,dc=lab,dc=example\" method=128"}

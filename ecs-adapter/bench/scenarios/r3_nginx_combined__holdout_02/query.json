@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "http.request.referrer": "https://www.bing.com/"
+        }
+      },
+      {
+        "term": {
+          "http.response.body.bytes": 2
+        }
+      }
+    ]
+  }
+}

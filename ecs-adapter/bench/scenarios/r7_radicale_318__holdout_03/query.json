@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.thread.name": "Thread-10 (process_request_thread)"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "scanner"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "scanner"
+              }
+            },
+            {
+              "term": {
+                "user.name": "scanner"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+2026-10-30T21:15:18+0000 info: [corp.example.] AXFR, outgoing, remote 172.21.84.11@51864, started, serial 2026103001
+2026-10-30T21:15:18+0000 info: [corp.example.] AXFR, outgoing, remote 172.21.84.11@51864, finished, 0.00 seconds, 1 messages, 222 bytes
+2026-10-30T21:15:20+0000 info: [corp.example.] IXFR, outgoing, remote 172.21.84.10@49318, incomplete history, serial 2026103000, fallback to AXFR
+2026-10-30T21:15:20+0000 info: [corp.example.] AXFR, outgoing, remote 172.21.84.10@49318, started, serial 2026103001
+2026-10-30T21:15:20+0000 info: [corp.example.] AXFR, outgoing, remote 172.21.84.10@49318, finished, 0.00 seconds, 1 messages, 222 bytes

@@ -1,0 +1,6 @@
+2026/10/27 16:26:53 [6ae0d0cd] router: completed GET /api/v1/user for 172.21.70.11:53222, 200 OK in 30.5ms @ user/user.go:109(user.GetAuthenticatedUser)
+2026/10/27 16:26:54 [6ae0d0ce] router: completed GET /api/v1/user for 172.21.70.11:53224, 401 Unauthorized in 28.9ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 16:26:54 [6ae0d0ce-2] router: completed GET /api/v1/user/repos for 172.21.70.12:54668, 200 OK in 30.1ms @ user/repo.go:86(user.ListMyRepos)
+2026/10/27 16:26:55 [6ae0d0cf] router: completed GET /api/v1/admin/users for 172.21.70.99:41128, 401 Unauthorized in 0.5ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 16:26:56 [6ae0d0d0] router: completed GET /api/v1/user for 172.21.70.98:58452, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 16:26:57 [6ae0d0d1] router: completed GET /api/v1/repos/search for 172.21.70.13:51528, 200 OK in 32.9ms @ repo/repo.go:36(repo.Search)

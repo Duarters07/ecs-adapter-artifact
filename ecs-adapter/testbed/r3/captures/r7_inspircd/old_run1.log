@@ -1,0 +1,8 @@
+Fri Oct 30 2026 19:12:13 CONNECT: Client connecting on port 6667 (class unnamed-0): ana!ana@172.21.83.11 (172.21.83.11) [ana]
+Fri Oct 30 2026 19:12:13 QUIT: Client exiting: ana!ana@172.21.83.11 (172.21.83.11) [bye]
+Fri Oct 30 2026 19:12:18 CONNECT: Client connecting on port 6667 (class unnamed-0): mon!mon@172.21.83.13 (172.21.83.13) [mon]
+Fri Oct 30 2026 19:12:18 OPER: mon (mon@172.21.83.13) is now a server operator of type NetAdmin (using oper 'admin')
+Fri Oct 30 2026 19:12:19 QUIT: Client exiting: mon!mon@172.21.83.13 (172.21.83.13) [bye]
+Fri Oct 30 2026 19:12:21 CONNECT: Client connecting on port 6667 (class unnamed-0): eve!eve@172.21.83.201 (172.21.83.201) [eve]
+Fri Oct 30 2026 19:12:21 OPER: WARNING! Failed oper attempt by eve!eve@172.21.83.201 using login 'admin': The following fields do not match: password
+Fri Oct 30 2026 19:12:22 QUIT: Client exiting: eve!eve@172.21.83.201 (172.21.83.201) [Connection closed]

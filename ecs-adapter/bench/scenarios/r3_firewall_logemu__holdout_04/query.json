@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "rule.name": "R3-DROP-MYSQL"
+        }
+      }
+    ]
+  }
+}

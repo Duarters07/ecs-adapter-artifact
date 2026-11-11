@@ -1,0 +1,19 @@
+{"raw": "Oct 19 23:40:19 web01 sshd[19]: Accepted password for ana from 172.21.0.3 port 56342 ssh2"}
+{"raw": "Oct 19 23:40:32 web01 sudo:      rui : 1 incorrect password attempt ; PWD=/home/rui ; USER=root ; COMMAND=/usr/bin/whoami"}
+{"raw": "Oct 19 23:40:25 web01 sshd[29]: Failed password for invalid user carlos from 172.21.0.3 port 56354 ssh2"}
+{"raw": "Oct 19 23:40:33 web01 sudo:    sofia : user NOT in sudoers ; PWD=/home/sofia ; USER=root ; COMMAND=/usr/bin/apt-get update"}
+{"raw": "Oct 19 23:40:27 web01 sshd[31]: Failed password for root from 172.21.0.3 port 56362 ssh2"}
+{"raw": "Oct 19 23:40:38 web01 sshd[92]: Failed password for tiago from 172.21.0.3 port 46564 ssh2"}
+{"raw": "Oct 19 23:40:41 web01 sshd[94]: Invalid user guest from 172.21.0.3 port 59234"}
+{"raw": "Oct 19 23:40:45 web01 sshd[97]: Invalid user admin from 172.21.0.3 port 59246"}
+{"raw": "Oct 19 23:40:53 web01 sudo:     ines : PWD=/home/ines ; USER=root ; COMMAND=/usr/bin/uptime"}
+{"raw": "Oct 19 23:40:21 web01 sshd[27]: Failed password for ana from 172.21.0.3 port 56350 ssh2"}
+{"raw": "Oct 19 23:40:29 web01 sshd[33]: error: kex_exchange_identification: Connection closed by remote host"}
+{"raw": "Oct 19 23:40:29 web01 sshd[34]: Accepted password for rui from 172.21.0.3 port 46540 ssh2"}
+{"raw": "Oct 19 23:40:30 web01 sudo:      ana : PWD=/home/ana ; USER=root ; COMMAND=/usr/bin/id"}
+{"raw": "Oct 19 23:40:36 web01 sshd[84]: Accepted password for sofia from 172.21.0.3 port 46552 ssh2"}
+{"raw": "Oct 19 23:40:45 web01 sshd[96]: Connection closed by 172.21.0.3 port 59244"}
+{"raw": "Oct 19 23:40:50 web01 sudo:    tiago : user NOT in sudoers ; PWD=/home/tiago ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow"}
+{"raw": "Oct 19 23:40:29 web01 sshd[33]: Connection closed by 172.21.0.3 port 46528"}
+{"raw": "Oct 19 23:40:33 web01 sudo:      ana : PWD=/home/ana ; USER=root ; COMMAND=/bin/ls /root"}
+{"raw": "Oct 19 23:40:50 web01 sudo:      rui : PWD=/home/rui ; USER=root ; COMMAND=/usr/bin/systemctl status ssh"}

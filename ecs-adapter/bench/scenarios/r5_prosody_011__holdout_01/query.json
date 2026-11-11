@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "connection closed"
+        }
+      },
+      {
+        "term": {
+          "log.level": "info"
+        }
+      }
+    ]
+  }
+}

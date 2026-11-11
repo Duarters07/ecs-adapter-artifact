@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.working_directory": "/var/log"
+        }
+      }
+    ]
+  }
+}

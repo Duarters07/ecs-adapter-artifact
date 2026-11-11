@@ -1,0 +1,8 @@
+{
+ "dataset": "AIT-LDS v2.1",
+ "scenario": "russellmitchell",
+ "file": "gather/vpn/logs/openvpn.log",
+ "lines_in_file": 5537,
+ "sampler": "adapter.sampler.deduplicate(per_signature=3,total_cap=20)",
+ "file_sha256": "08042e1ad03874326960ef3eef91a50305009cb2e7afe88827750dd839701bb1"
+}

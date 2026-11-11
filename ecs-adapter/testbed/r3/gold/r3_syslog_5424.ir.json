@@ -1,0 +1,114 @@
+{
+  "source_id": "r3_syslog_5424",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^<%{NONNEGINT:pri}>1 %{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} %{NOTSPACE:program} (?:%{POSINT:pid}|-) - - +%{WORD:outcome} %{WORD:method} for (?:invalid user )?%{NOTSPACE:user} from %{IP:src_ip} port %{INT:src_port} ssh2$",
+    "alternatives": [
+      "^<%{NONNEGINT:pri}>1 %{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} %{NOTSPACE:program} (?:%{POSINT:pid}|-) - - +Invalid user %{NOTSPACE:user} from %{IP:src_ip} port %{INT:src_port}$",
+      "^<%{NONNEGINT:pri}>1 %{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} %{NOTSPACE:program} (?:%{POSINT:pid}|-) - - +Connection closed by (?:authenticating|invalid) user %{NOTSPACE:user} %{IP:src_ip} port %{INT:src_port} \\[preauth\\]$",
+      "^<%{NONNEGINT:pri}>1 %{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} %{NOTSPACE:program} (?:%{POSINT:pid}|-) - - +Connection closed by %{IP:src_ip} port %{INT:src_port}$",
+      "^<%{NONNEGINT:pri}>1 %{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} %{NOTSPACE:program} (?:%{POSINT:pid}|-) - - +error: kex_exchange_identification: %{GREEDYDATA:reason}$",
+      "^<%{NONNEGINT:pri}>1 %{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} %{NOTSPACE:program} (?:%{POSINT:pid}|-) - - +%{NOTSPACE:user} : (?:%{DATA:sudo_result} ; )?PWD=%{NOTSPACE:cwd} ; USER=%{NOTSPACE:target_user} ; COMMAND=%{GREEDYDATA:command}$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "host",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "program",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "src_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "src_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "sudo_result",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "cwd",
+      "ecs_field": "process.working_directory",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "target_user",
+      "ecs_field": "user.target.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "command",
+      "ecs_field": "process.command_line",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "pri",
+      "ecs_field": "log.syslog.priority",
+      "type": "long",
+      "confidence": 1.0
+    }
+  ],
+  "value_maps": [
+    {
+      "from_source_key": "outcome",
+      "ecs_field": "event.outcome",
+      "map": {
+        "Failed": "failure",
+        "Accepted": "success"
+      }
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "the time of the event; @timestamp is set at ingest"
+    },
+    {
+      "source_key": "method",
+      "reason": "the authentication method; no ECS field this source maps"
+    },
+    {
+      "source_key": "reason",
+      "reason": "why the key exchange failed; event.reason holds sudo_result"
+    }
+  ],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.dataset": "system.auth"
+  }
+}

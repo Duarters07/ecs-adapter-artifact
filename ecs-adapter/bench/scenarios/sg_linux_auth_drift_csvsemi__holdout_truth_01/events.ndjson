@@ -1,0 +1,14 @@
+{"raw": "2026-10-14T08:37:50+00:00;10.10.1.12;44612;210;59562;1091;2782;;debra.jones;;ssh_close;erp.acme.local;;;;;success"}
+{"raw": "2026-10-14T08:07:24+00:00;10.30.5.13;51572;223;47808;1411;3226;ECDSA;michele.roberts;SHA256:mHW5K62RoJLQNfcRAp/C0yShH47LFT6Znhia33nBei3;ssh_accept;ws-ops-003.acme.local;;;;password;success"}
+{"raw": "2026-10-14T08:45:26+00:00;10.30.5.13;51572;223;47808;1411;3226;;michele.roberts;;ssh_close;ws-ops-003.acme.local;;;;;success"}
+{"raw": "2026-10-14T08:08:10+00:00;10.20.1.11;32820;510;50344;881;1562;ED25519;mario.hernandez;SHA256:WLim5DCjJwPWiQULPWikAK99NEec7c6jymIZNf6YTtb;ssh_accept;file.acme.local;;;;publickey;success"}
+{"raw": "2026-10-14T08:12:10+00:00;10.30.5.13;23514;357;47225;1357;3226;ECDSA;michele.roberts;SHA256:2d6OQm79+o36JkKV+0gHtNRu/d4j1/PMhDnz1inu9Z4;ssh_accept;ws-ops-003.acme.local;;;;publickey;success"}
+{"raw": "2026-10-14T08:47:54+00:00;10.30.5.13;23514;357;47225;1357;3226;;michele.roberts;;ssh_close;ws-ops-003.acme.local;;;;;success"}
+{"raw": "2026-10-14T08:13:03+00:00;10.10.1.12;58679;234;47157;856;2782;RSA;debra.jones;SHA256:IfEUs0hoKj9c1HNSssiiPEuXt0UrCM0ea6gK8HTJ+WF;ssh_accept;web.acme.local;;;;publickey;success"}
+{"raw": "2026-10-14T08:36:47+00:00;10.10.1.12;58679;234;47157;856;2782;;debra.jones;;ssh_close;web.acme.local;;;;;success"}
+{"raw": "2026-10-14T08:03:24+00:00;;50105;;;;0;;root;;cron;file.acme.local;;;;;"}
+{"raw": "2026-10-14T08:03:44+00:00;;58296;;;;0;;root;;cron;ws-ops-004.acme.local;;;;;"}
+{"raw": "2026-10-14T08:03:54+00:00;;41040;;;;4664;;drew.wilson;;su_open;ws-ops-004.acme.local;pts/3;;;;"}
+{"raw": "2026-10-14T08:11:24+00:00;;41040;;;;4664;;drew.wilson;;su_close;ws-ops-004.acme.local;pts/3;;;;"}
+{"raw": "2026-10-14T08:05:20+00:00;;27255;;;;33;;www-data;;cron;file.acme.local;;;;;"}
+{"raw": "2026-10-14T08:06:18+00:00;;44276;;;;0;;root;;cron;ws-ops-002.acme.local;;;;;"}

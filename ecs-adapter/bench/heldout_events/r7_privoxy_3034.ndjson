@@ -1,0 +1,5 @@
+{"raw": "2026-10-30 19:08:19.381 7c53cee5d6c0 Request: r7-web-target/intranet/login"}
+{"raw": "2026-10-30 19:08:20.177 7c53cee5d6c0 Crunch: Blocked: http://r7-web-target/admin/users"}
+{"raw": "2026-10-30 19:08:20.947 7c53cee5d6c0 Request: dead.lab/x"}
+{"raw": "2026-10-30 19:08:20.949 7c53cee5d6c0 Crunch: DNS failure: http://dead.lab/x"}
+{"raw": "2026-10-30 19:08:20.177 7c53cee5d6c0 Request: r7-web-target/admin/users"}

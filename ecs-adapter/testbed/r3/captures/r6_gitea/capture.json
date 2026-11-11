@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-27T16:27:56Z","old":"Gitea 1.19.4 (official image)","new":"Gitea 1.22.6 (official image)","collected_by":"docker logs, default console logger: router lines for /api/v1 and UserSignIn errors"}

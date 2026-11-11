@@ -1,0 +1,116 @@
+{
+  "source_id": "dovecot_auth",
+  "family": "dovecot",
+  "split": "test",
+  "category_hint": "email",
+  "contamination_risk": "medium",
+  "origin": "Produced by running Dovecot 2.3.21 (image dovecot/dovecot:2.3.21), not copied from documentation or a public dataset. Captured on 2026-10-15 on the author's laptop by testbed/heldout_r2/dovecot_auth.sh, two runs driven with different words (run A -> samples, run B -> scenario events).",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "FREE TEXT WITH KEY=VALUE INSIDE, AND THE REPORTER IS ONE OF THE ENDPOINTS. `rip` is the client and `lip` is the server's own address: the destination of the connection AND the device writing the line. destination.ip is drafted because rules about a flow read the destination; observer.ip is defensible and the author must decide. Two line shapes - the login processes and the auth process - carry the client address under different syntax. The capture names are fixed in documentation.md, as for every free-text source.",
+  "fields": [
+    {
+      "source_key": "process",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "role": "logging_process",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "event",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_description",
+      "difficulty": "hard",
+      "note": "`Login` or a disconnection with its cause. event.action takes the source's own vocabulary; an outcome would need a value map over a free-text phrase.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "authentication_mechanism",
+      "difficulty": "ambiguous",
+      "note": "ECS 8.11 has no field for the SASL mechanism.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "rip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "medium",
+      "note": "The REMOTE address, i.e. where the connection came from.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "lip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "role": "server_local_ip",
+      "difficulty": "hard",
+      "note": "This server's own address. destination.ip (flow) and observer.ip (reporter) are both defensible - DRAFT, author to decide; source.ip is wrong.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "mpid",
+      "ecs_field": null,
+      "type": "long",
+      "role": "mail_process_pid",
+      "difficulty": "ambiguous",
+      "note": "The pid of a DIFFERENT process from the one that wrote the line, so process.pid would describe the wrong process.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "session",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_identifier",
+      "difficulty": "ambiguous",
+      "note": "Correlates the lines of one session; ECS 8.11 has no session identifier.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "backend",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "password_database",
+      "difficulty": "ambiguous",
+      "note": "The authentication backend; no ECS field describes it.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "failure_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "dovecot_auth__holdout_01",
+    "dovecot_auth__holdout_03",
+    "dovecot_auth__holdout_04"
+  ]
+}

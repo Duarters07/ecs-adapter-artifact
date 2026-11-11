@@ -1,0 +1,11 @@
+{"raw": "172.21.0.4 - - [25/Oct/2026:14:29:11 +0000] \"GET http://r5-varnish-old/ HTTP/1.1\" 200 615 \"-\" \"Mozilla/5.0 Firefox/115.0\""}
+{"raw": "172.21.0.4 - - [25/Oct/2026:14:29:12 +0000] \"POST http://r5-varnish-old/login HTTP/1.1\" 404 153 \"-\" \"python-requests/2.25\""}
+{"raw": "172.21.0.4 - - [25/Oct/2026:14:29:11 +0000] \"GET http://r5-varnish-old/admin/ HTTP/1.1\" 403 249 \"-\" \"curl/7.74.0\""}
+{"raw": "172.21.0.4 - - [25/Oct/2026:14:29:12 +0000] \"GET http://r5-varnish-old/admin/users HTTP/1.1\" 403 245 \"-\" \"Nikto/2.1.6\""}
+{"raw": "172.21.0.4 - - [25/Oct/2026:14:29:11 +0000] \"GET http://r5-varnish-old/missing.html HTTP/1.1\" 404 153 \"-\" \"Wget/1.21\""}
+{"raw": "172.21.0.4 - - [25/Oct/2026:14:29:12 +0000] \"GET http://r5-varnish-old/index.html HTTP/1.1\" 200 615 \"-\" \"Mozilla/5.0 Chrome/96.0\""}
+{"raw": "172.21.0.4 - - [25/Oct/2026:14:29:15 +0000] \"GET http://r5-varnish-old/admin/config HTTP/1.1\" 403 249 \"-\" \"curl/7.79.1\""}
+{"raw": "172.21.0.4 - - [25/Oct/2026:14:29:15 +0000] \"GET http://r5-varnish-old/nope.php HTTP/1.1\" 404 153 \"-\" \"zgrab/0.x\""}
+{"raw": "172.21.0.4 - - [25/Oct/2026:14:29:15 +0000] \"GET http://r5-varnish-old/ HTTP/1.1\" 200 615 \"-\" \"Mozilla/5.0 Safari/15.1\""}
+{"raw": "172.21.0.4 - - [25/Oct/2026:14:29:16 +0000] \"POST http://r5-varnish-old/login HTTP/1.1\" 404 153 \"-\" \"Go-http-client/1.1\""}
+{"raw": "172.21.0.4 - - [25/Oct/2026:14:29:16 +0000] \"GET http://r5-varnish-old/index.html HTTP/1.1\" 200 615 \"-\" \"Mozilla/5.0 Edge/96.0\""}

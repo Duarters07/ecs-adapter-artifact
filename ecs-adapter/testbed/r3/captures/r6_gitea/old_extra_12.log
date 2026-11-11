@@ -1,0 +1,6 @@
+2026/10/27 17:03:35 [6ae0d967] router: completed GET /api/v1/user/status for 172.21.70.179:34468, 404 Not Found in 29.5ms @ context/auth.go:112(context.ToggleAPI)
+2026/10/27 17:03:35 [6ae0d967-2] router: completed GET /api/v1/status for 172.21.70.235:36274, 401 Unauthorized in 28.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:36 [6ae0d968] router: completed GET /api/v1/repos/ana/users.csv for 172.21.70.250:38302, 404 Not Found in 28.8ms @ v1/api.go:135(v1.repoAssignment)
+2026/10/27 17:03:37 [6ae0d969] router: completed GET /api/v1/user for 172.21.70.246:39464, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:38 [6ae0d96a] router: completed GET /api/v1/admin/users for 172.21.70.114:56808, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:39 [6ae0d96b] router: completed GET /api/v1/repos/search for 172.21.70.217:55200, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)

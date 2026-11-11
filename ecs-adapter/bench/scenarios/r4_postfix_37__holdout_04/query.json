@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.name": "local"
+        }
+      },
+      {
+        "term": {
+          "process.pid": 110
+        }
+      }
+    ]
+  }
+}

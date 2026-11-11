@@ -1,0 +1,15 @@
+7c36d45a714ace78 smtp connected address=172.21.63.11 host=bold_napier.r3-net
+7c36d45a714ace78 smtp message msgid=6cd696b8 size=193 nrcpt=1 proto=ESMTP
+7c36d45a714ace78 smtp disconnected reason=quit
+7c36d45dc6f654fe smtp connected address=172.21.63.99 host=xenodochial_easley.r3-net
+7c36d45dc6f654fe smtp failed-command command="rcpt TO:<victim@other.org>" result="550 Invalid recipient: <victim@other.org>"
+7c36d45dc6f654fe smtp disconnected reason=disconnect
+7c36d45e91e771ff smtp connected address=172.21.63.12 host=affectionate_leavitt.r3-net
+7c36d45e91e771ff smtp message msgid=a6f0333a size=205 nrcpt=1 proto=ESMTP
+7c36d45e91e771ff smtp disconnected reason=quit
+7c36d4619b52495b smtp connected address=172.21.63.98 host=youthful_tharp.r3-net
+7c36d4619b52495b smtp failed-command command="rcpt TO:<ceo@corp.example>" result="550 Invalid recipient: <ceo@corp.example>"
+7c36d4619b52495b smtp disconnected reason=disconnect
+7c36d4624967b7a2 smtp connected address=172.21.63.13 host=awesome_mcclintock.r3-net
+7c36d4624967b7a2 smtp message msgid=d90fdcb5 size=200 nrcpt=1 proto=ESMTP
+7c36d4624967b7a2 smtp disconnected reason=quit

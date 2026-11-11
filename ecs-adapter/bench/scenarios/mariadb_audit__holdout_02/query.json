@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.action": "QUERY"
+        }
+      },
+      {
+        "term": {
+          "host.hostname": "b2558312fb0c"
+        }
+      }
+    ]
+  }
+}

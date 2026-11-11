@@ -1,0 +1,379 @@
+[
+ {
+  "source": "t3_ait_apache_access",
+  "lines": 412922,
+  "labelled": 410841,
+  "labelled_of_shown_types": 410841,
+  "scenarios": [
+   {
+    "id": "t3_ait_apache_access__t3_01",
+    "labels": [
+     "attacker_http",
+     "dirb",
+     "foothold"
+    ],
+    "message_type": 0,
+    "targets": [
+     "user_agent.original",
+     "source.ip"
+    ],
+    "expected_hits": 60
+   },
+   {
+    "id": "t3_ait_apache_access__t3_02",
+    "labels": [
+     "attacker_http",
+     "foothold",
+     "wpscan"
+    ],
+    "message_type": 0,
+    "targets": [
+     "http.request.method",
+     "source.ip"
+    ],
+    "expected_hits": 60
+   },
+   {
+    "id": "t3_ait_apache_access__t3_03",
+    "labels": [
+     "attacker_http",
+     "foothold",
+     "webshell_cmd"
+    ],
+    "message_type": 0,
+    "targets": [
+     "user_agent.original",
+     "source.ip"
+    ],
+    "expected_hits": 13
+   },
+   {
+    "id": "t3_ait_apache_access__t3_04",
+    "labels": [
+     "foothold",
+     "service_scan"
+    ],
+    "message_type": 0,
+    "targets": [
+     "user_agent.original",
+     "source.ip"
+    ],
+    "expected_hits": 6
+   },
+   {
+    "id": "t3_ait_apache_access__t3_05",
+    "labels": [
+     "attacker_http",
+     "foothold",
+     "service_scan"
+    ],
+    "message_type": 0,
+    "targets": [
+     "http.response.status_code",
+     "source.ip"
+    ],
+    "expected_hits": 6
+   },
+   {
+    "id": "t3_ait_apache_access__t3_06",
+    "labels": [
+     "escalate",
+     "webshell_cmd"
+    ],
+    "message_type": 0,
+    "targets": [
+     "user_agent.original",
+     "source.ip"
+    ],
+    "expected_hits": 4
+   },
+   {
+    "id": "t3_ait_apache_access__t3_07",
+    "labels": [
+     "attacker_http",
+     "foothold",
+     "webshell_upload"
+    ],
+    "message_type": 0,
+    "targets": [
+     "user_agent.original",
+     "source.ip"
+    ],
+    "expected_hits": 3
+   }
+  ],
+  "skipped": []
+ },
+ {
+  "source": "t3_ait_apache_error",
+  "lines": 1338,
+  "labelled": 1336,
+  "labelled_of_shown_types": 1336,
+  "scenarios": [
+   {
+    "id": "t3_ait_apache_error__t3_01",
+    "labels": [
+     "attacker_http",
+     "dirb",
+     "foothold"
+    ],
+    "message_type": 0,
+    "targets": [
+     "log.level",
+     "source.ip"
+    ],
+    "expected_hits": 60
+   },
+   {
+    "id": "t3_ait_apache_error__t3_02",
+    "labels": [
+     "attacker_http",
+     "foothold",
+     "wpscan"
+    ],
+    "message_type": 0,
+    "targets": [
+     "log.level",
+     "source.ip"
+    ],
+    "expected_hits": 30
+   }
+  ],
+  "skipped": []
+ },
+ {
+  "source": "t3_ait_auth",
+  "lines": 572,
+  "labelled": 12,
+  "labelled_of_shown_types": 4,
+  "scenarios": [
+   {
+    "id": "t3_ait_auth__t3_01",
+    "labels": [
+     "escalate",
+     "escalated_command",
+     "escalated_sudo_command",
+     "escalated_sudo_session"
+    ],
+    "message_type": 0,
+    "targets": [
+     "process.name"
+    ],
+    "expected_hits": 4
+   }
+  ],
+  "skipped": []
+ },
+ {
+  "source": "t3_ait_audit",
+  "lines": 2887,
+  "labelled": 19,
+  "labelled_of_shown_types": 15,
+  "scenarios": [
+   {
+    "id": "t3_ait_audit__t3_01",
+    "labels": [
+     "escalate",
+     "escalated_command",
+     "escalated_sudo_command"
+    ],
+    "message_type": 0,
+    "targets": [
+     "process.executable"
+    ],
+    "expected_hits": 8
+   },
+   {
+    "id": "t3_ait_audit__t3_02",
+    "labels": [
+     "attacker_change_user",
+     "escalate"
+    ],
+    "message_type": 0,
+    "targets": [
+     "user.name"
+    ],
+    "expected_hits": 7
+   }
+  ],
+  "skipped": []
+ },
+ {
+  "source": "t3_ait_dnsmasq",
+  "lines": 240582,
+  "labelled": 44600,
+  "labelled_of_shown_types": 44553,
+  "scenarios": [
+   {
+    "id": "t3_ait_dnsmasq__t3_01",
+    "labels": [
+     "attacker",
+     "dnsteal",
+     "dnsteal-received"
+    ],
+    "message_type": 0,
+    "targets": [
+     "dns.question.type",
+     "source.ip"
+    ],
+    "expected_hits": 60
+   },
+   {
+    "id": "t3_ait_dnsmasq__t3_02",
+    "labels": [
+     "attacker",
+     "dnsteal",
+     "dnsteal-received"
+    ],
+    "message_type": 1,
+    "targets": [
+     "destination.ip"
+    ],
+    "expected_hits": 66
+   },
+   {
+    "id": "t3_ait_dnsmasq__t3_03",
+    "labels": [
+     "attacker",
+     "dnsteal",
+     "dnsteal-received"
+    ],
+    "message_type": 2,
+    "targets": [
+     "dns.answers.data"
+    ],
+    "expected_hits": 60
+   },
+   {
+    "id": "t3_ait_dnsmasq__t3_04",
+    "labels": [
+     "dns_scan",
+     "foothold"
+    ],
+    "message_type": 0,
+    "targets": [
+     "process.name",
+     "source.ip"
+    ],
+    "expected_hits": 65
+   },
+   {
+    "id": "t3_ait_dnsmasq__t3_05",
+    "labels": [
+     "dns_scan",
+     "foothold"
+    ],
+    "message_type": 1,
+    "targets": [
+     "destination.ip"
+    ],
+    "expected_hits": 63
+   },
+   {
+    "id": "t3_ait_dnsmasq__t3_06",
+    "labels": [
+     "dns_scan",
+     "foothold"
+    ],
+    "message_type": 2,
+    "targets": [
+     "dns.answers.data"
+    ],
+    "expected_hits": 58
+   },
+   {
+    "id": "t3_ait_dnsmasq__t3_09",
+    "labels": [
+     "foothold",
+     "network_scan"
+    ],
+    "message_type": 1,
+    "targets": [
+     "destination.ip"
+    ],
+    "expected_hits": 18
+   },
+   {
+    "id": "t3_ait_dnsmasq__t3_10",
+    "labels": [
+     "foothold",
+     "network_scan"
+    ],
+    "message_type": 0,
+    "targets": [
+     "dns.question.type",
+     "source.ip"
+    ],
+    "expected_hits": 16
+   },
+   {
+    "id": "t3_ait_dnsmasq__t3_13",
+    "labels": [
+     "foothold",
+     "wpscan"
+    ],
+    "message_type": 2,
+    "targets": [
+     "dns.question.name"
+    ],
+    "expected_hits": 4
+   }
+  ],
+  "skipped": [
+   {
+    "labels": [
+     "foothold",
+     "service_scan"
+    ],
+    "type": 1,
+    "why": "best query reaches 22/34 labelled and 0 benign lines (dns.question.name='77.130.168.192.in-addr.arpa')"
+   },
+   {
+    "labels": [
+     "foothold",
+     "service_scan"
+    ],
+    "type": 0,
+    "why": "best query reaches 22/33 labelled and 0 benign lines (dns.question.name='77.130.168.192.in-addr.arpa')"
+   },
+   {
+    "labels": [
+     "foothold",
+     "network_scan"
+    ],
+    "type": 2,
+    "why": "best query reaches 2/15 labelled and 0 benign lines (dns.question.name='172.17.130.196')"
+   },
+   {
+    "labels": [
+     "foothold",
+     "service_scan"
+    ],
+    "type": 2,
+    "why": "best query reaches 4/12 labelled and 0 benign lines (dns.question.name='172.17.130.196')"
+   }
+  ]
+ },
+ {
+  "source": "t3_ait_openvpn",
+  "lines": 7299,
+  "labelled": 28,
+  "labelled_of_shown_types": 9,
+  "scenarios": [
+   {
+    "id": "t3_ait_openvpn__t3_01",
+    "labels": [
+     "attacker_vpn",
+     "foothold"
+    ],
+    "message_type": 0,
+    "targets": [
+     "source.port",
+     "source.ip"
+    ],
+    "expected_hits": 9
+   }
+  ],
+  "skipped": []
+ }
+]

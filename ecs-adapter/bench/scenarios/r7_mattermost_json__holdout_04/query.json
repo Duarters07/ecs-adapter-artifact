@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.level": "debug"
+        }
+      },
+      {
+        "term": {
+          "log.origin.file.name": "web/handlers.go:185"
+        }
+      }
+    ]
+  }
+}

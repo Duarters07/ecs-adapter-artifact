@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T20:02:22Z","old":"Mattermost 10.5.2, console log JSON (default)","new":"Mattermost 10.5.2, console log plain (ConsoleJson=false)","collected_by":"docker logs (console, level DEBUG): every line of a /api/v4/users/login request (the auth result with the client address, the request with its status)"}

@@ -1,0 +1,13 @@
+[23] Oct 28 15:25:28 Child connection from 172.21.55.21:52532
+[23] Oct 28 15:25:29 Exit before auth (user 'backup', 1 fails): Exited normally
+[24] Oct 28 15:25:29 Child connection from 172.21.55.22:48912
+[24] Oct 28 15:25:29 Bad password attempt for 'monitor' from 172.21.55.22:48912
+[24] Oct 28 15:25:30 Exit before auth (user 'monitor', 1 fails): Exited normally
+[25] Oct 28 15:25:30 Child connection from 172.21.55.23:49036
+[25] Oct 28 15:25:30 Password auth succeeded for 'svcgit' from 172.21.55.23:49036
+[25] Oct 28 15:25:30 Exit (svcgit): Disconnect received
+[27] Oct 28 15:25:31 Child connection from 172.21.55.95:42492
+[27] Oct 28 15:25:31 Exit before auth (user 'backup', 1 fails): Exited normally
+[28] Oct 28 15:25:32 Child connection from 172.21.55.94:38364
+[28] Oct 28 15:25:32 Login attempt for nonexistent user from 172.21.55.94:38364
+[28] Oct 28 15:25:33 Exit before auth: Exited normally

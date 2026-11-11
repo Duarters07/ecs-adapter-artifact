@@ -1,0 +1,160 @@
+{
+  "composition": "One source per training family, rotating through all five layouts, plus the two dev sources. Eight families times five layouts is the whole training corpus; one per family is enough to notice a regression and cheap enough to run on every refresh.",
+  "created": "2026-10-02",
+  "integrity": {
+    "closed": {
+      "date": "2026-10-03",
+      "statement": "THE CORPUS IS FROZEN FROM HERE. It was corrected six times in one day and re-frozen four, each time after a family failed, and that shape cannot be told apart from tuning until the model passes. The defence is corpus/audit.py: every correction is restated as a rule that names no family, applied to every source including the held-out families, and wired into corpus/validate.py so it cannot be skipped. Five of its seven rules now fire zero times, and the one that fires does so on real vendor keys (23% of held-out fields) as well as on generated ones (35%), which is what tells a property of ECS apart from an artefact of this corpus. Any change after this date must be dated here, justified against an external authority rather than against a yield, and reported in the paper with the measurement before and after."
+    },
+    "digests": {
+      "demo_auth": {
+        "samples.ndjson": "396fd736804d255666c9ef7b0faa2004a482e003c63efbdc352dfb5423674122",
+        "truth.json": "3019e25869ca25ab80032e454832189105c88331182bff98158fc94fc4934d21"
+      },
+      "nginx_kv": {
+        "samples.ndjson": "01be5cdbe51427a35071cd89709244f8bb1fff07686385cf109dfb29a2193c7d",
+        "truth.json": "200f3bb42f7e0634e7ba4d48985eafffc2a13aa18cbe5533ffa9ff40d67abf9b"
+      },
+      "syn_caddy_kv_space": {
+        "samples.ndjson": "ba02dc86ca58539d9a8ca8fdb78ffd9ba21fc51eb3ae4a5f5131ed2651177dae",
+        "truth.json": "d13f3885cceb194cc052a8e495e1f73f38abf9c267d6960dadd49b70c213fb5c"
+      },
+      "syn_coredns_json": {
+        "samples.ndjson": "8e480eca52486034fcdca2e0f2222d45823634869eddb51aab81d4bea7824802",
+        "truth.json": "65e471237b2dcc970b86e49671f2531a8106c5a1ca8b1311aae9b1282d655b7f"
+      },
+      "syn_firewall_pfsense_csv": {
+        "samples.ndjson": "1e555cd861e213116594eec9b5af1b1634a97e203d9ed433d6add41f3fa6aeb0",
+        "truth.json": "d55f9e3cd9a935d4e985a9af4e9bf51a570430d65536c091910ab01d97c276b7"
+      },
+      "syn_haproxy_kv_pipe": {
+        "samples.ndjson": "1be3a0d3650158e8b9e65599a458b9f6fdd813599c1857459a2ff7b983ec58b8",
+        "truth.json": "a0cff3c6762ac4c0b448dc3bf2d5a38fde93039aefd4df3b774983124bf73c9f"
+      },
+      "syn_linux_auditd_kv_comma": {
+        "samples.ndjson": "ded0e5398d9bc5786eb70b6b3671aaade9619697efbcf57e3c981e224ff41a2d",
+        "truth.json": "0a3460816fd718ca6dea64e4b3a5033d9eeeb2fcf91a82471d59b58e3fbe1c27"
+      },
+      "syn_nginx_json": {
+        "samples.ndjson": "d4f651892d9e14317a506cce21c70f1c88bd121c8b40791a6743f4849337fac1",
+        "truth.json": "b7be409eeac0f4756c1cbe9900302246d93fefa955642d665be051f87bbdf320"
+      },
+      "syn_squid_csv": {
+        "samples.ndjson": "7bf37660409cd26a4dff4639784cd27e7da86d4711f87c7f76e4086318dbeb66",
+        "truth.json": "2b56290614165698f178d54edf1dbe281e891121f0e542018f3c704b137fbec7"
+      },
+      "syn_windows_security_kv_space": {
+        "samples.ndjson": "69940b1821f3e349401c77216a7b846708cc413c6ebf22af937a92f0ad5a4369",
+        "truth.json": "bbdea8e85e395d753db3c5b36c66ad2d3ba0e65929cbf43fcbdb796c20bc6580"
+      }
+    },
+    "refrozen": {
+      "date": "2026-10-02",
+      "files_whose_digest_changed": [
+        "syn_caddy_kv_space/truth.json",
+        "syn_coredns_json/truth.json",
+        "syn_firewall_pfsense_csv/truth.json",
+        "syn_haproxy_kv_pipe/truth.json",
+        "syn_linux_auditd_kv_comma/truth.json",
+        "syn_nginx_json/truth.json",
+        "syn_squid_csv/truth.json",
+        "syn_windows_security_kv_space/truth.json"
+      ],
+      "why": "truth.json gained `key_names_the_answer`, a per-instance flag beside the existing difficulty label. samples.ndjson is byte-identical, so what any model is asked has not changed and Phase 1a did not need to restart. Re-freezing is legitimate here only because no adapter has been measured against this set yet: the gate is still fixed at creation. Once a baseline exists, these digests must not move again."
+    },
+    "refrozen_at": "2026-10-06",
+    "refrozen_log": [
+      {
+        "date": "2026-10-02",
+        "files": [
+          "syn_coredns_json/samples.ndjson",
+          "syn_coredns_json/truth.json"
+        ],
+        "why": "coredns.conf mapped netproto to network.protocol; the value is udp/tcp, which ECS calls network.transport. The ground truth was wrong and the teacher was marked down 30 times for being right. Fixing it changed the coredns alias pool, so those samples and that truth moved."
+      },
+      {
+        "date": "2026-10-03",
+        "files": [
+          "syn_caddy_kv_space/samples.ndjson",
+          "syn_caddy_kv_space/truth.json",
+          "syn_haproxy_kv_pipe/samples.ndjson",
+          "syn_haproxy_kv_pipe/truth.json",
+          "syn_nginx_json/samples.ndjson",
+          "syn_nginx_json/truth.json",
+          "syn_squid_csv/truth.json"
+        ],
+        "why": "Two changes to how the corpus is scored and written. (1) truth.json now carries ECS equivalence sets, declared in adapter/ecs_index.py from the schema's own text, so a parser that writes client.ip where truth says source.ip is no longer counted as an error; both the scorer and the scenario queries honour them, and strict and equivalence-aware figures are reported side by side. (2) the http.response.body.bytes aliases now say `body`, because `bytes` does not settle whether the count includes headers and ECS has two different fields for the two quantities. The second changes the generated keys, so samples moved for the four families that carry that field."
+      },
+      {
+        "date": "2026-10-03",
+        "files": [
+          "syn_caddy_kv_space/truth.json",
+          "syn_coredns_json/truth.json",
+          "syn_haproxy_kv_pipe/truth.json",
+          "syn_linux_auditd_kv_comma/truth.json",
+          "syn_windows_security_kv_space/truth.json"
+        ],
+        "why": "corpus/extract_mappings.py now takes the field TYPE from ECS when the pipeline declares none, instead of guessing `keyword`. Five pipelines renamed into source.ip or process.pid without converting, so the recovered ground truth called an address a keyword and a pid a keyword, and V1 refused a mapping built from it. Only the `type` field moved; samples.ndjson is byte-identical."
+      }
+    ],
+    "why": "`make ecs-corpus-synth` rewrites the generated sources, so 'fixed at creation' is a property nothing enforced. These are the digests of samples.ndjson and truth.json as frozen. corpus/validate.py compares them and fails when one has moved, because a gate measured against changed work is not a gate."
+  },
+  "note": "THE DEPLOYMENT GATE, NOT THE EVALUATION POOL. training/regression.py runs the staged arm over these sources and refuses an adapter that does worse than the one in place. The numbers that go in the paper come from the test pool, which is deliberately absent from this list: measuring the deployment decision on the held-out families would turn repeated deployments into repeated looks at the test set, and the eighth look is not independent of the first. The gate needs its data FIXED, not unseen, so training and dev sources serve it correctly.",
+  "refrozen_log": [
+    {
+      "at": "2026-10-06",
+      "consequence": "The baseline in training/baselines/interpret-20261004.json was measured against the previous apparatus and is VOID. It is kept for the record and must not be compared against: the csv documentation changed, so the prompt changed, and an adapter judged against it would be judged on different work. The gate has to be re-run before it means anything again - which it had to be regardless, having been recorded with V3.5 silent, V4 misattributing, and no subset recall at all.",
+      "files_changed": [
+        "syn_caddy_kv_space/truth.json",
+        "syn_coredns_json/truth.json",
+        "syn_firewall_pfsense_csv/truth.json",
+        "syn_haproxy_kv_pipe/truth.json",
+        "syn_linux_auditd_kv_comma/truth.json",
+        "syn_nginx_json/truth.json",
+        "syn_squid_csv/truth.json",
+        "syn_windows_security_kv_space/truth.json"
+      ],
+      "what_changed": "truth.json gained three recorded keys - `layout`, `column_order` and `seed` - and the documentation of the csv sources gained the separator in its wording. No field mapping, no difficulty label and no abstention case changed, and samples.ndjson is byte-identical on every frozen source: the generator is deterministic and the log lines are the same ones.",
+      "why": "The layout was previously inferred from the source id's suffix. A real PostgreSQL source named postgres_csv was therefore read as a generated one, a control was built for it from a guessed column list, and the mutation study reported a GROUND-TRUTH MAPPING REFUSED AT V4 - which R29 treats as a falsifier. Recording the layout removes the guess. `column_order` and `seed` are what a prose extraction is rebuilt from: the new grok layout has no delimiter to fall back on."
+    },
+    {
+      "at": "2026-10-06",
+      "consequence": "No measurement is invalidated beyond the one the previous entry already voided.",
+      "files_changed": [
+        "syn_caddy_kv_space/truth.json",
+        "syn_coredns_json/truth.json",
+        "syn_firewall_pfsense_csv/truth.json",
+        "syn_haproxy_kv_pipe/truth.json",
+        "syn_linux_auditd_kv_comma/truth.json",
+        "syn_nginx_json/truth.json",
+        "syn_squid_csv/truth.json",
+        "syn_windows_security_kv_space/truth.json"
+      ],
+      "what_changed": "truth.json gained `extraction`: the exact parser the generator rendered with, recorded instead of reconstructed. samples.ndjson is byte-identical again.",
+      "why": "A control for a prose source needs a grok pattern, and rebuilding one required importing corpus/, which is not installed in the container that runs the study. A recorded fact also beats a reconstruction: this is the parser that wrote the line, not a guess at it."
+    },
+    {
+      "at": "2026-10-06",
+      "files_changed": [
+        "syn_firewall_pfsense_csv/truth.json",
+        "syn_squid_csv/truth.json"
+      ],
+      "what_changed": "The eight csv ground truths gained an explicit \"field_split\": \",\". Two of them are in the frozen set.",
+      "why": "roles.schema.json now REQUIRES field_split for kind=csv. Phase 1a lost 20 of 48 csv_tab proposals to an omitted separator that the schema permitted and the prompt invited - it said to give field_split \"when the separator is not a comma\". The requirement is enforced by the structured-output grammar, so the model can no longer omit it; the ground truth has to satisfy the same contract it is held to.",
+      "consequence": "None on any measurement. For csv, an absent field_split and \",\" take the same branch in both places that read it: v2_consistency._split_row falls through to csv.reader, and the compiler emits no separator attribute, which is the Logstash csv default. Verified before the edit. The schema digest DOES change, so every proposal generated before today carries a different apparatus identifier, which is the point of recording it."
+    }
+  ],
+  "seed": 0,
+  "sources": [
+    "syn_caddy_kv_space",
+    "syn_coredns_json",
+    "syn_firewall_pfsense_csv",
+    "syn_haproxy_kv_pipe",
+    "syn_linux_auditd_kv_comma",
+    "syn_nginx_json",
+    "syn_squid_csv",
+    "syn_windows_security_kv_space",
+    "demo_auth",
+    "nginx_kv"
+  ]
+}

@@ -1,0 +1,12 @@
+1793203950: New connection from 172.21.50.14 on port 1884.
+1793203950: New client connected from 172.21.50.14 as gw-backup (c1, k60, u'gateway').
+1793203950: Client gw-backup disconnected.
+1793203950: New connection from 172.21.50.14 on port 1884.
+1793203950: Socket error on client <unknown>, disconnecting.
+1793203951: New connection from 172.21.50.97 on port 1883.
+1793203951: Socket error on client <unknown>, disconnecting.
+1793203952: New connection from 172.21.50.15 on port 1883.
+1793203952: New client connected from 172.21.50.15 as temp-lab (c1, k60, u'sensor01').
+1793203952: Client temp-lab disconnected.
+1793203952: New connection from 172.21.50.96 on port 1884.
+1793203952: Socket error on client <unknown>, disconnecting.

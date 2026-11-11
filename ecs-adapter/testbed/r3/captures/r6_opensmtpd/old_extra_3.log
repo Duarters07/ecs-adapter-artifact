@@ -1,0 +1,15 @@
+0a6ddc5c9455800c smtp connected address=172.21.63.169 host=dreamy_robinson.r3-net
+0a6ddc5c9455800c smtp failed-command command="rcpt TO:<diogo@corp.example>" result="550 Invalid recipient: <diogo@corp.example>"
+0a6ddc5c9455800c smtp disconnected reason=disconnect
+0a6ddc5d87f0ae31 smtp connected address=172.21.63.212 host=fervent_aryabhata.r3-net
+0a6ddc5d87f0ae31 smtp failed-command command="rcpt TO:<monitor@lab.local>" result="550 Invalid recipient: <monitor@lab.local>"
+0a6ddc5d87f0ae31 smtp disconnected reason=disconnect
+0a6ddc5e59d86ace smtp connected address=172.21.63.105 host=dazzling_sinoussi.r3-net
+0a6ddc5e59d86ace smtp failed-command command="rcpt TO:<oracle@lab.local>" result="550 Invalid recipient: <oracle@lab.local>"
+0a6ddc5e59d86ace smtp disconnected reason=disconnect
+0a6ddc5f40bd20ee smtp connected address=172.21.63.100 host=happy_booth.r3-net
+0a6ddc5f40bd20ee smtp failed-command command="rcpt TO:<diogo@other.net>" result="550 Invalid recipient: <diogo@other.net>"
+0a6ddc5f40bd20ee smtp disconnected reason=disconnect
+0a6ddc60b564704a smtp connected address=172.21.63.190 host=agitated_villani.r3-net
+0a6ddc60b564704a smtp failed-command command="rcpt TO:<jenkins@lab.local>" result="550 Invalid recipient: <jenkins@lab.local>"
+0a6ddc60b564704a smtp disconnected reason=disconnect

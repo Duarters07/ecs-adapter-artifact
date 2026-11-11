@@ -1,0 +1,4 @@
+{"raw": "[10] Oct 25 15:14:24 Password auth succeeded for 'rui' from 203.0.113.10:48326"}
+{"raw": "[13] Oct 25 15:14:28 Bad password attempt for 'root' from 203.0.113.10:36838"}
+{"raw": "[14] Oct 25 15:14:32 Exit (deploy) from <203.0.113.10:46662>: Disconnect received"}
+{"raw": "[18] Oct 25 15:14:37 Exit before auth from <203.0.113.10:53930>: (user 'svcgit', 1 fails): Exited normally"}

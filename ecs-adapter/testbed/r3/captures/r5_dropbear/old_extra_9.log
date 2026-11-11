@@ -1,0 +1,18 @@
+[65] Oct 25 23:08:53 Child connection from 172.21.55.218:57576
+[65] Oct 25 23:08:53 Password auth succeeded for 'rui' from 172.21.55.218:57576
+[65] Oct 25 23:08:53 Exit (rui) from <172.21.55.218:57576>: Disconnect received
+[67] Oct 25 23:08:54 Child connection from 172.21.55.194:54270
+[67] Oct 25 23:08:54 Bad password attempt for 'ana' from 172.21.55.194:54270
+[67] Oct 25 23:08:55 Exit before auth from <172.21.55.194:54270>: (user 'ana', 1 fails): Exited normally
+[68] Oct 25 23:08:56 Child connection from 172.21.55.242:57198
+[68] Oct 25 23:08:56 Bad password attempt for 'svcgit' from 172.21.55.242:57198
+[68] Oct 25 23:08:56 Exit before auth from <172.21.55.242:57198>: (user 'svcgit', 1 fails): Exited normally
+[69] Oct 25 23:08:57 Child connection from 172.21.55.162:33120
+[69] Oct 25 23:08:57 Login attempt for nonexistent user
+[69] Oct 25 23:08:57 Exit before auth from <172.21.55.162:33120>: Exited normally
+[70] Oct 25 23:08:58 Child connection from 172.21.55.132:56530
+[70] Oct 25 23:08:58 Login attempt for nonexistent user
+[70] Oct 25 23:08:58 Exit before auth from <172.21.55.132:56530>: Exited normally
+[71] Oct 25 23:08:59 Child connection from 172.21.55.117:44944
+[71] Oct 25 23:08:59 Login attempt for nonexistent user
+[71] Oct 25 23:09:00 Exit before auth from <172.21.55.117:44944>: Exited normally

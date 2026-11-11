@@ -1,0 +1,8 @@
+172.21.0.3 - - [25/Oct/2026:22:25:56 +0000] "GET /static/app.js HTTP/1.1" 200 2 "https://shop.r3.local/shop/hr" "sqlmap/1.7#stable (https://sqlmap.org)"
+172.21.0.3 - jorge [25/Oct/2026:22:25:56 +0000] "GET /account/ HTTP/1.1" 401 179 "-" "axios/1.4.0"
+172.21.0.3 - oracle [25/Oct/2026:22:25:56 +0000] "GET /account/ HTTP/1.1" 401 179 "http://intranet.local/hr" "Wget/1.21.3"
+172.21.0.3 - tiago [25/Oct/2026:22:25:57 +0000] "GET /account/ HTTP/1.1" 200 3 "-" "curl/7.88.1"
+172.21.0.3 - - [25/Oct/2026:22:25:57 +0000] "GET /config.bak HTTP/1.1" 404 153 "-" "Java/17.0.8"
+172.21.0.3 - - [25/Oct/2026:22:25:57 +0000] "GET /shop/cart.html HTTP/1.1" 200 2 "https://www.bing.com/home" "Mozilla/5.0 (X11; Linux x86_64) Firefox/119.0"
+172.21.0.3 - - [25/Oct/2026:22:25:57 +0000] "POST /api/users.csv HTTP/1.1" 200 2 "-" "HTTPie/3.2.1"
+172.21.0.3 - - [25/Oct/2026:22:25:57 +0000] "GET /static/index.html HTTP/1.1" 200 3 "https://shop.r3.local/shop/portal" "Java/17.0.8"

@@ -1,0 +1,7 @@
+[2026-10-30 19:03:21 +0000] [1/Thread-1 (process_request_thread)] [INFO] Successful login: 'ana' (htpasswd)
+[2026-10-30 19:03:22 +0000] [1/Thread-2 (process_request_thread)] [WARNING] Login verification failed for user: 'ana' (htpasswd/plain/PLAIN)
+[2026-10-30 19:03:22 +0000] [1/Thread-2 (process_request_thread)] [WARNING] Failed login attempt from 172.21.80.11: 'ana' (htpasswd)
+[2026-10-30 19:03:24 +0000] [1/Thread-3 (process_request_thread)] [INFO] Successful login: 'rui' (htpasswd)
+[2026-10-30 19:03:24 +0000] [1/Thread-4 (process_request_thread)] [WARNING] Login verification user not found (htpasswd): 'ghost'
+[2026-10-30 19:03:24 +0000] [1/Thread-4 (process_request_thread)] [WARNING] Failed login attempt from 172.21.80.211: 'ghost' (htpasswd)
+[2026-10-30 19:03:26 +0000] [1/Thread-5 (process_request_thread)] [INFO] Successful login: 'monitor' (htpasswd)

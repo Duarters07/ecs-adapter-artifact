@@ -1,0 +1,4 @@
+{"raw": "2026-10-27T16:00:12.387111+00:00 files02 pure-ftpd: (?@203.0.113.10) [INFO] admin0 is now logged in"}
+{"raw": "2026-10-27T16:00:11.690392+00:00 files02 pure-ftpd: (?@203.0.113.10) [WARNING] Authentication failed for user [admin1]"}
+{"raw": "2026-10-27T15:59:54.624772+00:00 files02 pure-ftpd: (?@203.0.113.10) [INFO] admin2 is now logged in"}
+{"raw": "2026-10-27T16:00:00.885315+00:00 files02 pure-ftpd: (?@203.0.113.10) [INFO] admin3 is now logged in"}

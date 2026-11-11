@@ -1,0 +1,13 @@
+[Sun Oct 25 22:15:28 2026] [error] [client 172.21.0.3] user marta: authentication failure for "/members/old.zip": Password Mismatch, referer: http://wiki.local/finance
+[Sun Oct 25 22:15:28 2026] [error] [client 172.21.0.3] user ana: authentication failure for "/members/q3.html": Password Mismatch
+[Sun Oct 25 22:15:28 2026] [error] [client 172.21.0.3] user marta: authentication failure for "/members/login.php": Password Mismatch
+[Sun Oct 25 22:15:28 2026] [error] [client 172.21.0.3] user diogo not found: /members/
+[Sun Oct 25 22:15:28 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/, referer: http://intranet.local/hr
+[Sun Oct 25 22:15:29 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/, referer: http://portal.local/home
+[Sun Oct 25 22:15:29 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/, referer: http://portal.local/hr
+[Sun Oct 25 22:15:29 2026] [error] [client 172.21.0.3] user ines: authentication failure for "/reports/status": Password Mismatch, referer: http://portal.local/home
+[Sun Oct 25 22:15:29 2026] [error] [client 172.21.0.3] user operator not found: /members/, referer: http://home.local/wiki
+[Sun Oct 25 22:15:29 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/app.js, referer: http://intranet.local/wiki
+[Sun Oct 25 22:15:30 2026] [error] [client 172.21.0.3] user tiago: authentication failure for "/reports/": Password Mismatch
+[Sun Oct 25 22:15:30 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/
+[Sun Oct 25 22:15:30 2026] [error] [client 172.21.0.3] File does not exist: /usr/local/apache2/htdocs/members/app.js

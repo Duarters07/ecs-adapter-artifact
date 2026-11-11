@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "message": "Request Completed"
+        }
+      },
+      {
+        "term": {
+          "url.path": "/login"
+        }
+      }
+    ]
+  }
+}

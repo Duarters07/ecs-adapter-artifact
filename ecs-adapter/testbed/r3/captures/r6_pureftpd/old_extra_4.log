@@ -1,0 +1,20 @@
+2026-10-27T16:44:44.070111+00:00 files02 pure-ftpd: (?@172.21.64.225) [INFO] New connection from 172.21.64.225
+2026-10-27T16:44:44.096340+00:00 files02 pure-ftpd: (?@172.21.64.225) [INFO] ana is now logged in
+2026-10-27T16:44:44.097837+00:00 files02 pure-ftpd: (ana@172.21.64.225) [NOTICE] /home/ana//q3.txt downloaded  (7 bytes, 151.70KB/sec)
+2026-10-27T16:44:44.097883+00:00 files02 pure-ftpd: (ana@172.21.64.225) [INFO] Logout.
+2026-10-27T16:44:44.790075+00:00 files02 pure-ftpd: (?@172.21.64.219) [INFO] New connection from 172.21.64.219
+2026-10-27T16:44:48.554279+00:00 files02 pure-ftpd: (?@172.21.64.219) [WARNING] Authentication failed for user [monitor]
+2026-10-27T16:44:48.555213+00:00 files02 pure-ftpd: (?@172.21.64.219) [INFO] Logout.
+2026-10-27T16:44:49.241789+00:00 files02 pure-ftpd: (?@172.21.64.123) [INFO] New connection from 172.21.64.123
+2026-10-27T16:44:49.266752+00:00 files02 pure-ftpd: (?@172.21.64.123) [INFO] scanner is now logged in
+2026-10-27T16:44:49.267591+00:00 files02 pure-ftpd: (scanner@172.21.64.123) [ERROR] Can't open q3.txt: No such file or directory
+2026-10-27T16:44:49.267612+00:00 files02 pure-ftpd: (scanner@172.21.64.123) [INFO] Logout.
+2026-10-27T16:44:49.949126+00:00 files02 pure-ftpd: (?@172.21.64.203) [INFO] New connection from 172.21.64.203
+2026-10-27T16:44:55.736541+00:00 files02 pure-ftpd: (?@172.21.64.203) [WARNING] Authentication failed for user [monitor]
+2026-10-27T16:44:55.737622+00:00 files02 pure-ftpd: (?@172.21.64.203) [INFO] Logout.
+2026-10-27T16:44:56.433882+00:00 files02 pure-ftpd: (?@172.21.64.216) [INFO] New connection from 172.21.64.216
+2026-10-27T16:45:01.405064+00:00 files02 pure-ftpd: (?@172.21.64.216) [WARNING] Authentication failed for user [paulo]
+2026-10-27T16:45:01.406268+00:00 files02 pure-ftpd: (?@172.21.64.216) [INFO] Logout.
+2026-10-27T16:45:02.102086+00:00 files02 pure-ftpd: (?@172.21.64.141) [INFO] New connection from 172.21.64.141
+2026-10-27T16:45:07.525962+00:00 files02 pure-ftpd: (?@172.21.64.141) [WARNING] Authentication failed for user [root]
+2026-10-27T16:45:07.527046+00:00 files02 pure-ftpd: (?@172.21.64.141) [INFO] Logout.

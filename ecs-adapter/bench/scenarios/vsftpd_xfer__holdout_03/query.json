@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "file.size": 19
+        }
+      },
+      {
+        "term": {
+          "process.pid": 124
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "dns.question.type": "AXFR"
+        }
+      },
+      {
+        "term": {
+          "event.action": "finished"
+        }
+      }
+    ]
+  }
+}

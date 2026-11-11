@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "OK"
+        }
+      },
+      {
+        "term": {
+          "http.request.method": "GET"
+        }
+      }
+    ]
+  }
+}

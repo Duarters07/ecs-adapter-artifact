@@ -1,0 +1,12 @@
+Oct 22 08:44:53 auth-worker(tiago,172.21.0.3)<13><IdeA4GleuN+sFQAD>: request [10]: Info: pam: pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 22 08:44:55 imap-login: Info: Login aborted: Connection closed (auth failed, 1 attempts in 4 secs) (auth_failed): user=<tiago>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<IdeA4GleuN+sFQAD>
+Oct 22 08:44:59 imap-login: Info: Logged in: user=<tiago>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=43, session=</mPB4GleUoKsFQAD>
+Oct 22 08:44:59 imap(tiago)<43></mPB4GleUoKsFQAD>: Info: Disconnected: Logged out in=32 out=836 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 22 08:45:02 auth-worker(operator,172.21.0.3)<13><MXsI4WleWIKsFQAD>: request [13]: Info: pam: pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 22 08:45:04 imap-login: Info: Login aborted: Connection closed (auth failed, 1 attempts in 4 secs) (auth_failed): user=<operator>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<MXsI4WleWIKsFQAD>
+Oct 22 08:45:09 imap-login: Info: Logged in: user=<ines>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=50, session=</cxP4Wle2IGsFQAD>
+Oct 22 08:45:09 imap(ines)<50></cxP4Wle2IGsFQAD>: Info: Disconnected: Logged out in=32 out=836 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 22 08:45:11 auth-worker(support,172.21.0.3)<13><5uSW4Wle4IGsFQAD>: request [16]: Info: pam: pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 22 08:45:13 imap-login: Info: Login aborted: Connection closed (auth failed, 1 attempts in 4 secs) (auth_failed): user=<support>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<5uSW4Wle4IGsFQAD>
+Oct 22 08:45:17 imap-login: Info: Logged in: user=<marta>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=57, session=<4uPX4Wle8IGsFQAD>
+Oct 22 08:45:18 imap(marta)<57><4uPX4Wle8IGsFQAD>: Info: Disconnected: Logged out in=32 out=836 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0

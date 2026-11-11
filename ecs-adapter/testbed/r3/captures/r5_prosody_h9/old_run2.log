@@ -1,0 +1,11 @@
+Oct 28 15:40:10 c2s588780a736c0	info	Client connected
+Oct 28 15:40:10 c2s588780a736c0	info	Authenticated as rui@lab.example
+Oct 28 15:40:10 c2s588780a736c0	info	c2s stream for <172.21.57.14> closed: not-well-formed
+Oct 28 15:40:10 c2s588780a736c0	info	Client disconnected: connection closed
+Oct 28 15:40:11 c2s588780a16fc0	info	Client connected
+Oct 28 15:40:11 c2s588780a16fc0	info	c2s stream for <172.21.57.14> closed: session closed
+Oct 28 15:40:11 c2s588780a16fc0	info	Client disconnected: connection closed
+Oct 28 15:40:12 c2s588780a8e1b0	info	Client connected
+Oct 28 15:40:12 c2s588780a8e1b0	info	Authenticated as ana@lab.example
+Oct 28 15:40:13 c2s588780a8e1b0	info	c2s stream for <172.21.57.15> closed: not-well-formed
+Oct 28 15:40:13 c2s588780a8e1b0	info	Client disconnected: connection closed

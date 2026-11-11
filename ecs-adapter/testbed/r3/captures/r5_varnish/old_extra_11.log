@@ -1,0 +1,6 @@
+172.21.0.4 - - [25/Oct/2026:22:57:56 +0000] "GET http://r5-varnish-old/ HTTP/1.1" 200 615 "-" "python-requests/2.28.2"
+172.21.0.4 - - [25/Oct/2026:22:57:56 +0000] "GET http://r5-varnish-old/admin/users.csv HTTP/1.1" 403 246 "-" "Nikto/2.1.6"
+172.21.0.4 - - [25/Oct/2026:22:57:56 +0000] "GET http://r5-varnish-old/ HTTP/1.1" 200 615 "-" "masscan/1.3"
+172.21.0.4 - - [25/Oct/2026:22:57:56 +0000] "POST http://r5-varnish-old/users.csv HTTP/1.1" 404 153 "-" "Wget/1.21.3"
+172.21.0.4 - - [25/Oct/2026:22:57:57 +0000] "GET http://r5-varnish-old/ HTTP/1.1" 200 615 "-" "Wget/1.21.3"
+172.21.0.4 - - [25/Oct/2026:22:57:57 +0000] "GET http://r5-varnish-old/.env HTTP/1.1" 404 153 "-" "Go-http-client/1.1"

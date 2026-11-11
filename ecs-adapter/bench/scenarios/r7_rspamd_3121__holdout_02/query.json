@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "email.to.address": "ana@lab.example"
+        }
+      },
+      {
+        "term": {
+          "event.action": "add header"
+        }
+      }
+    ]
+  }
+}

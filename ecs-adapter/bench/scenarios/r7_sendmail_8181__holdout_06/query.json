@@ -1,0 +1,23 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.domain": "r7-ws213.r3-net"
+              }
+            },
+            {
+              "term": {
+                "source.domain": "r7-ws213.r3-net"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

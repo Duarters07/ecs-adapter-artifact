@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.origin.file.line": 559
+        }
+      },
+      {
+        "term": {
+          "log.origin.file.name": "emqx_connection.erl"
+        }
+      }
+    ]
+  }
+}

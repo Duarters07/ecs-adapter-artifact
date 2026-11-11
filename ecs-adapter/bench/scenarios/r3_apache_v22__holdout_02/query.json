@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "http.request.referrer": "http://portal.local/hr"
+        }
+      },
+      {
+        "term": {
+          "log.level": "error"
+        }
+      }
+    ]
+  }
+}

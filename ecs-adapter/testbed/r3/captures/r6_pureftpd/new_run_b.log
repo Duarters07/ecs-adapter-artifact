@@ -1,0 +1,17 @@
+2026-10-27T16:00:15.124397+00:00 files02 pure-ftpd: (?@172.21.64.31) [INFO] New connection from 172.21.64.31
+2026-10-27T16:00:19.558858+00:00 files02 pure-ftpd: (?@172.21.64.31) [WARNING] Authentication failed for user [scanner]
+2026-10-27T16:00:19.560063+00:00 files02 pure-ftpd: (?@172.21.64.31) [INFO] Logout.
+2026-10-27T16:00:20.238227+00:00 files02 pure-ftpd: (?@172.21.64.32) [INFO] New connection from 172.21.64.32
+2026-10-27T16:00:20.249164+00:00 files02 pure-ftpd: (?@172.21.64.32) [INFO] rui is now logged in
+2026-10-27T16:00:20.250041+00:00 files02 pure-ftpd: (rui@172.21.64.32) [ERROR] Can't open q3.txt: No such file or directory
+2026-10-27T16:00:20.250062+00:00 files02 pure-ftpd: (rui@172.21.64.32) [INFO] Logout.
+2026-10-27T16:00:20.950564+00:00 files02 pure-ftpd: (?@172.21.64.90) [INFO] New connection from 172.21.64.90
+2026-10-27T16:00:25.537976+00:00 files02 pure-ftpd: (?@172.21.64.90) [WARNING] Authentication failed for user [upload]
+2026-10-27T16:00:25.539451+00:00 files02 pure-ftpd: (?@172.21.64.90) [INFO] Logout.
+2026-10-27T16:00:26.220973+00:00 files02 pure-ftpd: (?@172.21.64.33) [INFO] New connection from 172.21.64.33
+2026-10-27T16:00:26.230535+00:00 files02 pure-ftpd: (?@172.21.64.33) [INFO] ana is now logged in
+2026-10-27T16:00:26.231154+00:00 files02 pure-ftpd: (ana@172.21.64.33) [NOTICE] /home/ana//q3.txt downloaded  (7 bytes, 377.26KB/sec)
+2026-10-27T16:00:26.231179+00:00 files02 pure-ftpd: (ana@172.21.64.33) [INFO] Logout.
+2026-10-27T16:00:26.918311+00:00 files02 pure-ftpd: (?@172.21.64.88) [INFO] New connection from 172.21.64.88
+2026-10-27T16:00:32.142402+00:00 files02 pure-ftpd: (?@172.21.64.88) [WARNING] Authentication failed for user [operator]
+2026-10-27T16:00:32.143435+00:00 files02 pure-ftpd: (?@172.21.64.88) [INFO] Logout.

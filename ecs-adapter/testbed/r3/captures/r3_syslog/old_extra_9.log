@@ -1,0 +1,38 @@
+Oct 25 22:29:41 web01 sshd[615]: Accepted password for marta from 172.21.0.3 port 43190 ssh2
+Oct 25 22:29:41 web01 sshd[615]: pam_unix(sshd:session): session opened for user marta(uid=1005) by (uid=0)
+Oct 25 22:29:41 web01 sshd[615]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:29:41 web01 sshd[615]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:29:41 web01 sshd[615]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:29:41 web01 sshd[615]: pam_unix(sshd:session): session closed for user marta
+Oct 25 22:29:42 web01 sshd[623]: error: kex_exchange_identification: Connection closed by remote host
+Oct 25 22:29:42 web01 sshd[623]: Connection closed by 172.21.0.3 port 43202
+Oct 25 22:29:42 web01 sshd[624]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=marta
+Oct 25 22:29:44 web01 sshd[624]: Failed password for marta from 172.21.0.3 port 43208 ssh2
+Oct 25 22:29:45 web01 sshd[626]: Invalid user olga from 172.21.0.3 port 43218
+Oct 25 22:29:45 web01 sshd[626]: pam_unix(sshd:auth): check pass; user unknown
+Oct 25 22:29:45 web01 sshd[626]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+Oct 25 22:29:47 web01 sshd[626]: Failed password for invalid user olga from 172.21.0.3 port 43218 ssh2
+Oct 25 22:29:49 web01 sshd[628]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=rui
+Oct 25 22:29:51 web01 sshd[628]: Failed password for rui from 172.21.0.3 port 34458 ssh2
+Oct 25 22:29:51 web01 sshd[630]: Accepted password for rui from 172.21.0.3 port 34464 ssh2
+Oct 25 22:29:51 web01 sshd[630]: pam_unix(sshd:session): session opened for user rui(uid=1001) by (uid=0)
+Oct 25 22:29:51 web01 sshd[630]: pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+Oct 25 22:29:51 web01 sshd[630]: pam_env(sshd:session): deprecated reading of user environment enabled
+Oct 25 22:29:51 web01 sshd[630]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Oct 25 22:29:52 web01 sshd[630]: pam_unix(sshd:session): session closed for user rui
+Oct 25 22:29:52 web01 sshd[628]: Connection closed by authenticating user rui 172.21.0.3 port 34458 [preauth]
+Oct 25 22:29:52 web01 sshd[624]: Connection closed by authenticating user marta 172.21.0.3 port 43208 [preauth]
+Oct 25 22:29:52 web01 sshd[626]: Connection closed by invalid user olga 172.21.0.3 port 43218 [preauth]
+Oct 25 22:29:52 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1001 euid=0 tty= ruser=rui rhost=  user=rui
+Oct 25 22:29:54 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:29:54 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [rui]
+Oct 25 22:29:54 web01 sudo:      rui : 1 incorrect password attempt ; PWD=/home/rui ; USER=root ; COMMAND=/usr/bin/uptime
+Oct 25 22:29:55 web01 sudo:     ines : PWD=/home/ines ; USER=root ; COMMAND=/usr/bin/uptime
+Oct 25 22:29:55 web01 sudo: pam_limits(sudo:session): Could not set limit for 'core' to soft=-1, hard=-1: Operation not permitted; uid=1004,euid=0
+Oct 25 22:29:55 web01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1004)
+Oct 25 22:29:55 web01 sudo: pam_unix(sudo:session): session closed for user root
+Oct 25 22:29:55 web01 sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1004 euid=0 tty= ruser=ines rhost=  user=ines
+Oct 25 22:29:57 web01 sudo: pam_unix(sudo:auth): conversation failed
+Oct 25 22:29:57 web01 sudo: pam_unix(sudo:auth): auth could not identify password for [ines]
+Oct 25 22:29:57 web01 sudo:     ines : 1 incorrect password attempt ; PWD=/home/ines ; USER=root ; COMMAND=/usr/bin/uptime
+Oct 25 22:29:58 web01 sudo:    marta : user NOT in sudoers ; PWD=/home/marta ; USER=root ; COMMAND=/usr/bin/journalctl -n 5

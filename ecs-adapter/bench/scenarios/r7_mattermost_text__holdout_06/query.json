@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.id": "szfbc9rxdfdaidupmxkdrpmnyr"
+              }
+            },
+            {
+              "term": {
+                "source.user.id": "szfbc9rxdfdaidupmxkdrpmnyr"
+              }
+            },
+            {
+              "term": {
+                "user.id": "szfbc9rxdfdaidupmxkdrpmnyr"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

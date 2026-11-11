@@ -1,0 +1,28 @@
+Accepted password for sofia from 172.21.0.3 port 43596 ssh2
+Invalid user irene from 172.21.0.3 port 43610
+Failed password for invalid user irene from 172.21.0.3 port 43610 ssh2
+Invalid user simao from 172.21.0.3 port 43624
+Failed password for invalid user simao from 172.21.0.3 port 43624 ssh2
+Invalid user ubuntu from 172.21.0.3 port 36698
+Failed password for invalid user ubuntu from 172.21.0.3 port 36698 ssh2
+Invalid user deploy from 172.21.0.3 port 36700
+Failed password for invalid user deploy from 172.21.0.3 port 36700 ssh2
+Failed password for ana from 172.21.0.3 port 36710 ssh2
+Invalid user mariana from 172.21.0.3 port 36922
+Failed password for invalid user mariana from 172.21.0.3 port 36922 ssh2
+Did not receive identification string from 172.21.0.3 port 36932
+Invalid user test from 172.21.0.3 port 36934
+Failed password for invalid user test from 172.21.0.3 port 36934 ssh2
+Invalid user pi from 172.21.0.3 port 36942
+Failed password for invalid user pi from 172.21.0.3 port 36942 ssh2
+Invalid user nelson from 172.21.0.3 port 46342
+Failed password for invalid user nelson from 172.21.0.3 port 46342 ssh2
+Connection closed by invalid user test 172.21.0.3 port 36934 [preauth]
+Connection closed by invalid user deploy 172.21.0.3 port 36700 [preauth]
+Connection closed by invalid user simao 172.21.0.3 port 43624 [preauth]
+Connection closed by invalid user mariana 172.21.0.3 port 36922 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 36710 [preauth]
+Connection closed by invalid user irene 172.21.0.3 port 43610 [preauth]
+Connection closed by invalid user ubuntu 172.21.0.3 port 36698 [preauth]
+Connection closed by invalid user pi 172.21.0.3 port 36942 [preauth]
+Connection closed by invalid user nelson 172.21.0.3 port 46342 [preauth]

@@ -1,0 +1,13 @@
+{
+ "expected_hits": 8,
+ "targets": [
+  "process.executable"
+ ],
+ "labels": [
+  "escalate",
+  "escalated_command",
+  "escalated_sudo_command"
+ ],
+ "message_type": 0,
+ "origin": "AIT-LDS v2.1 fox, intranet_server/logs/audit/audit.log: 8 lines labelled ['escalate', 'escalated_command', 'escalated_sudo_command'] and 60 unlabelled lines (seed 0); expected_hits counted on the reference parser's parse"
+}

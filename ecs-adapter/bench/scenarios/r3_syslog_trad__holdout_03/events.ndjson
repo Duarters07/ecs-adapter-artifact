@@ -1,0 +1,7 @@
+{"raw": "Oct 19 23:40:56 web01 sshd[140]: Accepted password for marta from 172.21.0.3 port 39066 ssh2"}
+{"raw": "Oct 19 23:41:11 web01 sudo:     ines : 1 incorrect password attempt ; PWD=/home/ines ; USER=root ; COMMAND=/usr/bin/id"}
+{"raw": "Oct 19 23:41:03 web01 sshd[150]: Failed password for invalid user pi from 172.21.0.3 port 47654 ssh2"}
+{"raw": "Oct 19 23:41:04 web01 sshd[153]: Invalid user deploy from 172.21.0.3 port 47662"}
+{"raw": "Oct 19 23:41:12 web01 sudo:    marta : user NOT in sudoers ; PWD=/home/marta ; USER=root ; COMMAND=/usr/sbin/useradd eve"}
+{"raw": "Oct 19 23:41:12 web01 sudo:      ana : PWD=/home/ana ; USER=root ; COMMAND=/usr/bin/journalctl -n 5"}
+{"raw": "Oct 19 23:40:59 web01 sshd[148]: Failed password for marta from 172.21.0.3 port 39076 ssh2"}

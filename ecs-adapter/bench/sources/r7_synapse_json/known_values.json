@@ -1,0 +1,21 @@
+{
+  "note": "NOT ground truth. Each entry records a value and the ECS field that value IS. The ladder may read this file; it may never read truth.json. See validators/v3_5_known_values.py.",
+  "origin": "samples.ndjson, via the per-family extractor",
+  "provenance": "Derived from samples.ndjson by bench/make_known_values.py with the extractor in testbed/heldout_r2/specs.py. Like the round-1 test sources, the field each value belongs to comes from the DRAFT labelling, so V3.5 here is a consistency check, not a probe.",
+  "source_id": "r7_synapse_json",
+  "values": {
+    "event.action": "Failed password login",
+    "http.request.id": "POST-7",
+    "http.request.method": "POST",
+    "http.response.body.bytes": "147",
+    "http.response.status_code": "403",
+    "http.version": "1.1",
+    "log.level": "WARNING",
+    "log.logger": "synapse.access.http.8008",
+    "source.ip": "::ffff:172.21.90.12",
+    "url.path": "/_matrix/client/v3/login",
+    "user.id": "@rui:lab.example",
+    "user.name": "ghost",
+    "user_agent.original": "Element/1.11"
+  }
+}

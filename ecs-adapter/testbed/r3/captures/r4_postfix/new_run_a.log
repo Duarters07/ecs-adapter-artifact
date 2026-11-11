@@ -1,0 +1,25 @@
+Oct 22 08:41:29 mail postfix/smtpd[104]: connect from unknown[172.21.0.3]
+Oct 22 08:41:29 mail postfix/smtpd[104]: 7389CE91B8D: client=unknown[172.21.0.3]
+Oct 22 08:41:29 mail postfix/cleanup[109]: 7389CE91B8D: message-id=<>
+Oct 22 08:41:29 mail postfix/qmgr[94]: 7389CE91B8D: from=<bob@example.org>, size=237, nrcpt=1 (queue active)
+Oct 22 08:41:29 mail postfix/smtpd[104]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 22 08:41:29 mail postfix/local[110]: 7389CE91B8D: to=<ana@r4.local>, relay=local, delay=0.02, delays=0.01/0.01/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 22 08:41:29 mail postfix/qmgr[94]: 7389CE91B8D: removed
+Oct 22 08:41:29 mail postfix/smtpd[104]: connect from unknown[172.21.0.3]
+Oct 22 08:41:29 mail postfix/smtpd[104]: F0948E91B93: client=unknown[172.21.0.3]
+Oct 22 08:41:29 mail postfix/cleanup[109]: F0948E91B93: message-id=<>
+Oct 22 08:41:29 mail postfix/qmgr[94]: F0948E91B93: from=<offer@junk.test>, size=236, nrcpt=1 (queue active)
+Oct 22 08:41:29 mail postfix/smtpd[104]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 22 08:41:29 mail postfix/local[110]: F0948E91B93: to=<nobody@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 22 08:41:29 mail postfix/qmgr[94]: F0948E91B93: removed
+Oct 22 08:41:30 mail postfix/smtpd[104]: connect from unknown[172.21.0.3]
+Oct 22 08:41:30 mail postfix/smtpd[104]: 79A99E91B96: client=unknown[172.21.0.3]
+Oct 22 08:41:30 mail postfix/cleanup[109]: 79A99E91B96: message-id=<>
+Oct 22 08:41:30 mail postfix/qmgr[94]: 79A99E91B96: from=<bob@example.org>, size=237, nrcpt=1 (queue active)
+Oct 22 08:41:30 mail postfix/smtpd[104]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 22 08:41:30 mail postfix/local[110]: 79A99E91B96: to=<rui@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 22 08:41:30 mail postfix/qmgr[94]: 79A99E91B96: removed
+Oct 22 08:41:31 mail postfix/smtpd[104]: connect from unknown[172.21.0.3]
+Oct 22 08:41:31 mail postfix/smtpd[104]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 454 4.7.1 <victim@gmail.com>: Relay access denied; from=<x@evil.test> to=<victim@gmail.com> proto=ESMTP helo=<relay.evil.test>
+Oct 22 08:41:31 mail postfix/smtpd[104]: lost connection after RSET from unknown[172.21.0.3]
+Oct 22 08:41:31 mail postfix/smtpd[104]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4

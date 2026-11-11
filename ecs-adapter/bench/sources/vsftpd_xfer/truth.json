@@ -1,0 +1,78 @@
+{
+  "family": "vsftpd",
+  "category_hint": "endpoint",
+  "contamination_risk": "medium",
+  "notes": "FREE TEXT, SO THE CAPTURE NAMES ARE FIXED HERE. There are no keys in the line, so a grok pattern invents a name for every capture and field-level scoring can only align the model's captures with ground truth if both use the same names. The documentation states them, exactly as it states the column list for a CSV source. The names are a scoring convention, not part of the format. This is the only source in the corpus whose subject is a FILE, so file.path and file.name have no training example. It is also the only one where event.outcome and event.action sit side by side as two separate words, which is the arrangement most likely to be collapsed into one field.",
+  "fields": [
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "server_process_id",
+      "difficulty": "medium"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "ftp_account",
+      "difficulty": "easy"
+    },
+    {
+      "source_key": "result",
+      "ecs_field": "event.outcome",
+      "type": "keyword",
+      "role": "transfer_result",
+      "difficulty": "medium",
+      "note": "`OK` and `FAIL`. A value map to success and failure is required."
+    },
+    {
+      "source_key": "operation",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "transfer_operation",
+      "difficulty": "medium",
+      "note": "UPLOAD, DOWNLOAD, DELETE. What was done, which is event.action. Pairing it with `result` is the whole distinction: one says what happened, the other says whether it worked."
+    },
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy"
+    },
+    {
+      "source_key": "path",
+      "ecs_field": "file.path",
+      "type": "keyword",
+      "role": "transferred_file_path",
+      "difficulty": "hard",
+      "note": "The full path. file.name would be the last segment only, and the line gives the whole path, so file.path is the field that holds it without discarding anything."
+    },
+    {
+      "source_key": "size",
+      "ecs_field": "file.size",
+      "type": "long",
+      "role": "transferred_bytes",
+      "difficulty": "hard",
+      "note": "For a completed transfer of a whole file this is the file's size. It is not http.response.body.bytes, which belongs to an HTTP response, and not network.bytes, which would count the wire including protocol overhead."
+    },
+    {
+      "source_key": "rate",
+      "ecs_field": null,
+      "type": "float",
+      "role": "throughput_kbytes_per_second",
+      "difficulty": "ambiguous",
+      "acceptable_abstention": true,
+      "note": "A rate, in kilobytes per second. ECS has byte counters and duration fields and no throughput field, and the unit is attached to the number in the line."
+    }
+  ],
+  "source_id": "vsftpd_xfer",
+  "split": "test",
+  "origin": "Produced by running the software, not copied from documentation or a public dataset. Captured on 2 October 2026 on the project's own Docker host.",
+  "scenarios": [
+    "vsftpd_xfer__holdout_01",
+    "vsftpd_xfer__holdout_02",
+    "vsftpd_xfer__holdout_03"
+  ]
+}

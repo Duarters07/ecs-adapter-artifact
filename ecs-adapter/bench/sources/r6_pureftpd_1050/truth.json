@@ -1,0 +1,119 @@
+{
+  "source_id": "r6_pureftpd_1050",
+  "family": "pureftpd",
+  "split": "test_r6",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Pure-FTPd 1.0.50 (Debian 12), not copied from documentation or a public dataset. Captured 2026-10-27T16:00:34Z on the author's laptop by testbed/r3/r6_pureftpd.sh (rsyslog (imuxsock) to /var/log/ftp.log, pure-ftpd lines); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 8 (pool r6), NEW VERSION of r6_pureftpd_1049. Captured as an upgrade; see T3 for whether the format changed.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "role": "host",
+      "difficulty": "easy",
+      "note": "host.name is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "process",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "role": "program",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "file",
+      "ecs_field": "file.path",
+      "type": "keyword",
+      "role": "file_path",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes",
+      "ecs_field": "file.size",
+      "type": "long",
+      "role": "file_size",
+      "difficulty": "medium",
+      "note": "the bytes transferred, the whole file here.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "error_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "session_user",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_account",
+      "difficulty": "hard",
+      "note": "`?` before login; user.name is taken from the message.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "rate",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "transfer_rate",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r6_pureftpd_1050__holdout_01",
+    "r6_pureftpd_1050__holdout_02",
+    "r6_pureftpd_1050__holdout_03",
+    "r6_pureftpd_1050__holdout_04"
+  ],
+  "round3": {
+    "pair": "r6_pureftpd",
+    "role": "new"
+  }
+}

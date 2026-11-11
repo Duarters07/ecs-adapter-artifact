@@ -1,0 +1,14 @@
+Wed Oct 28 16:02:07 2026 172.21.58.21:53448 TLS: Initial packet from [AF_INET]172.21.58.21:53448, sid=69c85517 48eb5cd7
+Wed Oct 28 16:02:07 2026 172.21.58.21:53448 VERIFY OK: depth=1, CN=Lab VPN CA
+Wed Oct 28 16:02:07 2026 172.21.58.21:53448 VERIFY OK: depth=0, CN=nas-backup
+Wed Oct 28 16:02:07 2026 172.21.58.21:53448 [nas-backup] Peer Connection Initiated with [AF_INET]172.21.58.21:53448
+Wed Oct 28 16:02:07 2026 nas-backup/172.21.58.21:53448 MULTI_sva: pool returned IPv4=10.8.0.18, IPv6=(Not enabled)
+Wed Oct 28 16:02:09 2026 172.21.58.22:36095 TLS: Initial packet from [AF_INET]172.21.58.22:36095, sid=316fc15a 0e531d24
+Wed Oct 28 16:02:09 2026 172.21.58.22:36095 VERIFY OK: depth=1, CN=Lab VPN CA
+Wed Oct 28 16:02:09 2026 172.21.58.22:36095 VERIFY OK: depth=0, CN=nas-backup
+Wed Oct 28 16:02:09 2026 172.21.58.22:36095 TLS Auth Error: Auth Username/Password verification failed for peer
+Wed Oct 28 16:02:09 2026 172.21.58.22:36095 [nas-backup] Peer Connection Initiated with [AF_INET]172.21.58.22:36095
+Wed Oct 28 16:02:10 2026 172.21.58.22:36095 SENT CONTROL [nas-backup]: 'AUTH_FAILED' (status=1)
+Wed Oct 28 16:02:10 2026 172.21.58.97:52163 TLS: Initial packet from [AF_INET]172.21.58.97:52163, sid=7daad48c 6bdc2709
+Wed Oct 28 16:02:10 2026 172.21.58.97:52163 VERIFY ERROR: depth=0, error=unable to get local issuer certificate: CN=stolen-device
+Wed Oct 28 16:02:10 2026 172.21.58.97:52163 TLS Error: TLS handshake failed

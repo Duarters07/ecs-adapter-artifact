@@ -1,0 +1,19 @@
+Accepted password for tiago from 172.21.0.3 port 44500 ssh2
+Failed password for tiago from 172.21.0.3 port 44512 ssh2
+Invalid user guest from 172.21.0.3 port 46130
+Failed password for invalid user guest from 172.21.0.3 port 46130 ssh2
+Accepted password for sofia from 172.21.0.3 port 46138 ssh2
+Failed password for backup from 172.21.0.3 port 46154 ssh2
+Did not receive identification string from 172.21.0.3 port 46170
+Invalid user ubuntu from 172.21.0.3 port 46174
+Failed password for invalid user ubuntu from 172.21.0.3 port 46174 ssh2
+Failed password for ines from 172.21.0.3 port 54090 ssh2
+Accepted password for ines from 172.21.0.3 port 54102 ssh2
+Invalid user test from 172.21.0.3 port 54118
+Failed password for invalid user test from 172.21.0.3 port 54118 ssh2
+Connection closed by invalid user test 172.21.0.3 port 54118 [preauth]
+Connection closed by authenticating user tiago 172.21.0.3 port 44512 [preauth]
+Connection closed by invalid user ubuntu 172.21.0.3 port 46174 [preauth]
+Connection closed by authenticating user backup 172.21.0.3 port 46154 [preauth]
+Connection closed by invalid user guest 172.21.0.3 port 46130 [preauth]
+Connection closed by authenticating user ines 172.21.0.3 port 54090 [preauth]

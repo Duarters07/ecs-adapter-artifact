@@ -1,0 +1,145 @@
+{
+  "source_id": "r7_ocserv_130",
+  "family": "ocserv",
+  "split": "test_r7",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running ocserv 1.3.0 (Debian 13), not copied from documentation or a public dataset. Captured 2026-10-30T20:33:58Z on the author's laptop by testbed/r3/r7_ocserv.sh (rsyslog /var/log/syslog: session lines); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), NEW VERSION of r7_ocserv_116: main[user]:ip:port session lines added; failure line's source location moves.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "note": "client.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "end_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "role": "host",
+      "difficulty": "easy",
+      "note": "host.name is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "program",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "role": "program",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "process_id",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "rx",
+      "ecs_field": "source.bytes",
+      "type": "long",
+      "role": "bytes_received",
+      "difficulty": "medium",
+      "note": "client.bytes is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "tx",
+      "ecs_field": "destination.bytes",
+      "type": "long",
+      "role": "bytes_sent",
+      "difficulty": "medium",
+      "note": "server.bytes is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "component",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "component",
+      "difficulty": "hard",
+      "note": "No ECS field for the ocserv sub-process.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "session",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_id",
+      "difficulty": "hard",
+      "note": "event.id is acceptable; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "src_location",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "source_location",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_ocserv_130__holdout_01",
+    "r7_ocserv_130__holdout_03"
+  ],
+  "round3": {
+    "pair": "r7_ocserv",
+    "role": "new"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "family": "fail2ban",
+  "category_hint": "authentication",
+  "contamination_risk": "low",
+  "notes": "FREE TEXT, SO THE CAPTURE NAMES ARE FIXED HERE. There are no keys in the line, so a grok pattern invents a name for every capture and field-level scoring can only align the model's captures with ground truth if both use the same names. The documentation states them, exactly as it states the column list for a CSV source. The names are a scoring convention, not part of the format. This is the only source whose subject is a DECISION rather than an observation, and the only one that needs rule.name, which no training family carries. A jail is the rule set that fired, and calling it a service name or a process name is the mistake available here. The lines were produced by a real fail2ban watching the real sshd whose output is the sshd_auth source in this same corpus. SAMPLES AND EVALUATION EVENTS ARE SPLIT BY MESSAGE SHAPE, NOT BY TRAFFIC. Every alphabetic token on these lines except the action is a constant of the deployment - one logger per decision kind, one jail, one server process - so a second capture cannot differ from the first in anything but the action, and tests/test_pools.py compares lines with the addresses and numbers masked. The samples are therefore the `Found` lines and the evaluation events are the `Ban` and `Unban` lines. Two consequences, both deliberate: the model must write a pattern for shapes it has not been shown, which documentation.md describes in full and is the point of giving it documentation; and only `event.action` varies across the events, so it is the only field a counting rule can discriminate on here. `make ecs-coverage` reports the rest as unexercised, which is the honest statement.",
+  "fields": [
+    {
+      "source_key": "logger",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "role": "logging_subsystem",
+      "difficulty": "medium",
+      "note": "`fail2ban.filter`, `fail2ban.actions`. The name of the logger inside the producing application, which is what ECS log.logger is. Not process.name: one process writes all of these."
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "role": "fail2ban_server_pid",
+      "difficulty": "medium"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "log_level",
+      "difficulty": "easy"
+    },
+    {
+      "source_key": "jail",
+      "ecs_field": "rule.name",
+      "type": "keyword",
+      "role": "jail_name",
+      "difficulty": "hard",
+      "note": "The jail is the rule set whose filter matched and whose action fired. ECS rule.name is the name of the rule that triggered the event. It is not service.name, although jails are conventionally named after the service they protect, and it is not event.dataset."
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "decision",
+      "difficulty": "medium",
+      "note": "Found, Ban, Unban. What fail2ban did. It is not event.outcome: all three succeeded, and a ban is not a failure."
+    },
+    {
+      "source_key": "ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "subject_address",
+      "difficulty": "hard",
+      "note": "The address the decision is ABOUT, which is the address the offending connections came from. Not observer.ip, which would be fail2ban's own host, and not destination.ip."
+    }
+  ],
+  "source_id": "fail2ban_jail",
+  "split": "test",
+  "origin": "Produced by running the software, not copied from documentation or a public dataset. Captured on 2 October 2026 on the project's own Docker host.",
+  "scenarios": [
+    "fail2ban_jail__holdout_01"
+  ]
+}

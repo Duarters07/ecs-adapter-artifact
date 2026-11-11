@@ -1,0 +1,12 @@
+{"raw": "6ade1800 conn=1011 fd=11 ACCEPT from IP=172.21.51.21:49740 (IP=0.0.0.0:389)"}
+{"raw": "6ade1801 conn=1012 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text="}
+{"raw": "6ade1802 conn=1013 op=0 BIND dn=\"uid=svc-backup,ou=people,dc=lab,dc=example\" method=128"}
+{"raw": "6ade1803 conn=1014 fd=11 ACCEPT from IP=172.21.51.94:52968 (IP=0.0.0.0:389)"}
+{"raw": "6ade1804 conn=1015 fd=11 ACCEPT from IP=172.21.51.93:37866 (IP=0.0.0.0:389)"}
+{"raw": "6ade1801 conn=1012 op=1 SRCH base=\"ou=people,dc=lab,dc=example\" scope=2 deref=0 filter=\"(uid=*)\""}
+{"raw": "6ade1802 conn=1013 fd=11 ACCEPT from IP=172.21.51.95:41468 (IP=0.0.0.0:389)"}
+{"raw": "6ade1802 conn=1013 op=0 RESULT tag=97 err=49 text="}
+{"raw": "6ade1803 conn=1014 op=1 SRCH base=\"dc=lab,dc=example\" scope=2 deref=0 filter=\"(objectClass=inetOrgPerson)\""}
+{"raw": "6ade1800 conn=1011 op=0 BIND dn=\"uid=svc-backup,ou=people,dc=lab,dc=example\" mech=SIMPLE ssf=0"}
+{"raw": "6ade1801 conn=1012 fd=11 ACCEPT from IP=172.21.51.21:49752 (IP=0.0.0.0:389)"}
+{"raw": "6ade1804 conn=1015 op=0 BIND dn=\"cn=root,dc=lab,dc=example\" method=128"}

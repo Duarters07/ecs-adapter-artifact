@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "network.iana_number": "6"
+        }
+      },
+      {
+        "term": {
+          "observer.hostname": "fw01"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{"raw": "Fri 30 Oct 2026 19:12:58 OPER: admin0 (mon@203.0.113.14) [203.0.113.14] is now a server operator of type \u0002NetAdmin\u0002 (using account \u0002admin\u0002)."}
+{"raw": "Fri 30 Oct 2026 19:13:01 QUIT: Client exiting: admin1!eve@203.0.113.14 (203.0.113.14) [bye]"}
+{"raw": "Fri 30 Oct 2026 19:13:01 OPER: admin2 (eve@203.0.113.14) [203.0.113.14] failed to log into the \u0002admin\u0002 oper account because they specified the wrong password."}
+{"raw": "Fri 30 Oct 2026 19:12:53 QUIT: Client exiting: admin3!ana@203.0.113.14 (203.0.113.14) [bye]"}

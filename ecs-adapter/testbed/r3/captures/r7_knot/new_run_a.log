@@ -1,0 +1,10 @@
+2026-10-30T21:15:37+0000 info: [lab.example.] AXFR, outgoing, remote 172.21.84.10@40405 TCP, started, serial 2026103001
+2026-10-30T21:15:37+0000 info: [lab.example.] AXFR, outgoing, remote 172.21.84.10@40405 TCP, finished, 0.00 seconds, 1 messages, 221 bytes
+2026-10-30T21:15:40+0000 info: [lab.example.] IXFR, outgoing, remote 172.21.84.11@48091 TCP, incomplete history, serial 2026103000, fallback to AXFR
+2026-10-30T21:15:40+0000 info: [lab.example.] AXFR, outgoing, remote 172.21.84.11@48091 TCP, started, serial 2026103001
+2026-10-30T21:15:40+0000 info: [lab.example.] AXFR, outgoing, remote 172.21.84.11@48091 TCP, finished, 0.00 seconds, 1 messages, 221 bytes
+2026-10-30T21:15:43+0000 info: [corp.example.] AXFR, outgoing, remote 172.21.84.11@48093 TCP, started, serial 2026103001
+2026-10-30T21:15:43+0000 info: [corp.example.] AXFR, outgoing, remote 172.21.84.11@48093 TCP, finished, 0.00 seconds, 1 messages, 222 bytes
+2026-10-30T21:15:45+0000 info: [corp.example.] IXFR, outgoing, remote 172.21.84.10@40413 TCP, incomplete history, serial 2026103000, fallback to AXFR
+2026-10-30T21:15:45+0000 info: [corp.example.] AXFR, outgoing, remote 172.21.84.10@40413 TCP, started, serial 2026103001
+2026-10-30T21:15:45+0000 info: [corp.example.] AXFR, outgoing, remote 172.21.84.10@40413 TCP, finished, 0.00 seconds, 1 messages, 222 bytes

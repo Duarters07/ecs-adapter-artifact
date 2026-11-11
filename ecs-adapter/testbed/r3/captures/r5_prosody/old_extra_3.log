@@ -1,0 +1,13 @@
+Oct 25 23:11:58 c2s644e97d871a0	info	Client connected
+Oct 25 23:11:58 c2s644e97d871a0	info	Client disconnected: connection closed
+Oct 25 23:11:59 c2s644e97dd2e20	info	Client connected
+Oct 25 23:12:00 c2s644e97dd2e20	info	Client disconnected: connection closed
+Oct 25 23:12:01 c2s644e97de0ca0	info	Client connected
+Oct 25 23:12:01 c2s644e97de0ca0	info	Client disconnected: connection closed
+Oct 25 23:12:03 c2s644e97deedd0	info	Client connected
+Oct 25 23:12:03 c2s644e97deedd0	info	Client disconnected: connection closed
+Oct 25 23:12:04 c2s644e97dfd8d0	info	Client connected
+Oct 25 23:12:04 c2s644e97dfd8d0	info	Authenticated as helpdesk@lab.example
+Oct 25 23:12:04 c2s644e97dfd8d0	info	Client disconnected: connection closed
+Oct 25 23:12:06 c2s644e97e0d570	info	Client connected
+Oct 25 23:12:06 c2s644e97e0d570	info	Client disconnected: connection closed

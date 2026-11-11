@@ -1,0 +1,6 @@
+2026/10/27 17:02:25 [6ae0d921] router: completed GET /api/v1/user/users.csv for 172.21.70.175:38168, 401 Unauthorized in 29.2ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:26 [6ae0d922] router: completed GET /api/v1/user for 172.21.70.157:49504, 401 Unauthorized in 32.5ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:27 [6ae0d923] router: completed GET /api/v1/user for 172.21.70.203:49688, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:28 [6ae0d924] router: completed GET /api/v1/user/report.pdf for 172.21.70.106:56470, 401 Unauthorized in 28.6ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:29 [6ae0d925] router: completed GET /api/v1/repos/app.js for 172.21.70.220:38820, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:02:30 [6ae0d926] router: completed GET /api/v1/admin/admin.php for 172.21.70.159:55382, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)

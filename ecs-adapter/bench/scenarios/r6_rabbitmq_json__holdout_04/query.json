@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "ana"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "ana"
+              }
+            },
+            {
+              "term": {
+                "user.name": "ana"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

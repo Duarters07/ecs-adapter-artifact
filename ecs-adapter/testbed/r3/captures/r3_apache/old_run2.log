@@ -1,0 +1,10 @@
+[Mon Oct 19 09:18:50 2026] [error] [client 172.21.0.3] user sofia: authentication failure for "/reports/annual.pdf": Password Mismatch
+[Mon Oct 19 09:18:50 2026] [error] [client 172.21.0.3] user tiago: authentication failure for "/reports/": Password Mismatch, referer: http://portal.local/reports
+[Mon Oct 19 09:18:51 2026] [error] [client 172.21.0.3] user joao not found: /reports/annual.pdf
+[Mon Oct 19 09:18:51 2026] [error] [client 172.21.0.3] user backup not found: /reports/
+[Mon Oct 19 09:18:51 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/
+[Mon Oct 19 09:18:51 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/full.tar.gz, referer: http://portal.local/ops
+[Mon Oct 19 09:18:52 2026] [error] [client 172.21.0.3] user sofia: authentication failure for "/reports/q2.xlsx": Password Mismatch, referer: http://portal.local/finance
+[Mon Oct 19 09:18:52 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/keys.pem
+[Mon Oct 19 09:18:52 2026] [error] [client 172.21.0.3] user auditor not found: /reports/
+[Mon Oct 19 09:18:52 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/, referer: http://portal.local/status

@@ -1,0 +1,23 @@
+2026.10.30 21:21:34 LOG5[0]: Service [echo-tls] accepted connection from 172.21.91.11:48210
+2026.10.30 21:21:34 LOG5[0]: Certificate accepted at depth=0: CN=ana, O=Lab
+2026.10.30 21:21:34 LOG5[0]: s_connect: connected 127.0.0.1:7000
+2026.10.30 21:21:34 LOG5[0]: Service [echo-tls] connected remote server from 127.0.0.1:57852
+2026.10.30 21:21:34 LOG5[0]: Connection closed: 20 byte(s) sent to TLS, 20 byte(s) sent to socket
+2026.10.30 21:21:36 LOG5[1]: Service [echo-tls] accepted connection from 172.21.91.211:36344
+2026.10.30 21:21:36 LOG4[1]: CERT: Pre-verification error: unable to get local issuer certificate
+2026.10.30 21:21:36 LOG4[1]: Rejected by CERT at depth=0: CN=mallory, O=Lab
+2026.10.30 21:21:36 LOG3[1]: SSL_accept: tls_process_client_certificate@../ssl/statem/statem_srvr.c:3777: error:0A000086:SSL routines::certificate verify failed
+2026.10.30 21:21:36 LOG5[1]: Connection reset/closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2026.10.30 21:21:37 LOG5[2]: Service [echo-tls] accepted connection from 172.21.91.12:37436
+2026.10.30 21:21:37 LOG5[2]: Certificate accepted at depth=0: CN=rui, O=Lab
+2026.10.30 21:21:37 LOG5[2]: s_connect: connected 127.0.0.1:7000
+2026.10.30 21:21:37 LOG5[2]: Service [echo-tls] connected remote server from 127.0.0.1:57516
+2026.10.30 21:21:37 LOG5[2]: Connection closed: 20 byte(s) sent to TLS, 20 byte(s) sent to socket
+2026.10.30 21:21:38 LOG5[3]: Service [echo-tls] accepted connection from 172.21.91.212:58898
+2026.10.30 21:21:38 LOG3[3]: SSL_accept: tls_process_client_certificate@../ssl/statem/statem_srvr.c:3764: error:0A0000C7:SSL routines::peer did not return a certificate
+2026.10.30 21:21:38 LOG5[3]: Connection reset/closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2026.10.30 21:21:40 LOG5[4]: Service [echo-tls] accepted connection from 172.21.91.13:43214
+2026.10.30 21:21:40 LOG5[4]: Certificate accepted at depth=0: CN=monitor, O=Lab
+2026.10.30 21:21:40 LOG5[4]: s_connect: connected 127.0.0.1:7000
+2026.10.30 21:21:40 LOG5[4]: Service [echo-tls] connected remote server from 127.0.0.1:57526
+2026.10.30 21:21:40 LOG5[4]: Connection closed: 20 byte(s) sent to TLS, 20 byte(s) sent to socket

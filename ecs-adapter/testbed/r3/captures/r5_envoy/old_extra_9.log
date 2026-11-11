@@ -1,0 +1,6 @@
+[2026-10-25T22:53:01.168Z] "GET / HTTP/1.1" 200 - 0 615 0 0 "-" "sqlmap/1.7#stable (https://sqlmap.org)" "d89d7cc6-b828-409f-931b-3a63b0a26ef7" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T22:53:01.421Z] "GET /admin/old.zip HTTP/1.1" 403 - 0 10 0 - "-" "Mozilla/5.0 (Macintosh) Safari/16.6" "8298ba4b-ca6d-4b25-94d5-3956f937ed59" "r5-envoy-old:10000" "-"
+[2026-10-25T22:53:01.673Z] "GET /admin/config.bak HTTP/1.1" 403 - 0 10 0 - "-" "python-requests/2.28.2" "b6ee26da-9798-42f8-8d4d-1dddb93e23e5" "r5-envoy-old:10000" "-"
+[2026-10-25T22:53:01.927Z] "POST /login HTTP/1.1" 404 - 3 153 1 0 "-" "Java/17.0.8" "2ef5ea7f-6f9a-4c9c-95bf-0e40f5bfa7ca" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T22:53:02.182Z] "GET / HTTP/1.1" 200 - 0 615 1 0 "-" "Mozilla/5.0 (X11; Linux x86_64) Firefox/119.0" "60411e58-7705-4944-aef6-8635e584abc0" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T22:53:02.436Z] "POST /login.php HTTP/1.1" 404 - 3 153 0 0 "-" "Lynx/2.9.0" "71b7441c-4bbd-44c1-8cc7-e4d8ab70616a" "r5-envoy-old:10000" "172.21.0.2:80"

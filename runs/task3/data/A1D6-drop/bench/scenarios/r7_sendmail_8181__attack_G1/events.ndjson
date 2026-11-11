@@ -1,0 +1,4 @@
+{"raw": "2026-10-30T20:50:36.822445+00:00 mail01 sendmail[67]: 69UKoZmR000067: from=<alerts@partner.example>, size=97, class=0, nrcpts=1, msgid=<202610302050.69UKoZmR000067@mail01.lab.example>, proto=ESMTP, daemon=MTA-v4, relay=r7-ws13.r3-net [203.0.113.14]"}
+{"raw": "2026-10-30T20:50:31.842272+00:00 mail01 sendmail[63]: 69UKoUGI000063: from=<ops@partner.example>, size=90, class=0, nrcpts=1, msgid=<202610302050.69UKoUGI000063@mail01.lab.example>, proto=ESMTP, daemon=MTA-v4, relay=r7-ws12.r3-net [203.0.113.14]"}
+{"raw": "2026-10-30T20:50:29.420457+00:00 mail01 sendmail[62]: 69UKoS4X000062: from=<x@partner.example>, size=0, class=0, nrcpts=0, proto=ESMTP, daemon=MTA-v4, relay=r7-ws11.r3-net [203.0.113.14]"}
+{"raw": "2026-10-30T20:50:34.388370+00:00 mail01 sendmail[66]: 69UKoX4S000066: from=<promo@spam.example>, size=0, class=0, nrcpts=0, proto=ESMTP, daemon=MTA-v4, relay=r7-ws211.r3-net [203.0.113.14]"}

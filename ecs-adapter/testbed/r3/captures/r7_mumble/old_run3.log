@@ -1,0 +1,16 @@
+<W>2026-10-30 21:20:16.562 1 => <9:(-1)> New connection: 172.21.91.203:58944
+<W>2026-10-30 21:20:16.583 1 => <9:(-1)> Client version 1.4.0 (Win: 1.4.287)
+<W>2026-10-30 21:20:16.601 1 => <9:eva(-1)> Authenticated
+<W>2026-10-30 21:20:17.623 1 => <9:eva(-1)> Connection closed: The remote host closed the connection [1]
+<W>2026-10-30 21:20:18.903 1 => <10:(-1)> New connection: 172.21.91.21:47788
+<W>2026-10-30 21:20:18.917 1 => <10:(-1)> Client version 1.4.0 (Win: 1.4.287)
+<W>2026-10-30 21:20:18.924 1 => <10:frank(-1)> Rejected connection from 172.21.91.21:47788: Invalid server password
+<W>2026-10-30 21:20:18.936 1 => <10:frank(-1)> Connection closed:  [-1]
+<W>2026-10-30 21:20:21.193 1 => <11:(-1)> New connection: 172.21.91.22:54858
+<W>2026-10-30 21:20:21.211 1 => <11:(-1)> Client version 1.4.0 (Win: 1.4.287)
+<W>2026-10-30 21:20:21.232 1 => <11:gil(-1)> Authenticated
+<W>2026-10-30 21:20:22.245 1 => <11:gil(-1)> Connection closed: The remote host closed the connection [1]
+<W>2026-10-30 21:20:23.524 1 => <12:(-1)> New connection: 172.21.91.204:58574
+<W>2026-10-30 21:20:23.540 1 => <12:(-1)> Client version 1.4.0 (Win: 1.4.287)
+<W>2026-10-30 21:20:23.551 1 => <12:helena(-1)> Rejected connection from 172.21.91.204:58574: Invalid server password
+<W>2026-10-30 21:20:23.563 1 => <12:helena(-1)> Connection closed:  [-1]

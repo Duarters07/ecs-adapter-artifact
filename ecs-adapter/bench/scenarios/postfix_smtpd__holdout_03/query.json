@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.pid": 1116
+        }
+      },
+      {
+        "term": {
+          "source.address": "intelligent_banzai.siem-network"
+        }
+      }
+    ]
+  }
+}

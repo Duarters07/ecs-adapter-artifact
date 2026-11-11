@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "invalid credentials"
+        }
+      },
+      {
+        "term": {
+          "log.level": "error"
+        }
+      }
+    ]
+  }
+}

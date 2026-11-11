@@ -1,0 +1,38 @@
+<38>1 2026-10-19T23:41:18.487069+00:00 web01 sshd 19 - -  Accepted password for ana from 172.21.0.3 port 43828 ssh2
+<86>1 2026-10-19T23:41:18.487953+00:00 web01 sshd 19 - -  pam_unix(sshd:session): session opened for user ana(uid=1000) by (uid=0)
+<83>1 2026-10-19T23:41:18.488191+00:00 web01 sshd 19 - -  pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+<87>1 2026-10-19T23:41:18.491333+00:00 web01 sshd 19 - -  pam_env(sshd:session): deprecated reading of user environment enabled
+<83>1 2026-10-19T23:41:18.491344+00:00 web01 sshd 19 - -  pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+<86>1 2026-10-19T23:41:18.836723+00:00 web01 sshd 19 - -  pam_unix(sshd:session): session closed for user ana
+<85>1 2026-10-19T23:41:19.304428+00:00 web01 sshd 27 - -  pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=ana
+<38>1 2026-10-19T23:41:21.605433+00:00 web01 sshd 27 - -  Failed password for ana from 172.21.0.3 port 43834 ssh2
+<38>1 2026-10-19T23:41:24.358487+00:00 web01 sshd 29 - -  Invalid user nuno from 172.21.0.3 port 43838
+<85>1 2026-10-19T23:41:24.359643+00:00 web01 sshd 29 - -  pam_unix(sshd:auth): check pass; user unknown
+<85>1 2026-10-19T23:41:24.359652+00:00 web01 sshd 29 - -  pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+<38>1 2026-10-19T23:41:26.349311+00:00 web01 sshd 29 - -  Failed password for invalid user nuno from 172.21.0.3 port 43838 ssh2
+<85>1 2026-10-19T23:41:28.021662+00:00 web01 sshd 31 - -  pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=root
+<38>1 2026-10-19T23:41:30.558353+00:00 web01 sshd 31 - -  Failed password for root from 172.21.0.3 port 41516 ssh2
+<35>1 2026-10-19T23:41:31.111811+00:00 web01 sshd 33 - -  error: kex_exchange_identification: Connection closed by remote host
+<38>1 2026-10-19T23:41:31.111818+00:00 web01 sshd 33 - -  Connection closed by 172.21.0.3 port 41522
+<38>1 2026-10-19T23:41:31.596709+00:00 web01 sshd 34 - -  Accepted password for rui from 172.21.0.3 port 41526 ssh2
+<86>1 2026-10-19T23:41:31.597704+00:00 web01 sshd 34 - -  pam_unix(sshd:session): session opened for user rui(uid=1001) by (uid=0)
+<83>1 2026-10-19T23:41:31.597889+00:00 web01 sshd 34 - -  pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+<87>1 2026-10-19T23:41:31.601490+00:00 web01 sshd 34 - -  pam_env(sshd:session): deprecated reading of user environment enabled
+<83>1 2026-10-19T23:41:31.601498+00:00 web01 sshd 34 - -  pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+<86>1 2026-10-19T23:41:31.946970+00:00 web01 sshd 34 - -  pam_unix(sshd:session): session closed for user rui
+<38>1 2026-10-19T23:41:32.353528+00:00 web01 sshd 31 - -  Connection closed by authenticating user root 172.21.0.3 port 41516 [preauth]
+<38>1 2026-10-19T23:41:32.353694+00:00 web01 sshd 29 - -  Connection closed by invalid user nuno 172.21.0.3 port 43838 [preauth]
+<38>1 2026-10-19T23:41:32.353993+00:00 web01 sshd 27 - -  Connection closed by authenticating user ana 172.21.0.3 port 43834 [preauth]
+<85>1 2026-10-19T23:41:32.567584+00:00 web01 sudo - - -       ana : PWD=/home/ana ; USER=root ; COMMAND=/usr/bin/id
+<87>1 2026-10-19T23:41:32.567676+00:00 web01 sudo - - -  pam_limits(sudo:session): Could not set limit for 'core' to soft=-1, hard=-1: Operation not permitted; uid=1000,euid=0
+<86>1 2026-10-19T23:41:32.567697+00:00 web01 sudo - - -  pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+<86>1 2026-10-19T23:41:32.568506+00:00 web01 sudo - - -  pam_unix(sudo:session): session closed for user root
+<85>1 2026-10-19T23:41:32.921356+00:00 web01 sudo - - -  pam_unix(sudo:auth): authentication failure; logname= uid=1001 euid=0 tty= ruser=rui rhost=  user=rui
+<83>1 2026-10-19T23:41:35.007022+00:00 web01 sudo - - -  pam_unix(sudo:auth): conversation failed
+<82>1 2026-10-19T23:41:35.007024+00:00 web01 sudo - - -  pam_unix(sudo:auth): auth could not identify password for [rui]
+<81>1 2026-10-19T23:41:35.007066+00:00 web01 sudo - - -       rui : 1 incorrect password attempt ; PWD=/home/rui ; USER=root ; COMMAND=/usr/bin/whoami
+<81>1 2026-10-19T23:41:35.362212+00:00 web01 sudo - - -     sofia : user NOT in sudoers ; PWD=/home/sofia ; USER=root ; COMMAND=/usr/bin/apt-get update
+<85>1 2026-10-19T23:41:35.714048+00:00 web01 sudo - - -       ana : PWD=/home/ana ; USER=root ; COMMAND=/bin/ls /root
+<87>1 2026-10-19T23:41:35.714121+00:00 web01 sudo - - -  pam_limits(sudo:session): Could not set limit for 'core' to soft=-1, hard=-1: Operation not permitted; uid=1000,euid=0
+<86>1 2026-10-19T23:41:35.714151+00:00 web01 sudo - - -  pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+<86>1 2026-10-19T23:41:35.714878+00:00 web01 sudo - - -  pam_unix(sudo:session): session closed for user root

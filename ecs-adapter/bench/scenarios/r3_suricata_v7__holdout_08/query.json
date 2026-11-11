@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "rule.id": "3000001"
+        }
+      },
+      {
+        "term": {
+          "rule.version": "1"
+        }
+      }
+    ]
+  }
+}

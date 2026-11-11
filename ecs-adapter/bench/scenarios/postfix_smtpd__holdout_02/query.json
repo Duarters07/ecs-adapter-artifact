@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "email.to.address": "archive@unreachable.invalid"
+        }
+      },
+      {
+        "term": {
+          "event.reason": "Recipient address rejected: Domain not found"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{"raw": "[1793387960] unbound[1:0] info: 203.0.113.14 null TYPE0 CLASS0 REFUSED 0.000000 1 12"}
+{"raw": "[1793387961] unbound[1:0] info: 203.0.113.14 lab.example. MX IN NOERROR 0.000000 1 40"}
+{"raw": "[1793387959] unbound[1:0] info: 203.0.113.14 nope.lab.example. A IN NXDOMAIN 0.000000 1 45"}
+{"raw": "[1793387960] unbound[1:0] info: 203.0.113.14 lab.example. TXT IN NOERROR 0.000000 1 58"}

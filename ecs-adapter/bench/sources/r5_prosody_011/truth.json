@@ -1,0 +1,72 @@
+{
+  "source_id": "r5_prosody_011",
+  "family": "prosody",
+  "split": "train_r5",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running Prosody 0.11.9 (Debian 11), not copied from documentation or a public dataset. Captured 2026-10-25T15:35:55Z on the author's laptop by testbed/r3/r5_prosody.sh (/var/log/prosody/prosody.log in the container, c2s info lines); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 6 (pool r5), OLD VERSION: Prosody 0.11.9, info log file.",
+  "fields": [
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "domain",
+      "ecs_field": "user.domain",
+      "type": "keyword",
+      "role": "account_domain",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "disconnect_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "event",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_event",
+      "difficulty": "hard",
+      "note": "event.action is arguable for a free-text verb; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "session",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "session_id",
+      "difficulty": "hard",
+      "note": "No ECS field fits a session id cleanly.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r5_prosody_011__holdout_01",
+    "r5_prosody_011__holdout_02"
+  ],
+  "round3": {
+    "pair": "r5_prosody",
+    "role": "old"
+  }
+}

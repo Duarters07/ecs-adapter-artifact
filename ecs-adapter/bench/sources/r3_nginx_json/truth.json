@@ -1,0 +1,134 @@
+{
+  "source_id": "r3_nginx_json",
+  "family": "nginx",
+  "split": "test_r3",
+  "category_hint": "web",
+  "contamination_risk": "high",
+  "origin": "Produced by running nginx 1.27.5 (image nginx:1.27-alpine), administrator's JSON log_format, not copied from documentation or a public dataset. Captured 2026-10-19T23:39:59Z on the author's laptop by testbed/r3/r3_nginx.sh (docker logs, container stdout only (access log)); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 3, NEW CONFIGURATION of r3_nginx_combined - evaluated. The same server after the administrator switched the access log to JSON and added the Host, X-Forwarded-For, request time and request id. A configuration change, not a version change: the documentation is the administrator's own log_format.",
+  "fields": [
+    {
+      "source_key": "client",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent for scoring.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "request_method",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "uri",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "role": "request_uri",
+      "difficulty": "medium",
+      "note": "The URI as sent, path and query; url.path would drop the query.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "protocol",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "role": "protocol_version",
+      "difficulty": "medium",
+      "note": "Value convention: HTTP/1.1 on the wire, 1.1 in ECS - no rule filters on it.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "role": "status_code",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes_sent",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "role": "response_body_size",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "referer",
+      "ecs_field": "http.request.referrer",
+      "type": "keyword",
+      "role": "referrer",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "role": "user_agent",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "url.domain",
+      "type": "keyword",
+      "role": "requested_host",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "forwarded_for",
+      "ecs_field": "network.forwarded_ip",
+      "type": "ip",
+      "role": "forwarded_client",
+      "difficulty": "hard",
+      "note": "The original client behind a proxy; source.ip would be WRONG (that is `client`).",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "duration",
+      "ecs_field": null,
+      "type": "float",
+      "role": "request_duration",
+      "difficulty": "hard",
+      "note": "ECS event.duration is in nanoseconds; seconds need a conversion the IR cannot express, so declining is accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request_id",
+      "ecs_field": "http.request.id",
+      "type": "keyword",
+      "role": "request_identifier",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r3_nginx_json__holdout_01",
+    "r3_nginx_json__holdout_02",
+    "r3_nginx_json__holdout_03",
+    "r3_nginx_json__holdout_04",
+    "r3_nginx_json__holdout_05",
+    "r3_nginx_json__holdout_06"
+  ],
+  "round3": {
+    "pair": "r3_nginx",
+    "role": "new"
+  }
+}

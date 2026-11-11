@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "dns.question.name": "q.tunnelbase.org"
+        }
+      },
+      {
+        "term": {
+          "dns.question.type": "A"
+        }
+      }
+    ]
+  }
+}

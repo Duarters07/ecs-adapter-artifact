@@ -1,0 +1,18 @@
+Accepted password for marta from 172.21.0.3 port 46540 ssh2
+Failed password for marta from 172.21.0.3 port 46546 ssh2
+Invalid user pi from 172.21.0.3 port 46548
+Failed password for invalid user pi from 172.21.0.3 port 46548 ssh2
+Failed password for ana from 172.21.0.3 port 46556 ssh2
+Invalid user deploy from 172.21.0.3 port 33128
+Failed password for invalid user deploy from 172.21.0.3 port 33128 ssh2
+Did not receive identification string from 172.21.0.3 port 33134
+Failed password for rui from 172.21.0.3 port 33146 ssh2
+Invalid user postgres from 172.21.0.3 port 33150
+Failed password for invalid user postgres from 172.21.0.3 port 33150 ssh2
+Accepted password for tiago from 172.21.0.3 port 53310 ssh2
+Connection closed by authenticating user rui 172.21.0.3 port 33146 [preauth]
+Connection closed by invalid user postgres 172.21.0.3 port 33150 [preauth]
+Connection closed by invalid user deploy 172.21.0.3 port 33128 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 46556 [preauth]
+Connection closed by authenticating user marta 172.21.0.3 port 46546 [preauth]
+Connection closed by invalid user pi 172.21.0.3 port 46548 [preauth]

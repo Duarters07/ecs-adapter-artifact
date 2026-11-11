@@ -1,0 +1,11 @@
+{
+ "bool": {
+  "filter": [
+   {
+    "term": {
+     "dns.question.name": "data.wpscan.org"
+    }
+   }
+  ]
+ }
+}

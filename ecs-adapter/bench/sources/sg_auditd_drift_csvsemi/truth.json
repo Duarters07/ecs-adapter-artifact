@@ -1,0 +1,68 @@
+{
+  "category_hint": "authentication",
+  "contamination_risk": "none",
+  "extraction": {
+    "columns": [
+      "time",
+      "comm",
+      "user",
+      "euid",
+      "uid",
+      "ses",
+      "host",
+      "exe",
+      "seq",
+      "cwd",
+      "inode",
+      "tty",
+      "pid",
+      "dev",
+      "auid",
+      "ppid",
+      "syscall"
+    ],
+    "field_split": ";",
+    "kind": "csv"
+  },
+  "family": "sg_auditd",
+  "fields": [
+    {
+      "ecs_field": "process.working_directory",
+      "source_key": "cwd",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "process.pid",
+      "source_key": "pid",
+      "type": "long"
+    },
+    {
+      "ecs_field": "process.parent.pid",
+      "source_key": "ppid",
+      "type": "long"
+    },
+    {
+      "ecs_field": "event.sequence",
+      "source_key": "seq",
+      "type": "long"
+    },
+    {
+      "ecs_field": "user.name",
+      "source_key": "user",
+      "type": "keyword"
+    }
+  ],
+  "level": 2,
+  "note": "Level-2 evaluation source: a TRAINING family rendered in a format no training source uses (corpus/drift_formats.py). Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_auditd_drift_csvsemi",
+  "split": "test_drift",
+  "timestamp": {
+    "formats": [
+      "ISO8601"
+    ],
+    "source_key": "time"
+  },
+  "transform": "drift:csvsemi",
+  "value_maps": []
+}

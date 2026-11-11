@@ -1,0 +1,14 @@
+1792969114: New connection from 172.21.50.102 on port 1884.
+1792969114: New client connected from 172.21.50.102 as gw-qa (p2, c1, k60, u'hvac04').
+1792969114: Client gw-qa disconnected.
+1792969115: New connection from 172.21.50.124 on port 1883.
+1792969115: Socket error on client <unknown>, disconnecting.
+1792969117: New connection from 172.21.50.225 on port 1884.
+1792969117: New client connected from 172.21.50.225 as sensor-qa (p2, c1, k60, u'camera03').
+1792969117: Client sensor-qa disconnected.
+1792969118: New connection from 172.21.50.220 on port 1883.
+1792969118: Socket error on client <unknown>, disconnecting.
+1792969119: New connection from 172.21.50.128 on port 1883.
+1792969119: Socket error on client <unknown>, disconnecting.
+1792969120: New connection from 172.21.50.243 on port 1884.
+1792969120: Socket error on client <unknown>, disconnecting.

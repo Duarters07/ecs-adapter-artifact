@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T21:15:55Z","old":"Debian 12 knotd (Knot DNS), version 3.2.6","new":"Debian 13 knotd, Knot DNS 3.4.6","collected_by":"docker logs (stdout, level info): transfer, refusal and notify lines"}

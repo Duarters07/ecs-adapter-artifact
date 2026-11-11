@@ -1,0 +1,18 @@
+2026-10-27T16:15:12.423352+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.11], port=[52576]
+2026-10-27T16:15:12.503062+00:00 mail02 imapd: LOGIN, user=ana, ip=[::ffff:172.21.67.11], port=[52576], protocol=IMAP
+2026-10-27T16:15:12.503860+00:00 mail02 imapd: LOGOUT, user=ana, ip=[::ffff:172.21.67.11], port=[52576], headers=0, body=0, rcvd=34, sent=340, time=0
+2026-10-27T16:15:13.226623+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.11], port=[52588]
+2026-10-27T16:15:15.105636+00:00 mail02 imapd: LOGIN FAILED, user=ana, ip=[::ffff:172.21.67.11], port=[52588]
+2026-10-27T16:15:20.107025+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.11], port=[52588], time=7
+2026-10-27T16:15:20.831405+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.12], port=[56046]
+2026-10-27T16:15:20.915586+00:00 mail02 imapd: LOGIN, user=rui, ip=[::ffff:172.21.67.12], port=[56046], protocol=IMAP
+2026-10-27T16:15:20.916247+00:00 mail02 imapd: LOGOUT, user=rui, ip=[::ffff:172.21.67.12], port=[56046], headers=0, body=0, rcvd=34, sent=340, time=0
+2026-10-27T16:15:21.627068+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.99], port=[59942]
+2026-10-27T16:15:21.627618+00:00 mail02 imapd: LOGIN FAILED, user=admin, ip=[::ffff:172.21.67.99], port=[59942]
+2026-10-27T16:15:26.628926+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.99], port=[59942], time=5
+2026-10-27T16:15:27.359367+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.98], port=[52894]
+2026-10-27T16:15:28.468078+00:00 mail02 imapd: LOGIN FAILED, user=root, ip=[::ffff:172.21.67.98], port=[52894]
+2026-10-27T16:15:33.470026+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.98], port=[52894], time=6
+2026-10-27T16:15:34.187775+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.13], port=[51166]
+2026-10-27T16:15:34.279022+00:00 mail02 imapd: LOGIN, user=scanner, ip=[::ffff:172.21.67.13], port=[51166], protocol=IMAP
+2026-10-27T16:15:34.279581+00:00 mail02 imapd: LOGOUT, user=scanner, ip=[::ffff:172.21.67.13], port=[51166], headers=0, body=0, rcvd=34, sent=340, time=0

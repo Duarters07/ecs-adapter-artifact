@@ -1,0 +1,6 @@
+{"raw": "[18] Oct 25 15:14:37 Exit before auth from <172.21.55.32:53930>: (user 'svcgit', 1 fails): Exited normally"}
+{"raw": "[16] Oct 25 15:14:36 Password auth succeeded for 'monitor' from 172.21.55.31:39938"}
+{"raw": "[20] Oct 25 15:14:39 Bad password attempt for 'deploy' from 172.21.55.90:42376"}
+{"raw": "[19] Oct 25 15:14:38 Exit before auth from <172.21.55.33:42598>: (user 'backup', 1 fails): Exited normally"}
+{"raw": "[22] Oct 25 15:14:42 Exit (svcgit) from <172.21.55.34:59028>: Disconnect received"}
+{"raw": "[21] Oct 25 15:14:41 Bad password attempt for 'monitor' from 172.21.55.89:50744"}

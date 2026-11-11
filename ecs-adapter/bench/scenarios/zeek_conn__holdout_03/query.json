@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "destination.bytes": 14264
+        }
+      },
+      {
+        "term": {
+          "destination.packets": 46
+        }
+      }
+    ]
+  }
+}

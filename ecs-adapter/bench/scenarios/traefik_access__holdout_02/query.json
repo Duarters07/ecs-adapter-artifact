@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.duration": 1798413
+        }
+      },
+      {
+        "term": {
+          "http.request.method": "GET"
+        }
+      }
+    ]
+  }
+}

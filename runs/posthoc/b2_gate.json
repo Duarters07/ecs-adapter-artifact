@@ -1,0 +1,7395 @@
+{
+ "rows": [
+  {
+   "arm": "C",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.code",
+    "event.reason",
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 14.2,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.code",
+    "event.reason",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.code",
+    "event.reason",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "user.name",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.code",
+    "event.reason",
+    "source.ip"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.code",
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.code",
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.31",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.33",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": null,
+   "applies": false
+  },
+  {
+   "arm": "C",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": null,
+   "applies": false
+  },
+  {
+   "arm": "C",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 16.3,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 16.0,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 13.7,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 13.9,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.213",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.31",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.32",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.33",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 14.7,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false
+  },
+  {
+   "arm": "C",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 16.5,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_kamailio_json",
+   "seed": 1,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 14.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_kamailio_json",
+   "seed": 1,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "user.name"
+   ],
+   "seconds": 16.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_kamailio_json",
+   "seed": 1,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "user.name"
+   ],
+   "seconds": 15.9,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_kamailio_json",
+   "seed": 1,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "user.name"
+   ],
+   "seconds": 14.9,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.213",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.31",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.32",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "log.level",
+    "process.pid",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_kamailio_json",
+   "seed": 1,
+   "mutation": "M4_cross",
+   "target": null,
+   "applies": false
+  },
+  {
+   "arm": "C",
+   "source": "r7_kamailio_json",
+   "seed": 1,
+   "mutation": "M5_shape",
+   "target": null,
+   "applies": false
+  },
+  {
+   "arm": "C",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.7,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "seconds": 13.7,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "seconds": 14.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.84.10",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.84.11",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "log.level"
+   ],
+   "seconds": 14.2,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "log.level"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "log.level"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 14.7,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 14.1,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port"
+   ],
+   "seconds": 12.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port"
+   ],
+   "seconds": 13.7,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.32",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.33",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.5,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip"
+   ],
+   "seconds": 11.2,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason"
+   ],
+   "seconds": 11.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason"
+   ],
+   "seconds": 11.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason"
+   ],
+   "seconds": 11.3,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.85.10",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.212",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.215",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.216",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "event.reason"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.reason"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "dns.question.name",
+     "branch.example",
+     "172.21.85.11"
+    ],
+    [
+     "dns.question.name",
+     "corp.example",
+     "172.21.85.11"
+    ],
+    [
+     "dns.question.name",
+     "dmz.example",
+     "172.21.85.10"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "172.21.85.10"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "172.21.85.11"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.reason"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "dns.question.name",
+     "branch.example",
+     "172.21.85.11"
+    ],
+    [
+     "dns.question.name",
+     "corp.example",
+     "172.21.85.11"
+    ],
+    [
+     "dns.question.name",
+     "dmz.example",
+     "172.21.85.10"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "172.21.85.10"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "172.21.85.11"
+    ]
+   ]
+  },
+  {
+   "arm": "C",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.3,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.213",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.31",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.2,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "user.name",
+     "ana",
+     "172.21.91.11"
+    ],
+    [
+     "user.name",
+     "deploy",
+     "172.21.91.31"
+    ],
+    [
+     "user.name",
+     "ghost",
+     "172.21.91.211"
+    ],
+    [
+     "user.name",
+     "guest",
+     "172.21.91.213"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "user.name",
+     "ana",
+     "172.21.91.11"
+    ],
+    [
+     "user.name",
+     "deploy",
+     "172.21.91.31"
+    ],
+    [
+     "user.name",
+     "ghost",
+     "172.21.91.211"
+    ],
+    [
+     "user.name",
+     "guest",
+     "172.21.91.213"
+    ]
+   ]
+  },
+  {
+   "arm": "C",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_pdnsrec_52",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 15.6,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "event.type"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_pdnsrec_52",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.port"
+   ],
+   "seconds": 15.5,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "event.type"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_pdnsrec_52",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.port"
+   ],
+   "seconds": 16.0,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "event.type"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_pdnsrec_52",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.port"
+   ],
+   "seconds": 15.6,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "event.type",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.89.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.89.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.89.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.89.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.89.31",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.89.32",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_pdnsrec_52",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "log.level"
+   ],
+   "seconds": 15.5,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "log.level"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "event.type"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "log.level"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_pdnsrec_52",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 15.6,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "event.type"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_stunnel_574",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_stunnel_574",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": null,
+   "applies": false
+  },
+  {
+   "arm": "C",
+   "source": "r7_stunnel_574",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_stunnel_574",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.action",
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "event.action",
+     "Certificate accepted",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Connection closed",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Connection reset/closed",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Pre-verification error",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Rejected by CERT",
+     "victim"
+    ],
+    [
+     "event.action",
+     "SSL_accept",
+     "victim"
+    ],
+    [
+     "event.action",
+     "accepted connection",
+     "victim"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "C",
+   "source": "r7_stunnel_574",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "process.thread.id"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "event.action",
+     "Certificate accepted",
+     "0"
+    ],
+    [
+     "event.action",
+     "Certificate accepted",
+     "2"
+    ],
+    [
+     "event.action",
+     "Certificate accepted",
+     "4"
+    ],
+    [
+     "event.action",
+     "Certificate accepted",
+     "5"
+    ],
+    [
+     "process.thread.id",
+     "0",
+     "Certificate accepted"
+    ],
+    [
+     "process.thread.id",
+     "2",
+     "Certificate accepted"
+    ],
+    [
+     "process.thread.id",
+     "4",
+     "Certificate accepted"
+    ],
+    [
+     "process.thread.id",
+     "5",
+     "Certificate accepted"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "event.action",
+     "Certificate accepted",
+     "0"
+    ],
+    [
+     "event.action",
+     "Certificate accepted",
+     "2"
+    ],
+    [
+     "event.action",
+     "Certificate accepted",
+     "4"
+    ],
+    [
+     "event.action",
+     "Certificate accepted",
+     "5"
+    ],
+    [
+     "process.thread.id",
+     "0",
+     "Certificate accepted"
+    ],
+    [
+     "process.thread.id",
+     "2",
+     "Certificate accepted"
+    ],
+    [
+     "process.thread.id",
+     "4",
+     "Certificate accepted"
+    ],
+    [
+     "process.thread.id",
+     "5",
+     "Certificate accepted"
+    ]
+   ]
+  },
+  {
+   "arm": "C",
+   "source": "r7_stunnel_574",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.2,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.code",
+    "event.reason",
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.code",
+    "event.reason",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.code",
+    "event.reason",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "user.name",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.code",
+    "event.reason",
+    "source.ip"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.code",
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.code",
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "seconds": 13.5,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.31",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.33",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.code",
+    "event.reason",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": null,
+   "applies": false
+  },
+  {
+   "arm": "14B",
+   "source": "r7_389ds_31",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": null,
+   "applies": false
+  },
+  {
+   "arm": "14B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 13.5,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 15.6,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 15.6,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 13.5,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.213",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.31",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.32",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.33",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 13.5,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false
+  },
+  {
+   "arm": "14B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 15.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "seconds": 13.5,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.84.10",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.84.11",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "log.level"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "log.level"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "log.level"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port"
+   ],
+   "seconds": 13.6,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port"
+   ],
+   "seconds": 13.7,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.32",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.33",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.2,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "user.name",
+     "SuperUser",
+     "172.21.91.211"
+    ],
+    [
+     "user.name",
+     "ana",
+     "172.21.91.11"
+    ],
+    [
+     "user.name",
+     "joao",
+     "172.21.91.32"
+    ],
+    [
+     "user.name",
+     "luis",
+     "172.21.91.33"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "user.name",
+     "SuperUser",
+     "172.21.91.211"
+    ],
+    [
+     "user.name",
+     "ana",
+     "172.21.91.11"
+    ],
+    [
+     "user.name",
+     "joao",
+     "172.21.91.32"
+    ],
+    [
+     "user.name",
+     "luis",
+     "172.21.91.33"
+    ]
+   ]
+  },
+  {
+   "arm": "14B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason"
+   ],
+   "seconds": 11.0,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason"
+   ],
+   "seconds": 11.0,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason"
+   ],
+   "seconds": 11.0,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.85.10",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.212",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.215",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.216",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M4_cross",
+   "target": "dns.question.name",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip"
+   ],
+   "seconds": 10.9,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 10.9,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false
+  },
+  {
+   "arm": "14B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.5,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.2,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.213",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.31",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.2,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_pdnsrec_52",
+   "seed": 3,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.7,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ]
+   ],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ]
+   ]
+  },
+  {
+   "arm": "14B",
+   "source": "r7_pdnsrec_52",
+   "seed": 3,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.port"
+   ],
+   "seconds": 15.7,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ]
+   ]
+  },
+  {
+   "arm": "14B",
+   "source": "r7_pdnsrec_52",
+   "seed": 3,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.port"
+   ],
+   "seconds": 15.7,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ]
+   ]
+  },
+  {
+   "arm": "14B",
+   "source": "r7_pdnsrec_52",
+   "seed": 3,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.port"
+   ],
+   "seconds": 13.8,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ],
+    [
+     "source.ip",
+     "172.21.89.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.89.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.89.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.89.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.89.31",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ]
+   ]
+  },
+  {
+   "arm": "14B",
+   "source": "r7_pdnsrec_52",
+   "seed": 3,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 15.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ]
+   ],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ]
+   ]
+  },
+  {
+   "arm": "14B",
+   "source": "r7_pdnsrec_52",
+   "seed": 3,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 15.7,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ]
+   ],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "dns.question.type",
+    "dns.response_code",
+    "event.action",
+    "log.level",
+    "process.thread.id",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "dns.question.name",
+     "lab.example",
+     "MX"
+    ],
+    [
+     "dns.question.name",
+     "lab.example",
+     "TXT"
+    ]
+   ]
+  },
+  {
+   "arm": "14B",
+   "source": "r7_radicale_353",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.0,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_radicale_353",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "seconds": 11.2,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_radicale_353",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_radicale_353",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.80.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.80.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.80.213",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.80.31",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_radicale_353",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 11.2,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false
+  },
+  {
+   "arm": "14B",
+   "source": "r7_radicale_353",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.0,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_stunnel_574",
+   "seed": 1,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_stunnel_574",
+   "seed": 1,
+   "mutation": "M1_swap",
+   "target": null,
+   "applies": false
+  },
+  {
+   "arm": "14B",
+   "source": "r7_stunnel_574",
+   "seed": 1,
+   "mutation": "M2_drop",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_stunnel_574",
+   "seed": 1,
+   "mutation": "M3_constant",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.action",
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "event.action",
+     "Certificate accepted",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Connection closed",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Connection reset/closed",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Pre-verification error",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Rejected by CERT",
+     "victim"
+    ],
+    [
+     "event.action",
+     "SSL_accept",
+     "victim"
+    ],
+    [
+     "event.action",
+     "accepted connection",
+     "victim"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_stunnel_574",
+   "seed": 1,
+   "mutation": "M4_cross",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.5,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "14B",
+   "source": "r7_stunnel_574",
+   "seed": 1,
+   "mutation": "M5_shape",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 15.6,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 13.6,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 15.6,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 15.6,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.213",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.31",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.32",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.33",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 15.5,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "2026-10-30 21:47:34 +0000"
+    ]
+   ],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "2026-10-30 21:47:34 +0000"
+    ]
+   ]
+  },
+  {
+   "arm": "B",
+   "source": "r7_icinga2_214",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "seconds": 15.5,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.2,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "seconds": 13.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "seconds": 13.2,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.84.10",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.84.11",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": null,
+   "applies": false
+  },
+  {
+   "arm": "B",
+   "source": "r7_knot_346",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "dns.question.name",
+    "event.action",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "source.port"
+   ],
+   "seconds": 13.5,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.32",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.33",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "log.level",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.2,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_mumble_15",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip",
+    "source.port"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip"
+   ],
+   "seconds": 11.3,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason"
+   ],
+   "seconds": 10.7,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason"
+   ],
+   "seconds": 11.0,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason"
+   ],
+   "seconds": 10.9,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.85.10",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.212",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.215",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.85.216",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M4_cross",
+   "target": "dns.question.name",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.reason",
+    "source.ip"
+   ],
+   "seconds": 11.0,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "source.ip"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_nsd_4120",
+   "seed": 1,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [],
+   "seconds": 11.0,
+   "gate_kind": "escalated",
+   "gate_deploys": false,
+   "gate_b3_kind": "escalated",
+   "gate_b3_deploys": false
+  },
+  {
+   "arm": "B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.2,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.2,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.2,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.91.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.12",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.13",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.213",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.91.31",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M4_cross",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "user.name"
+   ],
+   "seconds": 11.3,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_ocserv_130",
+   "seed": 0,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_radicale_353",
+   "seed": 1,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_radicale_353",
+   "seed": 1,
+   "mutation": "M1_swap",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "seconds": 11.0,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_radicale_353",
+   "seed": 1,
+   "mutation": "M2_drop",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "seconds": 11.0,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_radicale_353",
+   "seed": 1,
+   "mutation": "M3_constant",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind",
+    "source.ip"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "source.ip",
+     "172.21.80.11",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.80.211",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.80.213",
+     "203.0.113.9"
+    ],
+    [
+     "source.ip",
+     "172.21.80.31",
+     "203.0.113.9"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.name",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_radicale_353",
+   "seed": 1,
+   "mutation": "M4_cross",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.0,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_radicale_353",
+   "seed": 1,
+   "mutation": "M5_shape",
+   "target": "source.ip",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "seconds": 11.1,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.name",
+    "source.ip",
+    "user.name"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_stunnel_574",
+   "seed": 2,
+   "mutation": "M0_original",
+   "target": null,
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_stunnel_574",
+   "seed": 2,
+   "mutation": "M1_swap",
+   "target": null,
+   "applies": false
+  },
+  {
+   "arm": "B",
+   "source": "r7_stunnel_574",
+   "seed": 2,
+   "mutation": "M2_drop",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.3,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_stunnel_574",
+   "seed": 2,
+   "mutation": "M3_constant",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.7,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.action",
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "event.action",
+     "Certificate accepted",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Connection closed",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Connection reset/closed",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Pre-verification error",
+     "victim"
+    ],
+    [
+     "event.action",
+     "Rejected by CERT",
+     "victim"
+    ],
+    [
+     "event.action",
+     "SSL_accept",
+     "victim"
+    ],
+    [
+     "event.action",
+     "accepted connection",
+     "victim"
+    ]
+   ],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  },
+  {
+   "arm": "B",
+   "source": "r7_stunnel_574",
+   "seed": 2,
+   "mutation": "M4_cross",
+   "target": "process.thread.id",
+   "applies": true,
+   "rung": "V4",
+   "passed": true,
+   "accepted": true,
+   "v4_verified": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.4,
+   "gate_kind": "repaired",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": true,
+   "gate_wrong_fields": [
+    [
+     "process.thread.id",
+     "0",
+     "2026.10.30 21:21:34"
+    ],
+    [
+     "process.thread.id",
+     "1",
+     "2026.10.30 21:21:36"
+    ],
+    [
+     "process.thread.id",
+     "2",
+     "2026.10.30 21:21:37"
+    ],
+    [
+     "process.thread.id",
+     "3",
+     "2026.10.30 21:21:38"
+    ],
+    [
+     "process.thread.id",
+     "4",
+     "2026.10.30 21:21:40"
+    ]
+   ],
+   "gate_b3_kind": "repaired",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "event.action",
+    "event.reason",
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": true,
+   "gate_b3_wrong_fields": [
+    [
+     "process.thread.id",
+     "0",
+     "2026.10.30 21:21:34"
+    ],
+    [
+     "process.thread.id",
+     "1",
+     "2026.10.30 21:21:36"
+    ],
+    [
+     "process.thread.id",
+     "2",
+     "2026.10.30 21:21:37"
+    ],
+    [
+     "process.thread.id",
+     "3",
+     "2026.10.30 21:21:38"
+    ],
+    [
+     "process.thread.id",
+     "4",
+     "2026.10.30 21:21:40"
+    ]
+   ]
+  },
+  {
+   "arm": "B",
+   "source": "r7_stunnel_574",
+   "seed": 2,
+   "mutation": "M5_shape",
+   "target": "event.action",
+   "applies": true,
+   "rung": "V4",
+   "passed": false,
+   "accepted": false,
+   "v4_verified": [
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "seconds": 13.6,
+   "gate_kind": "partial",
+   "gate_deploys": true,
+   "gate_deliver": [
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_wrong": false,
+   "gate_wrong_fields": [],
+   "gate_b3_kind": "partial",
+   "gate_b3_deploys": true,
+   "gate_b3_deliver": [
+    "process.thread.id",
+    "tls.client.subject"
+   ],
+   "gate_b3_constants": [
+    "event.category",
+    "event.dataset",
+    "event.kind"
+   ],
+   "gate_b3_wrong": false,
+   "gate_b3_wrong_fields": []
+  }
+ ]
+}

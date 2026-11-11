@@ -1,0 +1,15 @@
+0a6ddc8be7c8e3d3 smtp connected address=172.21.63.213 host=fervent_lamarr.r3-net
+0a6ddc8be7c8e3d3 smtp failed-command command="rcpt TO:<pi@lab.local>" result="550 Invalid recipient: <pi@lab.local>"
+0a6ddc8be7c8e3d3 smtp disconnected reason=disconnect
+0a6ddc8c0fd70e81 smtp connected address=172.21.63.190 host=nervous_nobel.r3-net
+0a6ddc8c0fd70e81 smtp failed-command command="rcpt TO:<guest@target.org>" result="550 Invalid recipient: <guest@target.org>"
+0a6ddc8c0fd70e81 smtp disconnected reason=disconnect
+0a6ddc8dabf58593 smtp connected address=172.21.63.207 host=confident_goldberg.r3-net
+0a6ddc8dabf58593 smtp failed-command command="rcpt TO:<luis@other.org>" result="550 Invalid recipient: <luis@other.org>"
+0a6ddc8dabf58593 smtp disconnected reason=disconnect
+0a6ddc8e3dd97c66 smtp connected address=172.21.63.115 host=ecstatic_mclean.r3-net
+0a6ddc8e3dd97c66 smtp failed-command command="rcpt TO:<bruno@other.net>" result="550 Invalid recipient: <bruno@other.net>"
+0a6ddc8e3dd97c66 smtp disconnected reason=disconnect
+0a6ddc8f616aa0db smtp connected address=172.21.63.131 host=jolly_sammet.r3-net
+0a6ddc8f616aa0db smtp message msgid=0729ea3f size=195 nrcpt=1 proto=ESMTP
+0a6ddc8f616aa0db smtp disconnected reason=quit

@@ -1,0 +1,9 @@
+{"raw": "Oct 25 15:35:06 c2s5dd76265d050\tinfo\tAuthenticated as ana@lab.example"}
+{"raw": "Oct 25 15:35:08 c2s5dd7626965f0\tinfo\tClient disconnected: connection closed"}
+{"raw": "Oct 25 15:35:09 c2s5dd7626a3690\tinfo\tClient connected"}
+{"raw": "Oct 25 15:35:12 c2s5dd7626bdca0\tinfo\tAuthenticated as helpdesk@lab.example"}
+{"raw": "Oct 25 15:35:17 c2s5dd76268cf00\tinfo\tAuthenticated as rui@lab.example"}
+{"raw": "Oct 25 15:35:11 c2s5dd7626b0fd0\tinfo\tClient connected"}
+{"raw": "Oct 25 15:35:14 c2s5dd762656bc0\tinfo\tClient connected"}
+{"raw": "Oct 25 15:35:19 c2s5dd762631b60\tinfo\tClient connected"}
+{"raw": "Oct 25 15:35:20 c2s5dd7626b64e0\tinfo\tClient connected"}

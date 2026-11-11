@@ -1,0 +1,12 @@
+{"raw": "2026-10-14T08:18:09+00:00;10.10.1.12;23326;660;47147;1138;2782;ECDSA;debra.jones;SHA256:6Iit6y2ytiICPdIyMFB9ATDSAann+BwYC0n38gkp+fA;ssh_accept;dns.acme.local;;;;publickey;success"}
+{"raw": "2026-10-14T08:57:26+00:00;10.10.1.12;23326;660;47147;1138;2782;;debra.jones;;ssh_close;dns.acme.local;;;;;success"}
+{"raw": "2026-10-14T08:19:21+00:00;10.10.1.12;14612;557;50687;576;2782;ECDSA;debra.jones;SHA256:LpkmfcAKYXI+JuLOqCFX0oLJGnDJcyPC1VymjQviVlq;ssh_accept;ws-it-002.acme.local;;;;publickey;success"}
+{"raw": "2026-10-14T08:46:48+00:00;10.10.1.12;14612;557;50687;576;2782;;debra.jones;;ssh_close;ws-it-002.acme.local;;;;;success"}
+{"raw": "2026-10-14T08:33:56+00:00;10.10.1.12;16938;458;40172;740;2782;ECDSA;debra.jones;SHA256:41rIEM/i8VNUPl9SmEEoWL2HyY5fTbryObD3b5574yR;ssh_accept;file.acme.local;;;;publickey;success"}
+{"raw": "2026-10-14T09:28:29+00:00;10.10.1.12;16938;458;40172;740;2782;;debra.jones;;ssh_close;file.acme.local;;;;;success"}
+{"raw": "2026-10-14T08:16:11+00:00;10.30.5.11;43529;371;41092;964;2947;ECDSA;barbara.sanders;SHA256:AMNABFiOgcO16WeN4xr2AYvClcRr9qcRFlMNCSigV44;ssh_accept;ws-ops-001.acme.local;;;;publickey;success"}
+{"raw": "2026-10-14T09:41:04+00:00;10.30.5.11;43529;371;41092;964;2947;;barbara.sanders;;ssh_close;ws-ops-001.acme.local;;;;;success"}
+{"raw": "2026-10-14T08:16:20+00:00;10.30.5.11;52841;752;41715;1444;2947;RSA;barbara.sanders;SHA256:8gOvXr7Ci6m38CvN8HOCUItqFNGUIX8pLcraot05NkF;ssh_accept;ws-ops-001.acme.local;;;;password;success"}
+{"raw": "2026-10-14T08:35:23+00:00;10.30.5.11;52841;752;41715;1444;2947;;barbara.sanders;;ssh_close;ws-ops-001.acme.local;;;;;success"}
+{"raw": "2026-10-14T08:25:31+00:00;10.10.5.12;39821;595;52907;544;4514;RSA;theresa.williams;SHA256:rvbqAEikj8nfrxLcqh5t/8+GxDNsuTg4pPUlqRTSXAO;ssh_accept;ws-ops-002.acme.local;;;;publickey;success"}
+{"raw": "2026-10-14T08:59:47+00:00;10.10.5.12;39821;595;52907;544;4514;;theresa.williams;;ssh_close;ws-ops-002.acme.local;;;;;success"}

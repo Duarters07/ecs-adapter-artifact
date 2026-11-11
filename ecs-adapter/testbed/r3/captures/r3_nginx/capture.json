@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-19T23:39:59Z","old":"nginx:1.27-alpine, log_format combined","new":"nginx:1.27-alpine, JSON log_format (conf/nginx-json.conf)","collected_by":"docker logs, container stdout only (access log)"}

@@ -1,0 +1,5 @@
+[1793387964] unbound[1:0] info: 172.21.86.31 files.lab.example. A IN
+[1793387964] unbound[1:0] info: 172.21.86.31 files.lab.example. A IN NXDOMAIN 0.000000 1 46
+[1793387964] unbound[1:0] info: 172.21.86.213 null TYPE0 CLASS0 REFUSED 0.000000 1 12
+[1793387965] unbound[1:0] info: 172.21.86.32 mail.lab.example. AAAA IN
+[1793387965] unbound[1:0] info: 172.21.86.32 mail.lab.example. AAAA IN NOERROR 0.000000 1 45

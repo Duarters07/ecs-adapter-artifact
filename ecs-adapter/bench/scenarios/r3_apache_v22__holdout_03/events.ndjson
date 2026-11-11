@@ -1,0 +1,8 @@
+{"raw": "[Mon Oct 19 09:18:56 2026] [error] [client 172.21.0.3] user ines: authentication failure for \"/reports/annual.pdf\": Password Mismatch, referer: http://portal.local/hr"}
+{"raw": "[Mon Oct 19 09:18:56 2026] [error] [client 172.21.0.3] user test not found: /reports/, referer: http://portal.local/qa"}
+{"raw": "[Mon Oct 19 09:18:55 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/config.ini, referer: http://intranet.local/settings"}
+{"raw": "[Mon Oct 19 09:18:55 2026] [error] [client 172.21.0.3] user marta: authentication failure for \"/members/q3.html\": Password Mismatch"}
+{"raw": "[Mon Oct 19 09:18:56 2026] [error] [client 172.21.0.3] user admin not found: /members/"}
+{"raw": "[Mon Oct 19 09:18:57 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/, referer: http://portal.local/backup"}
+{"raw": "[Mon Oct 19 09:18:55 2026] [error] [client 172.21.0.3] user pedro not found: /reports/"}
+{"raw": "[Mon Oct 19 09:18:56 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/db.bak"}

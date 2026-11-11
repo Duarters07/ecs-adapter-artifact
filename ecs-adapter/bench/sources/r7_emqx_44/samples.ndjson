@@ -1,0 +1,12 @@
+{"raw": "2026-10-30T19:28:13.685034+00:00 [info] dev-ana@172.21.88.11:33552 file: emqx_connection.erl, line: 559, mfa: {emqx_connection,terminate,2}, msg: terminate, pid: <0.2238.0>, reason: {shutdown,normal}"}
+{"raw": "2026-10-30T19:28:22.112052+00:00 [warning] x-202@172.21.88.202:56754 [Channel] Cannot subscribe $SYS/# with options #{nl => 0,qos => 0,rap => 0,rh => 0} due to Not authorized."}
+{"raw": "2026-10-30T19:28:14.708372+00:00 [info] dev-rui@172.21.88.12:35426 PUBLISH to plant/line2/temp: <<\"{\\\"v\\\":1}\">>"}
+{"raw": "2026-10-30T19:28:15.550701+00:00 [info] ops-mon@172.21.88.13:48938 ops-mon SUBSCRIBE plant/#: Options: #{nl => 0,qos => 0,rap => 0,rh => 0,sub_props => #{}}"}
+{"raw": "2026-10-30T19:28:18.389752+00:00 [info] x-201@172.21.88.201:33832 PUBLISH to admin/cmd: <<\"{\\\"v\\\":1}\">>"}
+{"raw": "2026-10-30T19:28:21.267311+00:00 [info] dev-ana@172.21.88.14:48880 PUBLISH to plant/line1/pressure: <<\"{\\\"v\\\":1}\">>"}
+{"raw": "2026-10-30T19:28:13.684914+00:00 [info] dev-ana@172.21.88.11:33552 PUBLISH to plant/line1/temp: <<\"{\\\"v\\\":1}\">>"}
+{"raw": "2026-10-30T19:28:14.708570+00:00 [info] dev-rui@172.21.88.12:35426 file: emqx_connection.erl, line: 559, mfa: {emqx_connection,terminate,2}, msg: terminate, pid: <0.2241.0>, reason: {shutdown,normal}"}
+{"raw": "2026-10-30T19:28:17.550349+00:00 [info] ops-mon@172.21.88.13:48938 file: emqx_connection.erl, line: 559, mfa: {emqx_connection,terminate,2}, msg: terminate, pid: <0.2244.0>, reason: {shutdown,normal}"}
+{"raw": "2026-10-30T19:28:18.389907+00:00 [info] x-201@172.21.88.201:33832 file: emqx_connection.erl, line: 559, mfa: {emqx_connection,terminate,2}, msg: terminate, pid: <0.2250.0>, reason: {shutdown,normal}"}
+{"raw": "2026-10-30T19:28:21.267452+00:00 [info] dev-ana@172.21.88.14:48880 file: emqx_connection.erl, line: 559, mfa: {emqx_connection,terminate,2}, msg: terminate, pid: <0.2253.0>, reason: {shutdown,normal}"}
+{"raw": "2026-10-30T19:28:22.112396+00:00 [info] x-202@172.21.88.202:56754 file: emqx_connection.erl, line: 559, mfa: {emqx_connection,terminate,2}, msg: terminate, pid: <0.2256.0>, reason: {shutdown,normal}"}

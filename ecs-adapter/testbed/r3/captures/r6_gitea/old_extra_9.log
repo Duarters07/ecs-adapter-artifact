@@ -1,0 +1,6 @@
+2026/10/27 17:03:14 [6ae0d952] router: completed GET /api/v1/repos/search for 172.21.70.144:52740, 200 OK in 30.6ms @ repo/repo.go:36(repo.Search)
+2026/10/27 17:03:15 [6ae0d953] router: completed GET /api/v1/admin/orgs for 172.21.70.135:52226, 401 Unauthorized in 0.4ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:16 [6ae0d954] router: completed GET /api/v1/user/login.php for 172.21.70.126:48174, 404 Not Found in 28.1ms @ context/auth.go:112(context.ToggleAPI)
+2026/10/27 17:03:17 [6ae0d955] router: completed GET /api/v1/repos/ana/secret for 172.21.70.186:35474, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:17 [6ae0d955-2] router: completed GET /api/v1/old.zip for 172.21.70.140:46574, 401 Unauthorized in 0.4ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:18 [6ae0d956] router: completed GET /api/v1/app.js for 172.21.70.206:55948, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)

@@ -1,0 +1,18 @@
+2026-10-27T16:57:04.466582+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.206], port=[56928]
+2026-10-27T16:57:04.467148+00:00 mail02 imapd: LOGIN FAILED, user=carla, ip=[::ffff:172.21.67.206], port=[56928]
+2026-10-27T16:57:09.468996+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.206], port=[56928], time=5
+2026-10-27T16:57:10.182616+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.178], port=[40044]
+2026-10-27T16:57:10.262411+00:00 mail02 imapd: LOGIN, user=scanner, ip=[::ffff:172.21.67.178], port=[40044], protocol=IMAP
+2026-10-27T16:57:10.263152+00:00 mail02 imapd: LOGOUT, user=scanner, ip=[::ffff:172.21.67.178], port=[40044], headers=0, body=0, rcvd=34, sent=340, time=0
+2026-10-27T16:57:11.002047+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.208], port=[38678]
+2026-10-27T16:57:12.868231+00:00 mail02 imapd: LOGIN FAILED, user=backup, ip=[::ffff:172.21.67.208], port=[38678]
+2026-10-27T16:57:17.869837+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.208], port=[38678], time=6
+2026-10-27T16:57:18.584694+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.115], port=[40072]
+2026-10-27T16:57:18.607943+00:00 mail02 imapd: LOGIN, user=ana, ip=[::ffff:172.21.67.115], port=[40072], protocol=IMAP
+2026-10-27T16:57:18.608424+00:00 mail02 imapd: LOGOUT, user=ana, ip=[::ffff:172.21.67.115], port=[40072], headers=0, body=0, rcvd=34, sent=340, time=0
+2026-10-27T16:57:19.318051+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.165], port=[51172]
+2026-10-27T16:57:21.637678+00:00 mail02 imapd: LOGIN FAILED, user=scanner, ip=[::ffff:172.21.67.165], port=[51172]
+2026-10-27T16:57:26.639119+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.165], port=[51172], time=7
+2026-10-27T16:57:27.340631+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.187], port=[40452]
+2026-10-27T16:57:27.341119+00:00 mail02 imapd: LOGIN FAILED, user=admin, ip=[::ffff:172.21.67.187], port=[40452]
+2026-10-27T16:57:32.343339+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.187], port=[40452], time=5

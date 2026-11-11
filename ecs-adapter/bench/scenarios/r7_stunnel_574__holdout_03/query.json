@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "tls.client.subject": "CN=backup, O=Lab"
+        }
+      }
+    ]
+  }
+}

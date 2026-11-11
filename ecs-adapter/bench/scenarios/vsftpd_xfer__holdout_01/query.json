@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "source.ip": "172.18.0.23"
+        }
+      },
+      {
+        "term": {
+          "event.action": "UPLOAD"
+        }
+      }
+    ]
+  }
+}

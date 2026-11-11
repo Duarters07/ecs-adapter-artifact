@@ -1,0 +1,10 @@
+{"raw": "time=\"2026-10-27T15:42:41Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'admin'\" error=\"user not found\" method=POST path=/api/firstfactor remote_ip=172.21.61.99"}
+{"raw": "time=\"2026-10-27T15:43:00Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'scanner' and they are banned until 2026-10-27 15:47:58.804722765 +0000 UTC\" method=POST path=/api/firstfactor remote_ip=172.21.61.17"}
+{"raw": "time=\"2026-10-27T15:42:37Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'ana'\" method=POST path=/api/firstfactor remote_ip=172.21.61.11"}
+{"raw": "time=\"2026-10-27T15:42:42Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'root'\" error=\"user not found\" method=POST path=/api/firstfactor remote_ip=172.21.61.98"}
+{"raw": "time=\"2026-10-27T15:42:46Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'rui'\" method=POST path=/api/firstfactor remote_ip=172.21.61.14"}
+{"raw": "time=\"2026-10-27T15:42:53Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'test'\" error=\"user not found\" method=POST path=/api/firstfactor remote_ip=172.21.61.97"}
+{"raw": "time=\"2026-10-27T15:42:51Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'rui'\" method=POST path=/api/firstfactor remote_ip=172.21.61.15"}
+{"raw": "time=\"2026-10-27T15:42:56Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'scanner'\" method=POST path=/api/firstfactor remote_ip=172.21.61.17"}
+{"raw": "time=\"2026-10-27T15:42:57Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'scanner'\" method=POST path=/api/firstfactor remote_ip=172.21.61.17"}
+{"raw": "time=\"2026-10-27T15:42:58Z\" level=error msg=\"Unsuccessful 1FA authentication attempt by user 'scanner'\" method=POST path=/api/firstfactor remote_ip=172.21.61.17"}

@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.logger": "synapse.handlers.auth"
+        }
+      },
+      {
+        "term": {
+          "url.path": "/_matrix/client/v3/login"
+        }
+      }
+    ]
+  }
+}

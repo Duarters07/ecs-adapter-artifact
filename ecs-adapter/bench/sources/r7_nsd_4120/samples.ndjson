@@ -1,0 +1,7 @@
+{"raw": "[2026-10-30 21:16:28.030] nsd[7]: info: axfr for lab.example. from 172.21.85.10  not-verified"}
+{"raw": "[2026-10-30 21:16:31.948] nsd[7]: info: axfr for corp.example. from 172.21.85.212 refused, no acl matches"}
+{"raw": "[2026-10-30 21:16:29.985] nsd[7]: info: ixfr for lab.example. from 172.21.85.11  not-verified"}
+{"raw": "[2026-10-30 21:16:33.931] nsd[7]: info: ixfr fallback to axfr, no ixfr info for zone: corp.example."}
+{"raw": "[2026-10-30 21:16:29.009] nsd[7]: info: axfr for lab.example. from 172.21.85.211 refused, no acl matches"}
+{"raw": "[2026-10-30 21:16:30.980] nsd[7]: info: axfr for other.example. from 172.21.85.10 refused, no acl matches"}
+{"raw": "[2026-10-30 21:16:32.944] nsd[7]: info: axfr for corp.example. from 172.21.85.11  not-verified"}

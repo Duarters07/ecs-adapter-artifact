@@ -1,0 +1,147 @@
+{
+  "source_id": "r7_stunnel_574",
+  "family": "stunnel",
+  "split": "test_r7",
+  "category_hint": "network",
+  "contamination_risk": "high",
+  "origin": "Produced by running stunnel 5.74 (Debian 13, OpenSSL 3.5), not copied from documentation or a public dataset. Captured 2026-10-30T21:21:49Z on the author's laptop by testbed/r3/r7_stunnel.sh (docker logs (stderr, debug 5): connection lines); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), NEW VERSION of r7_stunnel_568. Part of the change is OpenSSL's error text (3.0 -> 3.5).",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "note": "client.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "subject",
+      "ecs_field": "tls.client.subject",
+      "type": "keyword",
+      "role": "certificate_subject",
+      "difficulty": "medium",
+      "note": "tls.client.x509.subject.distinguished_name is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "verify_error",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "ssl_error",
+      "ecs_field": "error.message",
+      "type": "keyword",
+      "role": "error",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "service",
+      "ecs_field": "service.name",
+      "type": "keyword",
+      "role": "service",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "thread",
+      "ecs_field": "process.thread.id",
+      "type": "long",
+      "role": "thread_id",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.syslog.severity.code",
+      "type": "long",
+      "role": "severity",
+      "difficulty": "medium",
+      "note": "log.level is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "depth",
+      "ecs_field": null,
+      "type": "long",
+      "role": "chain_depth",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "ssl_location",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "source_location",
+      "difficulty": "hard",
+      "note": "OpenSSL's source location; no ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes_tls",
+      "ecs_field": null,
+      "type": "long",
+      "role": "bytes_out",
+      "difficulty": "hard",
+      "note": "Direction is relative to stunnel; source/destination.bytes would be a guess.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bytes_socket",
+      "ecs_field": null,
+      "type": "long",
+      "role": "bytes_in",
+      "difficulty": "hard",
+      "note": "As bytes_tls.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_stunnel_574__holdout_01",
+    "r7_stunnel_574__holdout_02",
+    "r7_stunnel_574__holdout_03"
+  ],
+  "round3": {
+    "pair": "r7_stunnel",
+    "role": "new"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.syslog.priority": 81
+        }
+      },
+      {
+        "term": {
+          "process.command_line": "/usr/bin/tail /var/log/auth.log"
+        }
+      }
+    ]
+  }
+}

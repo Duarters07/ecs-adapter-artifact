@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "{shutdown,normal}"
+        }
+      },
+      {
+        "term": {
+          "log.level": "info"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "1001"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "1001"
+              }
+            },
+            {
+              "term": {
+                "user.name": "1001"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "user_agent.original": "Linphone/5.2.5 (belle-sip/5.2.94)"
+        }
+      }
+    ]
+  }
+}

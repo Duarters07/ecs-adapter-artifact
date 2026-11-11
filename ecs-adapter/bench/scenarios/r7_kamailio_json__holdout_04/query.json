@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.origin.file.name": "xlog.c"
+        }
+      },
+      {
+        "term": {
+          "process.pid": 8
+        }
+      }
+    ]
+  }
+}

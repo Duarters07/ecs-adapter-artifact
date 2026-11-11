@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "network.protocol": "esmtp"
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.domain": "epic_pike.r2ho-net"
+              }
+            },
+            {
+              "term": {
+                "source.domain": "epic_pike.r2ho-net"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

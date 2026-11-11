@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-19T23:42:58Z","old":"jasonish/suricata:6.0 (This is Suricata version 6.0.20 RELEASE)","new":"jasonish/suricata:7.0 (This is Suricata version 7.0.17 RELEASE)","collected_by":"eve.json inside the Suricata container, sniffing the web container eth0; image default suricata.yaml, rules conf/suricata-r3.rules"}

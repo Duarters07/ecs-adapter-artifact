@@ -1,0 +1,12 @@
+Oct 25 22:51:12 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<84>: pam(paulo,172.21.0.3,<8yi7DLJeKNesFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:51:14 imap-login: Info: Disconnected (auth failed, 1 attempts in 3 secs): user=<paulo>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<8yi7DLJeKNesFQAD>
+Oct 25 22:51:20 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<85>: pam(ftpuser,172.21.0.3,<rgPzDLJeLtesFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:51:22 imap-login: Info: Disconnected (auth failed, 1 attempts in 8 secs): user=<ftpuser>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<rgPzDLJeLtesFQAD>
+Oct 25 22:51:32 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<86>: pam(ana,172.21.0.3,<DZlsDbJejsisFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:51:34 imap-login: Info: Disconnected (auth failed, 1 attempts in 12 secs): user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<DZlsDbJejsisFQAD>
+Oct 25 22:51:51 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<87>: pam(tiago,172.21.0.3,<uLYjDrJegJSsFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:51:53 imap-login: Info: Disconnected (auth failed, 1 attempts in 19 secs): user=<tiago>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<uLYjDrJegJSsFQAD>
+Oct 25 22:52:08 imap-login: Info: Login: user=<ines>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=101, session=<SERHD7JezsqsFQAD>
+Oct 25 22:52:08 imap(ines)<101><SERHD7JezsqsFQAD>: Info: Logged out in=32 out=772 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 25 22:52:11 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<90>: pam(root,172.21.0.3,<mEc1ELJeRNusFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:52:13 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<root>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<mEc1ELJeRNusFQAD>

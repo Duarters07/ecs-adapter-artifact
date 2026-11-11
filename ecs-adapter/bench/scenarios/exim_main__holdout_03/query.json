@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.action": "rejected RCPT"
+        }
+      },
+      {
+        "term": {
+          "event.reason": "relay not permitted"
+        }
+      }
+    ]
+  }
+}

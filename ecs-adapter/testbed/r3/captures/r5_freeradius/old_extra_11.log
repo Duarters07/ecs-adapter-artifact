@@ -1,0 +1,6 @@
+Sun Oct 25 23:07:07 2026 : Auth: (60) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [root] (from client vpn-gw port 13)
+Sun Oct 25 23:07:09 2026 : Auth: (61) Login incorrect (pap: Cleartext password does not match "known good" password): [wifi-guest] (from client ap-floor1 port 11)
+Sun Oct 25 23:07:11 2026 : Auth: (62) Login OK: [vpn-ops] (from client vpn-gw port 59)
+Sun Oct 25 23:07:12 2026 : Auth: (63) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [katia] (from client ap-floor1 port 34)
+Sun Oct 25 23:07:14 2026 : Auth: (64) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [deploy] (from client ap-floor1 port 49)
+Sun Oct 25 23:07:16 2026 : Auth: (65) Login incorrect (pap: Cleartext password does not match "known good" password): [vpn-ops] (from client vpn-gw port 8)

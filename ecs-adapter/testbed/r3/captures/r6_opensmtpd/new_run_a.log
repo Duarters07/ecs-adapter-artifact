@@ -1,0 +1,15 @@
+3dfc37ba0b860b9e smtp connected address=172.21.63.11 host=dazzling_snyder.r3-net
+3dfc37ba0b860b9e smtp message msgid=b5849137 size=197 nrcpt=1 proto=ESMTP
+3dfc37ba0b860b9e smtp disconnected reason=quit
+3dfc37bd7d48c34f smtp connected address=172.21.63.92 host=relaxed_cannon.r3-net
+3dfc37bd7d48c34f smtp failed-command command="rcpt TO:<victim@elsewhere.org>" result="550 Invalid recipient: <victim@elsewhere.org>"
+3dfc37bd7d48c34f smtp disconnected reason=disconnect
+3dfc37be768bd103 smtp connected address=172.21.63.12 host=flamboyant_hugle.r3-net
+3dfc37be768bd103 smtp failed-command command="rcpt TO:<info@lab.local>" result="550 Invalid recipient: <info@lab.local>"
+3dfc37be768bd103 smtp disconnected reason=disconnect
+3dfc37bf571c7b7d smtp connected address=172.21.63.91 host=thirsty_hopper.r3-net
+3dfc37bf571c7b7d smtp failed-command command="rcpt TO:<boss@corp.example>" result="550 Invalid recipient: <boss@corp.example>"
+3dfc37bf571c7b7d smtp disconnected reason=disconnect
+3dfc37c09e350127 smtp connected address=172.21.63.13 host=intelligent_noyce.r3-net
+3dfc37c09e350127 smtp message msgid=88622543 size=199 nrcpt=1 proto=ESMTP
+3dfc37c09e350127 smtp disconnected reason=quit

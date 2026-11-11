@@ -1,0 +1,13 @@
+2026/10/27 16:49:44 [179] connect from UNDETERMINED (172.21.65.176)
+2026/10/27 16:49:44 [179] rsync allowed access on module public from UNDETERMINED (172.21.65.176)
+2026/10/27 16:49:44 [180] connect from UNDETERMINED (172.21.65.120)
+2026/10/27 16:49:44 [180] unknown module 'home' tried from UNDETERMINED (172.21.65.120)
+2026/10/27 16:49:45 [181] connect from UNDETERMINED (172.21.65.207)
+2026/10/27 16:49:45 [181] rsync allowed access on module finance from UNDETERMINED (172.21.65.207)
+2026/10/27 16:49:46 [182] connect from UNDETERMINED (172.21.65.100)
+2026/10/27 16:49:46 [182] rsync allowed access on module public from UNDETERMINED (172.21.65.100)
+2026/10/27 16:49:46 [183] connect from UNDETERMINED (172.21.65.101)
+2026/10/27 16:49:46 [183] rsync allowed access on module backup from UNDETERMINED (172.21.65.101)
+2026/10/27 16:49:46 [183] auth failed on module backup from UNDETERMINED (172.21.65.101) for scanner: no matching rule
+2026/10/27 16:49:47 [184] connect from UNDETERMINED (172.21.65.156)
+2026/10/27 16:49:47 [184] unknown module 'root' tried from UNDETERMINED (172.21.65.156)

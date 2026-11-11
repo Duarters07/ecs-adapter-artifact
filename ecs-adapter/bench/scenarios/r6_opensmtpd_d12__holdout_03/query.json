@@ -1,0 +1,23 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.domain": "hungry_black.r3-net"
+              }
+            },
+            {
+              "term": {
+                "source.domain": "hungry_black.r3-net"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

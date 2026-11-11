@@ -1,0 +1,5 @@
+[2026-10-30 21:16:37.031] nsd[7]: info: axfr for dmz.example. from 172.21.85.10  not-verified
+[2026-10-30 21:16:38.006] nsd[7]: info: axfr for dmz.example. from 172.21.85.215 refused, no acl matches
+[2026-10-30 21:16:38.978] nsd[7]: info: ixfr for branch.example. from 172.21.85.11  not-verified
+[2026-10-30 21:16:38.978] nsd[7]: info: ixfr fallback to axfr, no ixfr info for zone: branch.example.
+[2026-10-30 21:16:39.937] nsd[7]: info: axfr for backup.example. from 172.21.85.216 refused, no acl matches

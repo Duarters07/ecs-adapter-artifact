@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.level": "CONNECT"
+        }
+      },
+      {
+        "term": {
+          "process.pid": 14
+        }
+      }
+    ]
+  }
+}

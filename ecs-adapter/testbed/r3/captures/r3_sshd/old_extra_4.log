@@ -1,0 +1,25 @@
+Failed password for backup from 172.21.0.3 port 53788 ssh2
+Failed password for marta from 172.21.0.3 port 53800 ssh2
+Did not receive identification string from 172.21.0.3 port 55686
+Invalid user oracle from 172.21.0.3 port 55700
+Failed password for invalid user oracle from 172.21.0.3 port 55700 ssh2
+Invalid user deploy from 172.21.0.3 port 55716
+Failed password for invalid user deploy from 172.21.0.3 port 55716 ssh2
+Failed password for ana from 172.21.0.3 port 58642 ssh2
+Failed password for rui from 172.21.0.3 port 58652 ssh2
+Invalid user monitor from 172.21.0.3 port 58668
+Failed password for invalid user monitor from 172.21.0.3 port 58668 ssh2
+Accepted password for ana from 172.21.0.3 port 39360 ssh2
+Invalid user administrator from 172.21.0.3 port 39372
+Failed password for invalid user administrator from 172.21.0.3 port 39372 ssh2
+Invalid user carlos from 172.21.0.3 port 39386
+Failed password for invalid user carlos from 172.21.0.3 port 39386 ssh2
+Connection closed by invalid user carlos 172.21.0.3 port 39386 [preauth]
+Connection closed by invalid user administrator 172.21.0.3 port 39372 [preauth]
+Connection closed by authenticating user rui 172.21.0.3 port 58652 [preauth]
+Connection closed by invalid user deploy 172.21.0.3 port 55716 [preauth]
+Connection closed by authenticating user marta 172.21.0.3 port 53800 [preauth]
+Connection closed by authenticating user backup 172.21.0.3 port 53788 [preauth]
+Connection closed by invalid user monitor 172.21.0.3 port 58668 [preauth]
+Connection closed by invalid user oracle 172.21.0.3 port 55700 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 58642 [preauth]

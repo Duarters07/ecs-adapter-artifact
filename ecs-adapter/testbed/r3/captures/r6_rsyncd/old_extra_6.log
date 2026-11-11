@@ -1,0 +1,16 @@
+2026/10/27 16:49:31 [131] connect from UNDETERMINED (172.21.65.126)
+2026/10/27 16:49:31 [131] rsync allowed access on module finance from UNDETERMINED (172.21.65.126)
+2026/10/27 16:49:31 [131] auth failed on module finance from UNDETERMINED (172.21.65.126) for ana: password mismatch
+2026/10/27 16:49:32 [132] connect from UNDETERMINED (172.21.65.161)
+2026/10/27 16:49:32 [132] unknown module 'etc' tried from UNDETERMINED (172.21.65.161)
+2026/10/27 16:49:33 [133] connect from UNDETERMINED (172.21.65.174)
+2026/10/27 16:49:33 [133] rsync allowed access on module public from UNDETERMINED (172.21.65.174)
+2026/10/27 16:49:33 [134] connect from UNDETERMINED (172.21.65.234)
+2026/10/27 16:49:33 [134] rsync allowed access on module backup from UNDETERMINED (172.21.65.234)
+2026/10/27 16:49:33 [134] auth failed on module backup from UNDETERMINED (172.21.65.234) for rui: password mismatch
+2026/10/27 16:49:34 [135] connect from UNDETERMINED (172.21.65.165)
+2026/10/27 16:49:34 [135] rsync allowed access on module backup from UNDETERMINED (172.21.65.165)
+2026/10/27 16:49:34 [135] auth failed on module backup from UNDETERMINED (172.21.65.165) for luis: no matching rule
+2026/10/27 16:49:35 [136] connect from UNDETERMINED (172.21.65.239)
+2026/10/27 16:49:35 [136] rsync allowed access on module backup from UNDETERMINED (172.21.65.239)
+2026/10/27 16:49:35 [136] auth failed on module backup from UNDETERMINED (172.21.65.239) for admin: no matching rule

@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "Password Mismatch"
+        }
+      },
+      {
+        "term": {
+          "http.request.referrer": "http://portal.example/hr"
+        }
+      }
+    ]
+  }
+}

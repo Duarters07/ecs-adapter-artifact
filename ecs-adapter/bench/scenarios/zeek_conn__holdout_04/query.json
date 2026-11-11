@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "network.protocol": "dns"
+        }
+      },
+      {
+        "term": {
+          "network.transport": "udp"
+        }
+      }
+    ]
+  }
+}

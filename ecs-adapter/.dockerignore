@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+results/*.ndjson
+candidates/*/
+ecs/*.yml
+.pytest_cache/
+teacher/out/
+training/data/
+training/adapters/
+training/baselines/
+testbed/runs/

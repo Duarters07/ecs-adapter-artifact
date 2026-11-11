@@ -1,0 +1,20 @@
+{
+  "note": "NOT ground truth. Each entry records a value and the ECS field that value IS. The ladder may read this file; it may never read truth.json. See validators/v3_5_known_values.py.",
+  "origin": "samples.ndjson, via the per-family extractor",
+  "provenance": "Derived from samples.ndjson by bench/make_known_values.py with the extractor in testbed/heldout_r2/specs.py. Like the round-1 test sources, the field each value belongs to comes from the DRAFT labelling, so V3.5 here is a consistency check, not a probe.",
+  "source_id": "r7_mattermost_json",
+  "values": {
+    "error.message": "login: Enter a valid email or username and/or password.",
+    "event.action": "A user tried to sign in, which matched a Mattermost account, but the password was incorrect.",
+    "http.request.id": "zudnpe1jdtdj9g91ohkoa17emw",
+    "http.request.method": "POST",
+    "http.response.status_code": "401",
+    "log.level": "info",
+    "log.origin.file.name": "app/authentication.go:340",
+    "source.ip": "172.21.91.201",
+    "url.original": "/api/v4/users/login",
+    "url.path": "/api/v4/users/login",
+    "user.id": "7st3speewpnwxk48p995ka5mpo",
+    "user.name": "rui"
+  }
+}

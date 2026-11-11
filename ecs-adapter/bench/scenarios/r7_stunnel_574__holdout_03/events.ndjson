@@ -1,0 +1,4 @@
+{"raw": "2026.10.30 21:21:43 LOG5[5]: Certificate accepted at depth=0: CN=backup, O=Lab"}
+{"raw": "2026.10.30 21:21:44 LOG4[6]: Rejected by CERT at depth=0: CN=eve, O=Lab"}
+{"raw": "2026.10.30 21:21:46 LOG4[7]: CERT: Pre-verification error: certificate not found in local repository: self-signed certificate"}
+{"raw": "2026.10.30 21:21:46 LOG4[7]: Rejected by CERT at depth=0: CN=printer, O=Office"}

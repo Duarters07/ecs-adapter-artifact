@@ -1,0 +1,16 @@
+Oct 25 22:38:24 mail postfix/smtpd[109]: connect from unknown[172.21.0.3]
+Oct 25 22:38:24 mail postfix/smtpd[109]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 550 5.1.1 <vasco@r4.local>: Recipient address rejected: User unknown in local recipient table; from=<guest@bulk.test> to=<vasco@r4.local> proto=ESMTP helo=<bulk.test>
+Oct 25 22:38:24 mail postfix/smtpd[114]: connect from unknown[172.21.0.3]
+Oct 25 22:38:24 mail postfix/smtpd[109]: lost connection after RSET from unknown[172.21.0.3]
+Oct 25 22:38:24 mail postfix/smtpd[109]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+Oct 25 22:38:24 mail postfix/smtpd[114]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 550 5.1.1 <guest@r4.local>: Recipient address rejected: User unknown in local recipient table; from=<mariana@spam.test> to=<guest@r4.local> proto=ESMTP helo=<mx.spam.test>
+Oct 25 22:38:25 mail postfix/smtpd[109]: connect from unknown[172.21.0.3]
+Oct 25 22:38:25 mail postfix/smtpd[114]: lost connection after RSET from unknown[172.21.0.3]
+Oct 25 22:38:25 mail postfix/smtpd[114]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+Oct 25 22:38:25 mail postfix/smtpd[109]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 550 5.1.1 <nelson@r4.local>: Recipient address rejected: User unknown in local recipient table; from=<katia@home.example> to=<nelson@r4.local> proto=ESMTP helo=<pc.home.example>
+Oct 25 22:38:25 mail postfix/smtpd[114]: connect from unknown[172.21.0.3]
+Oct 25 22:38:25 mail postfix/smtpd[109]: lost connection after RSET from unknown[172.21.0.3]
+Oct 25 22:38:25 mail postfix/smtpd[109]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+Oct 25 22:38:25 mail postfix/smtpd[114]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 550 5.1.1 <oracle@r4.local>: Recipient address rejected: User unknown in local recipient table; from=<katia@scan.test> to=<oracle@r4.local> proto=ESMTP helo=<scan.test>
+Oct 25 22:38:26 mail postfix/smtpd[114]: lost connection after RSET from unknown[172.21.0.3]
+Oct 25 22:38:26 mail postfix/smtpd[114]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4

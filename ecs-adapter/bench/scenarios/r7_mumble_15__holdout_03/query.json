@@ -1,0 +1,45 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.port": 56804
+              }
+            },
+            {
+              "term": {
+                "source.port": 56804
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "joao"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "joao"
+              }
+            },
+            {
+              "term": {
+                "user.name": "joao"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+1793203955: New connection from 172.21.50.21 on port 1883.
+1793203955: New client connected from 172.21.50.21 as pump-west (c1, k60, u'pump02').
+1793203955: Client pump-west disconnected.
+1793203956: New connection from 172.21.50.22 on port 1884.
+1793203956: New client connected from 172.21.50.22 as cam-gate (c1, k60, u'camera03').
+1793203956: Client cam-gate disconnected.
+1793203956: New connection from 172.21.50.23 on port 1884.
+1793203956: New client connected from 172.21.50.23 as hvac-roof (c1, k60, u'hvac04').
+1793203956: Client hvac-roof disconnected.
+1793203957: New connection from 172.21.50.95 on port 1883.
+1793203957: Socket error on client <unknown>, disconnecting.
+1793203957: New connection from 172.21.50.94 on port 1884.
+1793203957: Socket error on client <unknown>, disconnecting.
+1793203958: New connection from 172.21.50.21 on port 1883.
+1793203958: Socket error on client <unknown>, disconnecting.

@@ -1,0 +1,12 @@
+Oct 22 08:42:36 imap-login: Info: Login: user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=14, session=<ROp42GleArusFQAD>
+Oct 22 08:42:36 imap(ana)<14><ROp42GleArusFQAD>: Info: Logged out in=32 out=780 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 22 08:42:39 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<3>: pam(ana,172.21.0.3,<wZuB2GleBrusFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 22 08:42:41 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<wZuB2GleBrusFQAD>
+Oct 22 08:42:48 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<4>: pam(carlos,172.21.0.3,<tkDI2GleDLusFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 22 08:42:50 imap-login: Info: Disconnected (auth failed, 1 attempts in 9 secs): user=<carlos>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<tkDI2GleDLusFQAD>
+Oct 22 08:42:58 imap-login: Info: Login: user=<rui>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=18, session=<4cNM2WlefI2sFQAD>
+Oct 22 08:42:58 imap(rui)<18><4cNM2WlefI2sFQAD>: Info: Logged out in=32 out=780 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 22 08:43:01 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<7>: pam(root,172.21.0.3,<rQDQ2WleNrmsFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 22 08:43:03 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<root>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<rQDQ2WleNrmsFQAD>
+Oct 22 08:43:07 imap-login: Info: Login: user=<sofia>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=21, session=<VjsW2mleOrmsFQAD>
+Oct 22 08:43:07 imap(sofia)<21><VjsW2mleOrmsFQAD>: Info: Logged out in=32 out=780 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0

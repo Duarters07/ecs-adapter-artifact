@@ -1,0 +1,25 @@
+6ade89f9 conn=1006 fd=11 ACCEPT from IP=172.21.51.208:53130 (IP=0.0.0.0:389)
+6ade89f9 conn=1006 op=0 BIND dn="uid=paulo,ou=people,dc=lab,dc=example" method=128
+6ade89f9 conn=1006 op=0 RESULT tag=97 err=49 text=
+6ade89fa conn=1007 fd=11 ACCEPT from IP=172.21.51.195:40014 (IP=0.0.0.0:389)
+6ade89fa conn=1007 op=0 BIND dn="uid=filipe,ou=people,dc=lab,dc=example" method=128
+6ade89fa conn=1007 op=0 RESULT tag=97 err=49 text=
+6ade89fa conn=1008 fd=11 ACCEPT from IP=172.21.51.132:43610 (IP=0.0.0.0:389)
+6ade89fa conn=1008 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" method=128
+6ade89fa conn=1008 op=0 RESULT tag=97 err=49 text=
+6ade89fb conn=1009 fd=11 ACCEPT from IP=172.21.51.200:40612 (IP=0.0.0.0:389)
+6ade89fb conn=1009 op=0 BIND dn="" method=128
+6ade89fb conn=1009 op=0 RESULT tag=97 err=0 text=
+6ade89fb conn=1009 op=1 SRCH base="dc=lab,dc=example" scope=2 deref=0 filter="(objectClass=inetOrgPerson)"
+6ade89fb conn=1009 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=
+6ade89fc conn=1010 fd=11 ACCEPT from IP=172.21.51.119:52682 (IP=0.0.0.0:389)
+6ade89fc conn=1010 op=0 BIND dn="uid=ana,ou=people,dc=lab,dc=example" method=128
+6ade89fc conn=1010 op=0 BIND dn="uid=ana,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ade89fc conn=1010 op=0 RESULT tag=97 err=0 text=
+6ade89fc conn=1010 op=1 RESULT oid= err=0 text=
+6ade89fd conn=1011 fd=11 ACCEPT from IP=172.21.51.245:54616 (IP=0.0.0.0:389)
+6ade89fd conn=1011 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" method=128
+6ade89fd conn=1011 op=0 BIND dn="uid=rui,ou=people,dc=lab,dc=example" mech=SIMPLE ssf=0
+6ade89fd conn=1011 op=0 RESULT tag=97 err=0 text=
+6ade89fd conn=1011 op=1 SRCH base="ou=people,dc=lab,dc=example" scope=2 deref=0 filter="(uid=*)"
+6ade89fd conn=1011 op=1 SEARCH RESULT tag=101 err=0 nentries=3 text=

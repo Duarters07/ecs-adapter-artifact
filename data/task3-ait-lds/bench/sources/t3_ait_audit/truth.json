@@ -1,0 +1,51 @@
+{
+ "source_id": "t3_ait_audit",
+ "review_status": "DRAFT - every field below awaits the author's review",
+ "fields": [
+  {
+   "source_key": "audit_type",
+   "ecs_field": "event.action",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "pid",
+   "ecs_field": "process.pid",
+   "confidence": 1.0,
+   "type": "long",
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "uid",
+   "ecs_field": "user.id",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "acct",
+   "ecs_field": "user.name",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "exe",
+   "ecs_field": "process.executable",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "comm",
+   "ecs_field": "process.name",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  },
+  {
+   "source_key": "result",
+   "ecs_field": "event.outcome",
+   "confidence": 1.0,
+   "review_status": "DRAFT"
+  }
+ ],
+ "split": "test_t3",
+ "family": "linux-auditd"
+}

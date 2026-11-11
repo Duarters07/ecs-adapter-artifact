@@ -1,0 +1,4 @@
+{"raw": "2026-10-30T20:33:38.289105+00:00 vpn01 ocserv[31]: worker[admin0]: 203.0.113.18 worker-auth.c:1745: failed authentication for 'ghost'"}
+{"raw": "2026-10-30T20:33:39.509850+00:00 vpn01 ocserv[1]: main[admin1]:203.0.113.18:55668 new user session"}
+{"raw": "2026-10-30T20:33:32.037809+00:00 vpn01 ocserv[1]: main[admin2]:203.0.113.18:44262 user logged in"}
+{"raw": "2026-10-30T20:33:30.743390+00:00 vpn01 ocserv[29]: worker[admin3]: 203.0.113.18 worker-auth.c:1745: failed authentication for 'ana'"}

@@ -1,0 +1,55 @@
+{
+  "source_id": "r7_privoxy_400",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^(?<timestamp>%{TIMESTAMP_ISO8601}) (?<thread>[0-9a-f]+) (?<action>Request): (?<host>[^/\\s]+)(?<path>/\\S*)$",
+    "alternatives": [
+      "^(?<timestamp>%{TIMESTAMP_ISO8601}) (?<thread>[0-9a-f]+) Crunch: (?<action>[^:]+): %{NOTSPACE:url}$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "host",
+      "ecs_field": "url.domain",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "path",
+      "ecs_field": "url.path",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "url",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "thread",
+      "reason": "hexadecimal thread id; process.thread.id is numeric"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "web"
+    ],
+    "event.dataset": "privoxy.log"
+  }
+}

@@ -1,0 +1,12 @@
+7c36d465fd1f97cc smtp connected address=172.21.63.14 host=friendly_pascal.r3-net
+7c36d465fd1f97cc smtp message msgid=ecbed1ab size=197 nrcpt=1 proto=ESMTP
+7c36d465fd1f97cc smtp disconnected reason=quit
+7c36d468f0d2fd2c smtp connected address=172.21.63.97 host=suspicious_almeida.r3-net
+7c36d468f0d2fd2c smtp failed-command command="rcpt TO:<b@target.org>" result="550 Invalid recipient: <b@target.org>"
+7c36d468f0d2fd2c smtp disconnected reason=disconnect
+7c36d46940de09db smtp connected address=172.21.63.15 host=happy_shamir.r3-net
+7c36d46940de09db smtp failed-command command="rcpt TO:<admin@lab.local>" result="550 Invalid recipient: <admin@lab.local>"
+7c36d46940de09db smtp disconnected reason=disconnect
+7c36d46a08ea471b smtp connected address=172.21.63.16 host=inspiring_germain.r3-net
+7c36d46a08ea471b smtp message msgid=dbba8509 size=195 nrcpt=1 proto=ESMTP
+7c36d46a08ea471b smtp disconnected reason=quit

@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-25T14:05:33Z","old":"tomcat:10.1-jre17 (Tomcat 10.1.61), AccessLogValve common","new":"tomcat:10.1-jre17 (Tomcat 10.1.61), JsonAccessLogValve combined","collected_by":"logs/access.log in the container"}

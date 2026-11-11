@@ -1,0 +1,156 @@
+{
+  "source_id": "r6_gitea_119",
+  "family": "gitea",
+  "split": "train_r6",
+  "category_hint": "web",
+  "contamination_risk": "high",
+  "origin": "Produced by running Gitea 1.19.4 (official image), not copied from documentation or a public dataset. Captured 2026-10-27T16:27:56Z on the author's laptop by testbed/r3/r6_gitea.sh (docker logs, default console logger: router lines for /api/v1 and UserSignIn errors); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 8 (pool r6), OLD VERSION: Gitea 1.19.4, default console logger, API with basic auth.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "note": "client.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "role": "http_method",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "path",
+      "ecs_field": "url.path",
+      "type": "keyword",
+      "role": "url_path",
+      "difficulty": "easy",
+      "note": "url.original is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "role": "http_status",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "refusal_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "uid",
+      "ecs_field": "user.id",
+      "type": "keyword",
+      "role": "user_id",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "status_text",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "http_status_text",
+      "difficulty": "hard",
+      "note": "Redundant with the code.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "duration",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "handling_time",
+      "difficulty": "hard",
+      "note": "event.duration is in nanoseconds; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "handler",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "go_handler",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "request_id",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "request_id",
+      "difficulty": "hard",
+      "note": "http.request.id is acceptable; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "origin",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "log_origin",
+      "difficulty": "hard",
+      "note": "log.origin.function would need splitting; declining accepted.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r6_gitea_119__holdout_01",
+    "r6_gitea_119__holdout_02",
+    "r6_gitea_119__holdout_03"
+  ],
+  "round3": {
+    "pair": "r6_gitea",
+    "role": "old"
+  }
+}

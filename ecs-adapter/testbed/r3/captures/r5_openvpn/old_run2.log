@@ -1,0 +1,19 @@
+2026-10-25 15:40:57 172.21.58.14:43580 TLS: Initial packet from [AF_INET]172.21.58.14:43580, sid=b2ff47ed 446d5fa5
+2026-10-25 15:40:57 172.21.58.14:43580 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 15:40:57 172.21.58.14:43580 VERIFY OK: depth=0, CN=laptop-rui
+2026-10-25 15:40:57 172.21.58.14:43580 [laptop-rui] Peer Connection Initiated with [AF_INET]172.21.58.14:43580
+2026-10-25 15:40:57 MULTI_sva: pool returned IPv4=10.8.0.10, IPv6=(Not enabled)
+2026-10-25 15:40:57 172.21.58.14:47810 TLS: Initial packet from [AF_INET]172.21.58.14:47810, sid=1a3a0d59 e3a9b11b
+2026-10-25 15:40:57 172.21.58.14:47810 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 15:40:57 172.21.58.14:47810 VERIFY OK: depth=0, CN=laptop-rui
+2026-10-25 15:40:57 172.21.58.14:47810 TLS Auth Error: Auth Username/Password verification failed for peer
+2026-10-25 15:40:57 172.21.58.14:47810 [laptop-rui] Peer Connection Initiated with [AF_INET]172.21.58.14:47810
+2026-10-25 15:40:58 172.21.58.14:47810 SENT CONTROL [laptop-rui]: 'AUTH_FAILED' (status=1)
+2026-10-25 15:40:59 172.21.58.98:34020 TLS: Initial packet from [AF_INET]172.21.58.98:34020, sid=c940f3c1 6c4aa5ce
+2026-10-25 15:40:59 172.21.58.98:34020 VERIFY ERROR: depth=0, error=unable to get local issuer certificate: CN=stolen-device, serial=114736102961999147963216122383052156434275343593
+2026-10-25 15:40:59 172.21.58.98:34020 TLS Error: TLS handshake failed
+2026-10-25 15:41:04 172.21.58.15:57499 TLS: Initial packet from [AF_INET]172.21.58.15:57499, sid=bae57e83 f59236f7
+2026-10-25 15:41:04 172.21.58.15:57499 VERIFY OK: depth=1, CN=Lab VPN CA
+2026-10-25 15:41:04 172.21.58.15:57499 VERIFY OK: depth=0, CN=laptop-ana
+2026-10-25 15:41:04 172.21.58.15:57499 [laptop-ana] Peer Connection Initiated with [AF_INET]172.21.58.15:57499
+2026-10-25 15:41:04 MULTI_sva: pool returned IPv4=10.8.0.6, IPv6=(Not enabled)

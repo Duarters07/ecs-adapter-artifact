@@ -1,0 +1,8 @@
+{"raw": "Fri Oct  2 15:57:38 2026 [pid 124] [ftpuser] OK UPLOAD: Client \"172.18.0.23\", \"/invoice.pdf\", 19 bytes, 28.55Kbyte/sec"}
+{"raw": "Fri Oct  2 15:57:38 2026 [pid 133] [ftpuser] OK DOWNLOAD: Client \"172.18.0.23\", \"/ledger.db\", 19 bytes, 60.44Kbyte/sec"}
+{"raw": "Fri Oct  2 15:57:38 2026 [pid 136] [ftpuser] OK UPLOAD: Client \"172.18.0.23\", \"/archive.tar\", 19 bytes, 20.37Kbyte/sec"}
+{"raw": "Fri Oct  2 15:57:38 2026 [pid 142] [ftpuser] OK UPLOAD: Client \"172.18.0.23\", \"/runbook.md\", 19 bytes, 47.45Kbyte/sec"}
+{"raw": "Fri Oct  2 15:57:38 2026 [pid 127] [ftpuser] OK DOWNLOAD: Client \"172.18.0.23\", \"/invoice.pdf\", 19 bytes, 23.94Kbyte/sec"}
+{"raw": "Fri Oct  2 15:57:38 2026 [pid 130] [ftpuser] OK UPLOAD: Client \"172.18.0.23\", \"/ledger.db\", 19 bytes, 20.50Kbyte/sec"}
+{"raw": "Fri Oct  2 15:57:38 2026 [pid 139] [ftpuser] OK DOWNLOAD: Client \"172.18.0.23\", \"/archive.tar\", 19 bytes, 53.63Kbyte/sec"}
+{"raw": "Fri Oct  2 15:57:38 2026 [pid 145] [ftpuser] OK DOWNLOAD: Client \"172.18.0.23\", \"/runbook.md\", 19 bytes, 61.24Kbyte/sec"}

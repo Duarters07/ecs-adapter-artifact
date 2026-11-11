@@ -1,0 +1,15 @@
+1792969124: New connection from 172.21.50.210 on port 1883.
+1792969124: Socket error on client <unknown>, disconnecting.
+1792969125: New connection from 172.21.50.195 on port 1883.
+1792969125: Socket error on client <unknown>, disconnecting.
+1792969127: New connection from 172.21.50.167 on port 1884.
+1792969127: New client connected from 172.21.50.167 as probe-home (p2, c1, k60, u'dashboard').
+1792969127: Client probe-home disconnected.
+1792969128: New connection from 172.21.50.210 on port 1884.
+1792969128: New client connected from 172.21.50.210 as probe-ops (p2, c1, k60, u'gateway').
+1792969128: Client probe-ops disconnected.
+1792969129: New connection from 172.21.50.181 on port 1883.
+1792969129: New client connected from 172.21.50.181 as dash-wiki (p2, c1, k60, u'pump02').
+1792969129: Client dash-wiki disconnected.
+1792969130: New connection from 172.21.50.155 on port 1884.
+1792969130: Socket error on client <unknown>, disconnecting.

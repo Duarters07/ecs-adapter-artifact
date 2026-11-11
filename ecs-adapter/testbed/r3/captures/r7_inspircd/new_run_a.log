@@ -1,0 +1,8 @@
+Fri 30 Oct 2026 19:12:52 CONNECT: Client connecting on port 6667 (class unnamed-0): ana!ana@172.21.83.11 (172.21.83.11) [ana]
+Fri 30 Oct 2026 19:12:53 QUIT: Client exiting: ana!ana@172.21.83.11 (172.21.83.11) [bye]
+Fri 30 Oct 2026 19:12:58 CONNECT: Client connecting on port 6667 (class unnamed-0): mon!mon@172.21.83.13 (172.21.83.13) [mon]
+Fri 30 Oct 2026 19:12:58 OPER: mon (mon@172.21.83.13) [172.21.83.13] is now a server operator of type NetAdmin (using account admin).
+Fri 30 Oct 2026 19:12:58 QUIT: Client exiting: mon!mon@172.21.83.13 (172.21.83.13) [bye]
+Fri 30 Oct 2026 19:13:01 CONNECT: Client connecting on port 6667 (class unnamed-0): eve!eve@172.21.83.211 (172.21.83.211) [eve]
+Fri 30 Oct 2026 19:13:01 OPER: eve (eve@172.21.83.211) [172.21.83.211] failed to log into the admin oper account because they specified the wrong password.
+Fri 30 Oct 2026 19:13:01 QUIT: Client exiting: eve!eve@172.21.83.211 (172.21.83.211) [bye]

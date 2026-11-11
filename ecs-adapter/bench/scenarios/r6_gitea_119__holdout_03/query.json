@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "url.path": "/api/v1/user/keys"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.id": "3"
+              }
+            },
+            {
+              "term": {
+                "source.user.id": "3"
+              }
+            },
+            {
+              "term": {
+                "user.id": "3"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

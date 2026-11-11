@@ -1,0 +1,5 @@
+Fri Oct 30 2026 19:12:26 CONNECT: Client connecting on port 6667 (class unnamed-0): rui!rui@172.21.83.14 (172.21.83.14) [rui]
+Fri Oct 30 2026 19:12:26 QUIT: Client exiting: rui!rui@172.21.83.14 (172.21.83.14) [bye]
+Fri Oct 30 2026 19:12:31 CONNECT: Client connecting on port 6667 (class unnamed-0): ana!ana@172.21.83.15 (172.21.83.15) [ana]
+Fri Oct 30 2026 19:12:32 OPER: ana (ana@172.21.83.15) is now a server operator of type NetAdmin (using oper 'admin')
+Fri Oct 30 2026 19:12:32 QUIT: Client exiting: ana!ana@172.21.83.15 (172.21.83.15) [bye]

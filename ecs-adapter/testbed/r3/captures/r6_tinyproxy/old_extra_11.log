@@ -1,0 +1,12 @@
+CONNECT   Oct 27 16:51:37 [14]: Connect (file descriptor 10): wizardly_chatelet.r3-net [172.21.66.153]
+NOTICE    Oct 27 16:51:37 [14]: Unauthorized connection from "wizardly_chatelet.r3-net" [172.21.66.153].
+CONNECT   Oct 27 16:51:38 [9]: Connect (file descriptor 10): interesting_banzai.r3-net [172.21.66.228]
+NOTICE    Oct 27 16:51:39 [9]: Unauthorized connection from "interesting_banzai.r3-net" [172.21.66.228].
+CONNECT   Oct 27 16:51:39 [9]: Connect (file descriptor 10): goofy_bose.r3-net [172.21.66.183]
+NOTICE    Oct 27 16:51:39 [9]: Unauthorized connection from "goofy_bose.r3-net" [172.21.66.183].
+CONNECT   Oct 27 16:51:40 [10]: Connect (file descriptor 10): awesome_brattain.r3-net [172.21.66.229]
+NOTICE    Oct 27 16:51:40 [10]: Unauthorized connection from "awesome_brattain.r3-net" [172.21.66.229].
+CONNECT   Oct 27 16:51:41 [9]: Connect (file descriptor 10): flamboyant_swanson.r3-net [172.21.66.212]
+NOTICE    Oct 27 16:51:41 [9]: Unauthorized connection from "flamboyant_swanson.r3-net" [172.21.66.212].
+CONNECT   Oct 27 16:51:42 [9]: Connect (file descriptor 10): nice_lalande.r3-net [172.21.66.160]
+NOTICE    Oct 27 16:51:42 [9]: Unauthorized connection from "nice_lalande.r3-net" [172.21.66.160].

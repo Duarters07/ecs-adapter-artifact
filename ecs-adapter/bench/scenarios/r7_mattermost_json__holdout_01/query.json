@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.ip": "172.21.91.203"
+              }
+            },
+            {
+              "term": {
+                "source.ip": "172.21.91.203"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "error.message": "login: Enter a valid email or username and/or password."
+        }
+      }
+    ]
+  }
+}

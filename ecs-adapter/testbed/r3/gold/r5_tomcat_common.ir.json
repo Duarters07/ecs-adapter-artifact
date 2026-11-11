@@ -1,0 +1,70 @@
+{
+  "source_id": "r5_tomcat_common",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^%{IP:host} %{NOTSPACE:logical_user} %{NOTSPACE:user} \\[%{HTTPDATE:time}\\] \"%{WORD:method} %{NOTSPACE:path} %{DATA:protocol}\" %{INT:status} %{NOTSPACE:bytes}$"
+  },
+  "fields": [
+    {
+      "source_key": "host",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "path",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "protocol",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "status",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "bytes",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "time",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "logical_user",
+      "reason": "identd user, always '-'"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "web"
+    ],
+    "event.dataset": "tomcat.access"
+  }
+}

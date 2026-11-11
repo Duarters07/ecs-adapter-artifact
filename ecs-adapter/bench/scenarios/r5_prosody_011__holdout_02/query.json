@@ -1,0 +1,50 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.domain": "lab.example"
+              }
+            },
+            {
+              "term": {
+                "source.user.domain": "lab.example"
+              }
+            },
+            {
+              "term": {
+                "user.domain": "lab.example"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "helpdesk"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "helpdesk"
+              }
+            },
+            {
+              "term": {
+                "user.name": "helpdesk"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

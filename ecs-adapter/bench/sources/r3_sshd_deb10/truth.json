@@ -1,0 +1,53 @@
+{
+  "source_id": "r3_sshd_deb10",
+  "family": "openssh",
+  "split": "train_r3",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running OpenSSH 7.9p1 (Debian 10, openssh-server 1:7.9p1-10+deb10u4), not copied from documentation or a public dataset. Captured 2026-10-19T09:46:59Z on the author's laptop by testbed/r3/r3_sshd.sh (docker logs, container stderr only (sshd -D -e, no syslog header)); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 3, OLD VERSION - training material only. FREE TEXT; capture names are a scoring convention fixed in documentation.md, as in sshd_auth.",
+  "fields": [
+    {
+      "source_key": "outcome",
+      "ecs_field": "event.outcome",
+      "type": "keyword",
+      "role": "auth_outcome",
+      "difficulty": "medium",
+      "note": "Failed -> failure, Accepted -> success (value map), as round 2's sshd_auth.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "src_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "src_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r3_sshd_deb10__holdout_01",
+    "r3_sshd_deb10__holdout_02"
+  ],
+  "round3": {
+    "pair": "r3_sshd",
+    "role": "old"
+  }
+}

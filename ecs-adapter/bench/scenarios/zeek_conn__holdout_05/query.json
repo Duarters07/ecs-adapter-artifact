@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "source.bytes": 8784
+        }
+      },
+      {
+        "term": {
+          "source.packets": 47
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+2026-10-27T16:57:41.184914+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.114], port=[35866]
+2026-10-27T16:57:43.519514+00:00 mail02 imapd: LOGIN FAILED, user=ana, ip=[::ffff:172.21.67.114], port=[35866]
+2026-10-27T16:57:48.521355+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.114], port=[35866], time=7
+2026-10-27T16:57:49.240076+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.127], port=[60826]
+2026-10-27T16:57:49.323796+00:00 mail02 imapd: LOGIN, user=ana, ip=[::ffff:172.21.67.127], port=[60826], protocol=IMAP
+2026-10-27T16:57:49.324138+00:00 mail02 imapd: LOGOUT, user=ana, ip=[::ffff:172.21.67.127], port=[60826], headers=0, body=0, rcvd=34, sent=340, time=0
+2026-10-27T16:57:50.022782+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.112], port=[40416]
+2026-10-27T16:57:52.596948+00:00 mail02 imapd: LOGIN FAILED, user=ana, ip=[::ffff:172.21.67.112], port=[40416]
+2026-10-27T16:57:57.598884+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.112], port=[40416], time=7
+2026-10-27T16:57:58.331678+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.148], port=[52634]
+2026-10-27T16:58:00.003841+00:00 mail02 imapd: LOGIN FAILED, user=rui, ip=[::ffff:172.21.67.148], port=[52634]
+2026-10-27T16:58:05.005199+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.148], port=[52634], time=7
+2026-10-27T16:58:05.733249+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.139], port=[32922]
+2026-10-27T16:58:05.733465+00:00 mail02 imapd: LOGIN FAILED, user=oracle, ip=[::ffff:172.21.67.139], port=[32922]
+2026-10-27T16:58:10.734940+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.139], port=[32922], time=5
+2026-10-27T16:58:11.438245+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.129], port=[47358]
+2026-10-27T16:58:11.516852+00:00 mail02 imapd: LOGIN, user=rui, ip=[::ffff:172.21.67.129], port=[47358], protocol=IMAP
+2026-10-27T16:58:11.517580+00:00 mail02 imapd: LOGOUT, user=rui, ip=[::ffff:172.21.67.129], port=[47358], headers=0, body=0, rcvd=34, sent=340, time=0

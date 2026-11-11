@@ -1,0 +1,4 @@
+{"level":"error","method":"POST","msg":"Unsuccessful 1FA authentication attempt by user 'ana'","path":"/api/firstfactor","remote_ip":"172.21.61.11","time":"2026-10-27T15:43:17Z"}
+{"error":"user not found","level":"error","method":"POST","msg":"Unsuccessful 1FA authentication attempt by user 'monitor'","path":"/api/firstfactor","remote_ip":"172.21.61.92","time":"2026-10-27T15:43:20Z"}
+{"error":"user not found","level":"error","method":"POST","msg":"Unsuccessful 1FA authentication attempt by user 'root'","path":"/api/firstfactor","remote_ip":"172.21.61.91","time":"2026-10-27T15:43:22Z"}
+{"level":"error","method":"POST","msg":"Unsuccessful 1FA authentication attempt by user 'rui'","path":"/api/firstfactor","remote_ip":"172.21.61.14","time":"2026-10-27T15:43:27Z"}

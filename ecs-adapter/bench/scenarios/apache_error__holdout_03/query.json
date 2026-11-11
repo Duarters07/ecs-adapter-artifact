@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "log.level": "error"
+        }
+      },
+      {
+        "term": {
+          "log.logger": "auth_basic"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+{"raw": "[2026-10-30 19:03:24 +0000] [1/Thread-4 (process_request_thread)] [WARNING] Failed login attempt from 203.0.113.10: 'admin0' (htpasswd)"}
+{"raw": "[2026-10-30 19:03:29 +0000] [1/Thread-6 (process_request_thread)] [WARNING] Failed login attempt from 203.0.113.10: 'admin1' (htpasswd)"}
+{"raw": "[2026-10-30 19:03:31 +0000] [1/Thread-8 (process_request_thread)] [WARNING] Failed login attempt from 203.0.113.10: 'admin2' (htpasswd)"}
+{"raw": "[2026-10-30 19:03:22 +0000] [1/Thread-2 (process_request_thread)] [WARNING] Failed login attempt from 203.0.113.10: 'admin3' (htpasswd)"}

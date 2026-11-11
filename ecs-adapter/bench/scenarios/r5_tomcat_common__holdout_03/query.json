@@ -1,0 +1,45 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "url.full": "/manager/text/serverinfo"
+              }
+            },
+            {
+              "term": {
+                "url.original": "/manager/text/serverinfo"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "deploy"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "deploy"
+              }
+            },
+            {
+              "term": {
+                "user.name": "deploy"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

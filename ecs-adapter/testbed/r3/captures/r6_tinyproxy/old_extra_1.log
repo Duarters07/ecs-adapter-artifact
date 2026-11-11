@@ -1,0 +1,12 @@
+CONNECT   Oct 27 16:50:18 [16]: Connect (file descriptor 10): competent_fermi.r3-net [172.21.66.222]
+NOTICE    Oct 27 16:50:18 [16]: Unauthorized connection from "competent_fermi.r3-net" [172.21.66.222].
+CONNECT   Oct 27 16:50:18 [15]: Connect (file descriptor 10): adoring_shockley.r3-net [172.21.66.233]
+NOTICE    Oct 27 16:50:18 [15]: Unauthorized connection from "adoring_shockley.r3-net" [172.21.66.233].
+CONNECT   Oct 27 16:50:19 [15]: Connect (file descriptor 10): loving_bohr.r3-net [172.21.66.120]
+CONNECT   Oct 27 16:50:19 [15]: Request (file descriptor 10): GET http://r6-web-target/data/users.csv HTTP/1.1
+CONNECT   Oct 27 16:50:20 [8]: Connect (file descriptor 10): hopeful_darwin.r3-net [172.21.66.200]
+NOTICE    Oct 27 16:50:20 [8]: Unauthorized connection from "hopeful_darwin.r3-net" [172.21.66.200].
+CONNECT   Oct 27 16:50:21 [16]: Connect (file descriptor 10): busy_mcnulty.r3-net [172.21.66.143]
+NOTICE    Oct 27 16:50:21 [16]: Unauthorized connection from "busy_mcnulty.r3-net" [172.21.66.143].
+CONNECT   Oct 27 16:50:22 [13]: Connect (file descriptor 10): cool_banach.r3-net [172.21.66.154]
+NOTICE    Oct 27 16:50:22 [13]: Unauthorized connection from "cool_banach.r3-net" [172.21.66.154].

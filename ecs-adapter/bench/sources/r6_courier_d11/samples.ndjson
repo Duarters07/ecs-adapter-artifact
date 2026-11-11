@@ -1,0 +1,30 @@
+{"raw": "2026-10-27T16:15:12.503860+00:00 mail02 imapd: LOGOUT, user=ana, ip=[::ffff:172.21.67.11], port=[52576], headers=0, body=0, rcvd=34, sent=340, time=0"}
+{"raw": "2026-10-27T16:15:20.915586+00:00 mail02 imapd: LOGIN, user=rui, ip=[::ffff:172.21.67.12], port=[56046], protocol=IMAP"}
+{"raw": "2026-10-27T16:15:21.627618+00:00 mail02 imapd: LOGIN FAILED, user=admin, ip=[::ffff:172.21.67.99], port=[59942]"}
+{"raw": "2026-10-27T16:15:33.470026+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.98], port=[52894], time=6"}
+{"raw": "2026-10-27T16:15:34.187775+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.13], port=[51166]"}
+{"raw": "2026-10-27T16:15:51.438031+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.14], port=[53496], time=8"}
+{"raw": "2026-10-27T16:15:52.151014+00:00 mail02 imapd: LOGIN FAILED, user=test, ip=[::ffff:172.21.67.97], port=[45974]"}
+{"raw": "2026-10-27T16:15:20.107025+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.11], port=[52588], time=7"}
+{"raw": "2026-10-27T16:15:57.861855+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.15], port=[41022]"}
+{"raw": "2026-10-27T16:15:26.628926+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.99], port=[59942], time=5"}
+{"raw": "2026-10-27T16:15:28.468078+00:00 mail02 imapd: LOGIN FAILED, user=root, ip=[::ffff:172.21.67.98], port=[52894]"}
+{"raw": "2026-10-27T16:15:34.279022+00:00 mail02 imapd: LOGIN, user=scanner, ip=[::ffff:172.21.67.13], port=[51166], protocol=IMAP"}
+{"raw": "2026-10-27T16:15:43.044916+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.14], port=[53494]"}
+{"raw": "2026-10-27T16:15:12.423352+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.11], port=[52576]"}
+{"raw": "2026-10-27T16:15:12.503062+00:00 mail02 imapd: LOGIN, user=ana, ip=[::ffff:172.21.67.11], port=[52576], protocol=IMAP"}
+{"raw": "2026-10-27T16:15:13.226623+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.11], port=[52588]"}
+{"raw": "2026-10-27T16:15:15.105636+00:00 mail02 imapd: LOGIN FAILED, user=ana, ip=[::ffff:172.21.67.11], port=[52588]"}
+{"raw": "2026-10-27T16:15:20.831405+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.12], port=[56046]"}
+{"raw": "2026-10-27T16:15:20.916247+00:00 mail02 imapd: LOGOUT, user=rui, ip=[::ffff:172.21.67.12], port=[56046], headers=0, body=0, rcvd=34, sent=340, time=0"}
+{"raw": "2026-10-27T16:15:21.627068+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.99], port=[59942]"}
+{"raw": "2026-10-27T16:15:27.359367+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.98], port=[52894]"}
+{"raw": "2026-10-27T16:15:34.279581+00:00 mail02 imapd: LOGOUT, user=scanner, ip=[::ffff:172.21.67.13], port=[51166], headers=0, body=0, rcvd=34, sent=340, time=0"}
+{"raw": "2026-10-27T16:15:43.068302+00:00 mail02 imapd: LOGIN, user=rui, ip=[::ffff:172.21.67.14], port=[53494], protocol=IMAP"}
+{"raw": "2026-10-27T16:15:43.068602+00:00 mail02 imapd: LOGOUT, user=rui, ip=[::ffff:172.21.67.14], port=[53494], headers=0, body=0, rcvd=34, sent=340, time=0"}
+{"raw": "2026-10-27T16:15:43.776723+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.14], port=[53496]"}
+{"raw": "2026-10-27T16:15:46.436080+00:00 mail02 imapd: LOGIN FAILED, user=rui, ip=[::ffff:172.21.67.14], port=[53496]"}
+{"raw": "2026-10-27T16:15:52.150737+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.97], port=[45974]"}
+{"raw": "2026-10-27T16:15:57.152892+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.97], port=[45974], time=5"}
+{"raw": "2026-10-27T16:15:57.945746+00:00 mail02 imapd: LOGIN, user=ana, ip=[::ffff:172.21.67.15], port=[41022], protocol=IMAP"}
+{"raw": "2026-10-27T16:15:57.946392+00:00 mail02 imapd: LOGOUT, user=ana, ip=[::ffff:172.21.67.15], port=[41022], headers=0, body=0, rcvd=34, sent=340, time=0"}

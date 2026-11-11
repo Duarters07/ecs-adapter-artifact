@@ -1,0 +1,10 @@
+{"raw": "20261015 15:00:18,b2558312fb0c,app_ro,172.21.0.3,5,0,CONNECT,shop,,0"}
+{"raw": "20261015 15:00:20,b2558312fb0c,app_rw,172.21.0.3,7,16,QUERY,shop,'CREATE TABLE orders (id int)',0"}
+{"raw": "20261015 15:00:21,b2558312fb0c,root,172.21.0.3,9,0,FAILED_CONNECT,,,1045"}
+{"raw": "20261015 15:00:21,b2558312fb0c,admin,172.21.0.3,10,0,DISCONNECT,,,0"}
+{"raw": "20261015 15:00:22,b2558312fb0c,app_rw,172.21.0.3,11,19,QUERY,shop,'CREATE TABLE cart (id int)',0"}
+{"raw": "20261015 15:00:20,b2558312fb0c,app_rw,172.21.0.3,7,17,QUERY,shop,'DROP TABLE orders',0"}
+{"raw": "20261015 15:00:22,b2558312fb0c,app_rw,172.21.0.3,11,20,QUERY,shop,'ALTER TABLE cart ADD c int',0"}
+{"raw": "20261015 15:00:19,b2558312fb0c,app_ro,172.21.0.3,6,0,FAILED_CONNECT,,,1045"}
+{"raw": "20261015 15:00:20,b2558312fb0c,app_rw,172.21.0.3,8,0,FAILED_CONNECT,,,1045"}
+{"raw": "20261015 15:00:23,b2558312fb0c,app_ro,172.21.0.3,12,0,CONNECT,shop,,0"}

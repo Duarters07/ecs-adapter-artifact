@@ -1,0 +1,6 @@
+2026/10/27 17:03:28 [6ae0d960] router: completed GET /api/v1/repos/ana/secret for 172.21.70.159:51134, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:29 [6ae0d960-2] router: completed GET /api/v1/user/keys for 172.21.70.221:50026, 401 Unauthorized in 28.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:29 [6ae0d961] router: completed GET /api/v1/index.html for 172.21.70.134:34476, 401 Unauthorized in 0.7ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:30 [6ae0d962] router: completed GET /api/v1/.env for 172.21.70.196:41014, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:31 [6ae0d963] router: completed GET /api/v1/user/backup.tar for 172.21.70.250:38290, 404 Not Found in 29.4ms @ context/auth.go:112(context.ToggleAPI)
+2026/10/27 17:03:32 [6ae0d964] router: completed GET /api/v1/user/old.zip for 172.21.70.109:56978, 401 Unauthorized in 0.4ms @ auth/middleware.go:31(auth.APIAuth)

@@ -1,0 +1,4 @@
+{"raw": "[2026-10-30 21:16:31.948] nsd[7]: info: axfr for corp.example. from 203.0.113.10 refused, no acl matches"}
+{"raw": "[2026-10-30 21:16:29.985] nsd[7]: info: ixfr for lab.example. from 203.0.113.10  not-verified"}
+{"raw": "[2026-10-30 21:16:29.009] nsd[7]: info: axfr for lab.example. from 203.0.113.10 refused, no acl matches"}
+{"raw": "[2026-10-30 21:16:30.980] nsd[7]: info: axfr for other.example. from 203.0.113.10 refused, no acl matches"}

@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.ip": "172.21.61.95"
+              }
+            },
+            {
+              "term": {
+                "source.ip": "172.21.61.95"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "event.reason": "user not found"
+        }
+      }
+    ]
+  }
+}

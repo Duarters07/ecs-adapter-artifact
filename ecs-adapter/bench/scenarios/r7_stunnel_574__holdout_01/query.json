@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.action": "Pre-verification error"
+        }
+      },
+      {
+        "term": {
+          "event.reason": "certificate not found in local repository: self-signed certificate"
+        }
+      }
+    ]
+  }
+}

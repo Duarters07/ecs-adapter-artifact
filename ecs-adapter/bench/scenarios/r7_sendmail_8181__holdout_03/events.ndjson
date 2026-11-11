@@ -1,0 +1,6 @@
+{"raw": "2026-10-30T20:50:43.913087+00:00 mail01 sendmail[77]: 69UKog2s000077: from=<hr@partner.example>, size=89, class=0, nrcpts=1, msgid=<202610302050.69UKog2s000077@mail01.lab.example>, proto=ESMTP, daemon=MTA-v4, relay=r7-ws32.r3-net [172.21.91.32]"}
+{"raw": "2026-10-30T20:50:43.939033+00:00 mail01 sendmail[78]: 69UKog2s000077: to=<ana@lab.example>, delay=00:00:00, xdelay=00:00:00, mailer=local, pri=30394, dsn=2.0.0, stat=Sent"}
+{"raw": "2026-10-30T20:50:41.490795+00:00 mail01 sendmail[76]: 69UKoeBv000076: from=<q@partner.example>, size=0, class=0, nrcpts=0, proto=ESMTP, daemon=MTA-v4, relay=r7-ws31.r3-net [172.21.91.31]"}
+{"raw": "2026-10-30T20:50:46.144533+00:00 mail01 sendmail[80]: 69UKojEP000080: ruleset=check_rcpt, arg1=<ceo@hotmail.com>, relay=r7-ws213.r3-net [172.21.91.213], reject=550 5.7.1 <ceo@hotmail.com>... Relaying denied"}
+{"raw": "2026-10-30T20:50:41.490262+00:00 mail01 sendmail[76]: 69UKoeBv000076: <deploy@lab.example>... User unknown"}
+{"raw": "2026-10-30T20:50:46.145027+00:00 mail01 sendmail[80]: 69UKojEP000080: from=<bulk@spam.example>, size=0, class=0, nrcpts=0, proto=ESMTP, daemon=MTA-v4, relay=r7-ws213.r3-net [172.21.91.213]"}

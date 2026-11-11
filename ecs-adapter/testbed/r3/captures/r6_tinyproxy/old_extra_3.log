@@ -1,0 +1,12 @@
+CONNECT   Oct 27 16:50:32 [16]: Connect (file descriptor 10): unruffled_payne.r3-net [172.21.66.250]
+NOTICE    Oct 27 16:50:32 [16]: Unauthorized connection from "unruffled_payne.r3-net" [172.21.66.250].
+CONNECT   Oct 27 16:50:32 [12]: Connect (file descriptor 10): focused_yalow.r3-net [172.21.66.197]
+NOTICE    Oct 27 16:50:32 [12]: Unauthorized connection from "focused_yalow.r3-net" [172.21.66.197].
+CONNECT   Oct 27 16:50:33 [12]: Connect (file descriptor 10): serene_satoshi.r3-net [172.21.66.148]
+NOTICE    Oct 27 16:50:33 [12]: Unauthorized connection from "serene_satoshi.r3-net" [172.21.66.148].
+CONNECT   Oct 27 16:50:34 [8]: Connect (file descriptor 10): sweet_wilson.r3-net [172.21.66.215]
+NOTICE    Oct 27 16:50:34 [8]: Unauthorized connection from "sweet_wilson.r3-net" [172.21.66.215].
+CONNECT   Oct 27 16:50:36 [8]: Connect (file descriptor 10): laughing_ramanujan.r3-net [172.21.66.195]
+NOTICE    Oct 27 16:50:36 [8]: Unauthorized connection from "laughing_ramanujan.r3-net" [172.21.66.195].
+CONNECT   Oct 27 16:50:41 [14]: Connect (file descriptor 10): modest_ganguly.r3-net [172.21.66.142]
+NOTICE    Oct 27 16:50:41 [14]: Unauthorized connection from "modest_ganguly.r3-net" [172.21.66.142].

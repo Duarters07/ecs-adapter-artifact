@@ -1,0 +1,6 @@
+[2026-10-27 17:00:50.042][vaultwarden::api::identity][ERROR] Username or password is incorrect. Try again. IP: 172.21.69.125. Username: ubuntu@lab.local.
+[2026-10-27 17:00:50.787][vaultwarden::api::admin][ERROR] Invalid admin token. IP: 172.21.69.146
+[2026-10-27 17:00:51.572][vaultwarden::api::identity][ERROR] Username or password is incorrect. Try again. IP: 172.21.69.245. Username: admin@lab.local.
+[2026-10-27 17:00:52.326][vaultwarden::api::admin][ERROR] Invalid admin token. IP: 172.21.69.221
+[2026-10-27 17:00:53.081][vaultwarden::api::identity][ERROR] Username or password is incorrect. Try again. IP: 172.21.69.149. Username: simao@lab.local.
+[2026-10-27 17:00:53.860][vaultwarden::api::admin][ERROR] Invalid admin token. IP: 172.21.69.184

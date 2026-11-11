@@ -1,0 +1,6 @@
+2026/10/27 17:03:21 [6ae0d959] router: completed GET /api/v1/wp-login.php for 172.21.70.196:55706, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:22 [6ae0d95a] router: completed GET /api/v1/report.pdf for 172.21.70.250:34488, 401 Unauthorized in 31.9ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:23 [6ae0d95b] router: completed GET /api/v1/user/emails for 172.21.70.250:34492, 200 OK in 30.2ms @ user/email.go:20(user.ListEmails)
+2026/10/27 17:03:23 [6ae0d95b-2] router: completed GET /api/v1/repos/search for 172.21.70.184:55848, 401 Unauthorized in 32.8ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:24 [6ae0d95c] router: completed GET /api/v1/admin.php for 172.21.70.139:36736, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)
+2026/10/27 17:03:25 [6ae0d95d] router: completed GET /api/v1/admin/orgs for 172.21.70.100:34492, 401 Unauthorized in 0.3ms @ auth/middleware.go:31(auth.APIAuth)

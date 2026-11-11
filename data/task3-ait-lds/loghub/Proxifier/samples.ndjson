@@ -1,0 +1,20 @@
+{"raw": "[10.30 16:49:06] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 0 bytes sent, 0 bytes received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:06] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 0 bytes sent, 0 bytes received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:06] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 0 bytes sent, 0 bytes received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:06] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 1228 bytes (1.19 KB) sent, 0 bytes received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:07] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 1091 bytes (1.06 KB) sent, 367 bytes received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:07] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 1097 bytes (1.07 KB) sent, 366 bytes received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:06] chrome.exe - proxy.cse.cuhk.edu.hk:5070 open through proxy proxy.cse.cuhk.edu.hk:5070 HTTPS"}
+{"raw": "[10.30 16:49:06] chrome.exe - proxy.cse.cuhk.edu.hk:5070 open through proxy proxy.cse.cuhk.edu.hk:5070 HTTPS"}
+{"raw": "[10.30 16:49:06] chrome.exe - proxy.cse.cuhk.edu.hk:5070 open through proxy proxy.cse.cuhk.edu.hk:5070 HTTPS"}
+{"raw": "[10.30 16:49:07] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 0 bytes sent, 0 bytes received, lifetime 00:01"}
+{"raw": "[10.30 16:49:07] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 0 bytes sent, 0 bytes received, lifetime 00:01"}
+{"raw": "[10.30 16:49:07] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 0 bytes sent, 0 bytes received, lifetime 00:01"}
+{"raw": "[10.30 16:49:07] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 1036 bytes (1.01 KB) sent, 34151 bytes (33.3 KB) received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:07] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 1040 bytes (1.01 KB) sent, 15872 bytes (15.5 KB) received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:07] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 1066 bytes (1.04 KB) sent, 1782 bytes (1.74 KB) received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:07] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 451 bytes sent, 18846 bytes (18.4 KB) received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:08] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 440 bytes sent, 7416 bytes (7.24 KB) received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:08] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 445 bytes sent, 5174 bytes (5.05 KB) received, lifetime <1 sec"}
+{"raw": "[10.30 16:49:08] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 420 bytes sent, 1042 bytes (1.01 KB) received, lifetime 00:01"}
+{"raw": "[10.30 16:49:09] chrome.exe - proxy.cse.cuhk.edu.hk:5070 close, 426 bytes sent, 4377 bytes (4.27 KB) received, lifetime 00:02"}

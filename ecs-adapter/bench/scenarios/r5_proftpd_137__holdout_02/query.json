@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "destination.port": 21
+              }
+            },
+            {
+              "term": {
+                "server.port": 21
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "event.reason": "no such user found"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+[7] Oct 28 15:25:14 Child connection from 172.21.55.11:50906
+[7] Oct 28 15:25:14 Password auth succeeded for 'ana' from 172.21.55.11:50906
+[7] Oct 28 15:25:14 Exit (ana): Disconnect received
+[9] Oct 28 15:25:15 Child connection from 172.21.55.11:50922
+[9] Oct 28 15:25:15 Bad password attempt for 'ana' from 172.21.55.11:50922
+[9] Oct 28 15:25:15 Exit before auth (user 'ana', 1 fails): Exited normally
+[10] Oct 28 15:25:16 Child connection from 172.21.55.12:55370
+[10] Oct 28 15:25:16 Password auth succeeded for 'rui' from 172.21.55.12:55370
+[10] Oct 28 15:25:16 Exit (rui): Disconnect received
+[12] Oct 28 15:25:16 Child connection from 172.21.55.99:40022
+[12] Oct 28 15:25:16 Login attempt for nonexistent user from 172.21.55.99:40022
+[12] Oct 28 15:25:17 Exit before auth: Exited normally
+[13] Oct 28 15:25:18 Child connection from 172.21.55.98:37852
+[13] Oct 28 15:25:18 Exit before auth (user 'root', 1 fails): Exited normally
+[14] Oct 28 15:25:19 Child connection from 172.21.55.13:57804
+[14] Oct 28 15:25:19 Password auth succeeded for 'deploy' from 172.21.55.13:57804
+[14] Oct 28 15:25:19 Exit (deploy): Disconnect received

@@ -1,0 +1,17 @@
+{"raw": "[Mon Oct 19 09:18:46 2026] [error] [client 172.21.0.3] user rui: authentication failure for \"/members/\": Password Mismatch, referer: http://intranet.local/home"}
+{"raw": "[Mon Oct 19 09:18:46 2026] [error] [client 172.21.0.3] user carlos not found: /members/q3.html"}
+{"raw": "[Mon Oct 19 09:18:46 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/users.db, referer: http://intranet.local/tools"}
+{"raw": "[Mon Oct 19 09:18:47 2026] [error] [client 172.21.0.3] user ana: authentication failure for \"/members/notes.txt\": Password Mismatch, referer: http://intranet.local/wiki"}
+{"raw": "[Mon Oct 19 09:18:50 2026] [error] [client 172.21.0.3] user tiago: authentication failure for \"/reports/\": Password Mismatch, referer: http://portal.local/reports"}
+{"raw": "[Mon Oct 19 09:18:52 2026] [error] [client 172.21.0.3] user sofia: authentication failure for \"/reports/q2.xlsx\": Password Mismatch, referer: http://portal.local/finance"}
+{"raw": "[Mon Oct 19 09:18:48 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/, referer: http://intranet.local/index"}
+{"raw": "[Mon Oct 19 09:18:51 2026] [error] [client 172.21.0.3] user joao not found: /reports/annual.pdf"}
+{"raw": "[Mon Oct 19 09:18:51 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/full.tar.gz, referer: http://portal.local/ops"}
+{"raw": "[Mon Oct 19 09:18:52 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/, referer: http://portal.local/status"}
+{"raw": "[Mon Oct 19 09:18:46 2026] [error] [client 172.21.0.3] user root not found: /members/"}
+{"raw": "[Mon Oct 19 09:18:47 2026] [error] [client 172.21.0.3] user guest not found: /members/"}
+{"raw": "[Mon Oct 19 09:18:47 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/admin/dump.sql"}
+{"raw": "[Mon Oct 19 09:18:47 2026] [error] [client 172.21.0.3] user operator not found: /members/"}
+{"raw": "[Mon Oct 19 09:18:51 2026] [error] [client 172.21.0.3] user backup not found: /reports/"}
+{"raw": "[Mon Oct 19 09:18:52 2026] [error] [client 172.21.0.3] client denied by server configuration: /usr/local/apache2/htdocs/backup/keys.pem"}
+{"raw": "[Mon Oct 19 09:18:52 2026] [error] [client 172.21.0.3] user auditor not found: /reports/"}

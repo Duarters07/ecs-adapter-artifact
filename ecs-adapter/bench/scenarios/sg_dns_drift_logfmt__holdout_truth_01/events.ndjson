@@ -1,0 +1,11 @@
+{"raw": "ts=1791965400.000 domain=web.acme.local host=dns path=config pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=9856 src_ip=10.20.4.11 txid=26419 upstream=8.8.8.8"}
+{"raw": "ts=1791966017.000 domain=web.acme.local host=dns path=config pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=54922 src_ip=10.10.5.12 txid=37076 upstream=8.8.8.8"}
+{"raw": "ts=1791966147.000 domain=web.acme.local host=dns path=config pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=18832 src_ip=10.20.4.11 txid=11487 upstream=1.1.1.1"}
+{"raw": "ts=1791966548.000 domain=web.acme.local host=dns path=config pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=21456 src_ip=10.10.6.11 txid=1978 upstream=8.8.8.8"}
+{"raw": "ts=1791967395.000 domain=web.acme.local host=dns path=config pid=2866 qtype=CNAME rcode=NOERROR resolver=10.10.0.15 sport=5540 src_ip=10.10.7.15 txid=10682 upstream=1.1.1.1"}
+{"raw": "ts=1791965659.000 domain=cloudflare.com host=dns path=forwarded pid=2866 qtype=AAAA rcode=NOERROR resolver=10.10.0.15 sport=6469 src_ip=10.20.7.13 txid=54510 upstream=8.8.8.8"}
+{"raw": "ts=1791965716.000 domain=zoom.us host=dns path=cached pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=63526 src_ip=10.10.7.11 txid=21315 upstream=1.1.1.1"}
+{"raw": "ts=1791965793.000 domain=linkedin.com host=dns path=forwarded pid=2866 qtype=TXT rcode=NOERROR resolver=10.10.0.15 sport=4787 src_ip=10.10.7.15 txid=34669 upstream=8.8.8.8"}
+{"raw": "ts=1791965852.000 domain=fonts.googleapis.com host=dns path=cached pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=14412 src_ip=10.10.7.15 txid=17591 upstream=8.8.8.8"}
+{"raw": "ts=1791965910.000 domain=google.com host=dns path=forwarded pid=2866 qtype=AAAA rcode=NOERROR resolver=10.10.0.15 sport=23287 src_ip=10.10.6.11 txid=1492 upstream=8.8.8.8"}
+{"raw": "ts=1791965997.000 domain=cloudflare.com host=dns path=cached pid=2866 qtype=CNAME rcode=NOERROR resolver=10.10.0.15 sport=33654 src_ip=10.20.1.11 txid=24444 upstream=8.8.8.8"}

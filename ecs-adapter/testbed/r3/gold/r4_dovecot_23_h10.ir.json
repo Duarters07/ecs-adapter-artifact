@@ -1,0 +1,83 @@
+{
+  "source_id": "r4_dovecot_23_h10",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^%{SYSLOGTIMESTAMP:timestamp} %{NOTSPACE:process}: Info: (?<result>Login): user=<%{DATA:user}>, method=%{WORD:method}, rip=%{IP:rip}, lip=%{IP:lip}, mpid=%{INT:mpid}, session=<%{DATA:session}>$",
+    "alternatives": [
+      "^%{SYSLOGTIMESTAMP:timestamp} %{NOTSPACE:process}: Info: (?<result>Disconnected) \\(auth failed, %{INT:attempts} attempts in %{INT:secs} secs\\): user=<%{DATA:user}>, method=%{WORD:method}, rip=%{IP:rip}, lip=%{IP:lip}, session=<%{DATA:session}>$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "rip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "lip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "process",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "method",
+      "reason": "no ECS field for a SASL mechanism"
+    },
+    {
+      "source_key": "session",
+      "reason": "session id; declined"
+    },
+    {
+      "source_key": "mpid",
+      "reason": "mail process pid; declined"
+    },
+    {
+      "source_key": "attempts",
+      "reason": "attempt count"
+    },
+    {
+      "source_key": "secs",
+      "reason": "seconds"
+    }
+  ],
+  "value_maps": [
+    {
+      "from_source_key": "result",
+      "ecs_field": "event.outcome",
+      "map": {
+        "Login": "success",
+        "Disconnected": "failure"
+      }
+    }
+  ],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.dataset": "dovecot.log",
+    "event.type": [
+      "start"
+    ]
+  }
+}

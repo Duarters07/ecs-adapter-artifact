@@ -1,0 +1,4 @@
+{"raw": " 2(8) WARNING: {1 2 REGISTER 533d833d9c6d@172.21.91.203} <script>: REGISTER auth failed: unknown user 100@lab.example from 172.21.91.203:5062 ua=[Linphone/5.2.5 (belle-sip/5.2.94)]"}
+{"raw": " 1(7) INFO: {1 1 REGISTER dc94368926f2@172.21.91.21} <script>: REGISTER challenge for monitor@lab.example from 172.21.91.21:5062 ua=[Linphone/5.2.5 (belle-sip/5.2.94)]"}
+{"raw": " 2(8) NOTICE: {1 2 REGISTER dc94368926f2@172.21.91.21} <script>: REGISTER accepted for monitor@lab.example from 172.21.91.21:5062 contact=<sip:monitor@172.21.91.21:5062> expires=300"}
+{"raw": " 2(8) WARNING: {1 2 REGISTER 7cc817d0d94e@172.21.91.22} <script>: REGISTER auth failed: wrong password for rui@lab.example from 172.21.91.22:5062 ua=[Linphone/5.2.5 (belle-sip/5.2.94)]"}

@@ -1,0 +1,4 @@
+{"raw": "2026/10/27 16:04:27 [15] auth failed on module finance from UNDETERMINED (203.0.113.18) for admin0: no matching rule"}
+{"raw": "2026/10/27 16:04:28 [16] auth failed on module backup from UNDETERMINED (203.0.113.18) for admin1: no matching rule"}
+{"raw": "2026/10/27 16:04:32 [25] auth failed on module finance from UNDETERMINED (203.0.113.18) for admin2: no matching rule"}
+{"raw": "2026/10/27 16:04:34 [29] auth failed on module backup from UNDETERMINED (203.0.113.18) for admin3: no matching rule"}

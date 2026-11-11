@@ -1,0 +1,100 @@
+{
+  "source_id": "mariadb_audit",
+  "family": "mariadb",
+  "split": "test",
+  "category_hint": "database",
+  "contamination_risk": "medium",
+  "origin": "Produced by running MariaDB 11.4.4 (image mariadb:11.4.4), server_audit plugin, not copied from documentation or a public dataset. Captured on 2026-10-15 on the author's laptop by testbed/heldout_r2/mariadb_audit.sh, two runs driven with different words (run A -> samples, run B -> scenario events).",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "CSV WITHOUT A HEADER, AND A COLUMN NAMED FOR THE WRONG ENTITY. `host` is the CLIENT's address - source.ip; host.* would describe the database server, which is `serverhost`. The query text in `object` is single-quoted. ECS 8.11 has no database fieldset, so the database name, the statement and the connection id are acceptable abstentions.",
+  "fields": [
+    {
+      "source_key": "serverhost",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "role": "server_hostname",
+      "difficulty": "hard",
+      "note": "The database SERVER that wrote the line - also the reporter; observer.hostname defensible, DRAFT.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "username",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_address",
+      "difficulty": "hard",
+      "note": "Named `host` but it is the CLIENT: host.ip would put the client in the server's place.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "connectionid",
+      "ecs_field": null,
+      "type": "long",
+      "role": "connection_number",
+      "difficulty": "ambiguous",
+      "note": "Correlates a connection's lines; no ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "queryid",
+      "ecs_field": null,
+      "type": "long",
+      "role": "query_number",
+      "difficulty": "ambiguous",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "operation",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "audit_operation",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "database",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "database_name",
+      "difficulty": "ambiguous",
+      "note": "ECS 8.11 has no database fieldset.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "object",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "sql_statement",
+      "difficulty": "ambiguous",
+      "note": "The SQL statement; ECS 8.11 has no field for it.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "retcode",
+      "ecs_field": "error.code",
+      "type": "keyword",
+      "role": "return_code",
+      "difficulty": "medium",
+      "note": "0 is success; 1045 is access denied. A code, not a count.",
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "mariadb_audit__holdout_01",
+    "mariadb_audit__holdout_02",
+    "mariadb_audit__holdout_03"
+  ]
+}

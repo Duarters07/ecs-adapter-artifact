@@ -1,0 +1,15 @@
+2026/10/27 16:49:25 [107] connect from UNDETERMINED (172.21.65.147)
+2026/10/27 16:49:25 [107] unknown module 'etc' tried from UNDETERMINED (172.21.65.147)
+2026/10/27 16:49:26 [108] connect from UNDETERMINED (172.21.65.239)
+2026/10/27 16:49:26 [108] rsync allowed access on module public from UNDETERMINED (172.21.65.239)
+2026/10/27 16:49:26 [109] connect from UNDETERMINED (172.21.65.163)
+2026/10/27 16:49:26 [109] rsync allowed access on module backup from UNDETERMINED (172.21.65.163)
+2026/10/27 16:49:26 [109] auth failed on module backup from UNDETERMINED (172.21.65.163) for backup: no matching rule
+2026/10/27 16:49:27 [110] connect from UNDETERMINED (172.21.65.173)
+2026/10/27 16:49:27 [110] rsync allowed access on module backup from UNDETERMINED (172.21.65.173)
+2026/10/27 16:49:27 [110] auth failed on module backup from UNDETERMINED (172.21.65.173) for test: no matching rule
+2026/10/27 16:49:28 [111] connect from UNDETERMINED (172.21.65.229)
+2026/10/27 16:49:28 [111] rsync allowed access on module finance from UNDETERMINED (172.21.65.229)
+2026/10/27 16:49:28 [111] auth failed on module finance from UNDETERMINED (172.21.65.229) for root: no matching rule
+2026/10/27 16:49:28 [112] connect from UNDETERMINED (172.21.65.129)
+2026/10/27 16:49:28 [112] rsync allowed access on module public from UNDETERMINED (172.21.65.129)

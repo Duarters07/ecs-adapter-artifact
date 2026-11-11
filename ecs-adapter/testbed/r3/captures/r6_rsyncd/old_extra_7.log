@@ -1,0 +1,15 @@
+2026/10/27 16:49:38 [155] connect from UNDETERMINED (172.21.65.159)
+2026/10/27 16:49:38 [155] rsync allowed access on module public from UNDETERMINED (172.21.65.159)
+2026/10/27 16:49:38 [156] connect from UNDETERMINED (172.21.65.197)
+2026/10/27 16:49:38 [156] rsync allowed access on module backup from UNDETERMINED (172.21.65.197)
+2026/10/27 16:49:38 [156] auth failed on module backup from UNDETERMINED (172.21.65.197) for oracle: no matching rule
+2026/10/27 16:49:39 [157] connect from UNDETERMINED (172.21.65.156)
+2026/10/27 16:49:39 [157] rsync allowed access on module backup from UNDETERMINED (172.21.65.156)
+2026/10/27 16:49:39 [157] auth failed on module backup from UNDETERMINED (172.21.65.156) for rui: password mismatch
+2026/10/27 16:49:40 [158] connect from UNDETERMINED (172.21.65.147)
+2026/10/27 16:49:40 [158] unknown module 'root' tried from UNDETERMINED (172.21.65.147)
+2026/10/27 16:49:40 [159] connect from UNDETERMINED (172.21.65.211)
+2026/10/27 16:49:40 [159] rsync allowed access on module backup from UNDETERMINED (172.21.65.211)
+2026/10/27 16:49:40 [159] auth failed on module backup from UNDETERMINED (172.21.65.211) for admin: no matching rule
+2026/10/27 16:49:41 [160] connect from UNDETERMINED (172.21.65.233)
+2026/10/27 16:49:41 [160] rsync allowed access on module public from UNDETERMINED (172.21.65.233)

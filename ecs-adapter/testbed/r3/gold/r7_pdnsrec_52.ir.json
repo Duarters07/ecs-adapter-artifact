@@ -1,0 +1,93 @@
+{
+  "source_id": "r7_pdnsrec_52",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^(?<timestamp>%{SYSLOGTIMESTAMP}) msg=\"(?<action>Question)\" subsystem=\"%{WORD:subsystem}\" level=\"%{INT}\" prio=\"%{WORD:prio}\" tid=\"%{INT:tid}\" ts=\"%{NUMBER}\" ecs=\"%{DATA}\" mtid=\"%{INT}\" proto=\"%{WORD:proto}\" qname=\"%{DATA:qname}\" qtype=\"%{WORD:qtype}\" remote=\"%{IP:client_ip}:%{INT:client_port}\"$",
+    "alternatives": [
+      "^(?<timestamp>%{SYSLOGTIMESTAMP}) msg=\"(?<action>Answer)\" subsystem=\"%{WORD:subsystem}\" level=\"%{INT}\" prio=\"%{WORD:prio}\" tid=\"%{INT:tid}\" ts=\"%{NUMBER}\" additional=\"%{INT}\" answer-is-variable=\"%{INT}\" answers=\"%{INT:answers}\" dotout=\"%{INT}\" ecs=\"%{DATA}\" into-packetcache=\"%{INT}\" maxdepth=\"%{INT}\" mtid=\"%{INT}\" netms=\"%{NUMBER}\" outqueries=\"%{INT}\" proto=\"%{WORD:proto}\" qname=\"%{DATA:qname}\" qtype=\"%{WORD:qtype}\" rcode=\"%{INT:rcode}\" rd=\"%{INT}\" received=\"%{INT}\" remote=\"%{IP:client_ip}:%{INT:client_port}\" tcpout=\"%{INT}\" throttled=\"%{INT}\" timeouts=\"%{INT}\" totms=\"%{NUMBER}\" validationState=\"%{WORD}\"$",
+      "^(?<timestamp>%{SYSLOGTIMESTAMP}) msg=\"(?<action>Question answered from packet cache)\" subsystem=\"%{WORD:subsystem}\" level=\"%{INT}\" prio=\"%{WORD:prio}\" tid=\"%{INT:tid}\" ts=\"%{NUMBER}\" proto=\"%{WORD:proto}\" qname=\"%{DATA:qname}\" qtype=\"%{WORD:qtype}\" remote=\"%{IP:client_ip}:%{INT:client_port}\" source=\"%{DATA}\" tag=\"%{INT}\"$",
+      "^(?<timestamp>%{SYSLOGTIMESTAMP}) msg=\"(?<action>Dropping UDP query, address not matched by allow-from)\" subsystem=\"%{WORD:subsystem}\" level=\"%{INT}\" prio=\"%{WORD:prio}\" tid=\"%{INT:tid}\" ts=\"%{NUMBER}\" proto=\"%{WORD:proto}\" source=\"%{IP:client_ip}:%{INT:client_port}\"$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "qname",
+      "ecs_field": "dns.question.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "qtype",
+      "ecs_field": "dns.question.type",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "rcode",
+      "ecs_field": "dns.response_code",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "proto",
+      "ecs_field": "network.transport",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "prio",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "subsystem",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "tid",
+      "ecs_field": "process.thread.id",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "answers",
+      "reason": "no ECS field for a count of answers"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "network"
+    ],
+    "event.dataset": "pdns_recursor.log"
+  }
+}

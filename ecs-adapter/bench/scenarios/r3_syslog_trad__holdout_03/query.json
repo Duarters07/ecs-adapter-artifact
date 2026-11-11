@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "process.command_line": "/usr/bin/id"
+        }
+      },
+      {
+        "term": {
+          "process.name": "sudo"
+        }
+      }
+    ]
+  }
+}

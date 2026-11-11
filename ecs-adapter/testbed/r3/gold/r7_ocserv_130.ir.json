@@ -1,0 +1,103 @@
+{
+  "source_id": "r7_ocserv_130",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^%{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} (?<program>ocserv)\\[%{INT:pid}\\]: (?<component>sec-mod): (?<action>initiating session|invalidating session) (?:for|of) user \\x27%{DATA:user}\\x27 \\(session: %{DATA:session}\\)$",
+    "alternatives": [
+      "^%{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} (?<program>ocserv)\\[%{INT:pid}\\]: (?<component>plain-auth): (?<action>error authenticating) user \\x27%{DATA:user}\\x27$",
+      "^%{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} (?<program>ocserv)\\[%{INT:pid}\\]: (?<component>worker)\\[%{DATA:user}\\]: %{IP:client_ip} %{NOTSPACE:src_location}: (?<action>failed authentication) for \\x27%{DATA}\\x27$",
+      "^%{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} (?<program>ocserv)\\[%{INT:pid}\\]: (?<component>main)\\[%{DATA:user}\\]:%{IP:client_ip}:%{INT:client_port} (?<action>new user session|user logged in)$",
+      "^%{TIMESTAMP_ISO8601:timestamp} %{HOSTNAME:host} (?<program>ocserv)\\[%{INT:pid}\\]: (?<component>main)\\[%{DATA:user}\\]:%{IP:client_ip}:%{INT:client_port} (?<action>user disconnected) \\(reason: %{DATA:reason}, rx: %{INT:rx}, tx: %{INT:tx}\\)$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "program",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "rx",
+      "ecs_field": "source.bytes",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "tx",
+      "ecs_field": "destination.bytes",
+      "type": "long",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "component",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "session",
+      "reason": "session id; declined"
+    },
+    {
+      "source_key": "src_location",
+      "reason": "no ECS field"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication",
+      "network"
+    ],
+    "event.dataset": "ocserv.log"
+  }
+}

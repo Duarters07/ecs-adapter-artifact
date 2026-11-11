@@ -1,0 +1,13 @@
+{
+ "expected_hits": 4,
+ "targets": [
+  "dns.question.name"
+ ],
+ "labels": [
+  "foothold",
+  "wpscan"
+ ],
+ "message_type": 2,
+ "origin": "AIT-LDS v2.1 fox, inet-firewall/logs/dnsmasq.log: 4 lines labelled ['foothold', 'wpscan'] and 60 unlabelled lines (seed 0); expected_hits counted on the reference parser's parse",
+ "split": "holdout"
+}

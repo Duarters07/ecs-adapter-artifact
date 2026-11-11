@@ -1,0 +1,96 @@
+{
+  "source_id": "r5_envoy_default",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^\\[%{TIMESTAMP_ISO8601:start_time}\\] \"%{WORD:method} %{NOTSPACE:path} %{DATA:protocol}\" %{INT:response_code} %{NOTSPACE:response_flags} %{INT:bytes_received} %{INT:bytes_sent} %{NOTSPACE:duration} %{NOTSPACE:upstream_service_time} \"%{DATA:x_forwarded_for}\" \"%{DATA:user_agent}\" \"%{DATA:request_id}\" \"%{DATA:authority}\" \"%{DATA:upstream_host}\"$"
+  },
+  "fields": [
+    {
+      "source_key": "method",
+      "ecs_field": "http.request.method",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "path",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "response_code",
+      "ecs_field": "http.response.status_code",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "bytes_received",
+      "ecs_field": "http.request.body.bytes",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "bytes_sent",
+      "ecs_field": "http.response.body.bytes",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "user_agent",
+      "ecs_field": "user_agent.original",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "request_id",
+      "ecs_field": "http.request.id",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "protocol",
+      "ecs_field": "http.version",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "start_time",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "response_flags",
+      "reason": "no ECS field for Envoy's response flags"
+    },
+    {
+      "source_key": "duration",
+      "reason": "milliseconds; event.duration is nanoseconds"
+    },
+    {
+      "source_key": "authority",
+      "reason": "host:port in one token"
+    },
+    {
+      "source_key": "upstream_host",
+      "reason": "ip:port in one token"
+    },
+    {
+      "source_key": "upstream_service_time",
+      "reason": "upstream service time header"
+    },
+    {
+      "source_key": "x_forwarded_for",
+      "reason": "always '-' in the capture"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "web"
+    ],
+    "event.dataset": "envoy.access"
+  }
+}

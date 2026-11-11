@@ -1,0 +1,11 @@
+{"raw": "Oct 22 08:42:36 imap-login: Info: Login: user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=14, session=<ROp42GleArusFQAD>"}
+{"raw": "Oct 22 08:42:50 imap-login: Info: Disconnected (auth failed, 1 attempts in 9 secs): user=<carlos>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<tkDI2GleDLusFQAD>"}
+{"raw": "Oct 22 08:42:58 imap-login: Info: Login: user=<rui>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=18, session=<4cNM2WlefI2sFQAD>"}
+{"raw": "Oct 22 08:43:07 imap-login: Info: Login: user=<sofia>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=21, session=<VjsW2mleOrmsFQAD>"}
+{"raw": "Oct 22 08:43:12 imap-login: Info: Login: user=<tiago>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=23, session=<bFeX2mleVqCsFQAD>"}
+{"raw": "Oct 22 08:43:32 imap-login: Info: Login: user=<ines>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=27, session=<9b5V22le2rysFQAD>"}
+{"raw": "Oct 22 08:43:03 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<root>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<rQDQ2WleNrmsFQAD>"}
+{"raw": "Oct 22 08:43:24 imap-login: Info: Disconnected (auth failed, 1 attempts in 8 secs): user=<guest>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<AeHb2mle2LysFQAD>"}
+{"raw": "Oct 22 08:43:37 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<admin>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<wf/Y22leDI2sFQAD>"}
+{"raw": "Oct 22 08:42:41 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<wZuB2GleBrusFQAD>"}
+{"raw": "Oct 22 08:43:16 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<tiago>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<VPqf2mleXqCsFQAD>"}

@@ -1,0 +1,11 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "not authorised"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "source_id": "r3_sshd_deb12",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^%{WORD:outcome} %{WORD:method} for (?:invalid user )?%{NOTSPACE:user} from %{IP:src_ip} port %{INT:src_port} ssh2$",
+    "alternatives": [
+      "^Invalid user %{NOTSPACE:user} from %{IP:src_ip} port %{INT:src_port}$",
+      "^Connection closed by (?:authenticating|invalid) user %{NOTSPACE:user} %{IP:src_ip} port %{INT:src_port} \\[preauth\\]$",
+      "^Connection closed by %{IP:src_ip} port %{INT:src_port}$",
+      "^kex_exchange_identification: %{GREEDYDATA:reason}$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "user",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "src_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "src_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    }
+  ],
+  "value_maps": [
+    {
+      "from_source_key": "outcome",
+      "ecs_field": "event.outcome",
+      "map": {
+        "Failed": "failure",
+        "Accepted": "success"
+      }
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "method",
+      "reason": "the authentication method; no ECS field this source maps"
+    },
+    {
+      "source_key": "reason",
+      "reason": "why the key exchange failed; the truth (testbed/r3/specs.py) maps no field for it"
+    }
+  ],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "authentication"
+    ],
+    "event.dataset": "openssh.auth"
+  }
+}

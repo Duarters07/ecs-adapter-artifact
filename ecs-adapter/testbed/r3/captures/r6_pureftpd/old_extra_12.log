@@ -1,0 +1,19 @@
+2026-10-27T16:48:27.151888+00:00 files02 pure-ftpd: (?@172.21.64.186) [INFO] New connection from 172.21.64.186
+2026-10-27T16:48:30.568796+00:00 files02 pure-ftpd: (?@172.21.64.186) [WARNING] Authentication failed for user [rui]
+2026-10-27T16:48:30.569788+00:00 files02 pure-ftpd: (?@172.21.64.186) [INFO] Logout.
+2026-10-27T16:48:31.251922+00:00 files02 pure-ftpd: (?@172.21.64.226) [INFO] New connection from 172.21.64.226
+2026-10-27T16:48:31.272939+00:00 files02 pure-ftpd: (?@172.21.64.226) [INFO] ana is now logged in
+2026-10-27T16:48:31.273893+00:00 files02 pure-ftpd: (ana@172.21.64.226) [NOTICE] /home/ana//q3.txt downloaded  (7 bytes, 341.33KB/sec)
+2026-10-27T16:48:31.273913+00:00 files02 pure-ftpd: (ana@172.21.64.226) [INFO] Logout.
+2026-10-27T16:48:31.980168+00:00 files02 pure-ftpd: (?@172.21.64.131) [INFO] New connection from 172.21.64.131
+2026-10-27T16:48:36.260477+00:00 files02 pure-ftpd: (?@172.21.64.131) [WARNING] Authentication failed for user [backup]
+2026-10-27T16:48:36.261474+00:00 files02 pure-ftpd: (?@172.21.64.131) [INFO] Logout.
+2026-10-27T16:48:36.983555+00:00 files02 pure-ftpd: (?@172.21.64.108) [INFO] New connection from 172.21.64.108
+2026-10-27T16:48:42.661299+00:00 files02 pure-ftpd: (?@172.21.64.108) [WARNING] Authentication failed for user [admin]
+2026-10-27T16:48:42.662749+00:00 files02 pure-ftpd: (?@172.21.64.108) [INFO] Logout.
+2026-10-27T16:48:43.358569+00:00 files02 pure-ftpd: (?@172.21.64.126) [INFO] New connection from 172.21.64.126
+2026-10-27T16:48:49.218058+00:00 files02 pure-ftpd: (?@172.21.64.126) [WARNING] Authentication failed for user [ftp]
+2026-10-27T16:48:49.219471+00:00 files02 pure-ftpd: (?@172.21.64.126) [INFO] Logout.
+2026-10-27T16:48:49.910849+00:00 files02 pure-ftpd: (?@172.21.64.119) [INFO] New connection from 172.21.64.119
+2026-10-27T16:48:53.356520+00:00 files02 pure-ftpd: (?@172.21.64.119) [WARNING] Authentication failed for user [ana]
+2026-10-27T16:48:53.357595+00:00 files02 pure-ftpd: (?@172.21.64.119) [INFO] Logout.

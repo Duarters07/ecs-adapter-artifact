@@ -1,0 +1,15 @@
+{
+ "expected_hits": 3,
+ "targets": [
+  "user_agent.original",
+  "source.ip"
+ ],
+ "labels": [
+  "attacker_http",
+  "foothold",
+  "webshell_upload"
+ ],
+ "message_type": 0,
+ "origin": "AIT-LDS v2.1 fox, intranet_server/logs/apache2/intranet.price.fox.org-access.log.2: 3 lines labelled ['attacker_http', 'foothold', 'webshell_upload'] and 60 unlabelled lines (seed 0); expected_hits counted on the reference parser's parse",
+ "split": "holdout"
+}

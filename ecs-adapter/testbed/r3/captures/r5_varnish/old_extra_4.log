@@ -1,0 +1,6 @@
+172.21.0.4 - - [25/Oct/2026:22:57:23 +0000] "GET http://r5-varnish-old/admin/wp-login.php HTTP/1.1" 403 249 "-" "Go-http-client/1.1"
+172.21.0.4 - - [25/Oct/2026:22:57:23 +0000] "GET http://r5-varnish-old/missing.html HTTP/1.1" 404 153 "-" "Wget/1.21.3"
+172.21.0.4 - - [25/Oct/2026:22:57:23 +0000] "POST http://r5-varnish-old/login HTTP/1.1" 404 153 "-" "Mozilla/5.0 (X11; Linux x86_64) Firefox/119.0"
+172.21.0.4 - - [25/Oct/2026:22:57:24 +0000] "GET http://r5-varnish-old/users.csv HTTP/1.1" 404 153 "-" "sqlmap/1.7#stable (https://sqlmap.org)"
+172.21.0.4 - - [25/Oct/2026:22:57:24 +0000] "GET http://r5-varnish-old/ HTTP/1.1" 200 615 "-" "Mozilla/5.0 (X11; Linux x86_64) Firefox/119.0"
+172.21.0.4 - - [25/Oct/2026:22:57:24 +0000] "GET http://r5-varnish-old/admin/admin.php HTTP/1.1" 403 246 "-" "Go-http-client/1.1"

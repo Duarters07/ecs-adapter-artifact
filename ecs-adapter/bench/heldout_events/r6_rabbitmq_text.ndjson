@@ -1,0 +1,7 @@
+{"raw": "2026-10-27 15:30:07.908613+00:00 [info] <0.1000.0> connection <0.1000.0> (172.21.60.21:53678 -> 172.21.0.2:5672): user 'scanner' authenticated and granted access to vhost '/'\u001b[0m"}
+{"raw": "\u001b[38;5;160m2026-10-27 15:30:09.199197+00:00 [error] <0.1015.0> Error on AMQP connection <0.1015.0> (172.21.60.22:35998 -> 172.21.0.2:5672, user: 'rui', state: opening):\u001b[0m"}
+{"raw": "\u001b[38;5;160m2026-10-27 15:30:08.545647+00:00 [error] <0.1010.0> PLAIN login refused: user 'backup' - invalid credentials\u001b[0m"}
+{"raw": "\u001b[38;5;160m2026-10-27 15:30:09.199197+00:00 [error] <0.1015.0> access to vhost 'billing' refused for user 'rui'\u001b[0m"}
+{"raw": "\u001b[38;5;160m2026-10-27 15:30:09.861786+00:00 [error] <0.1023.0> PLAIN login refused: user 'root' - invalid credentials\u001b[0m"}
+{"raw": "\u001b[38;5;160m2026-10-27 15:30:07.259500+00:00 [error] <0.995.0> PLAIN login refused: user 'scanner' - invalid credentials\u001b[0m"}
+{"raw": "2026-10-27 15:30:09.199503+00:00 [info] <0.1015.0> closing AMQP connection <0.1015.0> (172.21.60.22:35998 -> 172.21.0.2:5672, vhost: 'none', user: 'rui')\u001b[0m"}

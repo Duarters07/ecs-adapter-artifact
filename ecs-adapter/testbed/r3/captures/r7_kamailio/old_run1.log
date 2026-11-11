@@ -1,0 +1,10 @@
+ 1(7) INFO: {1 1 REGISTER 650ed8e62666@172.21.91.11} <script>: REGISTER challenge for ana@lab.example from 172.21.91.11:5062 ua=[Linphone/5.2.5 (belle-sip/5.2.94)]
+ 2(8) NOTICE: {1 2 REGISTER 650ed8e62666@172.21.91.11} <script>: REGISTER accepted for ana@lab.example from 172.21.91.11:5062 contact=<sip:ana@172.21.91.11:5062> expires=300
+ 1(7) INFO: {1 1 REGISTER 5bf4b0f0b3d0@172.21.91.11} <script>: REGISTER challenge for ana@lab.example from 172.21.91.11:5062 ua=[Linphone/5.2.5 (belle-sip/5.2.94)]
+ 2(8) WARNING: {1 2 REGISTER 5bf4b0f0b3d0@172.21.91.11} <script>: REGISTER auth failed: wrong password for ana@lab.example from 172.21.91.11:5062 ua=[Linphone/5.2.5 (belle-sip/5.2.94)]
+ 1(7) INFO: {1 1 REGISTER 71e85b9177ce@172.21.91.12} <script>: REGISTER challenge for rui@lab.example from 172.21.91.12:5062 ua=[Linphone/5.2.5 (belle-sip/5.2.94)]
+ 2(8) NOTICE: {1 2 REGISTER 71e85b9177ce@172.21.91.12} <script>: REGISTER accepted for rui@lab.example from 172.21.91.12:5062 contact=<sip:rui@172.21.91.12:5062> expires=300
+ 1(7) INFO: {1 1 REGISTER 4ac03fb51d7c@172.21.91.201} <script>: REGISTER challenge for ghost@lab.example from 172.21.91.201:5062 ua=[Linphone/5.2.5 (belle-sip/5.2.94)]
+ 2(8) WARNING: {1 2 REGISTER 4ac03fb51d7c@172.21.91.201} <script>: REGISTER auth failed: unknown user ghost@lab.example from 172.21.91.201:5062 ua=[Linphone/5.2.5 (belle-sip/5.2.94)]
+ 1(7) INFO: {1 1 REGISTER 3108183c645a@172.21.91.13} <script>: REGISTER challenge for monitor@lab.example from 172.21.91.13:5062 ua=[Linphone/5.2.5 (belle-sip/5.2.94)]
+ 2(8) NOTICE: {1 2 REGISTER 3108183c645a@172.21.91.13} <script>: REGISTER accepted for monitor@lab.example from 172.21.91.13:5062 contact=<sip:monitor@172.21.91.13:5062> expires=300

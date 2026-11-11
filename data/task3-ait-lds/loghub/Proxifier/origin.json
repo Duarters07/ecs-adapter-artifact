@@ -1,0 +1,13 @@
+{
+ "dataset": "Loghub-2.0",
+ "system": "Proxifier",
+ "lines": 21320,
+ "sampler": "adapter.sampler.deduplicate(per_signature=3,total_cap=20)",
+ "log_sha256": "aa4dcae98629465899ead595449eaf1f4393eaa1948805095677c11e4740f695",
+ "selftest_ceiling": {
+  "lines": 21320,
+  "GA": 0.9857,
+  "PA": 0.9857,
+  "unmatched": 0.0143
+ }
+}

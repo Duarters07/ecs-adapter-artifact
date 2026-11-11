@@ -1,0 +1,16 @@
+{
+ "bool": {
+  "filter": [
+   {
+    "term": {
+     "dns.question.type": "A"
+    }
+   },
+   {
+    "term": {
+     "source.ip": "10.35.33.111"
+    }
+   }
+  ]
+ }
+}

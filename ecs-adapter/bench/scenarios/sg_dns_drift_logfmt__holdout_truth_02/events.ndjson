@@ -1,0 +1,14 @@
+{"raw": "ts=1791966251.000 domain=api.github.com host=dns path=forwarded pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=13064 src_ip=10.30.2.11 txid=12312 upstream=8.8.8.8"}
+{"raw": "ts=1791966692.000 domain=login.microsoftonline.com host=dns path=forwarded pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=47131 src_ip=10.10.7.11 txid=32739 upstream=1.1.1.1"}
+{"raw": "ts=1791966739.000 domain=linkedin.com host=dns path=forwarded pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=33991 src_ip=10.30.3.12 txid=45326 upstream=8.8.8.8"}
+{"raw": "ts=1791966814.000 domain=login.microsoftonline.com host=dns path=forwarded pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=2500 src_ip=10.30.5.13 txid=49665 upstream=8.8.8.8"}
+{"raw": "ts=1791966881.000 domain=cdn.jsdelivr.net host=dns path=forwarded pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=55487 src_ip=10.10.7.16 txid=36315 upstream=1.1.1.1"}
+{"raw": "ts=1791966935.000 domain=dropbox.com host=dns path=cached pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=27949 src_ip=10.10.7.15 txid=18458 upstream=1.1.1.1"}
+{"raw": "ts=1791967100.000 domain=atlassian.net host=dns path=forwarded pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=32635 src_ip=10.20.1.11 txid=43315 upstream=8.8.8.8"}
+{"raw": "ts=1791967204.000 domain=www.google.com host=dns path=forwarded pid=2866 qtype=A rcode=NOERROR resolver=10.10.0.15 sport=42834 src_ip=10.10.7.11 txid=20027 upstream=1.1.1.1"}
+{"raw": "ts=1791966077.000 domain=intranet.acme.local host=dns path=config pid=2866 qtype=HTTPS rcode=NOERROR resolver=10.10.0.15 sport=12756 src_ip=10.30.5.11 txid=7760 upstream=8.8.8.8"}
+{"raw": "ts=1791966186.000 domain=microsoft.com host=dns path=cached pid=2866 qtype=PTR rcode=NOERROR resolver=10.10.0.15 sport=15473 src_ip=10.20.7.13 txid=15449 upstream=1.1.1.1"}
+{"raw": "ts=1791966217.000 domain=fonts.googleapis.com host=dns path=forwarded pid=2866 qtype=HTTPS rcode=NOERROR resolver=10.10.0.15 sport=55379 src_ip=10.10.7.11 txid=35463 upstream=1.1.1.1"}
+{"raw": "ts=1791966333.000 domain=google.com host=dns path=forwarded pid=2866 qtype=CNAME rcode=NOERROR resolver=10.10.0.15 sport=15475 src_ip=10.10.7.11 txid=30188 upstream=1.1.1.1"}
+{"raw": "ts=1791966380.000 domain=amazonaws.com host=dns path=forwarded pid=2866 qtype=TXT rcode=NOERROR resolver=10.10.0.15 sport=59300 src_ip=10.10.5.12 txid=40333 upstream=1.1.1.1"}
+{"raw": "ts=1791966421.000 domain=cdn.jsdelivr.net host=dns path=forwarded pid=2866 qtype=CNAME rcode=NOERROR resolver=10.10.0.15 sport=6033 src_ip=10.10.2.12 txid=29775 upstream=8.8.8.8"}

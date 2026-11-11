@@ -1,0 +1,14 @@
+{"raw": "15-Oct-2026 14:56:43.777 client @0x7600fa5b3090 172.21.0.3#35741 (www.corp.example): query: www.corp.example IN A +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:43.929 client @0x760105815090 172.21.0.3#48381 (github.com): query (cache) 'github.com/A/IN' denied (allow-query-cache did not match)"}
+{"raw": "15-Oct-2026 14:56:44.032 client @0x760108c15090 172.21.0.3#39534 (wikipedia.org): query failed (REFUSED) for wikipedia.org/IN/A at query.c:5705"}
+{"raw": "15-Oct-2026 14:56:43.951 client @0x760106c14c90 172.21.0.3#41131 (corp.example): query: corp.example IN AXFR -E(0)TK (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:44.006 client @0x760105818890 172.21.0.3#34301 (db.corp.example): query: db.corp.example IN A +E(0)TK (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:43.802 client @0x760107215090 172.21.0.3#60878 (mail.corp.example): query: mail.corp.example IN A +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:43.826 client @0x760109e15090 172.21.0.3#56091 (vpn.corp.example): query: vpn.corp.example IN A +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:43.852 client @0x76010aa7e090 172.21.0.3#35745 (corp.example): query: corp.example IN MX +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:43.981 client @0x760109215090 172.21.0.3#37062 (www.corp.example): query: www.corp.example IN AAAA +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:43.876 client @0x7600fa5b3090 172.21.0.3#33888 (corp.example): query: corp.example IN TXT +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:43.905 client @0x760107215090 172.21.0.3#46542 (nosuch.corp.example): query: nosuch.corp.example IN A +E(0)K (172.21.0.2)"}
+{"raw": "15-Oct-2026 14:56:43.951 client @0x760106c14c90 172.21.0.3#41131 (corp.example): zone transfer 'corp.example/AXFR/IN' denied"}
+{"raw": "15-Oct-2026 14:56:43.929 client @0x760105815090 172.21.0.3#48381 (github.com): query failed (REFUSED) for github.com/IN/A at query.c:5705"}
+{"raw": "15-Oct-2026 14:56:44.032 client @0x760108c15090 172.21.0.3#39534 (wikipedia.org): query (cache) 'wikipedia.org/A/IN' denied (allow-query-cache did not match)"}

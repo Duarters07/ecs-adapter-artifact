@@ -1,0 +1,11 @@
+{
+  "description": "1 of 3 captured lines carry source.ip=172.21.88.21, event.action=terminate.",
+  "expected_hits": 1,
+  "origin": "Counted over the captured lines by corpus/heldout_scenarios.py. Nothing was injected: the events are the samples, unaltered, and expected_hits is how many of them already carry these values.",
+  "split": "holdout",
+  "targets": [
+    "source.ip",
+    "event.action"
+  ],
+  "why_this_catches_semantic_errors": "The query filters on the ECS fields, not on the source keys. A mapping that puts the right value in the wrong field is schema-valid, indexes cleanly and passes V1, V2 and V3; the count comes back 0 and only V4 notices."
+}

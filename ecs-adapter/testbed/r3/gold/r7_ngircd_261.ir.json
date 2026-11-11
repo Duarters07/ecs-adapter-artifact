@@ -1,0 +1,101 @@
+{
+  "source_id": "r7_ngircd_261",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^\\[%{INT:pid}:%{INT:level} +%{INT:uptime}\\] (?<action>Accepted connection) %{INT:conn} from \"%{IP:client_ip}:%{INT:client_port}\" on socket %{INT:socket}\\.$",
+    "alternatives": [
+      "^\\[%{INT:pid}:%{INT:level} +%{INT:uptime}\\] User \"(?<nick>[^!\"]+)!~?(?<ident>[^@\"]+)@%{IP:client_ip}\" (?<action>registered) \\(connection %{INT:conn}\\)\\.$",
+      "^\\[%{INT:pid}:%{INT:level} +%{INT:uptime}\\] User \"(?<nick>[^!\"]+)!~?(?<ident>[^@\"]+)@%{IP:client_ip}\" (?<action>rejected|unregistered) \\(connection %{INT:conn}\\): (?<reason>.+?)[!.]$",
+      "^\\[%{INT:pid}:%{INT:level} +%{INT:uptime}\\] Client \"(?<nick>[^\"]+)\" (?<action>unregistered) \\(connection %{INT:conn}\\): (?<reason>.+?)\\.$",
+      "^\\[%{INT:pid}:%{INT:level} +%{INT:uptime}\\] (?<action>Shutting down connection) %{INT:conn} \\((?<reason>[^)]+)\\) with \"%{IP:client_ip}:%{INT:client_port}\" \\.\\.\\.$",
+      "^\\[%{INT:pid}:%{INT:level} +%{INT:uptime}\\] (?<action>Connection) %{INT:conn} with \"%{IP:client_ip}:%{INT:client_port}\" closed \\(in: (?<bytes_in>[\\d.]+k), out: (?<bytes_out>[\\d.]+k)\\)\\.$",
+      "^\\[%{INT:pid}:%{INT:level} +%{INT:uptime}\\] (?<action>Got valid OPER) for \"(?<oper_name>[^\"]+)\" from \"(?<nick>[^!\"]+)!~?(?<ident>[^@\"]+)@%{IP:client_ip}\", user is an IRC operator now\\.$",
+      "^\\[%{INT:pid}:%{INT:level} +%{INT:uptime}\\] (?<action>Got invalid OPER) from \"(?<nick>[^!\"]+)!~?(?<ident>[^@\"]+)@%{IP:client_ip}\": \"(?<oper_name>[^\"]+)\" -- (?<reason>[^!]+)!$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "nick",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "oper_name",
+      "ecs_field": "user.effective.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.syslog.severity.code",
+      "type": "long",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "uptime",
+      "reason": "seconds since start; @timestamp is set at ingest"
+    },
+    {
+      "source_key": "ident",
+      "reason": "IRC user name; user.name holds the nick"
+    },
+    {
+      "source_key": "conn",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "socket",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "bytes_in",
+      "reason": "rounded kilobytes"
+    },
+    {
+      "source_key": "bytes_out",
+      "reason": "rounded kilobytes"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "network"
+    ],
+    "event.dataset": "ngircd.log"
+  }
+}

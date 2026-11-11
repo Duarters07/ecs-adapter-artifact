@@ -1,0 +1,12 @@
+Oct 28 15:27:51 imap-login: Info: Login: user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=14, session=<aVrSNOhe3M6sFQAD>
+Oct 28 15:27:51 imap(ana)<14><aVrSNOhe3M6sFQAD>: Info: Logged out in=32 out=745 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 28 15:27:54 auth-worker(13): Info: pam(ana,172.21.0.3,</G/aNOhe5M6sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 28 15:27:56 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<ana>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=</G/aNOhe5M6sFQAD>
+Oct 28 15:28:02 auth-worker(13): Info: pam(carlos,172.21.0.3,<CZUdNeheINusFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 28 15:28:04 imap-login: Info: Disconnected (auth failed, 1 attempts in 8 secs): user=<carlos>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<CZUdNeheINusFQAD>
+Oct 28 15:28:12 imap-login: Info: Login: user=<rui>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=18, session=<Yv6UNeheNrqsFQAD>
+Oct 28 15:28:12 imap(rui)<18><Yv6UNeheNrqsFQAD>: Info: Logged out in=32 out=745 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 28 15:28:15 auth-worker(13): Info: pam(root,172.21.0.3,<qyEXNuhePLqsFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 28 15:28:17 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<root>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<qyEXNuhePLqsFQAD>
+Oct 28 15:28:21 imap-login: Info: Login: user=<sofia>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=21, session=<+fRfNuhejrmsFQAD>
+Oct 28 15:28:21 imap(sofia)<21><+fRfNuhejrmsFQAD>: Info: Logged out in=32 out=745 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0

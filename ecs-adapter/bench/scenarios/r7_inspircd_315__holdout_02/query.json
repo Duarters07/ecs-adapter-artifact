@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.action": "Failed oper attempt"
+        }
+      },
+      {
+        "term": {
+          "event.reason": "login password hosts"
+        }
+      }
+    ]
+  }
+}

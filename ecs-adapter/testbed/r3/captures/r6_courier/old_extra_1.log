@@ -1,0 +1,18 @@
+2026-10-27T16:51:58.872013+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.120], port=[53040]
+2026-10-27T16:51:58.872392+00:00 mail02 imapd: LOGIN FAILED, user=support, ip=[::ffff:172.21.67.120], port=[53040]
+2026-10-27T16:52:03.874019+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.120], port=[53040], time=5
+2026-10-27T16:52:04.587041+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.248], port=[53390]
+2026-10-27T16:52:06.330887+00:00 mail02 imapd: LOGIN FAILED, user=scanner, ip=[::ffff:172.21.67.248], port=[53390]
+2026-10-27T16:52:11.332210+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.248], port=[53390], time=7
+2026-10-27T16:52:12.061827+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.168], port=[37180]
+2026-10-27T16:52:12.062552+00:00 mail02 imapd: LOGIN FAILED, user=test, ip=[::ffff:172.21.67.168], port=[37180]
+2026-10-27T16:52:17.064303+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.168], port=[37180], time=5
+2026-10-27T16:52:17.788805+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.235], port=[40566]
+2026-10-27T16:52:17.789065+00:00 mail02 imapd: LOGIN FAILED, user=admin, ip=[::ffff:172.21.67.235], port=[40566]
+2026-10-27T16:52:22.791011+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.235], port=[40566], time=5
+2026-10-27T16:52:23.523920+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.172], port=[34422]
+2026-10-27T16:52:25.520014+00:00 mail02 imapd: LOGIN FAILED, user=backup, ip=[::ffff:172.21.67.172], port=[34422]
+2026-10-27T16:52:30.521472+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.172], port=[34422], time=7
+2026-10-27T16:52:31.247150+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.155], port=[56690]
+2026-10-27T16:52:33.690937+00:00 mail02 imapd: LOGIN FAILED, user=rui, ip=[::ffff:172.21.67.155], port=[56690]
+2026-10-27T16:52:38.692315+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.155], port=[56690], time=7

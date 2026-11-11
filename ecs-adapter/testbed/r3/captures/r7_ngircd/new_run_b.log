@@ -1,0 +1,17 @@
+[1:6   17] Accepted connection 8 from "172.21.81.31:52054" on socket 6.
+[1:3   17] User "deploy!~deploy@172.21.81.31" rejected (connection 8): Bad server password!
+[1:6   17] Shutting down connection 8 (Bad server password) with "172.21.81.31:52054" ...
+[1:5   17] Client "deploy" unregistered (connection 8): Bad server password.
+[1:6   17] Connection 8 with "172.21.81.31:52054" closed (in: 0.0k, out: 0.1k).
+[1:6   19] Accepted connection 8 from "172.21.81.32:55272" on socket 6.
+[1:5   20] User "ops!~ops@172.21.81.32" registered (connection 8).
+[1:5   21] Got valid OPER for "admin" from "ops!~ops@172.21.81.32", user is an IRC operator now.
+[1:6   21] Shutting down connection 8 (Got QUIT command) with "172.21.81.32:55272" ...
+[1:5   21] User "ops!~ops@172.21.81.32" unregistered (connection 8): Got QUIT command.
+[1:6   21] Connection 8 with "172.21.81.32:55272" closed (in: 0.1k, out: 2.3k).
+[1:6   22] Accepted connection 8 from "172.21.81.213:59082" on socket 6.
+[1:5   23] User "mallory!~mallory@172.21.81.213" registered (connection 8).
+[1:6   24] Shutting down connection 7 (Got QUIT command) with "172.21.81.211:45190" ...
+[1:5   24] User "eve!~eve@172.21.81.211" unregistered (connection 7): Got QUIT command.
+[1:6   24] Connection 7 with "172.21.81.211:45190" closed (in: 0.1k, out: 2.2k).
+[1:3   24] Got invalid OPER from "mallory!~mallory@172.21.81.213": "admin" -- bad password!

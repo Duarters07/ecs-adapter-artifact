@@ -1,0 +1,7 @@
+{"raw": "[30/Oct/2026:21:17:39.492629624 +0000] conn=36 op=0 RESULT err=0 tag=97 nentries=0 wtime=0.000122995 optime=0.017771493 etime=0.017892922 dn=\"uid=ops,ou=people,dc=lab,dc=example\""}
+{"raw": "[30/Oct/2026:21:17:40.677141040 +0000] conn=37 op=0 BIND dn=\"uid=backup,ou=people,dc=lab,dc=example\" method=128 version=3"}
+{"raw": "[30/Oct/2026:21:17:43.140698561 +0000] conn=40 op=0 RESULT err=0 tag=97 nentries=0 wtime=0.000088009 optime=0.019015308 etime=0.019098942 dn=\"uid=carla,ou=people,dc=lab,dc=example\""}
+{"raw": "[30/Oct/2026:21:17:41.914106359 +0000] conn=39 op=0 BIND dn=\"uid=svcprint,ou=people,dc=lab,dc=example\" method=128 version=3"}
+{"raw": "[30/Oct/2026:21:17:44.278933955 +0000] conn=41 op=0 BIND dn=\"uid=intern,ou=people,dc=lab,dc=example\" method=128 version=3"}
+{"raw": "[30/Oct/2026:21:17:39.474883102 +0000] conn=36 op=0 BIND dn=\"uid=ops,ou=people,dc=lab,dc=example\" method=128 version=3"}
+{"raw": "[30/Oct/2026:21:17:43.121716393 +0000] conn=40 op=0 BIND dn=\"uid=carla,ou=people,dc=lab,dc=example\" method=128 version=3"}

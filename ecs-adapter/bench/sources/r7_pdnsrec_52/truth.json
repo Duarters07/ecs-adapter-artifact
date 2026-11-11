@@ -1,0 +1,125 @@
+{
+  "source_id": "r7_pdnsrec_52",
+  "family": "pdns-recursor",
+  "split": "test_r7",
+  "category_hint": "network",
+  "contamination_risk": "high",
+  "origin": "Produced by running PowerDNS Recursor 5.2.13 (Debian 13), not copied from documentation or a public dataset. Captured 2026-10-30T19:31:36Z on the author's laptop by testbed/r3/r7_pdnsrec.sh (docker logs (console, quiet=no): Question, Answer and Dropping lines); round 3 NEW version, runs {'a': ['new_run_a.log'], 'b': ['new_run_b.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), NEW VERSION of r7_pdnsrec_48: the Answer line gains keys (answer-is-variable, into-packetcache, maxdepth, received).",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "note": "client.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "qname",
+      "ecs_field": "dns.question.name",
+      "type": "keyword",
+      "role": "query_name",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "qtype",
+      "ecs_field": "dns.question.type",
+      "type": "keyword",
+      "role": "query_type",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "rcode",
+      "ecs_field": "dns.response_code",
+      "type": "keyword",
+      "role": "response_code",
+      "difficulty": "medium",
+      "note": "Numeric here; ECS expects the name.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "proto",
+      "ecs_field": "network.transport",
+      "type": "keyword",
+      "role": "transport",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "prio",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "role": "severity",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "subsystem",
+      "ecs_field": "log.logger",
+      "type": "keyword",
+      "role": "subsystem",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "tid",
+      "ecs_field": "process.thread.id",
+      "type": "long",
+      "role": "thread_id",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "answers",
+      "ecs_field": null,
+      "type": "long",
+      "role": "answer_count",
+      "difficulty": "hard",
+      "note": "No ECS field for a count of answers.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_pdnsrec_52__holdout_01",
+    "r7_pdnsrec_52__holdout_02",
+    "r7_pdnsrec_52__holdout_03",
+    "r7_pdnsrec_52__holdout_05"
+  ],
+  "round3": {
+    "pair": "r7_pdnsrec",
+    "role": "new"
+  }
+}

@@ -1,0 +1,15 @@
+2026-10-27T16:17:14.765594+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.31], port=[52454]
+2026-10-27T16:17:17.258622+00:00 mail02 imapd: LOGIN FAILED, user=scanner, ip=[::ffff:172.21.67.31], port=[52454]
+2026-10-27T16:17:22.260297+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.31], port=[52454], time=8
+2026-10-27T16:17:22.971972+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.32], port=[34376]
+2026-10-27T16:17:23.055804+00:00 mail02 imapd: LOGIN, user=rui, ip=[::ffff:172.21.67.32], port=[34376], protocol=IMAP
+2026-10-27T16:17:23.056470+00:00 mail02 imapd: LOGOUT, user=rui, ip=[::ffff:172.21.67.32], port=[34376], headers=0, body=0, rcvd=34, sent=340, time=1
+2026-10-27T16:17:23.800922+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.90], port=[56932]
+2026-10-27T16:17:23.801174+00:00 mail02 imapd: LOGIN FAILED, user=info, ip=[::ffff:172.21.67.90], port=[56932]
+2026-10-27T16:17:28.803074+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.90], port=[56932], time=5
+2026-10-27T16:17:29.515097+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.33], port=[36226]
+2026-10-27T16:17:29.599782+00:00 mail02 imapd: LOGIN, user=ana, ip=[::ffff:172.21.67.33], port=[36226], protocol=IMAP
+2026-10-27T16:17:29.600626+00:00 mail02 imapd: LOGOUT, user=ana, ip=[::ffff:172.21.67.33], port=[36226], headers=0, body=0, rcvd=34, sent=340, time=0
+2026-10-27T16:17:30.328845+00:00 mail02 imapd: Connection, ip=[::ffff:172.21.67.88], port=[45586]
+2026-10-27T16:17:30.329018+00:00 mail02 imapd: LOGIN FAILED, user=operator, ip=[::ffff:172.21.67.88], port=[45586]
+2026-10-27T16:17:35.330469+00:00 mail02 imapd: Disconnected, ip=[::ffff:172.21.67.88], port=[45586], time=5

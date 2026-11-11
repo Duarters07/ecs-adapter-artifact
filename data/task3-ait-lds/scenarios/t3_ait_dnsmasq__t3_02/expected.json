@@ -1,0 +1,13 @@
+{
+ "expected_hits": 66,
+ "targets": [
+  "destination.ip"
+ ],
+ "labels": [
+  "attacker",
+  "dnsteal",
+  "dnsteal-received"
+ ],
+ "message_type": 1,
+ "origin": "AIT-LDS v2.1 fox, inet-firewall/logs/dnsmasq.log: 60 lines labelled ['attacker', 'dnsteal', 'dnsteal-received'] and 60 unlabelled lines (seed 0); expected_hits counted on the reference parser's parse"
+}

@@ -1,0 +1,12 @@
+2026-10-25 23:03:08,708 files01 proftpd[43] 172.21.0.2 (172.21.52.100[172.21.52.100]): FTP session opened.
+2026-10-25 23:03:10,846 files01 proftpd[43] 172.21.0.2 (172.21.52.100[172.21.52.100]): USER rui (Login failed): Incorrect password
+2026-10-25 23:03:14,820 files01 proftpd[44] 172.21.0.2 (172.21.52.149[172.21.52.149]): FTP session opened.
+2026-10-25 23:03:14,821 files01 proftpd[44] 172.21.0.2 (172.21.52.149[172.21.52.149]): USER mariana: no such user found from 172.21.52.149 [172.21.52.149] to 172.21.0.2:21
+2026-10-25 23:03:20,115 files01 proftpd[45] 172.21.0.2 (172.21.52.147[172.21.52.147]): FTP session opened.
+2026-10-25 23:03:21,898 files01 proftpd[45] 172.21.0.2 (172.21.52.147[172.21.52.147]): USER scanner (Login failed): Incorrect password
+2026-10-25 23:03:24,482 files01 proftpd[46] 172.21.0.2 (172.21.52.189[172.21.52.189]): FTP session opened.
+2026-10-25 23:03:24,482 files01 proftpd[46] 172.21.0.2 (172.21.52.189[172.21.52.189]): USER jorge: no such user found from 172.21.52.189 [172.21.52.189] to 172.21.0.2:21
+2026-10-25 23:03:25,805 files01 proftpd[47] 172.21.0.2 (172.21.52.137[172.21.52.137]): FTP session opened.
+2026-10-25 23:03:27,608 files01 proftpd[47] 172.21.0.2 (172.21.52.137[172.21.52.137]): USER ana (Login failed): Incorrect password
+2026-10-25 23:03:28,634 files01 proftpd[48] 172.21.0.2 (172.21.52.193[172.21.52.193]): FTP session opened.
+2026-10-25 23:03:28,634 files01 proftpd[48] 172.21.0.2 (172.21.52.193[172.21.52.193]): USER anonymous: no such user found from 172.21.52.193 [172.21.52.193] to 172.21.0.2:21

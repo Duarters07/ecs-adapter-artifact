@@ -1,0 +1,92 @@
+{
+  "source_id": "r7_knot_326",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^%{TIMESTAMP_ISO8601:timestamp} %{LOGLEVEL:level}: \\[(?<zone>[^\\]]+?)\\.\\] (?<xfr_type>[AI]XFR), %{WORD:direction}, remote %{IP:client_ip}@%{INT:client_port}, (?<action>started), serial %{INT:serial}$",
+    "alternatives": [
+      "^%{TIMESTAMP_ISO8601:timestamp} %{LOGLEVEL:level}: \\[(?<zone>[^\\]]+?)\\.\\] (?<xfr_type>[AI]XFR), %{WORD:direction}, remote %{IP:client_ip}@%{INT:client_port}, (?<action>finished), %{NUMBER:duration} seconds, %{INT:messages} messages, %{INT:bytes} bytes$",
+      "^%{TIMESTAMP_ISO8601:timestamp} %{LOGLEVEL:level}: \\[(?<zone>[^\\]]+?)\\.\\] (?<xfr_type>[AI]XFR), %{WORD:direction}, remote %{IP:client_ip}@%{INT:client_port}, (?<action>incomplete history), serial %{INT:serial}, (?<fallback>fallback to AXFR)$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "zone",
+      "ecs_field": "dns.question.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "xfr_type",
+      "ecs_field": "dns.question.type",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "level",
+      "ecs_field": "log.level",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "transport",
+      "reason": "value convention TCP vs tcp; declined"
+    },
+    {
+      "source_key": "direction",
+      "reason": "network.direction takes ingress/egress; declined"
+    },
+    {
+      "source_key": "serial",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "duration",
+      "reason": "event.duration is nanoseconds; declined"
+    },
+    {
+      "source_key": "messages",
+      "reason": "no ECS field"
+    },
+    {
+      "source_key": "bytes",
+      "reason": "direction ambiguous; declined"
+    },
+    {
+      "source_key": "fallback",
+      "reason": "no ECS field"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "network"
+    ],
+    "event.dataset": "knot.server"
+  }
+}

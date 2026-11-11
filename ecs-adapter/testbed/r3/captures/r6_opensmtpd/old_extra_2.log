@@ -1,0 +1,15 @@
+0a6ddc5703d974e9 smtp connected address=172.21.63.197 host=priceless_shamir.r3-net
+0a6ddc5703d974e9 smtp failed-command command="rcpt TO:<test@lab.local>" result="550 Invalid recipient: <test@lab.local>"
+0a6ddc5703d974e9 smtp disconnected reason=disconnect
+0a6ddc58182ec610 smtp connected address=172.21.63.155 host=vigorous_thompson.r3-net
+0a6ddc58182ec610 smtp failed-command command="rcpt TO:<backup@target.org>" result="550 Invalid recipient: <backup@target.org>"
+0a6ddc58182ec610 smtp disconnected reason=disconnect
+0a6ddc5992ce055b smtp connected address=172.21.63.209 host=stupefied_yonath.r3-net
+0a6ddc5992ce055b smtp failed-command command="rcpt TO:<jorge@other.org>" result="550 Invalid recipient: <jorge@other.org>"
+0a6ddc5992ce055b smtp disconnected reason=disconnect
+0a6ddc5a9ba15bef smtp connected address=172.21.63.138 host=bold_raman.r3-net
+0a6ddc5a9ba15bef smtp failed-command command="rcpt TO:<elsa@lab.local>" result="550 Invalid recipient: <elsa@lab.local>"
+0a6ddc5a9ba15bef smtp disconnected reason=disconnect
+0a6ddc5b0f66647b smtp connected address=172.21.63.158 host=beautiful_ganguly.r3-net
+0a6ddc5b0f66647b smtp failed-command command="rcpt TO:<simao@corp.example>" result="550 Invalid recipient: <simao@corp.example>"
+0a6ddc5b0f66647b smtp disconnected reason=disconnect

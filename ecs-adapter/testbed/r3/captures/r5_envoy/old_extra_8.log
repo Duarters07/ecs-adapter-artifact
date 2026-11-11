@@ -1,0 +1,6 @@
+[2026-10-25T22:52:56.623Z] "GET / HTTP/1.1" 200 - 0 615 0 0 "-" "Go-http-client/1.1" "3e8fbb5d-0053-4220-bdc0-de0a19e76c1a" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T22:52:56.877Z] "GET /index.html HTTP/1.1" 200 - 0 615 0 0 "-" "Nikto/2.1.6" "39e8679e-64a2-403c-9b8e-f79b49b9bb2f" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T22:52:57.131Z] "GET /admin/status HTTP/1.1" 403 - 0 10 0 - "-" "curl/7.88.1" "aacff7f3-a7a6-4224-a57a-0a2a04b2bdfb" "r5-envoy-old:10000" "-"
+[2026-10-25T22:52:57.384Z] "GET /admin/db HTTP/1.1" 403 - 0 10 0 - "-" "Nikto/2.1.6" "ebf6ea52-b090-42f8-bfea-5e40a8bd16d8" "r5-envoy-old:10000" "-"
+[2026-10-25T22:52:57.637Z] "GET /admin/config HTTP/1.1" 403 - 0 10 0 - "-" "HTTPie/3.2.1" "f0b4d11b-85b1-4384-bab7-b9049d21a8b0" "r5-envoy-old:10000" "-"
+[2026-10-25T22:52:57.890Z] "GET /.env HTTP/1.1" 404 - 0 153 1 1 "-" "okhttp/4.10.0" "5de31cbc-be1b-4b37-bf90-55eb8dd4b43c" "r5-envoy-old:10000" "172.21.0.2:80"

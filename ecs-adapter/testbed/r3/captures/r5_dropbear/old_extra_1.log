@@ -1,0 +1,18 @@
+[7] Oct 25 23:07:37 Child connection from 172.21.55.214:51822
+[7] Oct 25 23:07:37 Login attempt for nonexistent user
+[7] Oct 25 23:07:37 Exit before auth from <172.21.55.214:51822>: Exited normally
+[8] Oct 25 23:07:38 Child connection from 172.21.55.203:33442
+[8] Oct 25 23:07:38 Password auth succeeded for 'rui' from 172.21.55.203:33442
+[8] Oct 25 23:07:38 Exit (rui) from <172.21.55.203:33442>: Disconnect received
+[10] Oct 25 23:07:39 Child connection from 172.21.55.238:41714
+[10] Oct 25 23:07:39 Login attempt for nonexistent user
+[10] Oct 25 23:07:39 Exit before auth from <172.21.55.238:41714>: Exited normally
+[11] Oct 25 23:07:40 Child connection from 172.21.55.158:42100
+[11] Oct 25 23:07:40 Login attempt for nonexistent user
+[11] Oct 25 23:07:40 Exit before auth from <172.21.55.158:42100>: Exited normally
+[12] Oct 25 23:07:41 Child connection from 172.21.55.158:42114
+[12] Oct 25 23:07:41 Login attempt for nonexistent user
+[12] Oct 25 23:07:42 Exit before auth from <172.21.55.158:42114>: Exited normally
+[13] Oct 25 23:07:43 Child connection from 172.21.55.204:47004
+[13] Oct 25 23:07:43 Login attempt for nonexistent user
+[13] Oct 25 23:07:43 Exit before auth from <172.21.55.204:47004>: Exited normally

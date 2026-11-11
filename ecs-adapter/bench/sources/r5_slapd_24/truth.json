@@ -1,0 +1,156 @@
+{
+  "source_id": "r5_slapd_24",
+  "family": "openldap",
+  "split": "train_r5",
+  "category_hint": "authentication",
+  "contamination_risk": "high",
+  "origin": "Produced by running OpenLDAP slapd 2.4.57 (Debian 11), not copied from documentation or a public dataset. Captured 2026-10-25T14:54:17Z on the author's laptop by testbed/r3/r5_slapd.sh (docker logs, stderr (slapd -d 256, stats)); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 6 (pool r5), OLD VERSION: slapd 2.4 stats log on stderr.",
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "client_ip",
+      "difficulty": "easy",
+      "note": "client.ip is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "client_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "role": "client_port",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "listener_port",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "role": "server_port",
+      "difficulty": "medium",
+      "note": "server.port is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "bind_dn",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "account",
+      "difficulty": "medium",
+      "note": "A distinguished name; ECS has no DN field, and user.name is where the authenticated identity goes.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "err",
+      "ecs_field": "event.code",
+      "type": "keyword",
+      "role": "result_code",
+      "difficulty": "hard",
+      "note": "The LDAP result code (49: invalid credentials); error.code is not offered for authentication.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "listener_ip",
+      "ecs_field": null,
+      "type": "ip",
+      "role": "listen_address",
+      "difficulty": "hard",
+      "note": "The wildcard 0.0.0.0, not the server's address.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "conn",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "connection_id",
+      "difficulty": "hard",
+      "note": "No ECS field for a connection number.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "op",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "operation_id",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "method",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "bind_method",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "mech",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "auth_mechanism",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "tag",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "response_type",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "base",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "search_base",
+      "difficulty": "hard",
+      "note": "No ECS field for an LDAP search.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "filter",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "search_filter",
+      "difficulty": "hard",
+      "note": "No ECS field for an LDAP search.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "nentries",
+      "ecs_field": null,
+      "type": "long",
+      "role": "result_count",
+      "difficulty": "hard",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r5_slapd_24__holdout_01",
+    "r5_slapd_24__holdout_02",
+    "r5_slapd_24__holdout_03",
+    "r5_slapd_24__holdout_04"
+  ],
+  "round3": {
+    "pair": "r5_slapd",
+    "role": "old"
+  }
+}

@@ -1,0 +1,19 @@
+Oct 25 22:37:58 mail postfix/smtpd[109]: connect from unknown[172.21.0.3]
+Oct 25 22:37:58 mail postfix/smtpd[109]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 550 5.1.1 <www@r4.local>: Recipient address rejected: User unknown in local recipient table; from=<bruno@example.org> to=<www@r4.local> proto=ESMTP helo=<client1.example.org>
+Oct 25 22:37:58 mail postfix/smtpd[114]: connect from unknown[172.21.0.3]
+Oct 25 22:37:58 mail postfix/smtpd[109]: lost connection after RSET from unknown[172.21.0.3]
+Oct 25 22:37:58 mail postfix/smtpd[109]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+Oct 25 22:37:58 mail postfix/smtpd[114]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 550 5.1.1 <guest@r4.local>: Recipient address rejected: User unknown in local recipient table; from=<jenkins@example.org> to=<guest@r4.local> proto=ESMTP helo=<client1.example.org>
+Oct 25 22:37:59 mail postfix/smtpd[109]: connect from unknown[172.21.0.3]
+Oct 25 22:37:59 mail postfix/smtpd[114]: lost connection after RSET from unknown[172.21.0.3]
+Oct 25 22:37:59 mail postfix/smtpd[114]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+Oct 25 22:37:59 mail postfix/smtpd[109]: 15D23ED1020: client=unknown[172.21.0.3]
+Oct 25 22:37:59 mail postfix/cleanup[276]: 15D23ED1020: message-id=<>
+Oct 25 22:37:59 mail postfix/qmgr[99]: 15D23ED1020: from=<gabriela@bulk.test>, size=236, nrcpt=1 (queue active)
+Oct 25 22:37:59 mail postfix/smtpd[109]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 25 22:37:59 mail postfix/local[277]: 15D23ED1020: to=<backup@r4.local>, relay=local, delay=0.04, delays=0.02/0.01/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 25 22:37:59 mail postfix/qmgr[99]: 15D23ED1020: removed
+Oct 25 22:37:59 mail postfix/smtpd[114]: connect from unknown[172.21.0.3]
+Oct 25 22:37:59 mail postfix/smtpd[114]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 554 5.7.1 <jenkins@gmail.com>: Relay access denied; from=<monitor@bad.test> to=<jenkins@gmail.com> proto=ESMTP helo=<relay.bad.test>
+Oct 25 22:38:00 mail postfix/smtpd[114]: lost connection after RSET from unknown[172.21.0.3]
+Oct 25 22:38:00 mail postfix/smtpd[114]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4

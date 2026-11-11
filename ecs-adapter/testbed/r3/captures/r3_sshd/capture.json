@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-19T09:46:59Z","old":"Debian 10 openssh-server 1:7.9p1-10+deb10u4","new":"Debian 12 openssh-server (bookworm)","collected_by":"docker logs, container stderr only (sshd -D -e, no syslog header)"}

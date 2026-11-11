@@ -1,0 +1,20 @@
+{
+  "note": "NOT ground truth. Each entry records a value and the ECS field that value IS. The ladder may read this file; it may never read truth.json. See validators/v3_5_known_values.py.",
+  "origin": "samples.ndjson, via the per-family extractor",
+  "provenance": "Derived from samples.ndjson by bench/make_known_values.py with the extractor in testbed/heldout_r2/specs.py. Like the round-1 test sources, the field each value belongs to comes from the DRAFT labelling, so V3.5 here is a consistency check, not a probe.",
+  "source_id": "r3_syslog_5424",
+  "values": {
+    "event.outcome": "Accepted",
+    "event.reason": "1 incorrect password attempt",
+    "host.hostname": "web01",
+    "log.syslog.priority": "35",
+    "process.command_line": "/usr/bin/whoami",
+    "process.name": "sudo",
+    "process.pid": "19",
+    "process.working_directory": "/home/rui",
+    "source.ip": "172.21.0.3",
+    "source.port": "43828",
+    "user.name": "nuno",
+    "user.target.name": "root"
+  }
+}

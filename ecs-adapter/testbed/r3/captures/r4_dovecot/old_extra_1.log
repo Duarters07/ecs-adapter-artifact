@@ -1,0 +1,12 @@
+Oct 25 22:38:39 imap-login: Info: Login: user=<tiago>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=14, session=<V9rq37FeRMesFQAD>
+Oct 25 22:38:39 imap(tiago)<14><V9rq37FeRMesFQAD>: Info: Logged out in=32 out=780 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 25 22:38:42 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<3>: pam(rui,172.21.0.3,<i17037FeVMesFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:38:44 imap-login: Info: Disconnected (auth failed, 1 attempts in 5 secs): user=<rui>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<i17037FeVMesFQAD>
+Oct 25 22:38:50 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<4>: pam(teresa,172.21.0.3,<9jw+4LFeWMesFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:38:52 imap-login: Info: Disconnected (auth failed, 1 attempts in 8 secs): user=<teresa>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<9jw+4LFeWMesFQAD>
+Oct 25 22:39:00 imap-login: Info: Login: user=<sofia>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, mpid=18, session=<Q2S44LFeCIGsFQAD>
+Oct 25 22:39:00 imap(sofia)<18><Q2S44LFeCIGsFQAD>: Info: Logged out in=32 out=780 deleted=0 expunged=0 trashed=0 hdr_count=0 hdr_bytes=0 body_count=0 body_bytes=0
+Oct 25 22:39:03 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<7>: pam(git,172.21.0.3,<xCQ84bFebJ+sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:39:05 imap-login: Info: Disconnected (auth failed, 1 attempts in 4 secs): user=<git>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<xCQ84bFebJ+sFQAD>
+Oct 25 22:39:12 auth-worker(13): Info: conn unix:auth-worker (pid=12,uid=101): auth-worker<8>: pam(support,172.21.0.3,<VBuA4bFeep+sFQAD>): pam_authenticate() failed: Authentication failure (Password mismatch?)
+Oct 25 22:39:14 imap-login: Info: Disconnected (auth failed, 1 attempts in 9 secs): user=<support>, method=PLAIN, rip=172.21.0.3, lip=172.21.0.2, session=<VBuA4bFeep+sFQAD>

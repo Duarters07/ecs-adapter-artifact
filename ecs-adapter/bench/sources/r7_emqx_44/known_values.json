@@ -1,0 +1,16 @@
+{
+  "note": "NOT ground truth. Each entry records a value and the ECS field that value IS. The ladder may read this file; it may never read truth.json. See validators/v3_5_known_values.py.",
+  "origin": "samples.ndjson, via the per-family extractor",
+  "provenance": "Derived from samples.ndjson by bench/make_known_values.py with the extractor in testbed/heldout_r2/specs.py. Like the round-1 test sources, the field each value belongs to comes from the DRAFT labelling, so V3.5 here is a consistency check, not a probe.",
+  "source_id": "r7_emqx_44",
+  "values": {
+    "event.action": "Cannot subscribe",
+    "event.reason": "Not authorized",
+    "log.level": "warning",
+    "log.origin.file.line": "559",
+    "log.origin.file.name": "emqx_connection.erl",
+    "log.origin.function": "{emqx_connection,terminate,2}",
+    "source.ip": "172.21.88.11",
+    "source.port": "33552"
+  }
+}

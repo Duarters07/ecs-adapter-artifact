@@ -1,0 +1,4 @@
+[2026-10-30 21:16:16.312] nsd[8]: info: axfr for branch.example. from 172.21.85.10
+[2026-10-30 21:16:17.262] nsd[8]: info: axfr for branch.example. from 172.21.85.205 refused, no acl matches
+[2026-10-30 21:16:18.330] nsd[8]: info: ixfr for dmz.example. from 172.21.85.11
+[2026-10-30 21:16:19.513] nsd[8]: info: axfr for vault.example. from 172.21.85.206 refused, no acl matches

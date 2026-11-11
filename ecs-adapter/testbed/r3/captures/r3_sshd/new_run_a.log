@@ -1,0 +1,22 @@
+Accepted password for ana from 172.21.0.3 port 53318 ssh2
+Failed password for ana from 172.21.0.3 port 36644 ssh2
+Failed password for rui from 172.21.0.3 port 36650 ssh2
+Invalid user nuno from 172.21.0.3 port 36658
+Failed password for invalid user nuno from 172.21.0.3 port 36658 ssh2
+Failed password for root from 172.21.0.3 port 58414 ssh2
+Accepted password for rui from 172.21.0.3 port 58428 ssh2
+Invalid user operator from 172.21.0.3 port 58444
+Failed password for invalid user operator from 172.21.0.3 port 58444 ssh2
+kex_exchange_identification: Connection closed by remote host
+Connection closed by 172.21.0.3 port 58450
+Accepted password for sofia from 172.21.0.3 port 58452 ssh2
+Invalid user git from 172.21.0.3 port 58468
+Failed password for invalid user git from 172.21.0.3 port 58468 ssh2
+Failed password for ana from 172.21.0.3 port 56268 ssh2
+Connection closed by invalid user git 172.21.0.3 port 58468 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 56268 [preauth]
+Connection closed by authenticating user ana 172.21.0.3 port 36644 [preauth]
+Connection closed by invalid user nuno 172.21.0.3 port 36658 [preauth]
+Connection closed by authenticating user rui 172.21.0.3 port 36650 [preauth]
+Connection closed by invalid user operator 172.21.0.3 port 58444 [preauth]
+Connection closed by authenticating user root 172.21.0.3 port 58414 [preauth]

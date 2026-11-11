@@ -1,0 +1,23 @@
+{
+ "bool": {
+  "filter": [
+   {
+    "bool": {
+     "should": [
+      {
+       "term": {
+        "client.ip": "203.0.113.12"
+       }
+      },
+      {
+       "term": {
+        "source.ip": "203.0.113.12"
+       }
+      }
+     ],
+     "minimum_should_match": 1
+    }
+   }
+  ]
+ }
+}

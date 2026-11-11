@@ -1,0 +1,45 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "url.full": "/manager/status"
+              }
+            },
+            {
+              "term": {
+                "url.original": "/manager/status"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "ops"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "ops"
+              }
+            },
+            {
+              "term": {
+                "user.name": "ops"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

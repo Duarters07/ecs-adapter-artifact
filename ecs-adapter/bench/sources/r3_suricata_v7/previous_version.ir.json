@@ -1,0 +1,202 @@
+{
+  "source_id": "r3_suricata_v6",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "json"
+  },
+  "fields": [
+    {
+      "source_key": "src_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "src_port",
+      "ecs_field": "source.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "dest_ip",
+      "ecs_field": "destination.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "dest_port",
+      "ecs_field": "destination.port",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "proto",
+      "ecs_field": "network.transport",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "app_proto",
+      "ecs_field": "network.protocol",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "in_iface",
+      "ecs_field": "observer.ingress.interface.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "alert.signature",
+      "ecs_field": "rule.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "alert.signature_id",
+      "ecs_field": "rule.id",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "alert.category",
+      "ecs_field": "rule.category",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "alert.severity",
+      "ecs_field": "event.severity",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "alert.action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "alert.rev",
+      "ecs_field": "rule.version",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "dns.rrname",
+      "ecs_field": "dns.question.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "dns.rrtype",
+      "ecs_field": "dns.question.type",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "dns.type",
+      "ecs_field": "dns.type",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "dns.id",
+      "ecs_field": "dns.id",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "dns.opcode",
+      "ecs_field": "dns.op_code",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "alert.gid",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "dns.tx_id",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "event_type",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "flow.bytes_toclient",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "flow.bytes_toserver",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "flow.pkts_toclient",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "flow.pkts_toserver",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "flow.start",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "flow_id",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "http.hostname",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "http.http_content_type",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "http.http_method",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "http.http_user_agent",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "http.length",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "http.protocol",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "http.status",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "http.url",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "timestamp",
+      "reason": "carries no ECS field this source maps"
+    },
+    {
+      "source_key": "tx_id",
+      "reason": "carries no ECS field this source maps"
+    }
+  ],
+  "constants": {
+    "event.kind": "alert",
+    "event.category": [
+      "network"
+    ],
+    "event.dataset": "suricata.eve"
+  }
+}

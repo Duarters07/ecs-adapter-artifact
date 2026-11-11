@@ -1,0 +1,1 @@
+{"captured_utc":"2026-10-30T19:36:11Z","old":"Synapse 1.120.2, default text formatter (precise)","new":"Synapse 1.120.2, synapse.logging.TerseJsonFormatter","collected_by":"docker logs (console): login handler and access lines for /login"}

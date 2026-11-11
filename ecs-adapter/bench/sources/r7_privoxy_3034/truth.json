@@ -1,0 +1,73 @@
+{
+  "source_id": "r7_privoxy_3034",
+  "family": "privoxy",
+  "split": "train_r7",
+  "category_hint": "network",
+  "contamination_risk": "high",
+  "origin": "Produced by running Privoxy 3.0.34 (Debian 12), not copied from documentation or a public dataset. Captured 2026-10-30T19:08:38Z on the author's laptop by testbed/r3/r7_privoxy.sh (docker logs (privoxy --no-daemon logs to the console): Request, Crunch and Error lines); round 3 OLD version, runs {'a': ['old_run1.log', 'old_run2.log'], 'b': ['old_run3.log']}.",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "ROUND 10 (pool r7), OLD VERSION: Privoxy 3.0.34, one block rule, console log.",
+  "fields": [
+    {
+      "source_key": "host",
+      "ecs_field": "url.domain",
+      "type": "keyword",
+      "role": "requested_host",
+      "difficulty": "easy",
+      "note": "destination.domain is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "path",
+      "ecs_field": "url.path",
+      "type": "keyword",
+      "role": "url_path",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "url",
+      "ecs_field": "url.original",
+      "type": "keyword",
+      "role": "url",
+      "difficulty": "easy",
+      "note": "url.full is equivalent.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "action",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "event_type",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "thread",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "thread_id",
+      "difficulty": "hard",
+      "note": "Hexadecimal; process.thread.id is a number.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "timestamp",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "timestamp",
+      "difficulty": "hard",
+      "note": "@timestamp is set at ingest.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "r7_privoxy_3034__holdout_01"
+  ],
+  "round3": {
+    "pair": "r7_privoxy",
+    "role": "old"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "deploy"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "deploy"
+              }
+            },
+            {
+              "term": {
+                "user.name": "deploy"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "user_agent.original": "Mozilla/5.0 (Windows NT 10.0) mirall/3.14.1"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "source_id": "r4_postfix_35",
+  "ecs_version": "8.11",
+  "extraction": {
+    "kind": "grok",
+    "pattern": "^%{SYSLOGTIMESTAMP:timestamp} %{HOSTNAME:host} postfix/%{WORD:process}\\[%{POSINT:pid}\\]: NOQUEUE: reject: RCPT from %{NOTSPACE:client_name}\\[%{IP:client_ip}\\]: %{INT:smtp_code} %{NOTSPACE:dsn} <%{DATA:rcpt}>: %{DATA:reason}; from=<%{DATA:from}> to=<%{DATA:to}> proto=%{WORD:proto} helo=<%{DATA:helo}>$",
+    "alternatives": [
+      "^%{SYSLOGTIMESTAMP:timestamp} %{HOSTNAME:host} postfix/%{WORD:process}\\[%{POSINT:pid}\\]: %{BASE16NUM:queue_id}: from=<%{DATA:from}>, size=%{INT:size}, nrcpt=%{INT:nrcpt} \\(queue active\\)$",
+      "^%{SYSLOGTIMESTAMP:timestamp} %{HOSTNAME:host} postfix/%{WORD:process}\\[%{POSINT:pid}\\]: %{BASE16NUM:queue_id}: to=<%{DATA:to}>, relay=%{NOTSPACE:relay}, delay=%{NUMBER:delay}, delays=%{NOTSPACE:delays}, dsn=%{NOTSPACE:dsn}, status=%{WORD:status} \\(%{DATA:status_text}\\)$",
+      "^%{SYSLOGTIMESTAMP:timestamp} %{HOSTNAME:host} postfix/%{WORD:process}\\[%{POSINT:pid}\\]: connect from %{NOTSPACE:client_name}\\[%{IP:client_ip}\\]$",
+      "^%{SYSLOGTIMESTAMP:timestamp} %{HOSTNAME:host} postfix/%{WORD:process}\\[%{POSINT:pid}\\]: %{BASE16NUM:queue_id}: client=%{NOTSPACE:client_name}\\[%{IP:client_ip}\\]$"
+    ]
+  },
+  "fields": [
+    {
+      "source_key": "client_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "client_name",
+      "ecs_field": "source.domain",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "from",
+      "ecs_field": "email.from.address",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "to",
+      "ecs_field": "email.to.address",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "queue_id",
+      "ecs_field": "email.local_id",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "process",
+      "ecs_field": "process.name",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "pid",
+      "ecs_field": "process.pid",
+      "type": "long",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "confidence": 1.0
+    },
+    {
+      "source_key": "host",
+      "ecs_field": "host.hostname",
+      "type": "keyword",
+      "confidence": 1.0
+    }
+  ],
+  "unresolved": [
+    {
+      "source_key": "timestamp",
+      "reason": "@timestamp is set at ingest"
+    },
+    {
+      "source_key": "status",
+      "reason": "needs a value map; declined"
+    },
+    {
+      "source_key": "helo",
+      "reason": "no ECS field for a HELO name"
+    },
+    {
+      "source_key": "smtp_code",
+      "reason": "SMTP reply code"
+    },
+    {
+      "source_key": "dsn",
+      "reason": "delivery status code"
+    },
+    {
+      "source_key": "rcpt",
+      "reason": "same value as to"
+    },
+    {
+      "source_key": "proto",
+      "reason": "SMTP dialect"
+    },
+    {
+      "source_key": "size",
+      "reason": "message size"
+    },
+    {
+      "source_key": "nrcpt",
+      "reason": "recipient count"
+    },
+    {
+      "source_key": "relay",
+      "reason": "next hop"
+    },
+    {
+      "source_key": "delay",
+      "reason": "seconds"
+    },
+    {
+      "source_key": "delays",
+      "reason": "four delays in one token"
+    },
+    {
+      "source_key": "status_text",
+      "reason": "free text"
+    }
+  ],
+  "value_maps": [],
+  "constants": {
+    "event.kind": "event",
+    "event.category": [
+      "email"
+    ],
+    "event.dataset": "postfix.log"
+  }
+}

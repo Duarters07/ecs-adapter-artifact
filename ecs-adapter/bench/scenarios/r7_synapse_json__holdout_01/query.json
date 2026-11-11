@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.ip": "::ffff:172.21.90.32"
+              }
+            },
+            {
+              "term": {
+                "source.ip": "::ffff:172.21.90.32"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "event.action": "Processed request"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,870 @@
+[
+  {
+    "source_id": "r3_apache_v22",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r3_apache_v24",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r3_sshd_deb10",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": [
+      "V3.5:value_not_found"
+    ]
+  },
+  {
+    "source_id": "r3_sshd_deb12",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": [
+      "V3.5:value_not_found"
+    ]
+  },
+  {
+    "source_id": "r3_suricata_v6",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "7/7",
+    "findings": []
+  },
+  {
+    "source_id": "r3_suricata_v7",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "6/6",
+    "findings": []
+  },
+  {
+    "source_id": "r3_nginx_combined",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": [
+      "V3.5:value_not_found"
+    ]
+  },
+  {
+    "source_id": "r3_nginx_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "6/6",
+    "findings": []
+  },
+  {
+    "source_id": "r3_syslog_trad",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": [
+      "V3.5:value_not_found"
+    ]
+  },
+  {
+    "source_id": "r3_syslog_5424",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": [
+      "V3.5:value_not_found"
+    ]
+  },
+  {
+    "source_id": "r3_firewall_logemu",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r3_firewall_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r5_envoy_default",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r5_envoy_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r5_tomcat_common",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r5_tomcat_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r5_grafana_logfmt",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r5_grafana_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r5_samba_text",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r5_samba_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r5_varnish_ncsa",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": [
+      "V3.5:value_not_found"
+    ]
+  },
+  {
+    "source_id": "r5_varnish_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r5_mosquitto_16",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "1/1",
+    "findings": []
+  },
+  {
+    "source_id": "r5_mosquitto_20",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": [
+      "V3.5:value_not_found"
+    ]
+  },
+  {
+    "source_id": "r5_slapd_24",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r5_slapd_25",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r5_proftpd_137",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r5_proftpd_138",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r5_freeradius_30",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "1/1",
+    "findings": []
+  },
+  {
+    "source_id": "r5_freeradius_32",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "1/1",
+    "findings": []
+  },
+  {
+    "source_id": "r5_dropbear_2020",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r5_dropbear_2025",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r5_clamav_d11",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r5_clamav_d12",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r5_prosody_011",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r5_prosody_012",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r5_openvpn_25",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r5_openvpn_26",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r4_haproxy_httplog",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r4_haproxy_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r4_caddy_console",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r4_caddy_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r4_postfix_35",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r4_postfix_37",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r4_dovecot_23",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": [
+      "V3.5:value_not_found"
+    ]
+  },
+  {
+    "source_id": "r4_dovecot_24",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": [
+      "V3.5:value_not_found"
+    ]
+  },
+  {
+    "source_id": "r6_rabbitmq_text",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r6_rabbitmq_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r6_authelia_text",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r6_authelia_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r6_lighttpd_1459",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r6_lighttpd_1469",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r6_opensmtpd_d11",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r6_opensmtpd_d12",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r6_pureftpd_1049",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r6_pureftpd_1050",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r6_rsyncd_323",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r6_rsyncd_327",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r6_tinyproxy_110",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r6_tinyproxy_111",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "1/1",
+    "findings": []
+  },
+  {
+    "source_id": "r6_courier_d11",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r6_courier_d12",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r6_vaultwarden_125",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r6_vaultwarden_132",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r6_gitea_119",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r6_gitea_122",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "7/7",
+    "findings": []
+  },
+  {
+    "source_id": "r7_389ds_25",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r7_389ds_31",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r7_inspircd_315",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r7_inspircd_47",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r7_emqx_44",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r7_emqx_58",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r7_ngircd_261",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r7_ngircd_27",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r7_radicale_318",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r7_radicale_353",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r7_ocserv_116",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r7_ocserv_130",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r7_rspamd_34",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r7_rspamd_3121",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r7_knot_326",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r7_knot_346",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r7_nsd_461",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r7_nsd_4120",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r7_sendmail_8179",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r7_sendmail_8181",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r7_icinga2_213",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r7_icinga2_214",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r7_unbound_117",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": false,
+    "scenarios": "?/0",
+    "findings": []
+  },
+  {
+    "source_id": "r7_unbound_126",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r7_mumble_134",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r7_mumble_15",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r7_stunnel_568",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "2/2",
+    "findings": []
+  },
+  {
+    "source_id": "r7_stunnel_574",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r7_privoxy_3034",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "1/1",
+    "findings": []
+  },
+  {
+    "source_id": "r7_privoxy_400",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "1/1",
+    "findings": []
+  },
+  {
+    "source_id": "r7_pdnsrec_48",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r7_pdnsrec_52",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  },
+  {
+    "source_id": "r7_synapse_text",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r7_synapse_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r7_mattermost_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": [
+      "V3.5:value_not_found"
+    ]
+  },
+  {
+    "source_id": "r7_mattermost_text",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r7_nextcloud_file",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "3/3",
+    "findings": []
+  },
+  {
+    "source_id": "r7_nextcloud_syslog",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r7_kamailio_text",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "5/5",
+    "findings": []
+  },
+  {
+    "source_id": "r7_kamailio_json",
+    "passed": true,
+    "rung_reached": "V4",
+    "detection_verified": true,
+    "scenarios": "4/4",
+    "findings": []
+  }
+]

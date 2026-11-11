@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.port": 48050
+              }
+            },
+            {
+              "term": {
+                "source.port": 48050
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "url.path": "/v1/objects/services"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "source_id": "exim_main",
+  "family": "exim",
+  "split": "test",
+  "category_hint": "email",
+  "contamination_risk": "medium",
+  "origin": "Produced by running Exim 4.96 (Debian 12 package exim4-daemon-light, image debian:12.8-slim), not copied from documentation or a public dataset. Captured on 2026-10-15 on the author's laptop by testbed/heldout_r2/exim_main.sh, two runs driven with different words (run A -> samples, run B -> scenario events).",
+  "review_status": "DRAFT - every field below awaits the author's review",
+  "notes": "FREE TEXT WITH LETTER=VALUE TAGS AND SYMBOLIC FLAGS. Four line shapes share a timestamp; three carry Exim's queue id. WHICH IDENTIFIER: the queue id is email.local_id - email.message_id is the RFC 5322 Message-ID header, which this log does not carry. The client is named three ways on one line: reverse-DNS name (H=), the name it gave in HELO (in parentheses), and its address (in brackets). The reverse-DNS names here are the Docker client containers' names, as a real MTA would resolve them.",
+  "fields": [
+    {
+      "source_key": "msgid",
+      "ecs_field": "email.local_id",
+      "type": "keyword",
+      "role": "queue_id",
+      "difficulty": "hard",
+      "note": "Exim's queue id. email.message_id is the Message-ID header and would be wrong.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "flag",
+      "ecs_field": "event.action",
+      "type": "keyword",
+      "role": "log_line_flag",
+      "difficulty": "hard",
+      "note": "Symbolic: <= arrival, => delivery. event.action takes the source's own vocabulary.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "sender",
+      "ecs_field": "email.from.address",
+      "type": "keyword",
+      "role": "envelope_sender",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "recipient",
+      "ecs_field": "email.to.address",
+      "type": "keyword",
+      "role": "envelope_recipient",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "host_name",
+      "ecs_field": "source.domain",
+      "type": "keyword",
+      "role": "sender_rdns_name",
+      "difficulty": "hard",
+      "note": "The sending host's name from reverse DNS; not the HELO name.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "helo",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "helo_name",
+      "difficulty": "ambiguous",
+      "note": "The name the client CLAIMED in HELO. ECS 8.11 has no field for it; source.domain belongs to the reverse-DNS name.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "host_ip",
+      "ecs_field": "source.ip",
+      "type": "ip",
+      "role": "sender_ip",
+      "difficulty": "easy",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "protocol",
+      "ecs_field": "network.protocol",
+      "type": "keyword",
+      "role": "reception_protocol",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "size",
+      "ecs_field": null,
+      "type": "long",
+      "role": "message_size",
+      "difficulty": "ambiguous",
+      "note": "Message size in bytes; ECS 8.11 has no email size field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "local_part",
+      "ecs_field": "user.name",
+      "type": "keyword",
+      "role": "local_mailbox",
+      "difficulty": "hard",
+      "note": "The local account the message was delivered to. DRAFT - author to decide.",
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "router",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "exim_router",
+      "difficulty": "ambiguous",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "transport",
+      "ecs_field": null,
+      "type": "keyword",
+      "role": "exim_transport",
+      "difficulty": "ambiguous",
+      "note": "No ECS field.",
+      "acceptable_abstention": true,
+      "review_status": "DRAFT - author must review"
+    },
+    {
+      "source_key": "reason",
+      "ecs_field": "event.reason",
+      "type": "keyword",
+      "role": "rejection_reason",
+      "difficulty": "medium",
+      "review_status": "DRAFT - author must review"
+    }
+  ],
+  "scenarios": [
+    "exim_main__holdout_01",
+    "exim_main__holdout_02",
+    "exim_main__holdout_03",
+    "exim_main__holdout_04",
+    "exim_main__holdout_05"
+  ]
+}

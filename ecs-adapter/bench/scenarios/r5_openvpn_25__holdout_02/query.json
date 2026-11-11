@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.user.name": "nas-backup"
+              }
+            },
+            {
+              "term": {
+                "source.user.name": "nas-backup"
+              }
+            },
+            {
+              "term": {
+                "user.name": "nas-backup"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      }
+    ]
+  }
+}

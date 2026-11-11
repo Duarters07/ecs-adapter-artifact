@@ -1,0 +1,6 @@
+[2026-10-25T22:53:05.879Z] "POST /wp-login.php HTTP/1.1" 404 - 3 153 0 0 "-" "Mozilla/5.0 (Macintosh) Safari/16.6" "e6272102-dcab-4f61-a943-bb9c64e2c42b" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T22:53:06.132Z] "GET /wp-login.php HTTP/1.1" 404 - 0 153 0 0 "-" "Mozilla/5.0 (Macintosh) Safari/16.6" "d30fe29a-65a7-4d67-9073-9bbdc39c6fed" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T22:53:06.385Z] "GET /missing.html HTTP/1.1" 404 - 0 153 1 0 "-" "Mozilla/5.0 (X11; Linux x86_64) Firefox/119.0" "d818d613-ff6b-48ce-8380-e7d956218f7e" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T22:53:06.638Z] "GET / HTTP/1.1" 200 - 0 615 1 0 "-" "axios/1.4.0" "a7d8cbae-6fa1-45e7-834e-9b31fda433cd" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T22:53:06.892Z] "POST /notes.txt HTTP/1.1" 404 - 3 153 0 0 "-" "Nikto/2.1.6" "d6b9f5d8-2ea5-4755-a121-7b5855e1393f" "r5-envoy-old:10000" "172.21.0.2:80"
+[2026-10-25T22:53:07.146Z] "GET /index.html HTTP/1.1" 200 - 0 615 1 0 "-" "Java/17.0.8" "cefd9f71-02b1-481c-aacc-5fbd8e58a695" "r5-envoy-old:10000" "172.21.0.2:80"

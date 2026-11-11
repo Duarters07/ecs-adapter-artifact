@@ -1,0 +1,10 @@
+[Mon Oct 19 09:19:07.868318 2026] [auth_basic:error] [pid 19:tid 26] [client 172.21.0.3:40774] AH01617: user sofia: authentication failure for "/reports/annual.pdf": Password Mismatch
+[Mon Oct 19 09:19:08.071414 2026] [auth_basic:error] [pid 19:tid 32] [client 172.21.0.3:40788] AH01617: user tiago: authentication failure for "/reports/": Password Mismatch, referer: http://portal.local/reports
+[Mon Oct 19 09:19:08.274767 2026] [auth_basic:error] [pid 20:tid 67] [client 172.21.0.3:40802] AH01618: user beatriz not found: /reports/annual.pdf
+[Mon Oct 19 09:19:08.478816 2026] [auth_basic:error] [pid 21:tid 55] [client 172.21.0.3:40814] AH01618: user service not found: /reports/
+[Mon Oct 19 09:19:08.682302 2026] [authz_core:error] [pid 20:tid 72] [client 172.21.0.3:40820] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/backup/
+[Mon Oct 19 09:19:08.885801 2026] [authz_core:error] [pid 21:tid 68] [client 172.21.0.3:40828] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/backup/full.tar.gz, referer: http://portal.local/ops
+[Mon Oct 19 09:19:09.090099 2026] [auth_basic:error] [pid 21:tid 63] [client 172.21.0.3:40840] AH01617: user sofia: authentication failure for "/reports/q4.xlsx": Password Mismatch, referer: http://portal.local/finance
+[Mon Oct 19 09:19:09.293293 2026] [authz_core:error] [pid 20:tid 74] [client 172.21.0.3:40854] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/backup/keys.pem
+[Mon Oct 19 09:19:09.497963 2026] [auth_basic:error] [pid 21:tid 83] [client 172.21.0.3:40868] AH01618: user contabilidade not found: /reports/
+[Mon Oct 19 09:19:09.702548 2026] [authz_core:error] [pid 20:tid 78] [client 172.21.0.3:40880] AH01630: client denied by server configuration: /usr/local/apache2/htdocs/backup/, referer: http://portal.local/status

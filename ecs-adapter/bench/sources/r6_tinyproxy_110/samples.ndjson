@@ -1,0 +1,16 @@
+{"raw": "CONNECT   Oct 27 16:10:53 [16]: Request (file descriptor 10): GET http://r6-web-target/ HTTP/1.1"}
+{"raw": "NOTICE    Oct 27 16:10:56 [13]: Unauthorized connection from \"sweet_satoshi.r3-net\" [172.21.66.201]."}
+{"raw": "CONNECT   Oct 27 16:10:55 [7]: Connect (file descriptor 10): mystifying_faraday.r3-net [172.21.66.13]"}
+{"raw": "CONNECT   Oct 27 16:11:02 [9]: Established connection to host \"r6-web-target\" using file descriptor 11."}
+{"raw": "CONNECT   Oct 27 16:10:54 [16]: Connect (file descriptor 10): crazy_banzai.r3-net [172.21.66.12]"}
+{"raw": "CONNECT   Oct 27 16:10:57 [13]: Connect (file descriptor 10): nostalgic_bouman.r3-net [172.21.66.202]"}
+{"raw": "CONNECT   Oct 27 16:10:59 [13]: Connect (file descriptor 10): boring_swanson.r3-net [172.21.66.14]"}
+{"raw": "CONNECT   Oct 27 16:11:01 [9]: Connect (file descriptor 10): pensive_merkle.r3-net [172.21.66.203]"}
+{"raw": "CONNECT   Oct 27 16:10:53 [16]: Connect (file descriptor 10): cool_zhukovsky.r3-net [172.21.66.11]"}
+{"raw": "CONNECT   Oct 27 16:11:00 [9]: Connect (file descriptor 10): zealous_hoover.r3-net [172.21.66.14]"}
+{"raw": "CONNECT   Oct 27 16:11:02 [9]: Connect (file descriptor 10): gifted_ellis.r3-net [172.21.66.15]"}
+{"raw": "CONNECT   Oct 27 16:10:53 [16]: Connect (file descriptor 10): sad_swirles.r3-net [172.21.66.11]"}
+{"raw": "CONNECT   Oct 27 16:10:53 [16]: Request (file descriptor 10): GET http://r6-web-target/admin HTTP/1.1"}
+{"raw": "CONNECT   Oct 27 16:10:54 [16]: Request (file descriptor 10): GET http://r6-web-target/reports HTTP/1.1"}
+{"raw": "CONNECT   Oct 27 16:11:00 [9]: Request (file descriptor 10): GET http://r6-web-target/config HTTP/1.1"}
+{"raw": "CONNECT   Oct 27 16:11:02 [9]: Request (file descriptor 10): GET http://r6-web-target/index.html HTTP/1.1"}

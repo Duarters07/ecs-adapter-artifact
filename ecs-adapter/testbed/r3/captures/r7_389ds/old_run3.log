@@ -1,0 +1,29 @@
+[30/Oct/2026:21:17:39.472804915 +0000] conn=36 fd=65 slot=65 connection from 172.21.91.203 to 172.21.0.2
+[30/Oct/2026:21:17:39.474883102 +0000] conn=36 op=0 BIND dn="uid=ops,ou=people,dc=lab,dc=example" method=128 version=3
+[30/Oct/2026:21:17:39.492629624 +0000] conn=36 op=0 RESULT err=0 tag=97 nentries=0 wtime=0.000122995 optime=0.017771493 etime=0.017892922 dn="uid=ops,ou=people,dc=lab,dc=example"
+[30/Oct/2026:21:17:39.492960962 +0000] conn=36 op=1 EXT oid="1.3.6.1.4.1.4203.1.11.3" name="whoami-plugin"
+[30/Oct/2026:21:17:39.506561559 +0000] conn=36 op=1 RESULT err=0 tag=120 nentries=0 wtime=0.000109991 optime=0.013605320 etime=0.013710657
+[30/Oct/2026:21:17:39.507141437 +0000] conn=36 op=2 UNBIND
+[30/Oct/2026:21:17:39.511976848 +0000] conn=36 op=2 fd=65 Disconnect - Cleanly Closed Connection - U1
+[30/Oct/2026:21:17:40.670503886 +0000] conn=37 fd=65 slot=65 connection from 172.21.91.21 to 172.21.0.2
+[30/Oct/2026:21:17:40.677141040 +0000] conn=37 op=0 BIND dn="uid=backup,ou=people,dc=lab,dc=example" method=128 version=3
+[30/Oct/2026:21:17:40.723836111 +0000] conn=37 op=0 RESULT err=49 tag=97 nentries=0 wtime=0.000114573 optime=0.046713311 etime=0.046826272 - Invalid credentials
+[30/Oct/2026:21:17:40.724176919 +0000] conn=37 op=1 UNBIND
+[30/Oct/2026:21:17:40.743292429 +0000] conn=37 op=1 fd=65 Disconnect - Cleanly Closed Connection - U1
+[30/Oct/2026:21:17:41.910388103 +0000] conn=39 fd=65 slot=65 connection from 172.21.91.22 to 172.21.0.2
+[30/Oct/2026:21:17:41.914106359 +0000] conn=39 op=0 BIND dn="uid=svcprint,ou=people,dc=lab,dc=example" method=128 version=3
+[30/Oct/2026:21:17:41.917688525 +0000] conn=39 op=0 RESULT err=49 tag=97 nentries=0 wtime=0.000184292 optime=0.003663340 etime=0.003846618 - No such entry
+[30/Oct/2026:21:17:41.918010350 +0000] conn=39 op=1 UNBIND
+[30/Oct/2026:21:17:41.921354904 +0000] conn=39 op=1 fd=65 Disconnect - Cleanly Closed Connection - U1
+[30/Oct/2026:21:17:43.119287834 +0000] conn=40 fd=65 slot=65 connection from 172.21.91.23 to 172.21.0.2
+[30/Oct/2026:21:17:43.121716393 +0000] conn=40 op=0 BIND dn="uid=carla,ou=people,dc=lab,dc=example" method=128 version=3
+[30/Oct/2026:21:17:43.140698561 +0000] conn=40 op=0 RESULT err=0 tag=97 nentries=0 wtime=0.000088009 optime=0.019015308 etime=0.019098942 dn="uid=carla,ou=people,dc=lab,dc=example"
+[30/Oct/2026:21:17:43.140976233 +0000] conn=40 op=1 EXT oid="1.3.6.1.4.1.4203.1.11.3" name="whoami-plugin"
+[30/Oct/2026:21:17:43.154390208 +0000] conn=40 op=1 RESULT err=0 tag=120 nentries=0 wtime=0.000078670 optime=0.013417705 etime=0.013489016
+[30/Oct/2026:21:17:43.155074550 +0000] conn=40 op=2 UNBIND
+[30/Oct/2026:21:17:43.159048709 +0000] conn=40 op=2 fd=65 Disconnect - Cleanly Closed Connection - U1
+[30/Oct/2026:21:17:44.269198135 +0000] conn=41 fd=65 slot=65 connection from 172.21.91.204 to 172.21.0.2
+[30/Oct/2026:21:17:44.278933955 +0000] conn=41 op=0 BIND dn="uid=intern,ou=people,dc=lab,dc=example" method=128 version=3
+[30/Oct/2026:21:17:44.291813017 +0000] conn=41 op=0 RESULT err=49 tag=97 nentries=0 wtime=0.000291830 optime=0.012966019 etime=0.013256107 - No such entry
+[30/Oct/2026:21:17:44.292586711 +0000] conn=41 op=1 UNBIND
+[30/Oct/2026:21:17:44.315111525 +0000] conn=41 op=1 fd=65 Disconnect - Cleanly Closed Connection - U1

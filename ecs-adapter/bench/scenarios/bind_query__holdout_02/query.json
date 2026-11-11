@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "dns.question.class": "IN"
+        }
+      },
+      {
+        "term": {
+          "dns.question.name": "lab.example"
+        }
+      }
+    ]
+  }
+}

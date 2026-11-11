@@ -1,0 +1,32 @@
+<38>1 2026-10-19T23:41:38.361322+00:00 web01 sshd 84 - -  Accepted password for ines from 172.21.0.3 port 48860 ssh2
+<86>1 2026-10-19T23:41:38.362253+00:00 web01 sshd 84 - -  pam_unix(sshd:session): session opened for user ines(uid=1004) by (uid=0)
+<83>1 2026-10-19T23:41:38.362451+00:00 web01 sshd 84 - -  pam_systemd(sshd:session): Failed to connect to system bus: No such file or directory
+<87>1 2026-10-19T23:41:38.365345+00:00 web01 sshd 84 - -  pam_env(sshd:session): deprecated reading of user environment enabled
+<83>1 2026-10-19T23:41:38.365353+00:00 web01 sshd 84 - -  pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+<86>1 2026-10-19T23:41:38.710739+00:00 web01 sshd 84 - -  pam_unix(sshd:session): session closed for user ines
+<85>1 2026-10-19T23:41:39.175320+00:00 web01 sshd 92 - -  pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3  user=tiago
+<38>1 2026-10-19T23:41:41.557117+00:00 web01 sshd 92 - -  Failed password for tiago from 172.21.0.3 port 48864 ssh2
+<38>1 2026-10-19T23:41:43.571790+00:00 web01 sshd 94 - -  Invalid user operator from 172.21.0.3 port 48874
+<85>1 2026-10-19T23:41:43.572587+00:00 web01 sshd 94 - -  pam_unix(sshd:auth): check pass; user unknown
+<85>1 2026-10-19T23:41:43.572601+00:00 web01 sshd 94 - -  pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+<38>1 2026-10-19T23:41:45.502219+00:00 web01 sshd 94 - -  Failed password for invalid user operator from 172.21.0.3 port 48874 ssh2
+<35>1 2026-10-19T23:41:46.947005+00:00 web01 sshd 96 - -  error: kex_exchange_identification: Connection closed by remote host
+<38>1 2026-10-19T23:41:46.947011+00:00 web01 sshd 96 - -  Connection closed by 172.21.0.3 port 48876
+<38>1 2026-10-19T23:41:47.399239+00:00 web01 sshd 97 - -  Invalid user support from 172.21.0.3 port 44152
+<85>1 2026-10-19T23:41:47.400076+00:00 web01 sshd 97 - -  pam_unix(sshd:auth): check pass; user unknown
+<85>1 2026-10-19T23:41:47.400083+00:00 web01 sshd 97 - -  pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=172.21.0.3 
+<38>1 2026-10-19T23:41:49.546158+00:00 web01 sshd 97 - -  Failed password for invalid user support from 172.21.0.3 port 44152 ssh2
+<38>1 2026-10-19T23:41:51.308460+00:00 web01 sshd 97 - -  Connection closed by invalid user support 172.21.0.3 port 44152 [preauth]
+<38>1 2026-10-19T23:41:51.315697+00:00 web01 sshd 92 - -  Connection closed by authenticating user tiago 172.21.0.3 port 48864 [preauth]
+<38>1 2026-10-19T23:41:51.316060+00:00 web01 sshd 94 - -  Connection closed by invalid user operator 172.21.0.3 port 48874 [preauth]
+<85>1 2026-10-19T23:41:51.484193+00:00 web01 sudo - - -  pam_unix(sudo:auth): authentication failure; logname= uid=1004 euid=0 tty= ruser=ines rhost=  user=ines
+<83>1 2026-10-19T23:41:53.846004+00:00 web01 sudo - - -  pam_unix(sudo:auth): conversation failed
+<82>1 2026-10-19T23:41:53.846006+00:00 web01 sudo - - -  pam_unix(sudo:auth): auth could not identify password for [ines]
+<81>1 2026-10-19T23:41:53.846055+00:00 web01 sudo - - -      ines : 1 incorrect password attempt ; PWD=/home/ines ; USER=root ; COMMAND=/usr/bin/uptime
+<81>1 2026-10-19T23:41:54.200748+00:00 web01 sudo - - -     tiago : user NOT in sudoers ; PWD=/home/tiago ; USER=root ; COMMAND=/usr/bin/tail /var/log/auth.log
+<85>1 2026-10-19T23:41:54.553536+00:00 web01 sudo - - -       rui : PWD=/home/rui ; USER=root ; COMMAND=/usr/sbin/usermod -L ana
+<87>1 2026-10-19T23:41:54.553614+00:00 web01 sudo - - -  pam_limits(sudo:session): Could not set limit for 'core' to soft=-1, hard=-1: Operation not permitted; uid=1001,euid=0
+<86>1 2026-10-19T23:41:54.553630+00:00 web01 sudo - - -  pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+<86>1 2026-10-19T23:41:54.572795+00:00 web01 usermod 122 - -  lock user 'ana' password
+<86>1 2026-10-19T23:41:54.580174+00:00 web01 sudo - - -  pam_unix(sudo:session): session closed for user root
+<81>1 2026-10-19T23:41:54.935331+00:00 web01 sudo - - -     marta : user NOT in sudoers ; PWD=/home/marta ; USER=root ; COMMAND=/usr/bin/passwd root

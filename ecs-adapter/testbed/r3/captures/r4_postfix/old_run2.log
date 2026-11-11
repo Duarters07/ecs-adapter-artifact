@@ -1,0 +1,22 @@
+Oct 22 08:41:11 mail postfix/smtpd[108]: connect from unknown[172.21.0.3]
+Oct 22 08:41:11 mail postfix/smtpd[108]: 3655AE91A2A: client=unknown[172.21.0.3]
+Oct 22 08:41:11 mail postfix/cleanup[113]: 3655AE91A2A: message-id=<>
+Oct 22 08:41:11 mail postfix/qmgr[98]: 3655AE91A2A: from=<carol@corp.example>, size=241, nrcpt=1 (queue active)
+Oct 22 08:41:11 mail postfix/smtpd[108]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 22 08:41:11 mail postfix/local[114]: 3655AE91A2A: to=<sofia@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 22 08:41:11 mail postfix/qmgr[98]: 3655AE91A2A: removed
+Oct 22 08:41:11 mail postfix/smtpd[108]: connect from unknown[172.21.0.3]
+Oct 22 08:41:11 mail postfix/smtpd[108]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 550 5.1.1 <admin@r4.local>: Recipient address rejected: User unknown in local recipient table; from=<a@scan.test> to=<admin@r4.local> proto=ESMTP helo=<scan.test>
+Oct 22 08:41:12 mail postfix/smtpd[122]: connect from unknown[172.21.0.3]
+Oct 22 08:41:12 mail postfix/smtpd[108]: lost connection after RSET from unknown[172.21.0.3]
+Oct 22 08:41:12 mail postfix/smtpd[108]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+Oct 22 08:41:12 mail postfix/smtpd[122]: 3E7CFE91A2D: client=unknown[172.21.0.3]
+Oct 22 08:41:12 mail postfix/cleanup[113]: 3E7CFE91A2D: message-id=<>
+Oct 22 08:41:12 mail postfix/qmgr[98]: 3E7CFE91A2D: from=<carol@corp.example>, size=241, nrcpt=1 (queue active)
+Oct 22 08:41:12 mail postfix/smtpd[122]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=1 data=1 quit=1 commands=5
+Oct 22 08:41:12 mail postfix/local[114]: 3E7CFE91A2D: to=<tiago@r4.local>, relay=local, delay=0.01, delays=0.01/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Oct 22 08:41:12 mail postfix/qmgr[98]: 3E7CFE91A2D: removed
+Oct 22 08:41:12 mail postfix/smtpd[108]: connect from unknown[172.21.0.3]
+Oct 22 08:41:12 mail postfix/smtpd[108]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 554 5.7.1 <boss@outlook.com>: Relay access denied; from=<y@open.test> to=<boss@outlook.com> proto=ESMTP helo=<open.test>
+Oct 22 08:41:13 mail postfix/smtpd[108]: lost connection after RSET from unknown[172.21.0.3]
+Oct 22 08:41:13 mail postfix/smtpd[108]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4

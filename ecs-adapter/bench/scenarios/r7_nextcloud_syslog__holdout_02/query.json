@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "host.name": "nc01"
+        }
+      },
+      {
+        "term": {
+          "http.request.id": "lsusptuh5OI5nn7Z1fSf"
+        }
+      }
+    ]
+  }
+}

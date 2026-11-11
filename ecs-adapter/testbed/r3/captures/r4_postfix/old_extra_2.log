@@ -1,0 +1,16 @@
+Oct 25 22:37:18 mail postfix/smtpd[109]: connect from unknown[172.21.0.3]
+Oct 25 22:37:18 mail postfix/smtpd[109]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 554 5.7.1 <hugo@gmail.com>: Relay access denied; from=<nelson@bad.test> to=<hugo@gmail.com> proto=ESMTP helo=<relay.bad.test>
+Oct 25 22:37:18 mail postfix/smtpd[114]: connect from unknown[172.21.0.3]
+Oct 25 22:37:18 mail postfix/smtpd[109]: lost connection after RSET from unknown[172.21.0.3]
+Oct 25 22:37:18 mail postfix/smtpd[109]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+Oct 25 22:37:18 mail postfix/smtpd[114]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 550 5.1.1 <gabriela@r4.local>: Recipient address rejected: User unknown in local recipient table; from=<luis@spam.test> to=<gabriela@r4.local> proto=ESMTP helo=<mx.spam.test>
+Oct 25 22:37:19 mail postfix/smtpd[109]: connect from unknown[172.21.0.3]
+Oct 25 22:37:19 mail postfix/smtpd[114]: lost connection after RSET from unknown[172.21.0.3]
+Oct 25 22:37:19 mail postfix/smtpd[114]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+Oct 25 22:37:19 mail postfix/smtpd[109]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 554 5.7.1 <elsa@outlook.com>: Relay access denied; from=<teresa@open.test> to=<elsa@outlook.com> proto=ESMTP helo=<open.test>
+Oct 25 22:37:19 mail postfix/smtpd[114]: connect from unknown[172.21.0.3]
+Oct 25 22:37:19 mail postfix/smtpd[109]: lost connection after RSET from unknown[172.21.0.3]
+Oct 25 22:37:19 mail postfix/smtpd[109]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4
+Oct 25 22:37:19 mail postfix/smtpd[114]: NOQUEUE: reject: RCPT from unknown[172.21.0.3]: 550 5.1.1 <support@r4.local>: Recipient address rejected: User unknown in local recipient table; from=<hugo@scan.test> to=<support@r4.local> proto=ESMTP helo=<scan.test>
+Oct 25 22:37:20 mail postfix/smtpd[114]: lost connection after RSET from unknown[172.21.0.3]
+Oct 25 22:37:20 mail postfix/smtpd[114]: disconnect from unknown[172.21.0.3] ehlo=1 mail=1 rcpt=0/1 rset=1 commands=3/4

@@ -1,0 +1,15 @@
+0a6ddc61a4663f62 smtp connected address=172.21.63.143 host=peaceful_goodall.r3-net
+0a6ddc61a4663f62 smtp failed-command command="rcpt TO:<root@target.org>" result="550 Invalid recipient: <root@target.org>"
+0a6ddc61a4663f62 smtp disconnected reason=disconnect
+0a6ddc62ad5929b4 smtp connected address=172.21.63.131 host=wizardly_visvesvaraya.r3-net
+0a6ddc62ad5929b4 smtp failed-command command="rcpt TO:<vasco@lab.local>" result="550 Invalid recipient: <vasco@lab.local>"
+0a6ddc62ad5929b4 smtp disconnected reason=disconnect
+0a6ddc6316b86366 smtp connected address=172.21.63.212 host=blissful_robinson.r3-net
+0a6ddc6316b86366 smtp failed-command command="rcpt TO:<alice@lab.local>" result="550 Invalid recipient: <alice@lab.local>"
+0a6ddc6316b86366 smtp disconnected reason=disconnect
+0a6ddc645cffc93e smtp connected address=172.21.63.135 host=unruffled_pike.r3-net
+0a6ddc645cffc93e smtp failed-command command="rcpt TO:<diogo@other.org>" result="550 Invalid recipient: <diogo@other.org>"
+0a6ddc645cffc93e smtp disconnected reason=disconnect
+0a6ddc65602ecd37 smtp connected address=172.21.63.191 host=agitated_kowalevski.r3-net
+0a6ddc65602ecd37 smtp failed-command command="rcpt TO:<alice@lab.local>" result="550 Invalid recipient: <alice@lab.local>"
+0a6ddc65602ecd37 smtp disconnected reason=disconnect

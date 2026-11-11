@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.reason": "no matching rule"
+        }
+      },
+      {
+        "term": {
+          "process.pid": 35
+        }
+      }
+    ]
+  }
+}

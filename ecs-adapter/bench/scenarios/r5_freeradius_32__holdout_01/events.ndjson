@@ -1,0 +1,5 @@
+{"raw": "Sun Oct 25 15:08:13 2026 : Auth: (6) Login incorrect (pap: Cleartext password does not match \"known good\" password): [vpn-ops] (from client vpn-gw port 21)"}
+{"raw": "Sun Oct 25 15:08:18 2026 : Auth: (9) Login OK: [rui] (from client ap-floor1 port 14)"}
+{"raw": "Sun Oct 25 15:08:16 2026 : Auth: (8) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [operator] (from client vpn-gw port 22)"}
+{"raw": "Sun Oct 25 15:08:19 2026 : Auth: (10) Login incorrect (No Auth-Type found: rejecting the user via Post-Auth-Type = Reject): [support] (from client ap-floor1 port 15)"}
+{"raw": "Sun Oct 25 15:08:15 2026 : Auth: (7) Login OK: [vpn-ops] (from client vpn-gw port 21)"}

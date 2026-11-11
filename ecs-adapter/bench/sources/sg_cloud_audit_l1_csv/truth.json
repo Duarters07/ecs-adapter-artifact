@@ -1,0 +1,72 @@
+{
+  "category_hint": "web",
+  "contamination_risk": "none",
+  "extraction": {
+    "columns": [
+      "timestamp",
+      "action",
+      "method",
+      "path2",
+      "target",
+      "user",
+      "url",
+      "path",
+      "message",
+      "reqid",
+      "ip",
+      "ua"
+    ],
+    "kind": "csv"
+  },
+  "family": "sg_cloud_audit",
+  "fields": [
+    {
+      "ecs_field": "event.action",
+      "source_key": "action",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "source.ip",
+      "source_key": "ip",
+      "type": "ip"
+    },
+    {
+      "ecs_field": "http.request.method",
+      "source_key": "method",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "event.id",
+      "source_key": "reqid",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "user_agent.original",
+      "source_key": "ua",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "url.original",
+      "source_key": "url",
+      "type": "keyword"
+    },
+    {
+      "ecs_field": "user.name",
+      "source_key": "user",
+      "type": "keyword"
+    }
+  ],
+  "level": 1,
+  "note": "Level-1 evaluation source: a SIEMgen family held out of training whole (corpus/heldout_family.py), in a layout the training corpus also uses. Never train on it.",
+  "origin": "siemgen 778216a9d345dbcc4daf6a8b616f8813dec5dbe0",
+  "source_id": "sg_cloud_audit_l1_csv",
+  "split": "test_id",
+  "timestamp": {
+    "formats": [
+      "ISO8601"
+    ],
+    "source_key": "timestamp"
+  },
+  "transform": "structured:csv:asis",
+  "value_maps": []
+}

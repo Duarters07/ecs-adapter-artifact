@@ -1,0 +1,107 @@
+{
+ "source_id": "t3_ait_audit",
+ "ecs_version": "8.11",
+ "extraction": {
+  "kind": "grok",
+  "pattern": "^type=%{WORD:audit_type} msg=audit\\(%{NUMBER:audit_epoch}:%{INT:audit_seq}\\): pid=%{INT:pid} uid=%{INT:uid} auid=%{INT:auid} ses=%{INT:ses} msg=\\x27op=%{NOTSPACE:op} acct=\\\"%{DATA:acct}\\\" exe=\\\"%{DATA:exe}\\\" hostname=%{NOTSPACE:hostname} addr=%{NOTSPACE:addr} terminal=%{NOTSPACE:terminal} res=%{WORD:result}\\x27$",
+  "alternatives": [
+   "^type=%{WORD:audit_type} msg=audit\\(%{NUMBER:audit_epoch}:%{INT:audit_seq}\\): pid=%{INT:pid} uid=%{INT:uid} old-auid=%{INT:old_auid} auid=%{INT:auid} tty=%{NOTSPACE:tty} old-ses=%{INT:old_ses} ses=%{INT:ses} res=%{INT:result}$",
+   "^type=%{WORD:audit_type} msg=audit\\(%{NUMBER:audit_epoch}:%{INT:audit_seq}\\): pid=%{INT:pid} uid=%{INT:uid} auid=%{INT:auid} ses=%{INT:ses} msg=\\x27unit=%{NOTSPACE:unit} comm=\\\"%{DATA:comm}\\\" exe=\\\"%{DATA:exe}\\\" hostname=%{NOTSPACE:hostname} addr=%{NOTSPACE:addr} terminal=%{NOTSPACE:terminal} res=%{WORD:result}\\x27$"
+  ]
+ },
+ "fields": [
+  {
+   "source_key": "audit_type",
+   "ecs_field": "event.action",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "pid",
+   "ecs_field": "process.pid",
+   "confidence": 1.0,
+   "type": "long"
+  },
+  {
+   "source_key": "uid",
+   "ecs_field": "user.id",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "acct",
+   "ecs_field": "user.name",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "exe",
+   "ecs_field": "process.executable",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "comm",
+   "ecs_field": "process.name",
+   "confidence": 1.0
+  },
+  {
+   "source_key": "result",
+   "ecs_field": "event.outcome",
+   "confidence": 1.0
+  }
+ ],
+ "constants": {
+  "event.category": [
+   "authentication"
+  ],
+  "event.kind": "event",
+  "event.dataset": "auditd.log"
+ },
+ "unresolved": [
+  {
+   "source_key": "audit_epoch",
+   "reason": "@timestamp is set at ingest"
+  },
+  {
+   "source_key": "audit_seq",
+   "reason": "audit record sequence"
+  },
+  {
+   "source_key": "ses",
+   "reason": "audit session"
+  },
+  {
+   "source_key": "auid",
+   "reason": "audit login uid; ECS 8.11 has no field for it"
+  },
+  {
+   "source_key": "op",
+   "reason": "PAM operation"
+  },
+  {
+   "source_key": "hostname",
+   "reason": "'?' in every sample"
+  },
+  {
+   "source_key": "addr",
+   "reason": "'?' in every sample"
+  },
+  {
+   "source_key": "terminal",
+   "reason": "terminal"
+  },
+  {
+   "source_key": "old_auid",
+   "reason": "previous auid"
+  },
+  {
+   "source_key": "tty",
+   "reason": "tty"
+  },
+  {
+   "source_key": "old_ses",
+   "reason": "previous session"
+  },
+  {
+   "source_key": "unit",
+   "reason": "systemd unit"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+1792969089: New connection from 172.21.50.187 on port 1884.
+1792969089: Socket error on client <unknown>, disconnecting.
+1792969090: New connection from 172.21.50.194 on port 1884.
+1792969090: Socket error on client <unknown>, disconnecting.
+1792969094: New connection from 172.21.50.231 on port 1884.
+1792969094: New client connected from 172.21.50.231 as pump-qa (p2, c1, k60, u'gateway').
+1792969094: Client pump-qa disconnected.
+1792969098: New connection from 172.21.50.124 on port 1884.
+1792969098: Socket error on client <unknown>, disconnecting.
+1792969100: New connection from 172.21.50.125 on port 1883.
+1792969100: Socket error on client <unknown>, disconnecting.
+1792969101: New connection from 172.21.50.159 on port 1883.
+1792969101: Socket error on client <unknown>, disconnecting.

@@ -1,0 +1,28 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "bool": {
+          "should": [
+            {
+              "term": {
+                "client.ip": "172.21.91.32"
+              }
+            },
+            {
+              "term": {
+                "source.ip": "172.21.91.32"
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      {
+        "term": {
+          "email.from.address": "hr@partner.example"
+        }
+      }
+    ]
+  }
+}

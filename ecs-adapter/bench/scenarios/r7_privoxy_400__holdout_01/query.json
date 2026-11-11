@@ -1,0 +1,16 @@
+{
+  "bool": {
+    "filter": [
+      {
+        "term": {
+          "event.action": "Request"
+        }
+      },
+      {
+        "term": {
+          "url.domain": "r7-web-target"
+        }
+      }
+    ]
+  }
+}
