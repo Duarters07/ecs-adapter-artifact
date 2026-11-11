@@ -56,10 +56,18 @@ was anonymised for review, so `PREREG.digest` matches only once it is restored.
 
 ## Running the system
 
-Needs Elasticsearch and Logstash 8.19.7 and Ollama 0.5.4. The LoRA adapters of the specialised model
-(155 MB) are released with the final version of the paper. Until then the system runs with the untrained
-models (`ECS_ARCHITECTURE=B`, base model `qwen2.5-coder:7b-instruct-q8_0`), and `scripts/r10.sh` records how
-the adapters were trained.
+Needs Elasticsearch and Logstash 8.19.7 and Ollama 0.5.4. The LoRA adapters of the specialised model (148 MB) are a
+separate archive, at https://osf.io/m4trp/overview?view_only=b904333d01b54b6385c4170997e14c7e. Unpack it and register the two stages on top of the base
+model:
+
+```bash
+ollama pull qwen2.5-coder:7b-instruct-q8_0
+tar xzf ecs-adapter-models.tar.gz
+ollama create qwen2.5-coder:ecs-interpret-org10 -f qwen2.5-coder_ecs-interpret-org10.Modelfile
+ollama create qwen2.5-coder:ecs-map-org10 -f qwen2.5-coder_ecs-map-org10.Modelfile
+```
+
+`scripts/f8b.sh` ran the test set on a rented GPU and records the exact command of every cell.
 
 ## Tests
 

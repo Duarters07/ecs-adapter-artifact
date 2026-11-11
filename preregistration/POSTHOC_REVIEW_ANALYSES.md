@@ -101,3 +101,21 @@ window 32768, flash attention, 8-bit KV cache, one slot, round-9 flags), changin
 per-source difference against `F-T14-p22-r7` (4-bit) and against `F-C10s-p22-r7` (7B-S), with the paper's bootstrap
 interval; deployments with a wrong field value; rules that fire; wall time and peak memory. Reported as post hoc,
 whatever the outcome. The pre-registered primary endpoint is not replaced.
+
+## D. The full system without replay scenarios (declared 2026-11-11T16:34Z, before any run)
+
+**Question.** Section 5.5 measured the gate with continuity (VC) alone on candidates that had been repaired with replay
+feedback. A review asks what the system restores end to end when the organisation has no replay scenario at all.
+
+**Procedure.** On a rented RTX 4090, the card-4 code as backed up, Ollama 0.5.4 (3 slots, no flash attention, as for the
+7B arms), Elasticsearch and Logstash 8.19.7, run the specialised model exactly as cell `F-C10s-p22-r7` was run (arm C,
+pool r7, full system, 5 seeds, k=6 samples, 3 repairs, staged-edit, temperature 0.7, window 32768, round-9 flags) on the
+15 real test changes only, changing one thing: `ECS_NO_REPLAY=1`, which runs the ladder without V4 and without V3.5,
+whose known values were taken from the scenarios (a 5-line change to bench/arms.py; the record keeps no extra field, so the runs are identified by
+their tag and by `detection.skipped`). Tag `F-C10sNR-p22-r7`. Every run's final candidate is then cut by the gate with VC alone, with the code
+of B1 (bench/posthoc_vc.py), on the laptop.
+
+**Measures.** As B1: runs that deploy anything, deployments carrying a wrong field value, deployed-field precision and
+coverage against the reference, and the share of the sources' detection rules whose fields are all deployed, set
+against no action (17%), B1 (38%) and the replay gate (44%). Also runs accepted at V3 and wall time. Reported as post
+hoc whatever the outcome; the pre-registered endpoint and every existing number are unchanged.
